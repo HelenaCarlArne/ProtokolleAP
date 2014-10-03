@@ -1,6 +1,8 @@
 \input{LaTeX-Schreibsatz/header.tex}
 \usepackage{enumitem}
 \usepackage{wasysym}
+\usepackage{blindtext}
+\usepackage{framed}
 \title{My \emph{git}-Guide}
 \begin{document}
 \maketitle
@@ -11,48 +13,40 @@ An dieser Stelle möchte noch eine Anleitung stehen \smiley
 \newpage
 
 \section{Grundlagen}									%Die erste Section
-\begin{figure}
-\caption{Die drei Orte}
-\begin{subfigure}{0.2\textwidth}
-\begin{table}
-	\begin{tabular*}{|c|}
-	Lala\\
-	\toprule
-	Das\\
-	\bottomrule
-	\end{tabular*}
-\end{table}
-\end{subfigure}
-\begin{subfigure}{0.2\textwidth}
-\begin{table}
-	\begin{tabular}{|c|}
-	Lala\\
-	\toprule
-	Der Index\\
-	\bottomrule
-	\end{tabular}
-\end{table}
-\end{subfigure}
-\begin{subfigure}{0.2\textwidth}
-\begin{table}
-	\begin{tabular}{|c|}
-	Lala\\
-	\toprule
-	Das\\
-	\bottomrule
-	\end{tabular}
-\end{table}
-\end{subfigure}
-\begin{subfigure}{0.2\textwidth}
-\begin{table}
-	\begin{tabular}{|c|}
-	\toprule
-	Das\\
-	\bottomrule
-	\end{tabular}
-\end{table}
-\end{subfigure}
-\end{figure}
+\begin{minipage}{0.25\textwidth}
+	\begin{framed} 		
+	\centering 
+	\vspace{3cm}
+	Verzeichnis 
+	\phantom{Repository}
+	\vspace{3cm}
+	\end{framed} 
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+	\begin{framed} 		
+	\centering 
+	\vspace{3cm}
+	Index \\
+	\phantom{Repository}
+	\vspace{3cm}
+	\end{framed} 
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+	\begin{framed} 		
+	\centering 
+	\vspace{3cm}
+	Lokales Repository
+	\vspace{3cm} 
+	\end{framed} 
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+	\begin{framed} 		
+	\centering 
+	\vspace{3cm}
+	Entferntes Repository 
+	\vspace{3cm}
+	\end{framed} 
+\end{minipage}
 \newpage
 
 \section{Erstellen von entfernten Repositorys}				%Die zweite Section
