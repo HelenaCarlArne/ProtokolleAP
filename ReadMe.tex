@@ -1,0 +1,87 @@
+\input{LaTeX-Schreibsatz/header.tex}
+\usepackage{enumitem}
+\usepackage{wasysym}
+\title{My \emph{git}-Guide}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Einleitung}
+An dieser Stelle möchte noch eine Anleitung stehen \smiley
+\newpage
+
+\section{Grundlagen}									%Die erste Section
+\begin{figure}
+\caption{Die drei Orte}
+\begin{subfigure}{0.2\textwidth}
+\begin{table}
+	\begin{tabular*}{|c|}
+	Lala\\
+	\toprule
+	Das\\
+	\bottomrule
+	\end{tabular*}
+\end{table}
+\end{subfigure}
+\begin{subfigure}{0.2\textwidth}
+\begin{table}
+	\begin{tabular}{|c|}
+	Lala\\
+	\toprule
+	Der Index\\
+	\bottomrule
+	\end{tabular}
+\end{table}
+\end{subfigure}
+\begin{subfigure}{0.2\textwidth}
+\begin{table}
+	\begin{tabular}{|c|}
+	Lala\\
+	\toprule
+	Das\\
+	\bottomrule
+	\end{tabular}
+\end{table}
+\end{subfigure}
+\begin{subfigure}{0.2\textwidth}
+\begin{table}
+	\begin{tabular}{|c|}
+	\toprule
+	Das\\
+	\bottomrule
+	\end{tabular}
+\end{table}
+\end{subfigure}
+\end{figure}
+\newpage
+
+\section{Erstellen von entfernten Repositorys}				%Die zweite Section
+\begin{enumerate}
+	\item{Erstelle einen Ordner mit dem Namen Deines (zukünftigen) Repositorys.}
+	\item{Öffne den Ordner in der Kommandozeile}
+	\item{Melde bei GitHub das Repos an}
+	\item{Verwende in der Kommandozeile die Befehle, die auf GitHub angezeigt werden:}
+	\begin{enumerate}
+		\item{\emph{touch} README.md}
+		\item{\emph{git init}}
+		\item{\emph{git add} README.md}
+		\item{\emph{git add} \{andere Dateien\}}
+		\item{\emph{git commit -m} "first commit"}
+		\item{\emph{git remote add origin} \{Adresse von GitHub.com\}}
+		\item{\emph{git push -u origin master}}
+	\end{enumerate}
+\end{enumerate}
+\hrule 
+\vspace{3pt}
+Dabei stehen die Befehle  für folgende Aktivitäten:
+\begin{description}[leftmargin=\parindent,labelsep=8pt]
+	\item[a] Erstellt eine leere Datei, die als erste Datei ins entfernte Repository geladen wird.
+	\item[b] Initialisiert das \emph{git}-System
+	\item[c] Fügt die Dateien zu dem Staging hinzu, ab jetzt kann git darauf Einfluss nehmen. \\ \phantom{} Vor dem "Adden" war das nicht möglich
+	\item[d] Veranlasst das Übernehmen der Änderungen zu einem Datencommit,\\ \phantom{} welcher bereit ist, auf den Server gelegt zu werden.
+	\item[e]  Hiermit wird das Ur-Repository vom Rechner auf den Server geladen.\\ \phantom{} Damit ist git in gewohnter Weise betriebsbereit.
+	\item[f] Das ist der erste Push-Befehl. Alle folgenden sind \emph{git push origin master} oder \emph{git push}
+\end{description}
+\hrule 
+\vspace{3pt}
+\end{document}
