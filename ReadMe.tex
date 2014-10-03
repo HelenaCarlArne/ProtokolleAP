@@ -3,6 +3,11 @@
 \usepackage{wasysym}
 \usepackage{blindtext}
 \usepackage{framed}
+\usepackage{float}
+\floatstyle{boxed}
+\restylefloat{figure}
+
+
 \title{My \emph{git}-Guide}
 \begin{document}
 \maketitle
@@ -13,40 +18,51 @@ An dieser Stelle möchte noch eine Anleitung stehen \smiley
 \newpage
 
 \section{Grundlagen}									%Die erste Section
-\begin{minipage}{0.25\textwidth}
+\begin{figure}
+\centering
+\caption{Die vier Instanzen}
+\begin{minipage}{0.24\textwidth}
 	\begin{framed} 		
 	\centering 
-	\vspace{3cm}
-	Verzeichnis 
+	(a)\\
+	\vspace{0,3cm}
+	Verzeichnis \\
 	\phantom{Repository}
-	\vspace{3cm}
+	\vspace{1cm}
 	\end{framed} 
 \end{minipage}
-\begin{minipage}{0.25\textwidth}
+\begin{minipage}{0.24\textwidth}
 	\begin{framed} 		
 	\centering 
-	\vspace{3cm}
+	(b)\\
+	\vspace{0,3cm}
 	Index \\
 	\phantom{Repository}
-	\vspace{3cm}
+	\vspace{1cm}
 	\end{framed} 
 \end{minipage}
-\begin{minipage}{0.25\textwidth}
+\begin{minipage}{0.24\textwidth}
 	\begin{framed} 		
 	\centering 
-	\vspace{3cm}
+	(c)\\
+	\vspace{0,3cm}
 	Lokales Repository
-	\vspace{3cm} 
+	\vspace{1cm} 
 	\end{framed} 
 \end{minipage}
-\begin{minipage}{0.25\textwidth}
+\begin{minipage}{0.24\textwidth}
 	\begin{framed} 		
 	\centering 
-	\vspace{3cm}
+	(d)\\
+	\vspace{0,3cm}
 	Entferntes Repository 
-	\vspace{3cm}
+	\vspace{1cm}
 	\end{framed} 
 \end{minipage}
+\end{figure}
+
+Das
+
 \newpage
 
 \section{Erstellen von entfernten Repositorys}				%Die zweite Section
