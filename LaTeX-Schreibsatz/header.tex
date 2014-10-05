@@ -32,9 +32,12 @@
   partial=upright,   % /
 ]{unicode-math}
 
-\setmathfont[range={\mathscr, \mathbfscr}]{XITS Math}
-\setmathfont[range=\coloneq]{XITS Math}
-\setmathfont[range=\propto]{XITS Math}
+% Warnung! Bei Aktivierung der alternativen mathfonts (nächsten drei Befehle) 
+% könnte die math-Umgebung nicht mehr funktionieren. -Arne
+
+%\setmathfont[range={\mathscr, \mathbfscr}]{XITS Math}
+%\setmathfont[range=\coloneq]{XITS Math}
+%\setmathfont[range=\propto]{XITS Math}
 % make bar horizontal, use \hslash for slashed h
 \let\hbar\relax
 \DeclareMathSymbol{\hbar}{\mathord}{AMSb}{"7E}
