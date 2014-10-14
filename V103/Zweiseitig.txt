@@ -1,0 +1,16 @@
+# Die Auslenkung des runden Stabes mit eingerechnetem Offset 
+# bei zweiseitiger Einspannung in mm.
+# x ist dabei der Abstand zur jeweiligen Kante.
+#
+# x	delta(x)_rechtsseitig delta(x)_linksseitig
+40	0.16	0.08
+60	0.35	0.14
+80	0.45	0.20
+100	0.55	0.28
+120	0.64	0.37
+140	0.70	0.46
+160	0.79	0.55
+180	0.84	0.63
+200	0.88	0.72
+220	0.92	0.79
+240	0.93	0.85

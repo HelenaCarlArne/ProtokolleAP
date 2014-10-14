@@ -1,0 +1,12 @@
+# Die eine Seitenlänge des zweiten Stabes (rechteckig) in mm
+
+10,05
+10,10
+10,05
+10,00
+10,00
+10,05
+10,10
+10,00
+10,15
+10,15
