@@ -12,9 +12,19 @@ die Normalkomponente bewirkt eine Längenänderung senkrecht, eine Tangentialspa
 
 1.1. Einseitige Einspannung
 
-Die angreifende Kraft F übt ein äußeres Drehmoment M(F) auf die Probe aus. Oberhalb der normalen Faser bildet sich eine Druck-, unterhalb eine Zugspannung aus. Die normale Faser ist eine Fläche, in der keine Spannungen auftreten ( gestrichelte Linie, siehe Skizze). Im Stabinnern baut sich eine Normalspannung aus, welche der Deformation entgegensteht. Dadurch bildet sich ein tangentiales Drehmoment M(SIGMA). Die Drehmomente sind betragsgleich und bilden ein Gleichgewicht.
+Die angreifende Kraft F übt ein äußeres Drehmoment M(F) auf den Stab aus. Oberhalb einer unveränderten Faser, der so genannten neutralen Faser, wird der Stab gestreckt, unterhalb dieser zusammengestaucht. Die neutrale Faser ist in der Skizze gestrichelt eingezeichnet.
+
+[Skizze:Einseitige Einspannung]
+
+Im Stabinnern baut sich als Reaktion auf das äußere Drehmoment und die Verformung eine entgegengesetzte Spannung auf, welche ein inneres Drehmoment M(Sigma) bewirkt. Beim Gleichgewicht der Drehmomente, M(F)=M(Sigma), wird der Stab nicht weiter verformt und nimmt eine stabile, durchgebogene Form an.
 
 [hier:MOMENTENGLEICHUNG]
+
+Das innere Drehmoment M(Sigma) ist darstellbar durch das Integral
+
+[M(Sigma)=[Integral: y*sigma(y)dA über A]],
+
+dessen Integrand durch Geometrie und der Annäherung [1/R=...] umgeformt wird. Die resultierende Formel
 
 Für die Gesamtspannung [FORMEL] kann man mit Hilfe von geometrischen Überlegungen und der Näherung [1/R=...] ebenfalls [FORMEL] schreiben. Setzt man diese in die Momentengleichung ein wird daraus [FORMEL]=[Formel], wobei [I=..] das Flächenträgheitsmoment ist ( analog zum Massenträgheitsmoment; das Trägheitsmoment durch das Eigengewicht der Probe wird hierbei vernachlässigt).
 
