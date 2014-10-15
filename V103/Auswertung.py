@@ -2,6 +2,7 @@
 import numpy as np 										#### Header
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
 import math
 from uncertainties import ufloat
 plt.rcParams['figure.figsize'] = (10, 8)
@@ -30,7 +31,6 @@ print("")
 print("Fuer die Flaechentraegheitsmomente gelten:")
 print("Rund:",Irund)
 print("Recht:",Irecht)
+print("")
 
-plt.plot(492*xrund**2-xrund**3/3,drund)
-plt.plot(492*xrecht**2-xrecht**3/3,drecht)
-plt.show()
+
