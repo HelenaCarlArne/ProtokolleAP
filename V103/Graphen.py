@@ -8,8 +8,8 @@ plt.rcParams['font.size'] = 12
 
 
 d = np.genfromtxt('Durchmesser.txt').T 			#### Einladen der Daten
-s1 = np.genfromtxt('Seite1.txt').T
-s2 = np.genfromtxt('Seite2.txt').T
+s1 = np.genfromtxt('Seitex.txt').T
+s2 = np.genfromtxt('Seitey.txt').T
 xrecht,drecht = np.genfromtxt('RechteckigerStab1.txt').T
 xrund,drund = np.genfromtxt('RunderStab1.txt').T
 x2,d2links, d2rechts = np.genfromtxt('Zweiseitig.txt').T
