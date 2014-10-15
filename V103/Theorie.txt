@@ -1,0 +1,24 @@
+1. Theorie
+
+Das Ziel des Versuches ist die Bestimmung des Elastizitätsmodules E, welcher als Proportionalitätsfaktor im Hooke'schen Gesetz steht.
+
+[hier:HOOKESCHES GESETZ]
+
+Dieses beschreibt für hinreichend kleine Kräfte an der Oberfläche einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relativen Gestaltänderungen in Form oder Volumen. Die Spannung teilt sich dabei in zwei Komponenten auf:
+
+Die Normalkomponente bewirkt eine Längenänderung senkrecht, eine Tangentialspannung eine Längenänderung parallel zur Kraftrichtung auf eine Probe.
+Statt einer Längenänderung, die für die meisten Proben gering und eher schwierig zu messen ist, benutzt man zur Bestimmung des Moduls die Deformation D(x) am Ort x durch Biegung der Probe. Bei gleibleibender Kraft F, Länge L und Querschnitt Q der Probe ergibt dies ein D > DELTA L.
+
+1.1. Einseitige Einspannung
+
+Die angreifende Kraft F übt ein äußeres Drehmoment M(F) auf die Probe aus. Oberhalb der normalen Faser bildet sich eine Druck-, unterhalb eine Zugspannung aus. Die normale Faser ist eine Fläche, in der keine Spannungen auftreten ( gestrichelte Linie, siehe Skizze). Im Stabinnern baut sich eine Normalspannung aus, welche der Deformation entgegensteht. Dadurch bildet sich ein tangentiales Drehmoment M(SIGMA). Die Drehmomente sind betragsgleich und bilden ein Gleichgewicht.
+
+[hier:MOMENTENGLEICHUNG]
+
+Für die Gesamtspannung [FORMEL] kann man mit Hilfe von geometrischen Überlegungen und der Näherung [1/R=...] ebenfalls [FORMEL] schreiben. Setzt man diese in die Momentengleichung ein wird daraus [FORMEL]=[Formel], wobei [I=..] das Flächenträgheitsmoment ist ( analog zum Massenträgheitsmoment; das Trägheitsmoment durch das Eigengewicht der Probe wird hierbei vernachlässigt).
+
+Durch mehrmalige Integration ergibt sich D(x)=.. für 0<x<L. Aufgrunnd der horizontalen Einspannung, sowie D(0)=0 fallen die Integrationskonstanten weg.
+
+
+
+
