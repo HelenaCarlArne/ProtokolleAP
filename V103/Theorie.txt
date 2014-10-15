@@ -1,13 +1,14 @@
+
+Das Ziel des Versuches ist die Bestimmung des Elastizitätsmodules E als Proportionalitätsfaktor des Hooke'schen Gesetzes.
+
 1. Theorie
 
-Das Ziel des Versuches ist die Bestimmung des Elastizitätsmodules E, welcher als Proportionalitätsfaktor im Hooke'schen Gesetz steht.
+Das Hooke'sche Gesetz, 
 
-[hier:HOOKESCHES GESETZ]
+[hier:HOOKESCHES GESETZ],
 
-Dieses beschreibt für hinreichend kleine Kräfte an der Oberfläche einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relativen Gestaltänderungen in Form oder Volumen. Die Spannung teilt sich dabei in zwei Komponenten auf:
-
-Die Normalkomponente bewirkt eine Längenänderung senkrecht, eine Tangentialspannung eine Längenänderung parallel zur Kraftrichtung auf eine Probe.
-Statt einer Längenänderung, die für die meisten Proben gering und eher schwierig zu messen ist, benutzt man zur Bestimmung des Moduls die Deformation D(x) am Ort x durch Biegung der Probe. Bei gleibleibender Kraft F, Länge L und Querschnitt Q der Probe ergibt dies ein D > DELTA L.
+beschreibt für hinreichend kleine Kräfte an der Oberfläche einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relativen Gestaltänderungen in Form oder Volumen. Die Spannung teilt sich dabei in zwei Komponenten auf:
+die Normalkomponente bewirkt eine Längenänderung senkrecht, eine Tangentialspannung eine Längenänderung parallel zur Kraftrichtung auf eine Probe. Da die Längenänderungen für die meisten Proben allerdings zu gering sind, eignet sich eine direkte Messung nicht; anstelle derer wird die Deformation D(x) eines Stabes gemessen, welcher durch eine äußere Kraft verbogen wird. Die Deformation D(x) ist leicht messbar.
 
 1.1. Einseitige Einspannung
 
