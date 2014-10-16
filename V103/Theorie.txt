@@ -34,4 +34,11 @@ Mit (2) und (3) in (1) ergibt sich nach zweifachen Integrieren eine Gleichung, d
 [Gleichung 8]
 
 
+1.2. Zweiseitige Auflage
+
+Die Durchbiegung kann auch bei beidseitiger Auflage der Enden bestimmt werden. Die Kraft F übt nun von der Stabmitte ein Drehmoment M(F) auf die Probe aus: 
+
+M(F)_0<x<L/2  (4) und M(F)_L/2<x<L (5)
+
+Mit der Bedingung, dass die Steigung der Biegekurve am Angriffspunkt der Kraft Null beträgt (dD/dx)(bei L/2)=0, kann nun nach dem selben Prinzip (s. 1.1.) die Deformation D(x) für den links- und rechtsseitigen Teil des Stabes hergeleitet werden.
 
