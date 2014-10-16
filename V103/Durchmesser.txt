@@ -9,3 +9,8 @@
 10.10
 10.00
 10.00
+
+# Mittelwert des Durchmessers d_m = 10,085 mm
+# Standardabeiwchung s_d = 0,067 mm
+# Standardabweichung des Mittelwerts s_d_m = 0,082 mm
+# Stablänge L = 492 mm
