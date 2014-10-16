@@ -47,13 +47,13 @@ popt, pcov = curve_fit(f, 492*xrund**2-xrund**3/3, drund)
 plt.plot(t, f(t, *popt), 'r-', label='Fit')
 print("Runder Stab: m={} und b={} ".format(*popt))
 
-popt, pcov = curve_fit(f, 492*xrecht**2-xrecht**3/3, drecht)
+popt, pcov = curve_fit(f, 524*xrecht**2-xrecht**3/3, drecht)
 plt.plot(t, f(t, *popt), 'b-', label='Fit')
 print("Rechteckiger Stab: m={} und b={} ".format(*popt))
 print("")
 
 plt.plot(492*xrund**2-xrund**3/3,drund, "rx", label="Rund")
-plt.plot(492*xrecht**2-xrecht**3/3,drecht, "bx",label="Rechteckig")
+plt.plot(524*xrecht**2-xrecht**3/3,drecht, "bx",label="Rechteckig")
 
 plt.legend(loc="best")
 plt.title("Einseitige Einspannung, linearisiert")
