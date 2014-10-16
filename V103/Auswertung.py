@@ -12,9 +12,9 @@ plt.rcParams['font.size'] = 16
 d = np.genfromtxt('Durchmesser.txt').T 					#### Einladen der Daten
 s1 = np.genfromtxt('Seitex.txt').T
 s2 = np.genfromtxt('Seitey.txt').T
-xrecht,drecht,poop = np.genfromtxt('RechteckigerStab1.txt').T
+xrecht,drecht = np.genfromtxt('RechteckigerStab1.txt').T
 xrund,drund = np.genfromtxt('RunderStab1.txt').T
-x2,d2rechts, d2links = np.genfromtxt('Zweiseitig.txt').T
+x2,d2links, d2rechts = np.genfromtxt('Zweiseitig.txt').T
 
 durch = ufloat(np.mean(d),np.std(d)) 					#### Berechnung der Werte
 seite1 = ufloat(np.mean(s1),np.std(s1))
