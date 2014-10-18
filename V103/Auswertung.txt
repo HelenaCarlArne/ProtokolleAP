@@ -94,3 +94,23 @@ Das gesuchte Elastizitätsmodul lässt sich dadurch bestimmen, dass die ermittel
 E = Wert und Fehler.
 
 für den Elastizitätsmodul E bei zweiseitiger Einspannung.
+
+
+Runder Stab in einseitiger Einspannung
+
+F= 7,54 N
+I= (506,77 +/- 16,09)mm⁴
+E= (82,003 +/- 2,620)kN/mm²
+
+Eckiger Stab in einseitiger Einspannung
+
+F= 7,54 N
+I= (856,91+/- 13,75)kN/mm²
+E= (87,97 +/- 1,412)kN/mm²
+
+Runder Stab in beidseitiger Auflage
+
+F= 23,15 N
+I= (506,77 +/- 16,09)mm⁴
+E(rechts)= (155,04 +/- 9,649)kN/mm²
+E(links)= (163,31 +/- 8,285)kN/mm²
