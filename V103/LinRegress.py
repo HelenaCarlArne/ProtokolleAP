@@ -39,7 +39,7 @@ print("")					##
 print("Einseitige Einspannung, rund")  
 linregress(x_lin_rund, drund)
 print("")
-print("Einseitige Einspannung, recheckig")
+print("Einseitige Einspannung, rechteckig")
 linregress(x_lin_rechteckig, drecht)
 
 

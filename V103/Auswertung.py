@@ -20,7 +20,7 @@ durch = ufloat(np.mean(d),np.std(d)) 					#### Berechnung der Werte
 seite1 = ufloat(np.mean(s1),np.std(s1))
 seite2 = ufloat(np.mean(s2),np.std(s2))
 
-Irund = 1/4*(durch/2)**(4)*np.pi 						#### Berechnung der Flächenträgheitsmomente
+Irund = 0.25*(durch/2)**(4)*np.pi					#### Berechnung der Flächenträgheitsmomente
 Irecht = 1/12*seite2**3*seite1
 
 print("Der Durchmesser betraegt:",durch,"mm") 			#### Ausgabe
@@ -29,8 +29,8 @@ print("Die x-Seite betraegt:",seite1,"mm")
 print("Der y-Seite betraegt:",seite2,"mm")
 print("")
 print("Fuer die Flaechentraegheitsmomente gelten:")
-print("Rund:",Irund)
-print("Recht:",Irecht)
+print("Rund:",Irund,"mm^4")
+print("Recht:",Irecht,"mm^4")
 print("")
 
 
