@@ -1,5 +1,5 @@
 
-Das Ziel des Versuches ist die Bestimmung des Elastizitätsmodules E als Proportionalitätsfaktor des Hooke'schen Gesetzes.
+Das Ziel des Versuches ist die Bestimmung des Elastizitätsmodules E als Proportionalitätsfaktor des Hooke'schen Gesetzes. Der Elastizitätsmodul E ist eine bedeutsame Materialkonstante.
 
 1. Theorie
 
