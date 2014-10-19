@@ -7,31 +7,35 @@
 4.1.   Vergleich mit Literaturwerten
 4.1.1. Runder Stab; einseitige Einspannung
 
-Im Versuch wird mit anschließender Rechnung der Wert E= (82,003 +/- 2,620)kN/mm² als E-Modul des runden Stabes bei einseitiger Einspannung ermittelt. Vergleiche mit der Literatur ergeben, dass dieser Wert dem von Messing mit E(Messing)=78 000 bis 123 000 N/mm2 entspricht; eine Materialangabe auf den Proben war nicht gegeben.[ Mit einem Fehler von 3,195% ] ..und einer Abweichung von 5,13% vom niedrigsten Literaturwert liegen beide Fehler im Rahmen der Messungenauigkeiten
-Trägt man die in Tabelle 1 angegebene Auslenkung D(x) gegen die Linearisierung x_lin=Lx²-1/3*x³ auf zeigt sich in Diagramm 1 ein linearer Zusammenhang zwischen beiden Messgrößen.
+Durch den Versuch wurde der Wert E= (82,003 +/- 2,620)kN/mm² als E-Modul des runden Stabes bei einseitiger Einspannung ermittelt. 
+Vergleiche mit Literaturwerten ergeben, dass dieser Wert im Spektrum der Werte von Messing mit E(Messing)=78 000 bis 123 000 N/mm2 liegt. Mit einer relativen Unsicherheit von 3,195% liegen alle wahrscheinlichen Werte um den errechneten Wert von 82,003 kN/mm^2 im Rahmen der Literaturwerte. Daher wird die Behauptung unterstützt, dass der Messingfarbene Stab massiv aus Messing-Legierung besteht.
+Trägt man die in Tabelle 1 angegebene Auslenkung D(x) gegen die Linearisierung x_lin=Lx²-1/3*x³ auf, zeigt sich in Diagramm 1 ein linearer Zusammenhang mit geringer Abweichung zwischen beiden Messgrößen (Fehlerwerte von m und b). Der geringe Wert des Regressionskoeffizienten b ist zusätzliches Maß für die Plausibilität der Messwerte, da D(x=0)=0 gilt.
 
 4.1.2. Eckiger Stab; einseitige Einspannung
 
-FÜr diese Messung wird der Modul zu E= (87,97 +/- 1,412)kN/mm² berechnet. Mit einem absoluten Fehler von 1,605% und einer Abweichung um 12,782% vom kleinsten Literaturwert liefert auch der eckige Stab Messing als Material der Probe. Betrachtet man Diagramm 2 fällt erneut der lineare Zusammenhang zwischen der Auslenkung D(x) und der Linearisierung auf.
+Mit den Werten der Messung wird der Modul zu E= (87,97 +/- 1,412)kN/mm² berechnet. Mit einer relativen Unsicherheit von 1,605% und einer Abweichung von +12,782% des errechneten Wertes vom kleinsten Literaturwert erhärtet die Vermutung über das Material des verwandten Stabes. Betrachtet man die Regression in Diagramm 2, so wird ebenfalls der lineare Zusammenhang zwischen der Auslenkung D(x) und der Linearisierung erkennbar.
 
 4.1.3. Runder Stab; zweiseitige Auflage
 
-Für die Seite rechts des Gewichts ergibt sich E(rechts)= (155,04 +/- 9,649)kN/mm². Dieser Wert, mit einem Fehler von 6,224%, weicht um 112,383 % vom kleinsten; 26,057% vom größten Literaturwert ab. Noch größere Fehler ergeben sich für die linke Seite:
-E(links)= (163,31 +/- 8,285)kN/mm² mit einem Fehler von 5,073% weicht 223,71% vom höchsten und 32,772% vom geringsten Literaturwert ab. Diese Fehler sind nicht durch kleine Messungenauigkeiten erklärbar.
+Für die Seite rechts des Gewichts ergibt sich E(rechts)= (155,04 +/- 9,649)kN/mm². Dieser Wert mit einer Unsicherheit von 6,224% weicht stark ab und liegt nicht im Spektrum der Literaturwerte. Der Wert weicht um 112,383 % vom kleinsten un um 26,057% vom größten Literaturwert ab.
+Für die linkes Seite wurde E(links)= (163,31 +/- 8,285)kN/mm² mit einer Unsicherheit von 5,073% bestimmt und weicht ebenfalls signifikant, 223,71% vom höchsten und 32,772% vom geringsten Literaturwert, ab. 
+weicht  ab.Diese Fehler sind nicht durch kleine Messungenauigkeiten erklärbar.
 
-Eventuell werden diese groben Abweichungen durch die Versuchsdurchführung hervorgerufen: Um die Messuhren vor dem Messen der Auslenkung auf Null zu stellen wurde das Gewicht nach jedem Verschieben der Messuhren zum Ort x abgehängt. Aufgrund der gegebenen Längenskala, welche für das genaue Ablesen der Stabmitte nicht geeignet war, besteht die Möglichkeit, dass das Gewicht anschließend nicht genau in die Mitte zurückgehängt, sondern leicht verschoben wurde. Die daraus resultierende ungleichmäßige Kraftverteilung macht sich in internen starken Schwankungen der Messwerte bemerkbar. Dies ist ebenfalls in Diagramm 3 zu erkennen: Trotz angepasster Linearisierung für die zweiseitige Auflage ergeben die Messwerte für die linke und rechte Seite keine eindeutige Gerade. 
+Diese groben Abweichungen werden eventuell durch die Versuchsdurchführung hervorgerufen. Um die Messuhren vor dem Messen der Auslenkung auf Null zu stellen, wurde das Gewicht nach jedem Verschieben der Messuhren zum Ort x abgehängt. Aufgrund der gegebenen Längenskala, welche für das genaue Ablesen der Stabmitte nicht geeignet war, besteht die Möglichkeit, dass das Gewicht anschließend nicht genau in die Mitte zurückgehängt, sondern leicht verschoben wurde. Die daraus resultierende ungleichmäßige Kraftverteilung ist in internen starken Schwankungen der Messwerte bemerkbar, welche in Diagramm 3 zu erkennen sind. Trotz angepasster Linearisierung für die zweiseitige Auflage ergeben die Messwerte für die linke und rechte Seite keine eindeutige Gerade. 
 
-Außerdem ist eine Abweichung der Werte zwischen linker und rechter Seite vorzufinden. Dies fußt auf der Tatsache, dass - entgegen der Annahme für die Linearisierung - nur ein Stabende wirklich auflag; das rechte Stabende war wie in den vorheringen Messungen eingespannt. Dadurch lassen sich die Differenzen der Messwerte am Ort x für DELTAx_r und DELTAx_l erklären.
+Außerdem ist eine Abweichung der Werte zwischen linker und rechter Seite vorzufinden. Dies fußt auf der Tatsache, dass - entgegen der Annahme für die Linearisierung - nur ein Stabende wie in der Theorie gefordert auflag, während das andere Stabende fest eingespannt wurde. Dadurch lassen sich die Differenzen der Messwerte am Ort x für DELTAx_r und DELTAx_l erklären.
 
-Auszuschließende Fehlerquellen sind Messuhren und eingeklemmte Mechanik, denn dann würden die Messungen bei einseiter Einspannung denselben Fehler aufweisen; werder Messuhren noch der gesamte Versuchsaufbau wurden zwischenzeitlich ausgewechselt oder geändert. Gleiches gilt für einfache Verfahrensfehler. Rechenfehler sind prinzipiell möglich, aber durch mehrmalige Kontrollrechnungen durch mehrere Personen ebenfalls unwahrscheinlich. 
+Auszuschließende Fehlerquellen sind Messuhren und eingeklemmte Mechanik, diese Fehler würden die Messungen bei einseiter Einspannung vergleichbare Abweichungen bewirken. Weder Messuhren noch der gesamte Versuchsaufbau wurden zwischenzeitlich ausgewechselt oder geändert.
 
 4.2. Vergleich von rundem und eckigem Stab.
 
-Vergleicht man die Trägheitsmomente des runden Stabes I= (506,77 +/- 16,09)mm⁴ und des eckigen Stabes I= (856,91+/- 13,75)kN/mm² fällt sofort die Differenz auf. Der runde Stab hat ein geringeres Moment gegenüber dem Eckigen, was sich durch geometrische Betrachtungen erklären lässt, aber auch intuitiv klar wird. 
+Als Formfaktoren zeigen die Trägheitsmomente des runden Stabes I= (506,77 +/- 16,09)mm⁴ und des eckigen Stabes I= (856,91+/- 13,75)mm⁴, dass die Form des Stabes wesentlicher Bestimmungsfaktor für die Deformation ist. 
+Runde Formen umschließen im Vergleich zu anderen Formen eine Fläche mit kleinstmöglichem Umfang. Die äußersten Stabstücke dA von nicht-runden Stäben werden aufgrund der größeren Entfernung von der neutralen Faser stärker gestreckt oder gestaucht als die äußersten Stabstücke von runden Stäben, wodurch ein größerer Hebelarm realisiert wird. Diese bewirkt eine stärkeres inneres Drehmoment, welches das Gleichgewicht und damit die Deformation bestimmt.
 
-[!!!!! Hier fügt Meister Arne eine spannende, mitreißende und äääußerst faszinierende Erklärung ein]
+[Zufrieden, meine Gutste?]
 
-4.3. Vergleich von einseitiger und zweiseiter Einspannung/Auflage // Fazit
+4.3. Vergleich von einseitiger und zweiseitiger Einspannung und Fazit
 
-Für die Bestimmung des Moduls eigenen sich nach theoretischen Überlegungen beide Messvorgänge. Dabei ist die einseitige Einspannung der zweiseitigen Auflage vorzuziehen, aus oben genannten Gründen. Die Theorie ist nicht ausreichend ausreichend an die Realität bzw. Durchführung angepasst. Eventuell ließe sich der Fehler etwas verkleinern, würde erst im Offset seperat und anschließend ohne abhängen des Gewichts die Auslenkung gemessen. Desweiteren sollten zwei tatsächliche Auflagepunkte benutzt werden um die Unterschiede zwischen rechter und linker Seite zu minimieren.
-Ansonsten ist der Versuch gut für die Messung vom E geeigent und liefert anständige Ergebnisse.
+Für die Bestimmung des Moduls eignen sich nach theoretischen Überlegungen beide Messvorgänge. Dabei ist die einseitige Einspannung der zweiseitigen Auflage vorzuziehen, da die einseitige Einspannung wenig fehleranfällig und leicht in der Durchführung ist. Die Theorie bei zweiseitiger Einspannung ist nicht ausreichend an die Durchführbarkeit angepasst, wodurch signifikante Fehler entstehen. Als alternative Durchführung zur Vermeidung von Fehlern sollten Offset-Werte seperat aufgenommen und anschließend ohne Abhängen des Gewichts die Auslenkung gemessen werden. 
+
+Diese Versuchsreihe eignet sich zur Bestimmung des Elastizitätsmodules.
