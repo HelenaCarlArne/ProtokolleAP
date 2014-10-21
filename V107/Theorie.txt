@@ -1,0 +1,27 @@
+
+
+Theorie
+
+Die Temperaturabhängigkeit der dynamischen Viskosität von dest. Wasser soll mit Hilfe des Kugelfall-Viskosimeters nach Höppler bestimmt werden.
+Das Verhalten eines Fluids in dem sich ein bewegter Körper befindet, wird durch die dynamische Viskosität ETHA beschrieben. Diese ist abhängig von der Fallzeit t des Körpers, der Apparaturkonstante K, Köper- und Flüssigkeitsdichte RHO_K und RHO_F.
+
+ Viskosität=t*(rho_K-rho_F)*K
+
+Für die meisten Fluide beschreibt das Andradesche Gesetz annähernd die Abhängigkeit der Viskosität von der Teperatur.
+
+
+Viskosität(T)= Aexp(B/T) 
+
+A und B sind dabei Konstanten, T ist die Temperatur.
+
+Bewegt sich der Körper im Fluid so wirken drei Kräfte auf ihn ein.
+
+Die stokessche Reibung F_R=6 Pi v r ETHA ist abhängig von der Geschwindigkeit und den Abmessungen des Körpers und der Viskosität der Flüssigkeit. Sie entsteht durch die Reibung einzelner Flüssigkeitsschichten.
+
+Durch die Masse des Körpers wird Flüssigkeit verdrängt; dies führt zur Auftriebskraft F_A=rho_Fluid*V_Fluid*g. Dabei ist spielen Dichte und Volumen der verwendeten Flüssigkeit neben der Erdbeschleunigung g eine Rolle.
+
+Die dritte Kraft ist den anderen beiden entgegengerichtet und resultiert aus dem Schwerefeld der Erde: F_G=m*g.
+
+Befinden sich die Kräfte im Gleichgewicht, so ist die Geschwindigkeit, mit der der Körper durch die Flüssigkeit gleitet, konstant.
+
+
