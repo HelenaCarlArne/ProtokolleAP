@@ -25,3 +25,17 @@ Die dritte Kraft ist den anderen beiden entgegengerichtet und resultiert aus dem
 Befinden sich die Kräfte im Gleichgewicht, so ist die Geschwindigkeit, mit der der Körper durch die Flüssigkeit gleitet, konstant.
 
 
+
+FEHLT:
+
+laminare Strömung:
+
+-wirbelfrei -> Gradientenbildung
+-Flüssigkeit strömt in Schichten; diese vermischen sich nicht
+
+
+Reynoldszahl
+
+-beschreibt Verhalten der Strömung
+ -> ab kritischer Geschwindigkeit und hoher Re-Zahl ist Strömung turbulent
+
