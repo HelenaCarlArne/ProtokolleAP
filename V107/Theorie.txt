@@ -1,41 +1,30 @@
-
+Ziel
+Die dynamischen Viskosität von dest. Wasser und ihre Temperaturabhängigkeit sollen mit Hilfe des Kugelfall-Viskosimeters nach Höppler bestimmt werden.
 
 Theorie
+Das Verhalten eines Fluids, in dem sich ein bewegter Körper befindet, wird unter anderem durch die dynamische Viskosität ETHA beschrieben, welche ein Maß für die Zähflüssigkeit ist. Diese ist bei konstanter Temperatur durch die Fallzeit t des Körpers, der Apparaturkonstante K und die Dichten des Fallkörpers RHO_K und der Flüssigkeit RHO_F bestimmbar. Es gilt
 
-Die Temperaturabhängigkeit der dynamischen Viskosität von dest. Wasser soll mit Hilfe des Kugelfall-Viskosimeters nach Höppler bestimmt werden.
-Das Verhalten eines Fluids in dem sich ein bewegter Körper befindet, wird durch die dynamische Viskosität ETHA beschrieben. Diese ist abhängig von der Fallzeit t des Körpers, der Apparaturkonstante K, Köper- und Flüssigkeitsdichte RHO_K und RHO_F.
+ Viskosität=t*(rho_K-rho_F)*K.	(Nummer)
 
- Viskosität=t*(rho_K-rho_F)*K
+Die Temperaturabhängigkeit der Viskosität beschreibt das Andradesche Gesetz für die meisten Fluide mit
 
-Für die meisten Fluide beschreibt das Andradesche Gesetz annähernd die Abhängigkeit der Viskosität von der Teperatur.
+Viskosität(T)= Aexp(B/T),	(Nummer)
 
+wobei A und B Konstanten sind und T die Temperatur beschreibt. 
 
-Viskosität(T)= Aexp(B/T) 
+Anwendung findet die Viskosität bei der Betrachtung von Kräften. Bewegt sich der Körper im Fluid, so wirken im Wesentlichen die stokessche Reibung F_Stokes und der Auftrieb F_Auftrieb entgegen der Gravitation F_G. 
+Die stokesche Reibung mit F_Stokes=6 Pi v r ETHA ist linear abhängig von der Geschwindigkeit v des Körpers durch das Fluid, während die Auftriebskraft mit F_Auftrieb=rho_Fluid*V_Fluid*g abhängig von dem Volumen und der Dichte des Fluides ist.
 
-A und B sind dabei Konstanten, T ist die Temperatur.
+Skizze: Hohler Glaszylinder mit Kugel. Eingezeichnet und beschrieben sind Kräfte und Abhängigkeiten.
+Unterschrift: Abb.1: Die Kräfte auf einen Körper in einem Fluid.
 
-Bewegt sich der Körper im Fluid so wirken drei Kräfte auf ihn ein.
+Befinden sich diese zwei Kräfte mit der Gravitation im Gleichgewicht, so ist die Geschwindigkeit v konstant.
 
-Die stokessche Reibung F_R=6 Pi v r ETHA ist abhängig von der Geschwindigkeit und den Abmessungen des Körpers und der Viskosität der Flüssigkeit. Sie entsteht durch die Reibung einzelner Flüssigkeitsschichten.
+Anders als die Newtonsche Reibung behandelt die Stokessche Reibung laminare Strömung, aufgrund dessen kleine Geschwindigkeiten v vorausgesetzt werden. Eine Strömung wird laminar genannt, wenn die Flüssigkeitsschichten verschiedener Fließgeschwindigkeiten nicht turbulent vermischen und ein Geschwindigkeitsgradient existiert. 
+Um turbulente und laminare Strömung voneinander rechnerisch zu unterscheiden, wird die Reynoldzahl Re mit 
 
-Durch die Masse des Körpers wird Flüssigkeit verdrängt; dies führt zur Auftriebskraft F_A=rho_Fluid*V_Fluid*g. Dabei ist spielen Dichte und Volumen der verwendeten Flüssigkeit neben der Erdbeschleunigung g eine Rolle.
+Re = Dichte_rho*Geschwindigkeit_v*char.Länge_d/Viskosität_eta
 
-Die dritte Kraft ist den anderen beiden entgegengerichtet und resultiert aus dem Schwerefeld der Erde: F_G=m*g.
+definiert, wobei die char. Länge d eine ausgezeichnete Länge im Strömungssystem ist und im festen Verhältnis zur effektiven Fläche steht; hier ist d gleich dem Durchmesser der Kugel. Übersteigt die Reynoldszahl einen festen Wert, Re ungefähr= 2300 (nach Rotta, 1950) [citation needed!!], so ist der Übergang von laminarer in turbulenter Strömung wahrscheinlich und der Stokesschen Reibung die Newtonsche Reibung vorzuziehen.
 
-Befinden sich die Kräfte im Gleichgewicht, so ist die Geschwindigkeit, mit der der Körper durch die Flüssigkeit gleitet, konstant.
-
-
-
-FEHLT:
-
-laminare Strömung:
-
--wirbelfrei -> Gradientenbildung
--Flüssigkeit strömt in Schichten; diese vermischen sich nicht
-
-
-Reynoldszahl
-
--beschreibt Verhalten der Strömung
- -> ab kritischer Geschwindigkeit und hoher Re-Zahl ist Strömung turbulent
 
