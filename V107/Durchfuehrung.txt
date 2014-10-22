@@ -1,20 +1,19 @@
-Aufbau
+Aufbau und Durchführung
 
 
-Skizze: Höppler-Viskosimeter – Sichtbar: leichte Neigung, Zwei Stopfen, umspülender Heizzylinder, Kugel, Mesmarken
+Skizze: Höppler-Viskosimeter – Sichtbar: leichte Neigung, Zwei Stopfen, umspülender Heizzylinder, Kugel, Messmarken
 Unterschrift: Skizze des Viskosimeters nach Höppler
 
-(Für das Experiment/Es) werden zwei Glaskugeln, deren Durchmesser nur geringfügig kleiner sind als der des inneren Zylinders, ausgewählt. Der innere Zylinder wird so mit bidestilliertem Wasser gefüllt, dass keine Luftblasen eingeschlossen werden, bevor die gereinigte und polierte Kugel eingelassen wird.
+Der innere Zylinder wird so mit bidestilliertem Wasser gefüllt, dass keine Luftblasen eingeschlossen werden, bevor die gereinigte und polierte Kugel eingelassen wird. Es werden hierzu zwei Glaskugeln verschiedener Größe ausgewählt, deren Durchmesser nur geringfügig kleiner sind als der des inneren Zylinders. Die Temperatur des Wassers im inneren Zylinder kann mit temperierter Heizflüssigkeit im Heizzylindern angehoben werden; die Temperatur der Heizflüssigkeit ist anhand eines Thermometers und eines Thermostates regulierbar.
 
-Die Masse und der Durchmesser zweier Glaskugeln Kugeln, deren Durchmesser nur geringfügig kleiner ist der des Inneren Zylinders, mit Waage und Schieblehre bestimmt.
+Die Vorrichtung ist drehbar und verfügt über Messmarken im inneren Zylinder im Abstand von 100mm.
 
-1.Messung bei Raumtemperatur mit großer und kleiner Kugel
+1. Messung bei Raumtemperatur mit großer und kleiner Kugel
 
-Mit geschlossener Schraube wurde 10 x die Fallzeit t via Stoppuhr gemessen, wobei immer zwei Zeiten gemessen wurden.
-
-Dieses Verfahren wurde mit der zweiten Kugel wiederholt.
+Mit der Kugel am unteren Ende des Fallzylinders wird zu Beginn der Messung die Vorrichtung um 180° gedreht und die Fallzeit t aufgenommen, die die Kugel benötigt, um von der oberen zur unteren Messmarke zu gelangen. Hierzu wird die Fallzeit zweimal unabhängig voneinander aufgenommen und der Vorgang wiederholt, sodass 10 Messwertpaare ermittelt werden.
+Dies wird analog mit der zweiten Kugel durchgeführt. Die Raumtemperatur wird am Thermometer abgelesen.
 
 2. Messung der Temperaturabhängigkeit mit großer Kugel
 
-Es wurden bei 10 Temperaturen ( aufsteigend von 25 nach 75 Grad Celsius in 5 Grad Schritten) je zwei Messungen mit zwei Wertepaaren ausgeführt. Zu beachten war, die Entlüftungsschraube mit steigender Temperatur während des Heizvorgangs zu lockern.
+Die Temperatur wird zwischen den Messungen schrittweise von 25°C auf 75°C in 5°C-Schritten erhöht, sodass für 10 verschiedene Temperaturen Messwerte bestimmt werden. Nach kurzer Aufheizphase des inneren Zylinders wird für jede Temperaturstufe die Fallzeit t der größeren Kugel zweifach unabhängig voneinander bestimmt und das Verfahren wiederholt, sodass je zwei Wertepaare aufgenommen werden.
 
