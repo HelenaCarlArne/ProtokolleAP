@@ -1,0 +1,20 @@
+Aufbau
+
+
+Skizze: Höppler-Viskosimeter – Sichtbar: leichte Neigung, Zwei Stopfen, umspülender Heizzylinder, Kugel, Mesmarken
+Unterschrift: Skizze des Viskosimeters nach Höppler
+
+(Für das Experiment/Es) werden zwei Glaskugeln, deren Durchmesser nur geringfügig kleiner sind als der des inneren Zylinders, ausgewählt. Der innere Zylinder wird so mit bidestilliertem Wasser gefüllt, dass keine Luftblasen eingeschlossen werden, bevor die gereinigte und polierte Kugel eingelassen wird.
+
+Die Masse und der Durchmesser zweier Glaskugeln Kugeln, deren Durchmesser nur geringfügig kleiner ist der des Inneren Zylinders, mit Waage und Schieblehre bestimmt.
+
+1.Messung bei Raumtemperatur mit großer und kleiner Kugel
+
+Mit geschlossener Schraube wurde 10 x die Fallzeit t via Stoppuhr gemessen, wobei immer zwei Zeiten gemessen wurden.
+
+Dieses Verfahren wurde mit der zweiten Kugel wiederholt.
+
+2. Messung der Temperaturabhängigkeit mit großer Kugel
+
+Es wurden bei 10 Temperaturen ( aufsteigend von 25 nach 75 Grad Celsius in 5 Grad Schritten) je zwei Messungen mit zwei Wertepaaren ausgeführt. Zu beachten war, die Entlüftungsschraube mit steigender Temperatur während des Heizvorgangs zu lockern.
+
