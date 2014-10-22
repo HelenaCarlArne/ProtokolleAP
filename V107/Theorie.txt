@@ -20,11 +20,11 @@ Unterschrift: Abb.1: Die Kräfte auf einen Körper in einem Fluid.
 
 Befinden sich diese zwei Kräfte mit der Gravitation im Gleichgewicht, so ist die Geschwindigkeit v konstant.
 
-Anders als die Newtonsche Reibung behandelt die Stokessche Reibung laminare Strömung, aufgrund dessen kleine Geschwindigkeiten v vorausgesetzt werden. Eine Strömung wird laminar genannt, wenn die Flüssigkeitsschichten verschiedener Fließgeschwindigkeiten nicht turbulent vermischen und ein Geschwindigkeitsgradient existiert. 
+Anders als die Newtonsche Reibung behandelt die Stokessche Reibung laminare Strömungen, aufgrund dessen kleine Geschwindigkeiten v vorausgesetzt werden. Eine Strömung wird laminar genannt, wenn die Flüssigkeitsschichten verschiedener Fließgeschwindigkeiten nicht turbulent vermischen und ein Geschwindigkeitsgradient existiert. 
 Um turbulente und laminare Strömung voneinander rechnerisch zu unterscheiden, wird die Reynoldzahl Re mit 
 
 Re = Dichte_rho*Geschwindigkeit_v*char.Länge_d/Viskosität_eta
 
-definiert, wobei die char. Länge d eine ausgezeichnete Länge im Strömungssystem ist und im festen Verhältnis zur effektiven Fläche steht; hier ist d gleich dem Durchmesser der Kugel. Übersteigt die Reynoldszahl einen festen Wert, Re ungefähr= 2300 (nach Rotta, 1950) [citation needed!!], so ist der Übergang von laminarer in turbulenter Strömung wahrscheinlich und der Stokesschen Reibung die Newtonsche Reibung vorzuziehen.
+definiert, wobei die char. Länge d eine ausgezeichnete Länge im Strömungssystem ist und im festen Verhältnis zur effektiven Fläche steht; hier ist d gleich dem Durchmesser der Kugel. Erreicht die Geschwindigkeit des Körpers einen kritischen Punkt ( v_körper > v_krit) steigt die Reynoldszahl über einen festen Wert, Re ungefähr= 2300 (nach Rotta, 1950) [citation needed!!]und der Übergang von laminarer in turbulenter Strömung ist wahrscheinlich. Dabei ist die Newtonsche Reibung der Stokesschen vorzuziehen.
 
 
