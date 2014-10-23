@@ -18,8 +18,8 @@ ta25,ta30,ta35,ta40,ta45,ta50,ta55,ta60,ta65,ta70 = np.genfromtxt('Messung2_Temp
 
 mG=0.00461			# in kg											#### Konstanten
 mK=0.00444			# in kg
-rG=0.01058/2 		# in m
-rK=0.010565/2 	# in m
+rG=0.0158/2 		# in m
+rK=0.01565/2 	# in m
 rhoW = 997.54 # Dichte des Wassers bei 23 C in kg/m^3
 apparatK = 7.64*10**(-8) #Pa m³/kg
 
@@ -43,15 +43,15 @@ rhoK = mK/((4/3)*np.pi*((rK)**3))
 etaK= apparatK*(rhoK-rhoW)*k
 apparatG=etaK/((rhoG-rhoW)*g)
 
-print("Fuer 25c:",t25)											#### Ausgabe
-print("Fuer 30c:",t30)
-print("")
-print("Fuer 35c:",t35)
-print("Fuer 40c:",t40)
-print("")
-print("Fuer 45c:",t45)
-print("Fuer 50c:",t50)
-print("")
+#print("Fuer 25c:",t25)											#### Ausgabe
+#print("Fuer 30c:",t30)
+#print("")
+#print("Fuer 35c:",t35)
+#print("Fuer 40c:",t40)
+#print("")
+#print("Fuer 45c:",t45)
+#print("Fuer 50c:",t50)
+#print("")
 #print("Fuer 50c:",t55)
 #print("Fuer 60c:",t60)
 #print("")
@@ -69,9 +69,8 @@ print("Mit diesem Eta ist die Apparaturkonstante:", apparatG)
 print("")
 
 
-T = np.arange(25,75,5)+273.15
-print(T)										#### Regressionen
-T_func = T#np.linspace(0,0.05)
+T = np.arange(25,75,5)+273.15										#### Regressionen
+T_func = np.linspace(0.0030,0.0034)
 
 def f(x, m, b):
     return m*x+b
@@ -97,12 +96,12 @@ etaG_2= (noms(apparatG))*(rhoG-rhoW)*(noms(fallzeit))
 
 reg, cov = curve_fit(f, 1/T, noms(etaG))
 plt.plot(T_func, f(T_func, *reg), 'r-', label='Fit')
-plt.text(0.03,7.2, r"$x_{lin}= \; T^{-1} \; \lbrack a.u.\rbrack$", horizontalalignment='center',fontsize=12)
-plt.text(0.053,8.75, r"$y = 29.61x+7.43$", horizontalalignment='center',color="r",fontsize=12)
+plt.text(0.0031,-7.8, r"$x_{lin}= \; T^{-1} \; \lbrack a.u.\rbrack$", horizontalalignment='center',fontsize=12)
+plt.text(0.00285,-7.1, r"$y = 29.61x+7.43$", horizontalalignment='center',color="r",fontsize=12)
 plt.ylabel(r'$ln(\eta)\;\lbrack a.u.\rbrack$')
 plt.errorbar(1/T, noms(etaG) ,yerr=stds(etaG),fmt="bx", label="Werte")
 plt.legend(loc="best")
 plt.tight_layout
 plt.show()
-print(etaG_2)
+print(etaG_2*1000)
 
