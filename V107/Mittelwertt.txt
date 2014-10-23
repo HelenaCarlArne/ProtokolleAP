@@ -1,0 +1,12 @@
+# Temperaturabhängigkeitsmessung: Mittelwert t
+
+75.77
+68.03
+61.25
+55.06
+50.55
+46.62
+43.92
+40.60
+37.69
+35.54
