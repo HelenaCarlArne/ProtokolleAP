@@ -19,4 +19,14 @@ Die Fehler wurden nach der Gaußschen Fehlerfortpflanzung berechnet.
 
 3.2 Bestimmung der Konstanten in der Andradeschen Gleichung
 
+Um die Viskosität nach der Andradeschen Gleichung in Abhängigkeit von der Temperatur bestimmen zu können, müssen zuerst die Konstanten A und B berechnet werden. Dafür wird Gleichung ##NUmmer linearisiert.
 
+Andradesche Gleichung umformen..
+Die linearisierte Gleichung der Form y(x)=m*x+b ist eine Geradengleichung; A einspricht der Steigung m, B dem y-Achsenabschnitt.
+Die Regression erfolgt unter Zuhilfenahme von Rechnern und unter Verwendung der Formeln ..
+
+Die dimensionslose Steigung ist A=(3,135 +/- 0,3699) *10⁻⁶, der y-Achsenabschnitt B=1712,979 +/- 37,718.
+
+3.3 Strömungsart
+
+Re = Dichte_rho*Geschwindigkeit_v*char.Länge_d/Viskosität_eta
