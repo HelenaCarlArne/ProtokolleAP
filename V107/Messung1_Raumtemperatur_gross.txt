@@ -1,6 +1,6 @@
 # 1.) Große Kugel bei Raumtemperatur 
 # Masse: 	m = 4,61 g
-# Durchmesser:	d = 10,58 mm
+# Durchmesser:	d = 15,8 mm
 #
 # t[sec]
 82.78	

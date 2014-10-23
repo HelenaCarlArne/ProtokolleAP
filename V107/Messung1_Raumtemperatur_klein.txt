@@ -1,6 +1,6 @@
 # 2.) Kleine Kugel bei Raumtemperatur
 # Masse:	m = 4,44 g
-# Durchmesser: 	d = 10,565 mm
+# Durchmesser: 	d = 15,65 mm
 #
 #t[sec]
 11.95 
