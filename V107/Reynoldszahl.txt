@@ -1,0 +1,11 @@
+# Temperaturabhängigkeitsmessung: Reynoldszahl berechnet mit rho=998.2 km/m³ , d=0.0158 m und Eta=1.106*10⁻³
+18.82
+20.96
+23.24
+25.95
+28.23
+30.66
+32.51
+35.08
+37.79
+40.07
