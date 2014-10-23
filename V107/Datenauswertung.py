@@ -44,8 +44,8 @@ rhoK = mK/((4/3)*np.pi*((rK)**3))
 etaK= apparatK*(rhoK-rhoW)*k
 apparatG=etaK/((rhoG-rhoW)*g)
 
-etaG_2= (noms(apparatG))*(rhoG-rhoW)*(noms(fallzeit))
-#
+etaG_2= (apparatG)*(rhoG-rhoW)*(fallzeit)
+
 Re = (rhoW*(0.1/fallzeit)*rG*2)/etaG_2
 
 print("Viskositaet in Pa*sec:")
@@ -60,9 +60,10 @@ print("")
 print("Reynoldzahlen:")
 print(Re)
 
-
-
-
+np.savetxt("Auswertung/Viskositaeten.txt", np.array([noms(etaG_2),stds(etaG_2)]).T)
+np.savetxt("Auswertung/Reynoldzahlen.txt", np.array([noms(Re),stds(Re)]).T)
+np.savetxt("Auswertung/Geschwindigkeiten.txt", np.array([noms((0.1/fallzeit)),stds((0.1/fallzeit))]).T)
+np.savetxt("Auswertung/Zeiten.txt", np.array([noms((fallzeit)),stds((fallzeit))]).T)
 
 
 
