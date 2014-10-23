@@ -25,8 +25,15 @@ Andradesche Gleichung umformen..
 Die linearisierte Gleichung der Form y(x)=m*x+b ist eine Geradengleichung; A einspricht der Steigung m, B dem y-Achsenabschnitt.
 Die Regression erfolgt unter Zuhilfenahme von Rechnern und unter Verwendung der Formeln ..
 
-Die dimensionslose Steigung ist A=(3,135 +/- 0,3699) *10⁻⁶, der y-Achsenabschnitt B=1712,979 +/- 37,718.
+Die dimensionslose Steigung ist A=(3,135 +/- 0,3699) *10⁻⁶, der y-Achsenabschnitt B=1712,979 +/- 37,718. Wir die Linearisierung der Viskosität aufgetragen gegen den Kehrwert der Temperatur zeigt sich, wie in DIagramm 1 ersichtlich, ein linearer Zusammenhang.
 
 3.3 Strömungsart
 
-Re = Dichte_rho*Geschwindigkeit_v*char.Länge_d/Viskosität_eta
+Um die Strömungsart zu charakterisieren wird die Reynoldszahl Re = Dichte_rho*Geschwindigkeit_v*char.Länge_d/Viskosität_eta der Strömung bestimmt. Maßgebliche Größen sind die Dichte des Fluids, die Geschwindigkeit und Länge des Körpers und die Viskosität.
+
+Die Geschwindigkeit berechnet sich über das Weg-Zeit-Gesetz nach s=v*t. s = 100mm ist die zurückgelegte Strecke; t entspricht dem Mittelwert der gemessenen Fallzeiten.
+
+Die große Kugel mit der Geschwindigkeit v= 0,001197 m/s hat Re=17,06922 bei Raumtemperatur. Für die kleine Kugel mit v= 0,008346548 beträgt die Reynoldszahl Re=118,505639.
+
+Die Reynoldszahl für die temperaturabhängige Viskosität bei der großen Kugel ist für die jeweilige Temperatur in Tabelle () aufgetragen.
+
