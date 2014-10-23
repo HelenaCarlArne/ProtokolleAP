@@ -58,15 +58,7 @@ apparatG=etaK/((rhoG-rhoW)*g)
 #print("Fuer 65c:",t65)	
 #print("Fuer 70c:",t70)
 #print("")
-print("Zeit fuer die grosse Kugel:",g,"sec")
-print("Zeit fue die kleine Kugel:",k,"sec")
-print("")
-print("Die Dichte der grossen Kugel:", rhoG, "kg/m^3")
-print("Die Dichte der kleinen Kugel:", rhoK, "kg/m^3")
-print("")
-print("Eta, bestimmt mit der kleinen Kugel, ist:",etaK)
-print("Mit diesem Eta ist die Apparaturkonstante:", apparatG)
-print("")
+
 
 
 T = np.arange(25,75,5)+273.15										#### Regressionen
@@ -84,15 +76,12 @@ def linregress(x, y):
     b_error = sigma_y * np.sqrt(np.sum(x**2) / Delta)
     print ("Die Regressionssteigung/B ist:", m,"+/-", m_error)
     print ("Der Regressions-Y-Achsenabschnitt ist:", b,"+/-", b_error)
-    print("A ist:",np.exp(b),"+/-",np.sqrt(np.exp(2*b)*b_error**2))
+    print("Die Konstante A im Andradeschen Gesetz ist:",np.exp(b),"+/-",np.sqrt(np.exp(2*b)*b_error**2))
     return(m,m_error,b,b_error) 
 
 																#### Plots
 etaG =unp.log(apparatG*(rhoG-rhoW)*fallzeit)
 linregress(1/T,noms(etaG))
-etaG_2= (noms(apparatG))*(rhoG-rhoW)*(noms(fallzeit))
-#etaG_neu= unp.log(apparatG)+unp.log(rhoG-rhoW)+unp.log(fallzeit)
-
 
 reg, cov = curve_fit(f, 1/T, noms(etaG))
 plt.plot(T_func, f(T_func, *reg), 'r-', label='Fit')
@@ -103,5 +92,5 @@ plt.errorbar(1/T, noms(etaG) ,yerr=stds(etaG),fmt="bx", label="Werte")
 plt.legend(loc="best")
 plt.tight_layout
 plt.show()
-print(etaG_2*1000)
+
 

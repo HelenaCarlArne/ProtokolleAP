@@ -38,6 +38,8 @@ t65 = ufloat(np.mean(ta65),stats.sem(ta65))
 t70 = ufloat(np.mean(ta70),stats.sem(ta70))
 fallzeit = np.array([t25,t30,t35,t40,t45,t50,t55,t60,t65,t70])
 
+
+
 rhoG = mG/((4/3)*np.pi*(rG)**3)
 rhoK = mK/((4/3)*np.pi*((rK)**3))
 
@@ -48,6 +50,22 @@ etaG_2= (apparatG)*(rhoG-rhoW)*(fallzeit)
 
 Re = (rhoW*(0.1/fallzeit)*rG*2)/etaG_2
 
+
+print("Fallzeit bei RT fuer die grosse Kugel:")
+print(g,"sec")
+print("Fallzeit bei RT fuer die kleine Kugel:")
+print(k,"sec")
+print("")
+print("Die Dichte der grossen Kugel:")
+print(rhoG, "kg/m^3")
+print("Die Dichte der kleinen Kugel:")
+print(rhoK, "kg/m^3")
+print("")
+print("Eta, bestimmt mit der kleinen Kugel, ist in Pa*sec:")
+print(etaK)
+print("Mit diesem Eta ist die Apparaturkonstante in willkuerlichen Einheiten:")
+print(apparatG)
+print("")
 print("Viskositaet in Pa*sec:")
 print(etaG_2) 
 print("")
