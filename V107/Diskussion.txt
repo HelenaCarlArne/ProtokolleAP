@@ -1,15 +1,21 @@
-
+﻿
 4. Diskussion
 
-In Grafik 1 ist ln(Eta) gegen den Kehrwert der Temperatur aufgetragen. Aus der Regressionsrechnung erbringt A= Wert und B= Wert. Die Auswertung des Diagrammes gibt die Werte A_D; B_D aus. Es ist ein linearer Zusammenhang zwischen dem natürlichen Logarithmus der Viskosität und 1/T zu erkennen.
-Vergleicht man die in Tabelle () angegebenen Viskositäten für die spezifischen Temperatur mit den Literaturwerten, liegen die Abweichungen zwischen 0,109 mPas (größte Abweichung) und 0,063 mPas (kleinste Abweichung). (Zum direkten Vergleich wurden die Werte in Tabelle 5 aufgetragen.) Da die Abweichungen alle in einem ähnlichen Bereich liegen, wäre es möglich, dass das verwendete Wasser eine größere Viskosität aufweist, als das der Literaturwerte. Ist dies nicht der Fall, könnte ein systematischer Fehler vorliegen. Da die Fallzeit t manuell gemessen wurde, liegt in ihr das größte Fehlerpotential; trotz der Messung von Wertepaaren.
+4.1 Vergleich der Viskosität mit der Literatur
 
-(Es ist sofort zu erkennen, dass mit steigender Temperatur die Zähigkeit des Fluids abnimmt. Durch das Erhitzen sind die Verbindungen der Wassermoleküle weniger stark. Daraus folgt eine höhere Beweglichkeit - es resultiert eine geringere Fallzeit t der großen Kugel.)
+In Grafik 1 ist ln(Eta) gegen den Kehrwert der Temperatur aufgetragen. Aus der Regressionsrechnung folgt A= Wert und B= Wert. ??Die Auswertung des Diagrammes gibt die Werte A_D; B_D aus.?? Es ist ein linearer Zusammenhang zwischen dem natürlichen Logarithmus der Viskosität und 1/T zu erkennen.
+Vergleicht man die in Tabelle () angegebenen Viskositäten für die spezifischen Temperatur mit den Literaturwerten, so liegen die Abweichungen zwischen 0,063 mPa*s und 0,109 mPa*s. Fußnote:(Zum direkten Vergleich wurden die Werte in Tabelle 5 aufgetragen.) Da die Abweichungen in gleicher Größenordnung liegen, ist es möglich, dass das verwendete Wasser eine größere Viskosität aufweist, als die Flüssigkeit für die Literaturwerte. Weiter könnte ein systematischer Fehler vorliegen, da die Fallzeiten t manuell gemessen wurden. 
 
 
-Mit Re= 17,06922 liegt die Reynoldszahl der großen Kugel bei Raumtemperatur weit unter dem in der Literatur angegebenen Grenzwert Re = 2300. 
-Auch die kleine Kugel mit einer deutlich höheren Geschwindigkeit und mit einer Reynoldszahl Re=118,505639, welche etwa 7 mal so hoch ist wie der Wert der großen Kugel, liegt immer noch im Bereich der laminaren Strömungen. Die Wahrscheinlichkeit für eventuelle Verwirbelungen ist damit kaum gegeben. 
+4.2 Abnahme der Reibung mit steigender Temperatur
 
-In Tabelle () sind die Reynoldszahlen für die jeweilig gemessene Temperatur aufgelistet. Mit wachsender Temperatur steigt auch der Wert der Reynoldszahl von 20,74 bei 298,15°K, der kleinsten gemessenen Temperatur, auf 94,26 bei 343, 15°K. Auch in diesem Versuchteil bleibt die Strömung laminar und erreicht nicht einmal die Nähe des Literaturwertes.
+Zu erkennen ist, dass mit steigender Temperatur die Viskosität/Zähflüssigkeit des Fluids abnimmt. Durch erhöhte Molekularbewegung und größerem molekularen Abstand wird beim Erhitzen die intermolekulare Bindung des Wassers, etwa durch Wasserstoffbrücken- und Keesom-Bindung, geschwächt.
+Dementsprechend wird der Bewegung der Kugel durch die Flüssigkeit ein geringer Reibungswiderstand entgegengesetzt und so die Geschwindigkeit erhöht.
 
+
+4.3 Diskussion der Strömung
+
+Bei Raumtemperatur liegt die Reynoldszahl der großen Kugel mit Re= 17,06922 weit unter dem in der Literatur angegebenen Grenzwert von Re = 2300. Auch die kleine Kugel mit einer wesentlich höheren Geschwindigkeit und mit einer Reynoldszahl Re=118,505639, welche etwa das 7-fache des Wertes für die große Kugel ist, liegt im Bereich laminarer Strömungen. Die Wahrscheinlichkeit für eventuelle Verwirbelungen ist vernachlässigbar klein. 
+
+Für höhere Temperaturen sind in Tabelle () die Reynoldszahlen für die jeweilig gemessene Temperatur aufgelistet. Mit wachsender Temperatur steigt der Wert der Reynoldszahl von 20,74 bis zum errechneten Höchstwert von 94,26 bei 343.15K. Auch in diesem Versuchteil bleibt die Strömung mit hoher Wahscheinlichkeit rein laminar.
 
