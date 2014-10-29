@@ -1,48 +1,54 @@
-\section{Theorie} 
+
+\section{Ziel}
 \label{sec:ziel}
+Es werden die Trägheitsmomente verschiedener Körper gemessen und anschließend mit den theoretisch errechneten Werten verglichen. Hierzu werden die Winkelrichtgröße $D$ und das Trägheitsmoment der Drillachse $I_{\mathup{D}}$ bestimmt.
 
-In diesem Versuch sollen die Trägheitsmomente verschiedener Körper gemessen und anschließend mit den theoretisch errechneten Werten verglichen werden. Dafür werden die Winkelrichtgröße $D$ und das Trägheitsmoment der Drillachse $I_{\mathup{D}}$ benötigt.
-
+\section{Theorie} 
 \label{sec:theorie}
-
-Bei Drehbewegungen sind das Drehmoment $M$, das Trägheitsmoment $I$ und die Winkelbeschleunigung {\Omega} maßgebliche Größen. Das Drehmoment 
+Translation und Rotation verbinden Analogien.
+Bei Drehbewegungen sind das Drehmoment $\vec{M}$, das Trägheitsmoment $I$ und die Winkelbeschleunigung $\vec{\omega}$ maßgebliche Größen. Das Drehmoment $\vec{M}$ mit
 \begin{equation}
-\label{1}
-M=r\times F=D\phi
+	\label{eq:Moment_Kraft}
+	\vec{M}=\vec{r}\times \vec{F}\\
 \end{equation}
-ist abhängig von der Kraft $F$, welche im Abstand $r$ von der Drehachse angreift. Es kann aber auch über die Winkelrichtgröße $D$ in Analogie zur Federkonstanten $k$ und der Auslenkung um den Winkel $\phi$ beschrieben werden. [Der Drehimpuls als Erhaltungsgröße kann nur durch ein äußeres Drehmoment M geändert werden.# eventuell weglassen; eigentlich unwichtig]
-
-Die Masse ist wichtiges Element der Translation. 
-Ihr Analogon bei Rotationsbewegungen ist das Trägheitsmoment. Dies ist definiert als
+ist abhängig von der Kraft $\vec{F}$, welche  im Abstand $|\vec{r}|$ von der Drehachse angreift. 
+Ausgedrückt über die Winkelrichtgröße $D$ und über die Auslenkung des Winkels $\phi$ ist der Betrag des Drehmomentes 
 \begin{equation}
-	\label{2}
-
-I=\int_{m} {r_{i}^{2}}\mathup{d}m 
+	\label{eq:Moment_Winkelricht}
+	|\vec{M}|=D\phi.
 \end{equation}
-
-für einen festen Körper mit homogener Massenverteilung, der sich um eine feste Achse, verlaufend durch den Körperschwerpunkt, mit einer konstanten Winkelgeschwindigkeit $\omega$ dreht. Falls die Drehachse nicht durch den Schwerpunkt verläuft kann das Trägheitsmoment mit dem Satz von Steiner 
+Das Trägheitsmoment $I$ ist, analog zur Masse $m$ in Translation, der Widerstand eines Drehmoments $\vec{M}$.
+Es gilt für Drehachsen durch den Masseschwerpunkt $S$
+\begin{align}
+	\label{eq:Tragheit}
+	I_{\mathup{S}} &= \sum_{i=1}^n m_{i}\cdot r_{i}^{2}
+		\intertext{für diskrete Massestücke $m_{i}$ mit dem Abstand $r_i$ von der Rotationsachse und}
+	I_{\mathup{S}} &=\int_{m} {r_{i}^{2}}\mathup{d}m\\ 
+	  &=\int_{V_{\text{Körper}}} \rho{\vec{r}}{r_{i}^{2}}\mathup{d}V
+\end{align}
+für kontinuierliche Masseverteilungen mit Massenverteilung $\rho{\vec{r}}$.
+Ist die Drehachse um $\mathup{a}$ parallel zur Achse durch den Schwerpunkt verschoben, so kann das Trägheitsmoment mit dem Satz von Steiner, 
 \begin{equation}
- \label{3}
-I= I_{\mathup{S}}+m\mathup{a^2} 
+	\label{eq:steiner}
+	I_{\mathup{a}}= I_{\mathup{S}}+m\cdot\mathup{a^2}, 
 \end{equation}
+berechnet werden. 
+%Das Trägheitsmoment $I_{\mathup{a}}$ setzt sich zusammen aus dem Trägheitsmoment des Körperschwerpunkts $I_{\mathup{S}}$ und dem Produkt aus der Gesamtmasse $m$ des Körpers und dem Quadrat des senkrechten Abstands der eigentlichen Drehachse die um $a$ parallel zur Schwerpunktsachse verschoben ist.
 
-berechnet werden. Das Gesamtträgheitsmoment $I$ setzt sich zusammen aus dem Trägheitsmoment des Körperschwerpunkts I_{\mathup{S} und dem Produkt aus der Gesamtmasse $m$ des Körpers und dem Quadrat des senkrechten Abstands der eigentlichen Drehachse die um $a$ parallel zur Schwerpunktsachse verschoben ist.
 
-Mechanische Drehschwingungen - der Gegensatz ist die Translation - führen harmonische Schwingungen mit der Schwingungsdauer
-
+Mechanische Drehschwingungen führen harmonische Schwingungen mit der Schwingungsdauer
 \begin{equation}
-\label{4}
-T=2*\mathup{\pi} \sqrt{\frac{I}{D}}
+	\label{eq:Schwingperiode}
+	T=2\mathup{\pi} \sqrt{\frac{I}{D}}
 \end{equation}
-
-für kleine Auslenkungswinkel $\phi$ aus. $D$ berechnet sich mit Formel (1) und (4) zu
-
+für kleine Auslenkungswinkel $\phi$ aus. 
+Die Winkelrichtgröße $D$ berechnet sich mit Formel \eqref{eq:Moment_Kraft} und \eqref{eq:Schwingperiode} zu
 \begin{equation}
-\label{5}
-D= 4\mathup{\pi^{2}}*I*\frac{1}{T} =\frac{M}{\phi} =\frac{F*r}{\phi}
+	\label{eq:Winkelricht}
+	D= 4\mathup{\pi^{2}}\cdot\frac{I}{T} =\frac{F\cdot r}{\phi},
 \end{equation}
 
 
-,wobei die Auslenkung senkrecht ... [ #fehlt: keine Formulieridee].
+wobei die Auslenkung senkrecht %... %[ #fehlt: keine Formulieridee].
 
 % section theorie (end)
