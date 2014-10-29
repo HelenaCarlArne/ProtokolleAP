@@ -1,0 +1,79 @@
+To-Do-Liste
+
+-Inhaltsverzeichnis rausschmeißen
+
+-Abbildungen: Versuchsaufbau, Positionenen Modellpuppe einfügen
+
+-Auswertung
+
+~ D berechnen und Mittelwert mit Fehler bilden
+~ I_D berechnen über T_D²*D/4pi²=I mit
+ - Mittelwert und Fehler von T
+ - Mittelwert und Fehler von D aus vorherigem Kapitel
+ - Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung angeben
+
+~I_Z berechnen  über T_Z²*D/4pi²=I
+ - Mittelwert und Fehler von T_Z
+ - Mittelwert und Fehler von D aus vorherigem Kapitel
+ - Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung
+
+ - Mittelwert und Fehler von Masse, Durchmesser und Höhe berechnen
+ - theoretisches Trägheitsmoment über I_Z=Integral.. berechnen: Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung
+
+ - Vergleiche theoretische und gemessene Werte
+ - berechne relative Fehler zum besseren Vergleich
+
+~I_K berechnen  über T_K²*D/4pi²=I
+ - Mittelwert und Fehler von T_K
+ - Mittelwert und Fehler von D aus vorherigem Kapitel
+ - Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung
+
+- Mittelwert und Fehler von Masse, Durchmesser berechnen
+ - theoretisches Trägheitsmoment über I_K=Integral.. berechnen: Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung
+
+ - Vergleiche theoretische und gemessene Werte
+ - berechne relative Fehler zum besseren Vergleich
+
+~I_P1 berechnen über T_P1²*D/4pi²=I
+ - Mittelwert und Fehler von T_P
+ - Mittelwert und Fehler von D aus vorherigem Kapitel
+ - Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung
+
+ - Mittelwert und Fehler von Masse, Arm1, Arm2, Bein1, Bein2, Rumpf, Kopf berechnen
+ - theoretische Trägheitsmomente von Arm1, Arm2, Bein1, Bein2, Rumpf, Kopf berechnen: Werte von den 6 Momenten mit Fehlerangaben
+
+
+ - Vergleiche theoretische und gemessene Werte über das Verhältnis!
+
+~I_P2 berechnen über T_P2²*D/4pi²=I
+ - Mittelwert und Fehler von T_P
+ - Mittelwert und Fehler von D aus vorherigem Kapitel
+ - Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung
+
+ - Mittelwert und Fehler von Masse, Arm1, Arm2, Bein1, Bein2, Rumpf, Kopf berechnen
+ - theoretische Trägheitsmomente von Arm1, Arm2, Bein1, Bein2, Rumpf, Kopf berechnen: Werte von den 6 Momenten mit Fehlerangaben
+
+
+ - Vergleiche theoretische und gemessene Werte über das Verhältnis!
+
+~Diskussion
+
+ - Fehler bei D:
+  - Winkel nur nach Augenmaß abmessbar
+
+ - Fehler bei I_D
+   - manuelle Zeitmessung
+ - Kann I_D vernachläsigt werden?
+
+ - In wie weit stimmen theoretische und gemessene Momente überein? Wo liegen Fehler? 
+ - Ist der Satz von Steiner anwendbar? Wenn nicht, warum haben wir doofe Ergebnisse raus?
+
+Fehlerquellen
+
+-Ablesefehler Winkel, Federwaage
+-manuelle Zeitmessung: Reaktionszeit, Ende einer Schwingung wird nach Augenmaß berechnet: Versuch, den Fehler zu minimieren durch messen von 5 Schwingunsperioden statt einer; insbesondere die Puppe hat sich besonders schnell gedreht, was die Zeitmessung schwierig macht
+-Puppe verändert geringfügig ihre Position: Arme/Beine bleiben nicht konstant auf einer Höhe während der Messung
+
+
+
+
