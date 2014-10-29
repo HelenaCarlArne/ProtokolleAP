@@ -1,9 +1,48 @@
-\section{Theorie} % (fold)
+\section{Theorie} 
+\label{sec:ziel}
+
+In diesem Versuch sollen die Trägheitsmomente verschiedener Körper gemessen und anschließend mit den theoretisch errechneten Werten verglichen werden. Dafür werden die Winkelrichtgröße $D$ und das Trägheitsmoment der Drillachse $I_{\mathup{D}}$ benötigt.
+
 \label{sec:theorie}
-Die Masse ist wichtiges Element der Translation. 
-Ihr Analogon bei Rotationsbewegungen ist das Trägheitsmoment und ist definiert als
+
+Bei Drehbewegungen sind das Drehmoment $M$, das Trägheitsmoment $I$ und die Winkelbeschleunigung {\Omega} maßgebliche Größen. Das Drehmoment 
 \begin{equation}
-	\label{1}
-	\int_{m} r_i^2\mathup{d}m
+\label{1}
+M=r\times F=D\phi
 \end{equation}
+ist abhängig von der Kraft $F$, welche im Abstand $r$ von der Drehachse angreift. Es kann aber auch über die Winkelrichtgröße $D$ in Analogie zur Federkonstanten $k$ und der Auslenkung um den Winkel $\phi$ beschrieben werden. [Der Drehimpuls als Erhaltungsgröße kann nur durch ein äußeres Drehmoment M geändert werden.# eventuell weglassen; eigentlich unwichtig]
+
+Die Masse ist wichtiges Element der Translation. 
+Ihr Analogon bei Rotationsbewegungen ist das Trägheitsmoment. Dies ist definiert als
+\begin{equation}
+	\label{2}
+
+I=\int_{m} {r_{i}^{2}}\mathup{d}m 
+\end{equation}
+
+für einen festen Körper mit homogener Massenverteilung, der sich um eine feste Achse, verlaufend durch den Körperschwerpunkt, mit einer konstanten Winkelgeschwindigkeit $\omega$ dreht. Falls die Drehachse nicht durch den Schwerpunkt verläuft kann das Trägheitsmoment mit dem Satz von Steiner 
+\begin{equation}
+ \label{3}
+I= I_{\mathup{S}}+m\mathup{a^2} 
+\end{equation}
+
+berechnet werden. Das Gesamtträgheitsmoment $I$ setzt sich zusammen aus dem Trägheitsmoment des Körperschwerpunkts I_{\mathup{S} und dem Produkt aus der Gesamtmasse $m$ des Körpers und dem Quadrat des senkrechten Abstands der eigentlichen Drehachse die um $a$ parallel zur Schwerpunktsachse verschoben ist.
+
+Mechanische Drehschwingungen - der Gegensatz ist die Translation - führen harmonische Schwingungen mit der Schwingungsdauer
+
+\begin{equation}
+\label{4}
+T=2*\mathup{\pi} \sqrt{\frac{I}{D}}
+\end{equation}
+
+für kleine Auslenkungswinkel $\phi$ aus. $D$ berechnet sich mit Formel (1) und (4) zu
+
+\begin{equation}
+\label{5}
+D= 4\mathup{\pi^{2}}*I*\frac{1}{T} =\frac{M}{\phi} =\frac{F*r}{\phi}
+\end{equation}
+
+
+,wobei die Auslenkung senkrecht ... [ #fehlt: keine Formulieridee].
+
 % section theorie (end)
