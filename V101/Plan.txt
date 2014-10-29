@@ -4,13 +4,19 @@ To-Do-Liste
 
 -Abbildungen: Versuchsaufbau, Positionenen Modellpuppe einfügen
 
--Auswertung
+Auswertung
+
+
+--> Bestimme D und I_D mit Hilfe vom Steiner
 
 ~ D berechnen und Mittelwert mit Fehler bilden
-~ I_D berechnen über T_D²*D/4pi²=I mit
- - Mittelwert und Fehler von T
- - Mittelwert und Fehler von D aus vorherigem Kapitel
- - Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung angeben
+(~ I_D berechnen über T_D²*D/4pi²=I mit)
+ (- Mittelwert und Fehler von T)
+ (- Mittelwert und Fehler von D aus vorherigem Kapitel)
+ (- Wert von I mit Fehler über Gaußsche Fehlerfortpflanzung angeben)
+~ Bestimme I_D durch lineare Regression; trage T² gegen a² auf
+
+--> Bestimme I der Körper und vergleiche mit theoretischen Werten
 
 ~I_Z berechnen  über T_Z²*D/4pi²=I
  - Mittelwert und Fehler von T_Z
@@ -33,6 +39,9 @@ To-Do-Liste
 
  - Vergleiche theoretische und gemessene Werte
  - berechne relative Fehler zum besseren Vergleich
+
+
+--> Bestimme I der Puppe in 2 Postitionen und vergleiche mit einfacher Modellrechnung
 
 ~I_P1 berechnen über T_P1²*D/4pi²=I
  - Mittelwert und Fehler von T_P
