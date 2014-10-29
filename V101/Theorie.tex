@@ -6,35 +6,30 @@ Es werden die Trägheitsmomente verschiedener Körper gemessen und anschließend
 \section{Theorie} 
 \label{sec:theorie}
 Translation und Rotation verbinden Analogien.
-Bei Drehbewegungen sind das Drehmoment $\vec{M}$, das Trägheitsmoment $I$ und die Winkelbeschleunigung $\vec{\omega}$ maßgebliche Größen. Das Drehmoment $\vec{M}$ mit
-\begin{equation}
-	\label{eq:Moment_Kraft}
-	\vec{M}=\vec{r}\times \vec{F}\\
-\end{equation}
-ist abhängig von der Kraft $\vec{F}$, welche  im Abstand $|\vec{r}|$ von der Drehachse angreift. 
-Ausgedrückt über die Winkelrichtgröße $D$ und über die Auslenkung des Winkels $\phi$ ist der Betrag des Drehmomentes 
+Bei Rotationen sind das Drehmoment $\vec{M}$, das Trägheitsmoment $I$ und die Winkelbeschleunigung $\dot{\vec{\omega}}$ maßgebliche Größen. Das Drehmoment $\vec{M}$ mit $\vec{M}=\vec{r}\times \vec{F}$ ist abhängig von der Kraft $\vec{F}$, 
+welche  im Abstand $|\vec{r}|$ von der Drehachse angreift. 
+Ausgedrückt über die Winkelrichtgröße $D$ und die Auslenkung des Winkels $\phi$ ist der Betrag des Drehmomentes ebenfalls
 \begin{equation}
 	\label{eq:Moment_Winkelricht}
 	|\vec{M}|=D\phi.
 \end{equation}
-Das Trägheitsmoment $I$ ist, analog zur Masse $m$ in Translation, der Widerstand eines Drehmoments $\vec{M}$.
+
+Das Trägheitsmoment $I$ ist, analog zur Masse $m$ in Translationen, der Widerstand eines Drehmoments $\vec{M}$.
 Es gilt für Drehachsen durch den Masseschwerpunkt $S$
 \begin{align}
 	\label{eq:Tragheit}
 	I_{\mathup{S}} &= \sum_{i=1}^n m_{i}\cdot r_{i}^{2}
-		\intertext{für diskrete Massestücke $m_{i}$ mit dem Abstand $r_i$ von der Rotationsachse und}
-	I_{\mathup{S}} &=\int_{m} {r_{i}^{2}}\mathup{d}m\\ 
-	  &=\int_{V_{\text{Körper}}} \rho{\vec{r}}{r_{i}^{2}}\mathup{d}V
+\intertext{für diskrete Massestücke $m_{i}$ im Abstand $r_i$ von der Rotationsachse und}
+	I_{\mathup{S}} &=\int_{m_{\text{K}}} {r_{i}^{2}}\mathup{d}m\\ 
+	  			   &=\int_{V_{\text{K}}} \rho(\vec{r})\cdot{r_{\perp}^{2}}\mathup{d}V
 \end{align}
-für kontinuierliche Masseverteilungen mit Massenverteilung $\rho{\vec{r}}$.
-Ist die Drehachse um $\mathup{a}$ parallel zur Achse durch den Schwerpunkt verschoben, so kann das Trägheitsmoment mit dem Satz von Steiner, 
+für kontinuierliche Masseverteilungen mit Massenverteilung $\rho(\vec{r})$.
+Ist die Drehachse um $a$ parallel zur Achse durch den Schwerpunkt verschoben, so kann das Trägheitsmoment $I_{a}$ unter Zuhilfenahme des Satzes von Steiner berechnet werden, 
 \begin{equation}
 	\label{eq:steiner}
-	I_{\mathup{a}}= I_{\mathup{S}}+m\cdot\mathup{a^2}, 
+	I_{a}= I_{\mathup{S}}+m_{\text{K}}\cdot a^2. 
 \end{equation}
-berechnet werden. 
 %Das Trägheitsmoment $I_{\mathup{a}}$ setzt sich zusammen aus dem Trägheitsmoment des Körperschwerpunkts $I_{\mathup{S}}$ und dem Produkt aus der Gesamtmasse $m$ des Körpers und dem Quadrat des senkrechten Abstands der eigentlichen Drehachse die um $a$ parallel zur Schwerpunktsachse verschoben ist.
-
 
 Mechanische Drehschwingungen führen harmonische Schwingungen mit der Schwingungsdauer
 \begin{equation}
@@ -42,13 +37,11 @@ Mechanische Drehschwingungen führen harmonische Schwingungen mit der Schwingung
 	T=2\mathup{\pi} \sqrt{\frac{I}{D}}
 \end{equation}
 für kleine Auslenkungswinkel $\phi$ aus. 
-Die Winkelrichtgröße $D$ berechnet sich mit Formel \eqref{eq:Moment_Kraft} und \eqref{eq:Schwingperiode} zu
-\begin{equation}
+Die Winkelrichtgröße $D$ berechnet sich bei $\vec{F}\perp \vec{r}$ mit Formel \eqref{eq:Moment_Winkelricht} und \eqref{eq:Schwingperiode} zu
+\begin{align}
 	\label{eq:Winkelricht}
-	D= 4\mathup{\pi^{2}}\cdot\frac{I}{T} =\frac{F\cdot r}{\phi},
-\end{equation}
-
-
-wobei die Auslenkung senkrecht %... %[ #fehlt: keine Formulieridee].
+	D&=\frac{F\cdot r}{\phi}\\
+	 &= 4\mathup{\pi^{2}}\cdot\frac{I}{T^2}. 
+\end{align}
 
 % section theorie (end)
