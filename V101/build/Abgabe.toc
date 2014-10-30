@@ -9,4 +9,4 @@
 \contentsline {subsection}{\numberline {3.3}Bestimmung der Trägheitsmomente verschiedener Körper}{4}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Bestimmung der Trägheitsmomente der Modellpuppe für 2 verschiedene Positionen}{5}{subsection.3.4}
 \contentsline {section}{\numberline {4}Auswertung}{5}{section.4}
-\contentsline {section}{\numberline {5}Diskussion}{5}{section.5}
+\contentsline {section}{\numberline {5}Diskussion}{8}{section.5}
