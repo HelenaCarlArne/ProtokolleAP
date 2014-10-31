@@ -1,0 +1,13 @@
+#Abmessungen der Puppe
+#Kopfdurchmesser /m
+
+0.030
+0.030
+0.031
+0.031
+0.030
+0.031
+0.030
+0.031
+0.030
+0.031

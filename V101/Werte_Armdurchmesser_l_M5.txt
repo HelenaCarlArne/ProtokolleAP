@@ -1,0 +1,13 @@
+#Abmessungen der Puppe
+#Armdurchmesser links /m
+
+0.0017
+0.0013
+0.0016
+0.0010
+0.0014
+0.0009
+0.0016
+0.0015
+0.0016
+0.0017
