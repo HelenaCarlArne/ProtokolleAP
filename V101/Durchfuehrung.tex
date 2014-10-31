@@ -1,58 +1,58 @@
 \section{Aufbau und Durchführung} % (fold)
 \label{sec:durchfhrung}
-
-
-In diesem Versuch wird die in %\ref{fig:drillachse} 
-gezeigte Apparatur verwendet: 
-Eine drehbar gelagerte Achse ist über eine Spiralfeder an einen festen Rahmen gekoppelt. 
-In das obere Ende der Drillachse können verschiedene Körper eingespannt werden; 
-in %\ref{fig:drillachse} 
-vertreten durch die Kugel. 
-[ Unterhalb des Körpers befindet sich ein Auslenkungswinkelskalaablesdingsbums. ]
-
-
-%\begin{figure}
-	% \label{fig:drillachse}
-	% \caption{Skizze des Versuchsaufbaus. Eine drehbar gelagerte Drillachse mit Spiralfeder im festen Rahmen mit Befestigung für die Probekörper hier eine Kugel.}
-	% \centering
-	% \includegraphics[height=7cm]{drillachse}
-% \end{figure}
-
+\begin{figure}[h]
+	\label{fig:drillachse}
+	\centering
+	\includegraphics[height=7cm]{drillachse}
+	\caption{Skizze des Versuchsaufbaus mit Kugel als Probekörper}
+\end{figure}
+In diesem Versuch wird die gezeigte Apparatur verwendet. 
+Eine drehbar gelagerte Achse ist über eine Spiralfeder an einen festen Rahmen gebunden. 
+In das obere Ende der Drillachse können verschiedene Körper eingespannt und der Auslenkwinkel $\phi$ anhand einer Skala abgelesen werden.
 \subsection{Bestimmung der Winkelrichtgröße $D$}
-Zur Bestimmung der Winkelrichtgröße $D$ wird eine im folgenden als masselos angenommene Metallstange mittig und senkrecht zur Drehachse in die Vorrichtung eingespannt, 
-sodass die Drehachse durch den Stangenschwerpunkt verläuft. 
-Eine im Abstand $r$ zum Drehzentrum angehängte Federwaage misst die Kraft $F$ des rücktreibenden Drehmomentes bei Auslenkung der Metallstange um einen bestimmten Winkel $\phi$. 
-Zu beachten ist, dass die Federwaage bestenfalls senkrecht zum Stab und zur Rotationsachse gehalten wird. 
+\label{subsec:winkelricht}
+Zur Bestimmung der Winkelrichtgröße $D$ wird gemäß \eqref{eq:Moment_Winkelricht} das Drehmoment $\vec{M}$ und der Auslenkwinkel $\phi$ ermittelt. Hierzu wird eine Metallstange so in die Vorrichtung eingespannt, 
+dass die Drehachse durch den Stangenschwerpunkt verläuft senkrecht zur Drehachse steht.
+Eine im Abstand $r$ zum Drehzentrum angehängte Federwaage misst die Kraft $F$ ausgehend vom rücktreibenden Drehmomentes bei Auslenkung der Metallstange um einen ausgewählten Winkel $\phi$. 
+Zu beachten ist, dass die Federwaage senkrecht zum Stab und zur Rotationsachse sein muss. 
 Dadurch kann der Betrag des Drehmoments $M$ durch
 \begin{equation}
-	| \vec{M} | = | \vec{r} \times \vec{F} | = r F \sin (\angle({\vec{r}}),
-	\vec{F}) = r F
+	| \vec{M} | = | \vec{r} \times \vec{F} | = |\vec{r}| |\vec{F}| \sin (\angle({\vec{r}})
 \end{equation}
 berechnet werden.
 Diese Messung wird für 10 verschiedene Winkel $\phi$ zwischen 0 und $2\mathup{\pi}$ durchgeführt. 
-%[Unnötig?..Neben der zuvor beschriebenen statischen Methode kann D auch über die gemessene Schwingungsdauer T mit Formel (NUMMER) berechnet werden. Diese dynamische Methode wird jedoch nicht angewandt.]
 
 \subsection{Bestimmung des Eigenträgheitsmomentes $I_{\mathup{D}}$ der Drillachse}
-Auf die Metallstange aus Kapitel 2.1 wird links und rechts des Drehzentrums je eine als punktförmig angesehene Masse befestigt, deren Abstand $a$ zum Stangenschwerpunkt variabel ist. 
-Nun wird die Stange ausgelenkt und mit einer Stoppuhr die Schwingungsdauer $T$ für 5 Perioden gemessen. 
-Das Verfahren wird für 9 weitere Messwerte wiederholt, wobei vor jeder Messung einer neuer Abstand $a$ eingestellt und notiert wird. 
-Zu beachten ist, dass die links- und rechtsseitige Masse gleichweit vom Mittelpunkt entfernt sind. 
-Im Anschluss an die Messung der Schwingungsdauer werden Gewicht und Abmessungen der Massen mit Waage und Schieblehre bestimmt.
+Auf die Metallstange aus Kapitel \ref{subsec:winkelricht} wird beidseitig im Abstand $a$ von der Drehachse je eine Masse befestigt.
+Die Stange wird um $\phi$ ausgelenkt und mittels einer Stoppuhr die Schwingungsdauer $T$ für 5 Perioden gemessen. 
+Es wird ein neuer Abstand $a$ gewählt und das Verfahren wiederholt, sodass insgesamt 10 Messwerte für Schwingungsdauer $T$ aufgenommen werden.
+Masse und Abmessungen der Massestücke werden mit Waage und Schieblehre bestimmt.
 
-\subsection{Bestimmung der Trägheitsmomente verschiedener Körper}
-Als erster Körper wird ein Styroporzylinder gewählt, welcher senkrecht auf die Drillachse gesteckt wird, 
-nachdem sowohl die Massen, als auch die Metallstange aus vorherigen Messungen von der Apparatur geschraubt wurden. 
-Anschließend wird dieser ebenfalls zur Schwingung gebracht und die Schwingungsdauer $T$ für 5 Schwingungen insgesamt 10 Mal gemessen. 
-Das Verfahren wiederholt sich für die Kugel, den zweiten Körper. 
-Auch diese Körper werden nach der Messung gewogen und mit einer Schieblehre vermessen - Länge und Durchmesser des Zylinders, als auch Durchmesser der Kugel. 
+\subsection{Bestimmung der Trägheitsmomente $I$ verschiedener Körper}
+\label{subsec:traegheitkoerper}
+Als erster Körper wird ein Styroporzylinder gewählt, welcher senkrecht auf die Drillachse gesteckt wird.
+Anschließend wird der Körper in Schwingung versetzt und die Schwingungsdauer $T$ für 5 Schwingungen insgesamt 10 Mal gemessen. 
+Das Verfahren wird für den zweiten Körper, eine Kugel, analog wiederholt.
+Abmessungen und Masse der Probekörper werden mittels Schieblehre und Waage bestimmt.
 
-\subsection{Bestimmung der Trägheitsmomente der Modellpuppe für 2 verschiedene Positionen}
-Die Puppe wird in die Messvorrichtung eingespannt und in Position (a), abgebildet in %\ref{fig:Puppe},
-gebracht. 
-Der Messvorgang verläuft analog zu den vorherigen. 
-Die Zeit $T$ für 5 Schwingungen wird 10 Mal mit einer Stoppuhr gemessen. 
-Danach wird die Puppe in Position (b), ebenfalls in %\ref{fig:Puppe} 
-ersichtlich, gebracht und erneut gemessen. 
+\subsection{Bestimmung der Trägheitsmomente $I$ der Modellpuppe für zwei verschiedene Positionen}
+\begin{figure}[h]
+	\centering
+	\label{fig:puppe}
+	\begin{subfigure}
+		\label{fig:puppe1}
+		\includegraphics[height=7cm]{puppe1}
+		\caption{Position (1) der Modellpuppe}
+	\end{subfigure}
+	\begin{subfigure}
+		\label{fig:puppe2}
+		\includegraphics[height=7cm]{puppe2}
+		\caption{Position (2) der Modellpuppe}
+	\end{subfigure}
+\end{figure}
+Die Puppe in Position (1) wird in die Messvorrichtung eingespannt und 
+der Messvorgang analog zu Kapitel \ref{subsec:traegheitkoerper} durchgeführt. 
+Der Vorgang wird für die Puppe in Position (2) wiederholt.
 Es folgen die Bestimmung des Gewichtes mit einer Waage und die Vermessung der einzelnen Körperteile der Puppe. 
 Es werden Durchmesser und ggf. die Länge von Armen, Beinen, Kopf und Rumpf mit einer Schieblehre vermessen.
 
