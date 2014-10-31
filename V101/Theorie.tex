@@ -14,14 +14,14 @@ Ausgedrückt über die Winkelrichtgröße $D$ und die Auslenkung des Winkels $\p
 	|\vec{M}|=D\phi.
 \end{equation}
 
-Das Trägheitsmoment $I$ ist, analog zur Masse $m$ in Translationen, der Widerstand eines Drehmoments $\vec{M}$.
+Das Trägheitsmoment $I$ ist, analog zur trägen Masse $m$ in Translationen, der Widerstand eines Drehmoments $\vec{M}$.
 Es gilt für Drehachsen durch den Masseschwerpunkt $S$
 \begin{align}
 	\label{eq:Tragheit}
-	I_{\mathup{S}} &= \sum_{i=1}^n m_{i}\cdot r_{i}^{2}
+	 I_{\mathup{S}} &= \sum_{i=1}^n m_{i}\cdot r_{i}^{2}
 \intertext{für diskrete Massestücke $m_{i}$ im Abstand $r_i$ von der Rotationsachse und}
-	I_{\mathup{S}} &=\int_{m_{\text{K}}} {r_{i}^{2}}\mathup{d}m\\ 
-	  			   &=\int_{V_{\text{K}}} \rho(\vec{r})\cdot{r_{\perp}^{2}}\mathup{d}V
+	 I_{\mathup{S}} &=\int_{m_{\text{K}}} {r_{i}^{2}}\mathup{d}m\\
+		   &=\int_{V_{\text{K}}} \rho(\vec{r})\cdot{r_{\perp}^{2}}\mathup{d}V
 \end{align}
 für kontinuierliche Masseverteilungen mit Massenverteilung $\rho(\vec{r})$.
 Ist die Drehachse um $a$ parallel zur Achse durch den Schwerpunkt verschoben, so kann das Trägheitsmoment $I_{a}$ unter Zuhilfenahme des Satzes von Steiner berechnet werden, 
@@ -39,9 +39,11 @@ Mechanische Drehschwingungen führen harmonische Schwingungen mit der Schwingung
 für kleine Auslenkungswinkel $\phi$ aus. 
 Die Winkelrichtgröße $D$ berechnet sich bei $\vec{F}\perp \vec{r}$ mit Formel \eqref{eq:Moment_Winkelricht} und \eqref{eq:Schwingperiode} zu
 \begin{align}
+	\begin{split}
 	\label{eq:Winkelricht}
 	D&=\frac{F\cdot r}{\phi}\\
 	 &= 4\mathup{\pi^{2}}\cdot\frac{I}{T^2}. 
+	\end{split}
 \end{align}
 
 % section theorie (end)
