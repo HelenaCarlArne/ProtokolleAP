@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  1 NOV 2014 16:26
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  1 NOV 2014 22:30
  restricted \write18 enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -381,7 +381,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.034 seconds
+luaotfload: fontloader loaded in 0.040 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1701,7 +1701,7 @@ generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
  math
 \g_fontspec_family_latinmodern-math.otf_int=\count503
 luaotfload | load : auto-selecting default features for script: dflt
@@ -1758,7 +1758,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature dtls for script
+luaotfload: font no 24 (LatinModernMath-Regular) defines feature aalt for script
  math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 10.
@@ -1776,7 +1776,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1868,7 +1868,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -2267,6 +2267,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 (./Tabellen/Tabelle1_Winkelrichtgroesse.tex)
 
+Package caption Warning: \label without proper \caption on input line 22.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:M1 I_D' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Reference `eq:winkelricht' on page 5 undefined on input line 5.
+
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 12.
 
@@ -2278,15 +2288,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 12.
 
-(./Tabellen/Tabelle2_Eigentraegheit.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [5]
-Overfull \hbox (4.83046pt too wide) in paragraph at lines 29--31
-[]\EU2/lmr/m/n/10.95 Zur Be-stim-mung des Ei-gen-träg-heits-mo-ments $\EU2/lat
-inmodern-math.otf(0)/m/n/10.95 𝐼[]$ \EU2/lmr/m/n/10.95 wer-den die ge-mit-te
-l-ten Schwingperioden-
+[5] (./Tabellen/Tabelle2_Eigentraegheit.tex)
+Overfull \hbox (14.83046pt too wide) in paragraph at lines 31--33
+[][]\EU2/lmr/m/n/10.95 Zur Be-stim-mung des Ei-gen-träg-heits-mo-ments $\EU2/l
+atinmodern-math.otf(0)/m/n/10.95 𝐼[]$ \EU2/lmr/m/n/10.95 wer-den die ge-mit-
+tel-ten Schwingperioden-
  []
 
 ) (./Tabellen/Tabelle3_Zylinder.tex
@@ -2294,6 +2300,16 @@ l-ten Schwingperioden-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./Tabellen/Tabelle4_Kugel.tex
+Overfull \hbox (5.475pt too wide) detected at line 11
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 12
+ 
+ []
+
+
 Overfull \hbox (5.475pt too wide) detected at line 13
  
  []
@@ -2334,24 +2350,14 @@ Overfull \hbox (5.475pt too wide) detected at line 20
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 21
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 22
- 
- []
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [6] [7] (./Tabellen/Tabelle5_Puppe.tex) [8] (./Diskussion.tex)
+) [6] [7] [8] (./Tabellen/Tabelle5_Puppe.tex) [9] (./Diskussion.tex)
 
 LaTeX Warning: Empty bibliography on input line 28.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
-[9
+[10
 
 
 ]
@@ -2361,21 +2367,28 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39866 strings out of 494695
+ 39872 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 593 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 8 kern, 3 sub_mlist, 17 attribute, 69 glue_
-spec, 17 attribute_list, 1 write nodes
-   avail lists: 1:47,2:7976,3:265,4:3805,5:566,6:1870,7:84,8:16,9:2050,10:988,11
+ 646 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 14 kern, 3 sub_mlist, 23 attribute, 69 glue
+_spec, 23 attribute_list, 1 write nodes
+   avail lists: 1:47,2:7764,3:264,4:3818,5:575,6:1810,7:93,8:16,9:2061,10:988,11
 :510,12:229
- 42391 multiletter control sequences out of 65536+600000
- 87 fonts using 25358611 bytes
- 70i,13n,104p,1049b,1183s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 42392 multiletter control sequences out of 65536+600000
+ 87 fonts using 25358379 bytes
+ 70i,13n,104p,1049b,1165s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-ma
 th.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bo
 ld.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-reg
@@ -2387,10 +2400,10 @@ ic/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/p
 ublic/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentyp
 e/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype
 /public/lm/lmroman12-bold.otf>
-Output written on Abgabe.pdf (9 pages, 108930 bytes).
+Output written on Abgabe.pdf (10 pages, 109615 bytes).
 
-PDF statistics: 218 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 131072)
+PDF statistics: 226 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 131072)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

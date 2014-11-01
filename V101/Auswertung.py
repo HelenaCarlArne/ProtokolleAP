@@ -24,7 +24,7 @@ Phi = np.genfromtxt('Werte/Werte_Phi_M1.txt').T
 Phi_Bogenmass = np.genfromtxt('Werte/Werte_Phi_Bogenmass_M1.txt').T
 #Messung 2, Eigentraegheit
 A_array = np.genfromtxt('Werte/Werte_A_M2.txt').T                          
-T_D_array = np.genfromtxt('Werte/Werte_T_M2.txt').T
+T_D_1, T_D_2, T_D_3, T_D_4, T_D_5, T_D_6, T_D_7, T_D_8, T_D_9, T_D_10  = np.genfromtxt('Werte/Werte_T1_M2.txt')
 m_1_array = np.genfromtxt('Werte/Werte_Masse1_M2.txt').T
 m_2_array = np.genfromtxt('Werte/Werte_Masse2_M2.txt').T
 #Messung 3, Zylinder
@@ -65,6 +65,10 @@ D = ufloat(np.mean(D_array),sem(D_array))
 m_1 = ufloat(np.mean(m_1_array),sem(m_1_array))                         
 m_2 = ufloat(np.mean(m_2_array),sem(m_2_array))                     
 #Messung 2, Eigenträgheit
+T_Nom=np.array([np.mean(T_D_1),np.mean(T_D_2),np.mean(T_D_3),np.mean(T_D_4),np.mean(T_D_5),np.mean(T_D_6),np.mean(T_D_7),np.mean(T_D_8),np.mean(T_D_9),np.mean(T_D_10)])
+T_Std=np.array([sem(T_D_1),sem(T_D_2),sem(T_D_3),sem(T_D_4),sem(T_D_5),sem(T_D_6),sem(T_D_7),sem(T_D_8),sem(T_D_9),sem(T_D_10)])
+T_D_array= unp.uarray(T_Nom,T_Std)
+#print(T_D_array)
 I_D_array = D*(T_D_array)**2/(4*(np.pi)**2)                           
 I_D = I_D_array.mean()  
 #Messung 3, Zylinder  
@@ -170,7 +174,7 @@ print('')
 print("Messung 2:")
 print('Das Gewicht der Masse m_1 ist',m_1,'kg')
 print('Das Gewicht der Masse m_2 ist',m_2,'kg')
-print('Das Eigentraegheitsmoment I der Drillachse ist',I_D,'kgm**2')
+#print('Das Eigentraegheitsmoment I der Drillachse ist ohne Regression',I_D,'kgm**2')
 print("")
 print('')
 print("Messung 3:")

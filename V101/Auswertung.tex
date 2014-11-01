@@ -2,16 +2,16 @@
 \label{sec:swrtng}
 \subsection{Bestimmung der Winkelrichtgröße $D$}
 \input{Tabellen/Tabelle1_Winkelrichtgroesse.tex}
-Mit den Messwerten aus Tabelle \ref{tab:M1 I_D} und $r=0.09965\si{\meter}$ lässt sich das Mittel der Winkelrichtgröße $D$ mit $D_i = \frac{|\vec{F}|\cdot|\vec{r}|}{\phi}$ bestimmen. Die Unsicherheit ist die Standardabweichung des Mittelwertes $\sigma_D$ mit
+Mit den Messwerten aus Tabelle \ref{tab:M1 I_D} und $r=0.09965\si{\meter}$ lässt sich das Mittel der Winkelrichtgröße $D$ mit der Gleichung \eqref{eq:winkelricht} bestimmen. Die Unsicherheit ist die Standardabweichung des Mittelwertes $\sigma_D$ mit
 \begin{align}
-	\sigma_D &= \sqrt{\sigma_D^2} := \sqrt{\frac{1}{n-1} \sum_{i=1}^n{(D_i-\bar{D})^2}}
-	\intertext{mit}
+	\sigma_D &= \sqrt{\sigma_D^2} := \sqrt{\frac{1}{n^2-n} \sum_{i=1}^n{(D_i-\bar{D})^2}}
+	\intertext{und}
 	\bar{D} &= \frac{1}{n} \sum_{i=1}^n{D_i}.
 \end{align}
 Es ergibt sich $D=(0.0757\pm0.0019)\si{\newton\meter}$
 \subsection{Bestimmung des Eigenträgheitsmomentes $I_D$}
-\input{Tabellen/Tabelle2_Eigentraegheit.tex}
-Zur Bestimmung des Eigenträgheitsmomentes $I_D$ wird die verwendete Stange als masselos angenommen, wodurch ihr Anteil am Trägheitsmoment vernachlässigbar ist. 
+Zur Bestimmung des Eigenträgheitsmomentes $I_D$ wird die verwendete Stange als nahezu masselos angenommen, 
+wodurch ihr Anteil am Trägheitsmoment vernachlässigbar ist. 
 Das gemessene Trägheitsmoment setzt sich aufgrund der Linearität des Trägheitsmomentes aus den Trägheitsmomenten der Massestücke $m_1$ und $m_2$ als Punktmassen, sowie dem Eigenträgheitsmoment $I_D$ zusammen,
 \begin{equation}
 	I= I_D+I_{m_1}+I_{m_2}.
@@ -27,13 +27,26 @@ Es gilt
 \begin{equation}
 	T^2= \underbrace{4\mathup{\pi^{2}}\frac{(m_1+m_2)}{D}}_{m_{\text{Reg}}}\cdot a^{2}+\underbrace{4\mathup{\pi^{2}}\frac{I_D}{D}}_{b_{\text{Reg}}}
 \end{equation}
-Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingperioden-Quadrate $\bar{T}^2$ gegen das Abstandsquadrat $a^2$ aufgetragen. Aus der Regression mittels der Formeln
-\begin{align}
-	\Delta &= N \sum({a^2}^2) - {\sum{a^2}}^2\\
-    m_{\text{Reg}} &= \frac{N\sum{a^2\cdot T^2} - \sum{a^2} * \sum{T^2}}{\Delta}\\
-    %B = (np.sum(x**2) * np.sum(y) - np.sum(x) * np.sum(x * y)) / Delta
-    %sigma_y = np.sqrt(np.sum((y - A * x - B)**2) / (N - 2))
-    %A_error = sigma_y * np.sqrt(N / Delta)
-    %B_error = sigma_y * np.sqrt(np.sum(x**2) / Delta)
-\end{align}
+\input{Tabellen/Tabelle2_Eigentraegheit.tex}
+Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingperioden-Quadrate ${T}^2$ gegen das Abstandsquadrat $a^2$ aufgetragen. Aus der Regression mittels der Formeln
+\begin{subequations}
+	\begin{equation}
+		\Delta = N \sum{x^2} - {(\sum{x})}^2
+	\end{equation}
+	\begin{equation}
+		m_{\text{Reg}} = \frac{N\sum{x\cdot y} - \sum{x} \cdot \sum{y}}{\Delta}
+	\end{equation}
+    \begin{equation}
+		b_{\text{Reg}} = \frac{\sum{x^2} \cdot \sum{y} - \sum{x} \cdot \sum{x \cdot y}}{\Delta}
+	\end{equation}
+	\begin{equation}
+		\sigma_{y} = \sqrt{\frac{\sum{(y - m_{\text{Reg}} \cdot x - b_{\text{Reg}})^2}}{N - 2}}
+	\end{equation}
+	\begin{equation}
+		\sigma_{m} = \sigma_{y} \sqrt{\frac{N}{\Delta}}
+	\end{equation}
+	\begin{equation}
+		\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
+	\end{equation}
+\end{subequations}
 % section auswertung (end)
