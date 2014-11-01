@@ -182,5 +182,64 @@ print("")
 print('Das Traegheitsmoment in Position 1 ist',I_1_neu,'kgm**2')
 print('Das Traegheitsmoment in Position 2 ist',I_2_neu,'kgm**2')
 print("")
-linregress(A**2,(T_D)**2)
+#linregress(A**2,(T_D)**2)
 
+V_A_l = np.pi*(A_d_l/2)**2*A_h_l
+V_A_r = np.pi*(A_d_r/2)**2*A_h_r
+V_B_l = np.pi*(B_d_l/2)**2*B_h_l
+V_B_r = np.pi*(B_d_r/2)**2*B_h_r
+V_K = (4/3)*np.pi*(K_d/2)**3
+V_R = np.pi*(R_d/2)**2*R_h
+V_Gesamt = V_A_l+V_A_r+V_B_l+V_B_r+V_R+V_K
+Dichte = m_P/V_Gesamt
+
+#print('Das Volumen des linken Armes ist',V_A_l,'m³')
+#print('Das Volumen des rechten Armes ist',V_A_r,'m³')
+#print('Das Volumen des linken Beines ist',V_B_l,'m³')
+#print('Das Volumen des rechten Beines ist',V_B_r,'m³')
+#print('Das Volumen des Rumpfes ist',V_R,'m³')
+#print('Das Volumen des Kopfes ist',V_K,'m³')
+print('Das Gesamtvolumen',V_Gesamt,'m³')
+print('Die Dichte ist',Dichte,'kg/m³')
+
+m_A_l = Dichte*V_A_l
+m_A_r = Dichte*V_A_r
+m_B_l = Dichte*V_B_l
+m_B_r = Dichte*V_B_r
+m_K = Dichte*V_K
+m_R = Dichte*V_R
+
+#print('Masse des linken Armes:',m_A_l,'kg')
+#print('Masse des rechten Armes:',m_A_r,'kg')
+#print('Masse des linken Beines:',m_B_l,'kg')
+#print('Masse des rechten Beines:',m_B_r,'kg')
+#print('Masse des Kopfes:',m_K,'kg')
+#print('Masse des Rumpfes:',m_R,'kg')
+
+I_A_l_1 = m_A_l*(A_d_l/2)**2*0.5+(R_d/2+A_d_l/2)**2
+I_A_r_1 = m_A_r*(A_d_r/2)**2*0.5+(R_d/2+A_d_r/2)**2
+I_B_l = m_B_l*((B_d_l/2)**2/4+B_h_l**2/12)+(B_h_l/2)**2
+I_B_r = m_B_r*((B_d_r/2)**2/4+B_h_r**2/12)+(B_h_r/2)**2
+I_K = 2/5*m_K*(K_d/2)**2
+I_R = m_R*(R_d/2)**2*0.5
+
+
+I_A_l_2 = m_A_l*((A_d_l/2)**2/4+A_h_l**2/12)+(R_d/2+A_h_l/2)**2
+I_A_r_2 = m_A_r*((A_d_r/2)**2/4+A_h_r**2/12)+(R_d/2+A_h_r/2)**2
+
+print('Das Trägheitsmoment des linken Beines ist',I_B_l,'kgm²')
+print('Das Trägheitsmoment des rechten Beines ist',I_B_r,'kgm²')
+print('Das Trägheitsmoment des Kopfes ist',I_K,'kgm²')
+print('Das Trägheitsmoment des Rumpfes ist',I_R,'kgm²')
+print('')
+print('Das Trägheitsmoment des linken Armes in Position 1 ist',I_A_l_1,'kgm²')
+print('Das Trägheitsmoment des rechten Armes in Position 1 ist',I_A_r_1,'kgm²')
+
+print('Das Trägheitsmoment des linken Armes in Position 2 ist',I_A_l_2,'kgm²')
+print('Das Trägheitsmoment des rechten Armes in Position 2 ist',I_A_r_2,'kgm²')
+
+I_1 = I_A_l_1+I_A_r_1+I_B_l+I_B_r+I_K+I_R
+I_2 = I_A_l_2+I_A_r_2+I_B_l+I_B_r+I_K+I_R
+
+print('Gesamtträgheit Pos. 1',I_1,'kgm²')
+print('Gesamtträgheit Pos. 2',I_2,'kgm²')
