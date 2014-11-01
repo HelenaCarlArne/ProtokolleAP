@@ -1,24 +1,147 @@
+#
+# Header
+#
 
-import numpy as np 									                                                    #### Header
+import numpy as np 									                                                    
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import math
-#import uncertainties as unp
 from uncertainties import ufloat
 from scipy.stats import sem
 
 
+#
+# Eingabe der Werte
+#
 
-# Bestimmung der Winkelrichtgroesse D gemessen im Abstand r=9.965 cm fuer alle Auslenkungen             #### Berechnung und Eingabe
+#Messung 1, Richtwinkel
+    r = 0.09965
+    F = np.genfromtxt('Werte/Werte_F_M1.txt').T                                                  
+    Phi = np.genfromtxt('Werte/Werte_Phi_M1.txt').T
+    Phi_Bogenmass = np.genfromtxt('Werte/Werte_Phi_Bogenmass_M1.txt').T
+#Messung 2, Eigentraegheit
+    A_array = np.genfromtxt('Werte/Werte_A_M2.txt').T                          
+    T_D_array = np.genfromtxt('Werte/Werte_T_M2.txt').T
+    m_1_array = np.genfromtxt('Werte/Werte_Masse1_M2.txt').T
+    m_2_array = np.genfromtxt('Werte/Werte_Masse2_M2.txt').T
+#Messung 3, Zylinder
+    T_Z_array = np.genfromtxt('Werte/Werte_Zylinderzeit_M3_.txt').T               
+    d_Z_array = np.genfromtxt('Werte/Werte_Zylinderdurchmesser_M3_.txt').T
+    h_Z_array = np.genfromtxt('Werte/Werte_Zylinderhohe_M3_.txt').T
+    m_Z_array = np.genfromtxt('Werte/Werte_Zylindermasse_M3_.txt').T
+#Messung 4, Kugel
+    T_K_array = np.genfromtxt('Werte/Werte_Kugelzeit_M4_.txt').T              
+    d_K_array = np.genfromtxt('Werte/Werte_Kugeldurchmesser_M4_.txt').T
+    m_K_array = np.genfromtxt('Werte/Werte_Kugelmasse_M4_.txt').T
+#Messung 5, Puppe
+    A_d_l_array = np.genfromtxt('Werte/Werte_Armdurchmesser_l_M5.txt').T      
+    A_d_r_array = np.genfromtxt('Werte/Werte_Armdurchmesser_r_M5.txt').T
+    A_h_l_array = np.genfromtxt('Werte/Werte_Armlange_l_M5.txt').T
+    A_h_r_array = np.genfromtxt('Werte/Werte_Armlange_r_M5.txt').T
+    B_d_l_array = np.genfromtxt('Werte/Werte_Beindurchmesser_l_M5.txt').T
+    B_d_r_array = np.genfromtxt('Werte/Werte_Beindurchmesser_r_M5.txt').T
+    B_h_l_array = np.genfromtxt('Werte/Werte_Beinlange_l_M5.txt').T
+    B_h_r_array = np.genfromtxt('Werte/Werte_Beinlange_r_M5.txt').T
+    R_d_array = np.genfromtxt('Werte/Werte_Rumpfdurchmesser_M5.txt').T
+    R_h_array = np.genfromtxt('Werte/Werte_Rumpflange_M5.txt').T
+    K_d_array = np.genfromtxt('Werte/Werte_Kopfdurchmesser_M5.txt').T
+    m_P_array = np.genfromtxt('Werte/Werte_Masse_M5.txt').T
+    T_5Schwingungen_1_array = np.genfromtxt('Werte/Werte_Puppenzeit1_M5.txt').T              #VORSICHT: T_1 und T_2 sind fuer 1 Schwingungen!
+    T_5Schwingungen_2_array = np.genfromtxt('Werte/Werte_Puppenzeit2_M5.txt').T
+    T_1_array = T_5Schwingungen_1_array/5
+    T_2_array = T_5Schwingungen_2_array/5
 
-F = np.genfromtxt('Werte/Werte_F_M1.txt').T                                                  
-Phi = np.genfromtxt('Werte/Werte_Phi_M1.txt').T
-Phi_Bogenmass = np.genfromtxt('Werte/Werte_Phi_Bogenmass_M1.txt').T
-r = 0.09965 #m; r = const.
-D = (F*r)/Phi_Bogenmass
-D_neu = ufloat(np.mean(D),sem(D))    
-print('Die Winkelrichtgroesse D betraegt:',D_neu,'Nm')
+
+#
+# Berechnungen
+#
+#Detached
+    I_1 = I_A_l_1+I_A_r_1+I_B_l+I_B_r+I_K+I_R
+    I_2 = I_A_l_2+I_A_r_2+I_B_l+I_B_r+I_K+I_R
+
+#Messung 1, Richtwinkel
+   
+    D_array = (F*r)/Phi_Bogenmass
+    D = ufloat(np.mean(D_array),sem(D_array))   
+    m_1 = ufloat(np.mean(m_1_array),sem(m_1_array))                         
+    m_2 = ufloat(np.mean(m_2_array),sem(m_2_array))                     
+#Messung 2, Eigenträgheit
+    I = (T_D_array)**2*D/(4*(np.pi)**2)                           
+    I_D = ufloat(np.mean(I),sem(I))   
+
+#Messung 3, Zylinder  
+    T_Z = ufloat(np.mean(T_Z_array),sem(T_Z_array))                         
+    d_Z = ufloat(np.mean(d_Z_array),sem(d_Z_array))                         
+    m_Z = ufloat(np.mean(m_Z_array),sem(m_Z_array))     #Experiementelle Masse                     
+    h_Z = ufloat(np.mean(h_Z_array),sem(h_Z_array)) 
+    V_Z= np.pi*(d_Z/2)**2*h_Z   
+    m_Z_Theorie=V_Z*1050                                #Masse, falls Styropor-Vollzylinder               
+    I_Z_array = T_Z_array**2*D/(4*(np.pi)**2)           #Traegheit via Schwingdauer
+    I_Z_Messung = ufloat(np.mean(I_Z_array),sem(I_Z_array))
+    I_Z_Theoretisch = (1/2)*m_2*(d_Z_neu/2)**2          #Traegheit via Geometrie
+
+#Messung 4, Kugel
+    T_K = ufloat(np.mean(T_K_array),sem(T_K_array))                         
+    d_K = ufloat(np.mean(d_K_array),sem(d_K_array))                         
+    m_K = ufloat(np.mean(m_K_array),sem(m_K_array))                         
+
+    I_K_array = T_K_array**2*D/(4*(np.pi)**2)
+    I_K_Messung = ufloat(np.mean(I_K_array),sem(I_K_array))     #Traegheit via Schwingdauer
+    I_K_Theoretisch = (2/5)*m_K_neu*(d_K_neu/2)**2      #Traegheit via Geometrie
+    
+#Messung 5, Puppe
+A_d_l =  ufloat(np.mean(A_d_l_array),sem(A_d_l_array))
+A_d_r =  ufloat(np.mean(A_d_r_array),sem(A_d_r_array))
+A_h_l =  ufloat(np.mean(A_h_l_array),sem(A_h_l_array))
+A_h_r =  ufloat(np.mean(A_h_r_array),sem(A_h_r_array))
+B_d_l =  ufloat(np.mean(B_d_l_array),sem(B_d_l_array))
+B_d_r =  ufloat(np.mean(B_d_r_array),sem(B_d_r_array))
+B_h_l =  ufloat(np.mean(B_h_l_array),sem(B_h_l_array))
+B_h_r =  ufloat(np.mean(B_h_r_array),sem(B_h_r_array))
+R_d =  ufloat(np.mean(R_d_array),sem(R_d_array))
+R_h =  ufloat(np.mean(R_h_array),sem(R_h_array))
+K_d =  ufloat(np.mean(K_d_array),sem(K_d_array))
+m_P =  ufloat(np.mean(m_P_array),sem(m_P_array))
+T_1 =  ufloat(np.mean(T_1_array),sem(T_1_array))
+T_2 =  ufloat(np.mean(T_2_array),sem(T_2_array))
+
+
+I_1_array = (T_1_array)**2*D/(4*(np.pi)**2)                        
+I_2_array = (T_2_array)**2*D/(4*(np.pi)**2)
+I_1_ =ufloat(np.mean(I_1_array),sem(I_1_array))                      
+I_2 =ufloat(np.mean(I_2_array),sem(I_2_array))
+
+V_A_l = np.pi*(A_d_l/2)**2*A_h_l
+V_A_r = np.pi*(A_d_r/2)**2*A_h_r
+V_B_l = np.pi*(B_d_l/2)**2*B_h_l
+V_B_r = np.pi*(B_d_r/2)**2*B_h_r
+V_K = (4/3)*np.pi*(K_d/2)**3
+V_R = np.pi*(R_d/2)**2*R_h
+V_Gesamt = V_A_l+V_A_r+V_B_l+V_B_r+V_R+V_K
+Dichte = m_P/V_Gesamt
+
+m_A_l = Dichte*V_A_l
+m_A_r = Dichte*V_A_r
+m_B_l = Dichte*V_B_l
+m_B_r = Dichte*V_B_r
+m_K = Dichte*V_K
+m_R = Dichte*V_R
+
+I_A_l_1 = m_A_l*(A_d_l/2)**2*0.5+(R_d/2+A_d_l/2)**2
+I_A_r_1 = m_A_r*(A_d_r/2)**2*0.5+(R_d/2+A_d_r/2)**2
+I_B_l = m_B_l*((B_d_l/2)**2/4+B_h_l**2/12)+(B_h_l/2)**2
+I_B_r = m_B_r*((B_d_r/2)**2/4+B_h_r**2/12)+(B_h_r/2)**2
+I_K = 2/5*m_K*(K_d/2)**2
+I_R = m_R*(R_d/2)**2*0.5
+
+
+I_A_l_2 = m_A_l*((A_d_l/2)**2/4+A_h_l**2/12)+(R_d/2+A_h_l/2)**2
+I_A_r_2 = m_A_r*((A_d_r/2)**2/4+A_h_r**2/12)+(R_d/2+A_h_r/2)**2
+
+
+ 
+print('Die Winkelrichtgroesse D betraegt:',D,'Nm')
 
 
 # Lineare Regression 
@@ -35,7 +158,7 @@ def linregress(x, y):
     A_error = sigma_y * np.sqrt(N / Delta)
     B_error = sigma_y * np.sqrt(np.sum(x**2) / Delta)
     b=ufloat(B,B_error)
-    I=D_neu*b/(4*np.pi*np.pi)
+    I=D*b/(4*np.pi*np.pi)
     plt.plot(x,y,"rx")
     #x_plot=np.linspace(0,10)
     #plt.plot(x_plot**2,x_plot**2*A+B)
@@ -45,19 +168,11 @@ def linregress(x, y):
 
 ###Bestimmung des Eigentraegheitsmoments I_D der Drillachse
 
-A = np.genfromtxt('Werte/Werte_A_M2.txt').T							 
-T_D = np.genfromtxt('Werte/Werte_T_M2.txt').T
-m_1 = np.genfromtxt('Werte/Werte_Masse1_M2.txt').T
-m_2 = np.genfromtxt('Werte/Werte_Masse2_M2.txt').T
 
 
-m_1 = ufloat(np.mean(m_1),sem(m_1)) 						
-m_2 = ufloat(np.mean(m_2),sem(m_2))						
+				        
 
-I = (T_D)**2*D/(4*(np.pi)**2)							
-I_D = ufloat(np.mean(I),sem(I))						        
-
-#print('Zeit Eigentraegheit',T_D,'s')
+#print('Zeit Eigentraegheit',T_D_array,'s')
 print("")
 print('Das Gewicht der Masse m_1 ist',m_1,'kg')
 print('Das Gewicht der Masse m_2 ist',m_2,'kg')
@@ -66,44 +181,23 @@ print('Das Eigentraegheitsmoment I der Drillachse ist',I_D,'kgm**2')
 
 #Bestimmung des Eigentraegheitsmoments I_Z des Styroporzylinders
 		
-T_Z = np.genfromtxt('Werte/Werte_Zylinderzeit_M3_.txt').T				#Einlesen der Werte
-d_Z = np.genfromtxt('Werte/Werte_Zylinderdurchmesser_M3_.txt').T
-h_Z = np.genfromtxt('Werte/Werte_Zylinderhohe_M3_.txt').T
-m_Z = np.genfromtxt('Werte/Werte_Zylindermasse_M3_.txt').T
 
 
-T_Z_neu = ufloat(np.mean(T_Z),sem(T_Z)) 						#Mittelwert und Fehler der Periodendauer
-d_Z_neu = ufloat(np.mean(d_Z),sem(d_Z)) 						#Mittelwert und Fehler des Durchmessers
-m_Z_neu = ufloat(np.mean(m_Z),sem(m_Z)) 						#Mittelwert und Fehler der Masse
-h_Z_neu = ufloat(np.mean(h_Z),sem(h_Z))							##Mittelwert und Fehler der Hoehe
 
 
-I_Z = T_Z**2*D/(4*(np.pi)**2)
-I_Z_Messung = ufloat(np.mean(I_Z),sem(I_Z))
-V_Z= np.pi*(d_Z_neu/2)**2*h_Z_neu
-m_Z=V_Z*1050
 print("")
 print('Die Schwingungsdauer des Zylinders T_Z_neu ist',T_Z_neu,'s')
-print('Der Durchmesser des Zylinders d_Z_neu ist',d_Z_neu,'m')
+print('Der Durchmesser des Zylinders m_2 ist',d_Z_neu,'m')
 print('Die Hoehe des Zylinders h_Z_neu ist',h_Z_neu,'m')
-print('Die gemessene Masse des Zylinders m_Z_neu ist',m_Z_neu,'kg')
+print('Die gemessene Masse des Zylinders m_2 ist',m_2,'kg')
 print('Das Traegheitsmoment des Zylinders ist ',I_Z_Messung,'kgm**2')
 print("Das aussere Volumen des Zylinders ist ",V_Z,"m^3")
-print("Die errechnete Masse des Voll-Zylinders ist ",m_Z,"kg")
+print("Die errechnete Masse des Voll-Zylinders ist ",m_2,"kg")
 
 #Bestimmung des Eigentraegheitsmoments I_K der Kugel
 		
-T_K = np.genfromtxt('Werte/Werte_Kugelzeit_M4_.txt').T				#Einlesen der Werte
-d_K = np.genfromtxt('Werte/Werte_Kugeldurchmesser_M4_.txt').T
-m_K = np.genfromtxt('Werte/Werte_Kugelmasse_M4_.txt').T
 
 
-T_K_neu = ufloat(np.mean(T_K),sem(T_K)) 						#Mittelwert und Fehler der Periodendauer
-d_K_neu = ufloat(np.mean(d_K),sem(d_K)) 						#Mittelwert und Fehler des Durchmessers
-m_K_neu = ufloat(np.mean(m_K),sem(m_K)) 						#Mittelwert und Fehler der Masse
-
-I_K = T_K**2*D/(4*(np.pi)**2)
-I_K_Messung = ufloat(np.mean(I_K),sem(I_K))	
 print("")						
 print('Die Schwingungsdauer der Kugel T_K_neu ist',T_K_neu,'s')
 print('Der Durchmesser derKugel d_K_neu ist',d_K_neu,'m')
@@ -113,45 +207,12 @@ print('Das Traegheitsmoment der Kugel ist ',I_K_Messung,'kgm**2')
 
 #Berechnung der theoretischen Werte vom Traegheitsmoment der Kugel und des Zylinders
 
-I_K_Theoretisch = (2/5)*m_K_neu*(d_K_neu/2)**2
-I_Z_Theoretisch = (1/2)*m_Z_neu*(d_Z_neu/2)**2
 print("")
 print('Der theoretisch errechnete Wert fuer das Traegheitsmoment der Kugel ist',I_K_Theoretisch,'kgm**2')
 print('Der theoretisch errechnete Wert fuer das Traegheitsmoment des Zylinders ist',I_Z_Theoretisch,'kgm**2')
 
 #Bestimmung des Eigentraegheitsmoment I_P der Puppe
 
-A_d_l = np.genfromtxt('Werte/Werte_Armdurchmesser_l_M5.txt').T		#Abmessungen der Puppe
-A_d_r = np.genfromtxt('Werte/Werte_Armdurchmesser_r_M5.txt').T
-A_h_l = np.genfromtxt('Werte/Werte_Armlange_l_M5.txt').T
-A_h_r = np.genfromtxt('Werte/Werte_Armlange_r_M5.txt').T
-B_d_l = np.genfromtxt('Werte/Werte_Beindurchmesser_l_M5.txt').T
-B_d_r = np.genfromtxt('Werte/Werte_Beindurchmesser_r_M5.txt').T
-B_h_l = np.genfromtxt('Werte/Werte_Beinlange_l_M5.txt').T
-B_h_r = np.genfromtxt('Werte/Werte_Beinlange_r_M5.txt').T
-R_d = np.genfromtxt('Werte/Werte_Rumpfdurchmesser_M5.txt').T
-R_h = np.genfromtxt('Werte/Werte_Rumpflange_M5.txt').T
-K_d = np.genfromtxt('Werte/Werte_Kopfdurchmesser_M5.txt').T
-m_P = np.genfromtxt('Werte/Werte_Masse_M5.txt').T
-
-T_1 = np.genfromtxt('Werte/Werte_Puppenzeit1_M5.txt').T			#VORSICHT: T_1 und T_2 sind fuer 5 Schwingungen!
-T_2 = np.genfromtxt('Werte/Werte_Puppenzeit2_M5.txt').T
-
-
-A_d_l =  ufloat(np.mean(A_d_l),sem(A_d_l))
-A_d_r =  ufloat(np.mean(A_d_r),sem(A_d_r))
-A_h_l =  ufloat(np.mean(A_h_l),sem(A_h_l))
-A_h_r =  ufloat(np.mean(A_h_r),sem(A_h_r))
-B_d_l =  ufloat(np.mean(B_d_l),sem(B_d_l))
-B_d_r =  ufloat(np.mean(B_d_r),sem(B_d_r))
-B_h_l =  ufloat(np.mean(B_h_l),sem(B_h_l))
-B_h_r =  ufloat(np.mean(B_h_r),sem(B_h_r))
-R_d =  ufloat(np.mean(R_d),sem(R_d))
-R_h =  ufloat(np.mean(R_h),sem(R_h))
-K_d =  ufloat(np.mean(K_d),sem(K_d))
-m_P =  ufloat(np.mean(m_P),sem(m_P))
-T_1_neu =  ufloat(np.mean(T_1/5),sem(T_1/5))
-T_2_neu =  ufloat(np.mean(T_2/5),sem(T_2/5))
 
 print("")
 print('Der Durchmesser des linken Arms ist',A_d_l,'m') 				#Armabmessungen
@@ -174,24 +235,13 @@ print('Die Zeit fuer Position 2 ist',T_2_neu,'s')
 
 
 
-I_1= (T_1/5)**2*D/(4*(np.pi)**2)						#Tabelle fuer I_1 und I_2
-I_2= (T_2/5)**2*D/(4*(np.pi)**2)
-I_1_neu=ufloat(np.mean(I_1),sem(I_1))						#Mittelwert und Fehler von I_1 und I_2
-I_2_neu=ufloat(np.mean(I_2),sem(I_2))
 print("")
-print('Das Traegheitsmoment in Position 1 ist',I_1_neu,'kgm**2')
-print('Das Traegheitsmoment in Position 2 ist',I_2_neu,'kgm**2')
+print('Das gemessene Traegheitsmoment in Position 1 ist',I_1_neu,'kgm**2')
+print('Das gemessene Traegheitsmoment in Position 2 ist',I_2_neu,'kgm**2')
 print("")
-#linregress(A**2,(T_D)**2)
+#linregress(A_array**2,(T_D_array)**2)
 
-V_A_l = np.pi*(A_d_l/2)**2*A_h_l
-V_A_r = np.pi*(A_d_r/2)**2*A_h_r
-V_B_l = np.pi*(B_d_l/2)**2*B_h_l
-V_B_r = np.pi*(B_d_r/2)**2*B_h_r
-V_K = (4/3)*np.pi*(K_d/2)**3
-V_R = np.pi*(R_d/2)**2*R_h
-V_Gesamt = V_A_l+V_A_r+V_B_l+V_B_r+V_R+V_K
-Dichte = m_P/V_Gesamt
+
 
 #print('Das Volumen des linken Armes ist',V_A_l,'m³')
 #print('Das Volumen des rechten Armes ist',V_A_r,'m³')
@@ -199,15 +249,10 @@ Dichte = m_P/V_Gesamt
 #print('Das Volumen des rechten Beines ist',V_B_r,'m³')
 #print('Das Volumen des Rumpfes ist',V_R,'m³')
 #print('Das Volumen des Kopfes ist',V_K,'m³')
-print('Das Gesamtvolumen',V_Gesamt,'m³')
-print('Die Dichte ist',Dichte,'kg/m³')
+print('Das Gesamtvolumen',V_Gesamt,'m^3')
+print('Die Dichte ist',Dichte,'kg/m^3')
 
-m_A_l = Dichte*V_A_l
-m_A_r = Dichte*V_A_r
-m_B_l = Dichte*V_B_l
-m_B_r = Dichte*V_B_r
-m_K = Dichte*V_K
-m_R = Dichte*V_R
+
 
 #print('Masse des linken Armes:',m_A_l,'kg')
 #print('Masse des rechten Armes:',m_A_r,'kg')
@@ -216,30 +261,19 @@ m_R = Dichte*V_R
 #print('Masse des Kopfes:',m_K,'kg')
 #print('Masse des Rumpfes:',m_R,'kg')
 
-I_A_l_1 = m_A_l*(A_d_l/2)**2*0.5+(R_d/2+A_d_l/2)**2
-I_A_r_1 = m_A_r*(A_d_r/2)**2*0.5+(R_d/2+A_d_r/2)**2
-I_B_l = m_B_l*((B_d_l/2)**2/4+B_h_l**2/12)+(B_h_l/2)**2
-I_B_r = m_B_r*((B_d_r/2)**2/4+B_h_r**2/12)+(B_h_r/2)**2
-I_K = 2/5*m_K*(K_d/2)**2
-I_R = m_R*(R_d/2)**2*0.5
 
-
-I_A_l_2 = m_A_l*((A_d_l/2)**2/4+A_h_l**2/12)+(R_d/2+A_h_l/2)**2
-I_A_r_2 = m_A_r*((A_d_r/2)**2/4+A_h_r**2/12)+(R_d/2+A_h_r/2)**2
-
-print('Das Trägheitsmoment des linken Beines ist',I_B_l,'kgm²')
-print('Das Trägheitsmoment des rechten Beines ist',I_B_r,'kgm²')
-print('Das Trägheitsmoment des Kopfes ist',I_K,'kgm²')
-print('Das Trägheitsmoment des Rumpfes ist',I_R,'kgm²')
+print("Theorie:")
+print('Das Traegheitsmoment des linken Beines ist',I_B_l,'kgm^2')
+print('Das Traegheitsmoment des rechten Beines ist',I_B_r,'kgm^2')
+print('Das Traegheitsmoment des Kopfes ist',I_K,'kgm^2')
+print('Das Traegheitsmoment des Rumpfes ist',I_R,'kgm^2')
 print('')
-print('Das Trägheitsmoment des linken Armes in Position 1 ist',I_A_l_1,'kgm²')
-print('Das Trägheitsmoment des rechten Armes in Position 1 ist',I_A_r_1,'kgm²')
+print('Das Traegheitsmoment des linken Armes in Position 1 ist',I_A_l_1,'kgm^2')
+print('Das Traegheitsmoment des rechten Armes in Position 1 ist',I_A_r_1,'kgm^2')
 
-print('Das Trägheitsmoment des linken Armes in Position 2 ist',I_A_l_2,'kgm²')
-print('Das Trägheitsmoment des rechten Armes in Position 2 ist',I_A_r_2,'kgm²')
+print('Das Traegheitsmoment des linken Armes in Position 2 ist',I_A_l_2,'kgm^2')
+print('Das Traegheitsmoment des rechten Armes in Position 2 ist',I_A_r_2,'kgm^2')
 
-I_1 = I_A_l_1+I_A_r_1+I_B_l+I_B_r+I_K+I_R
-I_2 = I_A_l_2+I_A_r_2+I_B_l+I_B_r+I_K+I_R
 
-print('Gesamtträgheit Pos. 1',I_1,'kgm²')
-print('Gesamtträgheit Pos. 2',I_2,'kgm²')
+print('Gesamttraegheit Pos. 1',I_1,'kgm^2')
+print('Gesamttraegheit Pos. 2',I_2,'kgm^2')
