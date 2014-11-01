@@ -1,27 +1,28 @@
 
-import numpy as np 									# Header
+import numpy as np 									                                                    #### Header
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import math
+#import uncertainties as unp
 from uncertainties import ufloat
 from scipy.stats import sem
 
 
 
-# Bestimmung der Winkelrichtgroesse D gemessen im Abstand r=9.965 cm fuer Alle Auslenkungen
+# Bestimmung der Winkelrichtgroesse D gemessen im Abstand r=9.965 cm fuer alle Auslenkungen             #### Berechnung und Eingabe
 
-F = np.genfromtxt('Werte/Werte_F_M1.txt').T                                                   #Werte der gemessenen Kraft F und der Auslenkung Phi
+F = np.genfromtxt('Werte/Werte_F_M1.txt').T                                                  
 Phi = np.genfromtxt('Werte/Werte_Phi_M1.txt').T
 Phi_Bogenmass = np.genfromtxt('Werte/Werte_Phi_Bogenmass_M1.txt').T
 r = 0.09965 #m; r = const.
-
-
-	
 D = (F*r)/Phi_Bogenmass
-D_neu = ufloat(np.mean(D),sem(D))  
+D_neu = ufloat(np.mean(D),sem(D))    
 print('Die Winkelrichtgroesse D betraegt:',D_neu,'Nm')
-                             			       #Formel fuer die Winkelrichtgroesse D
+
+
+# Lineare Regression 
+
 def linregress(x, y):
     N = len(y) # Annahme: len(x) == len(y), sonst kommt waehrend der Rechnung eine Fehlermeldung
     Delta = N*np.sum(x**2)-(np.sum(x))**2
@@ -40,28 +41,28 @@ def linregress(x, y):
     #plt.plot(x_plot**2,x_plot**2*A+B)
     plt.show()
     print (A, A_error, B, B_error, I)
-print('Die Winkelrichtgroesse D betraegt:',D_neu,'Nm')
 
 
-#Bestimmung des Eigentraegheitsmoments I_D der Drillachse
+###Bestimmung des Eigentraegheitsmoments I_D der Drillachse
 
-A = np.genfromtxt('Werte/Werte_A_M2.txt').T							#Einlesen der Werte 
+A = np.genfromtxt('Werte/Werte_A_M2.txt').T							 
 T_D = np.genfromtxt('Werte/Werte_T_M2.txt').T
 m_1 = np.genfromtxt('Werte/Werte_Masse1_M2.txt').T
 m_2 = np.genfromtxt('Werte/Werte_Masse2_M2.txt').T
 
 
-m_1 = ufloat(np.mean(m_1),sem(m_1)) 						#Mittelwert und Fehler der Masse 1
-m_2 = ufloat(np.mean(m_2),sem(m_2))						#Mittelwert und Fehler der Masse 2
+m_1 = ufloat(np.mean(m_1),sem(m_1)) 						
+m_2 = ufloat(np.mean(m_2),sem(m_2))						
 
-I = (T_D)**2*D/(4*(np.pi)**2)							#I als Tabelle; Werte aus A und T
-I_D = ufloat(np.mean(I),sem(I))						        #Berechnung Mittelwert und Fehler von I
+I = (T_D)**2*D/(4*(np.pi)**2)							
+I_D = ufloat(np.mean(I),sem(I))						        
 
 #print('Zeit Eigentraegheit',T_D,'s')
 print("")
 print('Das Gewicht der Masse m_1 ist',m_1,'kg')
 print('Das Gewicht der Masse m_2 ist',m_2,'kg')
 print('Das Eigentraegheitsmoment I der Drillachse ist',I_D,'kgm**2')
+
 
 #Bestimmung des Eigentraegheitsmoments I_Z des Styroporzylinders
 		
@@ -79,13 +80,16 @@ h_Z_neu = ufloat(np.mean(h_Z),sem(h_Z))							##Mittelwert und Fehler der Hoehe
 
 I_Z = T_Z**2*D/(4*(np.pi)**2)
 I_Z_Messung = ufloat(np.mean(I_Z),sem(I_Z))
+V_Z= np.pi*(d_Z_neu/2)**2*h_Z_neu
+m_Z=V_Z*1050
 print("")
 print('Die Schwingungsdauer des Zylinders T_Z_neu ist',T_Z_neu,'s')
 print('Der Durchmesser des Zylinders d_Z_neu ist',d_Z_neu,'m')
 print('Die Hoehe des Zylinders h_Z_neu ist',h_Z_neu,'m')
-print('Die Masse des Zylinders m_Z_neu ist',m_Z_neu,'kg')
+print('Die gemessene Masse des Zylinders m_Z_neu ist',m_Z_neu,'kg')
 print('Das Traegheitsmoment des Zylinders ist ',I_Z_Messung,'kgm**2')
-	
+print("Das aussere Volumen des Zylinders ist ",V_Z,"m^3")
+print("Die errechnete Masse des Voll-Zylinders ist ",m_Z,"kg")
 
 #Bestimmung des Eigentraegheitsmoments I_K der Kugel
 		
