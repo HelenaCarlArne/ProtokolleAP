@@ -124,16 +124,21 @@ I_2_array = (T_2_array)**2*D/(4*(np.pi)**2)
 I_1_Messung = I_1_array.mean()
 I_2_Messung = I_2_array.mean()
 #Theoretische Traegheit
-I_A_l_1 = m_A_l*(A_d_l/2)**2*0.5+(R_d/2+A_d_l/2)**2
-I_A_r_1 = m_A_r*(A_d_r/2)**2*0.5+(R_d/2+A_d_r/2)**2
-I_A_l_2 = m_A_l*((A_d_l/2)**2/4+A_h_l**2/12)+(R_d/2+A_h_l/2)**2
-I_A_r_2 = m_A_r*((A_d_r/2)**2/4+A_h_r**2/12)+(R_d/2+A_h_r/2)**2
-I_B_l = m_B_l*((B_d_l/2)**2/4+B_h_l**2/12)+(B_h_l/2)**2
-I_B_r = m_B_r*((B_d_r/2)**2/4+B_h_r**2/12)+(B_h_r/2)**2
+I_A_l_1 = m_A_l*((A_d_l/2)**2*0.5+(R_d/2+A_d_l/2)**2)
+I_A_r_1 = m_A_r*((A_d_r/2)**2*0.5+(R_d/2+A_d_r/2)**2)
+I_A_l_2 = m_A_l*(((A_d_l/2)**2/4+(A_h_l**2)/12)+(R_d/2+A_h_l/2)**2)
+I_A_r_2 = m_A_r*(((A_d_r/2)**2/4+(A_h_r**2)/12)+(R_d/2+A_h_r/2)**2)
+I_B_l = m_B_l*((((B_d_l/2)**2)/4+(B_h_l**2)/12)+(B_h_l/2)**2)
+I_B_r = m_B_r*((((B_d_r/2)**2)/4+(B_h_r**2)/12)+(B_h_r/2)**2)
 I_K = 2/5*m_K*(K_d/2)**2
 I_R = m_R*(R_d/2)**2*0.5
 I_1_Theorie = I_A_l_1+I_A_r_1+I_B_l+I_B_r+I_K+I_R
 I_2_Theorie = I_A_l_2+I_A_r_2+I_B_l+I_B_r+I_K+I_R    
+#Quotienten
+Quo_Messung = I_2_Messung/I_1_Messung
+Quo_Theorie = I_2_Theorie/I_1_Theorie
+Verhaeltnis = Quo_Theorie/Quo_Messung
+
 def linregress(x, y):
     N = len(y) # Annahme: len(x) == len(y), sonst kommt waehrend der Rechnung eine Fehlermeldung
     Delta = N*np.sum(x**2)-(np.sum(x))**2
@@ -161,11 +166,13 @@ def linregress(x, y):
 print("Messung 1:")
 print('Die Winkelrichtgroesse D betraegt:',D,'Nm')
 print("")
+print('')
 print("Messung 2:")
 print('Das Gewicht der Masse m_1 ist',m_1,'kg')
 print('Das Gewicht der Masse m_2 ist',m_2,'kg')
 print('Das Eigentraegheitsmoment I der Drillachse ist',I_D,'kgm**2')
 print("")
+print('')
 print("Messung 3:")
 print('Die Schwingungsdauer des Zylinders T_Z ist',T_Z,'s')
 print('Der Durchmesser des Zylinders m_2 ist',d_Z,'m')
@@ -177,6 +184,7 @@ print('Die theoretische Masse m_Z_Theorie ist',m_Z_Theorie,'kg')
 print('Das gemessene Traegheitsmoment ist ',I_Z_Messung,'kgm**2')
 print('Der theoretisch errechnete Wert fuer das Traegheitsmoment ist',I_Z_Theorie,'kgm**2')
 print("")
+print('')
 print("Messung 4:")    
 print('Die Schwingungsdauer  T_K  ist',T_K,'s')
 print('Der Durchmesser d_K ist',d_K,'m')
@@ -185,6 +193,7 @@ print("")
 print('Das gemessene Traegheitsmoment ist ',I_K_Messung,'kgm**2')
 print('Der theoretisch errechnete Wert fuer das Traegheitsmoment ist',I_K_Theorie,'kgm**2')
 print("")
+print('')
 print("Messung 5: Abmessungen, Masse und Zeit der Puppe") 
 #print('Das Volumen des linken Armes ist',V_A_l,'m³')           #Volumina
 #print('Das Volumen des rechten Armes ist',V_A_r,'m³')
@@ -222,10 +231,12 @@ print("")
 print('Das Gesamtvolumen',V_Gesamt,'m^3')                       #Volumen und Dichte
 print('Die Dichte ist',Dichte,'kg/m^3')
 print("")
+print('')
 print("Messung 5: Gemessene Traegheitsmomente")  
 print('Traegheitsmoment in Position 1 ist',I_1_Messung,'kgm**2')
 print('Traegheitsmoment in Position 2 ist',I_2_Messung,'kgm**2')
 print("")
+print('')
 print("Messung 5: Theoretische Traegheitsmomente")
 print('Das Traegheitsmoment des linken Beines ist',I_B_l,'kgm^2')
 print('Das Traegheitsmoment des rechten Beines ist',I_B_r,'kgm^2')
@@ -237,8 +248,16 @@ print('Das Traegheitsmoment des rechten Armes in Position 1 ist',I_A_r_1,'kgm^2'
 print('Das Traegheitsmoment des linken Armes in Position 2 ist',I_A_l_2,'kgm^2')
 print('Das Traegheitsmoment des rechten Armes in Position 2 ist',I_A_r_2,'kgm^2')
 print('')
+print('Gesamttraegheitsmoment in Position 1 ist',I_1_Theorie,'kgm^2')
+print('Gesamttraegheitsmoment in Position 2 ist',I_2_Theorie,'kgm^2')
 print('')
-print('Gesamttraegheitsmoment in Position 1',I_1_Theorie,'kgm^2')
-print('Gesamttraegheitsmoment in Position 2',I_2_Theorie,'kgm^2')
+print('Quotienten der Theorie ist',Quo_Theorie)
+print('Quotienten der Messung ist',Quo_Messung)
+print("")
+print("Daraus folgt eine Uebereinstimmung von {:.2f}".format(Verhaeltnis.n*100),"+/- {:.4f}".format(Verhaeltnis.s*100),"%")
+print("")
+print("")
+print("And I think to myself, what a wonderful world!")
+print("")
 
 #linregress(A_array**2,(T_D_array)**2)
