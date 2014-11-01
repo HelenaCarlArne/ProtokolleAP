@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  31 OCT 2014 17:01
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  1 NOV 2014 16:26
  restricted \write18 enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -381,7 +381,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.033 seconds
+luaotfload: fontloader loaded in 0.034 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1701,7 +1701,7 @@ generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 \g_fontspec_family_latinmodern-math.otf_int=\count503
 luaotfload | load : auto-selecting default features for script: dflt
@@ -1758,7 +1758,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 24 (LatinModernMath-Regular) defines feature dtls for script
  math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 10.
@@ -1776,7 +1776,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1868,7 +1868,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -2244,25 +2244,50 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 38.
 
-<Bilder/puppe1.pdf, id=51, 331.2375pt x 259.97125pt>
+<Bilder/puppe1.pdf, id=52, 331.2375pt x 259.97125pt>
 File: Bilder/puppe1.pdf Graphic file (type pdf)
  <use Bilder/puppe1.pdf>
 Package pdftex.def Info: Bilder/puppe1.pdf used on input line 45.
 (pdftex.def)             Requested size: 142.26378pt x 111.65454pt.
 
-<Bilder/puppe2.pdf, id=52, 184.69pt x 254.9525pt>
+<Bilder/puppe2.pdf, id=53, 184.69pt x 254.9525pt>
 File: Bilder/puppe2.pdf Graphic file (type pdf)
  <use Bilder/puppe2.pdf>
 Package pdftex.def Info: Bilder/puppe2.pdf used on input line 51.
 (pdftex.def)             Requested size: 85.35826pt x 117.83197pt.
 )
-(./Auswertung.tex) (./Tabellen/Tabelle1_Winkelrichtgroesse.tex
+[4<./Bilder/puppe1.pdf><./Bilder/puppe2.pdf>] (./Auswertung.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+(./Tabellen/Tabelle1_Winkelrichtgroesse.tex)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 12.
+
+(./Tabellen/Tabelle2_Eigentraegheit.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Tabellen/Tabelle2_Eigentraegheit.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+) [5]
+Overfull \hbox (4.83046pt too wide) in paragraph at lines 29--31
+[]\EU2/lmr/m/n/10.95 Zur Be-stim-mung des Ei-gen-träg-heits-mo-ments $\EU2/lat
+inmodern-math.otf(0)/m/n/10.95 𝐼[]$ \EU2/lmr/m/n/10.95 wer-den die ge-mit-te
+l-ten Schwingperioden-
+ []
 
 ) (./Tabellen/Tabelle3_Zylinder.tex
 
@@ -2321,37 +2346,36 @@ Overfull \hbox (5.475pt too wide) detected at line 22
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [4<./Bilder/puppe1.pdf><./Bilder/puppe2.pdf>] [5] [6]
-(./Tabellen/Tabelle5_Puppe.tex) [7] (./Diskussion.tex)
+) [6] [7] (./Tabellen/Tabelle5_Puppe.tex) [8] (./Diskussion.tex)
 
-LaTeX Warning: Empty bibliography on input line 29.
+LaTeX Warning: Empty bibliography on input line 28.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-[8
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
+[9
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./build/Abgabe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39853 strings out of 494695
+ 39866 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 1569 words of node memory still in use:
-   53 hlist, 9 vlist, 8 rule, 12 math, 33 glue, 23 kern, 1 sub_mlist, 24 glyph, 
-33 attribute, 72 glue_spec, 33 attribute_list, 1 write nodes
-   avail lists: 1:81,2:11425,3:262,4:4255,5:602,6:2833,7:102,8:17,9:1963,10:988,
-11:510,12:229
- 42389 multiletter control sequences out of 65536+600000
- 87 fonts using 25358147 bytes
- 70i,15n,104p,1049b,1181s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 593 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 8 kern, 3 sub_mlist, 17 attribute, 69 glue_
+spec, 17 attribute_list, 1 write nodes
+   avail lists: 1:47,2:7976,3:265,4:3805,5:566,6:1870,7:84,8:16,9:2050,10:988,11
+:510,12:229
+ 42391 multiletter control sequences out of 65536+600000
+ 87 fonts using 25358611 bytes
+ 70i,13n,104p,1049b,1183s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-ma
 th.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bo
 ld.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-reg
@@ -2363,10 +2387,10 @@ ic/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/p
 ublic/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentyp
 e/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype
 /public/lm/lmroman12-bold.otf>
-Output written on Abgabe.pdf (8 pages, 101274 bytes).
+Output written on Abgabe.pdf (9 pages, 108930 bytes).
 
-PDF statistics: 194 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 131072)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 218 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 131072)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
