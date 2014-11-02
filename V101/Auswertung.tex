@@ -1,5 +1,7 @@
 \section{Auswertung} % (fold)
 \label{sec:swrtng}
+
+
 \subsection{Bestimmung der Winkelrichtgröße $D$}
 \input{Tabellen/Tabelle1_Winkelrichtgroesse.tex}
 Mit den Messwerten aus Tabelle \ref{tab:M1 I_D} und $r=0.09965\si{\meter}$ lässt sich die Winkelrichtgröße $D$ mit der Gleichung \eqref{eq:winkelricht} bestimmen. Die Unsicherheit ist die Standardabweichung des Mittelwertes $\sigma_D$ mit
@@ -17,6 +19,8 @@ Es ergibt sich
 	\label{wert:Winkelricht}
 	D=(0.0757\pm0.0019)\si{\newton\meter}
 \end{equation}
+
+
 \subsection{Bestimmung des Eigenträgheitsmomentes $I_D$}
 \input{Tabellen/Tabelle2_Eigentraegheit.tex}
 Zur Bestimmung des Eigenträgheitsmomentes $I_D$ wird die verwendete Stange als nahezu masselos angenommen, 
@@ -37,7 +41,6 @@ Es gilt
 	\label{eq:Reg_ident}
 	T^2= \underbrace{4\mathup{\pi^{2}}\frac{(m_1+m_2)}{D}}_{m_{\text{Reg}}}\cdot a^{2}+\underbrace{4\mathup{\pi^{2}}\frac{I_D}{D}}_{b_{\text{Reg}}}
 \end{equation}
-
 Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingperioden-Quadrate ${T}^2$ gegen das Abstandsquadrat $a^2$ aufgetragen. Aus der Regression mittels der Formeln
 \begin{subequations}
 	\begin{equation}
@@ -60,10 +63,13 @@ Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingpe
 	\end{equation}
 \end{subequations}
 für $x=a^2$, $y=T^2$ und der Identität aus Gleichung \eqref{eq:Reg:ident}, wird das Eigenträgheitsmoment $I_D$ berechnet
-\begin{align}
-	I_D&= \frac{D}{4\mathup{\pi^2}}b_{\text{Reg}}\\
-	   &= (9.26\pm0.23)10^{-3} \si{\kilo\gram\meter\squared}
-\end{align}
+\begin{equation*}
+	I_D= \frac{D}{4\mathup{\pi^2}}b_{\text{Reg}}\\
+	   = (9.26\pm0.23)10^{-3} \si{\kilo\gram\meter\squared}
+\end{equation*}
+\begin{equation}
+	= (9.26\pm0.23)10^{-3} \si{\kilo\gram\meter\squared}
+\end{equation}
 \begin{figure}[hp]
 	\centering
 	\label{fig:Regress}
@@ -71,6 +77,8 @@ für $x=a^2$, $y=T^2$ und der Identität aus Gleichung \eqref{eq:Reg:ident}, wir
 	\caption{Regression von $T^2$ gegen $a^2$}
 \end{figure}
 \newpage
+
+
 \subsection{Trägheitsmoment $I_\text{Z}$ eines Zylinders}
 \label{sub:traegheitsmoment_eines_zylinders}
 \input{Tabellen/Tabelle3_Zylinder.tex}
@@ -111,6 +119,7 @@ Man erhält
 	I_{\text{HZ, Theorie}}= (6.256306729\pm Fehler)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
 
+
 \subsection{Trägheitsmoment $I_\text{K}$ einer Kugel}
 \input{Tabellen/Tabelle4_Kugel.tex}
 Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsdauer $T$ das Trägheitsmoment $I_\text{K}$ der Kugel zu
@@ -118,14 +127,34 @@ Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsd
 	\label{wert:Kugel}
 	I_K=(5.67\pm0.14)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
-Das sichtbare Material der Kugel ist Styropor-ähnlich. 
-Für die theoretische Berechnung des Trägheitsmomentes wird eine Styropor-Vollkugel angenommen. 
+Für die theoretische Berechnung des Trägheitsmomentes wird die gemessene Masse der Kugel benutzt.
 Mit $I_K = \frac{2}{5} m_{\text{Kugel}} r^2$ ist 
 \begin{equation}
 	\label{wert:Kugel}
 	I_\text{K, Theorie}= (1.5335\pm0.0010)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
+\newpage
 
-
+\subsection{Trägheitsmoment $I_\text{Puppe}$}
+\input{Tabellen/Tabelle7_Puppe.tex}
+Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsdauer $T$ das Trägheitsmoment $I_\text{Puppe}$ für beide Positionen zu
+\begin{subequations}
+	\begin{equation}
+		\label{wert:Puppe1}
+		I_\text{Puppe,1}=(1.149\pm0.028)10^{-3} \si{\kilo\gram\meter\squared}
+	\end{equation}
+	\begin{equation}
+		\label{wert:Puppe2}
+		I_\text{Puppe,2}=(1.81\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
+	\end{equation}
+\end{subequations}
+bestimmt. 
+Für die theoretische Berechnung werden die Volumina der Körperteile, die Dichte der Puppe $\rho_\text{Puppe}$ 
+mit $\rho_\text{Puppe}=\nicefrac{m_\text{Puppe}}{V_\text{Puppe, Gesamt}}$ und dadurch die Massen der Körperteile bestimmt.
+\begin{landscape}
+	\centering
+	\input{Tabellen/Tabelle5_Puppe.tex}
+	\input{Tabellen/Tabelle6_Puppe.tex}
+\end{landscape}
 % subsection traegheitsmoment_eines_zylinders (end)
 % section auswertung (end)

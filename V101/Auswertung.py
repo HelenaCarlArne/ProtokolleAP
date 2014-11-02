@@ -217,19 +217,19 @@ print('Der theoretisch errechnete Wert fuer das Traegheitsmoment ist',I_K_Theori
 print("")
 print('')
 print("Messung 5: Abmessungen, Masse und Zeit der Puppe") 
-#print('Das Volumen des linken Armes ist',V_A_l,'m³')           #Volumina
-#print('Das Volumen des rechten Armes ist',V_A_r,'m³')
-#print('Das Volumen des linken Beines ist',V_B_l,'m³')
-#print('Das Volumen des rechten Beines ist',V_B_r,'m³')
-#print('Das Volumen des Rumpfes ist',V_R,'m³')
-#print('Das Volumen des Kopfes ist',V_K,'m³') 
+print('Das Volumen des linken Armes ist',V_A_l,'m^3')           #Volumina
+print('Das Volumen des rechten Armes ist',V_A_r,'m^3')
+print('Das Volumen des linken Beines ist',V_B_l,'m^3')
+print('Das Volumen des rechten Beines ist',V_B_r,'m^3')
+print('Das Volumen des Rumpfes ist',V_R,'m^3')
+print('Das Volumen des Kopfes ist',V_K,'m^3') 
 
-#print('Masse des linken Armes:',m_A_l,'kg')                    #Massen
-#print('Masse des rechten Armes:',m_A_r,'kg')
-#print('Masse des linken Beines:',m_B_l,'kg')
-#print('Masse des rechten Beines:',m_B_r,'kg')
-#print('Masse des Kopfes:',m_K,'kg')
-#print('Masse des Rumpfes:',m_R,'kg')
+print('Masse des linken Armes:',m_A_l,'kg')                    #Massen
+print('Masse des rechten Armes:',m_A_r,'kg')
+print('Masse des linken Beines:',m_B_l,'kg')
+print('Masse des rechten Beines:',m_B_r,'kg')
+print('Masse des Kopfes:',m_K,'kg')
+print('Masse des Rumpfes:',m_R,'kg')
 
 print('Der Durchmesser des linken Arms ist',A_d_l,'m') 			#Arme	
 print('Der Durchmesser des rechten Arms ist',A_d_r,'m')
@@ -281,5 +281,8 @@ print("")
 print("")
 print("And I think to myself, what a wonderful world!")
 print("")
+
+print(T_1_array.T)
+print(T_2_array.T)
 
 
