@@ -63,11 +63,12 @@ Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingpe
 für $x=a^2$, $y=T^2$ und der Identität aus Gleichung \eqref{eq:Reg_ident}, wird das Eigenträgheitsmoment $I_D$ berechnet
 \begin{equation*}
 	I_D= \frac{D}{4\mathup{\pi^2}}b_{\text{Reg}}\\
-	   = (9.26\pm0.23)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation*}
 \begin{equation}
+	\label{wert:eigentragheit}
 	= (9.26\pm0.23)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
+Da dieses Trägheitsmoment größer ist als die Ergebnisse der folgenden Messungen, wird von dem Abzug des Eigenträgheitsmomentes abgesehen (vgl. Kapitel \ref{Systembestimmend}).
 \begin{figure}[hp]
 	\centering
 	\label{fig:Regress}
@@ -103,12 +104,12 @@ Die so von zwei Unbekannten $r_i$ und $h_i$ auf eine Unbekannte $r_i$ reduzierte
 \begin{equation}
 	m_\text{Z}=\rho(-2\pi*(r_i)^3+(r_i)^2*(2\pi r_a-\pi h_a)+(\pi h_a r_a^2)
 \end{equation}
-ergibt für den Innenradius $r_i = 0.0401012\si{\meter}$.
+ergibt für den Innenradius $r_i = 0.0401012\si{\meter}\pm0.0898\%$.
 
 Das Trägheitsmoment eines solchen Hohlzylinders setzt sich zusammen aus den Trägheitsmomenten eines Zylindermantels und zwei Kreisscheiben, die um ihren Mittelpunkt rotieren.
 \begin{align*}
 	I_{\text{HZ, Theorie}}&=I_{\text{Zylindermantel}}+2I_{\text{Kreisscheibe}}\\
-	I_{\text{HZ, Theorie}}&=m_\text{Mantel} \frac{r_i^2+r_a^2}{2}+m_\text{Kreisscheibe} r_i^2
+	&=m_\text{Mantel} \frac{r_i^2+r_a^2}{2}+m_\text{Kreisscheibe} r_i^2
 \end{align*}
 Man erhält
 \begin{equation}
@@ -135,11 +136,11 @@ Mit $I_K = \frac{2}{5} m_{\text{Kugel}} r^2$ ist
 \begin{subequations}
 	\begin{equation}
 		\label{wert:Puppe1}
-		I_\text{Puppe,1}=(1.149\pm0.028)10^{-3} \si{\kilo\gram\meter\squared}
+		I_\text{Puppe,1}=(1.81\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
 	\end{equation}
 	\begin{equation}
 		\label{wert:Puppe2}
-		I_\text{Puppe,2}=(1.81\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
+		I_\text{Puppe,2}=(1.149\pm0.028)10^{-3} \si{\kilo\gram\meter\squared}
 	\end{equation}
 \end{subequations}
 bestimmt.
@@ -165,19 +166,20 @@ Für die Einzelträgheitsmomente, deren Summe das Trägheitsmoment der Puppe ist
 \begin{subequations}
 	\label{wert:Puppe1T}
 	\begin{align}
-		I_\text{Puppe,1,Theorie}=(3.74\pm0.24)10^{-4}  \si{\kilo\gram\meter\squared},\\
-		I_\text{Puppe,2,Theorie}=(6.48\pm0.27)10^{-4} \si{\kilo\gram\meter\squared}.
+		I_\text{Puppe,1,Theorie}=(6.48\pm0.27)10^{-4}  \si{\kilo\gram\meter\squared},\\
+		I_\text{Puppe,2,Theorie}=(3.74\pm0.24)10^{-4} \si{\kilo\gram\meter\squared}.
 	\end{align}
 \end{subequations}
 Der Quotient $\alpha$ der theoretischen Trägheitsmomente aus \eqref{wert:Puppe1T} ist
 \begin{subequations}
 	\begin{align}
 		\label{eq:Quo1}
-		\alpha = \frac{I_\text{Puppe,1,Theorie}}{I_\text{Puppe,1,Theorie}},
+		\alpha = \frac{I_\text{Puppe,1,Theorie}}{I_\text{Puppe,2,Theorie}}=1.73\pm0.08,
 		\intertext{analog ist der Quotient $\beta$ der gemessenen Trägheitsmomente aus \eqref{wert:Puppe1} und  \eqref{wert:Puppe2}} 
 	\label{eq:Quo2}
-		\beta = \frac{I_\text{Puppe,1}}{I_\text{Puppe,1}}.
+		\beta = \frac{I_\text{Puppe,1}}{I_\text{Puppe,2}}\approx1.58.
 		\end{align}
 \end{subequations}
+Ausgehend von der Unsicherheit von $D$ (vgl. Gleichung \eqref{wert:Winkelricht}) und in $T$ (vgl. Gleichung \eqref{tab:M6 Puppenzeit}), ist die Unsicherheit von \beta mit $2.0\cdot10^{-15}\%$ ist vernachlässigbar.
 % subsection traegheitsmoment_eines_zylinders (end)
 % section auswertung (end)

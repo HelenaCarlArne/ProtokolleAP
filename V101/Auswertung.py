@@ -280,4 +280,11 @@ print("Daraus folgt eine Uebereinstimmung von {:.2f}".format(Verhaeltnis.n*100),
 print("")
 print("")
 print("And I think to myself, what a wonderful world!")
-print("")
+
+r_i =ufloat(0.0401012,0.0401012*0.000898)
+
+# Hier fehlt noch etwas!!
+
+#M_MANTEL=
+#M_KREIS=
+#print(M_MANTEL*((r_i)**2+(d_Z/2)**2)/2+M_KREIS(r_i)**2)
