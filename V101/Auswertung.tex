@@ -4,7 +4,7 @@
 
 \subsection{Bestimmung der Winkelrichtgröße $D$}
 \input{Tabellen/Tabelle1_Winkelrichtgroesse.tex}
-Mit den Messwerten aus Tabelle \ref{tab:M1 I_D} und $r=0.09965\si{\meter}$ lässt sich die Winkelrichtgröße $D$ mit der Gleichung \eqref{eq:winkelricht} bestimmen. Die Unsicherheit ist die Standardabweichung des Mittelwertes $\sigma_D$ mit
+\noindent Mit den Messwerten und $r=0.09965\si{\meter}$ lässt sich die Winkelrichtgröße $D$ mit der Gleichung \eqref{eq:Winkelricht} bestimmen. Die Unsicherheit ist die Standardabweichung des Mittelwertes $\sigma_D$ mit
 \begin{subequations}
 	\begin{equation}
 		\sigma_x = \sqrt{\sigma_x^2} := \sqrt{\frac{1}{n^2-n} \sum_{i=1}^n{(x_i-\bar{x})^2}}
@@ -19,8 +19,6 @@ Es ergibt sich
 	\label{wert:Winkelricht}
 	D=(0.0757\pm0.0019)\si{\newton\meter}
 \end{equation}
-
-
 \subsection{Bestimmung des Eigenträgheitsmomentes $I_D$}
 \input{Tabellen/Tabelle2_Eigentraegheit.tex}
 Zur Bestimmung des Eigenträgheitsmomentes $I_D$ wird die verwendete Stange als nahezu masselos angenommen, 
@@ -62,7 +60,7 @@ Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingpe
 		\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
 	\end{equation}
 \end{subequations}
-für $x=a^2$, $y=T^2$ und der Identität aus Gleichung \eqref{eq:Reg:ident}, wird das Eigenträgheitsmoment $I_D$ berechnet
+für $x=a^2$, $y=T^2$ und der Identität aus Gleichung \eqref{eq:Reg_ident}, wird das Eigenträgheitsmoment $I_D$ berechnet
 \begin{equation*}
 	I_D= \frac{D}{4\mathup{\pi^2}}b_{\text{Reg}}\\
 	   = (9.26\pm0.23)10^{-3} \si{\kilo\gram\meter\squared}
@@ -77,16 +75,14 @@ für $x=a^2$, $y=T^2$ und der Identität aus Gleichung \eqref{eq:Reg:ident}, wir
 	\caption{Regression von $T^2$ gegen $a^2$}
 \end{figure}
 \newpage
-
-
 \subsection{Trägheitsmoment $I_\text{Z}$ eines Zylinders}
 \label{sub:traegheitsmoment_eines_zylinders}
 \input{Tabellen/Tabelle3_Zylinder.tex}
-Mit bekannter Winkelrichtgröße $D$ wird die Gleichung \eqref{eq:Winkelricht} benutzt, um das Trägheitsmoment aus der Schwingungsdauer $T$ zu berechnen. Der Fehler des Trägheitsmomentes wird mithilfe der Gausschen Fehlerfortpflanzung mit
+\noindent Mit bekannter Winkelrichtgröße $D$ wird die Gleichung \eqref{eq:Winkelricht} benutzt, um das Trägheitsmoment aus der Schwingungsdauer $T$ zu berechnen. Der Fehler des Trägheitsmomentes wird mithilfe der Gausschen Fehlerfortpflanzung mit
 \begin{equation}
 	\label{eq:Gauss}
 	\sigma=\sqrt{\sum_i^N{\left( \frac{\partial{f}}{\partial{x_i}}\right)^2\m \Delta x_i^2}}
-\end{equation}bestimmt
+\end{equation}bestimmt.
 Es ergibt sich
 \begin{equation}
 	\label{wert:Zylinder}
@@ -118,15 +114,14 @@ Man erhält
 \begin{equation}
 	I_{\text{HZ, Theorie}}= (6.256306729\pm Fehler)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
-
-
 \subsection{Trägheitsmoment $I_\text{K}$ einer Kugel}
 \input{Tabellen/Tabelle4_Kugel.tex}
-Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsdauer $T$ das Trägheitsmoment $I_\text{K}$ der Kugel zu
+\noindent Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsdauer $T$ das Trägheitsmoment $I_\text{K}$ der Kugel zu
 \begin{equation}
 	\label{wert:Kugel}
 	I_K=(5.67\pm0.14)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
+bestimmt.
 Für die theoretische Berechnung des Trägheitsmomentes wird die gemessene Masse der Kugel benutzt.
 Mit $I_K = \frac{2}{5} m_{\text{Kugel}} r^2$ ist 
 \begin{equation}
@@ -134,10 +129,9 @@ Mit $I_K = \frac{2}{5} m_{\text{Kugel}} r^2$ ist
 	I_\text{K, Theorie}= (1.5335\pm0.0010)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
 \newpage
-
 \subsection{Trägheitsmoment $I_\text{Puppe}$}
 \input{Tabellen/Tabelle7_Puppe.tex}
-Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsdauer $T$ das Trägheitsmoment $I_\text{Puppe}$ für beide Positionen zu
+\noindent Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsdauer $T$ das Trägheitsmoment $I_\text{Puppe}$ für beide Positionen zu
 \begin{subequations}
 	\begin{equation}
 		\label{wert:Puppe1}
@@ -148,13 +142,42 @@ Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsd
 		I_\text{Puppe,2}=(1.81\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
 	\end{equation}
 \end{subequations}
-bestimmt. 
+bestimmt.
 Für die theoretische Berechnung werden die Volumina der Körperteile, die Dichte der Puppe $\rho_\text{Puppe}$ 
-mit $\rho_\text{Puppe}=\nicefrac{m_\text{Puppe}}{V_\text{Puppe, Gesamt}}$ und dadurch die Massen der Körperteile bestimmt.
+mit $\rho_\text{Puppe}=\frac{m_\text{Puppe}}{V_\text{Puppe, Gesamt}}$ und dadurch die Massen der Körperteile bestimmt. 
+Die Daten sind der Tabelle \ref{tab:M6 Puppenzeit} zu entnehmen.
+Für die Einzelträgheitsmomente, deren Summe das Trägheitsmoment der Puppe ist, gelten die Formeln
+\begin{align*}
+	I_\text{Arm,1} &= \frac{m_\text{Arm}}{2}\Bigl(\frac{d_\text{Arm}}{2}\Bigr)^2+\underbrace{m_\text{Arm}\Bigl(\frac{d_\text{Rumpf}}{2}+\frac{d_\text{Arm}}{2}\Bigr)^2}_{\text{Satz von Steiner}}\\
+	I_\text{Arm,2} &= \frac{m_\text{Arm}}{2}(\frac{d_\text{Arm}}{2})^2\\
+	I_\text{Bein} &= m_\text{Bein}\Bigl(\frac{(d_\text{Bein})^2}{16}+\frac{(h_\text{Bein})^2}{12}\Bigr)+
+	\underbrace{m_\text{Bein}\Bigl(\frac{h_\text{Bein}}{2}\Bigr)^2}_{\text{Satz von Steiner}}\\
+	I_\text{Kopf} &= \frac{2m_\text{Kopf}}{5}\Bigl(\frac{d_\text{Kopf}}{2}\Bigr)^2\\
+	I_\text{Rumpf} &= \frac{m_\text{Rumpf}}{2}\Bigl(\frac{d_\text{Rumpf}}{2}\Bigr)^2
+\end{align*}
 \begin{landscape}
 	\centering
 	\input{Tabellen/Tabelle5_Puppe.tex}
 	\input{Tabellen/Tabelle6_Puppe.tex}
 \end{landscape}
+\input{Tabellen/Tabelle8_Puppe.tex}
+\noindent Damit ergeben sich die theoretischen Gesamtträgheitsmomente 
+\begin{subequations}
+	\label{wert:Puppe1T}
+	\begin{align}
+		I_\text{Puppe,1,Theorie}=(3.74\pm0.24)10^{-4}  \si{\kilo\gram\meter\squared},\\
+		I_\text{Puppe,2,Theorie}=(6.48\pm0.27)10^{-4} \si{\kilo\gram\meter\squared}.
+	\end{align}
+\end{subequations}
+Der Quotient $\alpha$ der theoretischen Trägheitsmomente aus \eqref{wert:Puppe1T} ist
+\begin{subequations}
+	\begin{align}
+		\label{eq:Quo1}
+		\alpha = \frac{I_\text{Puppe,1,Theorie}}{I_\text{Puppe,1,Theorie}},
+		\intertext{analog ist der Quotient $\beta$ der gemessenen Trägheitsmomente aus \eqref{wert:Puppe1} und  \eqref{wert:Puppe2}} 
+	\label{eq:Quo2}
+		\beta = \frac{I_\text{Puppe,1}}{I_\text{Puppe,1}}.
+		\end{align}
+\end{subequations}
 % subsection traegheitsmoment_eines_zylinders (end)
 % section auswertung (end)

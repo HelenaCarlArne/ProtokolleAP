@@ -281,8 +281,3 @@ print("")
 print("")
 print("And I think to myself, what a wonderful world!")
 print("")
-
-print(T_1_array.T)
-print(T_2_array.T)
-
-
