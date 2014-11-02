@@ -59,18 +59,52 @@ T_2_array = T_5Schwingungen_2_array/5
 # Berechnungen
 #
 
+def linregress(x, y):
+    N = len(y) # Annahme: len(x) == len(y), sonst kommt waehrend der Rechnung eine Fehlermeldung
+    Delta = N*np.sum(x**2)-(np.sum(x))**2
+
+    A = (N*np.sum(x*y)-np.sum(x)*np.sum(y))/Delta
+    B = (np.sum(x**2) * np.sum(y) - np.sum(x) * np.sum(x * y)) / Delta
+
+    sigma_y = np.sqrt(np.sum((y - A * x - B)**2) / (N - 2))
+
+    A_error = sigma_y * np.sqrt(N / Delta)
+    B_error = sigma_y * np.sqrt(np.sum(x**2) / Delta)
+    b=ufloat(B,B_error)
+    print (A, A_error, B, B_error, I)
+def f(x,m,b):
+    return m*x+b
+
 #Messung 1, Richtwinkel
 D_array = (F*r)/Phi_Bogenmass
 D = ufloat(np.mean(D_array),sem(D_array))   
 m_1 = ufloat(np.mean(m_1_array),sem(m_1_array))                         
-m_2 = ufloat(np.mean(m_2_array),sem(m_2_array))                     
+m_2 = ufloat(np.mean(m_2_array),sem(m_2_array))  
+
 #Messung 2, Eigenträgheit
-T_Nom=np.array([np.mean(T_D_1),np.mean(T_D_2),np.mean(T_D_3),np.mean(T_D_4),np.mean(T_D_5),np.mean(T_D_6),np.mean(T_D_7),np.mean(T_D_8),np.mean(T_D_9),np.mean(T_D_10)])
-T_Std=np.array([sem(T_D_1),sem(T_D_2),sem(T_D_3),sem(T_D_4),sem(T_D_5),sem(T_D_6),sem(T_D_7),sem(T_D_8),sem(T_D_9),sem(T_D_10)])
-T_D_array= unp.uarray(T_Nom,T_Std)
-#print(T_D_array)
+T_D_Nom=np.array([np.mean(T_D_1),np.mean(T_D_2),np.mean(T_D_3),np.mean(T_D_4),np.mean(T_D_5),np.mean(T_D_6),np.mean(T_D_7),np.mean(T_D_8),np.mean(T_D_9),np.mean(T_D_10)])
+T_D_Std=np.array([sem(T_D_1),sem(T_D_2),sem(T_D_3),sem(T_D_4),sem(T_D_5),sem(T_D_6),sem(T_D_7),sem(T_D_8),sem(T_D_9),sem(T_D_10)])
+T_D_array= unp.uarray(T_D_Nom,T_D_Std)
 I_D_array = D*(T_D_array)**2/(4*(np.pi)**2)                           
 I_D = I_D_array.mean()  
+coeff,covar =curve_fit(f,A_array**2,(T_D_Nom)**2)
+I_D_Regress=D*coeff[1]/(4*np.pi*np.pi)
+
+x_plot=np.linspace(0,0.09)
+plt.plot(A_array**2,(T_D_Nom)**2, "rx", label="Werte")      #Plots
+plt.plot(x_plot,f(x_plot, *coeff),"b-",label="Fit")
+plt.ylabel(r"$T^2$")
+plt.xlabel(r"$a^2$")
+plt.legend(loc="best")
+plt.annotate(r'$y=m_{\mathrm{Reg}}x+b_{\mathrm{Reg}}$',(0.001,65),color="k")
+textm=r"$m_{{\mathrm{{Reg}}}}={}$".format(coeff[0])
+textb=r"$b_{{\mathrm{{Reg}}}}={}$".format(coeff[1])
+plt.annotate(textm,(0.001,60),color="k")
+plt.annotate(textb,(0.001,55),color="k")
+plt.tight_layout
+plt.savefig("Bilder/Messung2.pdf")
+
+
 #Messung 3, Zylinder  
 T_Z = ufloat(np.mean(T_Z_array),sem(T_Z_array))                         
 d_Z = ufloat(np.mean(d_Z_array),sem(d_Z_array))                         
@@ -82,6 +116,7 @@ m_Z_Theorie=V_Z*1050                                        #Masse, falls Styrop
 I_Z_array = T_Z_array**2*D/(4*(np.pi)**2)                   #Traegheit via Schwingdauer
 I_Z_Messung = I_Z_array.mean()
 I_Z_Theorie = (1/2)*m_2*(d_Z/2)**2                          #Traegheit via Geometrie
+
 #Messung 4, Kugel
 T_K = ufloat(np.mean(T_K_array),sem(T_K_array))                         
 d_K = ufloat(np.mean(d_K_array),sem(d_K_array))                         
@@ -90,6 +125,7 @@ m_K = ufloat(np.mean(m_K_array),sem(m_K_array))
 I_K_array = T_K_array**2*D/(4*(np.pi)**2)
 I_K_Messung = I_K_array.mean()                              #Traegheit via Schwingdauer
 I_K_Theorie = (2/5)*m_K*(d_K/2)**2                  #Traegheit via Geometrie
+
 #Messung 5, Puppe
 #Geometrie, Masse und Zeit der Puppe
 A_d_l =  ufloat(np.mean(A_d_l_array),sem(A_d_l_array))
@@ -143,25 +179,6 @@ Quo_Messung = I_2_Messung/I_1_Messung
 Quo_Theorie = I_2_Theorie/I_1_Theorie
 Verhaeltnis = Quo_Theorie/Quo_Messung
 
-def linregress(x, y):
-    N = len(y) # Annahme: len(x) == len(y), sonst kommt waehrend der Rechnung eine Fehlermeldung
-    Delta = N*np.sum(x**2)-(np.sum(x))**2
-
-    A = (N*np.sum(x*y)-np.sum(x)*np.sum(y))/Delta
-    B = (np.sum(x**2) * np.sum(y) - np.sum(x) * np.sum(x * y)) / Delta
-
-    sigma_y = np.sqrt(np.sum((y - A * x - B)**2) / (N - 2))
-
-    A_error = sigma_y * np.sqrt(N / Delta)
-    B_error = sigma_y * np.sqrt(np.sum(x**2) / Delta)
-    b=ufloat(B,B_error)
-    I=D*b/(4*np.pi*np.pi)
-    plt.plot(x,y,"rx")
-    #x_plot=np.linspace(0,10)
-    #plt.plot(x_plot**2,x_plot**2*A+B)
-    plt.show()
-    print (A, A_error, B, B_error, I)
-
 
 #
 # Ausgabe
@@ -174,7 +191,8 @@ print('')
 print("Messung 2:")
 print('Das Gewicht der Masse m_1 ist',m_1,'kg')
 print('Das Gewicht der Masse m_2 ist',m_2,'kg')
-#print('Das Eigentraegheitsmoment I der Drillachse ist ohne Regression',I_D,'kgm**2')
+print('Das Eigentraegheitsmoment I der Drillachse ist ohne Regression',I_D,'kgm**2')
+print('Das Eigentraegheitsmoment I der Drillachse ist mit Regression',I_D_Regress,'kgm**2')
 print("")
 print('')
 print("Messung 3:")
@@ -264,4 +282,4 @@ print("")
 print("And I think to myself, what a wonderful world!")
 print("")
 
-#linregress(A_array**2,(T_D_array)**2)
+

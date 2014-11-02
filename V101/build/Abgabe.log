@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  1 NOV 2014 22:30
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  2 NOV 2014 15:05
  restricted \write18 enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -381,7 +381,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.040 seconds
+luaotfload: fontloader loaded in 0.051 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1701,7 +1701,7 @@ generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 \g_fontspec_family_latinmodern-math.otf_int=\count503
 luaotfload | load : auto-selecting default features for script: dflt
@@ -1758,7 +1758,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 24 (LatinModernMath-Regular) defines feature dtls for script
  math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 10.
@@ -1776,7 +1776,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1868,7 +1868,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -2278,28 +2278,250 @@ LaTeX Warning: Reference `eq:winkelricht' on page 5 undefined on input line 5.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 12.
+(hyperref)                removing `math shift' on input line 20.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 12.
+(hyperref)                removing `subscript' on input line 20.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 12.
+(hyperref)                removing `math shift' on input line 20.
 
-[5] (./Tabellen/Tabelle2_Eigentraegheit.tex)
-Overfull \hbox (14.83046pt too wide) in paragraph at lines 31--33
+(./Tabellen/Tabelle2_Eigentraegheit.tex) [5]
+Overfull \hbox (14.83046pt too wide) in paragraph at lines 41--43
 [][]\EU2/lmr/m/n/10.95 Zur Be-stim-mung des Ei-gen-träg-heits-mo-ments $\EU2/l
 atinmodern-math.otf(0)/m/n/10.95 𝐼[]$ \EU2/lmr/m/n/10.95 wer-den die ge-mit-
 tel-ten Schwingperioden-
  []
 
-) (./Tabellen/Tabelle3_Zylinder.tex
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `eq:Reg:ident' on page 6 undefined on input line 62.
 
-) (./Tabellen/Tabelle4_Kugel.tex
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt <Bilder/Me
+ssung2.pdf, id=93, 578.16pt x 433.62pt>
+File: Bilder/Messung2.pdf Graphic file (type pdf)
+ <use Bilder/Messung2.pdf>
+Package pdftex.def Info: Bilder/Messung2.pdf used on input line 70.
+(pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 71.
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 71.
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+[6] [7<./Bilder/Messung2.pdf>]
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 74.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 74.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 74.
+
+(./Tabellen/Tabelle3_Zylinder.tex)
+
+LaTeX Warning: Command \m invalid in math mode on input line 80.
+
+Missing character: There is no ̉ (U+0309) in font cmmi10!
+<Bilder/Tonne.pdf, id=176, 116.435pt x 164.615pt>
+File: Bilder/Tonne.pdf Graphic file (type pdf)
+ <use Bilder/Tonne.pdf>
+Package pdftex.def Info: Bilder/Tonne.pdf used on input line 93.
+(pdftex.def)             Requested size: 58.21735pt x 82.3073pt.
+
+[8<./Bilder/Tonne.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 114.
+
+(./Tabellen/Tabelle4_Kugel.tex
 Overfull \hbox (5.475pt too wide) detected at line 11
  
  []
@@ -2349,18 +2571,12 @@ Overfull \hbox (5.475pt too wide) detected at line 20
  
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [6] [7] [8] (./Tabellen/Tabelle5_Puppe.tex) [9] (./Diskussion.tex)
+)) (./Diskussion.tex)
 
 LaTeX Warning: Empty bibliography on input line 28.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
-[10
-
-
-]
+[9]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./build/Abgabe.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
@@ -2379,16 +2595,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39872 strings out of 494695
+ 40106 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 646 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 14 kern, 3 sub_mlist, 23 attribute, 69 glue
-_spec, 23 attribute_list, 1 write nodes
-   avail lists: 1:47,2:7764,3:264,4:3818,5:575,6:1810,7:93,8:16,9:2061,10:988,11
+ 722 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 23 kern, 1 sub_mlist, 29 attribute, 69 glue
+_spec, 29 attribute_list, 1 write nodes
+   avail lists: 1:47,2:6111,3:269,4:2290,5:343,6:1717,7:82,8:16,9:1152,10:988,11
 :510,12:229
- 42392 multiletter control sequences out of 65536+600000
- 87 fonts using 25358379 bytes
- 70i,13n,104p,1049b,1165s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 42485 multiletter control sequences out of 65536+600000
+ 158 fonts using 51402795 bytes
+ 70i,19n,104p,1049b,1167s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-ma
 th.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bo
 ld.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-reg
@@ -2400,10 +2616,10 @@ ic/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/p
 ublic/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentyp
 e/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype
 /public/lm/lmroman12-bold.otf>
-Output written on Abgabe.pdf (10 pages, 109615 bytes).
+Output written on Abgabe.pdf (9 pages, 140281 bytes).
 
-PDF statistics: 226 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 131072)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 131072)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

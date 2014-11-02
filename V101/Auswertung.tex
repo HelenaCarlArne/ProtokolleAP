@@ -2,14 +2,23 @@
 \label{sec:swrtng}
 \subsection{Bestimmung der Winkelrichtgröße $D$}
 \input{Tabellen/Tabelle1_Winkelrichtgroesse.tex}
-Mit den Messwerten aus Tabelle \ref{tab:M1 I_D} und $r=0.09965\si{\meter}$ lässt sich das Mittel der Winkelrichtgröße $D$ mit der Gleichung \eqref{eq:winkelricht} bestimmen. Die Unsicherheit ist die Standardabweichung des Mittelwertes $\sigma_D$ mit
-\begin{align}
-	\sigma_D &= \sqrt{\sigma_D^2} := \sqrt{\frac{1}{n^2-n} \sum_{i=1}^n{(D_i-\bar{D})^2}}
-	\intertext{und}
-	\bar{D} &= \frac{1}{n} \sum_{i=1}^n{D_i}.
-\end{align}
-Es ergibt sich $D=(0.0757\pm0.0019)\si{\newton\meter}$
+Mit den Messwerten aus Tabelle \ref{tab:M1 I_D} und $r=0.09965\si{\meter}$ lässt sich die Winkelrichtgröße $D$ mit der Gleichung \eqref{eq:winkelricht} bestimmen. Die Unsicherheit ist die Standardabweichung des Mittelwertes $\sigma_D$ mit
+\begin{subequations}
+	\begin{equation}
+		\sigma_x = \sqrt{\sigma_x^2} := \sqrt{\frac{1}{n^2-n} \sum_{i=1}^n{(x_i-\bar{x})^2}}
+	\end{equation}
+	\begin{equation}
+		\bar{x} = \frac{1}{n} \sum_{i=1}^n{x_i}.
+	\end{equation}
+\end{subequations}
+für $x=D$.
+Es ergibt sich 
+\begin{equation}
+	\label{wert:Winkelricht}
+	D=(0.0757\pm0.0019)\si{\newton\meter}
+\end{equation}
 \subsection{Bestimmung des Eigenträgheitsmomentes $I_D$}
+\input{Tabellen/Tabelle2_Eigentraegheit.tex}
 Zur Bestimmung des Eigenträgheitsmomentes $I_D$ wird die verwendete Stange als nahezu masselos angenommen, 
 wodurch ihr Anteil am Trägheitsmoment vernachlässigbar ist. 
 Das gemessene Trägheitsmoment setzt sich aufgrund der Linearität des Trägheitsmomentes aus den Trägheitsmomenten der Massestücke $m_1$ und $m_2$ als Punktmassen, sowie dem Eigenträgheitsmoment $I_D$ zusammen,
@@ -25,9 +34,10 @@ Es gilt
 	T^2&= 4\mathup{\pi^{2}}\frac{I_D}{D}+4\mathup{\pi^{2}}\frac{a^{2}(m_1+m_2)}{D}\\
 \end{align*}
 \begin{equation}
+	\label{eq:Reg_ident}
 	T^2= \underbrace{4\mathup{\pi^{2}}\frac{(m_1+m_2)}{D}}_{m_{\text{Reg}}}\cdot a^{2}+\underbrace{4\mathup{\pi^{2}}\frac{I_D}{D}}_{b_{\text{Reg}}}
 \end{equation}
-\input{Tabellen/Tabelle2_Eigentraegheit.tex}
+
 Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingperioden-Quadrate ${T}^2$ gegen das Abstandsquadrat $a^2$ aufgetragen. Aus der Regression mittels der Formeln
 \begin{subequations}
 	\begin{equation}
@@ -49,4 +59,73 @@ Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingpe
 		\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
 	\end{equation}
 \end{subequations}
+für $x=a^2$, $y=T^2$ und der Identität aus Gleichung \eqref{eq:Reg:ident}, wird das Eigenträgheitsmoment $I_D$ berechnet
+\begin{align}
+	I_D&= \frac{D}{4\mathup{\pi^2}}b_{\text{Reg}}\\
+	   &= (9.26\pm0.23)10^{-3} \si{\kilo\gram\meter\squared}
+\end{align}
+\begin{figure}[hp]
+	\centering
+	\label{fig:Regress}
+	\includegraphics[width=\textwidth]{Bilder/Messung2.pdf}
+	\caption{Regression von $T^2$ gegen $a^2$}
+\end{figure}
+\newpage
+\subsection{Trägheitsmoment $I_\text{Z}$ eines Zylinders}
+\label{sub:traegheitsmoment_eines_zylinders}
+\input{Tabellen/Tabelle3_Zylinder.tex}
+Mit bekannter Winkelrichtgröße $D$ wird die Gleichung \eqref{eq:Winkelricht} benutzt, um das Trägheitsmoment aus der Schwingungsdauer $T$ zu berechnen. Der Fehler des Trägheitsmomentes wird mithilfe der Gausschen Fehlerfortpflanzung mit
+\begin{equation}
+	\label{eq:Gauss}
+	\sigma=\sqrt{\sum_i^N{\left( \frac{\partial{f}}{\partial{x_i}}\right)^2\m \Delta x_i^2}}
+\end{equation}bestimmt
+Es ergibt sich
+\begin{equation}
+	\label{wert:Zylinder}
+	I_\text{Z} = (1.48\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
+\end{equation}
+Das sichtbare Material der Zylinders ist Styropor-ähnlich. 
+Da die gemessene Masse des Zylinders, $m_\text{Z} = (368.5740\pm0.0022) \si{\gram}$, stark von der theoretischen Masse eines Styropor-Zylinders gleicher Maße, $m_\text{Theorie} = \mathup{\rho_{\text{Styropor}}}V=(807.4\pm0.8) \si{\gram}$, abweicht, 
+wird die Vermutung angestellt, dass der Körper ein Hohlzylinder ist oder dass der Körper nicht vollständig aus Styropor besteht.
+\begin{figure}[b]
+	\label{fig:tonne}
+	\centering
+	\includegraphics[scale=0.5]{Bilder/Tonne.pdf}
+	\caption{Bezeichnungen des Hohlzylinders}
+\end{figure}
+Zur Bestimmung der Geometrie des vermuteten Styropor-Hohlzylinders wird die Formel für Hohlzylinder-Volumen  mit der Dichte $\mathup{\rho_{\text{Styropor}}}$ multipliziert und mit der gemessenen Masse gleichgesetzt. 
+Dabei gilt die Annahme, dass die Stärke des Hohlzylinders für Mantel, Deckel und Boden gleich sind, $r_a-r_i=h_a-h_i$. 
+Die so von zwei Unbekannten $r_i$ und $h_i$ auf eine Unbekannte $r_i$ reduzierte Gleichung
+\begin{equation}
+	m_\text{Z}=\rho(-2\pi*(r_i)^3+(r_i)^2*(2\pi r_a-\pi h_a)+(\pi h_a r_a^2)
+\end{equation}
+ergibt für den Innenradius $r_i = 0.0401012\si{\meter}$.
+
+Das Trägheitsmoment eines solchen Hohlzylinders setzt sich zusammen aus den Trägheitsmomenten eines Zylindermantels und zwei Kreisscheiben, die um ihren Mittelpunkt rotieren.
+\begin{align*}
+	I_{\text{HZ, Theorie}}&=I_{\text{Zylindermantel}}+2I_{\text{Kreisscheibe}}\\
+	I_{\text{HZ, Theorie}}&=m_\text{Mantel} \frac{r_i^2+r_a^2}{2}+m_\text{Kreisscheibe} r_i^2
+\end{align*}
+Man erhält
+\begin{equation}
+	I_{\text{HZ, Theorie}}= (6.256306729\pm Fehler)10^{-3} \si{\kilo\gram\meter\squared}
+\end{equation}
+
+\subsection{Trägheitsmoment $I_\text{K}$ einer Kugel}
+\input{Tabellen/Tabelle4_Kugel.tex}
+Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsdauer $T$ das Trägheitsmoment $I_\text{K}$ der Kugel zu
+\begin{equation}
+	\label{wert:Kugel}
+	I_K=(5.67\pm0.14)10^{-3} \si{\kilo\gram\meter\squared}
+\end{equation}
+Das sichtbare Material der Kugel ist Styropor-ähnlich. 
+Für die theoretische Berechnung des Trägheitsmomentes wird eine Styropor-Vollkugel angenommen. 
+Mit $I_K = \frac{2}{5} m_{\text{Kugel}} r^2$ ist 
+\begin{equation}
+	\label{wert:Kugel}
+	I_\text{K, Theorie}= (1.5335\pm0.0010)10^{-3} \si{\kilo\gram\meter\squared}
+\end{equation}
+
+
+% subsection traegheitsmoment_eines_zylinders (end)
 % section auswertung (end)
