@@ -2,7 +2,8 @@ all: Abgabe.pdf
 	
 Abgabe.pdf: *.tex Bilder/* Tabellen/* | build
 	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error Abgabe.tex
-	#BIBINPUTS=build:. biber build/Abgabe.bcf
+	mv build/Abgabe.bcf Abgabe.bcf
+	BIBINPUTS=build:. biber Abgabe.bcf
 	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error Abgabe.tex
 	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error Abgabe.tex
 	mv build/Abgabe.pdf Abgabe.pdf

@@ -284,7 +284,12 @@ print("And I think to myself, what a wonderful world!")
 r_i =ufloat(0.0401012,0.0401012*0.000898)
 
 # Hier fehlt noch etwas!!
-
-#M_MANTEL=
-#M_KREIS=
-#print(M_MANTEL*((r_i)**2+(d_Z/2)**2)/2+M_KREIS(r_i)**2)
+V_MANTEL=np.pi*(h_Z)*((d_Z/2)**2-(r_i)**2)
+V_KREIS=np.pi*((d_Z/2)-r_i)*((r_i)**2)
+M_MANTEL=1050*V_MANTEL
+M_KREIS=1050*V_KREIS
+print(V_MANTEL)
+print(V_KREIS)
+print(M_MANTEL)
+print(M_KREIS)
+print(M_MANTEL*(((r_i)**2+((d_Z)/2)**2)/2)+M_KREIS*(r_i)**2)
