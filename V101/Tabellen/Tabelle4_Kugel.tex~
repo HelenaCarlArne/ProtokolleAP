@@ -1,0 +1,23 @@
+\begin{table}
+	\centering
+	\sisetup{table-format=2.3}
+	\begin{tabular}{S[table-format=1.2] S[table-format=1.3] S[table-format=1.3] S[table-format=3.1]}
+	\toprule
+	\multicolumn{2}{c}{Schwingungsdauer} & {Abmessungen} & {Masse} \\
+	{$5T/\:\si{\second}$} & {$T/\:\si{\second}$} & {$\text{Durchmesser}\:D/\:\si{\centi\meter}$} & {$M/\:\si{\gram}$}\\
+	\midrule
+8.60 & 1.720 & 13.745 &	812.7 \\
+8.56 & 1.721 & 13.730 &	812.7 \\
+8.61 & 1.722 & 13.720 &	812.7 \\
+8.58 & 1.716 & 13.745 &	812.7 \\
+8.56 & 1.721 & 13.750 &	812.7 \\
+8.61 & 1.722 & 13.740 &	812.7 \\
+8.55 & 1.710 & 13.750 &	812.7 \\
+8.61 & 1.722 & 13.710 &	812.7 \\
+8.60 & 1.720 & 13.745 &	812.7 \\
+8.61 & 1.722 & 13.730 &	812.7 \\
+	\bottomrule
+	\end{tabular}
+	\caption{Messung zur Bestimmung des Eigenträgheitsmomentes einer Kugel}
+	\label{tab:M4 I_K}
+\end{table}
