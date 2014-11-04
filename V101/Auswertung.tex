@@ -23,7 +23,7 @@ Es ergibt sich
 \input{Tabellen/Tabelle2_Eigentraegheit.tex}
 Zur Bestimmung des Eigenträgheitsmomentes $I_D$ wird die verwendete Stange als nahezu masselos angenommen, 
 wodurch ihr Anteil am Trägheitsmoment vernachlässigbar ist. 
-Das gemessene Trägheitsmoment setzt sich aufgrund der Linearität des Trägheitsmomentes aus den Trägheitsmomenten der Massestücke $m_1$ und $m_2$ als Punktmassen, sowie dem Eigenträgheitsmoment $I_D$ zusammen,\cite{kuchen}
+Das gemessene Trägheitsmoment setzt sich aufgrund der Linearität des Trägheitsmomentes aus den Trägheitsmomenten der Massestücke $m_1$ und $m_2$ als Punktmassen, sowie dem Eigenträgheitsmoment $I_D$ zusammen\cite{kuchen},
 \begin{equation}
 	I= I_D+I_{m_1}+I_{m_2}.
 \end{equation}
@@ -39,7 +39,7 @@ Es gilt
 	\label{eq:Reg_ident}
 	T^2= \underbrace{4\mathup{\pi^{2}}\frac{(m_1+m_2)}{D}}_{m_{\text{Reg}}}\cdot a^{2}+\underbrace{4\mathup{\pi^{2}}\frac{I_D}{D}}_{b_{\text{Reg}}}
 \end{equation}
-Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingperioden-Quadrate ${T}^2$ gegen das Abstandsquadrat $a^2$ aufgetragen. Aus der Regression mittels der Formeln
+Zur Bestimmung des Eigenträgheitsmoments $I_D$ werden die gemittelten Schwingperioden-Quadrate ${T}^2$ gegen das Abstandsquadrat $a^2$ aufgetragen. Aus der Regression mittels der Formeln (vgl. \cite{scipy})
 \begin{subequations}
 	\begin{equation}
 		\Delta = N \sum{x^2} - {(\sum{x})}^2
@@ -89,7 +89,7 @@ Es ergibt sich
 	\label{wert:Zylinder}
 	I_\text{Z} = (1.48\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
-Das sichtbare Material der Zylinders ist Styropor-ähnlich. \cite{dichte_styropor}
+Das sichtbare Material der Zylinders ist Styropor-ähnlich \cite{dichte_styropor}.
 Da die gemessene Masse des Zylinders, $m_\text{Z} = (368.5740\pm0.0022) \si{\gram}$, stark von der theoretischen Masse eines Styropor-Zylinders gleicher Maße, $m_\text{Theorie} = \mathup{\rho_{\text{Styropor}}}V=(807.4\pm0.8) \si{\gram}$, abweicht, 
 wird die Vermutung angestellt, dass der Körper ein Hohlzylinder ist oder dass der Körper nicht vollständig aus Styropor besteht.
 \begin{figure}[b]
@@ -105,7 +105,7 @@ Die so von zwei Unbekannten $r_i$ und $h_i$ auf eine Unbekannte $r_i$ reduzierte
 	m_\text{Z}=\rho(-2\pi*(r_i)^3+(r_i)^2*(2\pi r_a-\pi h_a)+(\pi h_a r_a^2)
 \end{equation}
 ergibt für den Innenradius $r_i = 0.0401012\si{\meter}\pm0.0898\%$.
-Das Trägheitsmoment eines solchen Hohlzylinders setzt sich zusammen aus den Trägheitsmomenten eines Zylindermantels und zwei Kreisscheiben, die um ihren Mittelpunkt rotieren. \cite{kuchen}
+Das Trägheitsmoment eines solchen Hohlzylinders setzt sich zusammen aus den Trägheitsmomenten eines Zylindermantels und zwei Kreisscheiben, die um ihren Mittelpunkt rotieren\cite{kuchen}.
 \input{Tabellen/Tabelle3a_Zylinder}
 Es gilt
 \begin{align*}
@@ -147,7 +147,7 @@ bestimmt.
 Für die theoretische Berechnung werden die Volumina der Körperteile, die Dichte der Puppe $\rho_\text{Puppe}$ 
 mit $\rho_\text{Puppe}=\frac{m_\text{Puppe}}{V_\text{Puppe, Gesamt}}$ und dadurch die Massen der Körperteile bestimmt. 
 Die Daten sind der Tabelle \ref{tab:M6 Puppenzeit} zu entnehmen.
-Für die Einzelträgheitsmomente, deren Summe das Trägheitsmoment der Puppe ist, gelten die Formeln
+Für die Einzelträgheitsmomente, deren Summe das Trägheitsmoment der Puppe ist, gelten die Formeln\cite{kuchen}
 \begin{align*}
 	I_\text{Arm,1} &= \frac{m_\text{Arm}}{2}\Bigl(\frac{d_\text{Arm}}{2}\Bigr)^2+\underbrace{m_\text{Arm}\Bigl(\frac{d_\text{Rumpf}}{2}+\frac{d_\text{Arm}}{2}\Bigr)^2}_{\text{Satz von Steiner}}\\
 	I_\text{Arm,2} &= \frac{m_\text{Arm}}{2}(\frac{d_\text{Arm}}{2})^2\\
