@@ -1,0 +1,18 @@
+\section{Ziel}
+\label{sec:ziel}
+Ziel des Versuches ist, die Wärmeleitung von den Metallen Messing, Edelstahl und Aluminium, zu bestimmen.
+
+\section{Theorie}
+\label{sec:theorie}
+
+In einem abgeschlossenen System findet Wärmetransport statt, um ein Temperaturgleichgewicht zu erreichen. Dies kann durch Konvektion, Wärmestrahlung oder Wärmeleitung geschehen. Bei Konvektion vermischen sich Gase oder Flüssigkeiten mit unterschiedlichen warmen Temperaturbereichen; durch Wärmestrahlung gibt ein Körper mit einer von der Umgebung unterschiedlichen Temperatur die Wärme an diese ab.
+
+Die in diesem Versuch betrachtete Wärmeleitung in festen Körpern geschieht über freie Elektronen und Phononen - Quasiteilchen, welche auf die Energieübertragung durch Gitterschwingungen zurückzuführen sind. 
+Dabei fließt eine Wärmemenge 
+\begin{equation}
+	\label{waermemenge}
+	\mathup{d}Q=-\kappa\mathup{A}\frac{\partial{T}}{\partial{x}}\mathup{d}t
+\end{equation}
+
+durch den Probestab mit Querschnittsfläche A von hoher zu niedriger Temperatur. Die Wärmeleitfähigkeit $\kappa$ ist eine Materialkonstante, die Wärmeleitfähigkeit.
+% section theorie (end)
