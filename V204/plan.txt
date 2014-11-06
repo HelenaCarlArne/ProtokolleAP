@@ -1,0 +1,36 @@
+
+Statische Methode
+
+Ziel:Messe an 2 Stellen Temperatur als Fkt der Zeit und bestimme Kappa über den Temperaturverlauf
+
+-Grafik 1: Temepraturverläufe von x_fern: T1, T4
+-Grafik 2: Temepraturverläufe von x_fern: T5, T8
+ -> Vergleiche beide Grafiken: Nenne Unterschiede und Gemeinsamkeiten
+
+-Welcher Stab hat die beste Wärmeleitung?
+-bestimme für 5 verschiedene Zeiten Delta Q/ Delta t
+- Diagramm: Delta T(t)=T7-T8
+- Diagramm: Delta T(t)=T2-T1
+ -> Vergleiche
+
+Dynamische Methode
+
+Ziel: Heize periodisch und bestimme Kappa aus der Ausbreitungsgeschwindigkeit der Welle
+
+- Grafik: breiter Messingstab : Temperaturverlauf von T1 und T2
+  ~ bestimme A1, A2, delta t  -> berechne Kappa
+-Grafik: Aluminium : Temperaturverlauf von T5 und T6
+  ~ bestimme A5, A6, delta t  -> berechne Kappa
+- Grafik: Edelstahl:  Temperaturverlauf von T7 und T8
+ ~ bestimme A7, A8, delta t  -> berechne Kappa
+
+Mache es Dir gemütlich, mit Tee und Keksen und sage, wenn ich noch etwas machen soll. :)
+
+
+Aufgaben: Kopiert aus der Versuchsanleitung
+•Untersuchung des zeitlichen Verlaufs der Temperaturanderung fur die vier vorliegenden
+Stabe.
+•
+Bestimmung der Wellenlange und Frequenz der ’Temperaturwelle’ nach periodischer
+Anregung.
+•Bestimmung der Warmeleitfahigkeit von Aluminium, Messing und Edelstahl nach derAngstrom-Methode
