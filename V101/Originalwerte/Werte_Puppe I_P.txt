@@ -13,6 +13,6 @@
 3.84		4.90				0.16261
 3.87		4.87				0.16264
 
-# !!! T_1 entspricht der 1. Position, T_2 der 2.!!!
+#T_1 entspricht der 2.. Position, T_2 der 1.!
 
 

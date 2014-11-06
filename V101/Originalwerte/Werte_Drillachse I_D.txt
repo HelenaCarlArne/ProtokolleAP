@@ -12,4 +12,4 @@
 0.231		14.10	13.96	0.22175		0.22175
 0.281		16.67	16.73	0.22176		0.22174
 
-#!!!!!BEACHTE: Abstand A wurde von der Mitte bis zur Innenkante gemessen: Addiere 2.985/2 cm = 1.4925 cm = 0.014925 m dazu!!!!!
+#BEACHTE: Abstand A wurde von der Mitte bis zur Innenkante gemessen: Addiere 2.985/2 cm = 1.4925 cm = 0.014925 m 

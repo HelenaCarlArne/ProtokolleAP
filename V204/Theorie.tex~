@@ -1,0 +1,48 @@
+\section{Ziel}
+\label{sec:ziel}
+Ziel des Versuches ist, die Wärmeleitung von den Metallen Messing, Edelstahl und Aluminium, zu bestimmen.
+
+\section{Theorie}
+\label{sec:theorie}
+
+In einem abgeschlossenen System findet Wärmetransport statt, um ein Temperaturunterschiede auszugleichen zu erreichen. Dies kann durch Konvektion, Wärmestrahlung oder Wärmeleitung geschehen. Bei Konvektion vermischen sich Gase oder Flüssigkeiten mit unterschiedlichen warmen Temperaturbereichen; durch Wärmestrahlung gibt ein Körper mit einer von der Umgebung unterschiedlichen Temperatur die Wärme an diese ab.
+
+Die in diesem Versuch betrachtete Wärmeleitung in festen Körpern geschieht über freie Elektronen und Phononen - Quasiteilchen, welche auf die Energieübertragung durch Gitterschwingungen zurückzuführen sind. 
+Dabei fließt eine Wärmemenge 
+\begin{equation}
+	\label{waermemenge}
+	\mathup{d}Q=-\kappa\mathup{A}\frac{\partial{T}}{\partial{x}}\mathup{d}t
+\end{equation}
+
+durch den Festkörper mit Querschnittsfläche A von hoher zu niedriger Temperatur. Die Wärmeleitfähigkeit $\kappa$ ist eine Materialkonstante.
+Mit \eqref{waermemenge} und der Wärmestromdichte
+\begin{equation}
+\label{waermestromdichte}
+j_\mathup{w}= -\kappa \frac{\partial{T}}{\partial{x}}
+\end{equation}
+
+kann mit Hilfe der Kontinuitätsgleichung die eindimensionale Wärmeleitungsgleichung hergeleitet werden.
+
+\begin{equation}
+\label{waermeleitungsgleichung}
+\frac{\partial{T}}{\partial{t}} = \frac{\partial^2{T}}{\partial{x^2}}\frac{\kappa}{{\rho}c}
+\end{equation}
+
+hergeleitet werden. Diese beschreibt die räumliche und zeitliche Entwicklung der Temperaturverteilung. Dabei ist
+\begin{equation}
+\label{temperaturleitfähigkeit}
+\frac{\kappa}{{\rho}c} = \sigma_\mathup{T}
+\end{equation}
+die Temperaturleitfähigkeit. Sie gibt die Schnelligkeit an, mit der das Temperaturgleichgewicht erreicht wird.
+
+
+
+Werden Körper durch periodischen Temperaturwechsel geheizt oder -kühlt breiten sich in seinem Innern Temperaturwellen der Form
+
+\begin{equation}
+\label{temperaturwechsel}
+%die Klammern fehlen eine Zeile später noch für exp - und cos - Funktion
+T(x, t)= T_\mathup{max} \exp{-\sqrt{\frac{{\omega\rho} c}{2\kappa}}}x\cos{\omega t-\sqrt{\frac{\omega\rho c}{2\kappa}}x}
+\end{equation}
+
+% section theorie (end)
