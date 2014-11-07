@@ -5,7 +5,7 @@
 \begin{figure}[h!]
 	\label{fig:overview1}
 	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/M1_Overview.pdf}
+	\includegraphics[width=0.7\textwidth]{Bilder/M1_Overview.pdf}
 	\caption{Alle gemessenen Temperaturen}
 \end{figure}
 Alle Temperaturverläufe werden in Diagramm \ref{fig:overview1} gleichzeitig aufgetragen. Es zeigt, dass der allgmeine Verlauf der Temperatur unabhängig von dem Material und der Entfernung des Messpunktes ist. Die Temperaturkurven zeigen jeweils beschränktes Wachstum.
@@ -24,7 +24,7 @@ Die Kurve von Edelstahl ist deutlich von den Kurven der anderen Metallstäbe ent
 Zum Endpunkt der Messung liegt zwischen den Messpunkten von Aluminium und Edelstahl eine maximale Temperaturdifferenz von etwa $7 \si{\degreeCelsius}$ vor. 
 
 Zirka 700 Sekunden nach Beginn des Erwärmens liegen an den entfernten Messpunkten die Temperaturen nach Tabelle \ref{tab:700} vor. 
-\begin{table}
+\begin{table}[h!]
 \centering
 \begin{tabular}{cccc}
 	\toprule
@@ -87,7 +87,7 @@ Es ergibt sich\\
 	\bottomrule
 \end{tabular}
 \end{table}
-\begin{figure}[p]
+\begin{figure}[htp]
 	\label{fig:tempverl}
 	\centering
 	\includegraphics[width=0.8\textwidth]{Bilder/M1_Tempdiff.pdf}
@@ -100,4 +100,102 @@ Nach dem Maximum nimmt die Differenz exponentiell ab und erreicht einen Grenzwer
 Der Vergleich der Kurven zeigt, dass der Messingstab gegenüber dem Edelstahlstab den Grenzwert der Temperaturdifferenz schneller erreicht.
 
 \subsection{Dynamische Messung mit 80 Sekunden-Periode}
-Trolololo.
+Die Diagramme \ref{fig:M2Messing} zeigen bei periodischer Anregung einer Temperaturwelle mit Periodendauer von 80 Sekunden den Temperaturverlauf an den jeweiligen Enden. 
+Zusätzlich zum Verlauf sind die Extrema eingezeichnet und die Amplitudenfunktion der Extrema eingezeichnet. 
+Analoges Vorgehen mit den Werten für den Aluminiumstab ergeben die Diagramme \ref{fig:M2Alu} und \ref{fig:M2AluNorm}.
+Von der Auswertung wurden wegen offensichtlicher Abweichung von der Erwartung die Werte ab dem neunten lokalen Maximum. 
+
+Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M2MessingNorm} und \ref{fig:M2AluNorm}. In diesem Diagramm ist erkennbar, dass sich für eine gleichmäßige Schwingung jeweils die oberen Amplitudenfunktionen zur Normierung eignen.
+
+\begin{figure}[htp]
+\label{fig:M2Messing}
+\centering
+	\begin{subfigure}{0.9\textwidth}
+	\includegraphics[width=\textwidth]{Bilder/M2_Messing_kuehl.pdf}
+	\end{subfigure}
+	\begin{subfigure}{0.9\textwidth}
+	\includegraphics[width=\textwidth]{Bilder/M2_Messing_warm.pdf}
+	\end{subfigure}
+\caption{Periodische Messung bei Messing mit 80 Sekunden-Periode}
+\end{figure}
+\begin{figure}[htp]
+\label{fig:M2Alu}
+\centering
+	\begin{subfigure}{0.9\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/M2_Alu_kuehl.pdf}
+	\end{subfigure}
+	\begin{subfigure}{0.9\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/M2_Alu_warm.pdf}
+	\end{subfigure}
+\caption{Periodische Messung bei Aluminium mit 80 Sekunden-Periode}
+\end{figure}
+\begin{figure}[htp]
+	\label{fig:M2MessingNorm}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Normierungsauswahl/M2_Alu_norm.pdf}
+	\caption{Normierung von Diagramm \ref{fig:M2Alu} auf Grundschwingung}
+\end{figure}
+\begin{figure}[htp]
+	\label{fig:M2AluNorm}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Normierungsauswahl/M2_Messing_norm.pdf}
+	\caption{Normierung von Diagramm \ref{fig:M2Messing} auf Grundschwingung}
+\end{figure}
+\subsection{Dynamische Messung mit 200 Sekunden-Periode}
+Die Diagramme \ref{fig:M3Messing} zeigen bei periodischer Anregung einer Temperaturwelle mit Periodendauer von 200 Sekunden den Temperaturverlauf an den jeweiligen Enden. 
+Zusätzlich zum Verlauf sind die Extrema eingezeichnet und die Amplitudenfunktion der Extrema eingezeichnet. 
+Analoges Vorgehen mit den Werten für den Aluminiumstab und den Edelstahlstab ergeben die Diagramme \ref{fig:M3Alu} und \ref{fig:M3AluNorm}, \ref{fig:M3Edelstahl} und \ref{fig:M3EdelstahlNorm}.
+
+Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M3MessingNorm}, \ref{fig:M3AluNorm} und\ref{fig:M3EdelstahlNorm}. Man erkennt anhand dieser Diagramme, dass sich jeweils die oberen Amplitudenfunktionen dazu eignen, den Temperaturverlauf eine gleichmäßige Grundschwingung zu normieren.
+
+\begin{figure}[htp]
+\label{fig:M3Messing}
+\centering
+	\begin{subfigure}{0.9\textwidth}
+	\includegraphics[width=\textwidth]{Bilder/M3_Messing_kuehl.pdf}
+	\end{subfigure}
+	\begin{subfigure}{0.9\textwidth}
+	\includegraphics[width=\textwidth]{Bilder/M3_Messing_warm.pdf}
+	\end{subfigure}
+\caption{Periodische Messung bei Messing mit 200 Sekunden-Periode}
+\end{figure}
+\begin{figure}[htp]
+\label{fig:M3Alu}
+\centering
+	\begin{subfigure}{0.9\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/M3_Alu_kuehl.pdf}
+	\end{subfigure}
+	\begin{subfigure}{0.9\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/M3_Alu_warm.pdf}
+	\end{subfigure}
+\caption{Periodische Messung bei Aluminium mit 200 Sekunden-Periode}
+\end{figure}
+\begin{figure}[htp]
+	\label{fig:M3MessingNorm}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Normierungsauswahl/M3_Alu_norm.pdf}
+	\caption{Normierung von Diagramm \ref{fig:M3Alu} auf Grundschwingung}
+\end{figure}
+\begin{figure}[htp]
+	\label{fig:M3AluNorm}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Normierungsauswahl/M3_Messing_norm.pdf}
+	\caption{Normierung von Diagramm \ref{fig:M3Messing} auf Grundschwingung}
+\end{figure}
+\begin{figure}[p]
+\label{fig:M3Edelstahl}
+\centering
+	\begin{subfigure}{0.9\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/M3_Edelstahl.pdf}
+	\end{subfigure}
+	\begin{subfigure}{0.9\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/Normierungsauswahl/M3_Edelstahl_norm.pdf}
+	\end{subfigure}
+\caption{Periodische Messung bei Edelstahl mit 200 Sekunden-Periode sowie Normierung auf Grundschwingung}
+\end{figure}
