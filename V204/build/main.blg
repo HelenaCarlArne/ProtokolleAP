@@ -1,19 +1,19 @@
 [1] Config.pm:318> INFO - This is Biber 1.8
 [1] Config.pm:321> INFO - Logfile is 'build/main.blg'
-[185] biber-darwin:275> INFO - === Thu Nov  6, 2014, 19:08:09
-[186] Biber.pm:333> INFO - Reading 'build/main.bcf'
-[279] Biber.pm:630> INFO - Found 6 citekeys in bib section 0
-[362] Biber.pm:3053> INFO - Processing section 0
-[483] Biber.pm:3190> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[507] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
-[508] bibtex.pm:812> INFO - Found BibTeX data source 'build/lit.bib'
-[524] Biber.pm:3190> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[527] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
-[531] bibtex.pm:812> INFO - Found BibTeX data source 'build/programme.bib'
-[579] Utils.pm:169> WARN - I didn't find a database entry for 'V204' (section 0)
-[730] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[731] Biber.pm:2945> INFO - Sorting 'entry' list 'nty' keys
-[731] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[761] bbl.pm:482> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[762] bbl.pm:555> INFO - Output to build/main.bbl
-[763] Biber.pm:105> INFO - WARNINGS: 1
+[158] biber-darwin:275> INFO - === Fri Nov  7, 2014, 20:15:22
+[158] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[312] Biber.pm:630> INFO - Found 6 citekeys in bib section 0
+[354] Biber.pm:3053> INFO - Processing section 0
+[393] Biber.pm:3190> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[395] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[396] bibtex.pm:812> INFO - Found BibTeX data source 'build/lit.bib'
+[398] Biber.pm:3190> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[400] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[406] bibtex.pm:812> INFO - Found BibTeX data source 'build/programme.bib'
+[431] Utils.pm:169> WARN - I didn't find a database entry for 'V204' (section 0)
+[505] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[506] Biber.pm:2945> INFO - Sorting 'entry' list 'nty' keys
+[506] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[534] bbl.pm:482> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[535] bbl.pm:555> INFO - Output to build/main.bbl
+[536] Biber.pm:105> INFO - WARNINGS: 1

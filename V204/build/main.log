@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  6 NOV 2014 19:08
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  7 NOV 2014 20:15
  restricted \write18 enabled.
 **build/main.tex
 (./build/main.tex
@@ -381,7 +381,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.040 seconds
+luaotfload: fontloader loaded in 0.042 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -2174,8 +2174,61 @@ Package pdftex.def Info: Bilder/Aufbau.png used on input line 7.
 (pdftex.def)             Requested size: 418.25555pt x 222.8605pt.
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
-[4<./Bilder/Aufbau.png>]) (./content/auswertung.tex) (./content/diskussion.tex)
-[5]
+[4<./Bilder/Aufbau.png>]) (./content/auswertung.tex [5]
+<Bilder/M1_Overview.pdf, id=58, 578.16pt x 433.62pt>
+File: Bilder/M1_Overview.pdf Graphic file (type pdf)
+
+<use Bilder/M1_Overview.pdf>
+Package pdftex.def Info: Bilder/M1_Overview.pdf used on input line 8.
+(pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
+
+
+Package caption Warning: \label without proper \caption on input line 6.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:overview1' on page 6 undefined on input line 11.
+
+<Bilder/M1_Tempverl.pdf, id=60, 578.16pt x 433.62pt>
+File: Bilder/M1_Tempverl.pdf Graphic file (type pdf)
+
+<use Bilder/M1_Tempverl.pdf>
+Package pdftex.def Info: Bilder/M1_Tempverl.pdf used on input line 16.
+(pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
+
+
+Package caption Warning: \label without proper \caption on input line 14.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:entftemp' on page 6 undefined on input line 19.
+
+
+Package caption Warning: \label without proper \caption on input line 5.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:platine' on page 6 undefined on input line 19.
+
+<Bilder/M1_Tempdiff.pdf, id=63, 578.16pt x 433.62pt>
+File: Bilder/M1_Tempdiff.pdf Graphic file (type pdf)
+
+<use Bilder/M1_Tempdiff.pdf>
+Package pdftex.def Info: Bilder/M1_Tempdiff.pdf used on input line 41.
+(pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
+
+
+Package caption Warning: \label without proper \caption on input line 39.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:tempverl' on page 6 undefined on input line 44.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6<./Bilder/M1_Overview.pdf>] [7<./Bilder/M1_Tempverl.pdf><./Bilder/M1_Tempdiff.
+pdf>]) (./content/diskussion.tex) [8]
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
 uc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lm
@@ -2190,28 +2243,32 @@ luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
 uc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lm
 mono10-regular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
- [6]
+ [9]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 Package rerunfilecheck Info: File `main.aux' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40042 strings out of 494695
+ 40071 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 555 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 10 kern, 14 attribute, 63 glue_spec, 14 att
+ 578 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 11 kern, 15 attribute, 64 glue_spec, 15 att
 ribute_list, 3 action, 1 write nodes
-   avail lists: 1:46,2:6525,3:139,4:471,5:255,6:2138,7:57,8:23,9:516,10:988,11:5
+   avail lists: 1:46,2:6790,3:149,4:607,5:254,6:2208,7:96,8:23,9:516,10:988,11:5
 10,12:229
- 42622 multiletter control sequences out of 65536+600000
- 72 fonts using 18630239 bytes
- 70i,9n,104p,980b,871s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 42641 multiletter control sequences out of 65536+600000
+ 72 fonts using 18630079 bytes
+ 70i,14n,104p,980b,1017s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
 ular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-
@@ -2225,10 +2282,10 @@ public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/openty
 pe/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/ope
 ntype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/open
 type/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (6 pages, 174797 bytes).
+Output written on main.pdf (9 pages, 235315 bytes).
 
-PDF statistics: 192 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 131072)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 395 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 131072)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
