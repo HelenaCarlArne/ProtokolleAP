@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  7 NOV 2014 20:15
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  7 NOV 2014 21:40
  restricted \write18 enabled.
 **build/main.tex
 (./build/main.tex
@@ -381,7 +381,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.042 seconds
+luaotfload: fontloader loaded in 0.041 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1716,7 +1716,7 @@ generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 \g_fontspec_family_latinmodern-math.otf_int=\count508
 luaotfload | load : auto-selecting default features for script: dflt
@@ -1773,7 +1773,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature ssty for script
+luaotfload: font no 24 (LatinModernMath-Regular) defines feature dtls for script
  math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 12.
@@ -1791,7 +1791,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1883,7 +1883,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -2180,7 +2180,7 @@ File: Bilder/M1_Overview.pdf Graphic file (type pdf)
 
 <use Bilder/M1_Overview.pdf>
 Package pdftex.def Info: Bilder/M1_Overview.pdf used on input line 8.
-(pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
+(pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
 
 
 Package caption Warning: \label without proper \caption on input line 6.
@@ -2210,25 +2210,57 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:platine' on page 6 undefined on input line 19.
 
-<Bilder/M1_Tempdiff.pdf, id=63, 578.16pt x 433.62pt>
-File: Bilder/M1_Tempdiff.pdf Graphic file (type pdf)
 
-<use Bilder/M1_Tempdiff.pdf>
-Package pdftex.def Info: Bilder/M1_Tempdiff.pdf used on input line 41.
-(pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
-
-
-Package caption Warning: \label without proper \caption on input line 39.
+Package caption Warning: \label without proper \caption on input line 36.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:tempverl' on page 6 undefined on input line 44.
+LaTeX Warning: Reference `tab:700' on page 6 undefined on input line 26.
 
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 37.
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 37.
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
+back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
+uc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lm
+roman7-regular.luc)
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6<./Bilder/M1_Overview.pdf>] [7<./Bilder/M1_Tempverl.pdf><./Bilder/M1_Tempdiff.
-pdf>]) (./content/diskussion.tex) [8]
+<Bilder/M1_Tempdiff.pdf, id=65, 578.16pt x 433.62pt>
+File: Bilder/M1_Tempdiff.pdf Graphic file (type pdf)
+
+<use Bilder/M1_Tempdiff.pdf>
+Package pdftex.def Info: Bilder/M1_Tempdiff.pdf used on input line 93.
+(pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
+
+
+Package caption Warning: \label without proper \caption on input line 91.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:tempverl' on page 6 undefined on input line 96.
+
+[6<./Bilder/M1_Overview.pdf>]) (./content/diskussion.tex [7] [8<./Bilder/M1_Temp
+verl.pdf><./Bilder/M1_Tempdiff.pdf>]) [9]
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
 uc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lm
@@ -2243,7 +2275,7 @@ luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
 uc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lm
 mono10-regular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
- [9]
+ [10]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
@@ -2259,33 +2291,34 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40071 strings out of 494695
+ 40098 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 578 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 11 kern, 15 attribute, 64 glue_spec, 15 att
+ 581 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 11 kern, 15 attribute, 63 glue_spec, 15 att
 ribute_list, 3 action, 1 write nodes
-   avail lists: 1:46,2:6790,3:149,4:607,5:254,6:2208,7:96,8:23,9:516,10:988,11:5
-10,12:229
- 42641 multiletter control sequences out of 65536+600000
- 72 fonts using 18630079 bytes
- 70i,14n,104p,980b,1017s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:46,2:9037,3:156,4:1281,5:254,6:2993,7:116,8:23,9:516,10:988,11
+:510,12:229
+ 42649 multiletter control sequences out of 65536+600000
+ 80 fonts using 21245959 bytes
+ 70i,14n,104p,980b,1195s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
-ular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-
-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman5-r
-egular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8
--regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/l
-atinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm
+ular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latin
+modern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmr
+oman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmr
+oman5-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/l
+mroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm
 -math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/pu
-blic/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/
-public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/openty
-pe/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/ope
-ntype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/open
-type/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (9 pages, 235315 bytes).
+blic/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/open
+type/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/op
+entype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts
+/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fo
+nts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fon
+ts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (10 pages, 240832 bytes).
 
-PDF statistics: 395 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 131072)
+PDF statistics: 413 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 131072)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
