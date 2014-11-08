@@ -1,4 +1,3 @@
-\newpage
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Statische Messung}
@@ -25,22 +24,22 @@ Zum Endpunkt der Messung liegt zwischen den Messpunkten von Aluminium und Edelst
 
 Cirka 700 Sekunden nach Beginn des Erwärmens liegen an den entfernten Messpunkten die Temperaturen nach Tabelle \ref{tab:700} vor. 
 \begin{table}[h!]
-\centering
-\begin{tabular}{cccc}
+	\centering
+	\begin{tabular}{cccc}
 	\toprule
 	{Edelstahl}&{Messing,dünn}&{Messing}&{Aluminium}\\
 	\midrule
 	29$\si{\degreeCelsius}$& 34$\si{\degreeCelsius}$& 35.4$\si{\degreeCelsius}$& 37$\si{\degreeCelsius}$\\
 	\bottomrule
-\end{tabular}
-\label{tab:700}
-\caption{Temperaturen an entfernten Messpunkten bei $t=700\si{\second}$}
+	\end{tabular}
+	\label{tab:700}
+	\caption{Temperaturen an entfernten Messpunkten bei $t=700\si{\second}$}
 \end{table}
 Die höchste Temperatur hat der Aluminiumstab, die geringste Temperatur weist Edelstahl auf.
 
 Mit \eqref{waermemenge} kann der Wärmestrom $\frac{\Delta{Q}}{\Delta{t}}$ innerhalb der Stäbe bestimmt werden. 
 Hierzu ist in \eqref{waermemenge} $\kappa$ der Litearaturwert der Wärmeleitfähigkeit des betrachteten Metalls und $A$ die Querschnittsfläche (vgl. hierzu \cite{V204}) des jeweiligen Stabes; $\frac{\partial T}{\partial x}$ ist der Temperaturgradient innerhalb des Stabes und wird hier mit $\frac{\Delta T}{\Delta x}$ und $\Delta x$genähert.
-Es ergibt sich für die Wärmemenge $\mathup{d}Q$ zu fünf unterschiedlichen Zeiten\\
+Es ergibt sich für die Wärmemenge $\mathup{d}Q$ zu fünf unterschiedlichen Zeiten
 %\begin{table}
 %\centering
 %\begin{tabular}{ccccc}
@@ -83,56 +82,56 @@ Es ergibt sich für die Wärmemenge $\mathup{d}Q$ zu fünf unterschiedlichen Zei
 %\end{tabular}
 %\end{table}
 \begin{table}
-\centering
-\begin{tabular}{cccccc}
-\sisetup{table-format=1.4}\\
-Stab & $50\:\si\second$ & $500\:\si\second$ & $1000\:\si\second$ & $1500\:\si\second$ & $2000\:\si\second$ \\
-\toprule
-Messing 1 &$-0.4973\:\si{\watt}$ &$-0.3552\:\si{\watt}$&$-0.3629\:\si{\watt}$&$-0.3725\:\si{\watt}$&$-0.3648\:\si{\watt}$\\
-Messing 2 &$-0.2867\:\si{\watt}$& $-0.2128\:\si{\watt}$&$-0.2150\:\si{\watt}$&$-0.2173\:\si{\watt}$&$-0.2106\:\si{\watt}$\\
-Aluminium &$-0.4174\:\si{\watt}$&$-0.0677\:\si{\watt}$&$-0.0564\:\si{\watt}$&$-0.0564\:\si{\watt}$&$-0.0489\:\si{\watt}$\\
-Edelstahl &$-0.1116\:\si{\watt}$&$-0.1538\:\si{\watt}$&$-0.1536\:\si{\watt}$&$-0.1524\:\si{\watt}$&$-0.1469\:\si{\watt}$\\
-\bottomrule
-\label{tab:waememengen}
-\end{tabular}
-\caption{Wärmemengen d$Q$ der Probenstäbe zu fünf unterschiedlichen Zeiten.}
+	\centering
+	\begin{tabular}{cccccc}
+	\sisetup{table-format=1.4}\\
+	Stab & $50\:\si\second$ & $500\:\si\second$ & $1000\:\si\second$ & $1500\:\si\second$ & $2000\:\si\second$ \\
+	\toprule
+	Messing 1 &$-0.4973\:\si{\watt}$ &$-0.3552\:\si{\watt}$&$-0.3629\:\si{\watt}$&$-0.3725\:\si{\watt}$&$-0.3648\:\si{\watt}$\\
+	Messing 2 &$-0.2867\:\si{\watt}$& $-0.2128\:\si{\watt}$&$-0.2150\:\si{\watt}$&$-0.2173\:\si{\watt}$&$-0.2106\:\si{\watt}$\\
+	Aluminium &$-0.4174\:\si{\watt}$&$-0.0677\:\si{\watt}$&$-0.0564\:\si{\watt}$&$-0.0564\:\si{\watt}$&$-0.0489\:\si{\watt}$\\
+	Edelstahl &$-0.1116\:\si{\watt}$&$-0.1538\:\si{\watt}$&$-0.1536\:\si{\watt}$&$-0.1524\:\si{\watt}$&$-0.1469\:\si{\watt}$\\
+	\bottomrule
+	\label{tab:waememengen}
+	\end{tabular}
+	\caption{Wärmemengen d$Q$ der Probenstäbe zu fünf unterschiedlichen Zeiten.}
 \end{table}
-
 \begin{figure}[htp]
 	\label{fig:tempverl}
 	\centering
 	\includegraphics[width=0.8\textwidth]{Bilder/M1_Tempdiff.pdf}
 	\caption{Temperaturdifferenz der Messpunkte von Messing und Edelstahl}
 \end{figure}
-
 Im Diagramm \ref{fig:tempverl} ist die Temperaturdifferenz innerhalb eines Stabes für den Edelstahl- und für den Messingstab aufgetragen. 
 Es wird deutlich, dass die Differenzkurve für Edelstahl näherungsweise ein beschränktes Wachstum beschreibt und kurz nach Beginn der Erwärmung einen Grenzwert erreicht, der bei etwa  $6.25 \si{\degreeCelsius}$ liegt.
 Die Differenzkurve des Messingstabes steigt zu Beginn der Messung an und erreicht kurz nach Beginn mit $2.6 \si{\degreeCelsius}$ ihr globales Maximum. 
 Nach dem Maximum nimmt die Differenz exponentiell ab und erreicht einen Grenzwert von etwa $2 \si{\degreeCelsius}$.
 Der Vergleich der Kurven zeigt, dass der Messingstab gegenüber dem Edelstahlstab den Grenzwert der Temperaturdifferenz schneller erreicht.
 
-\subsection{Dynamische Messung mit 80 Sekunden-Periode}
+\subsection{Dynamische Messung}
 Die Diagramme \ref{fig:M2Messing} zeigen bei periodischer Anregung einer Temperaturwelle mit einer Periodendauer von 80 Sekunden den Temperaturverlauf an den jeweiligen Enden. 
 Zusätzlich zum Verlauf sind sowohl die Extrema, als auch deren Amplitudenfunktion eingezeichnet. 
 Analoges Vorgehen mit den Werten für den Aluminiumstab ergeben die Diagramme \ref{fig:M2Alu} und \ref{fig:M2AluNorm}.
 Die Messwerte ab dem neunten lokalen Maximum werden von der Auswertung aufgrund offensichtlicher Abweichungen ausgeschlossen.
 
-Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M2MessingNorm} und \ref{fig:M2AluNorm}. In diesen Diagrammen ist zu erkennen, dass sich für eine gleichmäßige Schwingung jeweils die oberen Amplitudenfunktionen zur Normierung eignen.
+Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M2MessingNorm} und \ref{fig:M2AluNorm}. 
+Diese werden im Folgenden als Grundschwingung der Temperatur bezeichnet. 
+In diesen Diagrammen ist zu erkennen, dass sich für eine gleichmäßige Schwingung jeweils die oberen Amplitudenfunktionen zur Normierung eignen.
 
 \begin{figure}[htp]
-\label{fig:M2Messing}
-\centering
+	\label{fig:M2Messing}
+	\centering
 	\begin{subfigure}{0.9\textwidth}
 	\includegraphics[width=\textwidth]{Bilder/M2_Messing_kuehl.pdf}
 	\end{subfigure}
 	\begin{subfigure}{0.9\textwidth}
 	\includegraphics[width=\textwidth]{Bilder/M2_Messing_warm.pdf}
 	\end{subfigure}
-\caption{Periodische Messung bei Messing mit 80 Sekunden-Periode}
+	\caption{Periodische Messung bei Messing mit 80 Sekunden-Periode}
 \end{figure}
 \begin{figure}[htp]
-\label{fig:M2Alu}
-\centering
+	\label{fig:M2Alu}
+	\centering
 	\begin{subfigure}{0.9\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/M2_Alu_kuehl.pdf}
@@ -141,7 +140,7 @@ Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen,
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/M2_Alu_warm.pdf}
 	\end{subfigure}
-\caption{Periodische Messung bei Aluminium mit 80 Sekunden-Periode}
+	\caption{Periodische Messung bei Aluminium mit 80 Sekunden-Periode}
 \end{figure}
 \begin{figure}[htp]
 	\label{fig:M2MessingNorm}
@@ -155,27 +154,27 @@ Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen,
 	\includegraphics[width=0.8\textwidth]{Bilder/Normierungsauswahl/M2_Messing_norm.pdf}
 	\caption{Normierung von Diagramm \ref{fig:M2Messing} auf Grundschwingung}
 \end{figure}
-\subsection{Dynamische Messung mit 200 Sekunden-Periode}
-Die Diagramme \ref{fig:M3Messing} zeigen bei periodischer Anregung einer Temperaturwelle mit einer Periodendauer von 200 Sekunden den Temperaturverlauf an den jeweiligen Enden. 
-Zusätzlich zum Verlauf sind die Extrema markiert und erneut deren Amplitudenfunktionen abgebildet.
-Analoges Vorgehen mit den Werten für den Aluminiumstab und den Edelstahlstab ergeben die Diagramme \ref{fig:M3Alu}, \ref{fig:M3AluNorm}, \ref{fig:M3Edelstahl} und \ref{fig:M3EdelstahlNorm}.
+Für die Messung der Temperaturwellen bei einer Periodendauer von 200 Sekunden wird vollkommen analog vorgegangen.
+Die Diagramme \ref{fig:M3Messing}, \ref{fig:M3Alu} und \ref{fig:M3Edelstahl} zeigen die Temperaturwellen der jeweiligen Metalle an den angegebenen Punkten. 
+Zusätzlich zum Verlauf sind die Extrema markiert und deren Amplitudenfunktionen eingezeichnet.
 
-Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M3MessingNorm}, \ref{fig:M3AluNorm} und\ref{fig:M3EdelstahlNorm}. Man erkennt anhand dieser Diagramme, dass sich jeweils die oberen Amplitudenfunktionen dazu eignen, den Temperaturverlauf eine gleichmäßige Grundschwingung zu normieren.
+Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich die Grundschwingungen in den begleitenden Diagrammen \ref{fig:M3MessingNorm}, \ref{fig:M3AluNorm} und\ref{fig:M3EdelstahlNorm}. 
+Anhand dieser Diagramme wird ersichtlich, dass sich jeweils die oberen Amplitudenfunktionen dazu eignen, den Temperaturverlauf auf eine gleichmäßige Grundschwingung zu normieren.\\
 
 \begin{figure}[htp]
-\label{fig:M3Messing}
-\centering
+	\label{fig:M3Messing}
+	\centering
 	\begin{subfigure}{0.9\textwidth}
 	\includegraphics[width=\textwidth]{Bilder/M3_Messing_kuehl.pdf}
 	\end{subfigure}
 	\begin{subfigure}{0.9\textwidth}
 	\includegraphics[width=\textwidth]{Bilder/M3_Messing_warm.pdf}
 	\end{subfigure}
-\caption{Periodische Messung bei Messing mit 200 Sekunden-Periode}
+	\caption{Periodische Messung bei Messing mit 200 Sekunden-Periode}
 \end{figure}
 \begin{figure}[htp]
-\label{fig:M3Alu}
-\centering
+	\label{fig:M3Alu}
+	\centering
 	\begin{subfigure}{0.9\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/M3_Alu_kuehl.pdf}
@@ -184,7 +183,7 @@ Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen,
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/M3_Alu_warm.pdf}
 	\end{subfigure}
-\caption{Periodische Messung bei Aluminium mit 200 Sekunden-Periode}
+	\caption{Periodische Messung bei Aluminium mit 200 Sekunden-Periode}
 \end{figure}
 \begin{figure}[htp]
 	\label{fig:M3MessingNorm}
@@ -199,8 +198,8 @@ Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen,
 	\caption{Normierung von Diagramm \ref{fig:M3Messing} auf Grundschwingung}
 \end{figure}
 \begin{figure}[p]
-\label{fig:M3Edelstahl}
-\centering
+	\label{fig:M3Edelstahl}
+	\centering
 	\begin{subfigure}{0.9\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/M3_Edelstahl.pdf}
@@ -209,5 +208,83 @@ Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen,
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/Normierungsauswahl/M3_Edelstahl_norm.pdf}
 	\end{subfigure}
-\caption{Periodische Messung bei Edelstahl mit 200 Sekunden-Periode sowie Normierung auf Grundschwingung}
+	\caption{Periodische Messung bei Edelstahl mit 200 Sekunden-Periode sowie Normierung auf Grundschwingung}
 \end{figure}
+
+Durch diese Grundschwingungskurven können die Amplituden $A_{\text{nah}}$ und $A_{\text{fern}}$ der Schwingung sowie die Phasendifferenz $\Delta t$ zwischen den Messpunkten bestimmt werden; 
+dabei wird der Teil der Grundschwingung vernachlässigt, der durch offensichtliche Verfahrensfehler mangelhaft ist
+(vgl. \ref{fig:M2Messing},\ref{fig:M2Alu}) oder durch die Einschwingphase vergleichsweise stark von einer gleichmäßigen Schwingung abweicht.
+Für die Amplitudenbestimmung wird in einem brauchbaren Abschnitt in der Grundschwingung Extremwerte bestimmt und die Mittelwerte der y-Koordinaten aller Maxima beziehungsweise Mimima errechnet.
+Mit diesen Mittelwerten ist eine hinreichend genaue Beschreibung der Amplitude $A$ möglich.
+Es gilt
+\begin{equation}
+	A = \frac{\bar{y}_{\text{Max}}-\bar{y}_{\text{min}}}{2}.
+\end{equation}
+Für die Bestimmung der Phasendifferenz werden ausgezeichnete Punkte der Schwingung, hier Maxima, bestimmt und die Differenzen der x-Werte  gemittelt.
+Es gilt
+\begin{equation}
+	\Delta \tilde{t} = {x}_{\text{Max, n+1}}-{x}_{\text{Max, n}}.
+\end{equation}
+Der Mittelwert dieser Größe ist Maß für die Phasendifferenz \Delta{t}.
+\begin{figure}[p]
+	\label{fig:M2MessingNormkurve}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Bilder/M2_Messing_norm.pdf}
+	\caption{Ausgewählter Teil der Grundschwingung von Messing bei 80 Sekunden-Periode}
+\end{figure}
+\begin{figure}[p]
+	\label{fig:M3MessingNormkurve}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Bilder/M3_Messing_norm.pdf}
+	\caption{Ausgewählter Teil der Grundschwingung von Messing bei 200 Sekunden-Periode}
+\end{figure}
+\begin{figure}[p]
+	\label{fig:M2AluNormkurve}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Bilder/M2_Alu_norm.pdf}
+	\caption{Ausgewählter Teil der Grundschwingung von Aluminium bei 80 Sekunden-Periode}
+\end{figure}
+\begin{figure}[p]
+	\label{fig:M3AluNormkurve}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Bilder/M3_Alu_norm.pdf}
+	\caption{Ausgewählter Teil der Grundschwingung von Aluminium bei 200 Sekunden-Periode}
+\end{figure}
+\begin{figure}[p]
+	\label{fig:M3EdelstahlNormkurve}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Bilder/M3_Edelstahl_norm.pdf}
+	\caption{Ausgewählter Teil der Grundschwingung von Edelsthl bei 200 Sekunden-Periode}
+\end{figure}
+\newpage
+\noindent Es ergeben sich die Werte
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{c r S[table-format=1.5] S[table-format=1.5] S[table-format=3.3] c c}
+		\toprule
+		{Material}& {Periode}&{Ampl. $A_\text{nah}$}&{Ampl. $A_\text{fern}$}&{Phasendiff. $\Delta{t}$}&{Dichte $\rho$}&{spez. Wärme $c$}\\
+		\midrule
+		{Messing}& {80 Sek.}&{0.0227}&{0.0227}&	{25.0}&		{8520}&{385}\\
+		{Messing}& {200 Sek.}&{0.1164}&{0.0684}&	{25.0}&		{dto.}&{385}\\
+		{Aluminium}& {80 Sek.}&{0.0671}&{0.0371}&	{18.75}&	{2800}&{830}\\
+		{Aluminium}& {200 Sek.}&{0.1190}&{0.1004}&{10.625}&	{dto.}&{830}\\
+		{Edelstahl}& {200 Sek.}&{0.0970}&{0.0172}&{116.875}&	{8000}&{400}\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Mithilfe der Amplituden $A_{\text{nah}}$ und $A_{\text{fern}}$, der Phasendifferenz $\Delta t$, der Geometrie und Beschaffenheit des Stabes kann mit der Gleichung \eqref{waermeleitfaehigkeit} die Wärmeleitfähigkeit $\kappa$ bestimmt werden.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{cccccc}
+	\toprule
+	&\multicolumn{2}{c}{Messing}&\multicolumn{2}{c}{Aluminium}&{Edelstahl}\\
+	&{80 Sek.}&{200 Sek.}&{80 Sek.}&{200 Sek.}&{200 Sek.}\\
+	\midrule
+	{Messung}&522606& 1112340& 942673& 5782700&71158.1\\
+	{Literatur}&\multicolumn{2}{c}{120}&\multicolumn{2}{c}{236}&15\\
+	\bottomrule
+	\end{tabular}
+	\label{tab:waermeleitfaehigkeitwerte}
+	\caption{Wärmeleitfähigkeit $\kappa$ der Metalle}
+\end{table}
