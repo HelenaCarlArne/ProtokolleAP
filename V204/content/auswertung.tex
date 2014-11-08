@@ -16,14 +16,14 @@ Alle Temperaturverläufe werden in Diagramm \ref{fig:overview1} gleichzeitig auf
 	\includegraphics[width=0.8\textwidth]{Bilder/M1_Tempverl.pdf}
 	\caption{Verlauf der Temperaturen an den entfernten Messpunkten}
 \end{figure}
-Im Diagramm \ref{fig:entftemp} wird der Temperaturverlauf bei den entfernten Messpunkte T1, T4, T5, T8 (vgl. \ref{fig:platine}) gezeigt. 
-Die Kurve von Aluminium hat zu Beginn des Experiments den stärksten Anstieg und liegt über die der anderen Metallstäbe. 
+Im Diagramm \ref{fig:entftemp} wird der Temperaturverlauf bei den entfernten Messpunkten T1, T4, T5, T8 (vgl. \ref{fig:platine}) gezeigt. 
+Die Kurve von Aluminium hat zu Beginn des Experiments den stärksten Anstieg und liegt über den Kurven der anderen Metallstäbe. 
 Beide Kurven der Messingstäbe haben vergleichbare Steigungen;
 die Kurve des größeren Messingstabes liegt dabei über der des kleineren Stabes und hat am Endpunkt der Messung zu dieser eine Temperaturdifferenz von etwa $1 \si{\degreeCelsius}$. 
 Die Kurve von Edelstahl ist deutlich von den Kurven der anderen Metallstäbe entfernt und weist die geringste Steigung auf. 
 Zum Endpunkt der Messung liegt zwischen den Messpunkten von Aluminium und Edelstahl eine maximale Temperaturdifferenz von etwa $7 \si{\degreeCelsius}$ vor. 
 
-Zirka 700 Sekunden nach Beginn des Erwärmens liegen an den entfernten Messpunkten die Temperaturen nach Tabelle \ref{tab:700} vor. 
+Cirka 700 Sekunden nach Beginn des Erwärmens liegen an den entfernten Messpunkten die Temperaturen nach Tabelle \ref{tab:700} vor. 
 \begin{table}[h!]
 \centering
 \begin{tabular}{cccc}
@@ -36,16 +36,11 @@ Zirka 700 Sekunden nach Beginn des Erwärmens liegen an den entfernten Messpunkt
 \label{tab:700}
 \caption{Temperaturen an entfernten Messpunkten bei $t=700\si{\second}$}
 \end{table}
-Die höchste Temperatur hat der Aluminiumstab, die geringste Temperatur hat der Edelstahlstab.
+Die höchste Temperatur hat der Aluminiumstab, die geringste Temperatur weist Edelstahl auf.
 
-Mit 
-\begin{equation}
-	\mathup{d}Q = -\kappa A\frac{\partial T}{\partial x}\mathup{d}t
-	\label{eq:skr1}
-\end{equation}
-kann der Wärmestrom $\frac{\Delta{Q}}{\Delta{t}}$ innerhalb der Stäbe bestimmt werden. 
-Hierzu sind $\kappa$ in \ref{eq:skr1} die Literaturwerte der Wärmeleitfähigkeit und $A$ die Querschnittsfläche (vgl. hierzu \cite{V204}) des jeweiligen Stabes; $\frac{\partial T}{\partial x}$ ist der Temperaturgradient innerhalb des Stabes und wird hier mit $\frac{\Delta T}{\Delta x}$ und $\Delta x=$genähert.
-Es ergibt sich\\
+Mit \eqref{waermemenge} kann der Wärmestrom $\frac{\Delta{Q}}{\Delta{t}}$ innerhalb der Stäbe bestimmt werden. 
+Hierzu ist in \eqref{waermemenge} $\kappa$ der Litearaturwert der Wärmeleitfähigkeit des betrachteten Metalls und $A$ die Querschnittsfläche (vgl. hierzu \cite{V204}) des jeweiligen Stabes; $\frac{\partial T}{\partial x}$ ist der Temperaturgradient innerhalb des Stabes und wird hier mit $\frac{\Delta T}{\Delta x}$ und $\Delta x$genähert.
+Es ergibt sich für die Wärmemenge $\mathup{d}Q$ zu fünf unterschiedlichen Zeiten\\
 \begin{table}
 \centering
 \begin{tabular}{ccccc}
@@ -93,6 +88,7 @@ Es ergibt sich\\
 	\includegraphics[width=0.8\textwidth]{Bilder/M1_Tempdiff.pdf}
 	\caption{Temperaturdifferenz der Messpunkte von Messing und Edelstahl}
 \end{figure}
+
 Im Diagramm \ref{fig:tempverl} ist die Temperaturdifferenz innerhalb eines Stabes für den Edelstahl- und für den Messingstab aufgetragen. 
 Es wird deutlich, dass die Differenzkurve für Edelstahl näherungsweise ein beschränktes Wachstum beschreibt und kurz nach Beginn der Erwärmung einen Grenzwert erreicht, der bei etwa  $6.25 \si{\degreeCelsius}$ liegt.
 Die Differenzkurve des Messingstabes steigt zu Beginn der Messung an und erreicht kurz nach Beginn mit $2.6 \si{\degreeCelsius}$ ihr globales Maximum. 
@@ -100,12 +96,12 @@ Nach dem Maximum nimmt die Differenz exponentiell ab und erreicht einen Grenzwer
 Der Vergleich der Kurven zeigt, dass der Messingstab gegenüber dem Edelstahlstab den Grenzwert der Temperaturdifferenz schneller erreicht.
 
 \subsection{Dynamische Messung mit 80 Sekunden-Periode}
-Die Diagramme \ref{fig:M2Messing} zeigen bei periodischer Anregung einer Temperaturwelle mit Periodendauer von 80 Sekunden den Temperaturverlauf an den jeweiligen Enden. 
-Zusätzlich zum Verlauf sind die Extrema eingezeichnet und die Amplitudenfunktion der Extrema eingezeichnet. 
+Die Diagramme \ref{fig:M2Messing} zeigen bei periodischer Anregung einer Temperaturwelle mit einer Periodendauer von 80 Sekunden den Temperaturverlauf an den jeweiligen Enden. 
+Zusätzlich zum Verlauf sind sowohl die Extrema, als auch deren Amplitudenfunktion eingezeichnet. 
 Analoges Vorgehen mit den Werten für den Aluminiumstab ergeben die Diagramme \ref{fig:M2Alu} und \ref{fig:M2AluNorm}.
-Von der Auswertung wurden wegen offensichtlicher Abweichung von der Erwartung die Werte ab dem neunten lokalen Maximum. 
+Die Messwerte ab dem neunten lokalen Maximum werden von der Auswertung aufgrund offensichtlicher Abweichungen ausgeschlossen.
 
-Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M2MessingNorm} und \ref{fig:M2AluNorm}. In diesem Diagramm ist erkennbar, dass sich für eine gleichmäßige Schwingung jeweils die oberen Amplitudenfunktionen zur Normierung eignen.
+Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M2MessingNorm} und \ref{fig:M2AluNorm}. In diesen Diagrammen ist zu erkennen, dass sich für eine gleichmäßige Schwingung jeweils die oberen Amplitudenfunktionen zur Normierung eignen.
 
 \begin{figure}[htp]
 \label{fig:M2Messing}
@@ -144,9 +140,9 @@ Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen,
 	\caption{Normierung von Diagramm \ref{fig:M2Messing} auf Grundschwingung}
 \end{figure}
 \subsection{Dynamische Messung mit 200 Sekunden-Periode}
-Die Diagramme \ref{fig:M3Messing} zeigen bei periodischer Anregung einer Temperaturwelle mit Periodendauer von 200 Sekunden den Temperaturverlauf an den jeweiligen Enden. 
-Zusätzlich zum Verlauf sind die Extrema eingezeichnet und die Amplitudenfunktion der Extrema eingezeichnet. 
-Analoges Vorgehen mit den Werten für den Aluminiumstab und den Edelstahlstab ergeben die Diagramme \ref{fig:M3Alu} und \ref{fig:M3AluNorm}, \ref{fig:M3Edelstahl} und \ref{fig:M3EdelstahlNorm}.
+Die Diagramme \ref{fig:M3Messing} zeigen bei periodischer Anregung einer Temperaturwelle mit einer Periodendauer von 200 Sekunden den Temperaturverlauf an den jeweiligen Enden. 
+Zusätzlich zum Verlauf sind die Extrema markiert und erneut deren Amplitudenfunktionen abgebildet.
+Analoges Vorgehen mit den Werten für den Aluminiumstab und den Edelstahlstab ergeben die Diagramme \ref{fig:M3Alu}, \ref{fig:M3AluNorm}, \ref{fig:M3Edelstahl} und \ref{fig:M3EdelstahlNorm}.
 
 Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M3MessingNorm}, \ref{fig:M3AluNorm} und\ref{fig:M3EdelstahlNorm}. Man erkennt anhand dieser Diagramme, dass sich jeweils die oberen Amplitudenfunktionen dazu eignen, den Temperaturverlauf eine gleichmäßige Grundschwingung zu normieren.
 
