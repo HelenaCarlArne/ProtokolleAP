@@ -41,45 +41,57 @@ Die höchste Temperatur hat der Aluminiumstab, die geringste Temperatur weist Ed
 Mit \eqref{waermemenge} kann der Wärmestrom $\frac{\Delta{Q}}{\Delta{t}}$ innerhalb der Stäbe bestimmt werden. 
 Hierzu ist in \eqref{waermemenge} $\kappa$ der Litearaturwert der Wärmeleitfähigkeit des betrachteten Metalls und $A$ die Querschnittsfläche (vgl. hierzu \cite{V204}) des jeweiligen Stabes; $\frac{\partial T}{\partial x}$ ist der Temperaturgradient innerhalb des Stabes und wird hier mit $\frac{\Delta T}{\Delta x}$ und $\Delta x$genähert.
 Es ergibt sich für die Wärmemenge $\mathup{d}Q$ zu fünf unterschiedlichen Zeiten\\
+%\begin{table}
+%\centering
+%\begin{tabular}{ccccc}
+%	\multicolumn{5}{c}{Messing}\\
+%	\toprule
+%	Nach $500\si{\second}$&Nach $1000\si{\second}$& Nach $1500\si{\second}$&Nach $2000\si{\second}$& Nach $50\si{\second}$\\
+%	$-0.3552\si{\watt}$&$-0.36288\si{\watt}$&$-0.37248\si{\watt}$&$-0.3648\si{\watt}$&$-0.49728\si{\watt}$\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+%\begin{table}[h!]
+%\centering
+%\begin{tabular}{ccccc}
+%	\multicolumn{5}{c}{Messing, dünn}\\
+%	\toprule
+%	Nach $500\si{\second}$&Nach $1000\si{\second}$& Nach $1500\si{\second}$&Nach $2000\si{\second}$& Nach $50\si{\second}$\\
+%	$-0.2128\si{\watt}$&$-0.21504\si{\watt}$&$-0.21728\si{\watt}$&$-0.21056\si{\watt}$&$-0.28672\si{\watt}$\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+%\begin{table}[h!]
+%\centering
+%\begin{tabular}{ccccc}
+%	\multicolumn{5}{c}{Aluminium}\\
+%	\toprule
+%	Nach $500\si{\second}$&Nach $1000\si{\second}$& Nach $1500\si{\second}$&Nach $2000\si{\second}$& Nach $50\si{\second}$\\
+%
+%	$-0.06768\si{\watt}$&$-0.0564\si{\watt}$&$-0.0564\si{\watt}$&$-0.04888\si{\watt}$&$-0.41736\si{\watt}$\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+%\begin{table}[h!]
+%\centering
+%\begin{tabular}{ccccc}
+%	\multicolumn{5}{c}{Edelstahl}\\
+%	\toprule
+%	Nach $500\si{\second}$&Nach $1000\si{\second}$& Nach $1500\si{\second}$&Nach $2000\si{\second}$& Nach $50\si{\second}$\\
+%	$-0.15384\si{\watt}$&$-0.1536\si{\watt}$&$-0.1524\si{\watt}$&$-0.14688\si{\watt}$&$-0.1116\si{\watt}$\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
 \begin{table}
 \centering
-\begin{tabular}{ccccc}
-	\multicolumn{5}{c}{Messing}\\
-	\toprule
-	Nach $500\si{\second}$&Nach $1000\si{\second}$& Nach $1500\si{\second}$&Nach $2000\si{\second}$& Nach $50\si{\second}$\\
-	$-0.3552\si{\watt}$&$-0.36288\si{\watt}$&$-0.37248\si{\watt}$&$-0.3648\si{\watt}$&$-0.49728\si{\watt}$\\
-	\bottomrule
-\end{tabular}
-\end{table}
-\begin{table}[h!]
-\centering
-\begin{tabular}{ccccc}
-	\multicolumn{5}{c}{Messing, dünn}\\
-	\toprule
-	Nach $500\si{\second}$&Nach $1000\si{\second}$& Nach $1500\si{\second}$&Nach $2000\si{\second}$& Nach $50\si{\second}$\\
-	$-0.2128\si{\watt}$&$-0.21504\si{\watt}$&$-0.21728\si{\watt}$&$-0.21056\si{\watt}$&$-0.28672\si{\watt}$\\
-	\bottomrule
-\end{tabular}
-\end{table}
-\begin{table}[h!]
-\centering
-\begin{tabular}{ccccc}
-	\multicolumn{5}{c}{Aluminium}\\
-	\toprule
-	Nach $500\si{\second}$&Nach $1000\si{\second}$& Nach $1500\si{\second}$&Nach $2000\si{\second}$& Nach $50\si{\second}$\\
-
-	$-0.06768\si{\watt}$&$-0.0564\si{\watt}$&$-0.0564\si{\watt}$&$-0.04888\si{\watt}$&$-0.41736\si{\watt}$\\
-	\bottomrule
-\end{tabular}
-\end{table}
-\begin{table}[h!]
-\centering
-\begin{tabular}{ccccc}
-	\multicolumn{5}{c}{Edelstahl}\\
-	\toprule
-	Nach $500\si{\second}$&Nach $1000\si{\second}$& Nach $1500\si{\second}$&Nach $2000\si{\second}$& Nach $50\si{\second}$\\
-	$-0.15384\si{\watt}$&$-0.1536\si{\watt}$&$-0.1524\si{\watt}$&$-0.14688\si{\watt}$&$-0.1116\si{\watt}$\\
-	\bottomrule
+\begin{tabular}{cccccc}
+Stab & $50\si\second$ & $500\si\second$ & $1000\si\second$ & $1500\si\second$ & $2000\si\second$ \\
+\toprule
+Messing 1 &$-0.49728\si{\watt}$ &$-0.3552\si{\watt}$&$-0.36288\si{\watt}$&$-0.37248\si{\watt}$&$-0.3648\si{\watt}$\\
+Messing 2 &$-0.28672\si{\watt}$& $-0.2128\si{\watt}$&$-0.21504\si{\watt}$&$-0.21728\si{\watt}$&$-0.21056\si{\watt}$\\
+Aluminium &$-0.41736\si{\watt}$&$-0.06768\si{\watt}$&$-0.0564\si{\watt}$&$-0.0564\si{\watt}$&$-0.04888\si{\watt}$\\
+Edelstahl &$-0.1116\si{\watt}$&$-0.15384\si{\watt}$&$-0.1536\si{\watt}$&$-0.1524\si{\watt}$&$-0.14688\si{\watt}$\\
+\bottomrule
 \end{tabular}
 \end{table}
 \begin{figure}[htp]
