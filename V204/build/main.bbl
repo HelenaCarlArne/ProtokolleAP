@@ -68,23 +68,6 @@
       \verb http://www.scipy.org/
       \endverb
     \endentry
-    \entry{uncertainties}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{fd5e607cc043da9b40442508c133a26c}
-      \strng{fullhash}{fd5e607cc043da9b40442508c133a26c}
-      \field{sortinit}{L}
-      \field{labeltitle}{Uncertainties: a Python package for calculations with uncertainties}
-      \field{addendum}{Version 2.4.5}
-      \field{title}{Uncertainties: a Python package for calculations with uncertainties}
-      \verb{url}
-      \verb http://pythonhosted.org/uncertainties/
-      \endverb
-    \endentry
     \entry{numpy}{article}{}
       \name{labelname}{1}{}{%
         {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
@@ -108,23 +91,6 @@
       \field{pages}{10\bibrangedash 20}
       \verb{url}
       \verb http://link.aip.org/link/?CSX/9/10/1
-      \endverb
-    \endentry
-    \entry{gimp}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=eff56c5d323af803bc67f548d1618fb3}{Team}{T\bibinitperiod}{The\bibnamedelima GIMP}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=eff56c5d323af803bc67f548d1618fb3}{Team}{T\bibinitperiod}{The\bibnamedelima GIMP}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{eff56c5d323af803bc67f548d1618fb3}
-      \strng{fullhash}{eff56c5d323af803bc67f548d1618fb3}
-      \field{sortinit}{T}
-      \field{labeltitle}{GIMP: GNU Image Manipulation Program}
-      \field{addendum}{Version 2.8.10}
-      \field{title}{GIMP: GNU Image Manipulation Program}
-      \verb{url}
-      \verb http://www.gimp.org/
       \endverb
     \endentry
   \endsortlist
