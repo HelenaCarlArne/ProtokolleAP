@@ -114,9 +114,9 @@ Zusätzlich zum Verlauf sind sowohl die Extrema, als auch deren Amplitudenfunkti
 Analoges Vorgehen mit den Werten für den Aluminiumstab ergeben die Diagramme \ref{fig:M2Alu} und \ref{fig:M2AluNorm}.
 Die Messwerte ab dem neunten lokalen Maximum werden von der Auswertung aufgrund offensichtlicher Abweichungen ausgeschlossen.
 
-Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich normierte Schwingungen in Diagramm \ref{fig:M2MessingNorm} und \ref{fig:M2AluNorm}. 
+Durch Eichung des Temperaturverlaufs mit der eingezeichneten Amplitudenfunktionen, indem von dem Temperaturverlauf die Amplitudenfunktion abgezogen wird, ergeben sich nahezu gleichmäßige Schwingungen, die in Diagramm \ref{fig:M2MessingNorm} und \ref{fig:M2AluNorm} sichtbar sind. 
 Diese werden im Folgenden als Grundschwingung der Temperatur bezeichnet. 
-In diesen Diagrammen ist zu erkennen, dass sich für eine gleichmäßige Schwingung jeweils die oberen Amplitudenfunktionen zur Normierung eignen.
+In diesen Diagrammen ist zu erkennen, dass sich für eine gleichmäßige Schwingung jeweils die oberen Amplitudenfunktionen zum Eichen eignen.
 
 \begin{figure}[htp]
 	\label{fig:M2Messing}
@@ -158,8 +158,8 @@ Für die Messung der Temperaturwellen bei einer Periodendauer von 200 Sekunden w
 Die Diagramme \ref{fig:M3Messing}, \ref{fig:M3Alu} und \ref{fig:M3Edelstahl} zeigen die Temperaturwellen der jeweiligen Metalle an den angegebenen Punkten. 
 Zusätzlich zum Verlauf sind die Extrema markiert und deren Amplitudenfunktionen eingezeichnet.
 
-Normiert man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich die Grundschwingungen in den begleitenden Diagrammen \ref{fig:M3MessingNorm}, \ref{fig:M3AluNorm} und\ref{fig:M3EdelstahlNorm}. 
-Anhand dieser Diagramme wird ersichtlich, dass sich jeweils die oberen Amplitudenfunktionen dazu eignen, den Temperaturverlauf auf eine gleichmäßige Grundschwingung zu normieren.\\
+Eicht man den Temperaturverlauf mit der eingezeichneten Amplitudenfunktionen, so ergeben sich die Grundschwingungen in den begleitenden Diagrammen \ref{fig:M3MessingNorm}, \ref{fig:M3AluNorm} und\ref{fig:M3EdelstahlNorm}. 
+Anhand dieser Diagramme wird ersichtlich, dass sich jeweils die oberen Amplitudenfunktionen dazu eignen, den Temperaturverlauf auf eine gleichmäßige Grundschwingung zu bringen.\\
 
 \begin{figure}[htp]
 	\label{fig:M3Messing}
@@ -213,7 +213,7 @@ Anhand dieser Diagramme wird ersichtlich, dass sich jeweils die oberen Amplitude
 
 Durch diese Grundschwingungskurven können die Amplituden $A_{\text{nah}}$ und $A_{\text{fern}}$ der Schwingung sowie die Phasendifferenz $\Delta t$ zwischen den Messpunkten bestimmt werden; 
 dabei wird der Teil der Grundschwingung vernachlässigt, der durch offensichtliche Verfahrensfehler mangelhaft ist
-(vgl. \ref{fig:M2Messing},\ref{fig:M2Alu}) oder durch die Einschwingphase vergleichsweise stark von einer gleichmäßigen Schwingung abweicht.
+(vgl. \ref{fig:M2Messing},\ref{fig:M2Alu}).
 Für die Amplitudenbestimmung wird in einem brauchbaren Abschnitt in der Grundschwingung Extremwerte bestimmt und die Mittelwerte der y-Koordinaten aller Maxima beziehungsweise Mimima errechnet.
 Mit diesen Mittelwerten ist eine hinreichend genaue Beschreibung der Amplitude $A$ möglich.
 Es gilt
@@ -258,31 +258,30 @@ Der Mittelwert dieser Größe ist Maß für die Phasendifferenz \Delta{t}.
 \end{figure}
 \newpage
 \noindent Es ergeben sich die Werte
-\begin{table}[h!]
+\begin{table}[htbp]
 	\centering
-	\begin{tabular}{c r S[table-format=1.5] S[table-format=1.5] S[table-format=3.3] c c}
+	\begin{tabular}{c S[table-format=1.5] S[table-format=1.5] S[table-format=3.3] c c}
 		\toprule
-		{Material}& {Periode}&{Ampl. $A_\text{nah}$}&{Ampl. $A_\text{fern}$}&{Phasendiff. $\Delta{t}$}&{Dichte $\rho$}&{spez. Wärme $c$}\\
+		{Material}&{$A_\text{nah} [\si{\degreeCelsius}]$}&{$A_\text{fern}[\si{\degreeCelsius}]$}&{$\Delta{t}[\si{\second}]$}&{$\rho$[\si{\kilo\gram\per\meter\cubed}]}&{$c$[\si{\joule\per\meter\per\kelvin}]}\\
 		\midrule
-		{Messing}& {80 Sek.}&{0.0227}&{0.0227}&	{25.0}&		{8520}&{385}\\
-		{Messing}& {200 Sek.}&{0.1164}&{0.0684}&	{25.0}&		{dto.}&{385}\\
-		{Aluminium}& {80 Sek.}&{0.0671}&{0.0371}&	{18.75}&	{2800}&{830}\\
-		{Aluminium}& {200 Sek.}&{0.1190}&{0.1004}&{10.625}&	{dto.}&{830}\\
-		{Edelstahl}& {200 Sek.}&{0.0970}&{0.0172}&{116.875}&	{8000}&{400}\\
+		{Messing M2}& 	{3.1336}&{0.9034}&	{25.0}&		{8520}&{385}\\
+		{Aluminium M2}&	{3.0011}&{1.5856}&	{18.75}&	{2800}&{830}\\
+		{Edelstahl M3}&	{5.477}&{0.715}&	{116.875}&	{8000}&{400}\\
 		\bottomrule
 	\end{tabular}
 \end{table}
-
 Mithilfe der Amplituden $A_{\text{nah}}$ und $A_{\text{fern}}$, der Phasendifferenz $\Delta t$, der Geometrie und Beschaffenheit des Stabes kann mit der Gleichung \eqref{waermeleitfaehigkeit} die Wärmeleitfähigkeit $\kappa$ bestimmt werden.
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{cccccc}
+	\begin{tabular}{cccc}
 	\toprule
-	&\multicolumn{2}{c}{Messing}&\multicolumn{2}{c}{Aluminium}&{Edelstahl}\\
-	&{80 Sek.}&{200 Sek.}&{80 Sek.}&{200 Sek.}&{200 Sek.}\\
+	&\multicolumn{3}{c}{Wärmeleitfähigkeit \kappa [\si{\watt\per\meter\per\kelvin}]}\\
+	&{Messing M2}&{Aluminium M2}&{Edelstahl M3}\\
 	\midrule
-	{Messung}&522606& 1112340& 942673& 5782700&71158.1\\
-	{Literatur}&\multicolumn{2}{c}{120}&\multicolumn{2}{c}{236}&15\\
+	{Messung}&{47.4702}& 87.4175&6.0504\\
+	{Literatur}&{120}&{236}&15\\
+	\midrule
+	{Abweichung}&60.44\%&62.96\%&59.6639\%\\
 	\bottomrule
 	\end{tabular}
 	\label{tab:waermeleitfaehigkeitwerte}
