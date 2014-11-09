@@ -6,21 +6,24 @@ Ziel des Versuches ist, die Wärmeleitfähigkeit von den Metallen Messing, Edels
 \section{Theorie}
 \label{sec:theorie}
 
-Ist in einem abgeschlossenen System ein Temperaturunterschied vorhanden findet Wärmetransport statt, um ein Temperaturgleichgewicht zu erreichen.Dies kann durch Konvektion, Wärmestrahlung oder Wärmeleitung geschehen. 
-Bei Konvektion vermischen sich Gase oder Flüssigkeiten mit unterschiedlichen warmen Temperaturbereichen; durch Wärmestrahlung gibt ein Körper oder ein Fluid seine Wärme an die Umgebung ab.
+Ist in einem abgeschlossenen System ein Temperaturunterschied vorhanden, findet Wärmetransport statt, um ein Temperaturgleichgewicht zu erreichen. Dies kann durch Konvektion, Wärmestrahlung oder Wärmeleitung geschehen. 
+Bei Konvektion vermischen sich bei Fluiden unterschiedliche warme Temperaturbereiche; 
+durch Wärmestrahlung gibt ein Körper oder ein Fluid seine Wärme an die Umgebung ab.
 
-Die in diesem Versuch betrachtete Wärmeleitung in festen Körpern geschieht über freie Elektronen und Phononen - quantisierte Schwingungen innerhalb der Gitterstruktur des Metalls.
+Die in diesem Versuch betrachtete Wärmeleitung in festen Körpern geschieht über freie Elektronen und Phononen, quantisierte Schwingungen innerhalb der Gitterstruktur des Metalls.
 Dabei fließt eine Wärmemenge
 \begin{equation}
 	\label{waermemenge}
 	\mathup{d}Q=-\kappa\mathup{A}\frac{\partial{T}}{\partial{x}}\mathup{d}t
 \end{equation}
-durch den Festkörper mit Querschnittsfläche A von hoher zu niedriger Temperatur.Die Wärmeleitfähigkeit $\kappa$ ist eine Materialkonstante.
-Mit \eqref{waermemenge} und der Wärmestromdichte $j_\mathup{w}$, welche den Wärmestrom bezüglich der Querschnittsfläche A darstellt,
+durch den Festkörper mit Querschnittsfläche A von hoher zu niedriger Temperatur.
+Die Wärmeleitfähigkeit $\kappa$ ist eine Materialkonstante.
+Mit \eqref{waermemenge} und der Wärmestromdichte $j_\mathup{w}$, welche den Wärmestrom mit 
 \begin{equation}
 	\label{waermestromdichte}
 	j_\mathup{w}= -\kappa \frac{\partial{T}}{\partial{x}}
 \end{equation}
+bezüglich der Querschnittsfläche A darstellt,
 kann mit Hilfe der Kontinuitätsgleichung die eindimensionale Wärmeleitungsgleichung
 \begin{equation}
 	\label{waermeleitungsgleichung}
@@ -33,32 +36,34 @@ Dabei ist
 	\label{temperaturleitfaehigkeit}
 	\sigma_\mathup{T}=\frac{\kappa}{{\rho}c}
 \end{equation}
-die Temperaturleitfähigkeit, welche die Schnelligkeit angibt, mit der der Temperaturausgleich passiert.
-Sie wird bestimmt durch die Dichte $\rho$ und die spezifische Wärmekapazität $c$. Dabei beschreibt $c$ die Energiemenge, die benötigt wird, um $1\si{\kilo\gram}$ des untersuchten Materials um 1K zu erwärmen
+die Temperaturleitfähigkeit, welche die Schnelligkeit angibt, mit welcher der Temperaturausgleich stattfindet.
+Sie wird bestimmt durch die Dichte $\rho$ und die spezifische Wärmekapazität $c$. 
+Dabei beschreibt $c$ die Energiemenge, die benötigt wird, um $1\si{\kilo\gram}$ des untersuchten Materials um $1\si{\kelvin}$ zu erwärmen
 
-Werden Körper durch periodischen Temperaturwechsel geheizt oder -kühlt breiten sich in seinem Innern Temperaturwellen der Form
+Werden Körper durch periodischen Temperaturwechsel geheizt oder gekühlt, breiten sich in seinem Innern Temperaturwellen der Form
 \begin{equation}
 	\label{temperaturwelle}
 	T(x,t)= T_\mathup{max} \exp{\left(-\sqrt{\frac{\omega \rho c}{2\kappa}}x\right)} \cos{\left(\omega t - \sqrt{\frac{\omega \rho c}{2\kappa}}x\right)}
 \end{equation}
-aus, was eine Lösung der Wärmeleitungsgleichung \eqref{waermeleitungsgleichung} für lange Probenstäbe darstellt. Diese setzt sich zusammen aus der Amplitude $T_\text{max}$, der Wellenzahl
+aus, was eine Lösung der Wärmeleitungsgleichung \eqref{waermeleitungsgleichung} für lange Probenstäbe darstellt. 
+Diese setzt sich zusammen aus der Amplitude $T_\text{max}$, der Wellenzahl
 \begin{equation}
 	\label{wellenzahl}
-	k=\frac{\omega \rho c}{2\kappa} ,
+	k=\frac{\omega \rho c}{2\kappa},
 \end{equation}
 einem Schwingterm und einer Exponentialfunktion mit negativem Exponenten, der für die Dämpfung verantwortlich ist.
-
 Über die Dispersionsbeziehung, die Phasengeschwindigkeit $v$ und die Frequenz $\omega$ miteinander zu
 \begin{equation}
 	\label{dispersion}
 	v=\frac{\omega}{k}=\frac{\omega}{\sqrt{\frac{\omega\rho c}{2\kappa}}}=\sqrt{\frac{2\kappa\omega}{c\rho}}
 \end{equation}
-verknüpft, erhält man mit \eqref{wellenzahl} und den Beziehungen $\omega=\frac{2\pi}{\tilde{T}}$ -- der Winkelgeschwindigkeit, und $\phi=2\pi\Delta{t}\frac{1}{\tilde{T}}$ -- der Phase mit der Periodendauer $\tilde{T}$ ein Gleichung für die Wärmeleitfähigkeit
+verknüpft, erhält man mit \eqref{wellenzahl} und den Beziehungen die Winkelgeschwindigkeit $\omega=\frac{2\pi}{\tilde{T}}$, und die Phase $\phi=2\pi\Delta{t}\frac{1}{\tilde{T}}$ mit der Periodendauer $\tilde{T}$ eine Gleichung für die Wärmeleitfähigkeit.
+Es gilt
 \begin{equation}
 	\label{waermeleitfaehigkeit}
-	\kappa=\frac{c\rho{\Delta{x}}^2}{2\Delta{t}\ln\left({\frac{A_\text{n}}{A_\text{f}}}\right)}.
+	\kappa=\frac{c\rho{\Delta{x}}^2}{2\Delta{t}\ln\left({\frac{A_\text{nah}}{A_\text{fern}}}\right)}.
 \end{equation}
-$\frac{A_\text{n}}{A_\text{f}}$ ist das Verhältnis der Wellenamplituden, welche an zwei Orten $x_1$ und $x_2$ im Abstand
-$\Delta{x}=x_2-x_1$ gemessen werden und den Gangunterschied $\Delta{t}$ aufweisen. Nun kann $\kappa$ über den zeitlichen Verlauf der Temperatur bestimmt werden.
-
+$\frac{A_\text{nah}}{A_\text{fern}}$ ist das Verhältnis der Wellenamplituden, welche an zwei Orten $x_1$ und $x_2$ im Abstand
+$\Delta{x}=x_2-x_1$ gemessen werden und den Gangunterschied $\Delta{t}$ aufweisen. 
+Hiermit kann $\kappa$ über den zeitlichen Verlauf der Temperatur bestimmt werden.
 % section theorie (end)

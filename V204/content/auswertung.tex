@@ -1,6 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Statische Messung}
+\label{sub:statik}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{Bilder/M1_Overview.pdf}
@@ -28,7 +29,7 @@ Zirka 700 Sekunden nach Beginn des Erwärmens liegen an den entfernten Messpunkt
 	\toprule
 	{Edelstahl}&{Messing,dünn}&{Messing}&{Aluminium}\\
 	\midrule
-	29$\si{\degreeCelsius}$& 34$\si{\degreeCelsius}$& 35.4$\si{\degreeCelsius}$& 37$\si{\degreeCelsius}$\\
+	$29.28\si{\degreeCelsius}$& $35.48\si{\degreeCelsius}$& $34.08\si{\degreeCelsius}$& $37.12\si{\degreeCelsius}$\\
 	\bottomrule
 	\end{tabular}
 	\caption{Temperaturen an entfernten Messpunkten bei $t=700\si{\second}$.}
@@ -201,6 +202,7 @@ Anhand dieser Diagramme wird ersichtlich, dass sich jeweils die oberen Amplitude
 	\label{fig:M3EdelstahlNormkurve}
 \end{figure}
 \subsection{Bestimmung der Wärmekapazität}
+\label{sub:waermekapazitaet}
 Durch die Grundschwingungskurven können die Amplituden $A_{\text{nah}}$ und $A_{\text{fern}}$ der Schwingung, sowie die Phasendifferenz $\Delta t$ zwischen den Messpunkten bestimmt werden; 
 dabei wird der Teil der Grundschwingung vernachlässigt, der durch offensichtliche Verfahrensfehler mangelhaft ist
 (vgl. Diagramme \ref{fig:M2Messing}, \ref{fig:M2Alu}).
@@ -217,9 +219,10 @@ Es werden alle Phasendifferenzen $\Delta{t_i}$ mit
 	\Delta{t_i} = {x}_{\text{Max, n+1}}-{x}_{\text{Max, n}}.
 \end{equation}
 ermittelt.
-Der Mittelwert der $\Delta{t_i}$ ist ein Maß für die Phasendifferenz $\Delta{t}$. 
-Die Schwingungskenngrößen sind demnach
-\begin{table}[htbp]
+Der Mittelwert der $\Delta{t_i}$ ist ein Maß für die Phasendifferenz $\Delta{t}$.
+
+\noindent Die Schwingungskenngrößen sind in Tabelle \ref{tab:kappazutaten} zusammengefasst.
+\begin{table}[h!]
 	\centering
 	\begin{tabular}{c S[table-format=1.5] S[table-format=1.5] S[table-format=3.3] c c}
 		\toprule
@@ -234,7 +237,7 @@ Die Schwingungskenngrößen sind demnach
 	\label{tab:kappazutaten}
 \end{table}
 Mithilfe der Amplituden $A_{\text{nah}}$ und $A_{\text{fern}}$, der Phasendifferenz $\Delta t$, der Geometrie und Beschaffenheit des Stabes kann mit der Gleichung \eqref{waermeleitfaehigkeit} die Wärmeleitfähigkeit $\kappa$ bestimmt werden.
-\begin{table}[htbp]
+\begin{table}[h!]
 	\centering
 	\begin{tabular}{cccc}
 	\toprule

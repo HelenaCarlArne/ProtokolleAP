@@ -1,7 +1,30 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-Vergleicht man die Literaturwerte der Wärmekapazitäten für Aluminium, Messing und Edelstahl mit den experimentell gewonnenen Werten wie in Tabelle \ref{tab:waermeleitfaehigkeitwerte}, ergeben sich Abweichungen von $\approx60\%$ bei jeder Probe. Trotz der ernormen Abweichung vom Literaturwert kann eine gute Aussage über das Verhältnis der Wärmeleitfähigkeiten getroffen werden, wenn die Stäbe untereinander verglichen werden und der absolute Wert keine Rolle spielt.
+\subsection{Von der Eichung}
+Um mit höherer Fehlersicherheit die Amplituden und Phasendifferenzen bestimmen zu können, wird die Temperaturwelle als Überlagerung zweier Funktionen angenommen. 
+\begin{equation}
+	\label{annahme}
+	f_\text{Schwingung}= f_\text{Grundschwingung}+f_\text{Amplitude}
+\end{equation}
+Die in Abschnitt \ref{sec:Auswertung} als Amplitudenfunktion genannte $e$-Funktion $f_\text{Amplitude}$ beschreibt das Ansteigen der Schwingung (durch Erwärmung des Stabes im Ganzen), die Grundschwingung ist im Idealfall eine reine trigonometrische Funktion. 
+Da die Amplitudenfunktionen oben und unten sehr ähnlich sind und sich im Wesentlichen durch y-Achsenabschnitt voneinander unterscheiden, kann in guter Näherung die Schwingung wie angegeben aufgespalten werden, wodurch die wahre Amplitude $T_\text{max}$ der Grundschwingung gut angenährt wird.
+Dies rechtfertigt die Annahme, die Temperaturwelle \ref{temperaturwelle} durch \eqref{annahme} anzunähern.
 
-Die größte Fehlerquelle liegt im Ablesen des Abstands $\Delta{x}$ der Thermoelemente voneinander. Dies geschieht mit einem handelsüblichen Lineal und exaktes Abmessen ist aufgrund der Bauart der Platine schwierig. Desweiteren ist nicht bekannt, wie genau die Thermoelemente selber die Temperatur messen -- eventuelle Unsicherheiten werden in der Auswertung nicht betrachtet.
+Würden sich die Amplitudenfunktionen stark unterscheiden, würde dies zu großen Abweichungen führen, da die echte Temperaturwelle \ref{temperaturwelle} keine Superposition von Funktionen ist.
 
-Für die Stoffgemische kann kein exakter Literautwert angegeben werden, so lange die genaue Stoffzusammensetzung unbekannt ist. Ebenso können im Reinstoff Aluminium Verunreinigungen für Fehler sorgen. 
+\subsection{Von der Wärmekapazität}
+Vergleicht man die Literaturwerte der Wärmekapazitäten für Aluminium, Messing und Edelstahl mit den experimentell gewonnenen Werten wie in Tabelle \ref{tab:waermeleitfaehigkeitwerte}, ergeben sich Abweichungen von $\approx60\%$ bei jeder Probe. 
+Trotz der starken Abweichung vom Literaturwert kann eine gute Aussage über das Verhältnis der Wärmeleitfähigkeiten getroffen werden, 
+wenn die Stäbe untereinander verglichen werden und der absolute Wert nicht interessiert.
+Die Bestimmung der Wärmeleitfähigkeit $\kappa$ in Abschnitt \ref{sub:waermekapazitaet} verifiziert somit die Behauptung in Abschnitt \ref{sub:statik}, dass Aluminium in der Auswahl der Metalle die größte und Edelstahl die geringste Wärmeleitfähigkeit aufweist.
+
+\subsection{Von den Messfehlern und Fehlerrechnung}
+Wesentliche Fehlerquellen liegen im Ablesen des Abstands $\Delta{x}$ der Thermoelemente voneinander und im Einfluss der Raumtemperatur.
+Das Ablesen geschieht mit einem handelsüblichen Lineal und exaktes Abmessen ist aufgrund der Bauart der Platine schwierig. 
+Gegen den Einfluss der Raumtemperatur wird mit einer Abschirmung benutzt, welche ein übermäßiges, unbeabsichtigtes Abkühlen auf ein vertretbares Maß reduziert. Des Weiteren ist die Präzison der Thermoelemente unbekannt, weshalb eine Fehlerrechnung seitens der Temperatur nicht möglich ist. Eventuelle Unsicherheiten werden in der Auswertung nicht betrachtet.
+Liegen Verunreinigungen in den Metallen vor, die nicht nachgewiesen werden können, so kann die Vergleich der gemessenen Wärmeleitfähigkeiten mit der Literatur kritisch sein, 
+da die Verunreingungen Einfluss auf themodynamische Parameter haben könnten.
+
+Wegen der Unkenntnis über Unsicherheiten in den Temperaturen, der unbeabsichtigen Abkühlung und der sich ergebenen großen Abweichung von dem Literaturwert, wird auf eine Fehlerbetrachtung verzichtet. 
+Bewandtnis hat der Versuch dann, wenn von zwei Metallen das Verhältnis der Wärmeleitfähigkeiten bestimmt werden soll. Im Speziellen eignet sich hierzu die statische Messung nach Abschnitt \ref{sub:statik}.
+
