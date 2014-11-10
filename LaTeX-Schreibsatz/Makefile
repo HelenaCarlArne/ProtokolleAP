@@ -1,11 +1,11 @@
 all: Abgabe.pdf
 	
-Abgabe.pdf: Bilder/* Tabellen/* content/*.tex ../LaTeX-Schreibsatz/header.tex main.tex build/* | build
-	cp main.tex build/main.tex
-	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error main.tex
-	biber build/main.bcf
-	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error build/main.tex
-	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error build/main.tex
+Abgabe.pdf: Makefile Bilder/* Tabellen/* content/*.tex ../LaTeX-Schreibsatz/header.tex main.tex build/* | build
+	max_print_line=1048576 TEXINPUTS=build:.: lualatex --output-directory=build --interaction=nonstopmode --halt-on-error main.tex
+	BIBINPUTS=build:. biber build/main.bcf
+	max_print_line=1048576 TEXINPUTS=build:.: lualatex --output-directory=build --interaction=nonstopmode --halt-on-error main.tex
+	max_print_line=1048576 TEXINPUTS=build:.: lualatex --output-directory=build --interaction=nonstopmode --halt-on-error main.tex
+	mv build/main.pdf Abgabe.pdf
 	mv build/main.pdf Abgabe.pdf 
 build:
 	mkdir -p build
