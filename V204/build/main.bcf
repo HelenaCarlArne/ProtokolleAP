@@ -1967,10 +1967,18 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Helena</bcf:citekey>
     <bcf:citekey order="2">V204</bcf:citekey>
-    <bcf:citekey order="3">scipy</bcf:citekey>
-    <bcf:citekey order="4">matplotlib</bcf:citekey>
-    <bcf:citekey order="5">numpy</bcf:citekey>
-    <bcf:citekey order="6">scipy</bcf:citekey>
+    <bcf:citekey order="3">V204</bcf:citekey>
+    <bcf:citekey order="4">V204</bcf:citekey>
+    <bcf:citekey order="5">scipy</bcf:citekey>
+    <bcf:citekey order="6">V204</bcf:citekey>
+    <bcf:citekey order="7">V204</bcf:citekey>
+    <bcf:citekey order="8">DichteWaermeleitfaehigkeitAluminium</bcf:citekey>
+    <bcf:citekey order="9">WaermeleitfaehigkeitvMessinguEdelstahl</bcf:citekey>
+    <bcf:citekey order="10">DichteWaermeleitfaehigkeitAluminium</bcf:citekey>
+    <bcf:citekey order="11">WaermeleitfaehigkeitvMessinguEdelstahl</bcf:citekey>
+    <bcf:citekey order="12">matplotlib</bcf:citekey>
+    <bcf:citekey order="13">numpy</bcf:citekey>
+    <bcf:citekey order="14">scipy</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nty">
   <bcf:sorting>
