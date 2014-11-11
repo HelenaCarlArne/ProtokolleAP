@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  11 NOV 2014 21:42
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  11 NOV 2014 22:09
  restricted \write18 enabled.
 **build/main.tex
 (./build/main.tex
@@ -381,7 +381,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.029 seconds
+luaotfload: fontloader loaded in 0.033 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1697,7 +1697,7 @@ generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 \g_fontspec_family_latinmodern-math.otf_int=\count503
 luaotfload | load : auto-selecting default features for script: dflt
@@ -1754,7 +1754,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature ssty for script
+luaotfload: font no 24 (LatinModernMath-Regular) defines feature dtls for script
  math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 9.
@@ -1772,7 +1772,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1864,7 +1864,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1961,27 +1961,13 @@ Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./build/main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                V206
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                hauptsaetzederthermodynamik
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./build/main.bbl)
 Package biblatex Info: Reference section=0 on input line 9.
 Package biblatex Info: Reference segment=0 on input line 9.
 \AtBeginShipoutBox=\box285
 Package hyperref Info: Link coloring OFF on input line 9.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -2149,11 +2135,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--13
 
  []
 
-
-LaTeX Warning: Reference `eq:redwaerme' on page 2 undefined on input line 30.
-
 ) (./content/durchfuehrung.tex
-<Bilder/Abbildung.pdf, id=16, 850.6179pt x 682.95152pt>
+<Bilder/Abbildung.pdf, id=18, 850.6179pt x 682.95152pt>
 File: Bilder/Abbildung.pdf Graphic file (type pdf)
 
 <use Bilder/Abbildung.pdf>
@@ -2186,25 +2169,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `main.aux' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39899 strings out of 494695
+ 39903 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 518 words of node memory still in use:
+ 522 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 6 kern, 11 attribute, 64 glue_spec, 11 attr
-ibute_list, 3 action, 1 write nodes
-   avail lists: 1:46,2:7870,3:124,4:729,5:206,6:2568,7:31,8:24,9:515,10:988,11:5
+ibute_list, 4 action, 1 write nodes
+   avail lists: 1:47,2:7722,3:150,4:735,5:209,6:2584,7:32,8:28,9:515,10:988,11:5
 10,12:229
- 42501 multiletter control sequences out of 65536+600000
- 71 fonts using 18504991 bytes
- 70i,11n,104p,980b,1165s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 42503 multiletter control sequences out of 65536+600000
+ 71 fonts using 18505071 bytes
+ 70i,11n,104p,980b,1208s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
 ular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-
@@ -2217,10 +2196,10 @@ blic/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype
 /public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opent
 ype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/openty
 pe/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (4 pages, 209689 bytes).
+Output written on main.pdf (4 pages, 212554 bytes).
 
-PDF statistics: 180 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 131072)
+PDF statistics: 189 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 131072)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

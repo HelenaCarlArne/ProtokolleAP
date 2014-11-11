@@ -19,6 +19,42 @@
 
 \refsection{0}
   \sortlist{entry}{nty}
+    \entry{V206}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{labeltitle}{Versuch V101: Das Trägheitsmoment}
+      \field{title}{Versuch V101: Das Trägheitsmoment}
+      \field{urlday}{11}
+      \field{urlmonth}{11}
+      \field{urlyear}{2014}
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V206.pdf
+      \endverb
+    \endentry
+    \entry{hauptsaetzederthermodynamik}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=4da2e9a8142c830e6112bc503a003613}{Gerthsen}{G\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{C.;\bibnamedelima Meschede}{C\bibinitperiod\bibinitdelim M\bibinitperiod}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4da2e9a8142c830e6112bc503a003613}{Gerthsen}{G\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{C.;\bibnamedelima Meschede}{C\bibinitperiod\bibinitdelim M\bibinitperiod}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Verlag}%
+      }
+      \strng{namehash}{4da2e9a8142c830e6112bc503a003613}
+      \strng{fullhash}{4da2e9a8142c830e6112bc503a003613}
+      \field{sortinit}{G}
+      \field{labeltitle}{Gerthsen Physik}
+      \field{title}{Gerthsen Physik}
+      \field{year}{2010}
+    \endentry
     \entry{matplotlib}{article}{}
       \name{labelname}{1}{}{%
         {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
@@ -128,8 +164,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{V206}
-  \missing{hauptsaetzederthermodynamik}
 \endrefsection
 \endinput
 
