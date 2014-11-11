@@ -1,0 +1,20 @@
+[1] Config.pm:318> INFO - This is Biber 1.8
+[1] Config.pm:321> INFO - Logfile is 'build/main.blg'
+[243] biber-darwin:275> INFO - === Di Nov 11, 2014, 21:41:59
+[243] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[347] Biber.pm:630> INFO - Found 7 citekeys in bib section 0
+[451] Biber.pm:3053> INFO - Processing section 0
+[515] Biber.pm:3190> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[526] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[528] bibtex.pm:812> INFO - Found BibTeX data source 'build/lit.bib'
+[534] Biber.pm:3190> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[537] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[543] bibtex.pm:812> INFO - Found BibTeX data source 'build/programme.bib'
+[648] Utils.pm:169> WARN - I didn't find a database entry for 'hauptsaetzederthermodynamik' (section 0)
+[649] Utils.pm:169> WARN - I didn't find a database entry for 'V206' (section 0)
+[734] Biber.pm:2939> INFO - Overriding locale 'de_DE.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[734] Biber.pm:2945> INFO - Sorting 'entry' list 'nty' keys
+[734] Biber.pm:2949> INFO - No sort tailoring available for locale 'de_DE.UTF-8'
+[752] bbl.pm:482> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[753] bbl.pm:555> INFO - Output to build/main.bbl
+[753] Biber.pm:105> INFO - WARNINGS: 2
