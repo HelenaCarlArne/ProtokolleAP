@@ -1,7 +1,5 @@
-\section{Auswertung} % (fold)
+\section{Auswertung} 
 \label{sec:swrtng}
-
-
 \subsection{Bestimmung der Winkelrichtgröße $D$}
 \input{Tabellen/Tabelle1_Winkelrichtgroesse.tex}
 \noindent Mit den Messwerten und $r=0.09965\si{\meter}$ lässt sich die Winkelrichtgröße $D$ mit der Gleichung \eqref{eq:Winkelricht} bestimmen. Die Unsicherheit ist die Standardabweichung des Mittelwertes $\sigma_D$ mit
@@ -17,7 +15,7 @@ für $x=D$.
 Es ergibt sich 
 \begin{equation}
 	\label{wert:Winkelricht}
-	D=(0.0757\pm0.0019)\si{\newton\meter}
+	D=(0.0241\pm0.0006)\si{\newton\meter}
 \end{equation}
 \subsection{Bestimmung des Eigenträgheitsmomentes $I_D$}
 \input{Tabellen/Tabelle2_Eigentraegheit.tex}
@@ -66,15 +64,17 @@ für $x=a^2$, $y=T^2$ und der Identität aus Gleichung \eqref{eq:Reg_ident}, wir
 \end{equation*}
 \begin{equation}
 	\label{wert:eigentragheit}
-	= (9.26\pm0.23)10^{-3} \si{\kilo\gram\meter\squared}
+	= (2.95\pm0.07)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
-Da dieses Trägheitsmoment größer ist als die Ergebnisse der folgenden Messungen, wird von dem Abzug des Eigenträgheitsmomentes abgesehen (vgl. Kapitel \ref{Systembestimmend}).
+Da dieses Trägheitsmoment größer ist als die Ergebnisse der folgenden Messungen, wird von dem Abzug des Eigenträgheitsmomentes abgesehen (vgl. Kapitel \ref{Systembestimmend}). 
 \begin{figure}[hp]
 	\centering
 	\label{fig:Regress}
 	\includegraphics[width=\textwidth]{Bilder/Messung2.pdf}
 	\caption{Regression von $T^2$ gegen $a^2$}
 \end{figure}
+Die Massen ergeben sich zu $m_1= 0.2217510\pm0.0000023\si{\kilo\gram}$ und $m_2= 0.2217380\pm0.0000025\si{\kilo\gram}$.
+
 \newpage
 \subsection{Trägheitsmoment $I_\text{Z}$ eines Zylinders}
 \label{sub:traegheitsmoment_eines_zylinders}
@@ -87,7 +87,7 @@ Da dieses Trägheitsmoment größer ist als die Ergebnisse der folgenden Messung
 Es ergibt sich
 \begin{equation}
 	\label{wert:Zylinder}
-	I_\text{Z} = (1.48\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
+	I_\text{Z} = (4.72\pm0.12)10^{-4} \si{\kilo\gram\meter\squared}
 \end{equation}
 Das sichtbare Material der Zylinders ist Styropor-ähnlich \cite{dichte_styropor}.
 Da die gemessene Masse des Zylinders, $m_\text{Z} = (368.5740\pm0.0022) \si{\gram}$, stark von der theoretischen Masse eines Styropor-Zylinders gleicher Maße, $m_\text{Theorie} = \mathup{\rho_{\text{Styropor}}}V=(807.4\pm0.8) \si{\gram}$, abweicht, 
@@ -121,7 +121,7 @@ und es ergibt sich
 \noindent Analog zu \ref{sub:traegheitsmoment_eines_zylinders} wird über die Schwingungsdauer $T$ das Trägheitsmoment $I_\text{K}$ der Kugel zu
 \begin{equation}
 	\label{wert:Kugel}
-	I_K=(5.67\pm0.14)10^{-3} \si{\kilo\gram\meter\squared}
+	I_K=(1.81\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
 \end{equation}
 bestimmt.
 Für die theoretische Berechnung des Trägheitsmomentes wird die gemessene Masse der Kugel benutzt.
@@ -136,11 +136,11 @@ Mit $I_K = \frac{2}{5} m_{\text{Kugel}} r^2$ \cite{kuchen} ist
 \begin{subequations}
 	\begin{equation}
 		\label{wert:Puppe1}
-		I_\text{Puppe,1}=(1.81\pm0.04)10^{-3} \si{\kilo\gram\meter\squared}
+		I_\text{Puppe,1}=(3.66\pm0.09)10^{-4} \si{\kilo\gram\meter\squared}
 	\end{equation}
 	\begin{equation}
 		\label{wert:Puppe2}
-		I_\text{Puppe,2}=(1.149\pm0.028)10^{-3} \si{\kilo\gram\meter\squared}
+		I_\text{Puppe,2}=(5.77\pm0.14)10^{-4} \si{\kilo\gram\meter\squared}
 	\end{equation}
 \end{subequations}
 bestimmt.
@@ -150,7 +150,7 @@ Die Daten sind der Tabelle \ref{tab:M6 Puppenzeit} zu entnehmen.
 Für die Einzelträgheitsmomente, deren Summe das Trägheitsmoment der Puppe ist, gelten die Formeln\cite{kuchen}
 \begin{align*}
 	I_\text{Arm,1} &= \frac{m_\text{Arm}}{2}\Bigl(\frac{d_\text{Arm}}{2}\Bigr)^2+\underbrace{m_\text{Arm}\Bigl(\frac{d_\text{Rumpf}}{2}+\frac{d_\text{Arm}}{2}\Bigr)^2}_{\text{Satz von Steiner}}\\
-	I_\text{Arm,2} &= \frac{m_\text{Arm}}{2}(\frac{d_\text{Arm}}{2})^2\\
+	I_\text{Arm,2} &= m_\text{Arm}\Bigl(\frac{(d_\text{Arm})^2}{16}+\frac{(h_\text{Arm})^2}{12}\Bigr)^2+\underbrace{m_\text{Arm}\Bigl(\frac{d_\text{Rumpf}}{2}+\frac{h_\text{Arm}}{2}\Bigr)^2}_{\text{Satz von Steiner}}\\
 	I_\text{Bein} &= m_\text{Bein}\Bigl(\frac{(d_\text{Bein})^2}{16}+\frac{(h_\text{Bein})^2}{12}\Bigr)+
 	\underbrace{m_\text{Bein}\Bigl(\frac{h_\text{Bein}}{2}\Bigr)^2}_{\text{Satz von Steiner}}\\
 	I_\text{Kopf} &= \frac{2m_\text{Kopf}}{5}\Bigl(\frac{d_\text{Kopf}}{2}\Bigr)^2\\

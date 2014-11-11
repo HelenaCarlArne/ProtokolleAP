@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  4 NOV 2014 07:44
-=======
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  4 NOV 2014 14:08
->>>>>>> Stashed changes
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  11 NOV 2014 15:06
  restricted \write18 enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -400,19 +396,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-<<<<<<< Updated upstream
-luaotfload: "I am using the merged version of 'luaotfload.lua' here.
-luaotfload:  If you run into problems or experience unexpected
-luaotfload:  behaviour, and if you have ConTeXt installed you can try
-luaotfload:  to delete the file 'luaotfload-merged.lua' as I might
-luaotfload:  then use the possibly updated libraries. The merged
-luaotfload:  version is not supported as it is a frozen instance.
-luaotfload:  Problems can be reported to the ConTeXt mailing list."
-luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.029 seconds
-=======
-luaotfload | main : fontloader loaded in 0.114 seconds
->>>>>>> Stashed changes
+luaotfload | main : fontloader loaded in 0.115 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1720,16 +1704,9 @@ back to file:(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/
 generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-<<<<<<< Updated upstream
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
- math
-\g_fontspec_family_latinmodern-math.otf_int=\count503
-luaotfload | load : auto-selecting default features for script: dflt
-=======
 \g__fontspec_family_latinmodern-math.otf_int=\count474
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
->>>>>>> Stashed changes
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
 luaotfload | aux : font no 22 (LatinModernMath-Regular) does not define feature 
@@ -1783,11 +1760,6 @@ luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling
 back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-<<<<<<< Updated upstream
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature aalt for script
- math
-=======
->>>>>>> Stashed changes
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 10.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1802,12 +1774,6 @@ luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling
 back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-<<<<<<< Updated upstream
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
- math
-luaotfload | load : auto-selecting default features for script: dflt
-=======
->>>>>>> Stashed changes
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1898,12 +1864,6 @@ luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling
 back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-<<<<<<< Updated upstream
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
- math
-luaotfload | load : auto-selecting default features for script: dflt
-=======
->>>>>>> Stashed changes
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -2186,17 +2146,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 38.
 
-<Bilder/puppe1.pdf, id=52, 331.2375pt x 259.97125pt>
+<Bilder/puppe1.pdf, id=52, 184.69pt x 254.9525pt>
 File: Bilder/puppe1.pdf Graphic file (type pdf)
  <use Bilder/puppe1.pdf>
 Package pdftex.def Info: Bilder/puppe1.pdf used on input line 45.
-(pdftex.def)             Requested size: 142.26378pt x 111.65454pt.
+(pdftex.def)             Requested size: 142.26378pt x 196.38792pt.
 
-<Bilder/puppe2.pdf, id=53, 184.69pt x 254.9525pt>
+<Bilder/puppe2.pdf, id=53, 331.2375pt x 259.97125pt>
 File: Bilder/puppe2.pdf Graphic file (type pdf)
  <use Bilder/puppe2.pdf>
 Package pdftex.def Info: Bilder/puppe2.pdf used on input line 51.
-(pdftex.def)             Requested size: 85.35826pt x 117.83197pt.
+(pdftex.def)             Requested size: 85.35826pt x 66.99193pt.
 )
 [4<./Bilder/puppe1.pdf><./Bilder/puppe2.pdf>] (./Auswertung.tex
 
@@ -2274,66 +2234,7 @@ back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-<<<<<<< Updated upstream
-back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
-back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt <Bilder/Me
-ssung2.pdf, id=101, 578.16pt x 433.62pt>
-=======
-back to file: <Bilder/Messung2.pdf, id=99, 578.16pt x 433.62pt>
->>>>>>> Stashed changes
+back to file: <Bilder/Messung2.pdf, id=101, 578.16pt x 433.62pt>
 File: Bilder/Messung2.pdf Graphic file (type pdf)
  <use Bilder/Messung2.pdf>
 Package pdftex.def Info: Bilder/Messung2.pdf used on input line 75.
@@ -2594,7 +2495,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
-(rerunfilecheck)             Checksum: 0AF71F000CD645BD069B3215D1703E77;19769.
+(rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2606,35 +2507,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
 Here is how much of LuaTeX's memory you used:
  40958 strings out of 494693
  100000,1373583 words of node,token memory allocated
- 964 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 26 kern, 1 sub_mlist, 32 attribute, 102 glu
+ 1060 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 26 kern, 1 sub_mlist, 32 attribute, 122 glu
 e_spec, 32 attribute_list, 3 action, 1 write nodes
-<<<<<<< Updated upstream
-   avail lists: 1:47,2:9834,3:380,4:2852,5:336,6:3348,7:100,8:32,9:1360,10:988,1
-1:510,12:229
- 42699 multiletter control sequences out of 65536+600000
- 161 fonts using 51771543 bytes
- 70i,21n,104p,1049b,1167s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.ot
-f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.
-otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-r
-egular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/lat
-inmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/l
-mroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/l
-mroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm
-/lmroman5-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/
-lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/
-public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/op
-entype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts
-/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fo
-nts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fon
-ts/opentype/public/lm/lmroman12-bold.otf>
-Output written on Abgabe.pdf (14 pages, 176253 bytes).
-=======
-   avail lists: 1:48,2:9831,3:377,4:2878,5:335,6:3347,7:100,8:32,9:1371,10:983,1
+   avail lists: 1:48,2:9831,3:396,4:2878,5:334,6:3347,7:100,8:32,9:1371,10:983,1
 1:519,12:230
  43191 multiletter control sequences out of 65536+600000
- 149 fonts using 47659935 bytes
+ 149 fonts using 47660831 bytes
  70i,21n,104p,1049b,2057s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-
 italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm
@@ -2651,8 +2530,7 @@ t/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/20
 14/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.loca
 l/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/hele
 na/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on Abgabe.pdf (14 pages, 176437 bytes).
->>>>>>> Stashed changes
+Output written on Abgabe.pdf (14 pages, 176859 bytes).
 
 PDF statistics: 457 PDF objects out of 1000 (max. 8388607)
  345 compressed objects within 4 object streams

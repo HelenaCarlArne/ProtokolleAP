@@ -21,7 +21,7 @@ from scipy.stats import sem
 r = 0.09965
 F = np.genfromtxt('Werte/Werte_F_M1.txt').T                                                  
 Phi = np.genfromtxt('Werte/Werte_Phi_M1.txt').T
-Phi_Bogenmass = np.genfromtxt('Werte/Werte_Phi_Bogenmass_M1.txt').T
+Phi_Bogenmass = np.pi*np.genfromtxt('Werte/Werte_Phi_Bogenmass_M1.txt').T
 #Messung 2, Eigentraegheit
 A_array = np.genfromtxt('Werte/Werte_A_M2.txt').T                          
 T_D_1, T_D_2, T_D_3, T_D_4, T_D_5, T_D_6, T_D_7, T_D_8, T_D_9, T_D_10  = np.genfromtxt('Werte/Werte_T1_M2.txt')
@@ -81,7 +81,7 @@ D = ufloat(np.mean(D_array),sem(D_array))
 m_1 = ufloat(np.mean(m_1_array),sem(m_1_array))                         
 m_2 = ufloat(np.mean(m_2_array),sem(m_2_array))  
 
-#Messung 2, Eigenträgheit
+#Messung 2, Eigentraegheit
 T_D_Nom=np.array([np.mean(T_D_1),np.mean(T_D_2),np.mean(T_D_3),np.mean(T_D_4),np.mean(T_D_5),np.mean(T_D_6),np.mean(T_D_7),np.mean(T_D_8),np.mean(T_D_9),np.mean(T_D_10)])
 T_D_Std=np.array([sem(T_D_1),sem(T_D_2),sem(T_D_3),sem(T_D_4),sem(T_D_5),sem(T_D_6),sem(T_D_7),sem(T_D_8),sem(T_D_9),sem(T_D_10)])
 T_D_array= unp.uarray(T_D_Nom,T_D_Std)
@@ -164,8 +164,8 @@ I_2_array = (T_2_array)**2*D/(4*(np.pi)**2)
 I_1_Messung = I_1_array.mean()
 I_2_Messung = I_2_array.mean()
 #Theoretische Traegheit
-I_A_l_1 = m_A_l*((A_d_l/2)**2*0.5+(R_d/2+A_d_l/2)**2)
-I_A_r_1 = m_A_r*((A_d_r/2)**2*0.5+(R_d/2+A_d_r/2)**2)
+I_A_l_1 = m_A_l*(0.5*(A_d_l/2)**2 +(R_d/2+A_d_l/2)**2) 
+I_A_r_1 = m_A_r*(0.5*(A_d_r/2)**2 +(R_d/2+A_d_r/2)**2) 
 I_A_l_2 = m_A_l*(((A_d_l/2)**2/4+(A_h_l**2)/12)+(R_d/2+A_h_l/2)**2)
 I_A_r_2 = m_A_r*(((A_d_r/2)**2/4+(A_h_r**2)/12)+(R_d/2+A_h_r/2)**2)
 I_B_l = m_B_l*((((B_d_l/2)**2)/4+(B_h_l**2)/12)+(B_h_l/2)**2)
@@ -278,8 +278,6 @@ print('Quotienten der Messung ist',Quo_Messung)
 print("")
 print("Daraus folgt eine Uebereinstimmung von {:.2f}".format(Verhaeltnis.n*100),"+/- {:.4f}".format(Verhaeltnis.s*100),"%")
 print("")
-print("")
-print("And I think to myself, what a wonderful world!")
 
 r_i =ufloat(0.0401012,0.0401012*0.000898)
 

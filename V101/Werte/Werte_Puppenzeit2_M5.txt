@@ -1,4 +1,4 @@
-# Trägheitsmoment der Puppe
+# Trägheitsmoment der Puppe, Doppelspagat
 
 #	5*T_2 /s
 
