@@ -9,9 +9,9 @@ plt.rcParams['figure.figsize']= (10, 8)
 plt.rcParams['font.size'] = 16
 
 #Dateneinlesen 1
-T_1 = np.genfromtxt('Temperatur_1.txt').T 	### Hier gab es eine Spalte zuviel! Original: t, T_1 = np.gen…
+T_1 = np.genfromtxt('Temperatur_1.txt').T 	### Hier gab es eine Spalte zuviel! Original: t, T_1 = np.gen… 
 T_1 = const.C2K(T_1)
-t = np.arange(1,21)							### Hier wird die Zeit definiert.
+t = np.arange(0,20)							### Hier wird die Zeit definiert. Wir gehen aber von 0 bis 20!
 
 #Funktion 1 definieren
 def f(t, a, b, c, d ):
