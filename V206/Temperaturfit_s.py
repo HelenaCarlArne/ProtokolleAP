@@ -54,7 +54,7 @@ plt.ylabel('Temperatur T /K')
 
 #Plotten
 plt.legend(loc='best')
-plt.show()
+#plt.show()
 
 
 ###Berechne dT/dt für 4 verschiedene zeiten
