@@ -71,23 +71,23 @@ Entgegen der Anweisung der Anleitung werden die Verläufe nicht durch eine nicht
 Es ergeben sich für $T_1(t)$ und $T_2(t)$ die Koeffizienten 
 \begin{equation}
 \begin{split}
-A_1&=(-17.1705895195\pm1.7899858311)10⁻⁹\si{\kelvin\per{\second}³}\\
-B_1&=(28.2367366738\pm3.10787542417)10⁻⁶\si{\kelvin\per{\second}²}\\
-C_1&=(0.0162347592968\pm0.00150160292315)\si{\kelvin\per{\second}}\\
-D_1&=(294.111603517\pm0.19259208147)\si{\kelvin}
+A_1&=(-1.72\pm0.18)10⁻⁸\si{\kelvin\per{\second}³}\\
+B_1&=(2.82\pm0.31)10⁻⁵\si{\kelvin\per{\second}²}\\
+C_1&=(0.0162\pm0.0015)\si{\kelvin\per{\second}}\\
+D_1&=(294.11\pm0.19)\si{\kelvin}
 \end{split}
 \end{equation}
 und
 \begin{equation}
 \begin{split}
-A_2&=(33.855559517\pm2.46581851787)10⁻⁹\si{\kelvin\per{\second}³}\\
-B_2&=(-52.9611716421\pm4.28129424103)10⁻⁶\si{\kelvin\per{\second}²}\\
-C_2&=(-0.00325557626607\pm0.00206855306032)\si{\kelvin\per{\second}}\\
-D_2&=(294.977609839\pm0.265307963098)\si{\kelvin}.
+A_2&=(3.39\pm0.25)10⁻⁸\si{\kelvin\per{\second}³}\\
+B_2&=(-5.30\pm0.43)10⁻⁵\si{\kelvin\per{\second}²}\\
+C_2&=(-0.0033\pm0.0021)\si{\kelvin\per{\second}}\\
+D_2&=(294.98\pm0.27)\si{\kelvin}.
 \end{split}
 \end{equation}
 
-Um den Differentialqutionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ für verschiedene Zeiten $t_k$ mit $k=1,...,4$ bestimmen zu können, wird die Funktion $T_i(t)$ nach der Zeit $t$ abgeleitet:
+Um den Differentialqutionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ für verschiedene Zeiten $t_k$ mit $k=1,...,4$ bestimmen zu können, wird die Funktion $T_i(t)$ nach der Zeit $t$ abgeleitet und die Fehler der Gradienten mittels Gaußscher Fehlerfortpflanzung berechnet:
 
 \begin{equation}
 \frac{\mathup{d}T_i}{\mathup{d}t}= 3A_it²+2B_it+C_i.
@@ -102,10 +102,10 @@ Um den Differentialqutionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ f
 	\multicolumn{1}{c}{Zeit} & \multicolumn{2}{c}{Differentialquotienten} \\
 	{$t/\:\si{\second}$} & {$\frac{\mathup{d}T_1}{\mathup{d}t}/\:\si{\kelvin{\per\second}}$} & {$\frac{\mathup{d}T_2}{\mathup{d}t}/\:\si{\kelvin{\per\second}}$}\\
 	\midrule
- 120 & 0.022 $\pm$\:\:46.222   & 0.022 $\pm$\:\:63.674  \\
- 480 & 0.032 $\pm$ 184.888   & 0.032 $\pm$ 254.696  \\
- 840 & 0.027 $\pm$ 323.555   & 0.027 $\pm$ 445.717  \\
-1080 & 0.017 $\pm$ 415.999   & 0.017 $\pm$ 573.065  \\
+ 120 & 0.022 $\pm$ 0.002   & -0.015 $\pm$0.002  \\
+ 480 & 0.032 $\pm$ 0.004   & -0.031 $\pm$ 0.005  \\
+ 840 & 0.027 $\pm$ 0.007   & -0.021 $\pm$ 0.009  \\
+1080 & 0.017 $\pm$ 0.009   &  0.001 $\pm$ 0.013  \\
 	\bottomrule
 	\end{tabular}
 	\caption{Die Differentialqutienten von $T_1$ und $T_2$ zu vier verschiedenen Zeiten $t_k$, berechnet nach Gleichung \eqref{ableitung}.}
@@ -116,13 +116,33 @@ Um den Differentialqutionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ f
 
 
 \subsection{Bestimmung der Güteziffer}
-Die reale Güteziffer $\nu$ wird mit Hilfe der Messreihe $T_1$ berechnet, indem über den Differenzenquotienten $\frac{\Delta{T_1}}{\Delta{t}}$ die Wärmemenge $\Delta{Q_1}$, welche im Zeitintervall $\Delta{t}$ dem ersten Reservoir zugeführt wird, über die Beziehung 
+Die reale Güteziffer $\nu$ wird mit Hilfe der Messreihe $T_1$  über den Differenzenquotienten $\frac{\Delta{T_1}}{\Delta{t}}$, die Wärmemenge $\Delta{Q_1}$, welche im Zeitintervall $\Delta{t}$ dem ersten Reservoir zugeführt wird, multipliziert mit dem Kehrwert des Mittelwertes der Kompressorleistung $N_\mathup{el.}$, berechnet mit
 %das vielleicht noch in die Theorie einbringen??
 \begin{equation}
-\frac{\Delta{Q_1}}{{\Delta{t}}}=(m_1c_\mathup{w}+m_kc_\mathup{k})\frac{\Delta{T_1}}{{\Delta{t}}}
+\nu_\mathup{real}=\frac{\Delta{Q_1}}{{\Delta{t}}N_\mathup{el.}}=(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\frac{\Delta{T_1}}{{\Delta{t}}N_\mathup{el.}}.
 \label{waermemenge/zeitintervall}
 \end{equation}
-bestimmt wird.
+
+Die Konstanten $m_1c_\mathup{w}=4.183 10⁻³\:\si{\joule\per{\kelvin\kilo\gram}}$ und $m_\mathup{k}c_\mathup{k}=660\:\si{\joule\per\kelvin}$ sind die Wärmekapazitäten des verwendeten Wassers und der kupfernen Heizspirale. Die Gesamtkapazität bei $3\si\liter$ Wasservolumen ist $m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k}=13209\:\si{\joule\per\kelvin}$.
+
+Die ideale Güteziffer $\nu_\mathup{ideal}$ wird nach Gleichung \eqref{eq:nu_ideal} zum Vergleich ebenfalls berechnet.
 
 
+\begin{table}
+	\centering
+	
+	\begin{tabular}{S S S}
+	\toprule
+	\multicolumn{1}{c}{Zeit} & \multicolumn{2}{c}{Güteziffern} \\
+	{$t/\:\si{\second}$} & {$\nu_\mathup{ideal}$} & {$\nu_\mathup{real}$}\\
+	\midrule
+ 120 & 0.022 $\pm$ 0.002   & -0.015 $\pm$0.002  \\
+ 480 & 0.032 $\pm$ 0.004   & -0.031 $\pm$ 0.005  \\
+ 840 & 0.027 $\pm$ 0.007   & -0.021 $\pm$ 0.009  \\
+1080 & 0.017 $\pm$ 0.009   &  0.001 $\pm$ 0.013  \\
+	\bottomrule
+	\end{tabular}
+	\caption{Die Differentialqutienten von $T_1$ und $T_2$ zu vier verschiedenen Zeiten $t_k$, berechnet nach Gleichung \eqref{ableitung}.}
+	\label{tab:differentialquotienten}
+\end{table}
 
