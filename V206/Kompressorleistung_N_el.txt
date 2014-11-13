@@ -18,4 +18,4 @@
 210
 205
 
-#mittelwert: 201,38888
+#mittelwert: 201,3157
