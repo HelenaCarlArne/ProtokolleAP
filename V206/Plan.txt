@@ -1,19 +1,10 @@
 Theorie:
 
 Durchführung:
-- Skizze anpassen
-- Bezeichnungen an Skizze anpassen
 
 Auswertung:
 - Bezeichnungen an Skizze anpassen (am besten zuletzt)
 
 Diskussion:
-- "Warum wurde Polynom 3.Grades benutzt?"
-- "Wie ist das Güteziffer: brauchbar/unbrauchbar?"
-- "Welche Fehler könnten auftreten?"
-- "Wie kann man das System verbessern?"
-- "Eignet sich die großtechnische Anwendung?"
 
 Literatur:
-- Probem mit Dieter Meschede!
-

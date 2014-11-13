@@ -1,20 +1,20 @@
 \section{Ziel}
 \label{sec:Ziel}
-Ziel des Versuches ist es, Wärme einem kalten Reservoir zu entziehen, diese einem warmen Reservoir hinzuzuführen und diese Maschine, die Wärmepumpe, zu charakterisieren.
-Hierzu wird die Güteziffer $\nu$, der Massedurchsatz $\frac{\delta{m}}{\delta{t}}$ und die mechanische Leistung des verwandten Kompressors $W_\text{mech.}$ bestimmt.
+Ziel des Versuches ist es, eine Wärmepumpe zu charakterisieren, mit deren Hilfe Wärme einem kalten Reservoir entzogen und einem warmen Reservoir hingeführt werden kann.
+Hierzu wird die Güteziffer $\nu$, der Massedurchsatz $\frac{\Delta{m}}{\Delta{t}}$ und die mechanische Leistung des verwandten Kompressors $W_\text{mech.}$ bestimmt.
 \section{Theorie}
 \label{sec:Theorie}
 Ohne von außen Arbeit aufzubringen, gleicht sich ein Temperaturunterschied zwischen zwei Reservoiren so aus, 
 dass Wärme von dem warmen in das kalte Reservoir strömt.
 Weiter existiert nach dem zweiten Hauptsatz der Thermodynamik keine Maschine, deren einzige Wirkung darin besteht, Wärme von einem kalten in ein warmes Reservoir zu transportieren\cite{hauptsaetzederthermodynamik}.
-Die zusätzliche Arbeit $A$, die zur Unterhaltung dieses umgekehrten Wärmestromes erforderlich ist, wird nach dem ersten Hauptsatz der Thermodynamik dem warmen Reservoir $R_2$ neben der transportierten Wärme $Q_2$ %%aus kalten Reservoir $R_1$ %%
+Die zusätzliche Arbeit $A$, die zur Unterhaltung dieses umgekehrten Wärmestromes erforderlich ist, wird nach dem ersten Hauptsatz der Thermodynamik dem warmen Reservoir neben der transportierten Wärme $Q_2$ %%aus kalten Reservoir $R_1$ %%
 zugeführt.
-Es gilt\\
+Es sei $Q_1$ die von dem warmen Reservoir aufgenommene Wärme mit
 \begin{equation}
 	Q_1 = Q_2+A.
 	\label{eq:waermetransport}
 \end{equation}
-Die Güteziffer $\nu$ ist das Verhältnis dieser transportierten Energie $Q_1$ und der hierzu aufgewandten Arbeit $A$,
+Die Güteziffer $\nu$ \footnote{Auch als \textit{Coefficient of Performance} (COP) gemäß EN 14511 bekannt} ist das Verhältnis der transportierten Energie $Q_1$ und der hierzu aufgewandten Kompressorarbeit $A$,
 \begin{equation}
 	\nu = \frac{Q_1}{A}.
 	\label{eq:gueteziffer}
@@ -25,15 +25,15 @@ Mit der Annahme, dass sich die Temperaturen der Reservoire nicht ändern, kann d
 Kann weiter die durch den Prozess aufgenommene Wärme $Q_1$ durch einen umgekehrten Prozess wieder vollständig zu $Q_2 + A$ zurückgewonnen werden, das heißt, dass die Wärme nicht aus dem idealen, isolierten System tritt, gilt
 \begin{equation}
 	\frac{Q_1}{T_1}-\frac{Q_2}{T_2} = 0.
-\label{eq:redwaemre}
+	\label{eq:redwaemre}
 \end{equation}
-Mit \eqref{eq:redwaemre} gilt 
+Mit \eqref{eq:redwaemre} gilt für die Güteziffer
 \begin{equation}
-	\nu_{\text{ideal}} = \frac{T_1}{T_1-T_2}
-\label{eq:nu_ideal}
+	\nu_{\text{ideal}} = \frac{T_1}{T_1-T_2}.
+	\label{eq:gueteziffer_ideal}
 \end{equation}
-In einem realen System ist die Änderung $\mathup{d}Q_1$ größer als die Änderung $\mathup{d}Q_2$, das heißt, dass die dem kühlem Reservoir entneommene Wärme nicht vollständig in das wärmere Reservoir übertragen wird.
-Es gilt für reale Systeme
+In einem realen System ist die Änderung $\mathup{d}Q_1$ größer als die Änderung $\mathup{d}Q_2$, das heißt, dass die dem kühlem Reservoir entnommene Wärme nicht vollständig in das wärmere Reservoir übertragen wird.
+Daher gilt für reale Systeme
 \begin{align}
 	 0 &< \frac{Q_1}{T_1}-\frac{Q_2}{T_2}.\\
 	\intertext{und analog}
