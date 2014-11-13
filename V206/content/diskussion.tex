@@ -1,23 +1,37 @@
 \section{Diskussion}
 \label{sec:Diskussion}
 \subsection{Effizienz der Wärmepumpe}
-Die Güteziffer der verwandten Wärmepumpe beträgt ##Wert_güteziffer##.
-Die geringe Unsicherheit in der Güteziffer ist Maß dafür, dass der errechnete Mittelwert den realen Wert repräsentiert.
+Die Güteziffer der verwandten Wärmepumpe beträgt im Mittel RHABARBER!!%##Wert_güteziffer##.
+Die relative Unsicherheit in der Güteziffer von TerenceHill %#RelFehler'
+ist Maß dafür, dass die zur Berechnung des Wertes benötigten Größen des Versuches stark schwanken.
+Das Verhältnis zwischen der realen und idealen Güteziffer zeigt, dass 
+der Wärmeverlust durch die Isolierung der Verbindungsleitungen nicht ausreichend klein ist oder dass die Kupferspirale in den Reservoiren nicht vollständig in die Flüssigkeit eintaucht.
+Dies bewirkt, dass ein wesentlicher Teil der abgegebenen Wärme $\mathup{d}Q_2$ an die Umgebung abgegeben wird und das System verlässt.
 
 Die Effizienz der Wärmepumpe ist hoch, aus ökologischer und wirtschaftlicher Sicht ist die Verwendung einer Wärmepumpe in vergleichbarer Situation wie im Versuch empfehlenswert.
 
-\subsection(Vergleich der verwandten Wärmepumpe mit großtechnischen Anlagen) 
-Der Vergleich dieser Güteziffer mit den Werkangaben von industriell genutzten Wärmepumpen, etwa in Klimaanlagen oder in großtechnische Kühlgeräten, zeigt, dass die verwandte Wärmepumpe ähnlich effizient arbeitet.
+\subsection{Anwendung als (groß-)technische Lösung}
+Wärmepumpen finden in großtechnischer Industrie wie auch in Heim-, oder Fahrzeug-Klimatisierung Verwendung. 
+Anstelle von umweltgefährlichen Halogenkohlenwasserstoffen (HKW) wird vermehrt ein weniger schädliches Transportmittel, etwa Kohlenstoffdioxid (R744), benutzt. 
+Die Verwendung von HKW\cite{kaeltemittel} wie dem hier verwandten \textit{R12} oder dem moderneren \textit{R134a}\cite{viessmann_VITOCAL161A} wird zurückgefahren oder ist verboten\footnote{EU-RICHTLINIE 2006/40/EG im Zuge des Montreal-Protokolls.}
+
+Moderne Wärmepumpen weisen im Rahmen ihrer Verwendung eine Güteziffer $\nu$ von 3,5 bis 6 auf\cite{viessmann_VITOCAL300G}.
 
 \subsection{Fehler durch Messung}
 Der Versuch zeichnet sich dadaurch aus, dass er weitestgehend störunanfällig ist.
-Die Unsicherheiten in Tmeperatur, Druck und Leistung ist unbekannt, eine Fehlerdiskussion wird dadurch erschwert.
+Die Unsicherheiten in Temperatur, Druck und Leistung ist unbekannt, eine genaue Fehlerdiskussion wird dadurch erschwert.
 Mögliche Fehlerquellen bestehen darin, dass die Temperatur der Reservoire zu Beginn des Experimentes voneinander abweichen könnten.
-Die Startwerte der Temperaturen in Tabelle ##Tab:Temperatur## zeigen, dass dies hier auszuschließen ist.
+Die Startwerte der Temperaturen in Tabelle BudSpencer%##Tab:Temperatur## 
+zeigen, dass dies hier auszuschließen ist.
 
-Starke Abweichungen könnten dadurch entstehen, wenn die Annahme in \ref{sec:theorie} für das verwandte System ungültig ist, wodurch \ref{eq:redwaemre} und \ref{eq:gueteziffer_ideal} unbrauchbar werden
+Starke Abweichungen könnten dadurch entstehen, wenn die Annahme in \ref{sec:theorie} für das verwandte System nicht korrekt ist, wodurch \eqref{eq:redwaemre} und \eqref{eq:gueteziffer_ideal} unbrauchbar werden. 
+Dementsprechend ist auf Gleichung \eqref{eq:gueteziffer_ideal} als Optimum zu referenzieren.
 
-- "Wie ist das Güteziffer: brauchbar/unbrauchbar?"
-- "Welche Fehler könnten auftreten?"
-- "Wie kann man das System verbessern?"
-- "Eignet sich die großtechnische Anwendung?"
+\subsection{Verbesserung des Systems}
+Der Vergleich dieser Güteziffer mit den Werkangaben von industriell genutzten Wärmepumpen zeigt, dass die verwandte Wärmepumpe nicht vergleichbar effizient ist.
+
+Zur Verringerung des Wärmeverlustes, welcher sich negativ auf die Effizienz schlägt, sollte für die Wärme-permeablen Teile des Systems ein Metall benutzt werden, welches die Wärme gut leitet.
+Ein Material mit hoher Wärmeleitfähigkeit ist empfehlenswert.
+Für den restlichen Teil des Systems ist ein druckbeständiges Material mit geringer Wärmeleitfähigkeit besonders geeignet.
+Moderne Wärmepumpen verwenden beispielsweise emaillierten Stahl\cite{viessmann_VITOCAL161A}.
+Weiter ist zur Verrichtung der notwendigen Arbeit $A$ ein Kompressor erforderlich, dessen Wirkungsgrad größtmöglich sein sollte.
