@@ -12,9 +12,9 @@ import sympy
 N=np.genfromtxt('Kompressorleistung_N_el.txt').T
 
 N_MW=np.mean(N)
-N_Fehler=sem(N)
+N_Fehler=sem(N) ###delta_N in Auswertung
 
-N_delta=1/4*(175+205+210*2)
+N_delta=1/4*(175+205+210*2)  ##in der Auswertung N_t
 
 delta_nu_real_1=np.sqrt(((13209*0.002)/N_delta)**2+((13209*0.0223*N_Fehler)/(N_delta**2))**2)
 delta_nu_real_2=np.sqrt(((13209*0.005)/N_delta)**2+((13209*0.031*N_Fehler)/(N_delta**2))**2)

@@ -125,24 +125,39 @@ Die reale Güteziffer $\nu$ wird mit Hilfe der Messreihe $T_1$  über den Differ
 
 Die Konstanten $m_1c_\mathup{w}=4.183 10⁻³\:\si{\joule\per{\kelvin\kilo\gram}}$ und $m_\mathup{k}c_\mathup{k}=660\:\si{\joule\per\kelvin}$ sind die Wärmekapazitäten des verwendeten Wassers und der kupfernen Heizspirale. Die Gesamtkapazität bei $3\si\liter$ Wasservolumen ist $m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k}=13209\:\si{\joule\per\kelvin}$.
 
+Die Fehlerangaben der werden berechnet mit
+\begin{equation}
+\Delta{\nu_\mathup{real}}=\sqrt{\biggl(\frac{(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\frac{\mathup{d}T_1}{\mathup{d}{t}}}{N_t}\biggr)^2+\biggl(\frac{(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta{T_1}}{(N_t)^2 \Delta{t}}\Delta{N_t}\biggr)^2}
+\end{equation}
+
+Dabei ist $\Delta{N_t}$ der mittelre Fehler von $N_t$, dem Mittel der Kompressorleistung der Zeiten $t$ (gvl. \ref{tab:differentialquotienten}. Beides wird berechnet durch
+
+\begin{equation}
+	N_t=\frac{1}{n}\sum_{k=0}^n{(N_k-N)²}
+\end{equation}
+\begin{equation}
+	\Delta{N_t}=\sqrt{\frac{\frac{1}{n-1}\sum_{k=0}^n(N_k)}{n}}.
+\end{equation}
+
 Die ideale Güteziffer $\nu_\mathup{ideal}$ wird nach Gleichung \eqref{eq:nu_ideal} zum Vergleich ebenfalls berechnet.
 
 
-\begin{table}
-	\centering
+%\begin{table}
+%	\centering
 	
-	\begin{tabular}{S S S}
-	\toprule
-	\multicolumn{1}{c}{Zeit} & \multicolumn{2}{c}{Güteziffern} \\
-	{$t/\:\si{\second}$} & {$\nu_\mathup{ideal}$} & {$\nu_\mathup{real}$}\\
-	\midrule
- 120 & 0.022 $\pm$ 0.002   & -0.015 $\pm$0.002  \\
- 480 & 0.032 $\pm$ 0.004   & -0.031 $\pm$ 0.005  \\
- 840 & 0.027 $\pm$ 0.007   & -0.021 $\pm$ 0.009  \\
-1080 & 0.017 $\pm$ 0.009   &  0.001 $\pm$ 0.013  \\
-	\bottomrule
-	\end{tabular}
-	\caption{Die Differentialqutienten von $T_1$ und $T_2$ zu vier verschiedenen Zeiten $t_k$, berechnet nach Gleichung \eqref{ableitung}.}
-	\label{tab:differentialquotienten}
-\end{table}
+	%\begin{tabular}{S S S}
+	%\toprule
+	%\multicolumn{1}{c}{Zeit} & \multicolumn{2}{c}{Güteziffern} \\
+	%{$t/\:\si{\second}$} & {$\nu_\mathup{ideal}$} & {$\nu_\mathup{real}$}\\
+	%\midrule
+ %120 & 0.022 $\pm$ 0.002   & -0.015 $\pm$0.002  \\
+ %480 & 0.032 $\pm$ 0.004   & -0.031 $\pm$ 0.005  \\
+ %840 & 0.027 $\pm$ 0.007   & -0.021 $\pm$ 0.009  \\
+%1080 & 0.017 $\pm$ 0.009   &  0.001 $\pm$ 0.013  \\
+%	\bottomrule
+%	\end{tabular}
+%	\caption{Die Differentialqutienten von $T_1$ und $T_2$ zu vier verschiedenen Zeiten $t_k$, berechnet nach Gleichung \eqref{ableitung}.}
+%	\label{tab:differentialquotienten}
+%\end{table}
+
 
