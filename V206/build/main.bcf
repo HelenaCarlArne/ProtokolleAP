@@ -1972,11 +1972,15 @@
     <bcf:citekey order="1">hauptsaetzederthermodynamik</bcf:citekey>
     <bcf:citekey order="2">V206</bcf:citekey>
     <bcf:citekey order="3">V206</bcf:citekey>
-    <bcf:citekey order="4">matplotlib</bcf:citekey>
-    <bcf:citekey order="5">gimp</bcf:citekey>
-    <bcf:citekey order="6">numpy</bcf:citekey>
-    <bcf:citekey order="7">scipy</bcf:citekey>
-    <bcf:citekey order="8">uncertainties</bcf:citekey>
+    <bcf:citekey order="4">kaeltemittel</bcf:citekey>
+    <bcf:citekey order="5">viessmann_VITOCAL161A</bcf:citekey>
+    <bcf:citekey order="6">viessmann_VITOCAL300G</bcf:citekey>
+    <bcf:citekey order="7">viessmann_VITOCAL161A</bcf:citekey>
+    <bcf:citekey order="8">matplotlib</bcf:citekey>
+    <bcf:citekey order="9">gimp</bcf:citekey>
+    <bcf:citekey order="10">numpy</bcf:citekey>
+    <bcf:citekey order="11">scipy</bcf:citekey>
+    <bcf:citekey order="12">uncertainties</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>

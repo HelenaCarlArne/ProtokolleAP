@@ -39,23 +39,23 @@
       \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V206.pdf
       \endverb
     \endentry
-    \entry{hauptsaetzederthermodynamik}{book}{}
+    \entry{kaeltemittel}{manual}{}
       \name{labelname}{1}{}{%
-        {{hash=4da2e9a8142c830e6112bc503a003613}{Gerthsen}{G\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{C.;\bibnamedelima Meschede}{C\bibinitperiod\bibinitdelim M\bibinitperiod}}%
+        {{hash=3b6ea1d81bf9071b774d329e6baa18bd}{GmbH}{G\bibinitperiod}{Arthur\bibnamedelimb Friedrichs\bibnamedelima Kältemittel}{A\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=4da2e9a8142c830e6112bc503a003613}{Gerthsen}{G\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{C.;\bibnamedelima Meschede}{C\bibinitperiod\bibinitdelim M\bibinitperiod}}%
+        {{hash=3b6ea1d81bf9071b774d329e6baa18bd}{GmbH}{G\bibinitperiod}{Arthur\bibnamedelimb Friedrichs\bibnamedelima Kältemittel}{A\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {Springer Verlag}%
-      }
-      \strng{namehash}{4da2e9a8142c830e6112bc503a003613}
-      \strng{fullhash}{4da2e9a8142c830e6112bc503a003613}
+      \strng{namehash}{3b6ea1d81bf9071b774d329e6baa18bd}
+      \strng{fullhash}{3b6ea1d81bf9071b774d329e6baa18bd}
       \field{sortinit}{G}
       \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
-      \field{labeltitle}{Gerthsen Physik}
-      \field{title}{Gerthsen Physik}
-      \field{year}{2010}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2014}
+      \verb{url}
+      \verb http://www.friedrichs-kaeltemittel.de/sortiment/kaeltemittel/
+      \endverb
     \endentry
     \entry{matplotlib}{article}{}
       \name{labelname}{1}{}{%
@@ -108,6 +108,46 @@
       \verb http://www.scipy.org/
       \endverb
     \endentry
+    \entry{viessmann_VITOCAL300G}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=d8c38c3899e71052d5de72f18d61837a}{KG}{K\bibinitperiod}{Viessmann\bibnamedelimb Werke\bibnamedelimb GmbH\bibnamedelimb \&\bibnamedelima Co.}{V\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim \~C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d8c38c3899e71052d5de72f18d61837a}{KG}{K\bibinitperiod}{Viessmann\bibnamedelimb Werke\bibnamedelimb GmbH\bibnamedelimb \&\bibnamedelima Co.}{V\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim \~C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d8c38c3899e71052d5de72f18d61837a}
+      \strng{fullhash}{d8c38c3899e71052d5de72f18d61837a}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Daten zur Groß-Wärmepumpe VITOCAL 300-G Pro}
+      \field{title}{Daten zur Groß-Wärmepumpe VITOCAL 300-G Pro}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2014}
+      \verb{url}
+      \verb http://www.viessmann.de/de/Industrie-Gewerbe/Produkte/Grosswaermepumpen/Vitocal_300-G-W_Pro.html
+      \endverb
+    \endentry
+    \entry{viessmann_VITOCAL161A}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=d8c38c3899e71052d5de72f18d61837a}{KG}{K\bibinitperiod}{Viessmann\bibnamedelimb Werke\bibnamedelimb GmbH\bibnamedelimb \&\bibnamedelima Co.}{V\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim \~C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d8c38c3899e71052d5de72f18d61837a}{KG}{K\bibinitperiod}{Viessmann\bibnamedelimb Werke\bibnamedelimb GmbH\bibnamedelimb \&\bibnamedelima Co.}{V\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim \~C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d8c38c3899e71052d5de72f18d61837a}
+      \strng{fullhash}{d8c38c3899e71052d5de72f18d61837a}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Datenblatt zur Wärmepumpe VITOCAL 161-A}
+      \field{title}{Datenblatt zur Wärmepumpe VITOCAL 161-A}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2014}
+      \verb{url}
+      \verb http://www.viessmann.de/content/dam/internet-global/pdf_documents/Datenblaetter/DB-5782933.pdf
+      \endverb
+    \endentry
     \entry{uncertainties}{misc}{}
       \name{labelname}{1}{}{%
         {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
@@ -125,6 +165,24 @@
       \verb{url}
       \verb http://pythonhosted.org/uncertainties/
       \endverb
+    \endentry
+    \entry{hauptsaetzederthermodynamik}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=8fe294dd7320c681ff6f5a57199d37d2}{Meschede}{M\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8fe294dd7320c681ff6f5a57199d37d2}{Meschede}{M\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Verlag}%
+      }
+      \strng{namehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{fullhash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labeltitle}{Gerthsen Physik}
+      \field{title}{Gerthsen Physik}
+      \field{year}{2010}
     \endentry
     \entry{numpy}{article}{}
       \name{labelname}{1}{}{%
