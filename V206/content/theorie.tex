@@ -1,7 +1,7 @@
 \section{Ziel}
 \label{sec:Ziel}
 Ziel des Versuches ist es, eine Wärmepumpe zu charakterisieren, mit deren Hilfe Wärme einem kalten Reservoir entzogen und einem warmen Reservoir hingeführt werden kann.
-Hierzu wird die Güteziffer $\nu$, der Massedurchsatz $\frac{\Delta{m}}{\Delta{t}}$ und die mechanische Leistung des verwandten Kompressors $W_\text{mech.}$ bestimmt.
+Hierzu wird die Güteziffer $\nu$, der Massedurchsatz $\frac{\Delta{m}}{\Delta{t}}$ und die mechanische Leistung des verwandten Kompressors $N_\text{mech.}$ bestimmt.
 \section{Theorie}
 \label{sec:Theorie}
 Ohne von außen Arbeit aufzubringen, gleicht sich ein Temperaturunterschied zwischen zwei Reservoiren so aus, 
@@ -32,10 +32,43 @@ Mit \eqref{eq:redwaemre} gilt für die Güteziffer
 	\nu_{\text{ideal}} = \frac{T_1}{T_1-T_2}.
 	\label{eq:gueteziffer_ideal}
 \end{equation}
+
 In einem realen System ist die Änderung $\mathup{d}Q_1$ größer als die Änderung $\mathup{d}Q_2$, das heißt, dass die dem kühlem Reservoir entnommene Wärme nicht vollständig in das wärmere Reservoir übertragen wird.
 Daher gilt für reale Systeme
 \begin{align}
-	 0 &< \frac{Q_1}{T_1}-\frac{Q_2}{T_2}.\\
-	\intertext{und analog}
-	\nu_{\text{real}} &< \frac{T_1}{T_1-T_2}
+	 0 &< \frac{Q_1}{T_1}-\frac{Q_2}{T_2} & \nu_{\text{real}} &< \frac{T_1}{T_1-T_2}
 \end{align}
+Für den Wert der reale Güteziffer $\nu$ gilt
+\begin{equation}
+	\nu_\mathup{real}=\frac{\Delta{Q_1}}{{\Delta{t}}N_t}=(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\frac{\Delta{T_1}}{{\Delta{t}}N}.
+	\label{waermemenge/zeitintervall}
+\end{equation}
+In dieser Formel wird mit Hilfe des Differenzenquotienten $\frac{\Delta{T_1}}{\Delta{t}}$ die Wärmemenge $\Delta{Q_1}$ berechnet, 
+welche im Zeitintervall $\Delta{t}$ dem ersten Reservoir zugeführt wird, 
+und dies mit dem Kehrwert des Mittelwertes der Kompressorleistung $\bar{N}_\text{Kompressor}(t) = N$ multipliziert.
+
+Zur Bestimmung des Massendurchsatzes $\frac{\Delta{m}}{\Delta{t}}$ wird die Änderung der Wärme im kälteren Reservoir betrachtet.
+\begin{equation}
+	\frac{\Delta Q_2}{\Delta t} =(m_2 c_w + m_k c_k)\frac{\Delta T_2}{\Delta t}
+\end{equation}
+Über die Verdampfungswärme $L$ des Transportmittels ergibt sich die Formel
+\begin{equation}
+	\Delta Q_2 =L\frac{\Delta m} {\Delta t}.	
+\end{equation}
+Für die Bestimmung der mechanischen Kompressorleistung $N_\text{mech.}$ wird angenommen, dass das Transportmittel adiabatisch komprimiert wird. 
+
+$N_\text{mech.}$ kann dadurch mithilfe der Gleichung
+\begin{equation}
+	N_\mathup{mech.}=\frac{\Delta{A}}{\Delta{t}}=\frac{1}{\kappa-1}\biggl(p_b \sqrt[\kappa]{\frac{p_a}{p_b}}-p_a\frac{1}{\rho}\frac{\Delta{m}}{\Delta{t}}\biggr)
+\end{equation}
+berechnet werden, welche aus der Poissonschen Gleichung und der verrichteten Arbeit $A$ hergeleitet werden kann. 
+$\kappa$ ist eine Konstante, die das Verhältnis der Molwärmen $C_\mathup{p}$ und $C_\mathup{v}$ beschreibt. 
+$\rho$ beschreibt die Dichte des gasförmigen Transportmediums und muss aus der Dichte unter Normalbedingungen, d.h. $T_\mathup{N}=0\si{\celsius}$ und $p_\mathup{N}=1\si{\bar}$, berechnet werden. 
+Die ideale Gasgleichung ergibt
+\begin{equation}
+	\frac{p_\mathup{N} V}{T_\mathup{N}}=\frac{p_\mathup{a} V_2}{T_2}.
+\end{equation}
+Es folgt
+\begin{equation}
+	\rho=\frac{p_\mathup{a}T_\mathup{N}}{p_\mathup{N}T_2}\rho_\mathup{N}.
+\end{equation}
