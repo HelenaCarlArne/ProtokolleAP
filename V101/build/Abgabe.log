@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  11 NOV 2014 15:06
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  16 NOV 2014 17:59
  restricted \write18 enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -396,7 +396,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.115 seconds
+luaotfload | main : fontloader loaded in 0.082 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -2150,22 +2150,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: Bilder/puppe1.pdf Graphic file (type pdf)
  <use Bilder/puppe1.pdf>
 Package pdftex.def Info: Bilder/puppe1.pdf used on input line 45.
-(pdftex.def)             Requested size: 142.26378pt x 196.38792pt.
+(pdftex.def)             Requested size: 85.35826pt x 117.83197pt.
 
 <Bilder/puppe2.pdf, id=53, 331.2375pt x 259.97125pt>
 File: Bilder/puppe2.pdf Graphic file (type pdf)
  <use Bilder/puppe2.pdf>
 Package pdftex.def Info: Bilder/puppe2.pdf used on input line 51.
-(pdftex.def)             Requested size: 85.35826pt x 66.99193pt.
+(pdftex.def)             Requested size: 142.26378pt x 111.65454pt.
 )
 [4<./Bilder/puppe1.pdf><./Bilder/puppe2.pdf>] (./Auswertung.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
+(hyperref)                removing `math shift' on input line 3.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
+(hyperref)                removing `math shift' on input line 3.
 
 (./Tabellen/Tabelle1_Winkelrichtgroesse.tex
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -2188,18 +2188,18 @@ luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling
 back to file:)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22.
+(hyperref)                removing `math shift' on input line 20.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 22.
+(hyperref)                removing `subscript' on input line 20.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22.
+(hyperref)                removing `math shift' on input line 20.
 
 (./Tabellen/Tabelle2_Eigentraegheit.tex) [5]
-Overfull \hbox (4.83046pt too wide) in paragraph at lines 41--44
+Overfull \hbox (4.83046pt too wide) in paragraph at lines 39--42
 []\EU2/lmr/m/n/10.95 Zur Be-stim-mung des Ei-gen-träg-heits-mo-ments $\EU2/lat
 inmodern-math.otf(0)/m/n/10.95 𝐼[]$ \EU2/lmr/m/n/10.95 wer-den die ge-mit-te
 l-ten Schwingperioden-
@@ -2237,16 +2237,16 @@ luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling
 back to file: <Bilder/Messung2.pdf, id=101, 578.16pt x 433.62pt>
 File: Bilder/Messung2.pdf Graphic file (type pdf)
  <use Bilder/Messung2.pdf>
-Package pdftex.def Info: Bilder/Messung2.pdf used on input line 75.
+Package pdftex.def Info: Bilder/Messung2.pdf used on input line 73.
 (pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 76.
+(Font)              scaled to size 5.00008pt on input line 74.
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 76.
+(Font)              scaled to size 4.99992pt on input line 74.
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
 [6] [7<./Bilder/Messung2.pdf>]
@@ -2510,10 +2510,10 @@ Here is how much of LuaTeX's memory you used:
  1060 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 26 kern, 1 sub_mlist, 32 attribute, 122 glu
 e_spec, 32 attribute_list, 3 action, 1 write nodes
-   avail lists: 1:48,2:9831,3:396,4:2878,5:334,6:3347,7:100,8:32,9:1371,10:983,1
+   avail lists: 1:48,2:9834,3:374,4:2878,5:334,6:3348,7:100,8:32,9:1371,10:983,1
 1:519,12:230
  43191 multiletter control sequences out of 65536+600000
- 149 fonts using 47660831 bytes
+ 149 fonts using 47660607 bytes
  70i,21n,104p,1049b,2057s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-
 italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm
@@ -2530,7 +2530,7 @@ t/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/20
 14/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.loca
 l/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/hele
 na/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on Abgabe.pdf (14 pages, 176859 bytes).
+Output written on Abgabe.pdf (14 pages, 176876 bytes).
 
 PDF statistics: 457 PDF objects out of 1000 (max. 8388607)
  345 compressed objects within 4 object streams
