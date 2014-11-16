@@ -50,16 +50,19 @@ und dies mit dem Kehrwert des Mittelwertes der Kompressorleistung $\bar{N}_\text
 Zur Bestimmung des Massendurchsatzes $\frac{\Delta{m}}{\Delta{t}}$ wird die Änderung der Wärme im kälteren Reservoir betrachtet.
 \begin{equation}
 	\frac{\Delta Q_2}{\Delta t} =(m_2 c_w + m_k c_k)\frac{\Delta T_2}{\Delta t}
+\label{eq:q2-t-verhaeltnis}
 \end{equation}
 Über die Verdampfungswärme $L$ des Transportmittels ergibt sich die Formel
 \begin{equation}
-	\Delta Q_2 =L\frac{\Delta m} {\Delta t}.	
+	\Delta Q_2 =L\frac{\Delta m} {\Delta t}.
+\label{eq:verdampfungswaerme}	
 \end{equation}
 Für die Bestimmung der mechanischen Kompressorleistung $N_\text{mech.}$ wird angenommen, dass das Transportmittel adiabatisch komprimiert wird. 
 
 $N_\text{mech.}$ kann dadurch mithilfe der Gleichung
 \begin{equation}
 	N_\mathup{mech.}=\frac{\Delta{A}}{\Delta{t}}=\frac{1}{\kappa-1}\biggl(p_b \sqrt[\kappa]{\frac{p_a}{p_b}}-p_a\frac{1}{\rho}\frac{\Delta{m}}{\Delta{t}}\biggr)
+\label{eq:kompressorleistung}
 \end{equation}
 berechnet werden, welche aus der Poissonschen Gleichung und der verrichteten Arbeit $A$ hergeleitet werden kann. 
 $\kappa$ ist eine Konstante, die das Verhältnis der Molwärmen $C_\mathup{p}$ und $C_\mathup{v}$ beschreibt. 
@@ -71,4 +74,5 @@ Die ideale Gasgleichung ergibt
 Es folgt
 \begin{equation}
 	\rho=\frac{p_\mathup{a}T_\mathup{N}}{p_\mathup{N}T_2}\rho_\mathup{N}.
+\label{eq:transportmediumdichte}
 \end{equation}

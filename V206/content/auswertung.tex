@@ -1,7 +1,8 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Temperaturverläufe}
-%Tabelle der gemessenen Temperaturen 
+Die gemessenen Temperaturen $T_1$ (rot) und $T_2$ (blau) der Reservoire werden gegen die Zeit $t$ aufgetragen, um einen ersten Eindruck des Temperaturverlaufes innerhalb der Reservoire zu gewinnen.
+ Dabei ist Reservoir $R_1$ das Behältnis, welches die Wärmemenge $\mathup{d}Q_1$ aufnimmt und sich dabei erhitzt; $R_2$ (blau) bezeichnet das kälter werdende Reservoir.  
 \begin{table}
 	\centering
 	\sisetup{table-format=2.3}
@@ -10,7 +11,6 @@
 	\multicolumn{1}{c}{Zeit} & {Temperaturen} \\
 	{$t/\:\si{\minute}$} & {$T_1/\:\si{\kelvin}$} & {${T_2}/\:\si{\kelvin}$} \\
 	\midrule
-
  0 & 294.45 & 294.45 \\
  1 & 295.35 & 294.45 \\
  2 & 296.15 & 294.35 \\
@@ -36,67 +36,67 @@
 	\caption{Zeitabhängige Messung der Temperaturen $T_1$ und $T_2$.}
 	\label{tab:Temperaturverlauf}
 \end{table}
-
-Die gemessenen Temperaturen $T_1$ (rot) und $T_2$ (blau) der Reservoire werden gegen die Zeit $t$ aufgetragen, um einen ersten Eindruck des Temperaturverlaufes innerhalb der Reservoire zu gewinnen. Dabei ist Reservoir $R_1$ das Behältnis, welches die Wärmemenge $\mathup{d}Q_1$ aufnimmt und sich dabei erhitzt; $R_2$ (blau) bezeichnet das kälter werdende Reservoir.  Werden die Verläufe in einem gemeinsamen Diagramm dargestellt, so lassen sich diese untereinander vergleichen. 
+\newpage
+Werden die Verläufe in einem gemeinsamen Diagramm dargestellt, so lassen sich diese untereinander vergleichen. 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{Bilder/Temperaturverlauf.pdf}
+	\includegraphics[width=\textwidth]{Bilder/Temperaturverlauf.pdf}
 	\caption{Entwicklung der Wassertemperatur in den Reservoiren $\mathup{R_1}$ und $\mathup{R_2}$.}
 	\label{fig:temperaturverlauf}
 \end{figure}
-
 
 Entgegen der Anweisung der Anleitung werden die Verläufe nicht durch eine nicht - lineare Ausgleichsrechnung mit
 \begin{equation}
 	T_i(t)=A_i t² + B_i t + C_i , i=1,2
 	\label{eq:t-verlauf_Grad2}
 \end{equation}
- -- einem Polynom zweiten Grades mit den Konstanten $A$, $B$ und $C$ -- genähert. Trotz zweiter Ordnung erscheint der Fit annähernd linear. Da schon anhand der Messwerte zu erkennen ist, dass diese einen Wendepunkt aufweisen wird ein Polynom dritten Grades benutzt; die Messwerte liegen deutlich weniger von der Näherung entfernt ( vgl. Abbildung 2, 3). Geringfügig widerspricht dies der Aussage, dass mit steigender Temperaturdifferenz $T_1-T_2=\Delta{T}$ die Effizienz der Wärmepumpe abnimmt.
+ -- einem Polynom zweiten Grades mit den Konstanten $A$, $B$ und $C$ -- genähert. 
+Trotz zweiter Ordnung erscheint der Fit annähernd linear. 
+Da schon anhand der Messwerte zu erkennen ist, dass diese einen Wendepunkt aufweisen wird ein Polynom dritten Grades benutzt; die Messwerte liegen deutlich weniger von der Näherung entfernt (vgl. Abbildung 2, 3). 
+Geringfügig widerspricht dies der Aussage, dass mit steigender Temperaturdifferenz $T_1-T_2=\Delta{T}$ die Effizienz der Wärmepumpe abnimmt.
+
 
 \begin{equation}
 	T_i(t)=A_i t³ + B_i t² + C_i t + D_i , i=1,2
 	\label{eq:t-verlauf_Grad3}
 \end{equation}
-\newpage
-\begin{figure}
-\includegraphics[width=\textwidth]{Bilder/Temperaturfit_Grad2.pdf}
-	\caption{Annäherung der Kurven durch ein Polynom zweiter Ordnung.}
-\end{figure}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{Bilder/Temperaturfit.pdf}
-	\caption{Annäherung der Kurven durch ein Polynom dritter Ordnung.}
-\end{figure}
-\newpage
 Es ergeben sich für $T_1(t)$ und $T_2(t)$ die Koeffizienten 
 \begin{equation}
 \begin{split}
-A_1&=(-1.72\pm0.18)10⁻⁸\si{\kelvin\per{\second}³}\\
-B_1&=(2.82\pm0.31)10⁻⁵\si{\kelvin\per{\second}²}\\
-C_1&=(0.0162\pm0.0015)\si{\kelvin\per{\second}}\\
-D_1&=(294.11\pm0.19)\si{\kelvin}
+	A_1&=(-1.72\pm0.18)10⁻⁸\si{\kelvin\per{\second}³}\\
+	B_1&=(2.82\pm0.31)10⁻⁵\si{\kelvin\per{\second}²}\\
+	C_1&=(0.0162\pm0.0015)\si{\kelvin\per{\second}}\\
+	D_1&=(294.11\pm0.19)\si{\kelvin}
 \end{split}
 \end{equation}
 und
 \begin{equation}
 \begin{split}
-A_2&=(3.39\pm0.25)10⁻⁸\si{\kelvin\per{\second}³}\\
-B_2&=(-5.30\pm0.43)10⁻⁵\si{\kelvin\per{\second}²}\\
-C_2&=(-0.0033\pm0.0021)\si{\kelvin\per{\second}}\\
-D_2&=(294.98\pm0.27)\si{\kelvin}.
+	A_2&=(3.39\pm0.25)10⁻⁸\si{\kelvin\per{\second}³}\\
+	B_2&=(-5.30\pm0.43)10⁻⁵\si{\kelvin\per{\second}²}\\
+	C_2&=(-0.0033\pm0.0021)\si{\kelvin\per{\second}}\\
+	D_2&=(294.98\pm0.27)\si{\kelvin}.
 \end{split}
 \end{equation}
-
-Um den Differentialqutionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ für verschiedene Zeiten $t_k$ mit $k=1,...,4$ bestimmen zu können, wird die Funktion $T_i(t)$ nach der Zeit $t$ abgeleitet und die Fehler der Gradienten mittels Gaußscher Fehlerfortpflanzung berechnet:
+\begin{figure}
+	\includegraphics[width=\textwidth]{Bilder/Temperaturfit_Grad2.pdf}
+	\caption{Annäherung der Kurven durch ein Polynom zweiter Ordnung.}
+\end{figure}
+\begin{figure}
+	\includegraphics[width=\textwidth]{Bilder/Temperaturfit.pdf}
+	\caption{Annäherung der Kurven durch ein Polynom dritter Ordnung.}
+\end{figure}
+\newpage
+Um den Differentialqutionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ für verschiedene Zeiten $t_k$, $k=1,...,4$ bestimmen zu können, wird die Funktion $T_i(t)$ nach der Zeit $t$ abgeleitet und die Fehler der Gradienten mittels Gaußscher Fehlerfortpflanzung berechnet:
 
 \begin{equation}
-\frac{\mathup{d}T_i}{\mathup{d}t}= 3A_it²+2B_it+C_i.
-\label{ableitung}
+	\frac{\mathup{d}T_i}{\mathup{d}t}= 3A_it²+2B_it+C_i.
+	\label{ableitung}
 \end{equation}
 
 \begin{table}
 	\centering
-	
 	\begin{tabular}{S S S}
 	\toprule
 	\multicolumn{1}{c}{Zeit} & \multicolumn{2}{c}{Differentialquotienten} \\
@@ -112,37 +112,31 @@ Um den Differentialqutionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ f
 	\label{tab:differentialquotienten}
 \end{table}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FEHLERRECHNUNG NACH GAUSS:FORMEL FEHLT NOCH!!!!!!!!!!!!!!!!!
-
-
+\newpage
 \subsection{Bestimmung der Güteziffer}
-Die reale Güteziffer $\nu$ wird mit Hilfe der Messreihe $T_1$  über den Differenzenquotienten $\frac{\Delta{T_1}}{\Delta{t}}$, die Wärmemenge $\Delta{Q_1}$, welche im Zeitintervall $\Delta{t}$ dem ersten Reservoir zugeführt wird, multipliziert mit dem Kehrwert des Mittelwertes der Kompressorleistung $N_t$ der Zeiten $t$, berechnet mit
-%das vielleicht noch in die Theorie einbringen??
-\begin{equation}
-\nu_\mathup{real}=\frac{\Delta{Q_1}}{{\Delta{t}}N_t}=(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\frac{\Delta{T_1}}{{\Delta{t}}N_t}.
-\label{waermemenge/zeitintervall}
-\end{equation}
-
-Die Konstanten $m_1c_\mathup{w}=4.183 10⁻³\:\si{\joule\per{\kelvin\kilo\gram}}$ und $m_\mathup{k}c_\mathup{k}=660\:\si{\joule\per\kelvin}$ sind die Wärmekapazitäten des verwendeten Wassers und der kupfernen Heizspirale. Die Gesamtkapazität bei $3\si\liter$ Wasservolumen ist $m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k}=13209\:\si{\joule\per\kelvin}$. $\Delta{T_1}$ ist die Differenz der ausgewählten Temperaturen zur Zeit t und dem Startwert $T_1(0)=21.3\si{\celsius}$.
+Die reale Güteziffer $\nu$ wird mit Hilfe der Messreihe $T_1$ über \eqref{waermemenge/zeitintervall} berechnet.
+Die Konstanten $m_1c_\mathup{w}=4.183 10⁻³\:\si{\joule\per{\kelvin\kilo\gram}}$ und $m_\mathup{k}c_\mathup{k}=660\:\si{\joule\per\kelvin}$ sind die Wärmekapazitäten des verwendeten Wassers und der kupfernen Heizspirale.
+ Die Gesamtkapazität bei $3\si\liter$ Wasservolumen ist $m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k}=13209\:\si{\joule\per\kelvin}$.
+ $\Delta{T_1}$ ist die Differenz der ausgewählten Temperaturen zur Zeit t und dem Startwert $T_1(0)=21.3\si{\celsius}$, entspricht also dem vorher berechneten Differentialquotienten.
 
 Die Fehlerangaben der werden berechnet mit
 \begin{equation}
-\sigma_\nu=\Delta{\nu_\mathup{real}}=\sqrt{\biggl(\frac{(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta\frac{\mathup{d}T_1}{\mathup{d}{t}}}{N_t}\biggr)^2+\biggl(\frac{(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta{T_1}}{N_t^2 \Delta{t}}\Delta{N_t}\biggr)^2}
+	\sigma_\nu=\Delta{\nu_\mathup{real}}=\sqrt{\biggl(\frac{(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta\frac{\mathup{d}T_1}{\mathup{d}{t}}}{N_t}\biggr)^2+\biggl(\frac{(m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta{T_1}}{N_t^2 \Delta{t}}\Delta{N_t}\biggr)^2}
 \end{equation}
 
-Dabei ist $\Delta{N_t}$ der mittelre Fehler von $N_t$(vgl. \ref{tab:differentialquotienten}. Beides wird berechnet durch
+Dabei ist $\Delta{N_t}$ der mittlere Fehler von $N_t$(vgl. \ref{tab:differentialquotienten}. Beides wird berechnet durch
 
 \begin{equation}
 	N_t=\frac{1}{n}\sum_{k=0}^n{(N_k-N)²}
 \end{equation}
+
 \begin{equation}
 	\Delta{N_t}=\sqrt{\frac{\frac{1}{n-1}\sum_{k=0}^n(N_k)}{n}}.
 \end{equation}
 
-Die ideale Güteziffer $\nu_\mathup{ideal}$ wird nach Gleichung \eqref{eq:nu_ideal} zum Vergleich ebenfalls berechnet.
+Die ideale Güteziffer $\nu_\mathup{ideal}$ wird nach Gleichung \eqref{eq:gueteziffer_ideal} zum Vergleich ebenfalls berechnet.
 \begin{table}
 	\centering
-	
 	\begin{tabular}{S S S}
 	\toprule
 	\multicolumn{1}{c}{Zeit} & \multicolumn{2}{c}{Güteziffern} \\
@@ -160,29 +154,67 @@ Die ideale Güteziffer $\nu_\mathup{ideal}$ wird nach Gleichung \eqref{eq:nu_ide
 
 
 \subsection{Bestimmung des Massendurchsatzes}
-\begin{figure}
-\includegraphics[width=\textwidth]{Bilder/Dampfdruckkurve.pdf}
-	\caption{Dampfdruckkurve des Gases Dichlordiflourmethan.}
-\end{figure}
-Dem Reservoir wird durch das verdampfende Gas die Wärmemenge $Q_2$ entzogen. Dabei wird die Verdampfungswärme $L$ verbraucht, welches über die Dampfdruckkurve des verwendetend Gases Dichlordiflourmethan bestimmt wird. 
-
-Wie in der Versuchsanleitung V203 beschrieben, wird der Druck $p_\mathup{b}$ gegen den Kehrwert der Temperatur $T_1$ aufgetragen. Da die Manometer den Außendruck von $1\si{\bar}$ nicht berücksichtigen, muss dieser zuvor noch zu den Messwerten addiert werden, wie in Tabelle HEINZ geschehen. Mit linearer Regression werden anschließend Steigung $m$ und y-Achsenabschnitt $b$ der Gerade bestimmt; $R$ ist die allgemeine Gaskonstante.
-\begin{equation}
-\ln{(p_\mathup{b})}=m \frac{1}{T}+b=-\frac{L}{R}\frac{1}{T}+b
-\end{equation}
-
-Die Steigung ist $m=-(2.093\pm0.050)10³ EINHEIT$ und der Achsenabschnitt $b=(9.080\pm0.163)$. Damit L die Einheit $\si{\joule\per{\kilo\gram}}$ besitzt, wird durch die molare Masse $M=120.9\si{\gram\per\mol}$ des Gases dividiert. Der Fehler der allgemeinen Gaskonstante $R=(8.314\pm 9.1 10⁻⁷)\si{\joule\per{\mol\kelvin}}$ wird dabei vernachlässigt; der Fehler von L entspricht also dem Fehler von $m$: $L=\frac{-mR}{M}=143.913\pm0.050 10³\si{\joule\per\gram}$.
-Der Massendurchsatz $\frac{\Delta{m}}{\Delta{t}}$ wird berechnet mit 
-\begin{equation}
-\frac{\Delta{m}}{\Delta{t}}=\frac{\Delta{Q_2}}{\Delta{t}L}=(m_2c_\mathup{W}+m_)\mathup{k}c\mathup{k})\frac{\Delta{T_2}}{\Delta{t}L}.
-\end{equation}
-Der Fehler wird ebenfalls nach Gauß mit dem Fehler der Verdampfungswärme $\Delta{L}$ und dem Fehler des Differentialquotienten $\Delta{\frac{\mathup{d}T_2}{\mathup{d}t}}$.
-\begin{equation}
-\sigma_m=\sqrt{\biggl(\frac{(m_2c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta\frac{\mathup{d}T_2}{\mathup{d}{t}}}{L}\biggr)^2+\biggl(\frac{(m_2c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta{T_2}}{L^2 \Delta{t}}\Delta{L}\biggr)^2}
-\end{equation}
 \begin{table}
 	\centering
-	
+	\begin{tabular}{S S S}
+	\toprule
+	\multicolumn {1}{c}{Zeit} & \multicolumn {2}{c}{Druck} \\
+	{$t/\:\si{\minute}$} & {$p_\mathup{a}/\:\si{\bar}$} & {$p_\mathup{b}/\:\si{\bar}$} \\
+	\midrule
+00 &1.00 & 01.00\\
+01 &2.40 & 07.00\\
+02 &2.60 & 07.00\\
+03 &2.85 & 07.50\\
+03 &3.00 & 07.75\\
+05 &3.20 & 08.00\\
+06 &3.20 & 08.50\\
+07 &3.20 & 09.00\\
+08 &3.20 & 09.50\\
+09 &3.20 & 09.75\\
+10 &3.20 & 10.00\\
+11 &3.20 & 10.50\\
+12 &3.20 & 11.00\\
+13 &3.20 & 11.25\\
+14 &3.20 & 11.50\\
+15 &3.20 & 12.00\\
+16 &3.20 & 12.50\\
+17 &3.20 & 12.75\\
+18 &3.20 & 13.00\\
+19 &3.20 & 13.25\\
+	\bottomrule
+	\end{tabular}
+	\caption{Gemessene Drücke $\tilde{p}_\mathup{a}$, $\tilde{p}_\mathup{b}$, zu denen $1\si\bar$ Außendruck addiert wurde.}
+	\label{tab:massendurchsaetze}
+\end{table}
+
+Dem Reservoir wird durch das verdampfende Gas die Wärmemenge $Q_2$ entzogen. 
+Dabei wird die Verdampfungswärme $L$ verbraucht, welches über die Dampfdruckkurve des verwendetend Gases Dichlordiflourmethan bestimmt wird. 
+Wie in der Versuchsanleitung V203 beschrieben, wird der Druck $p_\mathup{b}$ gegen den Kehrwert der Temperatur $T_1$ aufgetragen.
+ Da die Manometer den Außendruck von $1\si{\bar}$ nicht berücksichtigen, muss dieser zuvor noch zu den Messwerten addiert werden, wie in Tabelle \ref{tab:massendurchsaetze} geschehen. 
+Mit linearer Regression werden anschließend Steigung $m$ und y-Achsenabschnitt $b$ der Gerade bestimmt; $R$ ist die allgemeine Gaskonstante.
+
+\begin{equation}
+	\ln{(p_\mathup{b})}=m \frac{1}{T}+b=-\frac{L}{R}\frac{1}{T}+b
+\end{equation}
+
+Die Steigung ist $m=-(2.093\pm0.050)10³\si\kelvin$, der Achsenabschnitt $b=(9.080\pm0.163)$.
+ Damit L die Einheit $\si{\joule\per{\kilo\gram}}$ besitzt, wird durch die molare Masse $M=120.9\si{\gram\per\mol}$ des Gases dividiert. 
+Der Fehler der allgemeinen Gaskonstante $R=(8.314\pm 9.1 10⁻⁷)\si{\joule\per{\mol\kelvin}}$ wird dabei vernachlässigt; der Fehler von L entspricht also dem Fehler von $m$.Daraus ergibt sich $L=\frac{\lvert m\rvert R}{M}=143.913\pm0.050 10³\si{\joule\per\gram}$.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{Bilder/Dampfdruckkurve.pdf}
+	\caption{Dampfdruckkurve des Gases Dichlordiflourmethan.}
+\end{figure}
+
+Der Massendurchsatz $\frac{\Delta{m}}{\Delta{t}}$ wird berechnet mit den Gleichungen \eqref{eq:q2-t-verhaeltnis},\eqref{eq:verdampfungswaerme}.
+Der Fehler wird ebenfalls nach Gauß berechnet mit dem Fehler der Verdampfungswärme $\Delta{L}$ und dem Fehler des Differentialquotienten $\Delta{\frac{\mathup{d}T_2}{\mathup{d}t}}$.
+
+\begin{equation}
+	\sigma_m=\sqrt{\biggl(\frac{(m_2c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta\frac{\mathup{d}T_2}{\mathup{d}{t}}}{L}\biggr)^2+\biggl(\frac{(m_2c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta{T_2}}{L^2 \Delta{t}}\Delta{L}\biggr)^2}
+\end{equation}
+
+\begin{table}
+	\centering
 	\begin{tabular}{S S}
 	\toprule
 	\multicolumn{1}{c}{Zeit} & \multicolumn{1}{c}{Massendurchsatz} \\
@@ -197,28 +229,15 @@ Der Fehler wird ebenfalls nach Gauß mit dem Fehler der Verdampfungswärme $\Del
 	\caption{Massendurchsätze zu verschiedenen Zeiten.}
 	\label{tab:massendurchsaetze}
 \end{table}
-
+\newpage
 \subsection{Bestimmung der mechanischen Kompressorleistung}
 
-Im Folgenden wird angenommen, dass das Gas adiabatisch komprimiert wird. Die mechanische Kompressorleistung kann dann berechnet werden durch die Gleichung
-
-\begin{equation}
-N_\mathup{m.}=\frac{\Delta{A}}{\Delta{t}}=\frac{1}{\kappa-1}\biggl(p_b \sqrt[\kappa]{\frac{p_a}{p_b}}-p_a\frac{1}{\rho}\frac{\Delta{m}}{\Delta{t}}\biggr),
-\end{equation}
-welche aus der Poissonschen Gleichung und der verrichteten Arbeit $A$ hergeleitet werden kann. 
-$\kappa$ ist eine Konstante, die das Verhältnis der Molwärmen $C_\mathup{p}$ und $C_\mathup{v}$ beschreibt. Sie beträgt in diesem Fall $\kappa=1.14$. $\rho$ beschreibt die Dichte des gasförmigen Transportmediums und muss aus der Dichte  unter Normalbedingungen, d.h. $T=0\si{\celsius}$ und $p=1\si{\bar}$, berechnet werden. Die ideale Gasgleichung ergibt
-\begin{equation}
-\frac{p_\mathup{N} V_\mathup{N}}{T_\mathup{N}}=\frac{p_\mathup{a} V_2}{T_2}.
-\end{equation}
-Mit einigen Umformungen gelingt es, $\rho$ zu isolieren:
-\begin{equation}
-\rho=\frac{p_\mathup{a}\rho_\mathup{N}T_\mathup{N}}{p_\mathup{N}T_2}.
-\end{equation}
-Damit kann die Dichte zu jeder beliebigen Temperatur $T_2$ berechnet werden. Die Indices N beschreiben die Werte der Ausgangslage  -- Messwerte zur Zeit $t=0$.
+Die mechanische Kompressorleistung wird mit Formel \eqref{eq:kompressorleistung} bestimmt.
+Die Konstante $\kappa$ beträgt in diesem Fall $\kappa=1.14$. 
+Die Dichte des Transportmediums kann über Gleichung \eqref{eq:transportmediumdichte} zu jeder beliebigen Temperatur $T_2$ berechnet werden.
 
 \begin{table}
 	\centering
-	
 	\begin{tabular}{S S S S}
 	\toprule
 	\multicolumn{1}{c}{Zeit} & \multicolumn{1}{c}{Dichte} & \multicolumn{2}{c}{Kompressorleistungen}\\
@@ -233,7 +252,6 @@ Damit kann die Dichte zu jeder beliebigen Temperatur $T_2$ berechnet werden. Die
 	\caption{Elektrische und mechanische Kompressorleistung im Vergleich.}
 	\label{tab:leistung}
 \end{table}
-
 
 Die Fehler werden analog wie zu den vorherigen Kapiteln nach Gauß berechnet.
 \begin{equation}
