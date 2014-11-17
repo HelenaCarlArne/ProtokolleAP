@@ -38,24 +38,23 @@ plt.xlabel('1/T / s')
 plt.ylabel(r'$ln(p_b) / bar$')
 plt.title('Dampfdruckkurve')
 plt.legend(loc='best')
-plt.show()
+#plt.show()
 
-#DampfdrujjffdffDampfplt.savefig('Temperaturverlauf.pdf')
 
 L=143.9134164
 MD1=1/L*13209*0.015
 MD2=1/L*13209*0.031
 MD3=1/L*13209*0.021
-MD4=1/L*13209*0.001 
+MD4=1/L*13209*0.011
 
 d_MD1=np.sqrt((13209*0.002/L)**2+(13209*0.015*0.05*10**3/L**2)**2)
 d_MD2=np.sqrt((13209*0.005/L)**2+(13209*0.031*0.05*10**3/L**2)**2)
 d_MD3=np.sqrt((13209*0.009/L)**2+(13209*0.021*0.05*10**3/L**2)**2)
-d_MD4=np.sqrt((13209*0.013/L)**2+(13209*0.001*0.05*10**3/L**2)**2)
+d_MD4=np.sqrt((13209*0.011/L)**2+(13209*0.011*0.05*10**3/L**2)**2)
 
-# print('Massendurchsätze')
-# print('MD1',MD1,'+/-',d_MD1)
-# print('MD2',MD2,'+/-',d_MD2)
-# print('MD3',MD3,'+/-',d_MD3)
-# print('MD4',MD4,'+/-',d_MD4)
+print('Massendurchsätze')
+print('MD1',MD1,'+/-',d_MD1)
+print('MD2',MD2,'+/-',d_MD2)
+print('MD3',MD3,'+/-',d_MD3)
+print('MD4',MD4,'+/-',d_MD4)
 

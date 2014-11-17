@@ -3,6 +3,7 @@
 \subsection{Temperaturverläufe}
 Die gemessenen Temperaturen $T_1$ und $T_2$ der Reservoire werden gegen die Zeit $t$ aufgetragen, um den Temperaturverlauf in den Reservoiren zu skizzieren.
 Dabei ist Reservoir $R_1$ das Behältnis, welches die Wärmemenge $Q_1$ aufnimmt und sich dabei erhitzt; $R_2$ bezeichnet das kälter werdende Reservoir.  
+
 \begin{table}
 	\centering
 	\sisetup{table-format=2.3}
@@ -38,47 +39,50 @@ Dabei ist Reservoir $R_1$ das Behältnis, welches die Wärmemenge $Q_1$ aufnimmt
 \end{table}
 \newpage
 \noindent Werden die Verläufe in einem gemeinsamen Diagramm dargestellt, so lassen sich diese untereinander vergleichen. 
-\begin{figure}[t]
+
+\begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{Bilder/Temperaturverlauf.pdf}
 	\caption{Entwicklung der Wassertemperatur in den Reservoiren $\mathup{R_1}$ und $\mathup{R_2}$.}
 	\label{fig:temperaturverlauf}
 \end{figure}
+
 Der Temperaturverlauf wird nicht hinreichend gut durch die Funktionenklasse
 \begin{equation}
 	T_i(t)=A_i t² + B_i t + C_i , i=1,2
 	\label{eq:t-verlauf_Grad2}
 \end{equation}
 genähert. 
-Trotz zweiter Ordnung erscheint die Ausgleichskurve annähernd linear. 
+\begin{figure}
+	\includegraphics[width=\textwidth]{Bilder/Temperaturfit_Grad2.pdf}
+	\caption{Annäherung der Kurven durch ein Polynom zweiter Ordnung.}
+\end{figure}
+\newpage
+Trotz zweiter Ordnung erscheint die Ausgleichskurve annähernd linear.
 Da schon anhand der Messwerte zu erkennen ist, dass diese einen Wendepunkt aufweisen, wird ein Polynom dritten Grades benutzt. 
 \begin{equation}
 	T_i(t)=A_i t³ + B_i t² + C_i t + D_i , i=1,2
 	\label{eq:t-verlauf_Grad3}
 \end{equation}
 Die Näherung beschreibt die Messwerte wesentlich besser (vgl. Abbildung 2, 3). 
+
 Es ergeben sich für $T_1(t)$ und $T_2(t)$ die Koeffizienten 
 \begin{align}
 	A_1&=(-1.72\pm0.18)10⁻⁸\si{\kelvin\per{\second}³}  & A_2&=(3.39\pm0.25)10⁻⁸\si{\kelvin\per{\second}³}\\
 	B_1&=(2.82\pm0.31)10⁻⁵\si{\kelvin\per{\second}²}  & B_2&=(-5.30\pm0.43)10⁻⁵\si{\kelvin\per{\second}²}\\
 	C_1&=(0.0162\pm0.0015)\si{\kelvin\per{\second}}  & C_2&=(-0.0033\pm0.0021)\si{\kelvin\per{\second}}\\
-	D_1&=(294.11\pm0.19)\si{\kelvin}  & D_2&=(294.98\pm0.27)\si{\kelvin}
+	D_1&=(294.11\pm0.19)\si{\kelvin}  & D_2&=(294.98\pm0.27)\si{\kelvin}.
 \end{align}
-\begin{figure}
-	\includegraphics[width=\textwidth]{Bilder/Temperaturfit_Grad2.pdf}
-	\caption{Annäherung der Kurven durch ein Polynom zweiter Ordnung.}
-\end{figure}
-\begin{figure}
-	\includegraphics[width=\textwidth]{Bilder/Temperaturfit.pdf}
-	\caption{Annäherung der Kurven durch ein Polynom dritter Ordnung.}
-\end{figure}
-\newpage
-\noindent Um den Differentialquotionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ für verschiedene Zeiten $t_k$ mit $k=1,...,4$ bestimmen zu können, wird die Funktion $T_i(t)$ nach der Zeit $t$ abgeleitet und die Fehler der Gradienten mittels Gaußscher Fehlerfortpflanzung berechnet.
 
+\noindent Um den Differentialquotionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ für verschiedene Zeiten $t_k$ mit $k=1,...,4$ bestimmen zu können, wird die Funktion $T_i(t)$ nach der Zeit $t$ abgeleitet und die Fehler der Gradienten mittels Gaußscher Fehlerfortpflanzung berechnet.
 \begin{equation}
 	\frac{\mathup{d}T_i}{\mathup{d}t}= 3A_it²+2B_it+C_i.
 	\label{ableitung}
 \end{equation}
+\begin{figure}
+	\includegraphics[width=\textwidth]{Bilder/Temperaturfit.pdf}
+	\caption{Annäherung der Kurven durch ein Polynom dritter Ordnung.}
+\end{figure}
 
 \begin{table}
 	\centering
@@ -87,10 +91,10 @@ Es ergeben sich für $T_1(t)$ und $T_2(t)$ die Koeffizienten
 	\multicolumn{1}{c}{Zeit} & \multicolumn{2}{c}{Differentialquotienten} \\
 	{$t/\:\si{\second}$} & {$\frac{\mathup{d}T_1}{\mathup{d}t}/\:\si{\kelvin{\per\second}}$} & {$\frac{\mathup{d}T_2}{\mathup{d}t}/\:\si{\kelvin{\per\second}}$}\\
 	\midrule
- 120 & 0.022 $\pm$ 0.002   & -0.015 $\pm$0.002  \\
+ 120 & 0.022 $\pm$ 0.002   & -0.015 $\pm$ 0.002  \\
  480 & 0.032 $\pm$ 0.004   & -0.031 $\pm$ 0.005  \\
  840 & 0.027 $\pm$ 0.007   & -0.021 $\pm$ 0.009  \\
-1080 & 0.017 $\pm$ 0.009   &  0.001 $\pm$ 0.013  \\
+ 960 & 0.023 $\pm$ 0.008   & -0.011 $\pm$ 0.011  \\
 	\bottomrule
 	\end{tabular}
 	\caption{Die Differentialqutienten von $T_1$ und $T_2$ zu vier verschiedenen Zeiten $t_k$, berechnet nach Gleichung \eqref{ableitung}.}
@@ -100,7 +104,7 @@ Es ergeben sich für $T_1(t)$ und $T_2(t)$ die Koeffizienten
 \newpage
 \subsection{Bestimmung der Güteziffer}
 Die reale Güteziffer $\nu$ wird mit Hilfe der Messreihe $T_1$ über \eqref{waermemenge/zeitintervall} berechnet.
-Die Konstanten $c_\mathup{w}=4.183 10⁻³\:\si{\joule\per{\kelvin\kilo\gram}}$ und $m_\mathup{k}c_\mathup{k}=660\:\si{\joule\per\kelvin}$ sind die Wärmekapazitäten des verwendeten Wassers und der kupfernen Spirale.
+Die Konstanten $c_\mathup{w}=4.183\cdot 10⁻³\:\si{\joule\per{\kelvin\kilo\gram}}$\cite{waermekapazitaet} und $m_\mathup{k}c_\mathup{k}=660\:\si{\joule\per\kelvin}$ sind die Wärmekapazitäten des verwendeten Wassers und der kupfernen Spirale.
 Die Gesamtkapazität bei $3\si\liter$ Wasservolumen ist $m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k}=13209\:\si{\joule\per\kelvin}$.
 
 Die Fehlerangaben der werden berechnet mit
@@ -117,6 +121,7 @@ Beides wird berechnet durch
 \end{equation}
 
 Die ideale Güteziffer $\nu_\mathup{ideal}$ wird zum Vergleich nach Gleichung \eqref{eq:gueteziffer_ideal} zum Vergleich berechnet.
+
 \begin{table}
 	\centering
 	\begin{tabular}{S S S}
@@ -127,14 +132,15 @@ Die ideale Güteziffer $\nu_\mathup{ideal}$ wird zum Vergleich nach Gleichung \e
  120 & 0.873 $\pm$ 0.081   & 164.528  \\
  480 & 1.252 $\pm$ 0.159   &  13.822 \\
  840 & 1.057 $\pm$ 0.275   &   7.485 \\
-1080 & 0.665 $\pm$ 0.353   &   6.395 \\
+ 960 & 0.900 $\pm$ 0.314   &   6.816 \\
 	\bottomrule
 	\end{tabular}
 	\caption{Die realen und idealen Güteziffern zu vier verschiedenen Zeiten $t_k$ im Vergleich.}
 	\label{tab:gueteziffern}
 \end{table}
-
+\newpage
 \subsection{Bestimmung des Massendurchsatzes}
+
 \begin{table}
 	\centering
 	\begin{tabular}{S S S}
@@ -167,6 +173,7 @@ Die ideale Güteziffer $\nu_\mathup{ideal}$ wird zum Vergleich nach Gleichung \e
 	\caption{Gemessene Drücke $\tilde{p}_\mathup{a}$, $\tilde{p}_\mathup{b}$, zu denen $1\si\bar$ Außendruck addiert wurde.}
 	\label{tab:massendurchsaetze}
 \end{table}
+
 Dem Reservoir wird durch das verdampfende Gas die Wärmemenge $Q_2$ entzogen. 
 Dabei wird die Verdampfungswärme $L$ verbraucht, welches über die Dampfdruckkurve des verwendeten Gases Dichlordifluormethan bestimmt wird. 
 Wie in der Versuchsanleitung V203 beschrieben, wird der Druck $p_\mathup{b}$ gegen den Kehrwert der Temperatur $T_1$ aufgetragen.
@@ -186,9 +193,9 @@ Daraus ergibt sich $L=\frac{\lvert m\rvert R}{M}=143.913\pm0.050 \cdot10³\si{\j
 	\includegraphics[width=\textwidth]{Bilder/Dampfdruckkurve.png}
 	\caption{Dampfdruckkurve des Gases Dichlordiflourmethan.}
 \end{figure}
+
 Der Massendurchsatz $\frac{\Delta{m}}{\Delta{t}}$ wird berechnet mit den Gleichungen \eqref{eq:q2-t-verhaeltnis},\eqref{eq:verdampfungswaerme}.
 Der Fehler wird ebenfalls nach Gauß berechnet mit dem Fehler der Verdampfungswärme $\Delta{L}$ und dem Fehler des Differentialquotienten $\Delta{\frac{\mathup{d}T_2}{\mathup{d}t}}$.
-
 \begin{equation}
 	\sigma_m=\sqrt{\biggl(\frac{(m_2c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta\frac{\mathup{d}T_2}{\mathup{d}{t}}}{L}\biggr)^2+\biggl(\frac{(m_2c_\mathup{w}+m_\mathup{k}c_\mathup{k})\Delta{T_2}}{L^2 \Delta{t}}\Delta{L}\biggr)^2}
 \end{equation}
@@ -203,14 +210,13 @@ Der Fehler wird ebenfalls nach Gauß berechnet mit dem Fehler der Verdampfungsw�
  120 & 1.377\pm 0.512\\
  480 & 2.845\pm 1.090\\
  840 & 1.927 \pm 1.063\\
-1080 & 0.092\pm 1.194  \\
+1080 & 1.010\pm 1.069  \\
 	\bottomrule
 	\end{tabular}
 	\caption{Massendurchsätze zu verschiedenen Zeiten.}
 	\label{tab:massendurchsaetze}
 \end{table}
 \newpage
-
 \subsection{Bestimmung der mechanischen Kompressorleistung}
 Die mechanische Kompressorleistung wird mit Formel \eqref{eq:kompressorleistung} bestimmt.
 Die Konstante $\kappa$ beträgt in diesem Fall $\kappa=1.14$. 
@@ -223,10 +229,10 @@ Die Dichte des Transportmediums kann über Gleichung \eqref{eq:transportmediumdi
 	{Zeit} & {Dichte} & \multicolumn{2}{c}{Kompressorleistungen} & {Wirkungsgrad}\\
 	{$t/\:\si{\second}$} & {$\rho/\:\si{\kilo\gram\per{\cubic\meter}}$} & {$N_\mathup{m.}/\:\si\watt$} & {$N_\mathup{el.}/\:\si\watt$}\\
 	\midrule
- 120 & 13.294 & 24.879\pm9.25 & 175 & 1\\
- 480 & 16.920 & 54.950\pm 21.053 & 205 & 1\\
- 840 & 17.517 & 42.773\pm 23.595 & 210 & 1\\
-1080 & 17.677 & 22.347\pm 29.003 & 210 & 1\\
+ 120 & 13.294 & 24.879\pm  9.250 & 175 & 0.142\\
+ 480 & 16.920 & 54.950\pm 21.053 & 205 & 0.268 \\
+ 840 & 17.517 & 42.773\pm 23.595 & 210 & 0.204\\
+ 960 & 17.619 & 25.993\pm 25.993 & 210 & 0.124\\
 	\bottomrule
 	\end{tabular}
 	\caption{Elektrische und mechanische Kompressorleistung im Vergleich.}
