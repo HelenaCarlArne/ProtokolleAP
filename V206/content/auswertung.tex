@@ -38,8 +38,9 @@ Dabei ist Reservoir $R_1$ das Behältnis, welches die Wärmemenge $Q_1$ aufnimmt
 \end{table}
 \newpage
 \noindent Werden die Verläufe in einem gemeinsamen Diagramm dargestellt, so lassen sich diese untereinander vergleichen. 
-\begin{figure}
-	\includegraphics[width=\textwidth]{Bilder/Temperaturverlauf.pdf}
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Bilder/Temperaturverlauf.pdf}
 	\caption{Entwicklung der Wassertemperatur in den Reservoiren $\mathup{R_1}$ und $\mathup{R_2}$.}
 	\label{fig:temperaturverlauf}
 \end{figure}
@@ -56,26 +57,13 @@ Da schon anhand der Messwerte zu erkennen ist, dass diese einen Wendepunkt aufwe
 	\label{eq:t-verlauf_Grad3}
 \end{equation}
 Die Näherung beschreibt die Messwerte wesentlich besser (vgl. Abbildung 2, 3). 
-
-
 Es ergeben sich für $T_1(t)$ und $T_2(t)$ die Koeffizienten 
-\begin{equation}
-\begin{split}
-	A_1&=(-1.72\pm0.18)10⁻⁸\si{\kelvin\per{\second}³}\\
-	B_1&=(2.82\pm0.31)10⁻⁵\si{\kelvin\per{\second}²}\\
-	C_1&=(0.0162\pm0.0015)\si{\kelvin\per{\second}}\\
-	D_1&=(294.11\pm0.19)\si{\kelvin}
-\end{split}
-\end{equation}
-und
-\begin{equation}
-\begin{split}
-	A_2&=(3.39\pm0.25)10⁻⁸\si{\kelvin\per{\second}³}\\
-	B_2&=(-5.30\pm0.43)10⁻⁵\si{\kelvin\per{\second}²}\\
-	C_2&=(-0.0033\pm0.0021)\si{\kelvin\per{\second}}\\
-	D_2&=(294.98\pm0.27)\si{\kelvin}.
-\end{split}
-\end{equation}
+\begin{align}
+	A_1&=(-1.72\pm0.18)10⁻⁸\si{\kelvin\per{\second}³}  & A_2&=(3.39\pm0.25)10⁻⁸\si{\kelvin\per{\second}³}\\
+	B_1&=(2.82\pm0.31)10⁻⁵\si{\kelvin\per{\second}²}  & B_2&=(-5.30\pm0.43)10⁻⁵\si{\kelvin\per{\second}²}\\
+	C_1&=(0.0162\pm0.0015)\si{\kelvin\per{\second}}  & C_2&=(-0.0033\pm0.0021)\si{\kelvin\per{\second}}\\
+	D_1&=(294.11\pm0.19)\si{\kelvin}  & D_2&=(294.98\pm0.27)\si{\kelvin}
+\end{align}
 \begin{figure}
 	\includegraphics[width=\textwidth]{Bilder/Temperaturfit_Grad2.pdf}
 	\caption{Annäherung der Kurven durch ein Polynom zweiter Ordnung.}
@@ -247,5 +235,5 @@ Die Dichte des Transportmediums kann über Gleichung \eqref{eq:transportmediumdi
 
 Die Fehler werden analog wie zu den vorherigen Kapiteln nach Gauß berechnet.
 \begin{equation}
-\Delta{N_\mathup{m.}}=\frac{1}{\kappa-1}\biggl(p_\mathup{b}\sqrt[\kappa]{\frac{p_\mathup{a}}{p_\mathup{b}}-p_\mathup{a}}\frac{1}{\rho} \sigma_m\biggr)
+\Delta{N_\mathup{m.}}=\frac{1}{\kappa-1}\biggl(p_\mathup{b}\sqrt[\kappa]{\frac{p_\mathup{a}}{p_\mathup{b}}}-p_\mathup{a}\biggr)\frac{1}{\rho} \sigma_m
 \end{equation}

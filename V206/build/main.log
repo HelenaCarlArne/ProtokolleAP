@@ -1,6 +1,6 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  17 NOV 2014 16:01
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  17 NOV 2014 16:17
  restricted \write18 enabled.
-**main.tex
+**build/main.tex
 (./build/main.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
@@ -381,7 +381,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.040 seconds
+luaotfload: fontloader loaded in 0.030 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1701,7 +1701,7 @@ generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
  math
 \g_fontspec_family_latinmodern-math.otf_int=\count503
 luaotfload | load : auto-selecting default features for script: dflt
@@ -1758,7 +1758,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 24 (LatinModernMath-Regular) defines feature ssty for script
  math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 9.
@@ -1776,7 +1776,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1868,7 +1868,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -2475,31 +2475,34 @@ Overfull \hbox (11.09236pt too wide) detected at line 33
 File: Bilder/Temperaturverlauf.pdf Graphic file (type pdf)
 
 <use Bilder/Temperaturverlauf.pdf>
-Package pdftex.def Info: Bilder/Temperaturverlauf.pdf used on input line 42.
-(pdftex.def)             Requested size: 418.25555pt x 334.6008pt.
- [6<./Bilder/Temperaturverlauf.pdf>]
-<Bilder/Temperaturfit_Grad2.pdf, id=153, 722.7pt x 578.16pt>
+Package pdftex.def Info: Bilder/Temperaturverlauf.pdf used on input line 43.
+(pdftex.def)             Requested size: 376.42744pt x 301.13896pt.
+
+<Bilder/Temperaturfit_Grad2.pdf, id=96, 722.7pt x 578.16pt>
 File: Bilder/Temperaturfit_Grad2.pdf Graphic file (type pdf)
 
 <use Bilder/Temperaturfit_Grad2.pdf>
-Package pdftex.def Info: Bilder/Temperaturfit_Grad2.pdf used on input line 80.
+Package pdftex.def Info: Bilder/Temperaturfit_Grad2.pdf used on input line 68.
 (pdftex.def)             Requested size: 418.25555pt x 334.6008pt.
 
-<Bilder/Temperaturfit.pdf, id=154, 722.7pt x 578.16pt>
+<Bilder/Temperaturfit.pdf, id=97, 722.7pt x 578.16pt>
 File: Bilder/Temperaturfit.pdf Graphic file (type pdf)
 
 <use Bilder/Temperaturfit.pdf>
-Package pdftex.def Info: Bilder/Temperaturfit.pdf used on input line 84.
+Package pdftex.def Info: Bilder/Temperaturfit.pdf used on input line 72.
 (pdftex.def)             Requested size: 418.25555pt x 334.6008pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6<./Bilder/Temperaturverlauf.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7<./Bilder/Temperaturfit_Grad2.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8<./Bilder/Temperaturfit.pdf>]
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -2550,7 +2553,8 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : no defaults for script "latn", falling back to "dflt" [8<./B
+ilder/Temperaturfit.pdf>]
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
 uc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lm
@@ -2560,13 +2564,17 @@ luaotfload | load : no defaults for script "latn", falling back to "dflt"
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] <Bilder/Dampfdruckkurve.png, id=267, 722.7pt x 578.16pt>
+<Bilder/Dampfdruckkurve.png, id=264, 722.7pt x 578.16pt>
 File: Bilder/Dampfdruckkurve.png Graphic file (type png)
 
 <use Bilder/Dampfdruckkurve.png>
-Package pdftex.def Info: Bilder/Dampfdruckkurve.png used on input line 198.
+Package pdftex.def Info: Bilder/Dampfdruckkurve.png used on input line 186.
 (pdftex.def)             Requested size: 418.25555pt x 334.6008pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2574,7 +2582,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11<./Bilder/Dampfdruckkurve.png>]) (./content/diskussion.tex
+) (./content/diskussion.tex [11<./Bilder/Dampfdruckkurve.png>]
 Overfull \hbox (5.58243pt too wide) in paragraph at lines 12--15
 \EU2/lmr/m/n/10.95 Klimatisierung Ver-wen-dung. An-stel-le von um-welt-ge-fähr
 -li-chen Ha-lo-gen-koh-len-was-ser-stof-fen
@@ -2617,16 +2625,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40122 strings out of 494695
+ 40125 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 747 words of node memory still in use:
+ 745 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 21 kern, 26 attribute, 64 glue_spec, 26 att
 ribute_list, 7 action, 1 write nodes
-   avail lists: 1:47,2:7319,3:286,4:2077,5:373,6:2434,7:120,8:35,9:1049,10:988,1
-1:510,12:229
+   avail lists: 1:47,2:7685,3:284,4:2124,5:378,6:2434,7:120,8:35,9:984,10:988,11
+:510,12:229
  42593 multiletter control sequences out of 65536+600000
  116 fonts using 33825583 bytes
- 70i,20n,104p,974b,1206s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 70i,20n,104p,980b,1206s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
 ular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latin
@@ -2643,10 +2651,10 @@ pe/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts
 nts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist
 /fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/
 fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (14 pages, 329560 bytes).
+Output written on main.pdf (14 pages, 329681 bytes).
 
-PDF statistics: 498 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 131072)
+PDF statistics: 501 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 131072)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
