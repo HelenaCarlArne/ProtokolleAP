@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  16 NOV 2014 17:59
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  17 NOV 2014 18:24
  restricted \write18 enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -396,7 +396,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.082 seconds
+luaotfload | main : fontloader loaded in 0.080 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -2513,7 +2513,7 @@ e_spec, 32 attribute_list, 3 action, 1 write nodes
    avail lists: 1:48,2:9834,3:374,4:2878,5:334,6:3348,7:100,8:32,9:1371,10:983,1
 1:519,12:230
  43191 multiletter control sequences out of 65536+600000
- 149 fonts using 47660607 bytes
+ 149 fonts using 47660159 bytes
  70i,21n,104p,1049b,2057s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-
 italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm
