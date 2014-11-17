@@ -22,8 +22,8 @@ params, covariance = curve_fit(f, _T, p)
 
 errors = np.sqrt(np.diag(covariance))
 
-print('a =', params[0], '±', errors[0])
-print('b =', params[1], '±', errors[1])
+# print('a =', params[0], '±', errors[0])
+# print('b =', params[1], '±', errors[1])
 
 _T_plot = np.linspace(0.00339616, 0.00308499)
 
@@ -35,12 +35,12 @@ plt.plot(_T,p,'r.', label='$ln(p_b)$')
 print('ln(p_b)',p)
 print('Kehrwert der Temperatur',_T)
 plt.xlabel('1/T / s')
-plt.ylabel('ln(p_b) / bar')
+plt.ylabel(r'$ln(p_b) / bar$')
 plt.title('Dampfdruckkurve')
 plt.legend(loc='best')
-#plt.show()
+plt.show()
 
-#plt.savefig('Temperaturverlauf.pdf')
+#DampfdrujjffdffDampfplt.savefig('Temperaturverlauf.pdf')
 
 L=143.9134164
 MD1=1/L*13209*0.015
@@ -53,9 +53,9 @@ d_MD2=np.sqrt((13209*0.005/L)**2+(13209*0.031*0.05*10**3/L**2)**2)
 d_MD3=np.sqrt((13209*0.009/L)**2+(13209*0.021*0.05*10**3/L**2)**2)
 d_MD4=np.sqrt((13209*0.013/L)**2+(13209*0.001*0.05*10**3/L**2)**2)
 
-print('Massendurchsätze')
-print('MD1',MD1,'+/-',d_MD1)
-print('MD2',MD2,'+/-',d_MD2)
-print('MD3',MD3,'+/-',d_MD3)
-print('MD4',MD4,'+/-',d_MD4)
+# print('Massendurchsätze')
+# print('MD1',MD1,'+/-',d_MD1)
+# print('MD2',MD2,'+/-',d_MD2)
+# print('MD3',MD3,'+/-',d_MD3)
+# print('MD4',MD4,'+/-',d_MD4)
 
