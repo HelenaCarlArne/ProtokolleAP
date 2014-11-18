@@ -16,13 +16,13 @@ from scipy.stats import sem
 # Einladen der Daten
 #
 ID_M1, T1_M1, T2_M1, T3_M1, T4_M1, T5_M1, T6_M1, T7_M1, T8_M1 = np.genfromtxt("Originalwerte/MessungStat").T
-ID_M2, T1_M2, T5_M2, T2_M2, T6_M2, Junk_M2 = np.genfromtxt("Originalwerte/Messung80").T 
+ID_M2, T1_M2, T5_M2, T2_M2, T6_M2, Time_M2 = np.genfromtxt("Originalwerte/Messung80").T 
 ID_M3, T1_M3, T2_M3, T3_M3, T4_M3, T5_M3, T6_M3, T7_M3, T8_M3, Junk_M3= np.genfromtxt("Originalwerte/Messung200",delimiter = ',').T
 
 #
 # Plot 1 - Statische Messung 
 #
-t_M1=np.arange(0,T1_M1.size*5,5)
+t_M1=np.arange(0,T1_M1.size*2,2)
 
 plt.plot(t_M1,T1_M1, "-",label="Temperatur 1, Messing")
 plt.plot(t_M1,T2_M1, "-",label="Temperatur 2, Messing")
@@ -35,6 +35,7 @@ plt.plot(t_M1,T8_M1, "-",label="Temperatur 8, Edelstahl")
 #plt.legend(loc="best")
 plt.xlabel(r"Zeit $t [s]$")
 plt.ylabel(r"Temperatur [$^{\circ}{\rm C}$]")
+plt.grid()
 plt.savefig("Bilder/M1_Overview.pdf")
 plt.show()
 
@@ -45,6 +46,7 @@ plt.plot(t_M1,T8_M1, "-",label="Edelstahl")
 plt.legend(loc="best")
 plt.xlabel(r"Zeit $t [s]$")
 plt.ylabel(r"Temperatur [$^{\circ}{\rm C}$]")
+plt.grid()
 plt.savefig("Bilder/M1_Tempverl.pdf")
 plt.show()
 
@@ -55,7 +57,8 @@ plt.plot(t_M1,T3_M1-T4_M1, "-",label="Temperaturdifferenz Messing, dünn")
 plt.legend(loc="best")
 plt.xlabel(r"Zeit $t [s]$")
 plt.ylabel(r"Temperatur [$^{\circ}{\rm C}$]")
-#plt.savefig("Bilder/M1_Tempdiff.pdf")
+plt.grid()
+plt.savefig("Bilder/M1_Tempdiff.pdf")
 plt.show()
 
 
