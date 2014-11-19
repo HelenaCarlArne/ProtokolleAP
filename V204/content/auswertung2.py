@@ -79,7 +79,7 @@ print(np.mean(T2x_M2_y))
 print(np.mean(T2n_M2_y))
 print("ergibt",(T2x_M2-T2n_M2)/2)
 print("")
-print("Quotient ist:",(T6x_M2-T6n_M2)/(T5x_M2-T5n_M2))
+print("Quotient ist:",(T2x_M2-T2n_M2)/(T1x_M2-T1n_M2))
 # Messing M3
 #T1x_M3_x,T1x_M3_y = np.genfromtxt('../Tabellen/M3_Messing_T1_max.txt').T
 #T2x_M3_x,T2x_M3_y = np.genfromtxt('../Tabellen/M3_Messing_T2_max.txt').T
@@ -132,17 +132,23 @@ T5x_M2=ufloat(np.mean(T5x_M2_x-T6x_M2_x),sem(T5x_M2_x-T6x_M2_x))
 T8x_M3=ufloat(np.mean(T8x_M3_x-T7x_M3_x),sem(T8x_M3_x-T7x_M3_x))
 # Aluminium M2
 print("Alu M2")
-
+#warmth=(c*rho*0.009)/(2*T8x_M3*ln(quot))
 print(T5x_M2)
+warmthi=((830*2800*0.0009)/(2*T5x_M2*unp.log(ufloat(1.893,0.021))))
+print(warmthi)
 # Aluminium M3
 #print("Alu M3")
 #print(np.mean(T5x_M3_x-T6x_M3_x))
 # Messing M2
 print("Messing M2")
 print(T1x_M2)
+warmthi=((385*8520*0.0009)/(2*T1x_M2*unp.log(ufloat(3.47,0.06))))
+print(warmthi)
 # Messing M3
 #print("Messing M3")
 #print(np.mean(T1x_M3_x-T2x_M3_x))
 # Edelstahl M3
 print("Edelstahl M3")
 print(T8x_M3)
+warmthi=((400*8000*0.0009)/(2*T8x_M3*unp.log(ufloat(5.477,0.024))))
+print(warmthi)

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  18 NOV 2014 21:16
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  19 NOV 2014 11:25
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -351,7 +351,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.029 seconds
+luaotfload: fontloader loaded in 0.031 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1567,7 +1567,7 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script math
 \g_fontspec_family_latinmodern-math.otf_int=\count508
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
@@ -1604,7 +1604,7 @@ luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature ssty for script math
+luaotfload: font no 24 (LatinModernMath-Regular) defines feature aalt for script math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 12.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1617,7 +1617,7 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
@@ -1687,7 +1687,7 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
@@ -1907,8 +1907,44 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) [2
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt [2
 
 ]) (./content/durchfuehrung.tex [3] <Bilder/Aufbau.png, id=43, 657.45625pt x 350.30875pt>
 File: Bilder/Aufbau.png Graphic file (type png)
@@ -1926,53 +1962,18 @@ File: Bilder/M1_Tempverl.pdf Graphic file (type pdf)
  <use Bilder/M1_Tempverl.pdf>
 Package pdftex.def Info: Bilder/M1_Tempverl.pdf used on input line 14.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt [5<./Bilder/M1_Overview.pdf>]
+ [5<./Bilder/M1_Overview.pdf>]
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 36.
+(Font)              scaled to size 5.00008pt on input line 37.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 36.
+(Font)              scaled to size 4.99992pt on input line 37.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
@@ -1982,58 +1983,61 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc)
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-<Bilder/M1_Tempdiff.pdf, id=125, 578.16pt x 433.62pt>
+<Bilder/M1_Tempdiff.pdf, id=126, 578.16pt x 433.62pt>
 File: Bilder/M1_Tempdiff.pdf Graphic file (type pdf)
  <use Bilder/M1_Tempdiff.pdf>
-Package pdftex.def Info: Bilder/M1_Tempdiff.pdf used on input line 65.
+Package pdftex.def Info: Bilder/M1_Tempdiff.pdf used on input line 66.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] <Bilder/M2_Messing_kuehl.pdf, id=141, 578.16pt x 433.62pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] <Bilder/M2_Messing_kuehl.pdf, id=142, 578.16pt x 433.62pt>
 File: Bilder/M2_Messing_kuehl.pdf Graphic file (type pdf)
  <use Bilder/M2_Messing_kuehl.pdf>
-Package pdftex.def Info: Bilder/M2_Messing_kuehl.pdf used on input line 88.
+Package pdftex.def Info: Bilder/M2_Messing_kuehl.pdf used on input line 94.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/M2_Messing_warm.pdf, id=142, 578.16pt x 433.62pt>
+ <Bilder/M2_Messing_warm.pdf, id=143, 578.16pt x 433.62pt>
 File: Bilder/M2_Messing_warm.pdf Graphic file (type pdf)
  <use Bilder/M2_Messing_warm.pdf>
-Package pdftex.def Info: Bilder/M2_Messing_warm.pdf used on input line 91.
+Package pdftex.def Info: Bilder/M2_Messing_warm.pdf used on input line 97.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/Normierungsauswahl/M2_Messing_norm.pdf, id=143, 578.16pt x 433.62pt>
+ <Bilder/Normierungsauswahl/M2_Messing_norm.pdf, id=144, 578.16pt x 433.62pt>
 File: Bilder/Normierungsauswahl/M2_Messing_norm.pdf Graphic file (type pdf)
  <use Bilder/Normierungsauswahl/M2_Messing_norm.pdf>
-Package pdftex.def Info: Bilder/Normierungsauswahl/M2_Messing_norm.pdf used on input line 98.
+Package pdftex.def Info: Bilder/Normierungsauswahl/M2_Messing_norm.pdf used on input line 104.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <Bilder/M2_Messing_norm.pdf, id=146, 578.16pt x 433.62pt>
+ <Bilder/M2_Messing_norm.pdf, id=147, 578.16pt x 433.62pt>
 File: Bilder/M2_Messing_norm.pdf Graphic file (type pdf)
  <use Bilder/M2_Messing_norm.pdf>
-Package pdftex.def Info: Bilder/M2_Messing_norm.pdf used on input line 104.
+Package pdftex.def Info: Bilder/M2_Messing_norm.pdf used on input line 110.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
- <Bilder/M2_Alu_kuehl.pdf, id=147, 578.16pt x 433.62pt>
+ <Bilder/M2_Alu_kuehl.pdf, id=148, 578.16pt x 433.62pt>
 File: Bilder/M2_Alu_kuehl.pdf Graphic file (type pdf)
  <use Bilder/M2_Alu_kuehl.pdf>
-Package pdftex.def Info: Bilder/M2_Alu_kuehl.pdf used on input line 112.
+Package pdftex.def Info: Bilder/M2_Alu_kuehl.pdf used on input line 118.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/M2_Alu_warm.pdf, id=148, 578.16pt x 433.62pt>
+ <Bilder/M2_Alu_warm.pdf, id=149, 578.16pt x 433.62pt>
 File: Bilder/M2_Alu_warm.pdf Graphic file (type pdf)
  <use Bilder/M2_Alu_warm.pdf>
-Package pdftex.def Info: Bilder/M2_Alu_warm.pdf used on input line 116.
+Package pdftex.def Info: Bilder/M2_Alu_warm.pdf used on input line 122.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/Normierungsauswahl/M2_Alu_norm.pdf, id=149, 578.16pt x 433.62pt>
+ <Bilder/Normierungsauswahl/M2_Alu_norm.pdf, id=150, 578.16pt x 433.62pt>
 File: Bilder/Normierungsauswahl/M2_Alu_norm.pdf Graphic file (type pdf)
  <use Bilder/Normierungsauswahl/M2_Alu_norm.pdf>
-Package pdftex.def Info: Bilder/Normierungsauswahl/M2_Alu_norm.pdf used on input line 123.
+Package pdftex.def Info: Bilder/Normierungsauswahl/M2_Alu_norm.pdf used on input line 129.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <Bilder/M2_Alu_norm.pdf, id=152, 578.16pt x 433.62pt>
+ <Bilder/M2_Alu_norm.pdf, id=153, 578.16pt x 433.62pt>
 File: Bilder/M2_Alu_norm.pdf Graphic file (type pdf)
  <use Bilder/M2_Alu_norm.pdf>
-Package pdftex.def Info: Bilder/M2_Alu_norm.pdf used on input line 129.
+Package pdftex.def Info: Bilder/M2_Alu_norm.pdf used on input line 135.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 
 
@@ -2054,100 +2058,100 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bilder/M3_Messing_kuehl.pdf, id=159, 578.16pt x 433.62pt>
+<Bilder/M3_Messing_kuehl.pdf, id=160, 578.16pt x 433.62pt>
 File: Bilder/M3_Messing_kuehl.pdf Graphic file (type pdf)
  <use Bilder/M3_Messing_kuehl.pdf>
-Package pdftex.def Info: Bilder/M3_Messing_kuehl.pdf used on input line 144.
+Package pdftex.def Info: Bilder/M3_Messing_kuehl.pdf used on input line 150.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/M3_Messing_warm.pdf, id=160, 578.16pt x 433.62pt>
+ <Bilder/M3_Messing_warm.pdf, id=161, 578.16pt x 433.62pt>
 File: Bilder/M3_Messing_warm.pdf Graphic file (type pdf)
  <use Bilder/M3_Messing_warm.pdf>
-Package pdftex.def Info: Bilder/M3_Messing_warm.pdf used on input line 147.
+Package pdftex.def Info: Bilder/M3_Messing_warm.pdf used on input line 153.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/Normierungsauswahl/M3_Messing_norm.pdf, id=161, 578.16pt x 433.62pt>
+ <Bilder/Normierungsauswahl/M3_Messing_norm.pdf, id=162, 578.16pt x 433.62pt>
 File: Bilder/Normierungsauswahl/M3_Messing_norm.pdf Graphic file (type pdf)
  <use Bilder/Normierungsauswahl/M3_Messing_norm.pdf>
-Package pdftex.def Info: Bilder/Normierungsauswahl/M3_Messing_norm.pdf used on input line 154.
+Package pdftex.def Info: Bilder/Normierungsauswahl/M3_Messing_norm.pdf used on input line 160.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <Bilder/M3_Messing_norm.pdf, id=164, 578.16pt x 433.62pt>
+ <Bilder/M3_Messing_norm.pdf, id=165, 578.16pt x 433.62pt>
 File: Bilder/M3_Messing_norm.pdf Graphic file (type pdf)
  <use Bilder/M3_Messing_norm.pdf>
-Package pdftex.def Info: Bilder/M3_Messing_norm.pdf used on input line 160.
+Package pdftex.def Info: Bilder/M3_Messing_norm.pdf used on input line 166.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 
-Underfull \hbox (badness 2073) in paragraph at lines 161--161
+Underfull \hbox (badness 2073) in paragraph at lines 167--167
 [][][]|\EU2/lmr/m/n/10 Aus-ge-wähl-ter Teil der Grund-schwin-gung von Mes-sing bei 200
  []
 
-<Bilder/M3_Alu_kuehl.pdf, id=165, 578.16pt x 433.62pt>
+<Bilder/M3_Alu_kuehl.pdf, id=166, 578.16pt x 433.62pt>
 File: Bilder/M3_Alu_kuehl.pdf Graphic file (type pdf)
  <use Bilder/M3_Alu_kuehl.pdf>
-Package pdftex.def Info: Bilder/M3_Alu_kuehl.pdf used on input line 168.
+Package pdftex.def Info: Bilder/M3_Alu_kuehl.pdf used on input line 174.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/M3_Alu_warm.pdf, id=166, 578.16pt x 433.62pt>
+ <Bilder/M3_Alu_warm.pdf, id=167, 578.16pt x 433.62pt>
 File: Bilder/M3_Alu_warm.pdf Graphic file (type pdf)
  <use Bilder/M3_Alu_warm.pdf>
-Package pdftex.def Info: Bilder/M3_Alu_warm.pdf used on input line 172.
+Package pdftex.def Info: Bilder/M3_Alu_warm.pdf used on input line 178.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/Normierungsauswahl/M3_Alu_norm.pdf, id=167, 578.16pt x 433.62pt>
+ <Bilder/Normierungsauswahl/M3_Alu_norm.pdf, id=168, 578.16pt x 433.62pt>
 File: Bilder/Normierungsauswahl/M3_Alu_norm.pdf Graphic file (type pdf)
  <use Bilder/Normierungsauswahl/M3_Alu_norm.pdf>
-Package pdftex.def Info: Bilder/Normierungsauswahl/M3_Alu_norm.pdf used on input line 179.
+Package pdftex.def Info: Bilder/Normierungsauswahl/M3_Alu_norm.pdf used on input line 185.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <Bilder/M3_Alu_norm.pdf, id=170, 578.16pt x 433.62pt>
+ <Bilder/M3_Alu_norm.pdf, id=171, 578.16pt x 433.62pt>
 File: Bilder/M3_Alu_norm.pdf Graphic file (type pdf)
  <use Bilder/M3_Alu_norm.pdf>
-Package pdftex.def Info: Bilder/M3_Alu_norm.pdf used on input line 185.
+Package pdftex.def Info: Bilder/M3_Alu_norm.pdf used on input line 191.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
- <Bilder/M3_Edelstahl.pdf, id=171, 578.16pt x 433.62pt>
+ <Bilder/M3_Edelstahl.pdf, id=172, 578.16pt x 433.62pt>
 File: Bilder/M3_Edelstahl.pdf Graphic file (type pdf)
  <use Bilder/M3_Edelstahl.pdf>
-Package pdftex.def Info: Bilder/M3_Edelstahl.pdf used on input line 193.
+Package pdftex.def Info: Bilder/M3_Edelstahl.pdf used on input line 199.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
- <Bilder/Normierungsauswahl/M3_Edelstahl_norm.pdf, id=172, 578.16pt x 433.62pt>
+ <Bilder/Normierungsauswahl/M3_Edelstahl_norm.pdf, id=173, 578.16pt x 433.62pt>
 File: Bilder/Normierungsauswahl/M3_Edelstahl_norm.pdf Graphic file (type pdf)
  <use Bilder/Normierungsauswahl/M3_Edelstahl_norm.pdf>
-Package pdftex.def Info: Bilder/Normierungsauswahl/M3_Edelstahl_norm.pdf used on input line 197.
+Package pdftex.def Info: Bilder/Normierungsauswahl/M3_Edelstahl_norm.pdf used on input line 203.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
 
 
-LaTeX Warning: Float too large for page by 3.8386pt on input line 201.
+LaTeX Warning: Float too large for page by 3.8386pt on input line 207.
 
-<Bilder/M3_Edelstahl_norm.pdf, id=173, 578.16pt x 433.62pt>
+<Bilder/M3_Edelstahl_norm.pdf, id=174, 578.16pt x 433.62pt>
 File: Bilder/M3_Edelstahl_norm.pdf Graphic file (type pdf)
  <use Bilder/M3_Edelstahl_norm.pdf>
-Package pdftex.def Info: Bilder/M3_Edelstahl_norm.pdf used on input line 204.
+Package pdftex.def Info: Bilder/M3_Edelstahl_norm.pdf used on input line 210.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 
-Underfull \hbox (badness 1122) in paragraph at lines 205--205
+Underfull \hbox (badness 1122) in paragraph at lines 211--211
 [][][]|\EU2/lmr/m/n/10 Aus-ge-wähl-ter Teil der Grund-schwin-gung von Edel-stahl bei 200
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [7]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: math
@@ -2208,25 +2212,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 478069193B67CE1423D29D5159EF1D86;15513.
+(rerunfilecheck)             Checksum: FC15020E1BBA331E3025A95405CCEAF3;15609.
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40519 strings out of 494695
+ 40520 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 657 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 17 attribute, 63 glue_spec, 17 attribute_list, 5 action, 1 write nodes
-   avail lists: 1:46,2:14361,3:379,4:1469,5:348,6:4483,7:117,8:41,9:516,10:990,11:512,12:229
- 42965 multiletter control sequences out of 65536+600000
- 111 fonts using 33200151 bytes
+ 661 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 12 kern, 17 attribute, 63 glue_spec, 17 attribute_list, 5 action, 1 write nodes
+   avail lists: 1:46,2:12053,3:383,4:1575,5:295,6:3803,7:176,8:39,9:515,10:990,11:512,12:229
+ 42966 multiletter control sequences out of 65536+600000
+ 111 fonts using 33199847 bytes
  70i,18n,104p,974b,1219s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (21 pages, 618937 bytes).
+Output written on main.pdf (21 pages, 619566 bytes).
 
-PDF statistics: 1749 PDF objects out of 2073 (max. 8388607)
- 805 compressed objects within 9 object streams
+PDF statistics: 1750 PDF objects out of 2073 (max. 8388607)
+ 806 compressed objects within 9 object streams
  76 named destinations out of 1000 (max. 131072)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
