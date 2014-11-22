@@ -1,3 +1,116 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-\blindtext
+\subsection{Wärmekapazität des Dewar-Gefäßes}
+Zur Bestimmung der Wärmekapazität des verwendeten Dewar-Gefäßes, deren Wert für die folgenden Berechnungen notwendig ist,
+wird die Temperatur $T_x$ und die Masse $m_x$ der Wassermenge im Gefäß, die Temperatur $T_y$ und die Masse $m_y$ der hinzugefügten Wassermenge und die Mischungstemperatur $T_m$ bestimmt.
+Die Massen der Gefäße 
+\begin{description}
+	\item{Masse des Becherglases} $\SI{196}{\gram}$
+	\item{Masse des Dewargefäßes} $\SI{852}{\gram}$
+\end{description}
+wird dabei von den Messwerten abgezogen.
+Es ergeben sich dadurch die Werte für die Bestimmung der Wärmekapazität.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ccccc}%c}
+		\toprule
+		%{Masse $m$} &
+		{Masse $m_x$}& {Masse $m_y$}  &{Temperatur  $T_x$}&{Temperatur $T_y$}  &{Temperatur $T_m$}\\
+		%{$\si{\gram}$} &
+		{$\si{\gram}$}& {$\si{\gram}$}  &{$\si{\kelvin}$}& {$\si{\kelvin}$}  &{$\si{\kelvin}$}\\
+		\midrule
+		%566 & 
+		270 & 296 & 364.35 & 294.75 & 325.15\\
+		\bottomrule
+	\end{tabular}
+	\caption{Messwerte der Kalorimetrie des Dewargefäßes.}
+	\label{tab:messung1}
+\end{table}
+Gemäß der Formel \ref{NO}
+\begin{equation}
+	c_\mathup{g}m_\mathup{g}=\frac{c_\mathup{w}m_\mathup{y}(T_\mathup{y}-T'_\mathup{m})-c_\mathup{w}m_\mathup{x}(T'_\mathup{m}-T_\mathup{x})}{(T'_\mathup{m}-T_\mathup{x})}
+\end{equation}
+und mit dem Literaturwert\cite{NO} der spezifischen Wärmekapazität von Wasser $c_w=\SI{4.18}{\joule\per\kelvin}$ wird die Wärmekapazität des Dewargefäßes zu
+\begin{equation}
+	c_\mathup{g}m_\mathup{g}=\SI{218.02}{\joule\per\kelvin}
+	\label{wert:waerme_dewar}
+\end{equation}
+bestimmt.
+
+\subsection{Wärmekapazität und Molwärme der Proben}
+Es wird die Formel \ref{NO}
+\begin{equation}
+	c_\mathup{k}=\frac{(c_\mathup{w}m_\mathup{w}+c_\mathup{g}m_\mathup{g})(T_\mathup{m}-T_\mathup{w})}{m_\mathup{k}(T_\mathup{k}-T_\mathup{m})}
+\end{equation}
+benutzt, um die spezifische Wärmekapazität der Proben zu ermitteln.
+Die Messwert sind in der Tabelle \ref{tab:messung2} aufgetragen.
+\begin{table}[htp]
+	\centering
+	\begin{tabular}{lccccc}
+		\toprule
+		{Probe}& {$m_w$} & {$m_k$} & {$T_w$} & {$T_k$} & {$T_m$}\\
+		&{$\si{\gram}$}& {$\si{\gram}$}  &{$\si{\kelvin}$}& {$\si{\kelvin}$}  &{$\si{\kelvin}$}\\
+		\midrule
+		Blei		&574&	385.55	& 23.5 &	82.9&	25.9\\
+					&537&	385.55	& 21.8 &	91.0&	25.2\\
+					&583&	385.55	& 22.3 &	75.7&	24.5\\	
+		Graphit		&544&	107.23	& 22.5 &	83.3&	25.6\\
+		Kupfer		&562& 	139.77	& 22.1 &	82.3&	26.4\\
+		\bottomrule
+	\end{tabular}
+	\caption{Messwerte der Kalorimetrie der Proben.}
+	\label{tab:messung2}
+\end{table}
+Mithilfe des Zusammenhanges nach Gleichung \eqref{NO} zwischen den beiden Festlegungen für Molwärmen $C_p$ und $C_V$ 
+wird die experimentell schwierig zu bestimmende Molwärme $C_V$ mit den errechneten Werten von $C_p$ für jede Probe bestimmt.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{lccc}
+		\toprule
+		&{spez. Wärmekapazität $c_k$}& {Molwärme $C_p$}  &{Molwärme $C_V$}\\
+		&{$\si{\joule\per\kelvin\per\kilo\gram}$}  &{$\si{\joule\per\kelvin}$}& {$\si{\joule\per\kelvin}$}\\
+		\midrule
+		{Blei}	&0.286	&59.225	& 57.490\\
+				&0.330	&68.386	& 66.655\\
+				&0.296	&61.308	& 59.581\\
+		{Blei, gemittelt}	&$0.31\pm0.08$	&$63.7\pm16.5$	&$61.242\pm2.773$\\
+		{Graphit}&1.249 &149.826& 149.796\\
+		{Kupfer}&1.413	&89.717	& 88.983\\
+		\bottomrule
+	\end{tabular}
+	\caption{Ermittelte Eigenschaften der Proben.}
+	\label{wert:proben}
+\end{table}
+
+Durch mehrfaches Messen bei der Blei-Probe ist eine Fehlerrechnung möglich.
+Via Mittelwertbildung und der Bestimmung der Standardabweichung des Mittelwertes
+\begin{subequations}
+	\begin{equation}
+		\sigma_x = \sqrt{\sigma_x^2} := \sqrt{\frac{1}{n^2-n} \sum_{i=1}^n{(x_i-\bar{x})^2}}
+	\end{equation}
+	\begin{equation}
+		\bar{x} = \frac{1}{n} \sum_{i=1}^n{x_i}.
+	\end{equation}
+\end{subequations}
+mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die Werte
+
+\subsection{Vergleich mit dem Dulong--Petit-Gesetz}
+Nach Kapitel \ref{NO} werden die ermittelten Molwärmen bei konstantem Volumen $C_\mathup{V}$ mit dem Wert
+\begin{equation}
+	C_\mathup{V} = 3*\mathup{R}
+\end{equation}
+verglichen, der durch das Dulong--Petit-Gesetz vorausgesagt wird. $\mathup{R}= \SI{8.3144621\pm0.0000075}{\joule\per\mol\kelvin} $ ist die allgemeine Gaskonstante.
+Die Abweichungen vom erwarteten Wert ist in Tabelle \ref{tab:failz} aufgetragen.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{lc}
+		\mulitcolumn{2}{c}{Abweichung in $\%$}\\
+		\midrule
+		{Blei, gemittelt}	&$146\pm11$\\
+		{Graphit}& 500.54\\
+		{Kupfer}& 256.74\\
+		\bottomrule
+	\end{tabular}
+	\caption{Abweichungen vom erwarteten Wert nach Dulong--Petit-Gesetz.}
+	\label{tab:failz}
+\end{table}
