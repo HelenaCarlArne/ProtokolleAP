@@ -1,0 +1,29 @@
+\section{Zielsetzung}
+In diesem Versuch wird die Leerlaufspannung und den Innenwiderstand von realen Spannungsquellen bestimmt.
+
+\section{Theorie}
+\label{sec:Theorie}
+Anders als bei idealen Spannungsquellen, die sich dadurch auszeichnen, ihre eingestellte Spannung $U_\text{Soll}$ an den Klemmen trotz Belastung ohne Verluste aufrecht erhalten zu können, 
+sinkt bei realen Spannungsquellen die Klemmspannung $U_\text{K}$, sobald Verbraucher elektrische Leistung beziehen.
+Die Spannung, die an den Klemmen anliegt, ohne dass Verbraucher angeschlossen sind, 
+wird als Leerlaufspannung $U_0$ bezeichnet und fällt mit $U_\text{Soll}$ einer idealen Spannungsquelle zusammen.
+
+Zur Beschreibung des Spannungsverlustes wird ein Innenwiderstand $R_\text{I}$ innerhalb der Spannungsquelle eingeführt, der fester Bestandteil einer realen Spannungsquelle ist.
+\begin{figure}[ht]
+	\centering
+  	\includegraphics[width=0.4\textwidth]{Bilder/Innenwiderstand}
+	\caption{Skizze eines einfachen Schaltkreises mit Ersatzschaltbild der Spannungsquelle.}
+	\label{fig:Innenleben}
+\end{figure}
+Die reale Spannungsquelle wird der Abbildung \ref{fig:Innenleben} gemäß als ideale Spannungsquelle mit $U_\text{Soll}$ und dem Innenwiderstand $R_\text{I}$ aufgefasst. 
+Die Klemmspannung ist in Reihe nach Spannungsquelle und Innenwiderstand abgreifbar.
+Mit der zweiten Kirchhoffschen Regel gilt für die Klemmspannung
+\begin{equation}
+	U_\text{K} = U_\text{0} - R_\text{I}\cdot I
+	\label{eq:Klemmspannung}
+\end{equation}
+
+Die Annahme des Innenwiderstandes hat zur Folge, dass nicht beliebige Leistungen von dem Verbraucher $R_\text{a}$ aufgenommen werden kann. 
+Die an den Verbraucher $R_\text{a}$ abgegebene Leistung $N(R_\text{a}) = I^2\cdot R_\text{a}$ lässt eine Leistungsoptimierung in $R_\text{a}$ zu. 
+Damit existiert für eine gegebene Spannungsquelle mit bekanntem Innenwiderstand $R_\text{I}$ ein optimaler Gesamtwiderstand $R_\text{a, optimal}$ des Verbrauchers,
+bei welchem die Leistung maximal wird.
