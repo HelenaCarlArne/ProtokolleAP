@@ -1,21 +1,12 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Wärmekapazität des Dewar-Gefäßes}
-Zur Bestimmung der Wärmekapazität des verwendeten Dewar-Gefäßes, deren Wert für die folgenden Berechnungen notwendig ist,
-wird die Temperatur $T_x$ und die Masse $m_x$ der Wassermenge im Gefäß, die Temperatur $T_y$ und die Masse $m_y$ der hinzugefügten Wassermenge und die Mischungstemperatur $T_m$ bestimmt.
-Die Massen der Gefäße 
-\begin{description}
-	\item{Masse des Becherglases} $\SI{196}{\gram}$
-	\item{Masse des Dewargefäßes} $\SI{852}{\gram}$
-\end{description}
-wird dabei von den Messwerten abgezogen.
-Es ergeben sich dadurch die Werte für die Bestimmung der Wärmekapazität.
-\begin{table}[h]
+\begin{table}[ht]
 	\centering
 	\begin{tabular}{ccccc}%c}
 		\toprule
 		%{Masse $m$} &
-		{Masse $m_x$}& {Masse $m_y$}  &{Temperatur  $T_x$}&{Temperatur $T_y$}  &{Temperatur $T_m$}\\
+		{Masse $m_\text{x}$}& {Masse $m_\text{y}$}  &{Temperatur  $T_\text{x}$}&{Temperatur $T_\text{y}$}  &{Temperatur $T_\text{m}$}\\
 		%{$\si{\gram}$} &
 		{$\si{\gram}$}& {$\si{\gram}$}  &{$\si{\kelvin}$}& {$\si{\kelvin}$}  &{$\si{\kelvin}$}\\
 		\midrule
@@ -26,11 +17,20 @@ Es ergeben sich dadurch die Werte für die Bestimmung der Wärmekapazität.
 	\caption{Messwerte der Kalorimetrie des Dewargefäßes.}
 	\label{tab:messung1}
 \end{table}
+Zur Bestimmung der Wärmekapazität des verwendeten Dewar-Gefäßes, deren Wert für die folgenden Berechnungen notwendig ist,
+wird die Temperatur $T_\text{x}$ und die Masse $m_\text{x}$ der Wassermenge im Gefäß, die Temperatur $T_\text{y}$ und die Masse $m_\text{y}$ der hinzugefügten Wassermenge und die Mischungstemperatur $T_m$ bestimmt.
+Zur Bestimmung der Massen $m_\text{x}$ und $m_\text{y}$ werden die Wassermengen zusammen mit den jeweiligen Gefäßen gewogen und die Massen der Gefäße 
+	($\text{m}_\text{Becherglas}=\SI{196}{\gram}$ und 
+	$\text{m}_\text{Dewargefäß}=\SI{852}{\gram}$)
+von den gemessenen Werten abgezogen.
+Es ergeben sich dadurch die Werte für die Bestimmung der Wärmekapazität in Tabelle \ref{tab:messung1}.
+
 Gemäß der Formel \ref{NO}
 \begin{equation}
 	c_\mathup{g}m_\mathup{g}=\frac{c_\mathup{w}m_\mathup{y}(T_\mathup{y}-T'_\mathup{m})-c_\mathup{w}m_\mathup{x}(T'_\mathup{m}-T_\mathup{x})}{(T'_\mathup{m}-T_\mathup{x})}
 \end{equation}
-und mit dem Literaturwert\cite{NO} der spezifischen Wärmekapazität von Wasser $c_w=\SI{4.18}{\joule\per\kelvin}$ wird die Wärmekapazität des Dewargefäßes zu
+und mit dem Literaturwert\cite{NO} der spezifischen Wärmekapazität von Wasser \\
+$c_\text{w}=\SI{4.18}{\joule\per\gram\per\kelvin}$ wird die Wärmekapazität des Dewargefäßes zu
 \begin{equation}
 	c_\mathup{g}m_\mathup{g}=\SI{218.02}{\joule\per\kelvin}
 	\label{wert:waerme_dewar}
@@ -38,36 +38,39 @@ und mit dem Literaturwert\cite{NO} der spezifischen Wärmekapazität von Wasser 
 bestimmt.
 
 \subsection{Wärmekapazität und Molwärme der Proben}
-Es wird die Formel \ref{NO}
-\begin{equation}
-	c_\mathup{k}=\frac{(c_\mathup{w}m_\mathup{w}+c_\mathup{g}m_\mathup{g})(T_\mathup{m}-T_\mathup{w})}{m_\mathup{k}(T_\mathup{k}-T_\mathup{m})}
-\end{equation}
-benutzt, um die spezifische Wärmekapazität der Proben zu ermitteln.
-Die Messwert sind in der Tabelle \ref{tab:messung2} aufgetragen.
 \begin{table}[htp]
 	\centering
 	\begin{tabular}{lccccc}
 		\toprule
-		{Probe}& {$m_w$} & {$m_k$} & {$T_w$} & {$T_k$} & {$T_m$}\\
+		{Probe}& {$m_\text{w}$} & {$m_\text{k}$} & {$T_\text{w}$} & {$T_\text{k}$} & {$T_\text{m}$}\\
 		&{$\si{\gram}$}& {$\si{\gram}$}  &{$\si{\kelvin}$}& {$\si{\kelvin}$}  &{$\si{\kelvin}$}\\
 		\midrule
-		Blei		&574&	385.55	& 23.5 &	82.9&	25.9\\
-					&537&	385.55	& 21.8 &	91.0&	25.2\\
-					&583&	385.55	& 22.3 &	75.7&	24.5\\	
-		Graphit		&544&	107.23	& 22.5 &	83.3&	25.6\\
-		Kupfer		&562& 	139.77	& 22.1 &	82.3&	26.4\\
+		Blei		&574&	385.55	& 296.65 &	356.05&	299.05\\
+					&537&	385.55	& 294.95 &	364.15&	298.35\\
+					&583&	385.55	& 295.45 &	348.85&	297.65\\	
+		Graphit		&544&	107.23	& 295.65 &	356.45&	298.75\\
+		Kupfer		&562& 	139.77	& 295.25 &	355.45&	299.55\\
 		\bottomrule
 	\end{tabular}
 	\caption{Messwerte der Kalorimetrie der Proben.}
 	\label{tab:messung2}
 \end{table}
-Mithilfe des Zusammenhanges nach Gleichung \eqref{NO} zwischen den beiden Festlegungen für Molwärmen $C_p$ und $C_V$ 
-wird die experimentell schwierig zu bestimmende Molwärme $C_V$ mit den errechneten Werten von $C_p$ für jede Probe bestimmt.
+$m_\text{k}$ ist die Masse der Probe, $T_\text{w}$ ist die Temperatur der Probe, nachdem sie erhitzt und bevor sie in das Dewargefäß gelassen wird.
+$m_\text{w}$ ist die Masse des Wassers im Dewar-Gefäß, $T_\text{w}$ ist seine Temperatur.
+Es wird die Formel \ref{NO}
+\begin{equation}
+	c_\mathup{k}=\frac{(c_\mathup{w}m_\mathup{w}+c_\mathup{g}m_\mathup{g})(T_\mathup{m}-T_\mathup{w})}{m_\mathup{k}(T_\mathup{k}-T_\mathup{m})}
+\end{equation}
+benutzt, um die spezifische Wärmekapazität der Proben zu ermitteln.
+Die Messwerte sind in der Tabelle \ref{tab:messung2} aufgetragen.
+
+Es wird der Zusammenhang zwischen den beiden Festlegungen für Molwärmen $C_\text{p}$ und $C_\text{V}$ nach Gleichung \eqref{NO} benutzt, um
+die experimentell schwierig zu bestimmende Molwärme $C_\text{V}$ mit den errechneten Werten von $C_\text{p}$ für jede Probe zu bestimmen.
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{lccc}
 		\toprule
-		&{spez. Wärmekapazität $c_k$}& {Molwärme $C_p$}  &{Molwärme $C_V$}\\
+		&{spez. Wärmekapazität $c_\text{k}$}& {Molwärme $C_\text{p}$}  &{Molwärme $C_\text{V}$}\\
 		&{$\si{\joule\per\kelvin\per\kilo\gram}$}  &{$\si{\joule\per\kelvin}$}& {$\si{\joule\per\kelvin}$}\\
 		\midrule
 		{Blei}	&0.286	&59.225	& 57.490\\
@@ -81,7 +84,6 @@ wird die experimentell schwierig zu bestimmende Molwärme $C_V$ mit den errechne
 	\caption{Ermittelte Eigenschaften der Proben.}
 	\label{wert:proben}
 \end{table}
-
 Durch mehrfaches Messen bei der Blei-Probe ist eine Fehlerrechnung möglich.
 Via Mittelwertbildung und der Bestimmung der Standardabweichung des Mittelwertes
 \begin{subequations}
@@ -92,25 +94,49 @@ Via Mittelwertbildung und der Bestimmung der Standardabweichung des Mittelwertes
 		\bar{x} = \frac{1}{n} \sum_{i=1}^n{x_i}.
 	\end{equation}
 \end{subequations}
-mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die Werte
+mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die gemittelten Werte in Tabelle \ref{wert:proben}
 
-\subsection{Vergleich mit dem Dulong--Petit-Gesetz}
-Nach Kapitel \ref{NO} werden die ermittelten Molwärmen bei konstantem Volumen $C_\mathup{V}$ mit dem Wert
-\begin{equation}
-	C_\mathup{V} = 3*\mathup{R}
-\end{equation}
-verglichen, der durch das Dulong--Petit-Gesetz vorausgesagt wird. $\mathup{R}= \SI{8.3144621\pm0.0000075}{\joule\per\mol\kelvin} $ ist die allgemeine Gaskonstante.
-Die Abweichungen vom erwarteten Wert ist in Tabelle \ref{tab:failz} aufgetragen.
+\subsection{Vergleich der spezifischen Wärmekapazität mit der Literatur}
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{lc}
-		\mulitcolumn{2}{c}{Abweichung in $\%$}\\
+	\begin{tabular}{lccc}
+		\toprule
+		&\multicolumn{3}{c}{Spezifische Wärmekapazität $c_\text{k}$ der Proben}\\
+		&{Gemessen $\si{\joule\per\kelvin\per\kilo\gram}$}  &{Literatur $\si{\joule\per\kelvin\per\kilo\gram}$}& {Abweichung [$\%$]}\\
 		\midrule
-		{Blei, gemittelt}	&$146\pm11$\\
-		{Graphit}& 500.54\\
-		{Kupfer}& 256.74\\
+		{Blei}	&0.286	&0.129	&121.71\\
+				&0.330	&dto.	&155.81\\
+				&0.296	&dto.	&129.46\\
+		{Blei, gemittelt}	&$0.31\pm0.08$	&dto.	&$140.31\pm 37.98$\\
+		{Graphit}&1.249 &0.715& 74.69\\
+		{Kupfer}&1.413	&0.381	& 270.87\\
+		\bottomrule
+	\end{tabular}
+	\caption{Abweichung der spezifischen Wärme von der Literatur\cite{SpeziWaerme}.}
+	\label{tab:compare}
+\end{table}
+\subsection{Vergleich der Molwärme mit dem Dulong--Petit-Gesetz}
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{ccc}
+		\toprule
+		\multicolumn{3}{c}{Abweichung [$\%$]}\\
+		{Blei, gemittelt}	&{Graphit}&{Kupfer}\\
+		\midrule
+		$146\pm11$	&500.54	&256.74\\
 		\bottomrule
 	\end{tabular}
 	\caption{Abweichungen vom erwarteten Wert nach Dulong--Petit-Gesetz.}
 	\label{tab:failz}
 \end{table}
+Nach Kapitel \ref{NO} werden die ermittelten Molwärmen $C_\mathup{V}$ bei konstantem Volumen mit dem Wert
+\begin{equation}
+	C_\mathup{V} = 3\cdot \mathup{R}
+\end{equation}
+verglichen, der durch das Dulong--Petit-Gesetz vorausgesagt wird.\\
+$\mathup{R}= \SI{8.3144621\pm0.0000075}{\joule\per\mol\per\kelvin}$ ist die (allgemeine) Gaskonstante\cite{Gaskonstante}.
+Die Abweichungen vom erwarteten Wert sind in Tabelle \ref{tab:failz} aufgetragen. 
+
+Die Unsicherheiten in den Werten von Graphit und Kupfer stammen nur von der Unsicherheit in der Gaskonstante $\mathup{R}$. 
+Die Größenordnung der Unsicherheiten ist $10^{-4}\%$ und damit vernachlässigbar klein.
+
