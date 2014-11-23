@@ -1,6 +1,6 @@
 \section{Ziel}
 
-Versuchsziel ist es, herauszufinden, ob die Methoden der klassischen Physik zur Beschreibung von Teilchenschwingungen in Festkörpern ausreichen oder ob diese quatenmechanisch beschrieben werden müssen. Dazu wird mit einem Mischungskalorimeter die material- und temperaturunabhängige Molwärme bestimmt, die klassisch nach dem Dulong-Petit-Gesetz konstant $C_\mathup{V}=3R$ beträgt.
+Versuchsziel ist es, herauszufinden, ob die Methoden der klassischen Physik zur Darstellung von Teilchenschwingungen in Festkörpern ausreichen oder ob diese quatenmechanisch beschrieben werden müssen. Dazu wird mit einem Mischungskalorimeter die material- und temperaturunabhängige Molwärme verschiedener Proben bestimmt und anschließend die Gültigkeit beider Theorien bewertet.
 \section{Theorie}
 \label{sec:Theorie}
 
@@ -9,7 +9,7 @@ Wird ein Körper  um eine Temperatur $\Delta{T}$ erhitzt, wird dazu die Wärmeme
 \Delta{Q}=c m \Delta{T}
 \label{eq:waermekapazitaet}
 \end{equation}
-aufgewandt. Die materialabhängige Konstante $c$ bezeichnet die Wärmekapazität. Bezogen auf die erwärmte Masse $m$ des Körpers, wird von der spezifischen Wärmekapazität gesprochen.
+aufgewandt. Die materialabhängige Konstante $c$ bezeichnet die Wärmekapazität. Bezogen auf die erwärmte Masse $m$ des Körpers, wird von der spezifischen Wärmekapazität $cm$ gesprochen.
 Wenn keine Arbeit zum Erwärmen des Körpers aufgebracht wird kann nach dem 1. Hauptsatz der Thermodynamik
 \begin{equation}
 	\Delta{U}=\Delta{Q}+\Delta{A}
@@ -17,7 +17,7 @@ Wenn keine Arbeit zum Erwärmen des Körpers aufgebracht wird kann nach dem 1. H
 \end{equation}
 mit $\Delta{A}=0$ die Wärmemenge auch als Energieform aufgefasst werden. Damit ist die Einheit der Wärmekapazität $[c]=\si{\joule\per{\kilo\gram\kelvin}}$.
 
-Erhitzt man $\SI{1}{\mol}$ Atome mit  d$Q$ um d$T$ kann das bei konstantem Druck oder bei konstantem Volumen geschehen.
+Erhitzt man $\SI{1}{\mol}$ Atome mit  d$Q$ um d$T$ kann das bei konstantem Druck oder Volumen geschehen.
  Dann ist die aufgewandte Molwärme $C_\mathup{p}$ bzw. $C_\mathup{V}$. 
 Verwendet man erneut Gleichung \eqref{eq:hs_1} 
 ergibt sich für ein konstantes Volumen 
@@ -25,64 +25,62 @@ ergibt sich für ein konstantes Volumen
 	C_\mathup{V}=\frac{\mathup{d}{Q}}{\mathup{d}{T}}=\frac{\mathup{d}{U}}{\mathup{d}{T}}.
 	\label{eq:molwaerme}
 \end{equation}
-
-Diese Tatsache erklärt die kinetische Theorie der Wärme; sie beschreibt makroskopische Vorgänge durch das mikroskopische Verhalten von Atomen, indem die einzelnen Energien der Atome summiert und anschließend gemittelt werden. 
-Daraus ergibt sich die gemittelte innere Energie
+Die kinetische Theorie der Wärme beschreibt makroskopische Vorgänge durch das mikroskopische Verhalten von Atomen, indem die einzelnen Energien der Atome summiert und anschließend gemittelt werden. 
+Die gemittelte Gesamtenergie setzt sich aus der potentiellen und kinetischen Energie der Atome zusammen:
 \begin{equation}
 	\bar{U}=\bar{E}_\mathup{kin.}+\bar{E}_\mathup{pot.}.
 	\label{eq:innere_Energie}
 \end{equation}
-Wird die Schwingung eines einzelnen Atomes betrachtet, schwingt es aufgrund zweier Kräfte -- Trägheits- und rücktreibende Kraft -- um seine Ruhelage. 
+Wird die Schwingung eines einzelnen Atomes betrachtet, oszilliert es aufgrund zweier Kräfte -- Trägheits- und rücktreibende Kraft -- um seine Ruhelage. 
 \begin{equation}
 	F_\mathup{T}+F_\mathup{R}=m\ddot{x}+Dx=0.
 \end{equation}
 Diese Bewegungsgleichung beschreibt einen harmonischen ungedämpften Oszillator. 
-Durch Integration ergibt sich sowohl für die potentielle, als auch für die kinetische Energie $\bar{E}_\mathup{pot.}=\frac{1}{4}DA²=\bar{E}_\mathup{kin.}$ mit der Amplitude $A$ der Lösung der Differentialgleichung.
+Durch Integration der Lösung ergibt sich sowohl für die potentielle, als auch für die kinetische Energie $\bar{E}_\mathup{pot.}=\frac{1}{4}DA²=\bar{E}_\mathup{kin.}$ mit der Schwingungsamplitude $A$.
 Eingesetzt in Gleichung \eqref{eq:innere_Energie}
- folgt daraus mit dem Äquipatitionstheorem $\bar{U}=2\bar{E}_\mathup{kin.}=kT$. 
-Jenes besagt, dass ein Atom im thermischen Gleichgewicht mit seiner Umgebung eine kinetische Energie $\bar{E}_\mathup{kin.}=kT$ pro Bewegungsfreiheitsgrad besitzt. 
-$k=(1.38\cdot{10⁻²³}\pm9.1\cdot{10⁻⁷})\si{\joule\per\kelvin}$ ist die Boltzmann-Konstante.
-Wird nun erneut $1\si\mol$ Atome betrachtet, die jeweils drei Freiheitsgrade besitzen ergibt sich für die gemittelte innere Energie 
+ folgt daraus mit dem Äquipatitionstheorem, welches einem Atom im thermischen Gleichgewicht mit seiner Umgebung die kinetische Energie $\bar{E}_\mathup{kin.}=kT$ pro Bewegungsfreiheitsgrad zuordnet, $\bar{U}=2\bar{E}_\mathup{kin.}=kT$. 
+Werden nun erneut $\SI{1}{\mol}$ Atome mit je drei Freiheitsgraden betrachtet ergibt sich für die gemittelte innere Energie 
 \begin{equation}
-\tilde{\bar{U}}=3N_\mathup{L}\bar{U}=3N_\mathup{L}kT=3R.
+\tilde{\bar{U}}=3N_\mathup{L}\bar{U}=3N_\mathup{L}kT=3RT.
 \end{equation}
-$N_\mathup{L}=(2.687\cdot 10²⁵\pm0.0000024)\si{\meter}⁻³$ ist die Lohschmidtsche Zahl und gibt die Anzahl der Atome innerhalb einer Volumeneinheit an. 
+Die allgemeine Gaskonstante $R=(8.314\pm9.1\cdot{10⁻⁷})\si{\joule\per{\kilo\gram\kelvin}}$ setzt sich aus der Boltzmann-Konstante $k=(1.38\cdot{10⁻²³}\pm9.1\cdot{10⁻⁷})\si{\joule\per\kelvin}$ und der Lohschmidtschen Zahl 
+$N_\mathup{L}=(2.687\cdot 10²⁵\pm0.0000024)\si{\meter}⁻³$ zusammen.$N_\mathup{L}$ gibt die Anzahl der Atome innerhalb einer Volumeneinheit an. 
 Wird der Ausdruck für die gemittelte innere Energie der Atome in Gleichung \eqref{eq:molwaerme} eingesetzt ist
 \begin{equation}
 C_\mathup{V}=\frac{3RT}{\mathup{d}T}=3R.
 \end{equation}
-Dies ist die Aussage des Dulong-Petit-Gesetzes der klassischen Physik : Bei konstantem Volumen beträgt die Molwärme $C_\mathup{V}=3R$; $R=(8.314\pm9.1\cdot{10⁻⁷})\si{\joule\per{\kilo\gram\kelvin}}$ ist dabei die allgemeine Gaskonstante.
-Die Molwärme ist für die meisten Elemente schon bei $T=20\si{\celsius}$ konstant -- nur für Atome mit gerigem Atomgewicht wie Blei oder Bohr gilt dies erst ab $T\approx{1000\si{\celsius}}$. Für sehr geringe Temperaturen $\lim_{\mathclap{T \to{0}}}C_\mathup{V}=0$. 
+Dies ist die Aussage des Dulong-Petit-Gesetzes der klassischen Physik.
+Die Molwärme ist für die meisten Elemente schon bei $T=20\si{\celsius}$ konstant -- nur für Atome mit gerigem Atomgewicht wie Blei oder Bohr gilt dies erst ab weitaus höheren Temperaturen $T\approx{1000\si{\celsius}}$. Für sehr geringe Temperaturen verschwindet die Molwärme.
 
-
-Die klassische Physik nimmt an, dass die Energieaufnahme und -abgabe kontinuierlich geschieht. Die Quantentheorie revidiert diese Annahme: Schwingt ein Oszillator mit der Frequenz $\omega$ werden nur Energiepakete der Form $\Delta{U}=n \hbar \omega$ abgegeben, wobei $n$ Element der natürlichen Zahlen ist. 
+Die klassische Physik nimmt an, dass die Energieaufnahme und -abgabe kontinuierlich geschieht; die Quantentheorie revidiert diese Annahme: Schwingt ein Oszillator mit der Frequenz $\omega$ werden nur Energiepakete der Form $\Delta{U}=n \hbar \omega$ abgegeben, wobei $n$ Element der natürlichen Zahlen ist. 
 Die mittlere innere Energie aller Atome ist nicht mehr proportional zur Temperatur $T$ und es ergibt sich die komplizierte Abhängigkeit
 \begin{equation}
 {\bar{U}=\hbar\omega(\exp(\frac{\hbar\omega}{kT-1})})⁻¹,
 \end{equation}
 
 die Energie dargestellt als geometrische Reihe.
+Damit ist
 \begin{equation}
-\tilde{{\bar{U}}}=3N_\mathup{L}\bar{U}.
+\tilde{{\bar{U}}}=3N_\mathup{L}\bar{U}
 \end{equation}
-
- Analog zur klassischen Mechanik eingesetzt in \eqref{eq:molwaerme} ergibt sich 
+und es ergibt sich analog zur klassischen Mechanik eingesetzt in Gleichung \eqref{eq:molwaerme}  
 \begin{equation}
 C_\mathup{V}=\frac{3N_\mathup{L}\bar{U}}{\mathup{d}T}.
 \end{equation}
 
-Für den Fall geringer Temperaturen gilt dasselbe wie in der klassischen Physik $\lim_{\mathclap{T \to{0}}}C_\mathup{V}=0$, im Falle hoher Temperaturen gilt $\lim_{\mathclap{T \to{infinity}}}C_\mathup{V}=3R$, wenn die e-Funktion mit der Taylor-Entwicklung genähert wird.
 
+Für den Fall geringer Temperaturen gilt wie in der klassischen Physik $C_\mathup{V}=0$. Wird die Exponential-Funktion mit einer Taylorreihe entwickelt nähert sich ihr Wert für große Temperaturen entsprechend dem Dulong-Petitschen-Gesetz der Konstanten $C_\mathup{V}=3R$.
+%%Das hier erst in der Auswertung oder Diskussion?
 Dies zeigt, dass das Dulong-Petit-Gesetz für extrem hohe Temperaturen einer geeigneten Näherung entspricht und der quantisierte Energieaustausch durch einen kontinuierlichen dargestellt werden kann. Dies ist dann der Fall, wenn $\hbar\omega<<kT$ ist. 
 Für geringe Atomgewichte gilt die Näherung erst für entsprechend große Temepraturen, weil die Frequenz $\omega\sim \frac{1}{\sqrt{m}}$ ist.
-
+%%%
 Im Versuch soll die Molwärme bei konstantem Druck $C_\mathup{p}$ gemessen werden. Diese steht über
 \begin{equation}
 C_\mathup{p}-C_\mathup{V}=9{\alpha}²\kappa V_0 T
 \end{equation}
 mit der Molwärme bei konstantem Volumen $C_\mathup{V}$ in Beziehung. $\alpha$ ist der Ausdehnungskoeffizient, $\kappa$ das Kompressionsmodul und $V_0$ das Molvolumen.
-Außerdem wird vom Idealfall ausgegangen, dass die aufgenommene Wärmemenge $Q_1$ gleich der abgegebenen Wärmemenge $Q_2$ ist und kein weiterer Wärmeaustausch mit der Umgebung stattfindet.
-Mit GLeichung \eqref{eq:waermekapazitaet} und einigen Umformungen ergibt sich
+Außerdem wird vom Idealfall ausgegangen, die aufgenommene Wärmemenge $Q_1$ ist gleich der abgegebenen Wärmemenge $Q_2$; es findet kein weiterer Wärmeaustausch mit der Umgebung statt.
+Mit Gleichung \eqref{eq:waermekapazitaet} und einigen Umformungen ergibt sich
 \begin{equation}
 c_\mathup{k}=\frac{(c_\mathup{w}m_\mathup{w}+c_\mathup{g}m_\mathup{g})(T_\mathup{m}-T_\mathup{w})}{m_\mathup{k}(T_\mathup{k}-T_\mathup{m})}
 \end{equation}
@@ -90,8 +88,9 @@ für die Wärmekapazität der Probe.
 In einer seperaten Messung muss zuvor die spezifische Wärmekapazität 
 \begin{equation}
 c_\mathup{g}m_\mathup{g}=\frac{c_\mathup{w}m_\mathup{y}(T_\mathup{y}-T'_\mathup{m})-c_\mathup{w}m_\mathup{x}(T'_\mathup{m}-T_\mathup{x})}{(T'_\mathup{m}-T_\mathup{x})}
+\label{c_Dewar}
 \end{equation}
 des Dewar-Gefäßes bestimmt werden. 
-Die Molwärme kann über $C=cM$ mit der molaren Masse $M$ bestimmt werden.
+Die Molwärme hängt über $C=cM$ mit der molaren Masse $M$ mit der Wärmekapazität zusammen.
 
 
