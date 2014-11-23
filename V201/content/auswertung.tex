@@ -19,14 +19,14 @@
 \end{table}
 Zur Bestimmung der Wärmekapazität des verwendeten Dewar-Gefäßes, deren Wert für die folgenden Berechnungen notwendig ist,
 wird die Temperatur $T_\text{x}$ und die Masse $m_\text{x}$ der Wassermenge im Gefäß, die Temperatur $T_\text{y}$ und die Masse $m_\text{y}$ der hinzugefügten Wassermenge und die Mischungstemperatur $T_m$ bestimmt.
-Zur Bestimmung der Massen $m_\text{x}$ und $m_\text{y}$ werden die Wassermengen zusammen mit den jeweiligen Gefäßen gewogen und die Massen der Gefäße 
-	($\text{m}_\text{Becherglas}=\SI{196}{\gram}$ und 
-	$\text{m}_\text{Dewargefäß}=\SI{852}{\gram}$)
-von den gemessenen Werten abgezogen.
+%Zur Bestimmung der Massen $m_\text{x}$ und $m_\text{y}$ werden die Wassermengen zusammen mit den jeweiligen Gefäßen gewogen und die Massen der Gefäße 
+%	($m_\text{Becherglas}=\SI{196}{\gram}$ und 
+%	$m_\text{Dewargefäß}=\SI{852}{\gram}$)
+%von den gemessenen Werten abgezogen.
 Es ergeben sich dadurch die Werte für die Bestimmung der Wärmekapazität in Tabelle \ref{tab:messung1}.
 
 Gemäß der Formel \eqref{c_Dewar}
-und mit dem Literaturwert\cite{NO} der spezifischen Wärmekapazität von Wasser \\
+und mit dem Literaturwert\cite{NO} der spezifischen Wärmekapazität von Wasser
 $c_\text{w}=\SI{4.18}{\joule\per\gram\per\kelvin}$ wird die Wärmekapazität des Dewargefäßes zu
 \begin{equation}
 	c_\mathup{g}m_\mathup{g}=\SI{218.02}{\joule\per\kelvin}
@@ -39,7 +39,7 @@ bestimmt.
 	\centering
 	\begin{tabular}{lccccc}
 		\toprule
-		{Probe}& {$m_\text{w}$} & {$m_\text{k}$} & {$T_\text{w}$} & {$T_\text{k}$} & {$T_\text{m}$}\\
+		& {$m_\text{w}$} & {$m_\text{k}$} & {$T_\text{w}$} & {$T_\text{k}$} & {$T_\text{m}$}\\
 		&{$\si{\gram}$}& {$\si{\gram}$}  &{$\si{\kelvin}$}& {$\si{\kelvin}$}  &{$\si{\kelvin}$}\\
 		\midrule
 		Blei		&574&	385.55	& 296.65 &	356.05&	299.05\\
@@ -89,8 +89,7 @@ Via Mittelwertbildung und der Bestimmung der Standardabweichung des Mittelwertes
 	\end{equation}
 \end{subequations}
 mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die gemittelten Werte in Tabelle \ref{wert:proben}
-
-\subsection{Vergleich der spezifischen Wärmekapazität mit der Literatur}
+\subsection{Vergleich mit dem Dulong--Petit-Gesetz und der Literatur}
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{lccc}
@@ -99,9 +98,9 @@ mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die 
 		&{Gemessen $\si{\joule\per\kelvin\per\kilo\gram}$}  &{Literatur $\si{\joule\per\kelvin\per\kilo\gram}$}& {Abweichung [$\%$]}\\
 		\midrule
 		{Blei}	&0.286	&0.129	&121.71\\
-				&0.330	&dto.	&155.81\\
-				&0.296	&dto.	&129.46\\
-		{Blei, gemittelt}	&$0.31\pm0.08$	&dto.	&$140.31\pm 37.98$\\
+				&0.330	&0.129	&155.81\\
+				&0.296	&0.129	&129.46\\
+		{Blei, gemittelt}	&$0.31\pm0.08$	&0.129	&$140.31\pm 37.98$\\
 		{Graphit}&1.249 &0.715& 74.69\\
 		{Kupfer}&1.413	&0.381	& 270.87\\
 		\bottomrule
@@ -109,12 +108,11 @@ mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die 
 	\caption{Abweichung der spezifischen Wärme von der Literatur\cite{SpeziWaerme}.}
 	\label{tab:compare}
 \end{table}
-\subsection{Vergleich der Molwärme mit dem Dulong--Petit-Gesetz}
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{ccc}
 		\toprule
-		\multicolumn{3}{c}{Abweichung [$\%$]}\\
+		\multicolumn{3}{c}{Abweichung der Molwärme $C_\text{V}$ [$\%$]}\\
 		{Blei, gemittelt}	&{Graphit}&{Kupfer}\\
 		\midrule
 		$146\pm11$	&500.54	&256.74\\
@@ -123,14 +121,13 @@ mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die 
 	\caption{Abweichungen vom erwarteten Wert nach Dulong--Petit-Gesetz.}
 	\label{tab:failz}
 \end{table}
+Die Abweichungen der spezifischen Wärmekapazitäten der Proben von den Literaturwerten sind in Tabelle \ref{tab:compare} aufgetragen.
 Nach Kapitel \ref{sec:Theorie} werden die ermittelten Molwärmen $C_\mathup{V}$ bei konstantem Volumen mit dem Wert
 \begin{equation}
 	C_\mathup{V} = 3\cdot \mathup{R}
 \end{equation}
-verglichen, der durch das Dulong--Petit-Gesetz vorausgesagt wird.\\
-$\mathup{R}= \SI{8.3144621\pm0.0000075}{\joule\per\mol\per\kelvin}$ ist die (allgemeine) Gaskonstante\cite{Gaskonstante}.
+verglichen, der durch das Dulong--Petit-Gesetz vorausgesagt wird.
 Die Abweichungen vom erwarteten Wert sind in Tabelle \ref{tab:failz} aufgetragen. 
 
 Die Unsicherheiten in den Werten von Graphit und Kupfer stammen nur von der Unsicherheit in der Gaskonstante $\mathup{R}$. 
 Die Größenordnung der Unsicherheiten ist $10^{-4}\%$ und damit vernachlässigbar klein.
-

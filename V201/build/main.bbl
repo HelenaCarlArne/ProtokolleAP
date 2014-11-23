@@ -36,10 +36,35 @@
       \verb http://pythonhosted.org/uncertainties/
       \endverb
     \endentry
+    \entry{numpy}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{00f2976ade6b1d16d78161a1f190716c}
+      \strng{fullhash}{00f2976ade6b1d16d78161a1f190716c}
+      \field{sortinit}{O}
+      \field{labeltitle}{Python for Scientific Computing}
+      \field{addendum}{Version 1.8.1}
+      \field{journaltitle}{Computing in Science and Engineering}
+      \field{number}{3}
+      \field{title}{Python for Scientific Computing}
+      \field{volume}{9}
+      \field{year}{2007}
+      \field{pages}{10\bibrangedash 20}
+      \verb{url}
+      \verb http://link.aip.org/link/?CSX/9/10/1
+      \endverb
+    \endentry
   \endsortlist
   \missing{NO}
   \missing{SpeziWaerme}
-  \missing{Gaskonstante}
+  \missing{V201}
 \endrefsection
 \endinput
 
