@@ -25,10 +25,7 @@ Zur Bestimmung der Massen $m_\text{x}$ und $m_\text{y}$ werden die Wassermengen 
 von den gemessenen Werten abgezogen.
 Es ergeben sich dadurch die Werte für die Bestimmung der Wärmekapazität in Tabelle \ref{tab:messung1}.
 
-Gemäß der Formel \ref{NO}
-\begin{equation}
-	c_\mathup{g}m_\mathup{g}=\frac{c_\mathup{w}m_\mathup{y}(T_\mathup{y}-T'_\mathup{m})-c_\mathup{w}m_\mathup{x}(T'_\mathup{m}-T_\mathup{x})}{(T'_\mathup{m}-T_\mathup{x})}
-\end{equation}
+Gemäß der Formel \eqref{c_Dewar}
 und mit dem Literaturwert\cite{NO} der spezifischen Wärmekapazität von Wasser \\
 $c_\text{w}=\SI{4.18}{\joule\per\gram\per\kelvin}$ wird die Wärmekapazität des Dewargefäßes zu
 \begin{equation}
@@ -57,14 +54,11 @@ bestimmt.
 \end{table}
 $m_\text{k}$ ist die Masse der Probe, $T_\text{w}$ ist die Temperatur der Probe, nachdem sie erhitzt und bevor sie in das Dewargefäß gelassen wird.
 $m_\text{w}$ ist die Masse des Wassers im Dewar-Gefäß, $T_\text{w}$ ist seine Temperatur.
-Es wird die Formel \ref{NO}
-\begin{equation}
-	c_\mathup{k}=\frac{(c_\mathup{w}m_\mathup{w}+c_\mathup{g}m_\mathup{g})(T_\mathup{m}-T_\mathup{w})}{m_\mathup{k}(T_\mathup{k}-T_\mathup{m})}
-\end{equation}
+Es wird die Formel \eqref{c_Probe}
 benutzt, um die spezifische Wärmekapazität der Proben zu ermitteln.
 Die Messwerte sind in der Tabelle \ref{tab:messung2} aufgetragen.
 
-Es wird der Zusammenhang zwischen den beiden Festlegungen für Molwärmen $C_\text{p}$ und $C_\text{V}$ nach Gleichung \eqref{NO} benutzt, um
+Es wird der Zusammenhang zwischen den beiden Festlegungen für Molwärmen $C_\text{p}$ und $C_\text{V}$ nach Gleichung \eqref{alphakappalpha} benutzt, um
 die experimentell schwierig zu bestimmende Molwärme $C_\text{V}$ mit den errechneten Werten von $C_\text{p}$ für jede Probe zu bestimmen.
 \begin{table}[htbp]
 	\centering
@@ -129,7 +123,7 @@ mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die 
 	\caption{Abweichungen vom erwarteten Wert nach Dulong--Petit-Gesetz.}
 	\label{tab:failz}
 \end{table}
-Nach Kapitel \ref{NO} werden die ermittelten Molwärmen $C_\mathup{V}$ bei konstantem Volumen mit dem Wert
+Nach Kapitel \ref{sec:Theorie} werden die ermittelten Molwärmen $C_\mathup{V}$ bei konstantem Volumen mit dem Wert
 \begin{equation}
 	C_\mathup{V} = 3\cdot \mathup{R}
 \end{equation}
