@@ -1,21 +1,17 @@
-[1] Config.pm:320> INFO - This is Biber 1.9
-[1] Config.pm:323> INFO - Logfile is 'build/main.blg'
-[88] biber:277> INFO - === Mo Nov 24, 2014, 20:15:37
-[93] Biber.pm:333> INFO - Reading 'build/main.bcf'
-[249] Biber.pm:635> INFO - Found 9 citekeys in bib section 0
-[301] Biber.pm:3051> INFO - Processing section 0
-[346] Biber.pm:3189> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[348] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[349] bibtex.pm:864> INFO - Found BibTeX data source 'build/lit.bib'
-[387] Utils.pm:144> WARN - Name "C.A. Sutherland, E.F. Milner, R.C. Kerby, H.Teindl, A. Melin, H.M. Bolt" has too many commas: skipping name
-[405] Biber.pm:3189> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[408] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[416] bibtex.pm:864> INFO - Found BibTeX data source 'build/programme.bib'
-[428] Utils.pm:144> WARN - I didn't find a database entry for 'NO' (section 0)
-[634] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[635] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[635] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[635] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
-[691] bbl.pm:517> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[693] bbl.pm:606> INFO - Output to build/main.bbl
-[694] Biber.pm:106> INFO - WARNINGS: 2
+[0] Config.pm:318> INFO - This is Biber 1.8
+[1] Config.pm:321> INFO - Logfile is 'build/main.blg'
+[123] biber-darwin:275> INFO - === Mon Nov 24, 2014, 21:16:31
+[124] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[226] Biber.pm:630> INFO - Found 8 citekeys in bib section 0
+[256] Biber.pm:3053> INFO - Processing section 0
+[281] Biber.pm:3190> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[283] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[285] bibtex.pm:812> INFO - Found BibTeX data source 'build/lit.bib'
+[305] Biber.pm:3190> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[308] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[312] bibtex.pm:812> INFO - Found BibTeX data source 'build/programme.bib'
+[379] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[380] Biber.pm:2945> INFO - Sorting 'entry' list 'nty' keys
+[380] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[420] bbl.pm:482> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[422] bbl.pm:555> INFO - Output to build/main.bbl

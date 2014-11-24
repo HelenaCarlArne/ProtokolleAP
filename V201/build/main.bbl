@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.4 $
+% $ biblatex bbl format version 2.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,16 +18,32 @@
 
 
 \refsection{0}
-  \sortlist{nty}{nty}
+  \sortlist{entry}{nty}
     \entry{waermekapazitaetkupfer}{manual}{}
       \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{urlday}{24}
       \field{urlmonth}{11}
       \field{urlyear}{2014}
       \verb{url}
       \verb http://www.schweizer-fn.de/stoff/wkapazitaet/wkapazitaet_metall.php
       \endverb
+    \endentry
+    \entry{waermekapazitaetblei}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=820bcd6ee29d67f331323b6eab8c5aae}{C.A.\bibnamedelimi Sutherland\bibnamedelimb E.F.\bibnamedelimi Milner}{C\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod}{R.C.\bibnamedelimi Kerby\bibnamedelimb et\bibnamedelima al.}{R\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=820bcd6ee29d67f331323b6eab8c5aae}{C.A.\bibnamedelimi Sutherland\bibnamedelimb E.F.\bibnamedelimi Milner}{C\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod}{R.C.\bibnamedelimi Kerby\bibnamedelimb et\bibnamedelima al.}{R\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH Verlag GmbH & Co. KGaA}%
+      }
+      \strng{namehash}{820bcd6ee29d67f331323b6eab8c5aae}
+      \strng{fullhash}{820bcd6ee29d67f331323b6eab8c5aae}
+      \field{sortinit}{C}
+      \field{labeltitle}{Ullmann's Encyclopedia of Industrial Chemistry}
+      \field{title}{Ullmann's Encyclopedia of Industrial Chemistry}
+      \field{year}{2006}
     \endentry
     \entry{V201}{manual}{}
       \name{labelname}{1}{}{%
@@ -39,7 +55,6 @@
       \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
       \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
       \field{sortinit}{D}
-      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
       \field{labeltitle}{Versuch V201: Das Dulong-Petitesche Gesetz}
       \field{title}{Versuch V201: Das Dulong-Petitesche Gesetz}
       \field{urlday}{24}
@@ -59,7 +74,6 @@
       \strng{namehash}{39bbbee5d86cc1c9ca2c2903868da394}
       \strng{fullhash}{39bbbee5d86cc1c9ca2c2903868da394}
       \field{sortinit}{F}
-      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
       \field{urlday}{24}
       \field{urlmonth}{11}
       \field{urlyear}{2014}
@@ -77,7 +91,6 @@
       \strng{namehash}{39bbbee5d86cc1c9ca2c2903868da394}
       \strng{fullhash}{39bbbee5d86cc1c9ca2c2903868da394}
       \field{sortinit}{F}
-      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
       \field{urlday}{24}
       \field{urlmonth}{11}
       \field{urlyear}{2014}
@@ -95,7 +108,6 @@
       \strng{namehash}{39bbbee5d86cc1c9ca2c2903868da394}
       \strng{fullhash}{39bbbee5d86cc1c9ca2c2903868da394}
       \field{sortinit}{F}
-      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
       \field{urlday}{24}
       \field{urlmonth}{11}
       \field{urlyear}{2014}
@@ -113,7 +125,6 @@
       \strng{namehash}{fd5e607cc043da9b40442508c133a26c}
       \strng{fullhash}{fd5e607cc043da9b40442508c133a26c}
       \field{sortinit}{L}
-      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
       \field{labeltitle}{Uncertainties: a Python package for calculations with uncertainties}
       \field{addendum}{Version 2.4.5}
       \field{title}{Uncertainties: a Python package for calculations with uncertainties}
@@ -134,7 +145,6 @@
       \strng{namehash}{00f2976ade6b1d16d78161a1f190716c}
       \strng{fullhash}{00f2976ade6b1d16d78161a1f190716c}
       \field{sortinit}{O}
-      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
       \field{labeltitle}{Python for Scientific Computing}
       \field{addendum}{Version 1.8.1}
       \field{journaltitle}{Computing in Science and Engineering}
@@ -148,7 +158,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{NO}
 \endrefsection
 \endinput
 
