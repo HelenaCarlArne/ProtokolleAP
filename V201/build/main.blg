@@ -1,21 +1,21 @@
-[0] Config.pm:318> INFO - This is Biber 1.8
-[1] Config.pm:321> INFO - Logfile is 'build/main.blg'
-[512] biber-darwin:275> INFO - === Sun Nov 23, 2014, 20:49:25
-[512] Biber.pm:333> INFO - Reading 'build/main.bcf'
-[634] Biber.pm:630> INFO - Found 5 citekeys in bib section 0
-[695] Biber.pm:3053> INFO - Processing section 0
-[771] Biber.pm:3190> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[785] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
-[786] bibtex.pm:812> INFO - Found BibTeX data source 'build/lit.bib'
-[788] Biber.pm:3190> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[790] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
-[794] bibtex.pm:812> INFO - Found BibTeX data source 'build/programme.bib'
-[833] Utils.pm:169> WARN - I didn't find a database entry for 'NO' (section 0)
-[833] Utils.pm:169> WARN - I didn't find a database entry for 'SpeziWaerme' (section 0)
-[834] Utils.pm:169> WARN - I didn't find a database entry for 'V201' (section 0)
-[910] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[911] Biber.pm:2945> INFO - Sorting 'entry' list 'nty' keys
-[911] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[919] bbl.pm:482> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[920] bbl.pm:555> INFO - Output to build/main.bbl
-[920] Biber.pm:105> INFO - WARNINGS: 3
+[1] Config.pm:320> INFO - This is Biber 1.9
+[2] Config.pm:323> INFO - Logfile is 'build/main.blg'
+[79] biber:277> INFO - === Mo Nov 24, 2014, 20:08:46
+[80] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[226] Biber.pm:635> INFO - Found 9 citekeys in bib section 0
+[275] Biber.pm:3051> INFO - Processing section 0
+[316] Biber.pm:3189> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[357] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[358] bibtex.pm:864> INFO - Found BibTeX data source 'build/lit.bib'
+[387] Utils.pm:144> WARN - Name "C.A. Sutherland, E.F. Milner, R.C. Kerby, H.Teindl, A. Melin, H.M. Bolt" has too many commas: skipping name
+[388] Biber.pm:3189> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[447] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[451] bibtex.pm:864> INFO - Found BibTeX data source 'build/programme.bib'
+[456] Utils.pm:144> WARN - I didn't find a database entry for 'NO' (section 0)
+[640] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[640] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[640] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[641] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
+[683] bbl.pm:517> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[685] bbl.pm:606> INFO - Output to build/main.bbl
+[685] Biber.pm:106> INFO - WARNINGS: 2

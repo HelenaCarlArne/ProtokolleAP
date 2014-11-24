@@ -27,7 +27,7 @@ Es ergeben sich dadurch die Werte für die Bestimmung der Wärmekapazität in Ta
 
 Gemäß der Formel \eqref{c_Dewar}
 und mit dem Literaturwert\cite{NO} der spezifischen Wärmekapazität von Wasser
-$c_\text{w}=\SI{4.18}{\joule\per\gram\per\kelvin}$ wird die Wärmekapazität des Dewargefäßes zu
+$c_\text{w}=\SI{4.18}{\joule\per\gram\per\kelvin}$\cite{V201} wird die Wärmekapazität des Dewargefäßes zu
 \begin{equation}
 	c_\mathup{g}m_\mathup{g}=\SI{218.02}{\joule\per\kelvin}
 	\label{wert:waerme_dewar}
@@ -99,13 +99,13 @@ mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die 
 		\midrule
 		{Blei}	&0.286	&0.129	&121.71\\
 				&0.330	&0.129	&155.81\\
-				&0.296	&0.129	&129.46\\
+		 		&0.296	&0.129	&129.46\\
 		{Blei, gemittelt}	&$0.31\pm0.08$	&0.129	&$140.31\pm 37.98$\\
 		{Graphit}&1.249 &0.715& 74.69\\
 		{Kupfer}&1.413	&0.381	& 270.87\\
 		\bottomrule
 	\end{tabular}
-	\caption{Abweichung der spezifischen Wärme von der Literatur\cite{SpeziWaerme}.}
+	\caption{Abweichung der spezifischen Wärme von der Literatur. \cite{waermekapazitaetkupfer} \cite{waermekapazitaetblei}}
 	\label{tab:compare}
 \end{table}
 \begin{table}[htbp]
@@ -122,12 +122,8 @@ mit $x\in\{c_\mathup{k},C_\mathup{p},C_\mathup{V}\}$ ergeben sich für Blei die 
 	\label{tab:failz}
 \end{table}
 Die Abweichungen der spezifischen Wärmekapazitäten der Proben von den Literaturwerten sind in Tabelle \ref{tab:compare} aufgetragen.
-Nach Kapitel \ref{sec:Theorie} werden die ermittelten Molwärmen $C_\mathup{V}$ bei konstantem Volumen mit dem Wert
-\begin{equation}
-	C_\mathup{V} = 3\cdot \mathup{R}
-\end{equation}
-verglichen, der durch das Dulong--Petit-Gesetz vorausgesagt wird.
-Die Abweichungen vom erwarteten Wert sind in Tabelle \ref{tab:failz} aufgetragen. 
+Nach Kapitel \ref{sec:Theorie} werden die ermittelten Molwärmen $C_\mathup{V}$ bei konstantem Volumen mit dem nach dem Dulong-Petit-Gesetz in Gleichung \eqref{eq:dulong-petit} erwarteten Wert verglichen.
+Die Abweichungen sind in Tabelle \ref{tab:failz} aufgetragen. 
 
 Die Unsicherheiten in den Werten von Graphit und Kupfer stammen nur von der Unsicherheit in der Gaskonstante $\mathup{R}$. 
 Die Größenordnung der Unsicherheiten ist $10^{-4}\%$ und damit vernachlässigbar klein.
