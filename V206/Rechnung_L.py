@@ -25,20 +25,20 @@ errors = np.sqrt(np.diag(covariance))
 # print('a =', params[0], '±', errors[0])
 # print('b =', params[1], '±', errors[1])
 
-_T_plot = np.linspace(0.00339616, 0.00308499)
+_T_plot = np.linspace(0.00305, 0.00340)
 
 
 plt.plot(_T_plot, f(_T_plot, *params), 'b-', label='linearer Fit')
 plt.legend(loc="best")
-plt.plot(_T,p,'r.', label='$ln(p_b)$')
+plt.plot(_T,p,'r.', label='ln($p_b$)')
 
 print('ln(p_b)',p)
 print('Kehrwert der Temperatur',_T)
-plt.xlabel('1/T / s')
-plt.ylabel(r'$ln(p_b) / bar$')
+plt.xlabel('1/$T$ / s')
+plt.ylabel(r'ln($p_b) / bar$')
 plt.title('Dampfdruckkurve')
 plt.legend(loc='best')
-#plt.show()
+plt.show()
 
 
 L=143.9134164

@@ -24,7 +24,7 @@ params1, covariance1 = curve_fit(f, t, T_1)
 #Parameter der Funktion 1
 errors1 = np.sqrt(np.diag(covariance1))
 
-t_plot = np.linspace(0, 1140) 				
+t_plot = np.linspace(0, 1200) 				
 
 #Temperatur1 plotten
 plt.plot(t, T_1, 'r.', label='Temperatur 1')
@@ -49,12 +49,12 @@ errors2 = np.sqrt(np.diag(covariance2))
 #Temperatur2 plotten
 plt.plot(t, T_2, 'b.', label='Temperatur 2')
 plt.plot(t_plot, i(t_plot, *params2), 'b-', label='nicht-linearer Fit')
-plt.xlabel('Zeit t /s')
-plt.ylabel('Temperatur T /K')
+plt.xlabel('Zeit $t$ /s')
+plt.ylabel('Temperatur $T$ /K')
 
 #Plotten
 plt.legend(loc='best')
-#plt.show()
+plt.show()
 
 
 ###Berechne dT/dt für 4 verschiedene zeiten

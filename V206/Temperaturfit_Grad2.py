@@ -26,7 +26,7 @@ print('b =',params[1],'+/-',errors[1],'K/s^2')
 print('c =',params[2],'+/-',errors[2],'K/s')
 
 print('')
-t_plot = np.linspace(0, 1140) 				### wahlweise 19 ;)
+t_plot = np.linspace(0, 1200) 				### wahlweise 19 ;)
 
 #Temperatur1 plotten
 plt.plot(t, T_1, 'r.', label='Temperatur 1')
@@ -53,8 +53,8 @@ print('')
 #Temperatur2 plotten
 plt.plot(t, T_2, 'b.', label='Temperatur 2')
 plt.plot(t_plot, i(t_plot, *params), 'b-', label='nicht-linearer Fit')
-plt.xlabel('Zeit t /s')
-plt.ylabel('Temperatur T /K')
+plt.xlabel('Zeit $t$ /s')
+plt.ylabel('Temperatur $T$ /K')
 #Plotten
 plt.legend(loc='best')
 plt.show()

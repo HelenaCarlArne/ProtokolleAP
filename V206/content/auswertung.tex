@@ -68,13 +68,14 @@ Die Näherung beschreibt die Messwerte wesentlich besser (vgl. Abbildung 2, 3).
 
 Es ergeben sich für $T_1(t)$ und $T_2(t)$ die Koeffizienten 
 \begin{align}
-	A_1&=(-1.72\pm0.18)10⁻⁸\si{\kelvin\per{\second}³}  & A_2&=(3.39\pm0.25)10⁻⁸\si{\kelvin\per{\second}³}\\
-	B_1&=(2.82\pm0.31)10⁻⁵\si{\kelvin\per{\second}²}  & B_2&=(-5.30\pm0.43)10⁻⁵\si{\kelvin\per{\second}²}\\
-	C_1&=(0.0162\pm0.0015)\si{\kelvin\per{\second}}  & C_2&=(-0.0033\pm0.0021)\si{\kelvin\per{\second}}\\
-	D_1&=(294.11\pm0.19)\si{\kelvin}  & D_2&=(294.98\pm0.27)\si{\kelvin}.
+	A_1&=(-1.72\pm0.18)10⁻⁸\,\si{\kelvin\per{\second}³}  & A_2&=(3.39\pm0.25)10⁻⁸\,\si{\kelvin\per{\second}³}\\
+	B_1&=(2.82\pm0.31)10⁻⁵\,\si{\kelvin\per{\second}²}  & B_2&=(-5.30\pm0.43)10⁻⁵\,\si{\kelvin\per{\second}²}\\
+	C_1&=(0.0162\pm0.0015)\,\si{\kelvin\per{\second}}  & C_2&=(-0.0033\pm0.0021)\,\si{\kelvin\per{\second}}\\
+	D_1&=(294.11\pm0.19)\,\si{\kelvin}  & D_2&=(294.98\pm0.27)\,\si{\kelvin}.
 \end{align}
 
-\noindent Um den Differentialquotionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ für verschiedene Zeiten $t_k$ mit $k=1,...,4$ bestimmen zu können, wird die Funktion $T_i(t)$ nach der Zeit $t$ abgeleitet und die Fehler der Gradienten mittels Gaußscher Fehlerfortpflanzung berechnet.
+Um den Differentialquotionenten $\frac{\mathup{d}T_i}{\mathup{d}t}$ mit $i=1,2$ für verschiedene Zeiten $t_k$ mit \\
+$k= 1,...,4$ bestimmen zu können, wird die Funktion $T_i(t)$ nach der Zeit $t$ abgeleitet und die Fehler der Gradienten mittels Gaußscher Fehlerfortpflanzung berechnet.
 \begin{equation}
 	\frac{\mathup{d}T_i}{\mathup{d}t}= 3A_it²+2B_it+C_i.
 	\label{ableitung}
@@ -91,21 +92,22 @@ Es ergeben sich für $T_1(t)$ und $T_2(t)$ die Koeffizienten
 	\multicolumn{1}{c}{Zeit} & \multicolumn{2}{c}{Differentialquotienten} \\
 	{$t/\:\si{\second}$} & {$\frac{\mathup{d}T_1}{\mathup{d}t}/\:\si{\kelvin{\per\second}}$} & {$\frac{\mathup{d}T_2}{\mathup{d}t}/\:\si{\kelvin{\per\second}}$}\\
 	\midrule
- 120 & 0.022 $\pm$ 0.002   & -0.015 $\pm$ 0.002  \\
- 480 & 0.032 $\pm$ 0.004   & -0.031 $\pm$ 0.005  \\
- 840 & 0.027 $\pm$ 0.007   & -0.021 $\pm$ 0.009  \\
- 960 & 0.023 $\pm$ 0.008   & -0.011 $\pm$ 0.011  \\
+ 120 & 0.022 \pm 0.002   & -0.015 \pm 0.002  \\
+ 480 & 0.032 \pm 0.004   & -0.031 \pm 0.005  \\
+ 840 & 0.027 \pm 0.007   & -0.021 \pm 0.009  \\
+ 960 & 0.023 \pm 0.008   & -0.011 \pm 0.011  \\
 	\bottomrule
 	\end{tabular}
 	\caption{Die Differentialqutienten von $T_1$ und $T_2$ zu vier verschiedenen Zeiten $t_k$, berechnet nach Gleichung \eqref{ableitung}.}
 	\label{tab:differentialquotienten}
 \end{table}
 
+
 \newpage
 \subsection{Bestimmung der Güteziffer}
 Die reale Güteziffer $\nu$ wird mit Hilfe der Messreihe $T_1$ über \eqref{waermemenge/zeitintervall} berechnet.
 Die Konstanten $c_\mathup{w}=4.183\cdot 10⁻³\:\si{\joule\per{\kelvin\kilo\gram}}$\cite{waermekapazitaet} und $m_\mathup{k}c_\mathup{k}=660\:\si{\joule\per\kelvin}$ sind die Wärmekapazitäten des verwendeten Wassers und der kupfernen Spirale.
-Die Gesamtkapazität bei $3\si\liter$ Wasservolumen ist $m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k}=13209\:\si{\joule\per\kelvin}$.
+Die Gesamtkapazität bei 3\,l Wasservolumen ist $m_1c_\mathup{w}+m_\mathup{k}c_\mathup{k}=13209\:\si{\joule\per\kelvin}$.
 
 Die Fehlerangaben der werden berechnet mit
 \begin{equation}
@@ -129,10 +131,10 @@ Die ideale Güteziffer $\nu_\mathup{ideal}$ wird zum Vergleich nach Gleichung \e
 	{Zeit} & \multicolumn{2}{c}{Güteziffern} \\
 	{$t/\:\si{\second}$} & {$\nu_\mathup{real}$} & {$\nu_\mathup{ideal}$} \\
 	\midrule
- 120 & 0.873 $\pm$ 0.081   & 164.528  \\
- 480 & 1.252 $\pm$ 0.159   &  13.822 \\
- 840 & 1.057 $\pm$ 0.275   &   7.485 \\
- 960 & 0.900 $\pm$ 0.314   &   6.816 \\
+ 120 & 0.873 \pm 0.081   & 164.528  \\
+ 480 & 1.252 \pm 0.159   &  13.822 \\
+ 840 & 1.057 \pm 0.275   &   7.485 \\
+ 960 & 0.900 \pm 0.314   &   6.816 \\
 	\bottomrule
 	\end{tabular}
 	\caption{Die realen und idealen Güteziffern zu vier verschiedenen Zeiten $t_k$ im Vergleich.}
@@ -178,16 +180,16 @@ Dem Reservoir wird durch das verdampfende Gas die Wärmemenge $Q_2$ entzogen.
 Dabei wird die Verdampfungswärme $L$ verbraucht, welches über die Dampfdruckkurve des verwendeten Gases Dichlordifluormethan bestimmt wird. 
 Wie in der Versuchsanleitung V203 beschrieben, wird der Druck $p_\mathup{b}$ gegen den Kehrwert der Temperatur $T_1$ aufgetragen.
 Da die Manometer den Außendruck von $1\si{\bar}$ nicht berücksichtigen, muss dieser zuvor noch zu den Messwerten addiert werden, wie in Tabelle \ref{tab:massendurchsaetze} geschehen. 
-Mit linearer Regression werden anschließend Steigung $m$ und y-Achsenabschnitt $b$ der Gerade bestimmt. 
+Mit linearer Regression werden anschließend Steigung $\mu$ und y-Achsenabschnitt $b$ der Gerade bestimmt. 
 \begin{equation}
-	\ln{(p_\mathup{b})}=m \frac{1}{T}+b=-\frac{L}{R}\frac{1}{T}+b
+	\ln{(p_\mathup{b})}=\mu \frac{1}{T}+b=-\frac{L}{R}\frac{1}{T}+b
 \end{equation}
 $R$ ist die allgemeine Gaskonstante.
 
-Die Steigung ist $m=-(2.093\pm0.050)10³\si\kelvin$, der Achsenabschnitt $b=(9.080\pm0.163)$.
-Damit L die Einheit $\si{\joule\per{\kilo\gram}}$ besitzt, wird durch die molare Masse $M=120.9\si{\gram\per\mol}$ des Gases dividiert. 
-Der Fehler der allgemeinen Gaskonstante $R=(8.314\pm 9.1\cdot10⁻⁷)\si{\joule\per{\mol\kelvin}}$ wird dabei vernachlässigt, der Fehler von L entspricht also dem Fehler von $m$.
-Daraus ergibt sich $L=\frac{\lvert m\rvert R}{M}=143.913\pm0.050 \cdot10³\si{\joule\per\gram}$.
+Die Steigung ist $\mu=-(2.093\pm0.050)10³\,\si\kelvin$, der Achsenabschnitt $b=(9.080\pm0.163)$.
+Damit L die Einheit $\si{\joule\per{\kilo\gram}}$ besitzt, wird durch die molare Masse $M=120.9\,\si{\gram\per\mol}$ des Gases dividiert. 
+Der Fehler der allgemeinen Gaskonstante $\text{R}=(8.314\pm 9.1\cdot10⁻⁷)\,\si{\joule\per{\mol\kelvin}}$ wird dabei vernachlässigt, der Fehler von L entspricht also dem Fehler von $\mu$.
+Daraus ergibt sich $L=\frac{\lvert \mu\rvert \text{R}}{M}=143.913\pm0.050 \cdot10³\,\si{\joule\per\gram}$.
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{Bilder/Dampfdruckkurve.png}
@@ -207,10 +209,10 @@ Der Fehler wird ebenfalls nach Gauß berechnet mit dem Fehler der Verdampfungsw�
 	\multicolumn{1}{c}{Zeit} & \multicolumn{1}{c}{Massendurchsatz} \\
 	{$t/\:\si{\second}$} & {$\frac{\Delta{m}}{\Delta{t}}/\:\si{\gram\per\second}$} \\
 	\midrule
- 120 & 1.377\pm 0.512\\
- 480 & 2.845\pm 1.090\\
- 840 & 1.927 \pm 1.063\\
-1080 & 1.010\pm 1.069  \\
+ 120 & 1.4\pm 0.5\\
+ 480 & 3\pm 1\\
+ 840 & 2 \pm 1\\
+1080 & 1\pm 1 \\
 	\bottomrule
 	\end{tabular}
 	\caption{Massendurchsätze zu verschiedenen Zeiten.}
@@ -227,12 +229,12 @@ Die Dichte des Transportmediums kann über Gleichung \eqref{eq:transportmediumdi
 	\begin{tabular}{S S c S S}
 	\toprule
 	{Zeit} & {Dichte} & \multicolumn{2}{c}{Kompressorleistungen} & {Wirkungsgrad}\\
-	{$t/\:\si{\second}$} & {$\rho/\:\si{\kilo\gram\per{\cubic\meter}}$} & {$N_\mathup{m.}/\:\si\watt$} & {$N_\mathup{el.}/\:\si\watt$}\\
+	{$t/\:\si{\second}$} & {$\rho/\:\si{\kilo\gram\per{\cubic\meter}}$} & {$N_\mathup{m.}/\:\si\watt$} & {$N_\mathup{el.}/\:\si\watt$}& {\eta}\\
 	\midrule
- 120 & 13.294 & 24.879\pm  9.250 & 175 & 0.142\\
- 480 & 16.920 & 54.950\pm 21.053 & 205 & 0.268 \\
- 840 & 17.517 & 42.773\pm 23.595 & 210 & 0.204\\
- 960 & 17.619 & 25.993\pm 25.993 & 210 & 0.124\\
+ 120 & 13.294 & $25\pm  9.$ & 175 & 0.142\\
+ 480 & 16.920 & $55\pm 20$ & 205 & 0.268 \\
+ 840 & 17.517 & $43\pm 20$ & 210 & 0.204\\
+ 960 & 17.619 & $26\pm 30$ & 210 & 0.124\\
 	\bottomrule
 	\end{tabular}
 	\caption{Elektrische und mechanische Kompressorleistung im Vergleich.}
