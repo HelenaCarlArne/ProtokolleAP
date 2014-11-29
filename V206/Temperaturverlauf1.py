@@ -22,5 +22,5 @@ plt.title('Temperaturverlauf')
 plt.legend(loc='best')
 plt.show()
 
-#plt.savefig('Temperaturverlauf.pdf')
+#plt.savefig('Bilder/Temperaturverlauf.pdf')
 

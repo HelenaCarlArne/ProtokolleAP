@@ -1,3 +1,70 @@
+\newpage
 \section{Auswertung}
 \label{sec:Auswertung}
-\blindtext
+\subsection{Bestimmung von Leerlaufspannung und Innenwiderstand}
+In Tabelle \ref{tab:MZ} sind Klemmenspannung $U_\mathup{k}$ und Belastungstrom $I$ der Monozelle bei Gleich- und Gegenspannung, gemessen bei variablem Belastungswiderstand $R_\mathup{a}$, aufgetragen. Tabelle \ref{tab:Recht_Sin} enthält die Daten der Messung mit Rechteck- und Sinusspannungsquelle.
+\input{Tabellen/MZ.tex}
+\input{Tabellen/Recht_Sin.tex}
+
+Trägt man die Messewerte der Spannung $U_\mathup{k}$ gegen den Strom $I$ auf, können Innenwiderstand $R_\mathup{i}$ und Leerlaufspannung $U_0$ durch eine lineare Regressionsrechnung bestimmt werden. 
+\begin{figure}[h]
+	\centering
+	\label{fig:MZ}
+	\includegraphics[width=\textwidth]{content/plot_MZ.pdf}
+	\caption{Messwerte und Regression von Messung an der Monozelle mit und ohne Gegenspannung.}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\label{fig:Recht}
+	\includegraphics[width=\textwidth]{content/plot_Recht.pdf}
+	\caption{Messwerte und Regression bei Messung mit Recheckspannungsqulle.}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\label{fig:Sin}
+	\includegraphics[width=\textwidth]{content/plot_Sin.pdf}
+	\caption{Messwerte und Regression bei Messung mit Sinusspannungsquelle.}
+\end{figure}
+
+Es ergeben sich die Geradengleichungen mit berechneten Koeffizienten
+
+\begin{align}
+U_\mathup{k}=&(-5.27\pm0.06)\,\si{\ohm}\cdot I+(1.473\pm0.008)\,\si{\volt} &\text{Monozelle}\\
+U_\mathup{k}=&(5.36\pm0.10)\,\si{\ohm}\cdot I+(1.650\pm0.018)\,\si{\volt} &\text{Gegenspannung}\\
+U_\mathup{k}=&((-58\pm1)\,\si{\ohm}\cdot I+(0.3189\pm0.0024)\,\si{\volt} &\text{Rechteckspannung}\\
+U_ \mathup{k}=&(-420\pm60)\,\si{\ohm}\cdot I +(0.455\pm0.018)\,\si{\volt} &\text{Sinusspannung}.
+\end{align}
+Daraus können die in Tabelle \ref{tab:Ergebnisse} aufgetragenen Innenwiderstände und Leerlaufspannungen abgelesen werden. Aufgrund der zweifachen Messung mit der Monozelle kann ein Mittelwert der Werte gebildet werden.
+\input{Tabellen/U_R_Ergebnisse.tex}
+\newpage
+Die direkte Messung über das Voltmeter ergibt eine Leerlaufspannung $U_0=1,5\,\si{\volt}$. Bei einem Eingangswiderstand $R_\mathup{V}=\SI{10}{\mega\ohm}$ ergibt sich der Fehler von $U_0=(8.2992\cdot10⁻⁷)\,\si{\volt}$ durch
+\begin{equation}
+\Delta{U_0}=\frac{R_\mathup{i}U_\mathup{k}}{R_\mathup{V}}.
+\end{equation}
+
+Schaltet man das Amperemeter hinter das Voltmeter misst man dieses mit wegen dem Innenwiderstand. Jow.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%neue Subsection%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{Leistung}
+
+Die am Belastungswiderstand $R_\mathup{a}=\frac{U_\mathup{k}}{I}$ umgesetzte Leistung $N$ der Monozelle bei Gleichspannung kann gegen diesen aufgetragen werden. Abbildung zeigt die Messpunkte mit durch die Unsicherheit bedingten Fehlerbalken, sowie die errechnete Theoriekurve, die sich aus den zuvor berechneten werden $R_\mathup{i}$ und $U_0$ ergibt. 
+
+Mit den fehlerbehafteten Größen $U_\mathup{k}$ und $I$ ergeben sich mit der Gausschen Fehlerfortpflanzung die Fehler
+\begin{equation}
+\Delta{R_\mathup{a}}=\frac{U_\mathup{k}}{I}
+\sqrt{\biggl(\frac{\Delta{U_\mathup{k}}}{U_\mathup{k}}\biggr)²+\biggl(\frac{\Delta{I}}{I}\biggr)²}
+\end{equation}
+und
+\begin{equation}
+\Delta{N}=U_\mathup{k}I\sqrt{\biggl(\frac{\Delta{U_\mathup{k}}}{U_\mathup{k}}\biggr)²+\biggl(\frac{\Delta{I}}{I}\biggr)²}.
+\end{equation}
+\begin{figure}[h]
+	\centering
+	\label{fig:N}
+	\includegraphics[width=\textwidth]{content/plot_L.pdf}
+	\caption{Messwerte mit Fehlerbalken und Theoriekurve der am Belastungswiderstand abfallenden Leistung.}
+\end{figure}
+
+Alle Messpunkte liegen trotz abgebildeter Standartabweichung in ungefähr gleicher Entfernung unter der Theoriekurve. Daraus kann auf einen systematischen Fehler geschlossen werden.
