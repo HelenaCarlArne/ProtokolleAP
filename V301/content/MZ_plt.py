@@ -56,7 +56,7 @@ plt.ylabel(r'$U_{\mathrm{K}} / \mathrm{V}$')
 plt.legend(loc = "best")
 plt.tight_layout()
 plt.savefig("plot_MZ.pdf")
-#plt.show()
+plt.show()
 plt.close()
 
 print('Monozelle')
