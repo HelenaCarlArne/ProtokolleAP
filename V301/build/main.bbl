@@ -19,6 +19,26 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
+    \entry{V301}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
+      \field{labeltitle}{Versuch V301: Leerlaufspannung und Innenwiderstand von Spannungsquellen}
+      \field{title}{Versuch V301: Leerlaufspannung und Innenwiderstand von Spannungsquellen}
+      \field{urlday}{01}
+      \field{urlmonth}{12}
+      \field{urlyear}{2014}
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V301.pdf
+      \endverb
+    \endentry
     \entry{matplotlib}{article}{}
       \name{labelname}{1}{}{%
         {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%

@@ -6,24 +6,26 @@ In Tabelle \ref{tab:MZ} sind Klemmenspannung $U_\mathup{k}$ und Belastungstrom $
 \input{Tabellen/MZ.tex}
 \input{Tabellen/Recht_Sin.tex}
 
-Werden die Messewerte der Spannung $U_\mathup{k}$ gegen die Stromstärke $I$ aufgetragen und eine lineare Ausgleichsrechnung ausgeführt,  können Innenwiderstand $R_\mathup{i}$ und Leerlaufspannung $U_0$ der verwendeten Spannungsquellen bestimmt werden.Die verwendeten Volt- und Ampèremeter besitzen eine in der weiteren Auswertung berücksichtigte  Unsicherheit von 3\%. Abbildung \ref{fig:MZ} zeigt Messwerte mit Fehlerbalken und Regressionsgeraden der Messung an der Monozelle mit Gleich- und Gegenspannung; Abbildung \ref{fig:Recht} und \ref{fig:Sin} stellen Messpunkte und Ausgleichsgeraden der Rechteck- und Sinusspannung dar.
+Werden die Messewerte der Spannung $U_\mathup{k}$ gegen die Stromstärke $I$ aufgetragen und eine lineare Ausgleichsrechnung ausgeführt,  können Innenwiderstand $R_\mathup{i}$ und Leerlaufspannung $U_0$ der verwendeten Spannungsquellen bestimmt werden.
+Die verwendeten Volt- und Amperemeter besitzen eine in der weiteren Auswertung berücksichtigte  Unsicherheit von 3\%. Abbildung \ref{fig:MZ} zeigt Messwerte mit Fehlerbalken und Regressionsgeraden der Messung an der Monozelle mit Gleich- und Gegenspannung; Abbildung \ref{fig:Recht} und \ref{fig:Sin} stellen Messpunkte und Ausgleichsgeraden der Rechteck- und Sinusspannung dar.
 \begin{figure}[h]
 	\centering
-	\label{fig:MZ}
 	\includegraphics[width=\textwidth]{content/plot_MZ.pdf}
 	\caption{Messwerte und Regression der Messung an der Monozelle mit und ohne Gegenspannung.}
+\label{fig:MZ}
 \end{figure}
 \begin{figure}[h]
 	\centering
 	\label{fig:Recht}
 	\includegraphics[width=\textwidth]{content/plot_Recht.pdf}
 	\caption{Messwerte und Regression der Messung mit Rechteckspannungsqulle.}
+\label{fig:Recht}
 \end{figure}
 \begin{figure}[h]
 	\centering
-	\label{fig:Sin}
 	\includegraphics[width=\textwidth]{content/plot_Sin.pdf}
 	\caption{Messwerte und Regression bei Messung mit Sinusspannungsquelle.}
+	\label{fig:Sin}
 \end{figure}
 
 Es ergeben sich die Geradengleichungen mit berechneten Koeffizienten
@@ -31,18 +33,18 @@ Es ergeben sich die Geradengleichungen mit berechneten Koeffizienten
 \begin{align}
 U_\mathup{k}=&(-5.27\pm0.06)\,\si{\ohm}\cdot I+(1.473\pm0.008)\,\si{\volt} &\text{Monozelle},\\
 U_\mathup{k}=&(5.36\pm0.10)\,\si{\ohm}\cdot I+(1.650\pm0.018)\,\si{\volt} &\text{Gegenspannung},\\
-U_\mathup{k}=&((-58\pm1)\,\si{\ohm}\cdot I+(0.3189\pm0.0024)\,\si{\volt} &\text{Rechteckspannung},\\
+U_\mathup{k}=&(-58\pm1)\,\si{\ohm}\cdot I+(0.3189\pm0.0024)\,\si{\volt} &\text{Rechteckspannung},\\
 U_ \mathup{k}=&(-420\pm60)\,\si{\ohm}\cdot I +(0.455\pm0.018)\,\si{\volt} &\text{Sinusspannung}.
 \end{align}
 Daraus können nach Gleichung \eqref{eq:Klemmspannung} die in Tabelle \ref{tab:Ergebnisse} aufgetragenen Innenwiderstände und Leerlaufspannungen abgelesen werden. Dabei ist zu beachten, dass wegen der verwendeten Gegenspannung während der Messung an der Monozelle der Strom ein negatives Vorzeichen aufweist, da dieser in die entgegengesetzte Richtung fließt. Aufgrund der zweifachen Messung mit der Monozelle kann für diese das Mittel der Werte gebildet werden. 
 \input{Tabellen/U_R_Ergebnisse.tex}
 \newpage
-Die direkte Messung über das Voltmeter ergibt eine Leerlaufspannung $U_0=1.5\pm0.05\,\si{\volt}$, welche nur geringfügig vom Mittelwert in Tabelle \ref{tab:Ergebnisse} abweicht. Bei einem endlichen Eingangswiderstand $R_\mathup{V}=\SI{10}{\mega\ohm}$ des Voltmeters ergibt sich der systematische Fehler von $U_0=(8.2992\cdot10⁻⁷)\,\si{\volt}$ durch
+Die direkte Messung über das Voltmeter ergibt eine Leerlaufspannung \\$U_0=(1.5\pm0.05)\,\si{\volt}$, welche nur geringfügig vom Mittelwert in Tabelle \ref{tab:Ergebnisse} abweicht. Bei einem endlichen Eingangswiderstand $R_\mathup{V}=\SI{10}{\mega\ohm}$ des Voltmeters ergibt sich der systematische Fehler von $U_0=(8.2992\cdot10⁻⁷)\,\si{\volt}$ durch
 \begin{equation}
 \Delta{U_0}=\frac{R_\mathup{i}U_\mathup{k}}{R_\mathup{V}}.
 \end{equation}
 
-Bei dem Aufbau der Schaltung muss sorgsam darauf geachtet werden, dass das Voltmeter vor das Ampèremeter geschaltet wird, damit tatsächlich die Spannung $U_\mathup{k}$ gemessen werden kann. Geschieht dies nicht, beeinflusst der Innenwiderstand des Ampèremeters die Messung.
+Bei dem Aufbau der Schaltung muss sorgsam darauf geachtet werden, dass das Voltmeter vor das Amperemeter geschaltet wird, damit tatsächlich die Spannung $U_\mathup{k}$ gemessen werden kann. Geschieht dies nicht, beeinflusst der Innenwiderstand des Amperemeters die Messung.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%neue Subsection%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,9 +65,9 @@ und
 \end{equation}
 \begin{figure}[h]
 	\centering
-	\label{fig:N}
 	\includegraphics[width=\textwidth]{content/plot_L.pdf}
 	\caption{Messwerte mit Fehlerbalken und Theoriekurve der am Belastungswiderstand abfallenden Leistung.}
+\label{fig:N}
 \end{figure}
 
 Alle Messpunkte liegen trotz abgebildeter Standardabweichung in ungefähr gleicher Entfernung unter der Theoriekurve. Daraus kann auf einen systematischen Fehler geschlossen werden.
