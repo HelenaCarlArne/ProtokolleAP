@@ -10,32 +10,23 @@ Die Leerlaufspannung wird mit einem Voltmeter bestimmt.\
 Hierzu wird zwischen Spannungsquelle und Messgerät kein Verbraucher geschaltet.
 \begin{figure}
 	\centering
-	\includegraphics[width=3cm]{Bilder/Leerlauf.pdf}
+	\includegraphics[width=3cm]{Bilder/Abbildung2.pdf}
 	\caption{Schaltung zur Messung der Leerlaufspannung.\cite{V301}}
 	\label{fig:leerlauf}
 \end{figure}
 
 Anschließend wird die Spannung an den Klemmen $U_\text{k}$ sowie der Strom $I$ durch einen Verbraucher variablen Widerstandes $R$ mit Volt- bzw. Amperemetern gemessen.
-Die Schaltung wird in Abbildung \ref{fig:ri} gezeigt.
+Die Schaltung wird in Abbildung \ref{fig:ri} (links) gezeigt.
 Nach Schließen des Stromkreises werden die Werte von den Messgeräten abgelesen, der Widerstand $R$ variiert und die Messung wiederholt, sodass insgesamt 10 Messwertpaare aufgenommen werden.
 Der Widerstand ist von 0-50\,\si{\ohm} zu wählen.
 Die Schaltung wird im Weiteren durch eine weitere, ideale Spannungsquelle erweitert.
-Diese wird gemäß Schaltskizze \ref{fig:rimgu} so eingebaut, dass der Strom in umgekehrter Richtung als in Schaltung \ref{fig:ri} fließt.
+Diese wird gemäß Schaltskizze \ref{fig:ri} (rechts) so eingebaut, dass der Strom in umgekehrter Richtung als zuvor fließt.
 Analog werden nach Einschwingen der Messgeräte die Klemmenspannung $U_\text{k}$ und der Strom $I$ aufgenommen, der Widerstand $R$ variiert und der Vorgang widerholt, bis 10 Messwertpaare aufgenommen werden.
 \begin{figure}
-	\begin{subfigure}{0.5\textwidth}
 	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/Messung1.pdf}
-	\caption{Schaltung ohne Gegenspannungsmethode.}
-	\label{fig:ri}
-	\end{subfigure}
-	\begin{subfigure}{0.5\textwidth}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/Messung2.pdf}
-	\caption{Schaltung mit Gegenspannungsmethode.}
-	\label{fig:rimgu}
-	\end{subfigure}
-	\caption{Schaltung zur Messung des Innenwiderstandes.\cite{V301}}
+	\includegraphics[width=0.8\textwidth]{Bilder/Abbildung3.pdf}
+	\caption{Schaltungen zur Messung des Innenwiderstandes.\cite{V301}}
+\label{fig:ri}
 \end{figure}
 
 \subsection{Messung an einem Funktionsgenerator}
