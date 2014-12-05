@@ -38,7 +38,7 @@ cgmg=218.02000000000015
 cw=4.18
 Mpb=207.2
 Mcu=63.5
-Mc=120
+Mc=12
 
 #
 # Berechnung
@@ -73,10 +73,10 @@ a5=ufloat(np.mean([25.9,25.2,24.5]),sem([25.9,25.2,24.5]))
 print(warmth(a1,a2,a3,a4,a5))
 print("")
 print("Graphit")
-print(warmth(544,107.23,22.5,83.3,25.6))
+print(warmth(544,107.23,295.65,356.45,298.75))
 print("")
 print("Kupfer")
-print(warmth(562,139.77,22.1,82.3,26.4))
+print(warmth(562,237.95,295.25,355.45,299.55))
 print("")
 print("")
 print("")
@@ -88,16 +88,11 @@ print(warmth(574,385.55,23.5,82.9,25.9)*Mpb)
 print(warmth(537,385.55,21.8,91.0,25.2)*Mpb)
 print(warmth(583,385.55,22.3,75.7,24.5)*Mpb)
 print("")
-# analog zur Bem. bei Blei oben
-a1=ufloat(np.mean([574,537,583]),sem([574,537,583]))
-a2=385.55
-a3=ufloat(np.mean([23.5,21.8,22.3]),sem([23.5,21.8,22.3]))
-a4=ufloat(np.mean([82.9,91.0,75.7]),sem([82.9,91.0,75.7]))
-a5=ufloat(np.mean([25.9,25.2,24.5]),sem([25.9,25.2,24.5]))
-print(warmth(a1,a2,a3,a4,a5)*Mpb)
+print(np.mean([warmth(574,385.55,23.5,82.9,25.9)*Mpb,warmth(537,385.55,21.8,91.0,25.2)*Mpb,warmth(583,385.55,22.3,75.7,24.5)*Mpb]))
+print(sem([warmth(574,385.55,23.5,82.9,25.9)*Mpb,warmth(537,385.55,21.8,91.0,25.2)*Mpb,warmth(583,385.55,22.3,75.7,24.5)*Mpb]))
 print("")
 print("Graphit")
-print(warmth(544,107.23,22.5,83.3,25.6)*Mc)
+print(warmth(544,107.23,295.65,356.45,298.75)*Mc)
 print("")
 print("Kupfer")
 print(warmth(562,139.77,22.1,82.3,26.4)*Mcu)
@@ -142,3 +137,5 @@ print((cm-3*R)/(3*R))
 print("")
 print("Kupfer")
 print((cum-3*R)/(3*R))
+
+
