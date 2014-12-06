@@ -23,4 +23,7 @@ Blei		583	385.55  22.3	75.7	24.5
 
 Graphit		544	107.23	22.5	83.3	25.6
 
-Kupfer		562 	139.77	22.1	82.3	26.4
+Kupfer		562 	#139.77#22.1	82.3	26.4
+
+Der markierte Wert der Tabelle ist fehlerhaft. 
+Wahrer Wert ist m_k=237,95g

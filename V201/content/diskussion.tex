@@ -2,47 +2,13 @@
 \label{sec:Diskussion}
 \subsection{Messfehler und Unsicherheiten}
 Der Versuch ist sehr anfällig gegenüber ungewollter Abkühlung und Beeinflussung durch die Versuchssituation.
-Dies ist in der Abweichung der spezifischen Wärmekapazitäten in Tabelle \ref{tab:compare} von den Literaturwerten sichtbar.
-
+Dies ist in der Abweichung der spezifischen Wärmekapazitäten in Tabelle \ref{tab:compare} von den Literaturwerten sichtbar.\
 Zur Optimierung des Versuches muss um den Einfluss der Raumtemperatur auf die Messwerte Sorge getragen werden.
 
 \subsection{Abweichungen von dem Dulong--Petit-Gesetz}
 Die in Tabelle \ref{tab:failz} aufgetragenen Abweichungen der ermittelten Molwärmen von den Vorhersagen des Dulong--Petit-Gesetzes nach Gleichung \eqref{eq:dulong-petit} zeigen, dass die reale Molwärme nicht durch $C_\text{V}=3\text{R}$ beschrieben werden kann. 
-Insbesondere das "quantenmechanisch interessante" Material Graphit zeigt eine starke Abweichung von der Vorhersage.
 Es zeigt die Grenzen des Dulong--Petit-Gesetzes experimentell auf.
 
-\subsection{Grenzen des Dulong--Petit-Gesetzes}
-% Dies habe ich nicht recht verstanden.
-% Bitte kontrollieren! :)
-Die Molwärmen der meisten Elemente bei Raumtemperatur $T=20\si{\celsius}$ sind konstant.
-Im Kontrast ist für Atome mit geringem Atomgewicht wie Beryllium oder Bor die Konstanz der Molwärme erst bei höheren Temperaturen $T\approx{1000\si{\celsius}}$ sichtbar. 
-Weiter verschwindet für sehr geringe Temperaturen die Molwärme.
-
-Die klassische Physik nimmt an, dass die Energieaufnahme und -abgabe kontinuierlich geschieht.
-Die Quantentheorie revidiert diese Annahme: 
-schwingt ein Oszillator mit der Frequenz $\omega$, so werden nur Energiepakete, sogenannte Quanten, der Größe $\Delta{U}=n \hbar \omega$ mit $n\in\mathbb{N} $ abgegeben.
-Die mittlere innere Energie aller Atome ist nicht mehr proportional zur Temperatur $T$ und es ergibt sich eine komplizierte Abhängigkeit indem das Integral über die Auftrittswahrscheinlichkeit der verschiedenen Energiepakete, die Boltzmannverteilung, gebildet und mit deren Wert multipliziert wird:
-\begin{equation}
-	{\bar{U}=\hbar\omega(\exp(\frac{\hbar\omega}{kT-1})})⁻¹,
-	\label{energie}
-\end{equation}
-die Energie dargestellt als geometrische Reihe.
-% Dies habe ich nicht recht verstanden.
-% Bitte kontrollieren! :)
-Damit ist
-\begin{equation}
-	\tilde{{\bar{U}}}=3N_\mathup{L}\bar{U}
-\end{equation}
-und in Gleichung \eqref{eq:molwaerme} eingesetzt ergibt sich, analog zur klassischen Mechanik,    
-\begin{equation}
-	C_\mathup{V}=\frac{3N_\mathup{L}\bar{U}}{\mathup{d}T}.
-	\label{quanten}
-\end{equation}
-Für den Fall geringer Temperaturen gilt für quantenmechanische Überlegungen in Gleichung \eqref{quanten} $C_\mathup{V}=0$. 
-Wird die Exponential-Funktion \eqref{energie} mit einer Taylorreihe entwickelt, nähert sich ihr Wert für große Temperaturen entsprechend dem Dulong--Petit-Gesetz der Konstanten $C_\mathup{V}=3\text{R}$.
-
-Dies zeigt, dass das Dulong--Petit-Gesetz für extrem hohe Temperaturen einer geeigneten Näherung entspricht und der quantisierte Energieaustausch durch einen kontinuierlichen Austausch dargestellt werden kann. 
-Dies ist dann der Fall, wenn $\hbar\omega<<kT$ ist. 
-Für geringe Atomgewichte gilt die Näherung erst für entsprechend große Temperaturen, weil die Frequenz $\omega\sim\frac{1}{\sqrt{m}}$ ist.
-
-
+Nach Abschnitt \ref{sec:TheorieGrenze} beschreibt das Dulong--Petit-Gesetz bei Elementen mit großer Molmasse die Molwärme $C_\text{V}$ bereits bei Raumtemperatur und für Elemente mit kleiner Molmasse erst für hohe Temperaturen, etwa $\SI{1000}{\degreeCelsius}$, gut. 
+Dies kann mit diesem Versuch nicht bestätigt werden;
+die Temperaturen, die für diesen Effekt erforderlich sind, sind wesentlich größer als die im Versuch auftretenden Temperaturen.
