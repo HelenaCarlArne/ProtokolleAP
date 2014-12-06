@@ -1,6 +1,13 @@
 \newpage
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Verstärkung eines gestörten Signales}
+%Der erste Teil der verwendeten Maschine, der Funktionsgenerator, hat einen Ausgang für Spannung, 
+%die in Amplitude, Spannungsform und Frequenz angepasst werden kann, und einen Ausgang, 
+%der parallel zum ersten Ausgang die gleiche Spannungsform und Frequenz bei konstanter Amplitude liefert.
+Die Amplitude bei Sinus-förmiger Wechselspannung ist an beiden Ausgängen \SI{0}{\volt}.
+%Weiter wird das Messsignal über einen Verstärker verstärkt und mithilfe eines Bandpasses gefiltert, während das Referenzsignal in einen Phasenwandler geleitet wird.
+%Beide Signale werden anschließend in dem Lock-In-Detektor gemischt und
 \begin{table}
 	\centering
 	\begin{tabular}{c S[table-format=1.2]S[table-format=1.2]}
@@ -23,6 +30,26 @@
 	\caption{Ausgangsspannung des gegebenen Signals.}
 	\label{tab:spannung}
 \end{table}
+Die Spannungen, die der den Tiefpass, das letzte Bauelement des Lock-In-Verstärkers, verlassen, sind in Tabelle \ref{tab:spannung} aufgetragen. 
+Die angegebene Phase ist die eingestellte Phase des Phasenschiebers.
+Diese Spannungen werden in Diagramm \ref{diag:spannung} gegen die eingestellte Phase aufgetragen; 
+es zeigt sich, dass die Beziehung \eqref{cosinus_ausgangsspannung} durch die Datenpunkte verifiziert wird, es aber zu einem festen Phasenversatz $\alpha$ von $\alpha=\pi$ kommt.
+Dieser Phasenversatz $\alpha$ ist bei dem Verfahren mit gestörtem Signal nicht existent.
+Das Diagramm \ref{diag:stoerung} zeigt die Beziehung \eqref{cosinus_ausgangsspannung} deutlich.
+\begin{figure}[hp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/AusgangSpannung.pdf}
+	\caption{Ausgangsspannung des Lock-In-Verstärkers bei Sinus-förmigen Eingang mit $U = \SI{0}{\volt}$ und $f = \SI{300}{\hertz}$.}
+	\label{diag:spannung}
+\end{figure}
+
+\begin{figure}[hp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/AusgangStoerung.pdf}
+	\caption{Ausgangsspannung des Lock-In-Verstärkers bei gestörtem Signal.}
+	\label{diag:stoerung}
+\end{figure}
+
 \begin{figure}[htbp]
 	\begin{subfigure}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{Bilder/MAP002.pdf}
@@ -33,6 +60,7 @@
 	\caption{Das Signal mit Störungen zu zwei verschiedenen Zeiten.}
 	\label{fig:stoerung}
 \end{figure}
+\subsection{Verstärkung des LED-Signales}
 \begin{table}
 	\centering
 	\begin{tabular}{c S[table-format=1.2] l c}
@@ -64,4 +92,11 @@
 \end{table}
 Bei einem messbaren Signal geht die Ausgangsspannung auf Null zurück, wenn die LED abgedeckt wird.
 Bei einem Abstand von $\SI{1.20}{\meter}$ ist keine messbare Ausgangsspannung messbar, 
-die angegebene Ausgangsspannung zeigt beim Abdecken der LED keine wesentliche Ändderung.
+die angegebene Ausgangsspannung zeigt beim Abdecken der LED keine wesentliche Änderung.
+
+\begin{figure}[hp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/LED.pdf}
+	\caption{Ausgangsspannung des Lock-In-Verstärkers bei gestörtem Signal.}
+	\label{diag:LED}
+\end{figure}
