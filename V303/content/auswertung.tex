@@ -1,11 +1,12 @@
 \newpage
 \section{Auswertung}
 \label{sec:Auswertung}
-\subsection{Verstärkung eines gestörten Signales}
+\subsection{Verstärkung eines gestörten Sinus-Signales}
+\label{sec:Auswertung1}
 %Der erste Teil der verwendeten Maschine, der Funktionsgenerator, hat einen Ausgang für Spannung, 
 %die in Amplitude, Spannungsform und Frequenz angepasst werden kann, und einen Ausgang, 
 %der parallel zum ersten Ausgang die gleiche Spannungsform und Frequenz bei konstanter Amplitude liefert.
-Die Amplitude bei Sinus-förmiger Wechselspannung ist an beiden Ausgängen \SI{0}{\volt}.
+Die Amplitude bei Sinus-förmiger Wechselspannung ist an beiden Ausgängen \SI{0}{\volt}, die Frequenz $f$ beträgt $\SI{1}{\hertz}$.
 %Weiter wird das Messsignal über einen Verstärker verstärkt und mithilfe eines Bandpasses gefiltert, während das Referenzsignal in einen Phasenwandler geleitet wird.
 %Beide Signale werden anschließend in dem Lock-In-Detektor gemischt und
 \begin{table}
@@ -30,11 +31,14 @@ Die Amplitude bei Sinus-förmiger Wechselspannung ist an beiden Ausgängen \SI{0
 	\caption{Ausgangsspannung des gegebenen Signals.}
 	\label{tab:spannung}
 \end{table}
-Die Spannungen, die der den Tiefpass, das letzte Bauelement des Lock-In-Verstärkers, verlassen, sind in Tabelle \ref{tab:spannung} aufgetragen. 
+Die Spannungen, die der den Tiefpass und damit den gesamten Lock-In-Verstärker verlassen, sind in Tabelle \ref{tab:spannung} aufgetragen. 
 Die angegebene Phase ist die eingestellte Phase des Phasenschiebers.
 Diese Spannungen werden in Diagramm \ref{diag:spannung} gegen die eingestellte Phase aufgetragen; 
 es zeigt sich, dass die Beziehung \eqref{cosinus_ausgangsspannung} durch die Datenpunkte verifiziert wird, es aber zu einem festen Phasenversatz $\alpha$ von $\alpha=\pi$ kommt.
-Dieser Phasenversatz $\alpha$ ist bei dem Verfahren mit gestörtem Signal nicht existent.
+Dies lässt sich dadurch erklären, dass das Signal eventuell nicht exakt Sinus-förmig, sondern per se eine Phasenverschiebung aufweisen.
+
+Bei dem Verfahren mit gestörtem Signal ist dieser Phasenversatz $\alpha$ nicht existent.
+Die Phasenverschiebung scheint bei dem gestörten Signal nicht aufzutreten.
 Das Diagramm \ref{diag:stoerung} zeigt die Beziehung \eqref{cosinus_ausgangsspannung} deutlich.
 \begin{figure}[hp]
 	\centering
@@ -50,23 +54,23 @@ Das Diagramm \ref{diag:stoerung} zeigt die Beziehung \eqref{cosinus_ausgangsspan
 	\label{diag:stoerung}
 \end{figure}
 
-\begin{figure}[htbp]
-	\begin{subfigure}{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Bilder/MAP002.pdf}
-	\end{subfigure}
-	\begin{subfigure}{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Bilder/MAP003.pdf}
-	\end{subfigure}
-	\caption{Das Signal mit Störungen zu zwei verschiedenen Zeiten.}
-	\label{fig:stoerung}
-\end{figure}
+% \begin{figure}[htbp]
+% 	\begin{subfigure}{0.45\textwidth}
+% 		\includegraphics[width=\textwidth]{Bilder/MAP002.pdf}
+% 	\end{subfigure}
+% 	\begin{subfigure}{0.45\textwidth}
+% 		\includegraphics[width=\textwidth]{Bilder/MAP003.pdf}
+% 	\end{subfigure}
+% 	\caption{Das Signal mit Störungen zu zwei verschiedenen Zeiten.}
+% 	\label{fig:stoerung}
+% \end{figure}
 \subsection{Verstärkung des LED-Signales}
 \begin{table}
 	\centering
 	\begin{tabular}{c S[table-format=1.2] l c}
 	\toprule
-	{Abstand a $/\si{\meter}$}&{Ausgangsspannung}&\multicolumn{2}{c}{Gesamt-Verstärkung}\\
-	{}&{$\/\si{\volt}$}&{absolut}&{relativ}\\
+	{Abstand a}&{Ausgangsspannung}&\multicolumn{2}{c}{Gesamt-Verstärkung}\\
+	{$[\si{\meter}]$}&{$[\si{\volt}]$}&{absolut}&{relativ}\\
 	\midrule
 		0.02&	-5 		& $400\cdot5$ 	 & 1\\
 		0.05&	-1 		& $400\cdot5$ 	 & 1\\
@@ -90,13 +94,17 @@ Das Diagramm \ref{diag:stoerung} zeigt die Beziehung \eqref{cosinus_ausgangsspan
 	\caption{Ausgangsspannung bei der Messung des LED-Lichtes.}
 	\label{tab:led}
 \end{table}
-Bei einem messbaren Signal geht die Ausgangsspannung auf Null zurück, wenn die LED abgedeckt wird.
-Bei einem Abstand von $\SI{1.20}{\meter}$ ist keine messbare Ausgangsspannung messbar, 
-die angegebene Ausgangsspannung zeigt beim Abdecken der LED keine wesentliche Änderung.
-
-\begin{figure}[hp]
+\begin{figure}[hbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Bilder/LED.pdf}
-	\caption{Ausgangsspannung des Lock-In-Verstärkers bei gestörtem Signal.}
+	\caption{Ausgangsspannung des Lock-In-Verstärkers bei Messung mit der LED.}
 	\label{diag:LED}
 \end{figure}
+Das Signal, das von der Photodiode aufgenommen wird, wandelt der Lock-In-Verstärker in eine reine negative Gleichspannung.
+Im Interesse der Lesbarkeit werden die negativen Spannung unter Berücksichtigung der Gesamt-Verstärkung in Diagramm \ref{diag:LED} aufgetragen.
+Zur Kontrolle, dass die angegebenen Spannungen auf das LED-Signal zurückzuführen sind und nicht von Fremdeinflüssen stammen, wird die LED zeitweise abgedeckt.
+Dabei geht bei einer messbaren Signal die Ausgangsspannung auf Null zurück und nimmt ihren ursprünglichen Wert an, wenn der Lichtweg zwischen LED und Photodiode frei gemacht wird.
+
+Bei einem Abstand von etwa $\SI{1.20}{\meter}$ ist trotz Verstärkung keine Ausgangsspannung messbar, 
+die Ausgangsspannung zeigt beim Abdecken der LED keine wesentliche Änderung.
+
