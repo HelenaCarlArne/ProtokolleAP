@@ -6,26 +6,26 @@
 %Der erste Teil der verwendeten Maschine, der Funktionsgenerator, hat einen Ausgang für Spannung, 
 %die in Amplitude, Spannungsform und Frequenz angepasst werden kann, und einen Ausgang, 
 %der parallel zum ersten Ausgang die gleiche Spannungsform und Frequenz bei konstanter Amplitude liefert.
-Die Amplitude bei Sinus-förmiger Wechselspannung ist an beiden Ausgängen \SI{0}{\volt}, die Frequenz $f$ beträgt $\SI{1}{\hertz}$.
+Die Amplitude bei Sinus-förmiger Wechselspannung ist an beiden Ausgängen \SI{4.63}{\volt}, die Frequenz $f$ beträgt $\SI{1}{\kilo\hertz}$.
 %Weiter wird das Messsignal über einen Verstärker verstärkt und mithilfe eines Bandpasses gefiltert, während das Referenzsignal in einen Phasenwandler geleitet wird.
 %Beide Signale werden anschließend in dem Lock-In-Detektor gemischt und
 \begin{table}
 	\centering
 	\begin{tabular}{c S[table-format=1.2]S[table-format=1.2]}
 	\toprule
-	{Phase}&\multicolumn{2}{c}{Ausgangsspannung in V}\\
+	{Phase}&\multicolumn{2}{c}{Ausgangsspannung $U_0$/[V]}\\
 	&{ohne Störung}&{mit Störung}\\
 	\midrule
-		0°		&-6.00	& 6.00\\
-		45°		&-4.00	& 4.00\\
-		90°		& 0.20	&-0.50\\
-		120°	& 2.62	&-3.00\\
-		135°	& 4.25	&-4.50\\
-		180°	& 5.81	&-6.00\\
-		225°	& 3.95	&-3.50\\
-		270°	& 0.20	& 0.50\\
-		315°	&-4.17	& 4.50\\
-		360°	&-5.83	& 5.50\\
+		0°		&-6.00	&-6.00\\
+		45°		&-4.00	&-4.00\\
+		90°		& 0.20	& 0.50\\
+		120°	& 2.62	& 3.00\\
+		135°	& 4.25	& 4.50\\
+		180°	& 5.81	& 6.00\\
+		225°	& 3.95	& 3.50\\
+		270°	& 0.20	&-0.50\\
+		315°	&-4.17	&-4.50\\
+		360°	&-5.83	&-5.50\\
 	\bottomrule
 	\end{tabular}
 	\caption{Ausgangsspannung des gegebenen Signals.}
@@ -34,16 +34,25 @@ Die Amplitude bei Sinus-förmiger Wechselspannung ist an beiden Ausgängen \SI{0
 Die Spannungen, die der den Tiefpass und damit den gesamten Lock-In-Verstärker verlassen, sind in Tabelle \ref{tab:spannung} aufgetragen. 
 Die angegebene Phase ist die eingestellte Phase des Phasenschiebers.
 Diese Spannungen werden in Diagramm \ref{diag:spannung} gegen die eingestellte Phase aufgetragen; 
-es zeigt sich, dass die Beziehung \eqref{cosinus_ausgangsspannung} durch die Datenpunkte verifiziert wird, es aber zu einem festen Phasenversatz $\alpha$ von $\alpha=\pi$ kommt.
-Dies lässt sich dadurch erklären, dass das Signal eventuell nicht exakt Sinus-förmig, sondern per se eine Phasenverschiebung aufweisen.
-
-Bei dem Verfahren mit gestörtem Signal ist dieser Phasenversatz $\alpha$ nicht existent.
-Die Phasenverschiebung scheint bei dem gestörten Signal nicht aufzutreten.
-Das Diagramm \ref{diag:stoerung} zeigt die Beziehung \eqref{cosinus_ausgangsspannung} deutlich.
+es zeigt sich, dass die Beziehung \eqref{cosinus_ausgangsspannung} durch die Datenpunkte verifiziert wird, es aber zu einem festen Phasenversatz $\alpha$ von $\alpha=180°$ kommt.
+Dies lässt sich dadurch erklären, dass die Ausgänge des Funktionsgenerators eventuell permanent einen Phasenversatz aufweisen.
+\begin{figure}[htb]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{Bilder/MAP002.pdf}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{Bilder/MAP003.pdf}
+	\end{subfigure}
+	\caption{Fotos des Oszillators: das Signal mit Störungen zu zwei verschiedenen Zeiten. \cite{GIMP}}
+	\label{fig:stoerung}
+\end{figure}
+Die Abbildung \ref{fig:stoerung} zeigt das Sinus-förmige Signal mit der überlagerten Störung. 
+Trotz der Abweichungen vom idealen Signal werden die Werte der Messung ohne Störung sehr gut angenähert.
 \begin{figure}[hp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Bilder/AusgangSpannung.pdf}
-	\caption{Ausgangsspannung des Lock-In-Verstärkers bei Sinus-förmigen Eingang mit $U = \SI{0}{\volt}$ und $f = \SI{300}{\hertz}$.}
+	\caption{Ausgangsspannung des Lock-In-Verstärkers bei Sinus-förmigen Eingang mit $U = \SI{4.63}{\volt}$ und $f = \SI{300}{\hertz}$.}
 	\label{diag:spannung}
 \end{figure}
 
@@ -54,22 +63,13 @@ Das Diagramm \ref{diag:stoerung} zeigt die Beziehung \eqref{cosinus_ausgangsspan
 	\label{diag:stoerung}
 \end{figure}
 
-% \begin{figure}[htbp]
-% 	\begin{subfigure}{0.45\textwidth}
-% 		\includegraphics[width=\textwidth]{Bilder/MAP002.pdf}
-% 	\end{subfigure}
-% 	\begin{subfigure}{0.45\textwidth}
-% 		\includegraphics[width=\textwidth]{Bilder/MAP003.pdf}
-% 	\end{subfigure}
-% 	\caption{Das Signal mit Störungen zu zwei verschiedenen Zeiten.}
-% 	\label{fig:stoerung}
-% \end{figure}
+
 \subsection{Verstärkung des LED-Signales}
 \begin{table}
 	\centering
 	\begin{tabular}{c S[table-format=1.2] l c}
 	\toprule
-	{Abstand a}&{Ausgangsspannung}&\multicolumn{2}{c}{Gesamt-Verstärkung}\\
+	{Abstand a}&{Ausgangsspannung $U_0$}&\multicolumn{2}{c}{Gesamt-Verstärkung}\\
 	{$[\si{\meter}]$}&{$[\si{\volt}]$}&{absolut}&{relativ}\\
 	\midrule
 		0.02&	-5 		& $400\cdot5$ 	 & 1\\
@@ -96,7 +96,15 @@ Das Diagramm \ref{diag:stoerung} zeigt die Beziehung \eqref{cosinus_ausgangsspan
 \end{table}
 \begin{figure}[hbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/LED.pdf}
+	\begin{subfigure}{0.8\textwidth}
+		\includegraphics[width=\textwidth]{Bilder/LED.pdf}
+		\caption{Lineare Skalierung.}
+	\end{subfigure}
+	\begin{subfigure}{0.8\textwidth}
+		\includegraphics[width=\textwidth]{Bilder/LED_log.pdf}
+		\caption{Doppelt-logarithmische Skalierung.}
+		\label{diag:LED_log}
+	\end{subfigure}
 	\caption{Ausgangsspannung des Lock-In-Verstärkers bei Messung mit der LED.}
 	\label{diag:LED}
 \end{figure}
@@ -104,7 +112,8 @@ Das Signal, das von der Photodiode aufgenommen wird, wandelt der Lock-In-Verstä
 Im Interesse der Lesbarkeit werden die negativen Spannung unter Berücksichtigung der Gesamt-Verstärkung in Diagramm \ref{diag:LED} aufgetragen.
 Zur Kontrolle, dass die angegebenen Spannungen auf das LED-Signal zurückzuführen sind und nicht von Fremdeinflüssen stammen, wird die LED zeitweise abgedeckt.
 Dabei geht bei einer messbaren Signal die Ausgangsspannung auf Null zurück und nimmt ihren ursprünglichen Wert an, wenn der Lichtweg zwischen LED und Photodiode frei gemacht wird.
+Der näherungsweise lineare Abfall der Spannung bei doppel-logarithmischer Skalierung \eqref{diag:LED_log} zeigt, dass die gemessene Intensität mit $r^{-2}$ abfällt.
 
-Bei einem Abstand von etwa $\SI{1.20}{\meter}$ ist trotz Verstärkung keine Ausgangsspannung messbar, 
+Bei einem Abstand größer als $\SI{1.20}{\meter}$ ist trotz Verstärkung keine Ausgangsspannung zuverlässig messbar, 
 die Ausgangsspannung zeigt beim Abdecken der LED keine wesentliche Änderung.
 
