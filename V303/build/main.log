@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  7 DEC 2014 11:37
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  7 DEC 2014 11:54
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -346,7 +346,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.082 seconds
+luaotfload | main : fontloader loaded in 0.083 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1790,40 +1790,25 @@ luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 File: Bilder/LOCK_IN.pdf Graphic file (type pdf)
  <use Bilder/LOCK_IN.pdf>
 Package pdftex.def Info: Bilder/LOCK_IN.pdf used on input line 14.
-(pdftex.def)             Requested size: 418.25555pt x 127.99544pt.
- [2
-
-<./Bilder/LOCK_IN.pdf>] <Bilder/Beispiel.pdf, id=36, 278.03876pt x 366.36874pt>
+(pdftex.def)             Requested size: 292.7776pt x 89.59732pt.
+ <Bilder/Beispiel.pdf, id=17, 278.03876pt x 366.36874pt>
 File: Bilder/Beispiel.pdf Graphic file (type pdf)
  <use Bilder/Beispiel.pdf>
 Package pdftex.def Info: Bilder/Beispiel.pdf used on input line 32.
-(pdftex.def)             Requested size: 209.12778pt x 275.5697pt.
+(pdftex.def)             Requested size: 167.29967pt x 220.44905pt.
+ [2
 
-
-LaTeX Warning: Reference `fig:bsp' on page 3 undefined on input line 36.
-
-) (./content/durchfuehrung.tex <Bilder/Messung1.pdf, id=37, 686.565pt x 254.9525pt>
+<./Bilder/LOCK_IN.pdf>]) (./content/durchfuehrung.tex <Bilder/Messung1.pdf, id=38, 686.565pt x 254.9525pt>
 File: Bilder/Messung1.pdf Graphic file (type pdf)
  <use Bilder/Messung1.pdf>
 Package pdftex.def Info: Bilder/Messung1.pdf used on input line 6.
-(pdftex.def)             Requested size: 418.25555pt x 155.31459pt.
- [3<./Bilder/Beispiel.pdf>]
-
-LaTeX Warning: Reference `fig:M1' on page 4 undefined on input line 11.
-
-<Bilder/Messung2.pdf, id=52, 683.55376pt x 217.81375pt>
+(pdftex.def)             Requested size: 292.7776pt x 108.721pt.
+ [3<./Bilder/Beispiel.pdf>] <Bilder/Messung2.pdf, id=56, 683.55376pt x 217.81375pt>
 File: Bilder/Messung2.pdf Graphic file (type pdf)
  <use Bilder/Messung2.pdf>
 Package pdftex.def Info: Bilder/Messung2.pdf used on input line 17.
-(pdftex.def)             Requested size: 418.25555pt x 133.2783pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `fig:M2' on page 4 undefined on input line 22.
-
-) (./content/auswertung.tex [4<./Bilder/Messung1.pdf>](load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)
+(pdftex.def)             Requested size: 292.7776pt x 93.2958pt.
+) (./content/auswertung.tex [4<./Bilder/Messung1.pdf><./Bilder/Messung2.pdf>] [5](load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
@@ -1878,35 +1863,26 @@ Overfull \hbox (8.5191pt too wide) detected at line 28
  []
 
 
-LaTeX Warning: Reference `tab:spannung' on page 5 undefined on input line 34.
+LaTeX Warning: Reference `cosinus_ausgangsspannung' on page 6 undefined on input line 37.
 
-
-LaTeX Warning: Reference `diag:spannung' on page 5 undefined on input line 36.
-
-
-LaTeX Warning: Reference `cosinus_ausgangsspannung' on page 5 undefined on input line 37.
-
-<Bilder/MAP002.pdf, id=66, 401.44983pt x 240.86989pt>
+<Bilder/MAP002.pdf, id=85, 401.44983pt x 240.86989pt>
 File: Bilder/MAP002.pdf Graphic file (type pdf)
  <use Bilder/MAP002.pdf>
 Package pdftex.def Info: Bilder/MAP002.pdf used on input line 42.
 (pdftex.def)             Requested size: 204.94751pt x 122.97064pt.
- <Bilder/MAP003.pdf, id=67, 401.5pt x 240.9pt>
+ <Bilder/MAP003.pdf, id=86, 401.5pt x 240.9pt>
 File: Bilder/MAP003.pdf Graphic file (type pdf)
  <use Bilder/MAP003.pdf>
 Package pdftex.def Info: Bilder/MAP003.pdf used on input line 45.
 (pdftex.def)             Requested size: 204.94751pt x 122.97131pt.
 
 
-LaTeX Warning: Citation 'GIMP' on page 5 undefined on input line 47.
+LaTeX Warning: Citation 'GIMP' on page 6 undefined on input line 47.
 
 
-LaTeX Warning: Citation 'GIMP' on page 5 undefined on input line 47.
+LaTeX Warning: Citation 'GIMP' on page 6 undefined on input line 47.
 
-
-LaTeX Warning: Reference `fig:stoerung' on page 5 undefined on input line 50.
-
-<Bilder/AusgangSpannung.pdf, id=68, 578.16pt x 433.62pt>
+<Bilder/AusgangSpannung.pdf, id=88, 578.16pt x 433.62pt>
 File: Bilder/AusgangSpannung.pdf Graphic file (type pdf)
  <use Bilder/AusgangSpannung.pdf>
 Package pdftex.def Info: Bilder/AusgangSpannung.pdf used on input line 54.
@@ -1917,7 +1893,7 @@ LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 55.
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc) <Bilder/AusgangStoerung.pdf, id=69, 578.16pt x 433.62pt>
+luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc) <Bilder/AusgangStoerung.pdf, id=89, 578.16pt x 433.62pt>
 File: Bilder/AusgangStoerung.pdf Graphic file (type pdf)
  <use Bilder/AusgangStoerung.pdf>
 Package pdftex.def Info: Bilder/AusgangStoerung.pdf used on input line 61.
@@ -2007,45 +1983,27 @@ Overfull \hbox (8.5191pt too wide) detected at line 91
  
  []
 
-[5<./Bilder/Messung2.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Bilder/LED.pdf, id=85, 578.16pt x 433.62pt>
+[6<./Bilder/MAP002.pdf><./Bilder/MAP003.pdf>] [7<./Bilder/AusgangSpannung.pdf><./Bilder/AusgangStoerung.pdf>] <Bilder/LED.pdf, id=241, 578.16pt x 433.62pt>
 File: Bilder/LED.pdf Graphic file (type pdf)
  <use Bilder/LED.pdf>
 Package pdftex.def Info: Bilder/LED.pdf used on input line 100.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <Bilder/LED_log.pdf, id=86, 578.16pt x 433.62pt>
+ <Bilder/LED_log.pdf, id=242, 578.16pt x 433.62pt>
 File: Bilder/LED_log.pdf Graphic file (type pdf)
  <use Bilder/LED_log.pdf>
 Package pdftex.def Info: Bilder/LED_log.pdf used on input line 104.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
-
-
-LaTeX Warning: Reference `diag:LED' on page 6 undefined on input line 112.
-
-
-LaTeX Warning: Reference `diag:LED_log' on page 6 undefined on input line 115.
-
-) (./content/diskussion.tex [6<./Bilder/MAP002.pdf><./Bilder/MAP003.pdf>] [7<./Bilder/AusgangSpannung.pdf><./Bilder/AusgangStoerung.pdf>] [8<./Bilder/LED.pdf><./Bilder/LED_log.pdf>]
-
-LaTeX Warning: Reference `tab:spannung' on page 9 undefined on input line 7.
-
-[9]
+) (./content/diskussion.tex [8] [9<./Bilder/LED.pdf><./Bilder/LED_log.pdf>]
 
 LaTeX Warning: Reference `cosinus_ausgangsspannung' on page 10 undefined on input line 21.
-
-
-LaTeX Warning: Reference `sec:Auswertung1' on page 10 undefined on input line 22.
 
 )(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 22.
  (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc)
+)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc) [10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
- [10]
+ [11]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
@@ -2055,8 +2013,8 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: AF8963093FB62D61D2FA5A6B6330BC02;2340
-(rerunfilecheck)             After:  0C9B0489716D99ECF63971053F914B48;9077.
+(rerunfilecheck)             Before: DEB588479E4C0220F3CCB34318E4941A;9113
+(rerunfilecheck)             After:  40E666A30B1C898BABDB12323E98959F;9118.
 
 LaTeX Warning: There were undefined references.
 
@@ -2073,19 +2031,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41100 strings out of 494693
+ 41101 strings out of 494693
  100000,1373583 words of node,token memory allocated
  520 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 8 attribute, 63 glue_spec, 8 attribute_list, 3 action, 1 write nodes
-   avail lists: 1:48,2:6773,3:146,4:1913,5:201,6:2051,7:118,8:24,9:620,10:983,11:519,12:230
+   avail lists: 1:48,2:7094,3:136,4:1888,5:200,6:2397,7:122,8:17,9:606,10:983,11:519,12:230
  43540 multiletter control sequences out of 65536+600000
- 98 fonts using 28354855 bytes
- 70i,14n,104p,974b,2060s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 98 fonts using 28354727 bytes
+ 70i,14n,104p,974b,2640s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (10 pages, 206145 bytes).
+Output written on main.pdf (11 pages, 207243 bytes).
 
-PDF statistics: 461 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
- 38 named destinations out of 1000 (max. 131072)
+PDF statistics: 482 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 131072)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
