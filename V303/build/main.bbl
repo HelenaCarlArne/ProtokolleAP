@@ -19,6 +19,44 @@
 
 \refsection{0}
   \sortlist{entry}{nty}
+    \entry{V303}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{labeltitle}{Versuch V303: Der Lock-In-Verstärker}
+      \field{title}{Versuch V303: Der Lock-In-Verstärker}
+      \field{urlday}{07}
+      \field{urlmonth}{12}
+      \field{urlyear}{2014}
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/LockIn.pdf
+      \endverb
+    \endentry
+    \entry{regensburg}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=9eb6672def9b4f6096d8468f5e053665}{Giglberger}{G\bibinitperiod}{Dr.\bibnamedelimi Stephan}{D\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9eb6672def9b4f6096d8468f5e053665}{Giglberger}{G\bibinitperiod}{Dr.\bibnamedelimi Stephan}{D\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9eb6672def9b4f6096d8468f5e053665}
+      \strng{fullhash}{9eb6672def9b4f6096d8468f5e053665}
+      \field{sortinit}{G}
+      \field{labeltitle}{Anleitung zum Anfängerpraktikum A2, Versuch 5a - Lock-In-Verstärker}
+      \field{title}{Anleitung zum Anfängerpraktikum A2, Versuch 5a - Lock-In-Verstärker}
+      \field{urlday}{07}
+      \field{urlmonth}{12}
+      \field{urlyear}{2014}
+      \verb{url}
+      \verb http://www.physik.uni-regensburg.de/studium/praktika/a2/download/versuch5a.pdf
+      \endverb
+    \endentry
     \entry{matplotlib}{article}{}
       \name{labelname}{1}{}{%
         {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
@@ -42,47 +80,6 @@
       \field{pages}{90\bibrangedash 95}
       \verb{url}
       \verb http://link.aip.org/link/?CSX/9/90/1
-      \endverb
-    \endentry
-    \entry{scipy}{misc}{}
-      \true{morelabelname}
-      \name{labelname}{3}{}{%
-        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \true{moreauthor}
-      \name{author}{3}{}{%
-        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{6161d5ffac903d9c99af53f45c09a00f}
-      \strng{fullhash}{0fc4e01109f422119afc29f3251df541}
-      \field{sortinit}{J}
-      \field{labeltitle}{{SciPy}: Open source scientific tools for {Python}}
-      \field{addendum}{Version 0.14.0}
-      \field{title}{{SciPy}: Open source scientific tools for {Python}}
-      \field{year}{2001}
-      \verb{url}
-      \verb http://www.scipy.org/
-      \endverb
-    \endentry
-    \entry{uncertainties}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{fd5e607cc043da9b40442508c133a26c}
-      \strng{fullhash}{fd5e607cc043da9b40442508c133a26c}
-      \field{sortinit}{L}
-      \field{labeltitle}{Uncertainties: a Python package for calculations with uncertainties}
-      \field{addendum}{Version 2.4.5}
-      \field{title}{Uncertainties: a Python package for calculations with uncertainties}
-      \verb{url}
-      \verb http://pythonhosted.org/uncertainties/
       \endverb
     \endentry
     \entry{numpy}{article}{}
