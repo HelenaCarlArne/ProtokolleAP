@@ -1,7 +1,7 @@
 \section{Zielsetzung}
 
 Versuchsziel ist es, sich mit der Funktionsweise des Lock-In-Verstärkers vertraut zu machen. 
-Außerdem soll für 10 verschiedene Phasen mit und ohne verrauschtes Signal die Funktionsweise verifiziert werden. 
+Außerdem soll für 10 verschiedene Phasen mit und ohne Störung die Funktionsweise verifiziert werden. 
 Zuletzt soll die Rauschunterdrückung mit einer Photodetektorschaltung überprüft werden.
 
 \section{Theorie}
@@ -17,14 +17,14 @@ Das zu messende Eingangssignal $U_\mathup{sig}$ durchläuft im Gerät verschiede
 		\label{fig:lockin}
 	\end{figure}
 
-Nach der Verstärkung durch den \enquote{Pre-Amplifier} durchläuft das Signal zunächst einen \enquote{Bandpassfilter}, der das Rauschen minimiert. 
+Nach der Verstärkung durch den \emph{Pre-Amplifier} durchläuft das Signal zunächst einen \emph{Bandpassfilter}, der das Rauschen minimiert. 
 Alle Frequenzen $\omega<<\omega_0$ und $\omega>>\omega_0$ werden grob herausgefiltert.
-Ein \enquote{Funktionsgenerator} erzeugt die Referenzspannung $U_\mathup{ref}$ -- eine Sinus- oder Rechteckspannung der Frequenz $\omega_0$ -- , welche über den \enquote{Phasenschieber} an die Phase des Eingangssignals angepasst werden kann. 
+Ein \emph{Funktionsgenerator} erzeugt die Referenzspannung $U_\mathup{ref}$ -- eine Sinus- oder Rechteckspannung der Frequenz $\omega_0$ -- , welche über den \emph{Phasenschieber} an die Phase des Eingangssignals angepasst werden kann. 
 Dieser Vorgang nennt sich Synchronisation.
-Im \enquote{Mischer} treffen beide Signale aufeinander und werden multipliziert. 
-Anschließend wird das Mischsignal $U_\mathup{sig}\times U_\mathup{ref}$ an den \enquote{Tiefpass} weitergeleitet, der die Modulationsfrequenz $\omega_0$ über mehrere Perioden integriert, um restliche Rauschanteile $\omega\neq\omega_0$ auszuschließen. 
+Im \emph{Mischer} treffen beide Signale aufeinander und werden multipliziert. 
+Anschließend wird das Mischsignal $U_\mathup{sig}\times U_\mathup{ref}$ an den \emph{Tiefpass} weitergeleitet, der die Modulationsfrequenz $\omega_0$ über mehrere Perioden integriert, um restliche Rauschanteile $\omega\neq\omega_0$ auszuschließen. 
 Zurück bleiben nur die Anteile der Signalsspannung $U_\mathup{sig}$, die mit der Referenzspannung synchronisiert werden konnten.
-Um eine möglichst geringe Bandbreite $\Delta{\nu}=\frac{1}{\pi RC}$ zu erhalten, sollte die Zeitkonstante $\uptau=RC$ des \enquote{Tiefpasses} ausreichend groß gewählt werden. 
+Um eine möglichst geringe Bandbreite $\Delta{\nu}=\frac{1}{\pi RC}$ zu erhalten, sollte die Zeitkonstante $\uptau=RC$ des \emph{Tiefpasses} ausreichend groß gewählt werden. 
 Damit wird eine hohe Güteziffer im Bezug auf Störungsfilterung erzielt.
 
 Die Ausgangsspannung $U_\mathup{out}$ ist eine Gleichspannung, welche proportional zur Eingangsspannung $U_\mathup{sig}$ und zum Cosinus der Phasendifferenz $\Delta\Phi$ ist:
@@ -32,7 +32,7 @@ Die Ausgangsspannung $U_\mathup{out}$ ist eine Gleichspannung, welche proportion
  	U_\mathup{out}\propto{U_\text{sig}}\text{cos}(\Delta\Phi). 
  	\label{cosinus_ausgangsspannung}
  \end{equation} 
-$U_\mathup{out}$ wird also maximal, wenn die Phasendifferenz $\Delta\Phi=0$ (wahlweise Vielfache von 180°) beträgt. \cite{regensburg}
+$U_\mathup{out}$ wird also maximal, wenn die Phasendifferenz $\Delta\Phi=0°$ (wahlweise Vielfache von 180°) beträgt. \cite{regensburg}
 %Quellenangabe http://www.physik.uni-regensburg.de/studium/praktika/a2/download/versuch5a.pdf
 
 \begin{figure}
@@ -41,8 +41,8 @@ $U_\mathup{out}$ wird also maximal, wenn die Phasendifferenz $\Delta\Phi=0$ (wah
 		\caption{Überlagerung eines sinusförmigen Eingangssignals mit rechteckiger Referenzsspannung. \cite{V303}}
 		\label{fig:bsp}
 	\end{figure}
-Wird beispielsweise ein sinusförmiges Eingangssignal $U_\mathup{sig}=U_0sin(\omega t)$ wie in Abbildug \ref{fig:bsp} mit einem rechteckigen Referenzsignal $U_\mathup{ref}$ gleicher Frequenz überlagert, wird diese zunächst durch eine Fourierreihe angenähert, welche aus den ungeraden Harmonischen der Grundfrequenz besteht. 
-Wird das multiplizierte Signal,  bestehend aus geraden Oberwellen der Frequenz $\omega$ durch den als Gleichrichter funktionierenden Tiefpass geleitet ergibt sich die Gleichspannung
+Wird beispielsweise ein sinusförmiges Eingangssignal $U_\mathup{sig}=U_0\text{sin}(\omega t)$ wie in Abbildung \ref{fig:bsp} mit einem rechteckigen Referenzsignal $U_\mathup{ref}$ gleicher Frequenz gefaltet, wird diese zunächst durch eine Fourierreihe angenähert, welche aus den ungeraden Harmonischen der Grundfrequenz besteht. 
+Wird das multiplizierte Signal,  bestehend aus geraden Oberwellen der Frequenz $\omega$, durch den als Gleichrichter funktionierenden Tiefpass geleitet, ergibt sich die Gleichspannung
 \begin{equation}
 	U_\mathup{out}=\frac{2}{\pi}U_0\text{cos}(\Phi).
 \end{equation}

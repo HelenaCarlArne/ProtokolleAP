@@ -7,7 +7,7 @@
 %die in Amplitude, Spannungsform und Frequenz angepasst werden kann, und einen Ausgang, 
 %der parallel zum ersten Ausgang die gleiche Spannungsform und Frequenz bei konstanter Amplitude liefert.
 Der Effektivwert bei Sinus-förmiger Wechselspannung ist an beiden Ausgängen \SI{4.63}{\volt}, die Frequenz $f$ beträgt $\SI{1}{\kilo\hertz}$.
-Mit $U_\text{eff}=sqrt{2}U_0$ für Sinusschwingungen ergibt sich eine Amplitude von etwa \SI{6.55}{\volt}.
+Mit $U_\text{eff}=\sqrt{2}U_0$ für Sinusschwingungen ergibt sich eine Amplitude von etwa \SI{6.55}{\volt}.
 %Weiter wird das Messsignal über einen Verstärker verstärkt und mithilfe eines Bandpasses gefiltert, während das Referenzsignal in einen Phasenwandler geleitet wird.
 %Beide Signale werden anschließend in dem Lock-In-Detektor gemischt und
 \begin{table}
@@ -32,7 +32,7 @@ Mit $U_\text{eff}=sqrt{2}U_0$ für Sinusschwingungen ergibt sich eine Amplitude 
 	\caption{Ausgangsspannung des gegebenen Signals.}
 	\label{tab:spannung}
 \end{table}
-Die Spannungen, die der den Tiefpass und damit den gesamten Lock-In-Verstärker verlassen, sind in Tabelle \ref{tab:spannung} aufgetragen. 
+Die Spannungen, die den Tiefpass und damit den gesamten Lock-In-Verstärker verlassen, sind in Tabelle \ref{tab:spannung} aufgetragen. 
 Die angegebene Phase ist die eingestellte Phase des Phasenschiebers.
 Diese Spannungen werden in Diagramm \ref{diag:spannung} gegen die eingestellte Phase aufgetragen; 
 es zeigt sich, dass die Beziehung \eqref{cosinus_ausgangsspannung} durch die Datenpunkte verifiziert wird, es aber zu einem festen Phasenversatz $\alpha$ von $\alpha=180°$ kommt.
@@ -115,7 +115,7 @@ Bei der Einstellung 0° wird eine maximale, negative Spannung erwartet und den e
 Das Signal, das von der Photodiode aufgenommen wird, wandelt der Lock-In-Verstärker dementsprechend in eine reine negative Gleichspannung.
 Im Interesse der Lesbarkeit werden die negativen Spannung unter Berücksichtigung der Gesamt-Verstärkung in Diagramm \ref{diag:LED} aufgetragen.
 Zur Kontrolle, dass die angegebenen Spannungen auf das LED-Signal zurückzuführen sind und nicht von Fremdeinflüssen stammen, wird die LED zeitweise abgedeckt.
-Dabei geht bei einer messbaren Signal die Ausgangsspannung auf Null zurück und nimmt ihren ursprünglichen Wert an, wenn der Lichtweg zwischen LED und Photodiode frei gemacht wird.
+Dabei geht bei einem messbaren Signal die Ausgangsspannung auf Null zurück und nimmt ihren ursprünglichen Wert an, wenn der Lichtweg zwischen LED und Photodiode frei gemacht wird.
 Der näherungsweise lineare Abfall der Spannung bei doppel-logarithmischer Skalierung \eqref{diag:LED_log} zeigt, dass die gemessene Intensität mit $r^{-\alpha}$ mit $\alpha \in \mathbb{R}$ abfällt.
 
 Bei einem Abstand größer als $\SI{1.20}{\meter}$ ist trotz Verstärkung keine Ausgangsspannung zuverlässig messbar, 

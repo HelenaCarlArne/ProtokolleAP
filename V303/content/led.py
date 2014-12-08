@@ -50,8 +50,14 @@ ynoise=np.array([
 
 def f(x, a):
 	return a*np.cos(x/180*np.pi)
-xplot = np.linspace(0,360)
 
+def exp(x, b, c):
+	return b*x**(-c)
+
+def lin(x, d, e):
+	return d*x+e
+
+xplot = np.linspace(0.001,360)
 #Ohne Störung
 plt.xlabel(r"Phase [°]")
 plt.ylabel(r"Spannung [V]")
@@ -76,24 +82,31 @@ plt.plot(phase,-ynoise,"bx",label="Messdaten")
 plt.legend(loc="lower center")
 plt.tight_layout
 plt.savefig("../Bilder/AusgangStoerung.pdf")
-plt.close()
+plt.show()
 
 #LED
 plt.ylim(-1,5)
+plt.xlim(0,1.4)
 plt.xlabel(r"Abstand [m]")
 plt.ylabel(r"Negative Spannung [V]")
+#params,covar = curve_fit(exp,xled,-yled, p0=[1,-2])
+#plt.plot(xplot, exp(xplot, *params),"b",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
+#print(*params)
 plt.plot(xled,-yled,"bx",label="Messdaten")
 plt.legend(loc="best")
 plt.tight_layout
-plt.savefig("../Bilder/LED.pdf")
-plt.close()
+#plt.savefig("../Bilder/LED.pdf")
+plt.show()
 
 plt.xlabel(r"Abstand [m]")
 plt.ylabel(r"Negative Spannung [V]")
 plt.yscale("log")
 plt.xscale("log")
+#params,covar = curve_fit(exp,xled,-yled, p0=[1,-2])
+#plt.plot(xplot, exp(xplot, *params),"b",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
+#print(*params)
 plt.plot(xled,-yled,"bx",label="Messdaten")
 plt.legend(loc="best")
 plt.tight_layout
-plt.savefig("../Bilder/LED_log.pdf")
-plt.close()
+#plt.savefig("../Bilder/LED_log.pdf")
+plt.show()
