@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.3 $
+% $ biblatex bbl format version 2.4 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \sortlist{entry}{nty}
+  \sortlist{nty}{nty}
     \entry{V303}{manual}{}
       \name{labelname}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
@@ -29,6 +29,7 @@
       \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
       \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
       \field{sortinit}{D}
+      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
       \field{labeltitle}{Versuch V303: Der Lock-In-Verstärker}
       \field{title}{Versuch V303: Der Lock-In-Verstärker}
       \field{urlday}{07}
@@ -48,6 +49,7 @@
       \strng{namehash}{9eb6672def9b4f6096d8468f5e053665}
       \strng{fullhash}{9eb6672def9b4f6096d8468f5e053665}
       \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
       \field{labeltitle}{Anleitung zum Anfängerpraktikum A2, Versuch 5a - Lock-In-Verstärker}
       \field{title}{Anleitung zum Anfängerpraktikum A2, Versuch 5a - Lock-In-Verstärker}
       \field{urlday}{07}
@@ -70,6 +72,7 @@
       \strng{namehash}{945db4bbb079217b43c830150ebb3811}
       \strng{fullhash}{945db4bbb079217b43c830150ebb3811}
       \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
       \field{labeltitle}{Matplotlib: A 2D Graphics Environment}
       \field{addendum}{Version 1.3.1}
       \field{journaltitle}{Computing in Science and Engineering}
@@ -95,6 +98,7 @@
       \strng{namehash}{00f2976ade6b1d16d78161a1f190716c}
       \strng{fullhash}{00f2976ade6b1d16d78161a1f190716c}
       \field{sortinit}{O}
+      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
       \field{labeltitle}{Python for Scientific Computing}
       \field{addendum}{Version 1.8.1}
       \field{journaltitle}{Computing in Science and Engineering}
@@ -117,6 +121,7 @@
       \strng{namehash}{eff56c5d323af803bc67f548d1618fb3}
       \strng{fullhash}{eff56c5d323af803bc67f548d1618fb3}
       \field{sortinit}{T}
+      \field{sortinithash}{9378dd666f3c24d81538df53aa99e23d}
       \field{labeltitle}{GIMP: GNU Image Manipulation Program}
       \field{addendum}{Version 2.8.10}
       \field{title}{GIMP: GNU Image Manipulation Program}

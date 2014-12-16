@@ -68,7 +68,7 @@ plt.plot(xplot, f(xplot, params),"k",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
 plt.plot(phase,yvolt,"bx",label="Messdaten")
 plt.legend(loc="lower center")
 plt.tight_layout
-plt.savefig("../Bilder/AusgangSpannung.pdf")
+#plt.savefig("../Bilder/AusgangSpannung.pdf")
 plt.close()
 
 #Mit Störung
@@ -81,7 +81,7 @@ plt.plot(xplot, f(xplot, params),"k",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
 plt.plot(phase,-ynoise,"bx",label="Messdaten")
 plt.legend(loc="lower center")
 plt.tight_layout
-plt.savefig("../Bilder/AusgangStoerung.pdf")
+#plt.savefig("../Bilder/AusgangStoerung.pdf")
 plt.show()
 
 #LED
@@ -89,24 +89,24 @@ plt.ylim(-1,5)
 plt.xlim(0,1.4)
 plt.xlabel(r"Abstand [m]")
 plt.ylabel(r"Negative Spannung [V]")
-#params,covar = curve_fit(exp,xled,-yled, p0=[1,-2])
+params,covar = curve_fit(exp,xled,-yled, p0=[1,-2])
 #plt.plot(xplot, exp(xplot, *params),"b",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
 #print(*params)
 plt.plot(xled,-yled,"bx",label="Messdaten")
 plt.legend(loc="best")
 plt.tight_layout
-#plt.savefig("../Bilder/LED.pdf")
+plt.savefig("../Bilder/LED.pdf")
 plt.show()
 
 plt.xlabel(r"Abstand [m]")
 plt.ylabel(r"Negative Spannung [V]")
 plt.yscale("log")
 plt.xscale("log")
-#params,covar = curve_fit(exp,xled,-yled, p0=[1,-2])
+params,covar = curve_fit(exp,xled,-yled, p0=[1,-2])
 #plt.plot(xplot, exp(xplot, *params),"b",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
 #print(*params)
 plt.plot(xled,-yled,"bx",label="Messdaten")
 plt.legend(loc="best")
 plt.tight_layout
-#plt.savefig("../Bilder/LED_log.pdf")
+plt.savefig("../Bilder/LED_log.pdf")
 plt.show()
