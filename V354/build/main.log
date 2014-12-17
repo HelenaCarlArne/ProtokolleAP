@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  17 DEC 2014 18:25
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  17 DEC 2014 18:33
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -346,7 +346,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.086 seconds
+luaotfload | main : fontloader loaded in 0.082 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1830,14 +1830,19 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [1
 
-{/home/helena/.local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./content/theorie.tex) (./content/durchfuehrung.tex) (./content/auswertung.tex [2
+{/home/helena/.local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./content/theorie.tex) (./content/durchfuehrung.tex [2
 
-] <build/plot_schwingungskurve.pdf, id=22, 578.16pt x 433.62pt>
+]
+Overfull \hbox (5.80867pt too wide) in paragraph at lines 7--8
+\EU2/lmr/m/n/10.95 Un-er-freu-li-che Mas-sen-be-gräb-nis-se. Ver-wanz-te Ma-trat-zen. Wa-den-krampf-för-dern-de Be-leuch-
+ []
+
+) (./content/auswertung.tex [3] <build/plot_schwingungskurve.pdf, id=27, 578.16pt x 433.62pt>
 File: build/plot_schwingungskurve.pdf Graphic file (type pdf)
  <use build/plot_schwingungskurve.pdf>
 Package pdftex.def Info: build/plot_schwingungskurve.pdf used on input line 24.
 (pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
- <build/plot_einhuellende_semilog.pdf, id=23, 578.16pt x 433.62pt>
+ <build/plot_einhuellende_semilog.pdf, id=28, 578.16pt x 433.62pt>
 File: build/plot_einhuellende_semilog.pdf Graphic file (type pdf)
  <use build/plot_einhuellende_semilog.pdf>
 Package pdftex.def Info: build/plot_einhuellende_semilog.pdf used on input line 31.
@@ -1913,7 +1918,7 @@ Overfull \hbox (8.5191pt too wide) detected at line 52
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/Aperiodischer.JPG, id=24, 642.4pt x 481.8pt>
+<Bilder/Aperiodischer.JPG, id=29, 642.4pt x 481.8pt>
 File: Bilder/Aperiodischer.JPG Graphic file (type jpg)
  <use Bilder/Aperiodischer.JPG>
 Package pdftex.def Info: Bilder/Aperiodischer.JPG used on input line 63.
@@ -1922,7 +1927,7 @@ Package pdftex.def Info: Bilder/Aperiodischer.JPG used on input line 63.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/Schwingfall.JPG, id=25, 642.4pt x 481.8pt>
+<Bilder/Schwingfall.JPG, id=30, 642.4pt x 481.8pt>
 File: Bilder/Schwingfall.JPG Graphic file (type jpg)
  <use Bilder/Schwingfall.JPG>
 Package pdftex.def Info: Bilder/Schwingfall.JPG used on input line 70.
@@ -1931,7 +1936,7 @@ Package pdftex.def Info: Bilder/Schwingfall.JPG used on input line 70.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/Kriechfall1.JPG, id=26, 642.4pt x 481.8pt>
+<Bilder/Kriechfall1.JPG, id=31, 642.4pt x 481.8pt>
 File: Bilder/Kriechfall1.JPG Graphic file (type jpg)
  <use Bilder/Kriechfall1.JPG>
 Package pdftex.def Info: Bilder/Kriechfall1.JPG used on input line 76.
@@ -2073,13 +2078,13 @@ Overfull \hbox (8.5191pt too wide) detected at line 149
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./content/diskussion.tex [3<./build/plot_schwingungskurve.pdf>] [4<./build/plot_einhuellende_semilog.pdf>] [5<./Bilder/Aperiodischer.JPG><./Bilder/Schwingfall.JPG><./Bilder/Kriechfall1.JPG>] [6])(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
+) (./content/diskussion.tex [4<./build/plot_schwingungskurve.pdf>] [5<./build/plot_einhuellende_semilog.pdf>] [6<./Bilder/Aperiodischer.JPG><./Bilder/Schwingfall.JPG><./Bilder/Kriechfall1.JPG>] [7])(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 22.
  (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [7
+ [8
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
@@ -2087,25 +2092,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 479D5062356C5B7A1C62139D23DB6DE2;7136.
+(rerunfilecheck)             Checksum: 5026C834DBE7865D5A98653BC3E492B6;7136.
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40957 strings out of 494693
+ 40958 strings out of 494693
  100000,1373583 words of node,token memory allocated
- 476 words of node memory still in use:
+ 489 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 2 kern, 7 attribute, 63 glue_spec, 7 attribute_list, 3 action, 1 write nodes
-   avail lists: 1:48,2:8617,3:145,4:4494,5:493,6:1636,7:132,8:17,9:2239,10:985,11:520,12:230
+   avail lists: 1:48,2:8617,3:146,4:4493,5:493,6:2336,7:132,8:17,9:2239,10:985,11:520,12:230
  43493 multiletter control sequences out of 65536+600000
- 88 fonts using 27557163 bytes
+ 88 fonts using 27557559 bytes
  70i,21n,104p,974b,2060s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (7 pages, 322190 bytes).
+Output written on main.pdf (8 pages, 328635 bytes).
 
-PDF statistics: 284 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 131072)
+PDF statistics: 288 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 131072)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
