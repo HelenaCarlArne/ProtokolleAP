@@ -1,0 +1,26 @@
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  17 DEC 2014 09:32
+ restricted \write18 enabled.
+**auswertung.tex
+(./auswertung.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+! Undefined control sequence.
+l.2 \section
+          {Auswertung}
+? x
+
+
+Here is how much of LuaTeX's memory you used:
+ 7 strings out of 494693
+ 100000,89155 words of node,token memory allocated 188 words of node memory still in use:
+   31 glue_spec, 1 dir nodes
+   avail lists: 2:12,3:1,4:1
+ 3848 multiletter control sequences out of 65536+600000
+ 14 fonts using 562767 bytes
+ 5i,0n,1p,38b,8s stack positions out of 5000i,500n,10000p,200000b,100000s
+No pages of output.
+
+PDF statistics: 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -19,46 +19,6 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
-    \entry{V303}{manual}{}
-      \name{labelname}{1}{}{%
-        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
-      \field{sortinit}{D}
-      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
-      \field{labeltitle}{Versuch V303: Der Lock-In-Verstärker}
-      \field{title}{Versuch V303: Der Lock-In-Verstärker}
-      \field{urlday}{07}
-      \field{urlmonth}{12}
-      \field{urlyear}{2014}
-      \verb{url}
-      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/LockIn.pdf
-      \endverb
-    \endentry
-    \entry{regensburg}{manual}{}
-      \name{labelname}{1}{}{%
-        {{hash=9eb6672def9b4f6096d8468f5e053665}{Giglberger}{G\bibinitperiod}{Dr.\bibnamedelimi Stephan}{D\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=9eb6672def9b4f6096d8468f5e053665}{Giglberger}{G\bibinitperiod}{Dr.\bibnamedelimi Stephan}{D\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{9eb6672def9b4f6096d8468f5e053665}
-      \strng{fullhash}{9eb6672def9b4f6096d8468f5e053665}
-      \field{sortinit}{G}
-      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
-      \field{labeltitle}{Anleitung zum Anfängerpraktikum A2, Versuch 5a - Lock-In-Verstärker}
-      \field{title}{Anleitung zum Anfängerpraktikum A2, Versuch 5a - Lock-In-Verstärker}
-      \field{urlday}{07}
-      \field{urlmonth}{12}
-      \field{urlyear}{2014}
-      \verb{url}
-      \verb http://www.physik.uni-regensburg.de/studium/praktika/a2/download/versuch5a.pdf
-      \endverb
-    \endentry
     \entry{matplotlib}{article}{}
       \name{labelname}{1}{}{%
         {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
