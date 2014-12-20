@@ -58,7 +58,7 @@ plt.plot(max[0], max[1], 'kx', label='Extrema')
 plt.plot(min[0], min[1], 'kx')
 plt.plot(x,  np.exp(params_oE[0]*x+params_oE[1]), 'k-', label='Einhüllende')
 plt.plot(x, -np.exp(params_uE[0]*x+params_uE[1]), 'k-')
-# plt.xlim(t.min(), t.max())
+plt.ylim(-80, 80)
 
 #############################################################
 ######KOMMENTAAAR############################################
@@ -73,7 +73,7 @@ plt.xticks([0.0000, 0.0001, 0.0002, 0.0003, 0.0004],
 plt.legend(loc = "best")
 plt.tight_layout()
 plt.savefig("../build/plot_schwingungskurve.pdf")
-#plt.show()
+plt.show()
 plt.close()
 
 # Halblogarithmischen Plot der Einhüllenden erstellen
