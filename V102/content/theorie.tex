@@ -1,0 +1,81 @@
+\section{Zielsetzung}
+Elastische Konstanten charakterisieren das Verhalten eines Stoffes bei Krafteinwirkung.
+ Sie funktionieren als Proportionalitätsfaktoren zwischen der pro Flächeneinheit angreifenden Kraft und der daraus resultierenden relativen Deformation -- einer Gestalts- oder Volumenänderung. 
+Ziel ist es, die elastischen Konstanten einer Metalllegierung zu bestimmen.
+\section{Theorie}
+\label{sec:Theorie}
+Wirken Kräfte auf einen Körper ein, kann dies auf zwei Arten geschehen. Die Kraft greift an jedem Volumenelement an und ändert dadurch den Bewegungszustand des Körpers; versetzt ihn beispielsweise in eine Translations- oder Rotationsbewegung. 
+Andererseits ist es möglich, dass sich die angreifende Kraft nur auf die Oberfläche des Körpers beschränkt und dazu führt, dass Gestalt und/oder Volumen sich ändern. 
+Dabei wird die Kraft pro Flächeneinheit als Spannung definiert. 
+Diese teilt sich in zwei Komponenten auf: die Normalkomponente $\sigma$ bewirkt eine Längenänderung senkrecht, eine Tangentialspannung $\tau$ eine Längenänderung parallel zur Kraftrichtung auf eine Probe. 
+Die Kräfte wirken nachweislich an der Oberfläche und jeder beliebigen Querschnittsfläche des Körpers. 
+
+In Festkörpern sind die Atome in einem Kristallgitter regelmäßg angeordnet und befinden sich mit ihren direkten Nachbarn in einem Gleichgewichtszustand, in dem sich die abstoßenden und anziehenden Kräfte grade zu Null addieren. 
+Durch Krafteinwirkung muss ein neuer Zustand hergestellt werden. 
+Dies wird realisiert indem der Abstand $r_0$ der Teilchen zueinander variiert wird und sich ein neuer Gleichgewichtszustand mit dem Abstand $r'_0$ einstellt.
+Das Hooke'sche Gesetz
+\begin{equation}
+\sigma=E\frac{\Delta{L}}{L}
+\label{eq:hooke}
+\end{equation}
+beschreibt für hinreichend kleine Kräfte an der Oberfläche einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relative Deformation.
+Liegt eine elastische Deformation vor, so kehrt der Körper in seine Ausgangslage zurück, sobald die Krafteinwirkung vorbei ist - der Vorgang ist reversibel. 
+
+
+
+
+Betrachtet man unsymmetrische Kristalle mit richtungsabhängigen elektrostatischen Kräften müssen sehr viele Komponenten gemessen bzw. errechnet werden. 
+Isotrope Körper, beispielsweise polykristalline Kristalle, zeichnen sich stattdessen durch richtungsunabhängige elastische Konstanten aus und können theoretisch durch zwei Konstanten beschrieben werden. 
+Es erweist sich jedoch als zweckmäßig insgesamt vier Konstanten einzuführen.
+Der Schub- bzw. Torsionsmodul $G$ beschreibt die Gestalts-, der Kompressionsmodul $Q$ die Volumenelastizität.
+DerElastizitätsmodul $E$ ist der Proportionalitätsfaktor aus Gleichung \eqref{eq:hooke}, $\mu$ die Poissonsche Querkontraktionszahl. 
+\begin{equation}
+\mu=-\frac{\Delta{B}}{B}\frac{L}{\Delta{L}}
+\label{eq:mu}
+\end{equation}
+beschreibt die relative Längenänderung bei angreifender Normalspannung in Spannungsrichtung.
+Die genannten Module sind nicht unabhängig voneinander und stehen über
+\begin{alignat}{3}
+	 E=2G(\mu+1) &\quad\text{und} &&\quad E=3(1-2\mu)Q
+\label{eq:modulbeziehungen}
+\end{alignat}
+in Beziehung.
+
+\subsection{Bestimmung des Schubmoduls G}
+Erfährt ein Probekörper ausschließlich Tangentialspannungen verformt er sich so, dass eine Scherung um den Winkel $\alpha$ auftritt. Nache Hooke ist mit
+\begin{equation}
+\tau=G\alpha
+\label{eq:hooke_G}
+\end{equation}
+ die Spannung proportional zum Scherungswinkel. 
+Die Messung wird realisiert, indem ein einseitig fest eingespannter zylinderförmiger Draht um den Winkel $\phi$ verdreht wird. Dabei wirkt ein Drehmoment $M$. Die Schichten des Zylindermantels werden dabei um den Winkel $\alpha$ gedreht. 
+Da das Drehmoment abhängig vom Hebelarm, also vom Probendurchmesser ist, werden im weiteren Verlauf infinitisemale Drehmomente d$M$ betrachtet, die eine Kraft d$K$ auf das Massenelement im Radius d$r$ bewirken.
+Aus
+\begin{equation}
+\mathup{d}M=r\mathup{d}K
+\end{equation}
+folgt mit \eqref{eq:hooke_G} und $\tau=\frac{\mathup{d}K}{\mathup{d}F}$
+\begin{equation}
+\mathup{d}M=rG\alpha\mathup{d}F.
+\end{equation}
+Aus dem Zusammenhang $\alpha=\frac{r\phi}{L}$, dem Flächeninhalt des Kreisrings $\mathup{d}F=2\pi r\mathup{d}r$ und anschließender Integration über den Radius der Probe eine Formel für das Gesamtdrehmoment
+\begin{equation}
+M=\frac{\pi R^4 G}{2L}\phi=D\phi.
+\end{equation}
+Wird an das freie Drahtende ein Körper mit Trägheitsmoment $\theta$ angehängt, kann der Draht ungedämpfte harmonische Schwingungen der Dauer $T=2\pi\sqrt{\frac{\theta}{D}}$ ausführen. Es wirken zwei entgegengesetzte Drehmomente aufeinander. Je nach Form des Körpers ist $M_\mathup{T}$ unterschiedlich, hier wird eine Kugel benutzt mit $\theta=\frac{2}{5}m_\mathup{k}{R_\mathup{k}}²$. Damit ergibt sich 
+\begin{equation}
+G=\frac{16\pi m_\mathup{k} {R_\mathup{k}}^2 L}{5T²R⁴}.
+\label{eq:G}
+\end{equation}
+Der Vorteil der dynamischen Methode über die Messung der Schwingungsdauer ist die geringere Fehleranfälligkeit. Die Ergebnisse bei statischer Messung können durch eventuelle elastische Nachwirkungen verfälscht werden.
+
+\subsection{Bestimmung des Elastizitätsmoduls}
+
+Aus vorher genannten Gründen wird hier ebenfalls eine dynamische Messung der statischen vorgezogen. Sind Schallgeschwindigkeit $c$ im Medium und dessen Dichte $\rho$ bekannt, so kann das Elastizitätsmodul $E$ über
+\begin{equation}
+E=c² \rho
+\label{eq:E}
+\end{equation}
+berechnet werden.
+
+

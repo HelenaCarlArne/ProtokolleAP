@@ -1,17 +1,17 @@
 [0] Config.pm:318> INFO - This is Biber 1.8
-[0] Config.pm:321> INFO - Logfile is 'build/main.blg'
-[108] biber-darwin:275> INFO - === Wed Dec 17, 2014, 11:04:32
-[109] Biber.pm:333> INFO - Reading 'build/main.bcf'
-[205] Biber.pm:630> INFO - Found 6 citekeys in bib section 0
-[233] Biber.pm:3053> INFO - Processing section 0
-[264] Biber.pm:3190> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[266] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
-[266] bibtex.pm:812> INFO - Found BibTeX data source 'build/lit.bib'
-[281] Biber.pm:3190> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[283] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
-[287] bibtex.pm:812> INFO - Found BibTeX data source 'build/programme.bib'
-[353] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[353] Biber.pm:2945> INFO - Sorting 'entry' list 'nty' keys
-[353] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[375] bbl.pm:482> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[376] bbl.pm:555> INFO - Output to build/main.bbl
+[1] Config.pm:321> INFO - Logfile is 'build/main.blg'
+[114] biber-darwin:275> INFO - === Sat Dec 27, 2014, 21:00:18
+[114] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[207] Biber.pm:630> INFO - Found 6 citekeys in bib section 0
+[241] Biber.pm:3053> INFO - Processing section 0
+[267] Biber.pm:3190> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[276] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[277] bibtex.pm:812> INFO - Found BibTeX data source 'build/lit.bib'
+[314] Biber.pm:3190> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[340] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[345] bibtex.pm:812> INFO - Found BibTeX data source 'build/programme.bib'
+[439] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[439] Biber.pm:2945> INFO - Sorting 'entry' list 'nty' keys
+[439] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[463] bbl.pm:482> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[465] bbl.pm:555> INFO - Output to build/main.bbl

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  17 DEC 2014 11:15
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  27 DEC 2014 21:00
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -351,7 +351,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.036 seconds
+luaotfload: fontloader loaded in 0.053 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -802,14 +802,246 @@ Lua module: unicode-math 2013/05/04 0.3 Unicode math typesetting for LuaLaTeX
 . 
 . Defining document command \eqqcolon with arg. spec. '' on line 2525.
 .................................................
-)) (/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.sty
+))
+\g__file_internal_ior=\read1
+luaotfload | load : auto-selecting default features for script: dflt(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/latinmodern-math.luc)
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math
+\g_fontspec_family_Latin Modern Math_int=\count336
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
+luaotfload: font no 21 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
+luaotfload: no font with id 21
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font LatinModernMath/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(0)' created for font 'Latin Modern Math' with
+. options
+. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Latin
+. Modern Math,Style=MathScript},{Size=-7,Font=Latin Modern
+. Math,Style=MathScriptScript}},].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <10->"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;"<7-10>"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-7>"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
+.................................................
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload: font no 23 (LatinModernMath-Regular) defines feature ssty for script math
+LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)              `operators' in the math version `normal' on input line 39.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU2/LatinModernMath(0)/m/n on input line 39.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)              `operators' in the math version `bold' on input line 39.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU2/LatinModernMath(0)/bx/n on input line 39.
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
+luaotfload: font no 21 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
+luaotfload: no font with id 21
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font LatinModernMath/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(1)' created for font 'Latin Modern Math' with
+. options
+. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Latin
+. Modern Math,Style=MathScript},{Size=-7,Font=Latin Modern
+. Math,Style=MathScriptScript}},,Scale=1.00001,FontAdjustment={\fontdimen
+. 8\font =443678.72sp\relax \fontdimen 9\font =258211.84sp\relax \fontdimen
+. 10\font =290979.84sp\relax \fontdimen 11\font =449576.96sp\relax \fontdimen
+. 12\font =226099.2sp\relax \fontdimen 13\font =237895.68sp\relax \fontdimen
+. 14\font =237895.68sp\relax \fontdimen 15\font =189399.04sp\relax \fontdimen
+. 16\font =161873.92sp\relax \fontdimen 17\font =0sp\relax \fontdimen 18\font
+. =163840sp\relax \fontdimen 19\font =131072sp\relax \fontdimen 20\font
+. =0pt\relax \fontdimen 21\font =0pt\relax \fontdimen 22\font =163840sp\relax
+. }].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <10->s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;"<7-10>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-7>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
+. and font adjustment code:
+. \fontdimen 8\font =443678.72sp\relax \fontdimen 9\font =258211.84sp\relax
+. \fontdimen 10\font =290979.84sp\relax \fontdimen 11\font =449576.96sp\relax
+. \fontdimen 12\font =226099.2sp\relax \fontdimen 13\font =237895.68sp\relax
+. \fontdimen 14\font =237895.68sp\relax \fontdimen 15\font =189399.04sp\relax
+. \fontdimen 16\font =161873.92sp\relax \fontdimen 17\font =0sp\relax
+. \fontdimen 18\font =163840sp\relax \fontdimen 19\font =131072sp\relax
+. \fontdimen 20\font =0pt\relax \fontdimen 21\font =0pt\relax \fontdimen
+. 22\font =163840sp\relax 
+.................................................
+LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 39.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> EU2/LatinModernMath(1)/m/n on input line 39.
+LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 39.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> EU2/LatinModernMath(1)/bx/n on input line 39.
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
+luaotfload: font no 21 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
+luaotfload: font no 21 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
+luaotfload: no font with id 21
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font LatinModernMath/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(2)' created for font 'Latin Modern Math' with
+. options
+. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=7-10,Font=Latin
+. Modern Math,Style=MathScript},{Size=-7,Font=Latin Modern
+. Math,Style=MathScriptScript}},,Scale=0.99999,FontAdjustment={\fontdimen
+. 8\font =26214.4sp\relax \fontdimen 9\font =131072sp\relax \fontdimen 10\font
+. =109445.12sp\relax \fontdimen 11\font =72744.96sp\relax \fontdimen 12\font
+. =393216sp\relax \fontdimen 13\font =0pt\relax }].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <10->s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;"<7-10>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-7>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
+. and font adjustment code:
+. \fontdimen 8\font =26214.4sp\relax \fontdimen 9\font =131072sp\relax
+. \fontdimen 10\font =109445.12sp\relax \fontdimen 11\font =72744.96sp\relax
+. \fontdimen 12\font =393216sp\relax \fontdimen 13\font =0pt\relax 
+.................................................
+LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 39.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/m/n on input line 39.
+LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 39.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/bx/n on input line 39.
+luaotfload | load : auto-selecting default features for script: dflt(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/xits-math.luc)
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 24 (XITSMath) defines feature ss03 for script math
+\g_fontspec_family_XITS Math_int=\count337
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 24 (XITSMath) defines feature ssty for script math with language dflt
+luaotfload: font no 24 (XITSMath) defines feature ssty for script math with language dflt
+luaotfload: font no 24 (XITSMath) does not define feature smcp for script math with language dflt
+luaotfload: no font with id 24
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/xits-mathbold.luc)
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 25 (XITSMath-Bold) defines feature ssty for script math with language dflt
+luaotfload: font no 25 (XITSMath-Bold) defines feature ssty for script math with language dflt
+luaotfload: font no 25 (XITSMath-Bold) does not define feature smcp for script math with language dflt
+luaotfload: no font with id 25
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'XITSMath(0)' created for font 'XITS Math' with options
+. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=6.99997-10,Font=XITS
+. Math,Style=MathScript},{Size=-6.99997,Font=XITS
+. Math,Style=MathScriptScript}},].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. 
+. <10->"XITSMath:mode=base;script=math;language=DFLT;+tlig;+trep;"<6.99997-10>"XITSMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-6.99997>"XITSMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
+. 
+. * 'bold' with NFSS spec.:
+. 
+. <10->"XITSMath/B:mode=base;script=math;language=DFLT;+tlig;+trep;"<6.99997-10>"XITSMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-6.99997>"XITSMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
+.................................................
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload: font no 27 (XITSMath) defines feature ss03 for script math
+\symum_fam1=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `um_fam1' in version `normal'
+(Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input line 40.
+LaTeX Font Info:    Overwriting symbol font `um_fam1' in version `bold'
+(Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/bx/n on input line 40.
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 24 (XITSMath) defines feature ss03 for script math
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'XITSMath(0)' created for font 'XITS Math' with options
+. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=6.99997-10,Font=XITS
+. Math,Style=MathScript},{Size=-6.99997,Font=XITS
+. Math,Style=MathScriptScript}},].
+. 
+. This font family consists of the following shapes:
+.................................................
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload: font no 27 (XITSMath) defines feature ss03 for script math
+\symum_fam2=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `um_fam2' in version `normal'
+(Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input line 41.
+LaTeX Font Info:    Overwriting symbol font `um_fam2' in version `bold'
+(Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/bx/n on input line 41.
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 24 (XITSMath) defines feature ss03 for script math
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'XITSMath(0)' created for font 'XITS Math' with options
+. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10-},{Size=6.99997-10,Font=XITS
+. Math,Style=MathScript},{Size=-6.99997,Font=XITS
+. Math,Style=MathScriptScript}},].
+. 
+. This font family consists of the following shapes:
+.................................................
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload: font no 27 (XITSMath) defines feature ss03 for script math
+\symum_fam3=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `um_fam3' in version `normal'
+(Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input line 42.
+LaTeX Font Info:    Overwriting symbol font `um_fam3' in version `bold'
+(Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/bx/n on input line 42.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
-\csq@reset=\count336
-\csq@gtype=\count337
-\csq@glevel=\count338
-\csq@qlevel=\count339
-\csq@maxlvl=\count340
-\csq@tshold=\count341
+\csq@reset=\count338
+\csq@gtype=\count339
+\csq@glevel=\count340
+\csq@qlevel=\count341
+\csq@maxlvl=\count342
+\csq@tshold=\count343
 \csq@ltx@everypar=\toks25
  (/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
@@ -833,30 +1065,30 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
 \l__siunitx_tmp_box=\box273
 \l__siunitx_tmp_dim=\dimen312
-\l__siunitx_tmp_int=\count342
+\l__siunitx_tmp_int=\count344
 Variant \prop_get:NVNT already defined; not changing it on line 371
 Variant \prop_get:NVNF already defined; not changing it on line 372
 Variant \prop_get:NVNTF already defined; not changing it on line 373
-\l__siunitx_number_mantissa_length_int=\count343
-\l__siunitx_number_uncert_length_int=\count344
-\l__siunitx_round_int=\count345
-\l__siunitx_process_decimal_int=\count346
-\l__siunitx_process_uncertainty_int=\count347
-\l__siunitx_process_fixed_int=\count348
-\l__siunitx_process_integer_min_int=\count349
-\l__siunitx_process_precision_int=\count350
-\l__siunitx_group_min_int=\count351
+\l__siunitx_number_mantissa_length_int=\count345
+\l__siunitx_number_uncert_length_int=\count346
+\l__siunitx_round_int=\count347
+\l__siunitx_process_decimal_int=\count348
+\l__siunitx_process_uncertainty_int=\count349
+\l__siunitx_process_fixed_int=\count350
+\l__siunitx_process_integer_min_int=\count351
+\l__siunitx_process_precision_int=\count352
+\l__siunitx_group_min_int=\count353
 \l__siunitx_angle_marker_box=\box274
 \l__siunitx_angle_unit_box=\box275
 \l__siunitx_angle_marker_dim=\dimen313
 \l__siunitx_angle_unit_dim=\dimen314
-\l__siunitx_unit_int=\count352
-\l__siunitx_unit_denominator_int=\count353
-\l__siunitx_unit_numerator_int=\count354
-\l__siunitx_unit_prefix_int=\count355
-\l__siunitx_unit_prefix_base_int=\count356
-\l__siunitx_unit_prefix_gram_int=\count357
-\l__siunitx_number_product_int=\count358
+\l__siunitx_unit_int=\count354
+\l__siunitx_unit_denominator_int=\count355
+\l__siunitx_unit_numerator_int=\count356
+\l__siunitx_unit_prefix_int=\count357
+\l__siunitx_unit_prefix_base_int=\count358
+\l__siunitx_unit_prefix_gram_int=\count359
+\l__siunitx_number_product_int=\count360
 \c__siunitx_one_fill_skip=\skip271
 \l__siunitx_table_unit_align_skip=\skip272
 \l__siunitx_table_exponent_dim=\dimen315
@@ -1005,7 +1237,6 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 . Defining document command \__siunitx_bookmark_si:w with arg. spec. 'om' on
 . line 7271.
 .................................................
-\g__file_internal_ior=\read1
  (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
  (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex))) (/usr/local/texlive/2014/texmf-dist/tex/latex/mhchem/mhchem.sty
@@ -1025,7 +1256,7 @@ Package: twoopt 2008/08/11 v1.5 Definitions with two optional arguments (HO)
 \mhchem@smallbondwidth@tmpA=\skip278
 \mhchem@smallbondwidth@tmpB=\skip279
 \mhchem@smallbondwidth=\skip280
-\__mhchem_option_version_int=\count359
+\__mhchem_option_version_int=\count361
 \mhchem@prepostscript@tmp@i=\skip281
 \mhchem@prepostscript@tmp@ii=\skip282
 \mhchem@mathbox@tmp@i=\skip283
@@ -1115,7 +1346,7 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2014/05/05 v4740 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen324
-\l__xtemplate_tmp_int=\count360
+\l__xtemplate_tmp_int=\count362
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip288
 Variant \prop_get:NoNTF already defined; not changing it on line 106
@@ -1158,11 +1389,11 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@hangindent=\dimen336
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count361
+\c@ContinuedFloat=\count363
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count362
-\c@subtable=\count363
+\c@subfigure=\count364
+\c@subtable=\count365
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
 Package grffile Info: Option `multidot' is set to `true'.
@@ -1171,7 +1402,7 @@ Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count364
+\c@float@type=\count366
 \float@exts=\toks31
 \float@box=\box282
 \@float@everytoks=\toks32
@@ -1188,12 +1419,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen344
 \cmidrulekern=\dimen345
 \defaultaddspace=\dimen346
-\@cmidla=\count365
-\@cmidlb=\count366
+\@cmidla=\count367
+\@cmidlb=\count368
 \@aboverulesep=\dimen347
 \@belowrulesep=\dimen348
-\@thisruleclass=\count367
-\@lastruleclass=\count368
+\@thisruleclass=\count369
+\@lastruleclass=\count370
 \@thisrulewidth=\dimen349
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
@@ -1207,51 +1438,51 @@ Package: biblatex 2013/11/25 v2.8a programmable bibliographies (PK/JW/AB)
 Package: biblatex2 2013/11/25 v2.8a programmable bibliographies (biber) (PK/JW/AB)
  (/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count369
+\lrq@indent=\count371
  (/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip21
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count370
-\c@listtotal=\count371
-\c@listcount=\count372
-\c@liststart=\count373
-\c@liststop=\count374
-\c@citecount=\count375
-\c@citetotal=\count376
-\c@multicitecount=\count377
-\c@multicitetotal=\count378
-\c@instcount=\count379
-\c@maxnames=\count380
-\c@minnames=\count381
-\c@maxitems=\count382
-\c@minitems=\count383
-\c@citecounter=\count384
-\c@savedcitecounter=\count385
-\c@uniquelist=\count386
-\c@uniquename=\count387
-\c@refsection=\count388
-\c@refsegment=\count389
-\c@maxextratitle=\count390
-\c@maxextratitleyear=\count391
-\c@maxextrayear=\count392
-\c@maxextraalpha=\count393
-\c@abbrvpenalty=\count394
-\c@highnamepenalty=\count395
-\c@lownamepenalty=\count396
-\c@maxparens=\count397
-\c@parenlevel=\count398
-\blx@tempcnta=\count399
-\blx@tempcntb=\count400
-\blx@tempcntc=\count401
-\blx@maxsection=\count402
-\blx@maxsegment@0=\count403
-\blx@notetype=\count404
-\blx@parenlevel@text=\count405
-\blx@parenlevel@foot=\count406
-\blx@sectionciteorder@0=\count407
+\c@tabx@nest=\count372
+\c@listtotal=\count373
+\c@listcount=\count374
+\c@liststart=\count375
+\c@liststop=\count376
+\c@citecount=\count377
+\c@citetotal=\count378
+\c@multicitecount=\count379
+\c@multicitetotal=\count380
+\c@instcount=\count381
+\c@maxnames=\count382
+\c@minnames=\count383
+\c@maxitems=\count384
+\c@minitems=\count385
+\c@citecounter=\count386
+\c@savedcitecounter=\count387
+\c@uniquelist=\count388
+\c@uniquename=\count389
+\c@refsection=\count390
+\c@refsegment=\count391
+\c@maxextratitle=\count392
+\c@maxextratitleyear=\count393
+\c@maxextrayear=\count394
+\c@maxextraalpha=\count395
+\c@abbrvpenalty=\count396
+\c@highnamepenalty=\count397
+\c@lownamepenalty=\count398
+\c@maxparens=\count399
+\c@parenlevel=\count400
+\blx@tempcnta=\count401
+\blx@tempcntb=\count402
+\blx@tempcntc=\count403
+\blx@maxsection=\count404
+\blx@maxsegment@0=\count405
+\blx@notetype=\count406
+\blx@parenlevel@text=\count407
+\blx@parenlevel@foot=\count408
+\blx@sectionciteorder@0=\count409
 \labelnumberwidth=\skip289
 \labelalphawidth=\skip290
 \shorthandwidth=\skip291
@@ -1263,9 +1494,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip297
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\c@mincomprange=\count408
-\c@maxcomprange=\count409
-\c@mincompwidth=\count410
+\c@mincomprange=\count410
+\c@maxcomprange=\count411
+\c@mincompwidth=\count412
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/blx-dm.def)
@@ -1273,72 +1504,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count411
-\c@savedafterword=\count412
-\c@annotator=\count413
-\c@savedannotator=\count414
-\c@author=\count415
-\c@savedauthor=\count416
-\c@bookauthor=\count417
-\c@savedbookauthor=\count418
-\c@commentator=\count419
-\c@savedcommentator=\count420
-\c@editor=\count421
-\c@savededitor=\count422
-\c@editora=\count423
-\c@savededitora=\count424
-\c@editorb=\count425
-\c@savededitorb=\count426
-\c@editorc=\count427
-\c@savededitorc=\count428
-\c@foreword=\count429
-\c@savedforeword=\count430
-\c@holder=\count431
-\c@savedholder=\count432
-\c@introduction=\count433
-\c@savedintroduction=\count434
-\c@namea=\count435
-\c@savednamea=\count436
-\c@nameb=\count437
-\c@savednameb=\count438
-\c@namec=\count439
-\c@savednamec=\count440
-\c@shortauthor=\count441
-\c@savedshortauthor=\count442
-\c@shorteditor=\count443
-\c@savedshorteditor=\count444
-\c@translator=\count445
-\c@savedtranslator=\count446
-\c@labelname=\count447
-\c@savedlabelname=\count448
-\c@institution=\count449
-\c@savedinstitution=\count450
-\c@lista=\count451
-\c@savedlista=\count452
-\c@listb=\count453
-\c@savedlistb=\count454
-\c@listc=\count455
-\c@savedlistc=\count456
-\c@listd=\count457
-\c@savedlistd=\count458
-\c@liste=\count459
-\c@savedliste=\count460
-\c@listf=\count461
-\c@savedlistf=\count462
-\c@location=\count463
-\c@savedlocation=\count464
-\c@organization=\count465
-\c@savedorganization=\count466
-\c@origlocation=\count467
-\c@savedoriglocation=\count468
-\c@origpublisher=\count469
-\c@savedorigpublisher=\count470
-\c@publisher=\count471
-\c@savedpublisher=\count472
-\c@language=\count473
-\c@savedlanguage=\count474
-\c@pageref=\count475
-\c@savedpageref=\count476
+\c@afterword=\count413
+\c@savedafterword=\count414
+\c@annotator=\count415
+\c@savedannotator=\count416
+\c@author=\count417
+\c@savedauthor=\count418
+\c@bookauthor=\count419
+\c@savedbookauthor=\count420
+\c@commentator=\count421
+\c@savedcommentator=\count422
+\c@editor=\count423
+\c@savededitor=\count424
+\c@editora=\count425
+\c@savededitora=\count426
+\c@editorb=\count427
+\c@savededitorb=\count428
+\c@editorc=\count429
+\c@savededitorc=\count430
+\c@foreword=\count431
+\c@savedforeword=\count432
+\c@holder=\count433
+\c@savedholder=\count434
+\c@introduction=\count435
+\c@savedintroduction=\count436
+\c@namea=\count437
+\c@savednamea=\count438
+\c@nameb=\count439
+\c@savednameb=\count440
+\c@namec=\count441
+\c@savednamec=\count442
+\c@shortauthor=\count443
+\c@savedshortauthor=\count444
+\c@shorteditor=\count445
+\c@savedshorteditor=\count446
+\c@translator=\count447
+\c@savedtranslator=\count448
+\c@labelname=\count449
+\c@savedlabelname=\count450
+\c@institution=\count451
+\c@savedinstitution=\count452
+\c@lista=\count453
+\c@savedlista=\count454
+\c@listb=\count455
+\c@savedlistb=\count456
+\c@listc=\count457
+\c@savedlistc=\count458
+\c@listd=\count459
+\c@savedlistd=\count460
+\c@liste=\count461
+\c@savedliste=\count462
+\c@listf=\count463
+\c@savedlistf=\count464
+\c@location=\count465
+\c@savedlocation=\count466
+\c@organization=\count467
+\c@savedorganization=\count468
+\c@origlocation=\count469
+\c@savedoriglocation=\count470
+\c@origpublisher=\count471
+\c@savedorigpublisher=\count472
+\c@publisher=\count473
+\c@savedpublisher=\count474
+\c@language=\count475
+\c@savedlanguage=\count476
+\c@pageref=\count477
+\c@savedpageref=\count478
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -1348,13 +1579,13 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count477
-\c@textcitetotal=\count478
-\c@textcitemaxnames=\count479
-\c@biburlnumpenalty=\count480
-\c@biburlucpenalty=\count481
-\c@biburllcpenalty=\count482
-\c@smartand=\count483
+\c@textcitecount=\count479
+\c@textcitetotal=\count480
+\c@textcitemaxnames=\count481
+\c@biburlnumpenalty=\count482
+\c@biburlucpenalty=\count483
+\c@biburllcpenalty=\count484
+\c@smartand=\count485
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1364,8 +1595,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count484
-\c@bbx:relatedtotal=\count485
+\c@bbx:relatedcount=\count486
+\c@bbx:relatedtotal=\count487
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1423,12 +1654,12 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen350
-\Hy@linkcounter=\count486
-\Hy@pagecounter=\count487
+\Hy@linkcounter=\count488
+\Hy@pagecounter=\count489
  (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count488
+\Hy@SavedSpaceFactor=\count490
  (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -1444,10 +1675,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count489
+\c@Hy@tempcnt=\count491
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen351
-\Fld@menulength=\count490
+\Fld@menulength=\count492
 \Field@Width=\dimen352
 \Fld@charsize=\dimen353
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1459,23 +1690,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count491
-\c@Item=\count492
-\c@Hfootnote=\count493
+\Hy@abspage=\count493
+\c@Item=\count494
+\c@Hfootnote=\count495
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count494
-\c@bookmark@seq@number=\count495
+\Fld@listcount=\count496
+\c@bookmark@seq@number=\count497
 \Hy@SectionHShift=\skip298
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
  (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
-\BKM@id=\count496
+\BKM@id=\count498
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/ncctools/extdash.sty
 Package: extdash 2005/01/29 v1.2 Extended Dash Package (NCC)
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/marvosym/marvosym.sty
@@ -1525,16 +1756,16 @@ LaTeX Font Info:    ... okay on input line 11.
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt" (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count497
+\scratchcounter=\count499
 \scratchdimen=\dimen354
 \scratchbox=\box284
-\nofMPsegments=\count498
-\nofMParguments=\count499
+\nofMPsegments=\count500
+\nofMParguments=\count501
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count500
+\MPscratchCnt=\count502
 \MPscratchDim=\dimen355
-\MPnumerator=\count501
-\makeMPintoPDFobject=\count502
+\MPnumerator=\count503
+\makeMPintoPDFobject=\count504
 \everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1547,180 +1778,6 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/latinmodern-math.luc)
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script math
-\g_fontspec_family_latinmodern-math.otf_int=\count503
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
-luaotfload: no font with id 22
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
-luaotfload: no font with id 22
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'latinmodern-math.otf(0)' created for font
-. 'latinmodern-math.otf' with options
-. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Size=8-10.95,Font=latinmodern-math.otf,Style=MathScript},{Size=-8,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf}].
-. 
-. This font family consists of the following shapes:
-. 
-. * 'normal' with NFSS spec.:
-. 
-. <10.95->"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;"<8-10.95>"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-8>"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
-. 
-. * 'bold' with NFSS spec.:
-. 
-. <10.95->"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;"<8-10.95>"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-8>"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
-.................................................
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature dtls for script math
-LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 11.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU2/latinmodern-math.otf(0)/m/n on input line 11.
-LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 11.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU2/latinmodern-math.otf(0)/bx/n on input line 11.
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script math
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
-luaotfload: no font with id 22
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
-luaotfload: no font with id 22
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'latinmodern-math.otf(1)' created for font
-. 'latinmodern-math.otf' with options
-. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Size=8-10.95,Font=latinmodern-math.otf,Style=MathScript},{Size=-8,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},Scale=1.00001,FontAdjustment={\fontdimen
-. 8\font =485828.063sp\relax \fontdimen 9\font =282741.886sp\relax \fontdimen
-. 10\font =318622.836sp\relax \fontdimen 11\font =492286.634sp\relax
-. \fontdimen 12\font =247578.555sp\relax \fontdimen 13\font
-. =260495.697sp\relax \fontdimen 14\font =260495.697sp\relax \fontdimen
-. 15\font =207391.891sp\relax \fontdimen 16\font =177251.893sp\relax
-. \fontdimen 17\font =0sp\relax \fontdimen 18\font =179404.75sp\relax
-. \fontdimen 19\font =143523.8sp\relax \fontdimen 20\font =0pt\relax
-. \fontdimen 21\font =0pt\relax \fontdimen 22\font =179404.75sp\relax }].
-. 
-. This font family consists of the following shapes:
-. 
-. * 'normal' with NFSS spec.:
-. 
-. <10.95->s*[1.00001]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;"<8-10.95>s*[1.00001]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-8>s*[1.00001]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
-. and font adjustment code:
-. \fontdimen 8\font =485828.063sp\relax \fontdimen 9\font =282741.886sp\relax
-. \fontdimen 10\font =318622.836sp\relax \fontdimen 11\font
-. =492286.634sp\relax \fontdimen 12\font =247578.555sp\relax \fontdimen
-. 13\font =260495.697sp\relax \fontdimen 14\font =260495.697sp\relax
-. \fontdimen 15\font =207391.891sp\relax \fontdimen 16\font
-. =177251.893sp\relax \fontdimen 17\font =0sp\relax \fontdimen 18\font
-. =179404.75sp\relax \fontdimen 19\font =143523.8sp\relax \fontdimen 20\font
-. =0pt\relax \fontdimen 21\font =0pt\relax \fontdimen 22\font
-. =179404.75sp\relax 
-. 
-. * 'bold' with NFSS spec.:
-. 
-. <10.95->s*[1.00001]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;"<8-10.95>s*[1.00001]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-8>s*[1.00001]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
-. and font adjustment code:
-. \fontdimen 8\font =485828.063sp\relax \fontdimen 9\font =282741.886sp\relax
-. \fontdimen 10\font =318622.836sp\relax \fontdimen 11\font
-. =492286.634sp\relax \fontdimen 12\font =247578.555sp\relax \fontdimen
-. 13\font =260495.697sp\relax \fontdimen 14\font =260495.697sp\relax
-. \fontdimen 15\font =207391.891sp\relax \fontdimen 16\font
-. =177251.893sp\relax \fontdimen 17\font =0sp\relax \fontdimen 18\font
-. =179404.75sp\relax \fontdimen 19\font =143523.8sp\relax \fontdimen 20\font
-. =0pt\relax \fontdimen 21\font =0pt\relax \fontdimen 22\font
-. =179404.75sp\relax 
-.................................................
-LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 11.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> EU2/latinmodern-math.otf(1)/m/n on input line 11.
-LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 11.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> EU2/latinmodern-math.otf(1)/bx/n on input line 11.
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script math
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
-luaotfload: no font with id 22
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
-luaotfload: font no 22 (LatinModernMath-Regular) does not define feature smcp for script math with language dflt
-luaotfload: no font with id 22
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'latinmodern-math.otf(2)' created for font
-. 'latinmodern-math.otf' with options
-. [Ligatures=TeX,Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Size=8-10.95,Font=latinmodern-math.otf,Style=MathScript},{Size=-8,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},Scale=0.99999,FontAdjustment={\fontdimen
-. 8\font =28704.76sp\relax \fontdimen 9\font =143523.8sp\relax \fontdimen
-. 10\font =119842.373sp\relax \fontdimen 11\font =79655.709sp\relax \fontdimen
-. 12\font =430571.4sp\relax \fontdimen 13\font =0pt\relax }].
-. 
-. This font family consists of the following shapes:
-. 
-. * 'normal' with NFSS spec.:
-. 
-. <10.95->s*[0.99999]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;"<8-10.95>s*[0.99999]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-8>s*[0.99999]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
-. and font adjustment code:
-. \fontdimen 8\font =28704.76sp\relax \fontdimen 9\font =143523.8sp\relax
-. \fontdimen 10\font =119842.373sp\relax \fontdimen 11\font =79655.709sp\relax
-. \fontdimen 12\font =430571.4sp\relax \fontdimen 13\font =0pt\relax 
-. 
-. * 'bold' with NFSS spec.:
-. 
-. <10.95->s*[0.99999]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;"<8-10.95>s*[0.99999]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=0;"<-8>s*[0.99999]"[latinmodern-math.otf]:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
-. and font adjustment code:
-. \fontdimen 8\font =28704.76sp\relax \fontdimen 9\font =143523.8sp\relax
-. \fontdimen 10\font =119842.373sp\relax \fontdimen 11\font =79655.709sp\relax
-. \fontdimen 12\font =430571.4sp\relax \fontdimen 13\font =0pt\relax 
-.................................................
-LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 11.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> EU2/latinmodern-math.otf(2)/m/n on input line 11.
-LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 11.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> EU2/latinmodern-math.otf(2)/bx/n on input line 11.
-
 *************************************************
 * unicode-math warning: "mathtools-overbracket"
 * 
@@ -1753,51 +1810,45 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count504
+\c@section@level=\count505
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
-\c__siunitx_mathsf_int=\count505
+\c__siunitx_mathsf_int=\count506
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 10.95015pt on input line 11.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.66507pt on input line 11.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 8.00012pt on input line 11.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.47507pt on input line 11.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 6.00009pt on input line 11.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 10.94983pt on input line 11.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.66484pt on input line 11.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 7.99988pt on input line 11.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.4749pt on input line 11.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.99991pt on input line 11.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 LaTeX Font Info:    Try loading font information for U+msa on input line 11.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1812,7 +1863,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-\c__siunitx_mathtt_int=\count506
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+\c__siunitx_mathtt_int=\count507
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: latn
@@ -1827,52 +1884,45 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman12-regular.luc)
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 14.4002pt on input line 14.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 10.00015pt on input line 14.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 7.0001pt on input line 14.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 14.39977pt on input line 14.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 9.99985pt on input line 14.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 6.9999pt on input line 14.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt [1
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt" [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./content/theorie.tex
 luaotfload | load : auto-selecting default features for script: latn
@@ -1886,7 +1936,7 @@ luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)
 luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) <Bilder/Beispiel.pdf, id=20, 278.03876pt x 366.36874pt>
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc) <Bilder/Beispiel.pdf, id=20, 278.03876pt x 366.36874pt>
 File: Bilder/Beispiel.pdf Graphic file (type pdf)
  <use Bilder/Beispiel.pdf>
 Package pdftex.def Info: Bilder/Beispiel.pdf used on input line 40.
@@ -1897,12 +1947,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2
 
-<./Bilder/LOCK_IN.pdf>]) (./content/durchfuehrung.tex <Bilder/Messung1.pdf, id=48, 686.565pt x 254.9525pt>
+<./Bilder/LOCK_IN.pdf>]) (./content/durchfuehrung.tex <Bilder/Messung1.pdf, id=49, 686.565pt x 254.9525pt>
 File: Bilder/Messung1.pdf Graphic file (type pdf)
  <use Bilder/Messung1.pdf>
 Package pdftex.def Info: Bilder/Messung1.pdf used on input line 9.
 (pdftex.def)             Requested size: 292.7776pt x 108.721pt.
- [3<./Bilder/Beispiel.pdf>] <Bilder/Messung2.pdf, id=68, 683.55376pt x 217.81375pt>
+ [3<./Bilder/Beispiel.pdf>] <Bilder/Messung2.pdf, id=69, 683.55376pt x 217.81375pt>
 File: Bilder/Messung2.pdf Graphic file (type pdf)
  <use Bilder/Messung2.pdf>
 Package pdftex.def Info: Bilder/Messung2.pdf used on input line 25.
@@ -1912,40 +1962,15 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
 Overfull \hbox (8.5191pt too wide) detected at line 20
  
  []
@@ -1990,41 +2015,62 @@ Overfull \hbox (8.5191pt too wide) detected at line 29
  
  []
 
-<Bilder/MAP002.pdf, id=96, 401.44983pt x 240.86989pt>
+<Bilder/MAP002.pdf, id=97, 401.44983pt x 240.86989pt>
 File: Bilder/MAP002.pdf Graphic file (type pdf)
  <use Bilder/MAP002.pdf>
 Package pdftex.def Info: Bilder/MAP002.pdf used on input line 44.
 (pdftex.def)             Requested size: 204.94751pt x 122.97064pt.
- <Bilder/MAP003.pdf, id=97, 401.5pt x 240.9pt>
+ <Bilder/MAP003.pdf, id=98, 401.5pt x 240.9pt>
 File: Bilder/MAP003.pdf Graphic file (type pdf)
  <use Bilder/MAP003.pdf>
 Package pdftex.def Info: Bilder/MAP003.pdf used on input line 47.
 (pdftex.def)             Requested size: 204.94751pt x 122.97131pt.
- <Bilder/AusgangSpannung.pdf, id=101, 578.16pt x 433.62pt>
+ <Bilder/AusgangSpannung.pdf, id=102, 578.16pt x 433.62pt>
 File: Bilder/AusgangSpannung.pdf Graphic file (type pdf)
  <use Bilder/AusgangSpannung.pdf>
 Package pdftex.def Info: Bilder/AusgangSpannung.pdf used on input line 56.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 57.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 7.00006pt on input line 57.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 57.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.99986pt on input line 57.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc)
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt" <Bilder/AusgangStoerung.pdf, id=102, 578.16pt x 433.62pt>
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) <Bilder/AusgangStoerung.pdf, id=103, 578.16pt x 433.62pt>
 File: Bilder/AusgangStoerung.pdf Graphic file (type pdf)
  <use Bilder/AusgangStoerung.pdf>
 Package pdftex.def Info: Bilder/AusgangStoerung.pdf used on input line 63.
@@ -2117,7 +2163,7 @@ Overfull \hbox (8.5191pt too wide) detected at line 93
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/LED_log.pdf, id=103, 578.16pt x 433.62pt>
+<Bilder/LED_log.pdf, id=104, 578.16pt x 433.62pt>
 File: Bilder/LED_log.pdf Graphic file (type pdf)
  <use Bilder/LED_log.pdf>
 Package pdftex.def Info: Bilder/LED_log.pdf used on input line 106.
@@ -2135,7 +2181,7 @@ File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc)
-Overfull \hbox (3.71594pt too wide) in paragraph at lines 23--23
+Overfull \hbox (3.5517pt too wide) in paragraph at lines 23--23
 \EU2/lmr/m/it/10.95 In-Verstärker\EU2/lmr/m/n/10.95 . \EU2/lmr/m/sc/10.95 url\EU2/lmr/m/n/10.95 : []$\EU2/lmtt/m/n/10.95 http : / / www . physik . uni -[] regensburg . de / studium / praktika /
  []
 
@@ -2156,19 +2202,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40522 strings out of 494695
+ 40504 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 599 words of node memory still in use:
+ 600 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 10 kern, 14 attribute, 67 glue_spec, 14 attribute_list, 5 action, 1 write nodes
-   avail lists: 1:47,2:11418,3:189,4:2250,5:325,6:3546,7:115,8:26,9:652,10:988,11:510,12:229
- 43030 multiletter control sequences out of 65536+600000
- 98 fonts using 28343279 bytes
- 70i,13n,104p,974b,1218s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (10 pages, 227174 bytes).
+   avail lists: 1:47,2:11418,3:190,4:2249,5:325,6:3546,7:109,8:26,9:652,10:990,11:512,12:229
+ 43057 multiletter control sequences out of 65536+600000
+ 111 fonts using 36895479 bytes
+ 70i,13n,104p,974b,1216s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/xits/xits-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (10 pages, 226230 bytes).
 
-PDF statistics: 527 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
+PDF statistics: 528 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
  46 named destinations out of 1000 (max. 131072)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

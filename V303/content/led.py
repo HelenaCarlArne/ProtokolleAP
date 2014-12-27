@@ -96,19 +96,19 @@ plt.savefig("../Bilder/AusgangStoerung.pdf")
 plt.show()
 
 #LED
-# plt.ylim(-1,5)
-# plt.xlim(0,1.4)
-# plt.xlabel(r"Abstand [m]")
-# plt.ylabel(r"Negative Spannung [V]")
-# # params,covar = curve_fit(exp2,xled,-yled)#, p0=[1,-2])
-# # plt.plot(xplot, exp2(xplot, *params),"b",label=r"$f(x)=A x^\alpha}$")
-# # plt.plot(xplot, exp2(xplot, 0.5,0, -1),"r",label="Versuch")
-# print(*params)
-# plt.plot(xled,-yled,"bx",label="Messdaten")
-# plt.legend(loc="best")
-# plt.tight_layout
-# plt.savefig("../Bilder/LED.pdf")
-# plt.show()
+plt.ylim(-1,5)
+plt.xlim(0,1.4)
+plt.xlabel(r"Abstand [m]")
+plt.ylabel(r"Negative Spannung [V]")
+params,covar = curve_fit(exp,xled,-yled, p0=[1,-2])
+#plt.plot(xplot, exp(xplot, *params),"b",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
+#print(*params)
+plt.plot(xled,-yled,"bx",label="Messdaten")
+plt.legend(loc="best")
+plt.tight_layout
+plt.savefig("../Bilder/LED.pdf")
+plt.show()
+
 
 plt.xlabel(r"Abstand [m]")
 plt.ylabel(r"Negative Spannung [V]")
