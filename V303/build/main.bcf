@@ -1976,9 +1976,10 @@
     <bcf:citekey order="9">V303</bcf:citekey>
     <bcf:citekey order="10">gimp</bcf:citekey>
     <bcf:citekey order="11">gimp</bcf:citekey>
-    <bcf:citekey order="12">matplotlib</bcf:citekey>
-    <bcf:citekey order="13">gimp</bcf:citekey>
-    <bcf:citekey order="14">numpy</bcf:citekey>
+    <bcf:citekey order="12">scipy</bcf:citekey>
+    <bcf:citekey order="13">matplotlib</bcf:citekey>
+    <bcf:citekey order="14">gimp</bcf:citekey>
+    <bcf:citekey order="15">numpy</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nty">
   <bcf:sorting>

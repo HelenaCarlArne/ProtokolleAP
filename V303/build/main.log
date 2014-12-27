@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  8 DEC 2014 15:14
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  17 DEC 2014 11:15
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -351,7 +351,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.048 seconds
+luaotfload: fontloader loaded in 0.036 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1551,7 +1551,7 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script math
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script math
 \g_fontspec_family_latinmodern-math.otf_int=\count503
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
@@ -1588,7 +1588,7 @@ luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 24 (LatinModernMath-Regular) defines feature aalt for script math
+luaotfload: font no 24 (LatinModernMath-Regular) defines feature dtls for script math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1601,7 +1601,7 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script math
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
@@ -1671,7 +1671,7 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
-luaotfload: font no 22 (LatinModernMath-Regular) defines feature aalt for script math
+luaotfload: font no 22 (LatinModernMath-Regular) defines feature dtls for script math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling back to file:
 luaotfload: font no 22 (LatinModernMath-Regular) defines feature ssty for script math with language dflt
@@ -2117,17 +2117,16 @@ Overfull \hbox (8.5191pt too wide) detected at line 93
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/LED.pdf, id=103, 578.16pt x 433.62pt>
-File: Bilder/LED.pdf Graphic file (type pdf)
- <use Bilder/LED.pdf>
-Package pdftex.def Info: Bilder/LED.pdf used on input line 102.
-(pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <Bilder/LED_log.pdf, id=104, 578.16pt x 433.62pt>
+<Bilder/LED_log.pdf, id=103, 578.16pt x 433.62pt>
 File: Bilder/LED_log.pdf Graphic file (type pdf)
  <use Bilder/LED_log.pdf>
 Package pdftex.def Info: Bilder/LED_log.pdf used on input line 106.
-(pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- [5]) (./content/diskussion.tex [6<./Bilder/MAP002.pdf><./Bilder/MAP003.pdf>] [7<./Bilder/AusgangSpannung.pdf><./Bilder/AusgangStoerung.pdf>] [8<./Bilder/LED.pdf><./Bilder/LED_log.pdf>] [9])
+(pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
+
+
+LaTeX Warning: Reference `diag:LED_log' on page 5 undefined on input line 119.
+
+[5]) (./content/diskussion.tex [6<./Bilder/MAP002.pdf><./Bilder/MAP003.pdf>] [7<./Bilder/AusgangSpannung.pdf><./Bilder/AusgangStoerung.pdf>] [8<./Bilder/LED_log.pdf>] [9])
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 22.
@@ -2147,25 +2146,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 6F46D0D4CC7C16F03FE8B5AC2C5FFDC8;9263.
+(rerunfilecheck)             Checksum: 47E7B2622049D58A002F95579C4DD385;9163.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40520 strings out of 494695
+ 40522 strings out of 494695
  100000,1373583 words of node,token memory allocated
- 536 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 5 kern, 9 attribute, 63 glue_spec, 9 attribute_list, 5 action, 1 write nodes
-   avail lists: 1:47,2:11116,3:170,4:2208,5:316,6:3399,7:178,8:24,9:664,10:988,11:510,12:229
- 43035 multiletter control sequences out of 65536+600000
- 98 fonts using 28343151 bytes
+ 599 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 10 kern, 14 attribute, 67 glue_spec, 14 attribute_list, 5 action, 1 write nodes
+   avail lists: 1:47,2:11418,3:189,4:2250,5:325,6:3546,7:115,8:26,9:652,10:988,11:510,12:229
+ 43030 multiletter control sequences out of 65536+600000
+ 98 fonts using 28343279 bytes
  70i,13n,104p,974b,1218s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (10 pages, 220220 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (10 pages, 227174 bytes).
 
-PDF statistics: 534 PDF objects out of 1000 (max. 8388607)
- 298 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 131072)
+PDF statistics: 527 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 131072)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
