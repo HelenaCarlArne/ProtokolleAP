@@ -49,7 +49,7 @@ aber eventuell darauf, dass die Ausgänge des Funktionsgenerators und die Bautei
 	\caption{Fotos des Oszillators: das Signal mit Störungen zu zwei verschiedenen Zeiten. \cite{gimp}}
 	\label{fig:stoerung}
 \end{figure}
-Die Abbildung \ref{fig:stoerung} zeigt das Sinus-förmige Signal mit der überlagerten Störung. 
+Abbildung \ref{fig:stoerung} zeigt das gestörte Signal. 
 Trotz der Abweichungen vom idealen Signal werden die Werte der Messung ohne Störung sehr gut angenähert.
 \begin{figure}[hp]
 	\centering
@@ -71,26 +71,26 @@ Trotz der Abweichungen vom idealen Signal werden die Werte der Messung ohne Stö
 	\centering
 	\begin{tabular}{c S[table-format=1.2] l c}
 	\toprule
-	{Abstand a}&{Ausgangsspannung $U_0$}&\multicolumn{2}{c}{Gesamt-Verstärkung}\\
+	{Abstand a}&{Ausgangsspannung $U_0$}&\multicolumn{2}{c}{Gesamtverstärkung}\\
 	{$[\si{\meter}]$}&{$[\si{\volt}]$}&{absolut}&{relativ}\\
 	\midrule
-		0.02&	-5 		& $400\cdot5$ 	 & 1\\
-		0.05&	-1 		& $400\cdot5$ 	 & 1\\
-		0.08&	-0.5 	& $400\cdot5$ 	 & 1\\
-		0.11&	-2 		& $400\cdot50$ 	 & 10\\
-		0.14&	-1 		& $400\cdot50$	 & 10\\
-		0.17&	-0.9 	& $400\cdot50$	 & 10\\
-		0.20&	-6.0	& $400\cdot500$	 & 100\\
-		0.23&	-4.5 	& $400\cdot500$	 & 100\\
-		0.26&	-3.5 	& $400\cdot500$	 & 100\\
-		0.29&	-2.5 	& $400\cdot500$	 & 100\\
-		0.39&	-1.0 	& $400\cdot500$	 & 100\\
-		0.49&	-0.7 	& $400\cdot500$	 & 100\\
-		0.59&	-0.5 	& $400\cdot500$	 & 100\\
-		0.69&	-0.3 	& $400\cdot500$	 & 100\\
-		0.79&	-0.25 	& $400\cdot500$	 & 100\\
-		0.99&	-0.12 	& $400\cdot500$	 & 100\\
-		1.19&	-0.1 	& $400\cdot500$	 & 100\\
+		0.02&	-5 		& $20\cdot20\cdot5$ 	 & 1\\
+		0.05&	-1 		& $20\cdot20\cdot5$ 	 & 1\\
+		0.08&	-0.5 	& $20\cdot20\cdot5$ 	 & 1\\
+		0.11&	-2 		& $20\cdot20\cdot50$ 	 & 10\\
+		0.14&	-1 		& $20\cdot20\cdot50$	 & 10\\
+		0.17&	-0.9 	& $20\cdot20\cdot50$	 & 10\\
+		0.20&	-6.0	& $20\cdot20\cdot500$	 & 100\\
+		0.23&	-4.5 	& $20\cdot20\cdot500$	 & 100\\
+		0.26&	-3.5 	& $20\cdot20\cdot500$	 & 100\\
+		0.29&	-2.5 	& $20\cdot20\cdot500$	 & 100\\
+		0.39&	-1.0 	& $20\cdot20\cdot500$	 & 100\\
+		0.49&	-0.7 	& $20\cdot20\cdot500$	 & 100\\
+		0.59&	-0.5 	& $20\cdot20\cdot500$	 & 100\\
+		0.69&	-0.3 	& $20\cdot20\cdot500$	 & 100\\
+		0.79&	-0.25 	& $20\cdot20\cdot500$	 & 100\\
+		0.99&	-0.12 	& $20\cdot20\cdot500$	 & 100\\
+		1.19&	-0.1 	& $20\cdot20\cdot500$	 & 100\\
 	\bottomrule
 	\end{tabular}
 	\caption{Ausgangsspannung bei der Messung des LED-Lichtes.}
@@ -98,26 +98,58 @@ Trotz der Abweichungen vom idealen Signal werden die Werte der Messung ohne Stö
 \end{table}
 \begin{figure}[hbp]
 	\centering
-	\begin{subfigure}{0.8\textwidth}
-		\includegraphics[width=\textwidth]{Bilder/LED.pdf}
-		\caption{Lineare Skalierung.}
-	\end{subfigure}
-	\begin{subfigure}{0.8\textwidth}
+	% \begin{subfigure}{0.8\textwidth}
+	% 	\includegraphics[width=\textwidth]{Bilder/LED.pdf}
+	% 	\caption{Lineare Skalierung.}
+	% \end{subfigure}
+	% \begin{subfigure}{0.8\textwidth}
 		\includegraphics[width=\textwidth]{Bilder/LED_log.pdf}
-		\caption{Doppelt-logarithmische Skalierung.}
-		\label{diag:LED_log}
-	\end{subfigure}
-	\caption{Ausgangsspannung des Lock-In-Verstärkers bei Messung mit der LED.}
+		% \caption{Doppelt-logarithmische Skalierung.}
+		% \label{diag:LED_log}
+	% \end{subfigure}
+	\caption{Ausgangsspannung des Lock-In-Verstärkers bei Messung mit der LED  bei doppelt-logarithmische Skalierung.}
 	\label{diag:LED}
 \end{figure}
-In \ref{sec:Auswertung1} wurde experimentell nachgewiesen, dass der Betrag der Ausgangsspannung maximal wird, wenn der Phasenschieber auf Vielfache von 180° eingestellt ist.
+In \ref{sec:Auswertung1} wird experimentell nachgewiesen, dass der Betrag der Ausgangsspannung maximal wird, wenn der Phasenschieber auf Vielfache von 180° eingestellt ist.
 Bei der Einstellung 0° wird eine maximale, negative Spannung erwartet und den eventuellen Einfluss des Phasenschiebers umgangen.
 Das Signal, das von der Photodiode aufgenommen wird, wandelt der Lock-In-Verstärker dementsprechend in eine reine negative Gleichspannung.
 Im Interesse der Lesbarkeit werden die negativen Spannung unter Berücksichtigung der Gesamt-Verstärkung in Diagramm \ref{diag:LED} aufgetragen.
 Zur Kontrolle, dass die angegebenen Spannungen auf das LED-Signal zurückzuführen sind und nicht von Fremdeinflüssen stammen, wird die LED zeitweise abgedeckt.
 Dabei geht bei einem messbaren Signal die Ausgangsspannung auf Null zurück und nimmt ihren ursprünglichen Wert an, wenn der Lichtweg zwischen LED und Photodiode frei gemacht wird.
 Der näherungsweise lineare Abfall der Spannung bei doppel-logarithmischer Skalierung \eqref{diag:LED_log} zeigt, dass die gemessene Intensität mit $r^{-\alpha}$ mit $\alpha \in \mathbb{R}$ abfällt.
-
 Bei einem Abstand größer als $\SI{1.20}{\meter}$ ist trotz Verstärkung keine Ausgangsspannung zuverlässig messbar, 
 die Ausgangsspannung zeigt beim Abdecken der LED keine wesentliche Änderung.
 
+In Abbildung \ref{diag:LED} wird die Linearisierung der Messwerte vorgenommen.
+Es wird eine Regression für die Funktionsklasse 
+\begin{equation}
+	y(x)=A\cdot x^b
+\end{equation}
+angesetzt, die nach der Linearisierung die Gestalt
+\begin{equation}
+	\underbrace{\text{ln}(y(x))}_{y_\text{lin}}=\underbrace{\text{ln}(A)}_{b_\text{lin}}+\underbrace{b}_{m_\text{lin}}\cdot \underbrace{\text{ln}(\text{exp}(x))}_{x}
+\end{equation}
+Für diese linearisierte Ausgleichsgerade gilt (vgl. \cite{scipy})
+\begin{subequations}
+	\begin{equation}
+		\Delta = N \sum{x^2} - {\bigl(\sum{x}\bigr)}^2
+	\end{equation}
+	\begin{equation}
+		m_{\text{lin}} = \frac{N\sum{x\cdot y} - \sum{x} \cdot \sum{y}}{\Delta}
+	\end{equation}
+    \begin{equation}
+		b_{\text{lin}} = \frac{\sum{x^2} \cdot \sum{y} - \sum{x} \cdot \sum{x \cdot y}}{\Delta}
+	\end{equation}
+	% \begin{equation}
+	% 	\sigma_{y} = \sqrt{\frac{\sum{(y - m_{\text{Reg}} \cdot x - b_{\text{Reg}})^2}}{N - 2}}
+	% \end{equation}
+	% \begin{equation}
+	% 	\sigma_{m} = \sigma_{y} \sqrt{\frac{N}{\Delta}}
+	% \end{equation}
+	% \begin{equation}
+	% 	\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
+	% \end{equation}
+\end{subequations}
+mit der Anzahl aller Werte N.
+
+In Tabelle \ref{tab:led} sind die gemessenen Spannungen, den Abstand zwischen Photodiode und LED sowie die Gesamtverstärkung, bestehend aus den einzelnen Verstärkungen der Bauteile, aufgetragen.

@@ -48,11 +48,14 @@ ynoise=np.array([
 	4.50,
 	5.50])
 
-def f(x, a):
-	return a*np.cos(x/180*np.pi)
+def f(x, a,b):
+	return a*np.cos(x/180*np.pi+b)
 
 def exp(x, b, c):
-	return b*x**(-c)
+	return b*x**(c)
+
+def exp2(x, b, c,d):
+	return b*(x+d)**(c)
 
 def lin(x, d, e):
 	return d*x+e
@@ -63,25 +66,33 @@ plt.xlabel(r"Phase [°]")
 plt.ylabel(r"Spannung [V]")
 plt.xlim(0,360)
 plt.xticks([0,90,180,270,360])
-params,covar = curve_fit(f,phase,yvolt, p0=[-3])
-plt.plot(xplot, f(xplot, params),"k",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
+params,covar = curve_fit(f,phase,yvolt, p0=[-3,np.pi])
+plt.plot(xplot, f(xplot, *params),"k",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
+plt.plot(xplot, f(xplot, 2*4.63/np.pi,0),"g",label=r"Theorie")
 plt.plot(phase,yvolt,"bx",label="Messdaten")
+print(*params)
 plt.legend(loc="lower center")
 plt.tight_layout
-#plt.savefig("../Bilder/AusgangSpannung.pdf")
-plt.close()
+plt.text(10,5,r"$A=5.813$")
+plt.text(10,4.5,r"$\alpha=180.174$")
+plt.savefig("../Bilder/AusgangSpannung.pdf")
+plt.show()
 
 #Mit Störung
 plt.xlabel(r"Phase [°]")
 plt.ylabel(r"Spannung [V]")
 plt.xlim(0,360)
 plt.xticks([0,90,180,270,360])
-params,covar = curve_fit(f,phase,-ynoise, p0=[3])
-plt.plot(xplot, f(xplot, params),"k",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
+params,covar = curve_fit(f,phase,-ynoise, p0=[3, np.pi])
+plt.plot(xplot, f(xplot, *params),"k",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
 plt.plot(phase,-ynoise,"bx",label="Messdaten")
+plt.plot(xplot, f(xplot, 2*4.63/np.pi,0),"g",label=r"Theorie")
+print(*params)
 plt.legend(loc="lower center")
 plt.tight_layout
-#plt.savefig("../Bilder/AusgangStoerung.pdf")
+plt.text(10,5,r"$A=5.822$")
+plt.text(10,4.5,r"$\alpha=184.45$")
+plt.savefig("../Bilder/AusgangStoerung.pdf")
 plt.show()
 
 #LED
@@ -98,15 +109,18 @@ plt.tight_layout
 plt.savefig("../Bilder/LED.pdf")
 plt.show()
 
+
 plt.xlabel(r"Abstand [m]")
 plt.ylabel(r"Negative Spannung [V]")
 plt.yscale("log")
 plt.xscale("log")
 params,covar = curve_fit(exp,xled,-yled, p0=[1,-2])
-#plt.plot(xplot, exp(xplot, *params),"b",label=r"$f(x)=A \mathrm{cos(x+\alpha)}$")
-#print(*params)
+plt.plot(xplot, exp(xplot, *params),"r",label=r"$y_{\mathrm{lin}}(x)=m_{\mathrm{lin}}x+b_{\mathrm{lin}}$")
+print(*params)
 plt.plot(xled,-yled,"bx",label="Messdaten")
 plt.legend(loc="best")
 plt.tight_layout
+plt.text(80,25,r"$m_{\mathrm{lin}}=0.00456$")
+plt.text(80,10,r"$b_{\mathrm{lin}}=-1.79$")
 plt.savefig("../Bilder/LED_log.pdf")
 plt.show()
