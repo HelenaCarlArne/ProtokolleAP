@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  27 DEC 2014 21:00
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.9.29)  4 JAN 2015 16:16
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -351,7 +351,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.053 seconds
+luaotfload: fontloader loaded in 0.039 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -950,7 +950,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/bx/n on input line 39.
 luaotfload | load : auto-selecting default features for script: dflt(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/xits-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature ss03 for script math
+luaotfload: font no 24 (XITSMath) defines feature ss04 for script math
 \g_fontspec_family_XITS Math_int=\count337
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 24 (XITSMath) defines feature ssty for script math with language dflt
@@ -986,7 +986,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature ss03 for script math
+luaotfload: font no 27 (XITSMath) defines feature ss04 for script math
 \symum_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `um_fam1' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input line 40.
@@ -994,7 +994,7 @@ LaTeX Font Info:    Overwriting symbol font `um_fam1' in version `bold'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/bx/n on input line 40.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature ss03 for script math
+luaotfload: font no 24 (XITSMath) defines feature ss04 for script math
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1007,7 +1007,7 @@ luaotfload: font no 24 (XITSMath) defines feature ss03 for script math
 .................................................
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature ss03 for script math
+luaotfload: font no 27 (XITSMath) defines feature ss04 for script math
 \symum_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `um_fam2' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input line 41.
@@ -1015,7 +1015,7 @@ LaTeX Font Info:    Overwriting symbol font `um_fam2' in version `bold'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/bx/n on input line 41.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature ss03 for script math
+luaotfload: font no 24 (XITSMath) defines feature ss04 for script math
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1028,7 +1028,7 @@ luaotfload: font no 24 (XITSMath) defines feature ss03 for script math
 .................................................
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature ss03 for script math
+luaotfload: font no 27 (XITSMath) defines feature ss04 for script math
 \symum_fam3=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `um_fam3' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input line 42.
@@ -1955,7 +1955,7 @@ Package pdftex.def Info: Bilder/Messung1.pdf used on input line 9.
  [3<./Bilder/Beispiel.pdf>] <Bilder/Messung2.pdf, id=69, 683.55376pt x 217.81375pt>
 File: Bilder/Messung2.pdf Graphic file (type pdf)
  <use Bilder/Messung2.pdf>
-Package pdftex.def Info: Bilder/Messung2.pdf used on input line 25.
+Package pdftex.def Info: Bilder/Messung2.pdf used on input line 27.
 (pdftex.def)             Requested size: 292.7776pt x 93.2958pt.
 ) (./content/auswertung.tex [4<./Bilder/Messung1.pdf><./Bilder/Messung2.pdf>]
 luaotfload | load : auto-selecting default features for script: latn
@@ -1971,74 +1971,79 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-Overfull \hbox (8.5191pt too wide) detected at line 20
+Overfull \hbox (8.5191pt too wide) detected at line 25
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 20
+Overfull \hbox (8.5191pt too wide) detected at line 25
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 21
+Overfull \hbox (8.5191pt too wide) detected at line 26
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 21
+Overfull \hbox (8.5191pt too wide) detected at line 26
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 27
+Overfull \hbox (8.5191pt too wide) detected at line 31
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 28
+Overfull \hbox (8.5191pt too wide) detected at line 32
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 28
+Overfull \hbox (8.5191pt too wide) detected at line 32
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 29
+Overfull \hbox (8.5191pt too wide) detected at line 33
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 29
+Overfull \hbox (8.5191pt too wide) detected at line 33
  
  []
 
-<Bilder/MAP002.pdf, id=97, 401.44983pt x 240.86989pt>
-File: Bilder/MAP002.pdf Graphic file (type pdf)
- <use Bilder/MAP002.pdf>
-Package pdftex.def Info: Bilder/MAP002.pdf used on input line 44.
-(pdftex.def)             Requested size: 204.94751pt x 122.97064pt.
- <Bilder/MAP003.pdf, id=98, 401.5pt x 240.9pt>
-File: Bilder/MAP003.pdf Graphic file (type pdf)
- <use Bilder/MAP003.pdf>
-Package pdftex.def Info: Bilder/MAP003.pdf used on input line 47.
-(pdftex.def)             Requested size: 204.94751pt x 122.97131pt.
- <Bilder/AusgangSpannung.pdf, id=102, 578.16pt x 433.62pt>
+
+Overfull \hbox (8.5191pt too wide) detected at line 33
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 34
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 34
+ 
+ []
+
+<Bilder/AusgangSpannung.pdf, id=103, 578.16pt x 433.62pt>
 File: Bilder/AusgangSpannung.pdf Graphic file (type pdf)
  <use Bilder/AusgangSpannung.pdf>
-Package pdftex.def Info: Bilder/AusgangSpannung.pdf used on input line 56.
+Package pdftex.def Info: Bilder/AusgangSpannung.pdf used on input line 57.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.00006pt on input line 57.
+(Font)              scaled to size 7.00006pt on input line 58.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.99986pt on input line 57.
+(Font)              scaled to size 6.99986pt on input line 58.
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
@@ -2047,132 +2052,272 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc)
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: math
-luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) <Bilder/AusgangStoerung.pdf, id=103, 578.16pt x 433.62pt>
+luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: math
+luaotfload | load : no defaults for script "math", falling back to "dflt" <Bilder/AusgangStoerung.pdf, id=104, 578.16pt x 433.62pt>
 File: Bilder/AusgangStoerung.pdf Graphic file (type pdf)
  <use Bilder/AusgangStoerung.pdf>
 Package pdftex.def Info: Bilder/AusgangStoerung.pdf used on input line 63.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
+ <Bilder/MAP005.pdf, id=105, 401.44983pt x 240.86989pt>
+File: Bilder/MAP005.pdf Graphic file (type pdf)
+ <use Bilder/MAP005.pdf>
+Package pdftex.def Info: Bilder/MAP005.pdf used on input line 71.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP006.pdf, id=106, 401.44983pt x 240.86989pt>
+File: Bilder/MAP006.pdf Graphic file (type pdf)
+ <use Bilder/MAP006.pdf>
+Package pdftex.def Info: Bilder/MAP006.pdf used on input line 75.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP007.pdf, id=107, 401.44983pt x 240.86989pt>
+File: Bilder/MAP007.pdf Graphic file (type pdf)
+ <use Bilder/MAP007.pdf>
+Package pdftex.def Info: Bilder/MAP007.pdf used on input line 79.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP008.pdf, id=108, 401.44983pt x 240.86989pt>
+File: Bilder/MAP008.pdf Graphic file (type pdf)
+ <use Bilder/MAP008.pdf>
+Package pdftex.def Info: Bilder/MAP008.pdf used on input line 83.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP009.pdf, id=109, 401.44983pt x 240.86989pt>
+File: Bilder/MAP009.pdf Graphic file (type pdf)
+ <use Bilder/MAP009.pdf>
+Package pdftex.def Info: Bilder/MAP009.pdf used on input line 87.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP010.pdf, id=110, 401.44983pt x 240.86989pt>
+File: Bilder/MAP010.pdf Graphic file (type pdf)
+ <use Bilder/MAP010.pdf>
+Package pdftex.def Info: Bilder/MAP010.pdf used on input line 91.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP011.pdf, id=111, 401.44983pt x 240.86989pt>
+File: Bilder/MAP011.pdf Graphic file (type pdf)
+ <use Bilder/MAP011.pdf>
+Package pdftex.def Info: Bilder/MAP011.pdf used on input line 95.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP012.pdf, id=112, 401.44983pt x 240.86989pt>
+File: Bilder/MAP012.pdf Graphic file (type pdf)
+ <use Bilder/MAP012.pdf>
+Package pdftex.def Info: Bilder/MAP012.pdf used on input line 99.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP013.pdf, id=113, 401.44983pt x 240.86989pt>
+File: Bilder/MAP013.pdf Graphic file (type pdf)
+ <use Bilder/MAP013.pdf>
+Package pdftex.def Info: Bilder/MAP013.pdf used on input line 103.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP014.pdf, id=114, 401.44983pt x 240.86989pt>
+File: Bilder/MAP014.pdf Graphic file (type pdf)
+ <use Bilder/MAP014.pdf>
+Package pdftex.def Info: Bilder/MAP014.pdf used on input line 107.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP015.pdf, id=115, 401.44983pt x 240.86989pt>
+File: Bilder/MAP015.pdf Graphic file (type pdf)
+ <use Bilder/MAP015.pdf>
+Package pdftex.def Info: Bilder/MAP015.pdf used on input line 111.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP016.pdf, id=116, 401.44983pt x 240.86989pt>
+File: Bilder/MAP016.pdf Graphic file (type pdf)
+ <use Bilder/MAP016.pdf>
+Package pdftex.def Info: Bilder/MAP016.pdf used on input line 115.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP017.pdf, id=117, 401.44983pt x 240.86989pt>
+File: Bilder/MAP017.pdf Graphic file (type pdf)
+ <use Bilder/MAP017.pdf>
+Package pdftex.def Info: Bilder/MAP017.pdf used on input line 119.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP018.pdf, id=120, 401.44983pt x 240.86989pt>
+File: Bilder/MAP018.pdf Graphic file (type pdf)
+ <use Bilder/MAP018.pdf>
+Package pdftex.def Info: Bilder/MAP018.pdf used on input line 128.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP019.pdf, id=121, 401.44983pt x 240.86989pt>
+File: Bilder/MAP019.pdf Graphic file (type pdf)
+ <use Bilder/MAP019.pdf>
+Package pdftex.def Info: Bilder/MAP019.pdf used on input line 132.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP020.pdf, id=122, 401.44983pt x 240.86989pt>
+File: Bilder/MAP020.pdf Graphic file (type pdf)
+ <use Bilder/MAP020.pdf>
+Package pdftex.def Info: Bilder/MAP020.pdf used on input line 136.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP021.pdf, id=123, 401.44983pt x 240.86989pt>
+File: Bilder/MAP021.pdf Graphic file (type pdf)
+ <use Bilder/MAP021.pdf>
+Package pdftex.def Info: Bilder/MAP021.pdf used on input line 140.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP022.pdf, id=124, 401.44983pt x 240.86989pt>
+File: Bilder/MAP022.pdf Graphic file (type pdf)
+ <use Bilder/MAP022.pdf>
+Package pdftex.def Info: Bilder/MAP022.pdf used on input line 144.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP023.pdf, id=125, 401.44983pt x 240.86989pt>
+File: Bilder/MAP023.pdf Graphic file (type pdf)
+ <use Bilder/MAP023.pdf>
+Package pdftex.def Info: Bilder/MAP023.pdf used on input line 148.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP024.pdf, id=126, 401.44983pt x 240.86989pt>
+File: Bilder/MAP024.pdf Graphic file (type pdf)
+ <use Bilder/MAP024.pdf>
+Package pdftex.def Info: Bilder/MAP024.pdf used on input line 152.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP025.pdf, id=127, 401.44983pt x 240.86989pt>
+File: Bilder/MAP025.pdf Graphic file (type pdf)
+ <use Bilder/MAP025.pdf>
+Package pdftex.def Info: Bilder/MAP025.pdf used on input line 156.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP026.pdf, id=128, 401.44983pt x 240.86989pt>
+File: Bilder/MAP026.pdf Graphic file (type pdf)
+ <use Bilder/MAP026.pdf>
+Package pdftex.def Info: Bilder/MAP026.pdf used on input line 160.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP027.pdf, id=129, 401.44983pt x 240.86989pt>
+File: Bilder/MAP027.pdf Graphic file (type pdf)
+ <use Bilder/MAP027.pdf>
+Package pdftex.def Info: Bilder/MAP027.pdf used on input line 164.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP028.pdf, id=130, 401.44983pt x 240.86989pt>
+File: Bilder/MAP028.pdf Graphic file (type pdf)
+ <use Bilder/MAP028.pdf>
+Package pdftex.def Info: Bilder/MAP028.pdf used on input line 168.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP029.pdf, id=131, 401.44983pt x 240.86989pt>
+File: Bilder/MAP029.pdf Graphic file (type pdf)
+ <use Bilder/MAP029.pdf>
+Package pdftex.def Info: Bilder/MAP029.pdf used on input line 172.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP030.pdf, id=132, 401.44983pt x 240.86989pt>
+File: Bilder/MAP030.pdf Graphic file (type pdf)
+ <use Bilder/MAP030.pdf>
+Package pdftex.def Info: Bilder/MAP030.pdf used on input line 176.
+(pdftex.def)             Requested size: 133.84483pt x 80.3069pt.
+ <Bilder/MAP002.pdf, id=137, 401.44983pt x 240.86989pt>
+File: Bilder/MAP002.pdf Graphic file (type pdf)
+ <use Bilder/MAP002.pdf>
+Package pdftex.def Info: Bilder/MAP002.pdf used on input line 186.
+(pdftex.def)             Requested size: 204.94751pt x 122.97064pt.
+ <Bilder/MAP003.pdf, id=138, 401.5pt x 240.9pt>
+File: Bilder/MAP003.pdf Graphic file (type pdf)
+ <use Bilder/MAP003.pdf>
+Package pdftex.def Info: Bilder/MAP003.pdf used on input line 189.
+(pdftex.def)             Requested size: 204.94751pt x 122.97131pt.
 
-Overfull \hbox (8.5191pt too wide) detected at line 77
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 205
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 78
+Overfull \hbox (8.5191pt too wide) detected at line 206
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 79
+Overfull \hbox (8.5191pt too wide) detected at line 207
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 80
+Overfull \hbox (8.5191pt too wide) detected at line 208
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 81
+Overfull \hbox (8.5191pt too wide) detected at line 209
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 82
+Overfull \hbox (8.5191pt too wide) detected at line 210
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 83
+Overfull \hbox (8.5191pt too wide) detected at line 211
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 84
+Overfull \hbox (8.5191pt too wide) detected at line 212
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 85
+Overfull \hbox (8.5191pt too wide) detected at line 213
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 86
+Overfull \hbox (8.5191pt too wide) detected at line 214
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 87
+Overfull \hbox (8.5191pt too wide) detected at line 215
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 88
+Overfull \hbox (8.5191pt too wide) detected at line 216
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 89
+Overfull \hbox (8.5191pt too wide) detected at line 217
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 90
+Overfull \hbox (8.5191pt too wide) detected at line 218
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 91
+Overfull \hbox (8.5191pt too wide) detected at line 219
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 92
+Overfull \hbox (8.5191pt too wide) detected at line 220
  
  []
 
 
-Overfull \hbox (8.5191pt too wide) detected at line 93
+Overfull \hbox (8.5191pt too wide) detected at line 221
  
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Bilder/LED_log.pdf, id=104, 578.16pt x 433.62pt>
+[5
+Missing character: There is no 𝛥 (U+1D6E5) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+Missing character: There is no 𝜙 (U+1D719) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+] [6<./Bilder/AusgangSpannung.pdf><./Bilder/AusgangStoerung.pdf>] [7<./Bilder/MAP005.pdf><./Bilder/MAP006.pdf><./Bilder/MAP007.pdf><./Bilder/MAP008.pdf><./Bilder/MAP009.pdf><./Bilder/MAP010.pdf><./Bilder/MAP011.pdf><./Bilder/MAP012.pdf><./Bilder/MAP013.pdf><./Bilder/MAP014.pdf><./Bilder/MAP015.pdf><./Bilder/MAP016.pdf><./Bilder/MAP017.pdf>] [8<./Bilder/MAP018.pdf><./Bilder/MAP019.pdf><./Bilder/MAP020.pdf><./Bilder/MAP021.pdf><./Bilder/MAP022.pdf><./Bilder/MAP023.pdf><./Bilder/MAP024.pdf><./Bilder/MAP025.pdf><./Bilder/MAP026.pdf><./Bilder/MAP027.pdf><./Bilder/MAP028.pdf><./Bilder/MAP029.pdf><./Bilder/MAP030.pdf>] [9<./Bilder/MAP002.pdf><./Bilder/MAP003.pdf>] <Bilder/LED_log.pdf, id=522, 578.16pt x 433.62pt>
 File: Bilder/LED_log.pdf Graphic file (type pdf)
  <use Bilder/LED_log.pdf>
-Package pdftex.def Info: Bilder/LED_log.pdf used on input line 106.
+Package pdftex.def Info: Bilder/LED_log.pdf used on input line 278.
 (pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
-
-
-LaTeX Warning: Reference `diag:LED_log' on page 5 undefined on input line 119.
-
-[5]) (./content/diskussion.tex [6<./Bilder/MAP002.pdf><./Bilder/MAP003.pdf>] [7<./Bilder/AusgangSpannung.pdf><./Bilder/AusgangStoerung.pdf>] [8<./Bilder/LED_log.pdf>] [9])
+) (./content/diskussion.tex [10] [11<./Bilder/LED_log.pdf>])
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load luc: /Users/Arne/Library/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 22.
@@ -2185,36 +2330,33 @@ Overfull \hbox (3.5517pt too wide) in paragraph at lines 23--23
 \EU2/lmr/m/it/10.95 In-Verstärker\EU2/lmr/m/n/10.95 . \EU2/lmr/m/sc/10.95 url\EU2/lmr/m/n/10.95 : []$\EU2/lmtt/m/n/10.95 http : / / www . physik . uni -[] regensburg . de / studium / praktika /
  []
 
+[12]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[10]
+ [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 47E7B2622049D58A002F95579C4DD385;9163.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: E1F7404D813241BCBBAA10EFBBAD15A9;9866.
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40504 strings out of 494695
- 100000,1373583 words of node,token memory allocated
- 600 words of node memory still in use:
+ 40615 strings out of 494695
+ 125002,1373583 words of node,token memory allocated
+ 658 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 10 kern, 14 attribute, 67 glue_spec, 14 attribute_list, 5 action, 1 write nodes
-   avail lists: 1:47,2:11418,3:190,4:2249,5:325,6:3546,7:109,8:26,9:652,10:990,11:512,12:229
- 43057 multiletter control sequences out of 65536+600000
- 111 fonts using 36895479 bytes
- 70i,13n,104p,974b,1216s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/xits/xits-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (10 pages, 226230 bytes).
+   avail lists: 1:127,2:15279,3:437,4:3215,5:398,6:4539,7:251,8:30,9:1126,10:990,11:512,12:229
+ 43163 multiletter control sequences out of 65536+600000
+ 111 fonts using 36896199 bytes
+ 70i,14n,104p,974b,1462s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/xits/xits-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (13 pages, 418745 bytes).
 
-PDF statistics: 528 PDF objects out of 1000 (max. 8388607)
- 293 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 131072)
+PDF statistics: 766 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
+ 51 named destinations out of 1000 (max. 131072)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

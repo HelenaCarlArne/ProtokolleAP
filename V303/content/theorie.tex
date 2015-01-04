@@ -29,24 +29,24 @@ Damit wird eine hohe Güteziffer im Bezug auf Störungsfilterung erzielt.
 
 Die Ausgangsspannung $U_\mathup{out}$ ist eine Gleichspannung, welche proportional zur Eingangsspannung $U_\mathup{sig}$ und zum Cosinus der Phasendifferenz $\Delta\Phi$ ist:
 \begin{equation}
- 	U_\mathup{out}\propto{U_\text{sig}}\text{cos}(\Delta\Phi). 
+ 	U_\mathup{out}\propto{U_\text{sig}}\text{cos}(\mathup{\Delta}\Phi). 
  	\label{cosinus_ausgangsspannung}
  \end{equation} 
-$U_\mathup{out}$ wird also maximal, wenn die Phasendifferenz $\Delta\Phi=0°$ (wahlweise Vielfache von 180°) beträgt. \cite{regensburg}
+$U_\mathup{out}$ wird also maximal, wenn die Phasendifferenz $\mathup{\Delta}\Phi=0°$ (wahlweise Vielfache von 180°) beträgt. \cite{regensburg}
 %Quellenangabe http://www.physik.uni-regensburg.de/studium/praktika/a2/download/versuch5a.pdf
 
 \begin{figure}
 	\centering
 		\includegraphics[width=0.4\textwidth]{Bilder/Beispiel.pdf}
-		\caption{Überlagerung eines sinusförmigen Eingangssignals mit rechteckiger Referenzsspannung. \cite{V303}}
+		\caption{Überlagerung eines Sinus-förmigen Eingangssignals mit rechteckiger Referenzsspannung. \cite{V303}}
 		\label{fig:bsp}
 	\end{figure}
-Wird beispielsweise ein sinusförmiges Eingangssignal $U_\mathup{sig}=U_0\text{sin}(\omega t)$ wie in Abbildung \ref{fig:bsp} mit einem rechteckigen Referenzsignal $U_\mathup{ref}$ gleicher Frequenz gefaltet, wird diese zunächst durch eine Fourierreihe angenähert, welche aus den ungeraden Harmonischen der Grundfrequenz besteht. 
-Wird das multiplizierte Signal,  bestehend aus geraden Oberwellen der Frequenz $\omega$, durch den als Gleichrichter funktionierenden Tiefpass geleitet, ergibt sich die Gleichspannung
+Wird beispielsweise ein Sinus-förmiges Eingangssignal $U_\mathup{sig}=U_0\text{sin}(\omega t)$ wie in Abbildung \ref{fig:bsp} mit einem rechteckigen Referenzsignal $U_\mathup{ref}$ gleicher Frequenz gefaltet, wird diese zunächst durch eine Fourierreihe angenähert, welche aus den ungeraden Harmonischen der Grundfrequenz besteht. 
+Wird das multiplizierte Signal,  bestehend aus geraden Oberwellen der Frequenz $\omega$, durch den als Gleichrichter funktionierenden Tiefpass geleitet, ergibt sich die Endspannung
 \begin{equation}
-	U_\mathup{out}=\frac{2}{\pi}U_0\text{cos}(\Phi).
+	U_\mathup{out}=\frac{2}{\pi}U_0\text{cos}(\mathup{\Delta}\Phi).
 \end{equation}
-Besteht kein Phasenunterschied zwischen Eingangs- und Referenzsignal nimmt die Ausgangsspannung ihren Maximalwert 
+Besteht kein Phasenunterschied zwischen Eingangs- und Referenzsignal, so nimmt die Endspannung ihren Maximalwert 
 \begin{equation}
 	U_\mathup{out}=\frac{2}{\pi}U_0
 \end{equation}
