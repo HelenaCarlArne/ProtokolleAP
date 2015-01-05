@@ -4,8 +4,8 @@ Betrachtet werden eine reine Schwingung und eine erzwungene Schwingung jeweils m
 
 \section{Theorie}
 \label{sec:Theorie}
-% Kann ein schwingfähiges System, nachdem es angeregt wurde, ohne weiteren Einfluss von außen oszillieren, so handelt es sich um eine freie Schwingung.
-% Bleibt der von außen gegebene Antrieb über lange Zeit erhalten, so handelt es sich um eine erzwungene Schwingung. \cite{kuchen}
+Kann ein schwingfähiges System, nachdem es angeregt wurde, ohne weiteren Einfluss von außen oszillieren, so handelt es sich um eine freie Schwingung.
+Bleibt der von außen gegebene Antrieb über lange Zeit erhalten, so handelt es sich um eine erzwungene Schwingung. \cite{kuchen}
 \subsection{Freie Schwingung mit Dämpfung}
 \label{sec:theorie1}
 \begin{figure}[h]
@@ -53,10 +53,20 @@ Es ergibt sich als Lösung für $\omega$
 \begin{equation}
 	\mathup{\omega_{1,2}}= -\frac{\mathup{R}}{2\mathup{L}}\pm i\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}
 \end{equation}
-mit
+woraus
 \begin{equation}
-	I(t) = e^{-\frac{\mathup{R}}{2\mathup{L}}\,t}(A_1 \sin\Bigl(\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}\, t\Bigr)+A_2 \cos\Bigl(\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}\,t\Bigr)\
+	I(t) = e^{-\frac{\mathup{R}}{2\mathup{L}}\,t}(A_1 \sin\Bigl(\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}\, t\Bigr)+A_2 \cos\Bigl(\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}\,t\Bigr)
 	\label{eq:schwingloesung}
+\end{equation}
+folgt.
+Es kommt zu einer Schwingung, deren Amplitude mit der Zeit abnimmt. 
+Für die Schwingperiode gilt die Thomsonsche Schwingformel
+\begin{equation}
+	T_0 = \frac{2π}{\mathup{ω_0}} = \mathup{2π L C};
+\end{equation} 
+die Zeit, in welcher die Amplitude auf den e-Teil des Anfangswertes absinkt, ist
+\begin{equation}
+	T_\text{ex} = \frac{\text{2L}}{\text{R}}.
 \end{equation}
 %\subsubsection{aperiodischer Grenzfall}
 Für $\frac{1}{\mathup{LC}}=\frac{\mathup{R^2}}{4\mathup{L^2}}$ \\
@@ -107,19 +117,32 @@ Die Lösung dieser inhomogenen Differntialgleichung setzt sich aus homogener und
 Es ist aus Abschnitt \ref{sec:theorie1} bekannt, dass die homogene Lösung für große Zeiten gegen Null geht.
 Mithilfe des Ansatzes $U_\mathup{C}(\omega,t)= \tilde{U}_\mathup{\omega}(\omega)\cdot e^{i\omega t}$,
 $\tilde{U}_\mathup{\omega}(\omega)\in\mathbb{C}$ ist die komplexe Amplitude mit Phasenwinkel $\mathup{arg}(\tilde{U}_\mathup{\omega})=\phi$ und Betrag $|\tilde{U}_\mathup{\omega}|=U_\mathup{\omega}$, ist die inhomogene Lösung von Differentialgleichung \eqref{eq:DGLerzw}
-\begin{align}
-	U_0 &= - \mathup{LC}\omega^2 \tilde{U}_\mathup{\omega}(\omega) + i\omega\mathup{RC}\tilde{U}_\mathup{\omega}(\omega) + \tilde{U}_\mathup{\omega}(\omega)\\
-	\intertext{mit}
-	U_\mathup{\omega}&= U_0\frac{\sqrt{(1 − \mathup{LC}\omega^2)^2 +\mathup{ω^2R^2C^2}}}{\Bigl(\sqrt{(1 − \mathup{LC}\omega^2)^2 +\mathup{ω^2R^2C^2}}\Bigr)^2}\label{eq:yes}\\
-	\mathup{tan}(\phi) &= \frac{\mathup{Im}(\tilde{U}_\mathup{\omega})}{\mathup{Re}(\tilde{U}_\mathup{\omega})}=\frac{−ω\mathup{RC}}{1 − \mathup{LC}ω2}
-\end{align}
+\begin{equation}
+	U_0 = - \mathup{LC}\omega^2 \tilde{U}_\mathup{\omega}(\omega) + i\omega\mathup{RC}\tilde{U}_\mathup{\omega}(\omega) + \tilde{U}_\mathup{\omega}(\omega)\\
+\end{equation}
+\begin{subequations}
+	\begin{equation}
+		U_\mathup{\omega}= U_0\frac{\sqrt{(1 − \mathup{LC}\omega^2)^2 +ω^2\mathup{R^2C^2}}}{\Bigl(\sqrt{(1 − \mathup{LC}\omega^2)^2 +ω^2\mathup{R^2C^2}}\Bigr)^2}\label{eq:yes}\\
+	\end{equation}
+	\begin{equation}
+		\mathup{tan}(\phi) = \frac{\mathup{Im}(\tilde{U}_\mathup{\omega})}{\mathup{Re}(\tilde{U}_\mathup{\omega})}=\frac{−ω\mathup{RC}}{1 − \mathup{LC}ω2}
+	\end{equation}
+\end{subequations}
 Aus \eqref{eq:yes} und dem gewählten Ansatz folgt für die Amplitude der Lösungsfunktion der Differentialgleichung \eqref{eq:DGLerzw}
 \begin{equation}
-	|U_\mathup{C}| = \frac{U_0}{\sqrt{(1 − \mathup{LC}\omega^2)^2 +\mathup{ω^2R^2C^2}}} 
+	|U_\mathup{C}| = \frac{U_0}{\sqrt{(1 − \mathup{LC}\omega^2)^2 +ω^2\mathup{R^2C^2}}} 
 \end{equation}
 
-% Es fehlt eine vernünftige Liste der obenstehenden Formeln, Resonanzfall, Grenzfälle, Neue Frequenz,
-% Schwingformel nach Thomson, Abnahmezeit, Spannungsüberhöhung
+Bei der komplexen Amplitude $\tilde{U}_\mathup{\omega}$ treten insbesondere die Sonderfälle
+\begin{equation}
+ 	\lim_{\omega\to\infty} \tilde{U}_\mathup{\omega} =0 =lim_{\omega\to 0} \tilde{U}_\mathup{\omega} 
+\end{equation} auf.
+Des Weiteren existiert eine Resonanzfrequenz $\omega_0 = \sqrt{\frac{1}{\mathup{LC}-\frac{\mathup{R^2}}{4\mathup{L^2}}}}$, die durch Dämpfung und Eigenfrequenz gegebene neue Schwingfrequenz des Systems.
+Bei Erregung des Systems mit dieser Frequenz kommt es zur Resonanz; das System schwingt mit einer Spannungsamplitude größer als die Erregeramplitude $U_0$.
+Es gilt dabei, dass die maximale Spannung
+\begin{equation}
+	U_\mathup{C,max=} \underbrace{\frac{1}{\mathup{\omega_0RC}}}_{\text{Spannungsüberhöhung}} U_0 
+\end{equation}
 
 % Geld ist ja bekanntlich im Portmonee. Da steckt man es rein und es kommt nicht da raus. Außer man kauft etwas davon, zum Beispiel Suppe. (In der Tüte oder nicht, dass ist in diesem Fall egal). Aber wie teuer ist Suppe?
 
