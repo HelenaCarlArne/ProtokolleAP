@@ -1,20 +1,20 @@
 [1] Config.pm:320> INFO - This is Biber 1.9
 [1] Config.pm:323> INFO - Logfile is 'build/main.blg'
-[79] biber:277> INFO - === Mo Jan  5, 2015, 20:58:35
-[80] Biber.pm:333> INFO - Reading 'build/main.bcf'
-[224] Biber.pm:635> INFO - Found 5 citekeys in bib section 0
-[272] Biber.pm:3051> INFO - Processing section 0
-[313] Biber.pm:3189> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[314] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[315] bibtex.pm:864> INFO - Found BibTeX data source 'build/lit.bib'
-[321] Biber.pm:3189> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[323] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[327] bibtex.pm:864> INFO - Found BibTeX data source 'build/programme.bib'
-[354] Utils.pm:144> WARN - I didn't find a database entry for 'v354' (section 0)
-[467] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[467] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[467] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[468] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
-[487] bbl.pm:517> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[489] bbl.pm:606> INFO - Output to build/main.bbl
-[489] Biber.pm:106> INFO - WARNINGS: 1
+[78] biber:277> INFO - === Mo Jan  5, 2015, 22:07:23
+[83] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[238] Biber.pm:635> INFO - Found 5 citekeys in bib section 0
+[316] Biber.pm:3051> INFO - Processing section 0
+[382] Biber.pm:3189> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[384] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[385] bibtex.pm:864> INFO - Found BibTeX data source 'build/lit.bib'
+[390] Biber.pm:3189> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[396] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[403] bibtex.pm:864> INFO - Found BibTeX data source 'build/programme.bib'
+[445] Utils.pm:144> WARN - I didn't find a database entry for 'v354' (section 0)
+[573] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[573] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[574] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[574] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
+[595] bbl.pm:517> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[597] bbl.pm:606> INFO - Output to build/main.bbl
+[597] Biber.pm:106> INFO - WARNINGS: 1
