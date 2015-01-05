@@ -45,6 +45,25 @@
       \verb http://link.aip.org/link/?CSX/9/90/1
       \endverb
     \endentry
+    \entry{kuchen}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=bbbaa048600aa66c82c8b6d12560aaaa}{Kuchling}{K\bibinitperiod}{Horst}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=bbbaa048600aa66c82c8b6d12560aaaa}{Kuchling}{K\bibinitperiod}{Horst}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Hanser Verlag}%
+      }
+      \strng{namehash}{bbbaa048600aa66c82c8b6d12560aaaa}
+      \strng{fullhash}{bbbaa048600aa66c82c8b6d12560aaaa}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Taschenbuch der Physik}
+      \field{title}{Taschenbuch der Physik}
+      \field{volume}{20}
+      \field{year}{2011}
+    \endentry
     \entry{numpy}{article}{}
       \name{labelname}{1}{}{%
         {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
@@ -90,6 +109,7 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{v354}
 \endrefsection
 \endinput
 
