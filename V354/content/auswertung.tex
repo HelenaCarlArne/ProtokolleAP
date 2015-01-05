@@ -18,18 +18,18 @@ In diesem Versuch wird eine Schaltung -- Gerät 1 -- verwendet, welche aus versc
  Widerstand $R_2$ & \SI{682}{\ohm}           & \pm\,\SI{1}{\ohm} \\
 	\bottomrule
 	\end{tabular}
-\label{tab:geraet}
 	\caption{Daten der in Gerät 1 verwendeten Bauteile.}
+\label{tab:geraet}
 \end{table}
 
 Da alle Größen fehlerbehaftet sind fließen diese nach der Gaußschen Fehlerfortpflanzung 
 \begin{equation}
-\Delta{u}=\sqrt{\biggl(\frac{\mathup{d}u}{\mathup{d}v}\Delta{v}\bigr)²+\bigl(\frac{\mathup{d}u}{\mathup{d}w}\Delta{w}\biggr)²}
+\Delta{u}=\sqrt{\biggl(\frac{\mathup{d}u}{\mathup{d}v}\Delta{v}\biggr)²+\biggl(\frac{\mathup{d}u}{\mathup{d}w}\Delta{w}\biggr)²}
 %\label{eq:gauss}
 \end{equation}
 in die folgenden Rechnungen ein.
 Alle Grafiken und Ausgleichsrechnungen werden mit PROGRAMM ausgeführt.
-\subsection{Zeitabhängigkeit der Spannungsamplitude und Dämpfungswiderstand}
+\subsection{Zeitabhängigkeit der Amplitude einer gedämpften Schwingung}
 
 %%%%%%%%%Schwingfall Plot
 %%%%%%%%Tabelle: Extremwerte der Spannung
@@ -60,14 +60,14 @@ Alle Grafiken und Ausgleichsrechnungen werden mit PROGRAMM ausgeführt.
 In Abbildung \ref{schwingfall} ist die Amplitude der Kondensatorspannung $U_\mathup{C}$ gegen die Zeit $t$ aufgetragen, nachdem der Stromkreis durch einen elektrischen Impuls zur Schwingung angeregt wurde.
  Mit den eingezeichneten Extremwerten der Spannung, angegeben in Tabelle \ref{tab:extrema} kann die Schwingungskurve berechnet werden.
  Die Einhüllende, die nur die Minima und Maxima mit der Schwingkurve gemein hat, zeigt den für den Schwingfall typischen zeitlichen Verlauf der Spannung. 
-Diese nimmt mit der Zeit exponentiell ab.
+Diese nimmt  exponentiell ab.
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=\textwidth]{build/plot_schwingungskurve.pdf}
 		\caption{Verhalten der Spannung für den Schwingfall.}
 \label{schwingfall}
 \end{figure}
-Dies wird noch deutlicher, wenn die Schwingung halblogarithmisch aufgetragen wird. Dafür werden die Minima an der $t$-Achse gespiegelt.
+Noch deutlicher wird es, wenn die Schwingung halblogarithmisch aufgetragen wird. Dafür werden die Minima an der $t$-Achse gespiegelt. Ein linearer Zusammenhang ist erkennbar.
 %%%%%%%Schwingfall, logarithmischer Plot
 \begin{figure}[h]
 		\centering
@@ -84,18 +84,18 @@ g(t)=(-3978.365\pm 36.562)\frac{1}{s} t + (4.298\pm0.010)
 \end{equation}
 durch die Messpunkte gelegt werden. 
 $m$ ist dabei die Steigung der Geraden und $b$ der y-Achsenabschnitt.
-Damit lässt sich $R_\mathup{eff}=(134\pm1)\si\ohm$ berechnen. 
+Damit lässt sich $R_\mathup{eff}=\sfrac{-2m}{L}=(134\pm1)\,\si\ohm$, der für die in der Schaltung auftretende Dämpfungswiderstand, berechnen. 
 
-Die Abklingdauer $T_\mathup{ex}$ wird aus dem negativen Kehrwert der Steigung $m$ gebildet, sodass $T_\mathup{ex}=(0.251\pm0.002)\si\second$ ist.
- Der theoretische Wert $T_\mathup{ex,t}=\frac{2L}{R}$ ergibt sich zu $T_\mathup{ex,t}=(0.499\pm0.003)\si\second$.
+Die Abklingdauer $T_\mathup{ex}$ wird aus dem negativen Kehrwert der Steigung $m$ gebildet, sodass $T_\mathup{ex}=(251\pm2)\,\si{\micro{\second}}$ ist.
+ Der theoretische Wert $T_\mathup{ex,t}=\frac{2L}{R}$ ergibt sich zu \\$T_\mathup{ex,t}=(499\pm3)\,\si{\micro{\second}}$.
 
 
 %%%%%%%%%%%%%%%%%%%%neues Unterkapitel
 \subsection{Aperiodischer Grenzfall im gedämpften Schwingkreis}
-Der Spannungsverlauf für den aperiodischen Grenzfall wird durch einen Widerstand von $R_\mathup{ap}\approx4500\si\ohm$ realisiert. 
-Der Theoriewert ergibt sich aus der Formel $R_\mathup{ap,t}=2\sqrt\frac{L}{C}$ zu $R_\mathup{ap,t}=(5700\pm15)\si\ohm$.
+Der Spannungsverlauf für den aperiodischen Grenzfall wird durch einen Widerstand von $R_\mathup{ap}\approx4500\,\si\ohm$ realisiert. 
+Der Theoriewert ergibt sich aus der Formel $R_\mathup{ap,t}=2\sqrt\frac{L}{C}$ zu $R_\mathup{ap,t}=(5700\pm15)\,\si\ohm$.
  Zum Vergleich sind ebenfalls Schwing- und Kriechfall dargestellt.
-
+\newpage
 %%%%%%%%%%%%%%%%%Aperiodischer Grenzfall, Screenshot
 \begin{figure}[h]
 		\centering
@@ -116,7 +116,7 @@ Der Theoriewert ergibt sich aus der Formel $R_\mathup{ap,t}=2\sqrt\frac{L}{C}$ z
 	\caption{Schwing- und Kriechfall zum Vergleich.}
 	\label{fig:faelle}
 \end{figure}
-
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%neues Unterkapitel
 \subsection{Frequenzabhängigkeit der Kondensatorspannung}
 %%%%%tabelle: kondensatorspannung,, frequenzabh.
@@ -194,29 +194,29 @@ Der Theoriewert ergibt sich aus der Formel $R_\mathup{ap,t}=2\sqrt\frac{L}{C}$ z
 	\caption{Messdaten der Kondensator- und Generatorspannung zu verschiedenen Frequenzen.}
 	\label{tab:f_U}
 \end{table}
-Das Verhältnis der Spannungen $\frac{U_\mathup{C}}{U_0}$ wird gegen die Frequenz $f$ aufgetragen. 
-Es ergibt sich eine Resonanzkurve, deren Maximum bei $f_\mathup{res}\approx26\si{\kilo\hertz}$ liegt.
- Bei dieser Frequenz ist die Kondensatorspannung größer als die angelegte Spannung $U_0$. 
-Für die Resonanzüberhöhung ergibt sich aus der Messung $q=\frac{U_\mathup{C,max}}{U_0}$ der Wert $q=5.556$ bei einer maximalen Kondensatorspannung $U_\mathup{C,max}=160\si\volt$. 
+Das Verhältnis der Spannungen $\frac{U_\mathup{C}}{U_0}$, deren Werte in Tabelle \ref{tab:f_U} gelistet sind, wird gegen die Frequenz $f$ halblogarithmisch aufgetragen. 
+Es ergibt sich eine Resonanzkurve, deren Maximum bei $f_\mathup{res}\approx26\,\si{\kilo\hertz}$ liegt.
+ Bei dieser Frequenz ist die Kondensatorspannung um ein Vielfaches größer als die angelegte Spannung $U_0$. 
+Für die Resonanzüberhöhung  $q=\frac{U_\mathup{C,max}}{U_0}$, auch Güte genannt, ergibt sich aus der Messung der Wert $q=5.556$ bei einer maximalen Kondensatorspannung $U_\mathup{C,max}=160\,\si\volt$. 
 Theoretisch ergibt sich $q_\mathup{t}=\frac{1}{R_2}\sqrt{\frac{L}{C}}$ zu $q_\mathup{t}=5\pm1$.
 
-Für die Breite der Resonanzkurve werden $f_\pm=\frac{U_\mathup{C,max}}{\sqrt{2}}$ berechnet und anschließend die Differenz $f_+-f_-$ gebildet. 
-Damit sind $f_+=29\si{\kilo\hertz}$, $f_-=22\si{\kilo\hertz}$ und $\Delta{f}=7\si{\kilo\hertz}$. 
-Die theoretische Resonanzbreite ist $\Delta{f_\mathup{t}}=(6500\pm40)\si{\kilo\hertz}$.
+Für die Breite der Resonanzkurve werden die Grenzfrequenzen $f_\pm=\frac{U_\mathup{C,max}}{\sqrt{2}}$ berechnet. Es ergeben sich zwei Lösungen, deren Differenz $f_+-f_-$ anschließend gebildet wird. 
+Damit sind $f_+=29\,\si{\kilo\hertz}$, $f_-=22\,\si{\kilo\hertz}$ und $\Delta{f}=7\,\si{\kilo\hertz}$. 
+Die theoretische Resonanzbreite ist $\Delta{f_\mathup{t}}=\frac{R_2}{L\cdot2\pi}=(6.5\pm0.04)\,\si{\kilo\hertz}$. 
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{build/plot_amplitude_semilog.pdf}
-		\caption{Screenshot des aperiodischen Grenzfalls.}
+		\caption{Resonanzkurve der erzwungenen Schwingungen in halblogarithmischer Skala.}
 \end{figure}
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{build/plot_amplitude_linear.pdf}
-		\caption{Screenshot des aperiodischen Grenzfalls.}
+		\caption{Linaere Darstellung des Spannungsverhältnissen in Abhängigkeit der Frequenz zwischen den Grenzfrequenzen.}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%neues Unterkapitel
 \subsection{Frequenzabhängigkeit der Phasendifferenz}
-In Tabelle \ref{tabf_t} ist die frequenzabhängige Zeitdifferenz $\Delta{t}$ zwischen den Nulldurchgängen der Sinusspannung des Frequenzgenerators und der Kondensatorspannung. 
+In Tabelle \ref{tab:f_t} ist die frequenzabhängige Zeitdifferenz $\Delta{t}$ zwischen den Nulldurchgängen der Sinusspannung des Frequenzgenerators und der Kondensatorspannung aufgetragen. 
 \begin{table}	
 \centering
 \setlength{\tabcolsep}{2mm}
@@ -290,15 +290,16 @@ In Tabelle \ref{tabf_t} ist die frequenzabhängige Zeitdifferenz $\Delta{t}$ zwi
 \caption{Messdaten der Phasendifferenz zu verschiedenen Frequenzen.}
 	\label{tab:f_t}
 \end{table}
-Die Phase $\varphi$ ist in Abbildung SPAAASS gegen die Frequenz aufgetragen. Phase und Zeitdifferenz sind über $\varphi(f)=\Delta{t}f2\pi$ verknüpft. Für große Frequenzen nähert sich die Phase dem stationären Wert $\pi$ an. In der Abbildung ist zu erkennen, dass die Phasendifferenz erst langsam wächst, um mit zunehmender Frequenz schneller anzusteigen. Je näher die Frequenz an der Resonanzfrequenz liegt, desto steiler ist die Kurve. Es ist ersichtlich, dass um die Resonanzfrequenz die Kurve als linaer angenähert werden kann. Die Linearität erstreckt sich über $\frac{\pi}{2}\leq\varphi\leq\frac{3\pi}{2}$.
+Die Phase $\varphi$ ist in Abbildung \ref{fig:phase} gegen die Frequenz aufgetragen. Phase und Zeitdifferenz sind über $\varphi(f)=\Delta{t}f2\pi$ verknüpft. Für große Frequenzen nähert sich die Phase dem stationären Wert $\pi$ an. In der Abbildung ist zu erkennen, dass die Phasendifferenz erst langsam wächst, um mit zunehmender Frequenz schneller anzusteigen. Je näher die Frequenz an der Resonanzfrequenz liegt, desto steiler ist die Kurve. Es ist ersichtlich, dass um die Resonanzfrequenz  $f_\mathup{res}\approx25\,\si{\kilo\hertz}$ die Kurve als linaer angenähert werden kann,wie in Abbildung \ref{fig:phase_lin} gezeigt. Die Linearität erstreckt sich über $\frac{\pi}{2}\leq\varphi\leq\frac{3\pi}{2}$, was den Frequenzen $f_1=22\,\si{\kilo\hertz}$ und $f_2=\,\si{\kilo\hertz}$ entspricht.
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{build/plot_phase.pdf}
 		\caption{Screenshot des aperiodischen Grenzfalls.}
+\label{fig:phase}
 \end{figure}
-Dieser Bereich wird in Abbildung XY linear dargestellt.
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{build/plot_phase_linear.pdf}
 		\caption{Screenshot des aperiodischen Grenzfalls.}
+\label{fig:phase_lin}
 \end{figure}
