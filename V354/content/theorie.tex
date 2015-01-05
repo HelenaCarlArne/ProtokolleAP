@@ -135,15 +135,27 @@ Aus \eqref{eq:yes} und dem gewählten Ansatz folgt für die Amplitude der Lösun
 
 Bei der komplexen Amplitude $\tilde{U}_\mathup{\omega}$ treten insbesondere die Sonderfälle
 \begin{equation}
- 	\lim_{\omega\to\infty} \tilde{U}_\mathup{\omega} =0 =lim_{\omega\to 0} \tilde{U}_\mathup{\omega} 
+ 	\lim_{\omega\to\infty} \tilde{U}_\mathup{\omega} =0 =\lim_{\omega\to 0} \tilde{U}_\mathup{\omega} 
 \end{equation} auf.
-Des Weiteren existiert eine Resonanzfrequenz $\omega_0 = \sqrt{\frac{1}{\mathup{LC}-\frac{\mathup{R^2}}{4\mathup{L^2}}}}$, die durch Dämpfung und Eigenfrequenz gegebene neue Schwingfrequenz des Systems.
-Bei Erregung des Systems mit dieser Frequenz kommt es zur Resonanz; das System schwingt mit einer Spannungsamplitude größer als die Erregeramplitude $U_0$.
-Es gilt dabei, dass die maximale Spannung
+Des Weiteren existiert eine Resonanzfrequenz $\omega_0 = \sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}$, die durch Dämpfung und Eigenfrequenz gegebene neue Schwingfrequenz des Systems.
+Bei Erregung des Systems mit dieser Frequenz kommt es zur Resonanz; das System schwingt mit einer Spannungsamplitude $U_\mathup{C,max}$ größer als die Erregeramplitude $U_0$.
+Dabei ist die maximale Spannungsamplitude
 \begin{equation}
-	U_\mathup{C,max=} \underbrace{\frac{1}{\mathup{\omega_0RC}}}_{\text{Spannungsüberhöhung}} U_0 
+	U_\mathup{C,max}= \underbrace{\frac{1}{\mathup{\omega_0RC}}}_{\text{Spannungsüberhöhung, Güte:} q} U_0 
+	\label{eq:maxspannung}
 \end{equation}
 
+Zur Charakterisierung des Betrages der komplexen Amplitude $U_\mathup{\omega}$ werden die Grenzwerte $\mathup{\omega_\pm}$ betrachtet, bei welchen die Spannung auf den $\sfrac{1}{\sqrt{2}}$-Teil des Maximalwertes nach Gleichung \eqref{eq:maxspannung} abfallen.  
+Für die so beschriebene Breite gilt im Falle schwacher Dämpfung bzw. im Schwingfall
+\begin{equation}
+	\mathup{ω_+} − \mathup{ω_−} \approx \frac{\mathup{R}}{\mathup{L}}.
+\end{equation}
+
+Im Falle von Überdämpfung wird die Breite der Resonanzkurve nicht betrachtet, ausgehend von der  Erregerspannung $U_0$ fällt der Betrag der Spannung, $U_\mathup{\omega}$,  mit $\frac{1}{\omega^2}$ ab.
+Betrachtet werden weiter die Phasenwinkel $\phi$ zwischen der Kondensatorspannung $U_\mathup{C}$ und der Erregerspannung $U$.
+Für die Frequenz $\omega^2 = \frac{1}{\mathup{LC}}$ besteht zwischen der Kondensatorspannung $U_\mathup{C}$ und der Erregerspannung $U$ ein Winkel von $\phi =-\frac{\pi}{2}$
+
+% bei $\omega=\mathup{\omega}$
 % Geld ist ja bekanntlich im Portmonee. Da steckt man es rein und es kommt nicht da raus. Außer man kauft etwas davon, zum Beispiel Suppe. (In der Tüte oder nicht, dass ist in diesem Fall egal). Aber wie teuer ist Suppe?
 
 % Jeder kennt das berühmte Bild von einer Suppe. Es war aber nicht in einer Tüte, nein, nein, es war in einer (bunten bzw. roten) Dose! Und hätte man die Dose geöffnet? Hätte es jemand gemacht, man könnte es schreiben. Hat aber Keiner. Deswegen kann man es schwer sagen. Und Suppe: Man kann sie auch mit dem Geld bezahlen.
