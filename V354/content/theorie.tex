@@ -1,6 +1,6 @@
 \section{Zielsetzung}
 Ziel des Experimentes ist, anhand einer elektrischen Schaltung das Verhalten eines schwingfähigen Systems zu erkunden. 
-Betrachtet werden eine reine Schwingung und eine erzwungene Schwingung jeweils mit Dämpfung.
+Betrachtet werden eine freie Schwingung und eine erzwungene Schwingung jeweils mit Dämpfung.
 
 \section{Theorie}
 \label{sec:Theorie}
@@ -11,7 +11,7 @@ Bleibt der von außen gegebene Antrieb über lange Zeit erhalten, so handelt es 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.4\textwidth]{Bilder/Maschenfoto1.png}
-	\caption{Schaltskizze des untersuchten Systems. \cite{v354}}
+	\caption{Schaltskizze eines freien Serienschwingkreises. \cite{v354}}
 	\label{fig:schaltkreis_rein}
 \end{figure}
 Das System wird in \ref{fig:schaltkreis_rein} gezeigt, die jeweiligen Spannungsabfälle und -quellen sind eingezeichnet.
@@ -22,17 +22,24 @@ Daraus folgt für das System
 \end{equation}
 unter Beachtung der Stromrichtung der Komponenten.
 Mit den allgemeinen Formeln für die Spannung der jeweiligen Schaltkreiskomponente,
-\begin{align}
-	U_\text{R}(t) &= \text{R} I(t)\\
-	U_\text{C}(t) &= \frac{Q(t)}{\text{C}} \\
-	U_\text{L}(t) &= -\text{L}\frac{\mathup{d}I(t)}{\mathup{d}t},
-\end{align}
+\begin{subequations}
+\begin{equation}
+		U_\text{R}(t) = \text{R} I(t)
+\end{equation}
+\begin{equation}
+		U_\text{C}(t) = \frac{Q(t)}{\text{C}}
+\end{equation}
+\begin{equation}
+		U_\text{L}(t) = -\text{L}\frac{\mathup{d}I(t)}{\mathup{d}t},
+\end{equation}
+\label{eq:austauscher}
+\end{subequations}
 und der Substitution
 $I=\frac{\mathup{d}Q(t)}{\mathup{d}t}$,
 wird das System mit der Differentialgleichung für den Strom $I(t)$ beschrieben.
 Es gilt
 \begin{equation}
-	\frac{\mathup{d^2}I(t)}{\mathup{d}t^2}+\frac{\mathup{R}}{\mathup{L}}\frac{\mathup{d}I(t)}{\mathup{d}t}+\frac{1}{\mathup{LC}}.
+	\frac{\mathup{d^2}I(t)}{\mathup{d}t^2}+\frac{\mathup{R}}{\mathup{L}}\frac{\mathup{d}I(t)}{\mathup{d}t}+\frac{1}{\mathup{LC}}I(t).
 \end{equation}
 Die allgemeine Lösung der Differentialgleichung ist
 \begin{equation}
@@ -44,46 +51,45 @@ mit der Abkürzung
 	\mathup{\omega_{1,2}}= -\frac{\mathup{R}}{2\mathup{L}}\pm\sqrt{\underbrace{\frac{\mathup{R^2}}{4\mathup{L^2}}-\frac{1}{\mathup{LC}}}_{\text{Diskriminante}}}.
 	\label{eq:allomega}
 \end{equation}
-Durch den Radikanten als Diskriminante sind drei Fälle möglich.
-
+Durch den Radikanten als Diskriminante sind drei Fälle möglich.\\
 %\subsubsection{Schwingfall}
-Für $\frac{\mathup{R^2}}{4\mathup{L^2}}-\frac{1}{\mathup{LC}}<0$ \\
-ist $\omega$ in \eqref{eq:allomega} komplex.
-Es ergibt sich als Lösung für $\omega$
+Für $\frac{\mathup{R^2}}{4\mathup{L^2}}-\frac{1}{\mathup{LC}}<0$ ist $\omega$ in \eqref{eq:allomega} komplex.
+Es ergibt sich
 \begin{equation}
 	\mathup{\omega_{1,2}}= -\frac{\mathup{R}}{2\mathup{L}}\pm i\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}
 \end{equation}
-woraus
+und
 \begin{equation}
-	I(t) = e^{-\frac{\mathup{R}}{2\mathup{L}}\,t}(A_1 \sin\Bigl(\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}\, t\Bigr)+A_2 \cos\Bigl(\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}\,t\Bigr)
+	I(t) = e^{-\frac{\mathup{R}}{2\mathup{L}}\,t}(A_1 \sin\Bigl(\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}\, t\Bigr)+A_2 \cos\Bigl(\sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}\,t\Bigr).
 	\label{eq:schwingloesung}
 \end{equation}
-folgt.
 Es kommt zu einer Schwingung, deren Amplitude mit der Zeit abnimmt. 
 Für die Schwingperiode gilt die Thomsonsche Schwingformel
 \begin{equation}
-	T_0 = \frac{2π}{\mathup{ω_0}} = \mathup{2π L C};
+	T_0 = \frac{2π}{\mathup{ω_0}} = \mathup{2π \sqrt{LC}};
+	\label{eq:thomson}
 \end{equation} 
 die Zeit, in welcher die Amplitude auf den e-Teil des Anfangswertes absinkt, ist
 \begin{equation}
 	T_\text{ex} = \frac{\text{2L}}{\text{R}}.
+	\label{eq:abkling}
 \end{equation}
 %\subsubsection{aperiodischer Grenzfall}
-Für $\frac{1}{\mathup{LC}}=\frac{\mathup{R^2}}{4\mathup{L^2}}$ \\
+Für $\frac{1}{\mathup{LC}}=\frac{\mathup{R^2}}{4\mathup{L^2}}$ 
 verschwindet der Wurzelterm von $\omega$ in \eqref{eq:allomega}.
 Die so vereinfachte Lösung heißt aperiodischer Grenzfall und beschreibt den ausgezeichneten Stromverlauf, der nach Auslenkung die Ruhelage - hier $I(t)=0 \quad\forall t$ - am Schnellsten wieder erreicht.\\
 Zur allgemeinen Lösung für diesen Fall wird eine zusätzliche Fundamentallösung benötigt.
 Es gilt
 \begin{equation}
-	I(t) = A_1 e^{-\frac{\mathup{R}}{2\mathup{L}}\,t}+A_2 t e^{-\frac{\mathup{R}}{2\mathup{L}}\,t}
+	I(t) = A_1 e^{-\frac{\mathup{R}}{2\mathup{L}}\,t}+A_2 t e^{-\frac{\mathup{R}}{2\mathup{L}}\,t}.
 \end{equation}
 %\subsubsection{Kriechfall}
-Für $\frac{\mathup{R^2}}{4\mathup{L^2}}-\frac{1}{\mathup{LC}}>0$ \\
+Für $\frac{\mathup{R^2}}{4\mathup{L^2}}-\frac{1}{\mathup{LC}}>0$ 
 ist der Wurzelterm von $\omega$ in \eqref{eq:allomega} rein reell.
 Die so vereinfachte Lösung ist eine exponentielle Abnahme.
 Es gilt
 \begin{equation}
-	I(t)= A_1 e^{\omega_1 t} + A_2 e^{\omega_2 t}
+	I(t)= A_1 e^{\omega_1 t} + A_2 e^{\omega_2 t}.
 \end{equation}
 \begin{figure}
 	\centering
@@ -96,7 +102,7 @@ Es gilt
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.4\textwidth]{Bilder/Maschenfoto2.png}
-	\caption{Schaltskizze des untersuchten Systems. \cite{v354}}
+	\caption{Schaltskizze eines Serienschwingkreises mit äußerer Anregung. \cite{v354}}
 	\label{fig:schaltkreis_erzwungen}
 \end{figure}
 In diesem System wird die Spannung $U_\text{C}$, die am Kondensator anliegt, betrachtet.
@@ -106,7 +112,7 @@ Analog zu Abschnitt \ref{sec:theorie1} beschreibt die Gleichung
 \end{equation}
 mit der Generatorspannung $U(t)=U_0 e^{i\omega t}$ das System.
 Mit der Substitution
-$I=\frac{\mathup{d}Q(t)}{\mathup{d}t}$ und $U_\text{C}(t) = \frac{Q(t)}{\text{C}}$,
+$I=\frac{\mathup{d}Q(t)}{\mathup{d}t}$ und $U_\text{C}(t) = \frac{Q(t)}{\text{C}}$ sowie den Gleichungen \eqref{eq:austauscher},
 wird das System mit der Differentialgleichung 
 \begin{equation}
 	\mathup{LC}\frac{\mathup{d^2}U_\mathup{C}}{\mathup{d}t^2} +\mathup{RC}\frac{\mathup{d}U_\mathup{C}}{\mathup{d}t} +U_\mathup{C} =U_0 e^{i\omega t}
@@ -130,30 +136,32 @@ $\tilde{U}_\mathup{\omega}(\omega)\in\mathbb{C}$ ist die komplexe Amplitude mit 
 \end{subequations}
 Aus \eqref{eq:yes} und dem gewählten Ansatz folgt für die Amplitude der Lösungsfunktion der Differentialgleichung \eqref{eq:DGLerzw}
 \begin{equation}
-	|U_\mathup{C}| = \frac{U_0}{\sqrt{(1 − \mathup{LC}\omega^2)^2 +ω^2\mathup{R^2C^2}}} 
+	|U_\mathup{C}| = \frac{U_0}{\sqrt{(1 − \mathup{LC}\omega^2)^2 +ω^2\mathup{R^2C^2}}}. 
 \end{equation}
 
 Bei der komplexen Amplitude $\tilde{U}_\mathup{\omega}$ treten insbesondere die Sonderfälle
 \begin{equation}
  	\lim_{\omega\to\infty} \tilde{U}_\mathup{\omega} =0 =\lim_{\omega\to 0} \tilde{U}_\mathup{\omega} 
-\end{equation} auf.
-Des Weiteren existiert eine Resonanzfrequenz $\omega_0 = \sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}$, die durch Dämpfung und Eigenfrequenz gegebene neue Schwingfrequenz des Systems.
-Bei Erregung des Systems mit dieser Frequenz kommt es zur Resonanz; das System schwingt mit einer Spannungsamplitude $U_\mathup{C,max}$ größer als die Erregeramplitude $U_0$.
+\end{equation} auf,
+weiter existiert eine Resonanzfrequenz $\mathup{\omega_0} = \sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}}$ - die durch Dämpfung und Eigenfrequenz gegebene neue Schwingfrequenz des Systems.
+Bei Erregung des Systems mit $\omega \approx \mathup{\omega_0}$ kommt es zur Resonanz; das System schwingt mit einer Spannungsamplitude $U_\mathup{C,max}$ größer als die Erregeramplitude $U_0$.
 Dabei ist die maximale Spannungsamplitude
 \begin{equation}
-	U_\mathup{C,max}= \underbrace{\frac{1}{\mathup{\omega_0RC}}}_{\text{Spannungsüberhöhung, Güte:} q} U_0 
+	U_\mathup{C,max}= \underbrace{\frac{1}{\mathup{\omega_0RC}}}_{\text{Güte}\, q} U_0. 
 	\label{eq:maxspannung}
 \end{equation}
-
-Zur Charakterisierung des Betrages der komplexen Amplitude $U_\mathup{\omega}$ werden die Grenzwerte $\mathup{\omega_\pm}$ betrachtet, bei welchen die Spannung auf den $\sfrac{1}{\sqrt{2}}$-Teil des Maximalwertes nach Gleichung \eqref{eq:maxspannung} abfallen.  
+Zur Charakterisierung des Resonanzverhaltens werden die Grenzwerte $\mathup{\omega_\pm}$ betrachtet, bei welchen die Spannung $U_\mathup{C}$ auf den $\sfrac{1}{\sqrt{2}}$-Teil des Maximalwertes $U_\mathup{C,max}$ nach Gleichung \eqref{eq:maxspannung} abfallen.  
 Für die so beschriebene Breite gilt im Falle schwacher Dämpfung bzw. im Schwingfall
 \begin{equation}
-	\mathup{ω_+} − \mathup{ω_−} \approx \frac{\mathup{R}}{\mathup{L}}.
+	\mathup{\Delta}\, f = \mathup{ω_+} − \mathup{ω_−} \approx \frac{\mathup{R}}{\mathup{L}}.
+	\label{eq:deltaf}
 \end{equation}
 
-Im Falle von Überdämpfung wird die Breite der Resonanzkurve nicht betrachtet, ausgehend von der  Erregerspannung $U_0$ fällt der Betrag der Spannung, $U_\mathup{\omega}$,  mit $\frac{1}{\omega^2}$ ab.
-Betrachtet werden weiter die Phasenwinkel $\phi$ zwischen der Kondensatorspannung $U_\mathup{C}$ und der Erregerspannung $U$.
-Für die Frequenz $\omega^2 = \frac{1}{\mathup{LC}}$ besteht zwischen der Kondensatorspannung $U_\mathup{C}$ und der Erregerspannung $U$ ein Winkel von $\phi =-\frac{\pi}{2}$
+Im Falle von Überdämpfung wird die Breite der Resonanzkurve nicht betrachtet. Ausgehend von der  Erregerspannung $U_0$ fällt der Betrag der Spannung $U_\mathup{C}$  mit $\frac{1}{\omega^2}$ ab.
+Betrachtet wird außerdem die Phasenwinkel $\phi$ zwischen der Kondensatorspannung $U_\mathup{C}(t)$ und der Erregerspannung $U(t)$.\\
+Für die Frequenz $\omega^2 = \frac{1}{\mathup{LC}}$ besteht zwischen der Kondensatorspannung $U_\mathup{C}$ und der Erregerspannung $U$ ein Winkel von $\phi =-\frac{\pi}{2}$.
+Für große Frequenzen nähert sich die Phasenwinkel $\phi$ dem stationären Wert $\pi$ an.
+
 
 % bei $\omega=\mathup{\omega}$
 % Geld ist ja bekanntlich im Portmonee. Da steckt man es rein und es kommt nicht da raus. Außer man kauft etwas davon, zum Beispiel Suppe. (In der Tüte oder nicht, dass ist in diesem Fall egal). Aber wie teuer ist Suppe?
