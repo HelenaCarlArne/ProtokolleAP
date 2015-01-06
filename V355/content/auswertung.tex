@@ -2,3 +2,125 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Abstimmen der Systemparameter}
+Der Kopplungskondensator wird überbrückt und somit effektiv nur der linke Schwingkreis angeregt.
+Die Frequenz des Generators, bei welchem die Widerstandsspannung $U_\mathup{R,1}(t)$ maximal wird, ist die Resonanzfrequenz des Systems. 
+Diese wurde mit 
+\begin{equation}
+	f_\text{Resonanz} = \SI{30.74}{\kilo\hertz}
+\end{equation}
+grob abgeschätzt.
+Präzise ist der Phasenwinkel zwischen Erregerspannung $U(t)$ und der Widerstandsspannung $U_\mathup{R,2}(t)$ gleich Null, wenn die Erregerspannung die Resonanzfrequenz aufweist.
+Beim Auftragen der Widerstandsspannung $U_\mathup{R,2}(t)$ gegen die Erregerspannung $U(t)$  wird eine Lissajou-Figur sichtbar.
+Für den Phasenwinkel $\phi=0$ ist diese Figur nicht-elliptisch, gerade und verläuft im ersten und dritten Quadranten des Oszilloskopes.
+Die  Resonanzfrequenz $f_\text{Resonanz}$ wird auf den Wert
+\begin{equation}
+	f_\text{Resonanz} = \SI{30.71}{\kilo\hertz}
+\end{equation}präzisiert.
+Der nach Gleichung \ref{eq:resonanz}!! gegebene Erwartungswert für die Resonanzfrequenz ist
+\begin{equation}
+	f_\text{Resonanz, Theorie} = \sqrt{\frac{1}{\mathup{LC}}-\frac{\mathup{R^2}}{4\mathup{L^2}}} = \SI{198.20\pm0.29}{\kilo\hertz}.
+\end{equation}
+
+Der zweite Schwingkreis wird durch den Kondensator an den ersten angeglichen.
+\begin{table}
+	\centering
+	\begin{tabular}{ccc}
+	\toprule
+	{Kapazität $C_\mathup{1,2}$}&{Kapazität der Spule $C_\mathup{sp}$}&{Induktivität der Spule $L$}\\
+	{$\si{\pico\farad}$}&{$\si{\pico\farad}$}&{$\si{\milli\henry}$}\\
+	\midrule
+		798\pm2 &37\pm1 &31.90\pm0.05\\
+	\bottomrule
+	\end{tabular}
+	\caption{Die festen Parameter des gekoppelten Systems nach Abbildung \ref{fig:schaltung}!!.}
+\end{table}
+\subsection{Untersuchung der Schwebung}
+\label{sec:Auswertung1}
+
+Die Widerstandsspannung $U_\mathup{R,2}(t)$ ist ein Maß für den Strom $I_\mathup{2}(t)$, es besteht nach Ohmschen Gesetz der Zusammenhang $U(t)=\mathup{R}\cdot I(t)$ bei konstantem Widerstand R.
+Bei dem Auftragen der Widerstandsspannung $U_\mathup{R,2}(t)$ gegen die Zeit wird gemäß der Theorie \ref{sec:theorie} eine Schwebung sichtbar.
+(Helena) Um das Verhältnis der Schwebungs- und Schwingungsfrequenz zu bestimmen, wird innerhalb einer Schwebungsperiode die Anzahl der Schwingungsmaxima abgezählt. 
+Das Verhältnis der Frequenzen $\alpha$ ist gegeben durch
+\begin{equation}
+	\alpha=\frac{n_\text{Osz.}}{n_\text{Schweb.}}.
+\end{equation}
+Daraus ergibt sich die Tabelle \ref{tab:verhaeltnis}
+\begin{table}
+	\centering
+	\begin{tabular}{cc}
+	\toprule
+	{Kopplungskapazität}&{Frequenzverhältnis }\\
+	{$C_\mathup{Kopplung}$}&{$\alpha$}\\
+	{$\si{\nano\farad}$}&{1}\\
+	\midrule
+		9.99& 14\\
+		8.00& 11\\
+		6.47&  9\\
+		5.02&  7\\
+		4.00&  6\\
+		3.00&  5\\
+		2.03&  4\\
+		1.01&  2\\
+	\bottomrule
+	\end{tabular}
+	\caption{Die Frequenzverhältnisse $\alpha$ in Abhängigkeit von der Kopplungskapazität $C_\mathup{Kopplung}$}
+\end{table}
+\subsection{Untersuchung der Fundamentallösungen}
+\label{sec:Auswertung2}
+\begin{table}
+	\centering
+	\begin{tabular}{ccc}
+	\toprule
+	\multicolumn{2}{c}{Frequenz}&{Kopplungskapazität}\\
+	{$f_\mathup{+}$}&{$f_\mathup{-}$}&{$C_\mathup{Kopplung}$}\\
+	{$\si{\kilo\hertz}$}&{$\si{\kilo\hertz}$}&{$\si{\nano\farad}$}\\
+	\midrule
+		30.56	&32.85	&9.99\\
+		30.57	&33.38	&8.00\\
+		30.57	&33.98	&6.47\\
+		30.57	&34.88	&5.02\\
+		30.57	&35.86	&4.00\\
+		30.57	&37.40	&3.00\\
+		30.58	&40.12	&2.03\\
+		30.58	&47.23	&1.01\\
+	\bottomrule
+	\end{tabular}
+	\caption{Die Frequenzen der Fundamentallösungen in Abhängigkeit von der Kopplungskapazität $C_\mathup{Kopplung}$}
+\end{table}
+
+\subsection{Untersuchung der Stromkurve $I_2(t)$}
+\label{sec:Auswertung2}
+Der Generator in Schaltung \ref{fig:schaltung} durchläuft innerhalb von $\SI{20}{\milli\second}$ 
+das Frequenzspektrum von \SI{10}{\kilo\hertz} bis \SI{80}{\kilo\hertz}. 
+Wird die Widerstandsspannung $U_\mathup{R,2}(t)$ auf einem Oszilloskopen dargestellt, so zeigt sich der Auftrag von der Widerstandsspannung $U_\mathup{R,2}(t)$
+gegen die Erregerfrequenz.
+Die Zeitkoordinaten der Maxima sind in Tabelle \ref{tab:zeitkoord} dargestellt.
+
+Mit den Anfangs- und Endkoordinaten
+$\text{P}_\text{Anfang}=(\SI{-7}{\milli\second})|(\SI{10}{\kilo\hertz})$ und $\text{P}_text{Ende}=(\SI{14,3}{\milli\second})|(\SI{80}{\kilo\hertz})$ können die Zeitkoordinaten in Tabelle \ref{tab:zeitkoord} in Frequenzen umgerechnet werden.
+Die lineare Regression aus diesen beiden Koordinaten gibt die Umrechnungsformel
+\begin{equation}
+	f = 3.7559t+36.2911
+\end{equation}
+
+\begin{table}[ht]
+	\begin{tabular}{S[table-format=1.1]S[table-format=1.1]S[table-format=1.2]S[table-format=2.4]S[table-format=2.4]}
+	\toprule
+	\multicolumn{2}{c}{Zeitkoordinate}&{Kopplungskapazität}&\multicolumn{2}{c}{Frequenz}\\
+	{$t_\mathup{+}$}&{$t_\mathup{-}$}&{$C_\mathup{Kopplung}$}&{$f_\mathup{+}$}&{$f_\mathup{-}$}\\
+	{$\si{\milli\second}$}&{$\si{\milli\second}$}&{$\si{\nano\farad}$}&{$\si{\kilo\hertz}$}&{$\si{\kilo\hertz}$}\\
+	\midrule
+		0.3& 	0.9&	9.99&	37.4178& 	39.6714\\
+		0.3&	1.1&	8.00&	37.4178&	40.4225\\
+		0.4&	1.2&	6.47&	37.4934&	40.7981\\
+		0.3&	1.5&	5.02&	37.4178&	41.9249\\
+		0.2&	1.8&	4.00&	37.0423&	43.0516\\
+		0.2&	2.2&	3.00&	37.0423&	44.554\\
+		0.2&	3.0&	2.03&	37.0423&	47.5587\\
+		0.2&	5.1&	1.01&	37.0423&	55.446\\
+	\bottomrule
+	\end{tabular}
+	\caption{Die Zeitkoordinaten und die Frequenzen der Strommaxima in Abhängigkeit von der Kopplungskapazität $C_\mathup{Kopplung}$.}
+	\label{tab:zeitkoord}
+\end{table}
