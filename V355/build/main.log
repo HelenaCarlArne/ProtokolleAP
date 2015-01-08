@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  6 JAN 2015 17:09
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  8 JAN 2015 19:22
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -346,7 +346,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.082 seconds
+luaotfload | main : fontloader loaded in 0.080 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1684,7 +1684,11 @@ Package biblatex Info: ... file 'german.lbx' found.
 File: german.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 ) (./build/main.aux
 luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
-luatex-hyphen: info: no hyphenation exceptions for this language)
+luatex-hyphen: info: no hyphenation exceptions for this language
+
+LaTeX Warning: Label `sec:Auswertung2' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -1898,41 +1902,95 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf") (./content/auswertung.tex [4]) (./content/diskussion.tex)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [4]) (./content/auswertung.tex [5]
+
+LaTeX Warning: Reference `eq:resonanz' on page 6 undefined on input line 20.
+
+
+LaTeX Warning: Reference `fig:schaltung' on page 6 undefined on input line 36.
+
+
+LaTeX Warning: Reference `fig:schaltung' on page 6 undefined on input line 36.
+
+
+LaTeX Warning: Reference `sec:theorie' on page 6 undefined on input line 42.
+
+
+LaTeX Warning: Reference `tab:verhaeltnis' on page 6 undefined on input line 48.
+
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 7.00006pt on input line 67.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.99986pt on input line 67.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 92.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 92.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 92.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 92.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 92.
+
+
+LaTeX Warning: Reference `fig:schaltung' on page 7 undefined on input line 94.
+
+[7]) (./content/diskussion.tex)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 22.
  (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [5]
+ [8]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 0E3F147C3EEC49A32F8921D086798D3E;7392.
+(rerunfilecheck)             Checksum: 48ABE32BFFEC8E69A4DB919255AAF93A;11423.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41078 strings out of 494693
+ 41145 strings out of 494693
  100000,1373583 words of node,token memory allocated
- 616 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 20 attribute, 63 glue_spec, 20 attribute_list, 3 action, 1 write nodes
-   avail lists: 1:48,2:8107,3:156,4:785,5:286,6:2881,7:91,8:18,9:513,10:985,11:520,12:230
- 43543 multiletter control sequences out of 65536+600000
- 154 fonts using 55382411 bytes
- 70i,12n,104p,974b,2060s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (5 pages, 59913 bytes).
+ 678 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 20 kern, 25 attribute, 63 glue_spec, 25 attribute_list, 3 action, 1 write nodes
+   avail lists: 1:48,2:8181,3:191,4:1396,5:310,6:2840,7:73,8:19,9:513,10:985,11:520,12:230
+ 43579 multiletter control sequences out of 65536+600000
+ 168 fonts using 61481943 bytes
+ 70i,15n,104p,974b,2060s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (8 pages, 79820 bytes).
 
-PDF statistics: 186 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 131072)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 237 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 131072)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
