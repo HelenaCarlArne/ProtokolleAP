@@ -102,13 +102,16 @@ T*\frac{1}{2}({\omega⁻-\omega⁺})=\frac{\pi}{2}
 \end{equation}
  umgekehrt, die Energie pendelt periodisch mit der Schwebungsfrequenz zwischen beiden Systemen.
 
+\newpage
 \subsection{Erzwungene Schwingungen}
-
-Erzwungene Schwingungen werden durch eine von außen angelegte Sinusspannung erzeugt. 
-Die Resonanzkurve zweier gekoppelter Schwingkreise unterscheidet sich von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima. 
-Für sehr geringe bzw. sehr große Frequenzen nähert sich der Wert des Stromes der Null an.
- An den Stellen der in Kapitel \ref{sex:Theorie} genannten Fundamentalfrequenzen treten Resonanzphänomene auf.
- Die Werte des Stromes an diesen Frequenzen entscheiden sich nur unwesentlich, sodass die Leitwerte $|L(\omega⁺)|=|L(\omega⁻)|\approx\frac{1}{2R}$  angenommen werden darf. 
-Betrachtet man die Frequenz $\nu⁺$, welche unabhängig von der Koppelkapazität $C_\mathup{k}$ ist, können beide Schwingkreise als ein Kreis mit $L_\mathup{ges}=2L$ und $C_\mathup{ges}=\frac{1}{2}C$ angesehen werden. 
-Durch die Koppelleitung fließt kein Strom.
- Bei der Frequenz $\nu⁻$ ist $C_\mathup{ges}=\frac{C C_\mathup{k}}{C_\mathup{k}+2C}$ - durch die Koppelleitung fließt nun der maximale Strom.
+Erzwungene Schwingungen werden durch eine von außen angelegte Sinusspannung erzeugt. Wird Abbildung \ref{fig:gekoppelte SK} um einen Sinusgenerator erweitert, so kann mit Hilfe der Maschenregel eine Formel für den Strom $I_2$  gewonnen werden.
+\begin{equation}
+I_2=|U|\frac{1}{\sqrt{4{\omega}²{C_\mathup{k}}² R² Z(\omega)²+\biggl(\frac{1}{\omega C_\mathup{k}}-\omega C_\mathup{k} Z(\omega)² + \omega R² C_\mathup{k}\biggr)²}}=|U||L|,
+\end{equation}
+mit dem Leitwert $|L|$ und dem Widerstand $Z(\omega)$, nähert sich für sehr große und sehr geringe Frequenzen dem Wert Null an.
+An den Stellen der genannten Fundamentalfrequenzen $\omega⁺$ und $\omega⁻$ treten Resonanzphänomene auf.
+Die Resonanzkurve zweier gekoppelter Schwingkreise unterscheidet sich von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima.
+Die Werte des Stromes an diesen Frequenzen entscheiden sich nur unwesentlich, sodass die Leitwerte $|L(\omega⁺)|=|L(\omega⁻)|\approx\sfrac{1}{2R}$  angenommen werden darf. 
+Betrachtet man die Frequenz $\omega⁺$, welche unabhängig von der Koppelkapazität $C_\mathup{k}$ ist, können beide Schwingkreise als ein Kreis mit $L_\mathup{ges}=2L$ und $C_\mathup{ges}=\sfrac{1}{2}C$ angesehen werden. 
+Durch die Koppelleitung fließt kein Strom. 
+Bei der Frequenz $\omega⁻$ ist $C_\mathup{ges}=\sfrac{C C_\mathup{k}}{C_\mathup{k}+2C}$ - durch die Koppelleitung fließt nun der maximale Strom.
