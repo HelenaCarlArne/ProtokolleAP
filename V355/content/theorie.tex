@@ -7,6 +7,12 @@ Desweiteren soll das Verhalten des Gesamtsystems bei erzwungenen Schwingungen, a
 Sind zwei schwingfähige Systeme miteinander gekoppelt, so beeinflussen sie sich gegenseitig.
 Wird eines der Systeme zum Schwingen angeregt pendelt die zugeführte Energie zwischen beiden Systemen; die Energieerhaltung gilt.
 \subsection{Kapazitiv gekoppelte Schwingkreise}
+\begin{figure}[h]
+	\centering
+	\label{fig:gekoppelte SK}
+		\includegraphics[width=\textwidth]{Bilder/2SK.pdf}
+		\caption{Zwei LC-Schwinkreise kapazitiv gekoppelt.}
+\end{figure}
 Die zwei dargestellten eigenständigen Schwingkreise sind über den Kondensator der Kapazität $C_\mathup{k}$ miteinander verknüpft.
  Mit Knoten- und Maschenregel lassen sich folgende Gesetzmäßigkeiten herleiten:
 \begin{equation}
@@ -71,6 +77,13 @@ Schwingen die Systeme mit gleicher Amplitude $I_{10}=I_{20}$ und gleicher Phase 
 Schwingen die Systeme mit entgegengesetzter Amplitude  $I_{10}=-I_{20}$ und Phase verschwindet die Summenschwingung \eqref{eq:lsg_I_1+I_2}. Die Oszillatoren schwingen gegenphasig mit der Frequenz $\nu⁻$.
 Diese beiden Schwingungsmoden werden als Fundamentalschwingungen des Systems bezeichnet.
 
+\begin{figure}[h]
+	\centering
+	\label{fig:schwebung}
+		\includegraphics[width=\textwidth]{Bilder/Schwebung.pdf}
+		\caption{Schwebung.}
+\end{figure}
+
 Wird zur Zeit $t=0$ nur ein Oszillator ausgelenkt, d.h. $I_{10}\neq0$,$I_{20}=0$, vereinfachen sich \eqref{{eq:I_1_ur}} und \eqref{{eq:I_2_ur}}. 
 Mit einigen Umformungen und nutzen von Additionstheoremen ergeben sich
 \begin{equation}
@@ -83,8 +96,22 @@ und
 Gemäß der Annahme $\nu⁺\approx\nu⁻$ und $C_\mathup{k}>>C$ ist $\frac{1}{2}(\omega⁺-\omega⁻)\approx\omega⁺$ und $\omega⁻-\omega⁺<<\omega⁺$.
 Die Oszillatoren schwingen mit der Frequenz $\frac{1}{2}(\nu⁺+\nu)$, welche ungefähr der Frequenz eines Einzeloszillators entspricht. 
 Die Amplituden verändern sich Periodisch mit der Schwebungsfrequenz $\nu⁻-\nu⁺$. 
-Die Verhältnisse haben sich nach der Zeit $T*\frac{1}{2}({\omega⁻-\omega⁺})=\frac{\pi}{2}$ umgekehrt, die Energie pendelt periodisch mit der Schwebungsfrequenz zwischen beiden Systemen.
+Die Verhältnisse haben sich nach der Zeit 
+\begin{equation}
+T*\frac{1}{2}({\omega⁻-\omega⁺})=\frac{\pi}{2}
+\end{equation}
+ umgekehrt, die Energie pendelt periodisch mit der Schwebungsfrequenz zwischen beiden Systemen.
 
+\newpage
 \subsection{Erzwungene Schwingungen}
-
-Erzwungene Schwingungen werden durch eine von außen angelegte Sinusspannung erzeugt. Die Resonanzkurve zweier gekoppelter Schwingkreise unterscheidet sich von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima. Für sehr geringe bzw. sehr große Frequenzen nähert sich der Wert des Stromes der Null an. An den Stellen der in KAPITEL 1.2 ODER SO genannten Fundamentalfrequenzen treten Resonanzphänomene auf. Die Werte des Stromes an diesen Frequenzen entscheiden sich nur unwesentlich, sodass LEITERWERT 1=LEITWERT 2 = FORMEL  angenommen werden darf.
+Erzwungene Schwingungen werden durch eine von außen angelegte Sinusspannung erzeugt. Wird Abbildung \ref{fig:gekoppelte SK} um einen Sinusgenerator erweitert, so kann mit Hilfe der Maschenregel eine Formel für den Strom $I_2$  gewonnen werden.
+\begin{equation}
+I_2=|U|\frac{1}{\sqrt{4{\omega}²{C_\mathup{k}}² R² Z(\omega)²+\biggl(\frac{1}{\omega C_\mathup{k}}-\omega C_\mathup{k} Z(\omega)² + \omega R² C_\mathup{k}\biggr)²}}=|U||L|,
+\end{equation}
+mit dem Leitwert $|L|$ und dem Widerstand $Z(\omega)$, nähert sich für sehr große und sehr geringe Frequenzen dem Wert Null an.
+An den Stellen der genannten Fundamentalfrequenzen $\omega⁺$ und $\omega⁻$ treten Resonanzphänomene auf.
+Die Resonanzkurve zweier gekoppelter Schwingkreise unterscheidet sich von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima.
+Die Werte des Stromes an diesen Frequenzen entscheiden sich nur unwesentlich, sodass die Leitwerte $|L(\omega⁺)|=|L(\omega⁻)|\approx\sfrac{1}{2R}$  angenommen werden darf. 
+Betrachtet man die Frequenz $\omega⁺$, welche unabhängig von der Koppelkapazität $C_\mathup{k}$ ist, können beide Schwingkreise als ein Kreis mit $L_\mathup{ges}=2L$ und $C_\mathup{ges}=\sfrac{1}{2}C$ angesehen werden. 
+Durch die Koppelleitung fließt kein Strom. 
+Bei der Frequenz $\omega⁻$ ist $C_\mathup{ges}=\sfrac{C C_\mathup{k}}{C_\mathup{k}+2C}$ - durch die Koppelleitung fließt nun der maximale Strom.
