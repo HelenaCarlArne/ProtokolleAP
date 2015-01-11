@@ -48,7 +48,7 @@ ist eine harmonische Schwingung der Form
 \begin{equation}
 	({I_1}+{I_2})(t)=({I_{10}}+{I_{20}})\cos(\frac{t}{\sqrt{LC}})
 \end{equation}
-mit der Schwingungsfrequenz $\nu⁺=\frac{1}{2\pi\sqrt{LC}}$.
+mit der Schwingungsfrequenz $f_+=\frac{1}{2\pi\sqrt{LC}}$.
 Diese Frequenz entspricht derer eines einzelnen Oszillators mit den Bauteilen $L$ und $C$.
  Die Amplitude $({I_10}+{I_20})$ bleibt konstant.
 Die zweite Gleichung, enstanden durch Subtraktion,
@@ -60,21 +60,21 @@ wird gelöst durch
 \begin{equation}
 	({I_1}-{I_2})(t)=({I_{10}}-{I_{20}})\cos\biggl(t{\biggl[L\biggl({\frac{1}{C}+\frac{1}{C_\mathup{k}}}\biggr)⁻¹\biggr]^{-\frac{1}{2}}}\biggr).
 \end{equation}
-Die Schwingungsfrequenz $\nu⁻=\frac{1}{2\pi\sqrt{L\bigl({\frac{1}{C}+\frac{1}{C_\mathup{k}}}\bigr)⁻¹}}$ ist größer als $\nu+$.
+Die Schwingungsfrequenz $f_-=\frac{1}{2\pi\sqrt{L\bigl({\frac{1}{C}+\frac{1}{C_\mathup{k}}}\bigr)⁻¹}}$ ist größer als $f_+$.
 Erneute Addition und Subtraktion der voneinander unabhägingen Gleichungen ergibt
 \begin{equation}
-	I_1(t)=\frac{1}{2}({I_{10}}+{I_{20}})\cos(2\pi\nu⁺t)+\frac{1}{2}({I_{10}}-{I_{20}})\cos(2\pi\nu⁻t)
+	I_1(t)=\frac{1}{2}({I_{10}}+{I_{20}})\cos(2\pi f_+t)+\frac{1}{2}({I_{10}}-{I_{20}})\cos(2\pi f_-t)
 	\label{eq:I_1_ur}
 \end{equation}
 und
 \begin{equation}
-	I_2(t)=\frac{1}{2}({I_{10}}+{I_{20}})\cos(2\pi\nu⁺t)-\frac{1}{2}({I_{10}}-{I_{20}})\cos(2\pi\nu⁻t).
+	I_2(t)=\frac{1}{2}({I_{10}}+{I_{20}})\cos(2\pi f_+ t)-\frac{1}{2}({I_{10}}-{I_{20}})\cos(2\pi f_- t).
 	\label{eq:I_2_ur}
 \end{equation}
 Im folgenden werden zwei Spezialfälle betrachtet. 
-Schwingen die Systeme mit gleicher Amplitude $I_{10}=I_{20}$ und gleicher Phase so verschwindet die Differenzschwingung \eqref{eq:lsg_I_1-I_2}, sodass die Oszillatoren jeweils mit $\nu⁺$ eines einzelnen Oszillators und gleicher Phase schwingen.
+Schwingen die Systeme mit gleicher Amplitude $I_{10}=I_{20}$ und gleicher Phase so verschwindet die Differenzschwingung \eqref{eq:lsg_I_1-I_2}, sodass die Oszillatoren jeweils mit $f_+$ eines einzelnen Oszillators und gleicher Phase schwingen.
  Am Kondensator $C_\mathup{k}$ liegt zu keinem Zeitpunkt eine Spannung an, da die Ströme sich gegenseitig kompensieren.
-Schwingen die Systeme mit entgegengesetzter Amplitude  $I_{10}=-I_{20}$ und Phase verschwindet die Summenschwingung \eqref{eq:lsg_I_1+I_2}. Die Oszillatoren schwingen gegenphasig mit der Frequenz $\nu⁻$.
+Schwingen die Systeme mit entgegengesetzter Amplitude  $I_{10}=-I_{20}$ und Phase verschwindet die Summenschwingung \eqref{eq:lsg_I_1+I_2}. Die Oszillatoren schwingen gegenphasig mit der Frequenz $f_-$.
 Diese beiden Schwingungsmoden werden als Fundamentalschwingungen des Systems bezeichnet.
 
 \begin{figure}[h]
@@ -93,9 +93,9 @@ und
 \begin{equation}
 	I_2(t)=I_{10}\sin(\frac{1}{2}(\omega⁺+\omega⁻)t)\sin(\frac{1}{2}(\omega⁺-\omega⁻)t).
 \end{equation}
-Gemäß der Annahme $\nu⁺\approx\nu⁻$ und $C_\mathup{k}>>C$ ist $\frac{1}{2}(\omega⁺-\omega⁻)\approx\omega⁺$ und $\omega⁻-\omega⁺<<\omega⁺$.
-Die Oszillatoren schwingen mit der Frequenz $\frac{1}{2}(\nu⁺+\nu)$, welche ungefähr der Frequenz eines Einzeloszillators entspricht. 
-Die Amplituden verändern sich Periodisch mit der Schwebungsfrequenz $\nu⁻-\nu⁺$. 
+Gemäß der Annahme $f_+\approx f_-$ und $C_\mathup{k}>>C$ ist $\frac{1}{2}(\omega⁺-\omega⁻)\approx\omega⁺$ und $\omega⁻-\omega⁺<<\omega⁺$.
+Die Oszillatoren schwingen mit der Frequenz $\frac{1}{2}(f_+ + f_-)$, welche ungefähr der Frequenz eines Einzeloszillators entspricht. 
+Die Amplituden verändern sich Periodisch mit der Schwebungsfrequenz $f_- - f_+$. 
 Die Verhältnisse haben sich nach der Zeit 
 \begin{equation}
 T*\frac{1}{2}({\omega⁻-\omega⁺})=\frac{\pi}{2}
