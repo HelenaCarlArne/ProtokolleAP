@@ -11,10 +11,11 @@ Wird eines der Systeme zum Schwingen angeregt pendelt die zugeführte Energie zw
 \begin{figure}[h]
 	\centering
 	\label{fig:gekoppelte SK}
-		\includegraphics[width=\textwidth]{Bilder/2SK.pdf}
+		\includegraphics[width=0.8\textwidth]{Bilder/2SK.pdf}
 		\caption{Zwei LC-Schwinkreise kapazitiv gekoppelt.}
+\label{fig:gekoppelte SK}
 \end{figure}
-Die zwei dargestellten eigenständigen Schwingkreise sind über den Kondensator der Kapazität $C_\mathup{k}$ miteinander verknüpft.
+Die zwei dargestellten eigenständigen Schwingkreise sind über den Kondensator der Kapazität $C_\mathup{K}$ miteinander verknüpft.
  Mit Knoten- und Maschenregel lassen sich folgende Gesetzmäßigkeiten herleiten:
 \begin{equation}
 	I_\mathup{k}=I_1-I_2
@@ -48,6 +49,7 @@ Lösung der ersten Gleichung, entstanden durch Addition der DGL-System-Gleichung
 ist eine harmonische Schwingung der Form
 \begin{equation}
 	({I_1}+{I_2})(t)=({I_{10}}+{I_{20}})\cos(\frac{t}{\sqrt{LC}})
+\label{eq:lsg_I_1+I_2}
 \end{equation}
 mit der Schwingungsfrequenz 
 \begin{equation}
@@ -58,16 +60,17 @@ Diese Frequenz entspricht derer eines einzelnen Oszillators mit den Bauteilen $L
  Die Amplitude $({I_10}+{I_20})$ bleibt konstant.
 Die zweite Gleichung, enstanden durch Subtraktion,
 \begin{equation}
-	L(\ddot{I_1}-\ddot{I_2})+\bigl(\frac{1}{C}+\frac{1}{C_\mathup{k}}\bigr)({I_1}-{I_2})=0
+	L(\ddot{I_1}-\ddot{I_2})+\bigl(\frac{1}{C}+\frac{1}{C_\mathup{K}}\bigr)({I_1}-{I_2})=0
 	\label{eq:I_1-I_2}
 \end{equation}
 wird gelöst durch
 \begin{equation}
-	({I_1}-{I_2})(t)=({I_{10}}-{I_{20}})\cos\biggl(t{\biggl[L\biggl({\frac{1}{C}+\frac{1}{C_\mathup{k}}}\biggr)⁻¹\biggr]^{-\frac{1}{2}}}\biggr).
+	({I_1}-{I_2})(t)=({I_{10}}-{I_{20}})\cos\biggl(t{\biggl[L\biggl({\frac{1}{C}+\frac{1}{C_\mathup{K}}}\biggr)⁻¹\biggr]^{-\frac{1}{2}}}\biggr).
+\label{lsg_I_1-I_2}
 \end{equation}
 Die Schwingungsfrequenz 
 \begin{equation}
-f_-=\frac{1}{2\pi\sqrt{L\bigl({\frac{1}{C}+\frac{1}{C_\mathup{k}}}\bigr)⁻¹}}
+f_-=\frac{1}{2\pi\sqrt{L\bigl({\frac{1}{C}+\frac{1}{C_\mathup{K}}}\bigr)⁻¹}}
 \label{eq:f_-}
 \end{equation}
  ist größer als $f_+$.
@@ -83,7 +86,7 @@ und
 \end{equation}
 Im folgenden werden zwei Spezialfälle betrachtet. 
 Schwingen die Systeme mit gleicher Amplitude $I_{10}=I_{20}$ und gleicher Phase so verschwindet die Differenzschwingung \eqref{eq:lsg_I_1-I_2}, sodass die Oszillatoren jeweils mit $f_+$ eines einzelnen Oszillators und gleicher Phase schwingen.
- Am Kondensator $C_\mathup{k}$ liegt zu keinem Zeitpunkt eine Spannung an, da die Ströme sich gegenseitig kompensieren.
+ Am Kondensator $C_\mathup{K}$ liegt zu keinem Zeitpunkt eine Spannung an, da die Ströme sich gegenseitig kompensieren.
 Schwingen die Systeme mit entgegengesetzter Amplitude  $I_{10}=-I_{20}$ und Phase verschwindet die Summenschwingung \eqref{eq:lsg_I_1+I_2}. Die Oszillatoren schwingen gegenphasig mit der Frequenz $f_-$.
 Diese beiden Schwingungsmoden werden als Fundamentalschwingungen des Systems bezeichnet.
 
@@ -103,7 +106,7 @@ und
 \begin{equation}
 	I_2(t)=I_{10}\sin(\frac{1}{2}(\omega⁺+\omega⁻)t)\sin(\frac{1}{2}(\omega⁺-\omega⁻)t).
 \end{equation}
-Gemäß der Annahme $f_+\approx f_-$ und $C_\mathup{k}>>C$ ist $\frac{1}{2}(\omega⁺-\omega⁻)\approx\omega⁺$ und $\omega⁻-\omega⁺<<\omega⁺$.
+Gemäß der Annahme $f_+\approx f_-$ und $C_\mathup{K}>>C$ ist $\frac{1}{2}(\omega⁺-\omega⁻)\approx\omega⁺$ und $\omega⁻-\omega⁺<<\omega⁺$.
 Die Oszillatoren schwingen mit der Frequenz $\frac{1}{2}(f_+ + f_-)$, welche ungefähr der Frequenz eines Einzeloszillators entspricht. 
 Die Amplituden verändern sich Periodisch mit der Schwebungsfrequenz $f_- - f_+$. 
 Die Verhältnisse haben sich nach der Zeit 
@@ -118,14 +121,14 @@ T*\frac{1}{2}({\omega⁻-\omega⁺})=\frac{\pi}{2}
 Erzwungene Schwingungen werden durch eine von außen angelegte Sinusspannung erzeugt.
 %Wird Abbildung \ref{fig:gekoppelte SK} um einen Sinusgenerator erweitert, so kann mit Hilfe der Maschenregel eine Formel für den Strom $I_2$  gewonnen werden.
 %\begin{equation}
-%I_2=|U|\frac{1}{\sqrt{4{\omega}²{C_\mathup{k}}² R² Z(\omega)²+\biggl(\frac{1}{\omega C_\mathup{k}}-\omega C_\mathup{k} Z(\omega)² + \omega R² C_\mathup{k}\biggr)²}}=|U||L|,
+%I_2=|U|\frac{1}{\sqrt{4{\omega}²{C_\mathup{K}}² R² Z(\omega)²+\biggl(\frac{1}{\omega C_\mathup{K}}-\omega C_\mathup{K} Z(\omega)² + \omega R² C_\mathup{K}\biggr)²}}=|U||L|,
 %\end{equation}
 %mit dem Leitwert $|L|$ und dem Widerstand $Z(\omega)$, nähert sich für sehr große und sehr geringe Frequenzen dem Wert Null an.
 %An den Stellen der genannten Fundamentalfrequenzen $\omega⁺$ und $\omega⁻$ treten Resonanzphänomene auf.
 %Die Resonanzkurve zweier gekoppelter Schwingkreise unterscheidet sich von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima.
 %Die Werte des Stromes an diesen Frequenzen entscheiden sich nur unwesentlich, sodass die Leitwerte $|L(\omega⁺)|=|L(\omega⁻)|\approx\sfrac{1}{2R}$  angenommen werden darf. 
-%Betrachtet man die Frequenz $\omega⁺$, welche unabhängig von der Koppelkapazität $C_\mathup{k}$ ist, können beide Schwingkreise als ein Kreis mit $L_\mathup{ges}=2L$ und $C_\mathup{ges}=\sfrac{1}{2}C$ angesehen werden. 
+%Betrachtet man die Frequenz $\omega⁺$, welche unabhängig von der Koppelkapazität $C_\mathup{K}$ ist, können beide Schwingkreise als ein Kreis mit $L_\mathup{Ges}=2L$ und $C_\mathup{Ges}=\sfrac{1}{2}C$ angesehen werden. 
 %Durch die Koppelleitung fließt kein Strom. 
-%Bei der Frequenz $\omega⁻$ ist $C_\mathup{ges}=\sfrac{C C_\mathup{k}}{C_\mathup{k}+2C}$ - durch die Koppelleitung fließt nun der maximale Strom.
+%Bei der Frequenz $\omega⁻$ ist $C_\mathup{Ges}=\sfrac{C C_\mathup{K}}{C_\mathup{K}+2C}$ - durch die Koppelleitung fließt nun der maximale Strom.
 
 Im Resonanzfall unterscheidet sich die Resonanzkurve zweier gekoppelter Schwingkreise von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima. An den Stellen der in Kapitel \ref{sec:Theorie1} Fundamentalfrequenzen $f_+$ und $f_-$ befinden sich zwei Maxima.
