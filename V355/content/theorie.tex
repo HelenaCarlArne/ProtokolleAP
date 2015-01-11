@@ -7,6 +7,7 @@ Desweiteren soll das Verhalten des Gesamtsystems bei erzwungenen Schwingungen, a
 Sind zwei schwingfähige Systeme miteinander gekoppelt, so beeinflussen sie sich gegenseitig.
 Wird eines der Systeme zum Schwingen angeregt pendelt die zugeführte Energie zwischen beiden Systemen; die Energieerhaltung gilt.
 \subsection{Kapazitiv gekoppelte Schwingkreise}
+\label{sec:Theorie1}
 \begin{figure}[h]
 	\centering
 	\label{fig:gekoppelte SK}
@@ -48,7 +49,11 @@ ist eine harmonische Schwingung der Form
 \begin{equation}
 	({I_1}+{I_2})(t)=({I_{10}}+{I_{20}})\cos(\frac{t}{\sqrt{LC}})
 \end{equation}
-mit der Schwingungsfrequenz $f_+=\frac{1}{2\pi\sqrt{LC}}$.
+mit der Schwingungsfrequenz 
+\begin{equation}
+f_+=\frac{1}{2\pi\sqrt{LC}}.
+\label{eq:f_+}
+\end{equation}
 Diese Frequenz entspricht derer eines einzelnen Oszillators mit den Bauteilen $L$ und $C$.
  Die Amplitude $({I_10}+{I_20})$ bleibt konstant.
 Die zweite Gleichung, enstanden durch Subtraktion,
@@ -60,7 +65,12 @@ wird gelöst durch
 \begin{equation}
 	({I_1}-{I_2})(t)=({I_{10}}-{I_{20}})\cos\biggl(t{\biggl[L\biggl({\frac{1}{C}+\frac{1}{C_\mathup{k}}}\biggr)⁻¹\biggr]^{-\frac{1}{2}}}\biggr).
 \end{equation}
-Die Schwingungsfrequenz $f_-=\frac{1}{2\pi\sqrt{L\bigl({\frac{1}{C}+\frac{1}{C_\mathup{k}}}\bigr)⁻¹}}$ ist größer als $f_+$.
+Die Schwingungsfrequenz 
+\begin{equation}
+f_-=\frac{1}{2\pi\sqrt{L\bigl({\frac{1}{C}+\frac{1}{C_\mathup{k}}}\bigr)⁻¹}}
+\label{eq:f_-}
+\end{equation}
+ ist größer als $f_+$.
 Erneute Addition und Subtraktion der voneinander unabhägingen Gleichungen ergibt
 \begin{equation}
 	I_1(t)=\frac{1}{2}({I_{10}}+{I_{20}})\cos(2\pi f_+t)+\frac{1}{2}({I_{10}}-{I_{20}})\cos(2\pi f_-t)
@@ -80,7 +90,7 @@ Diese beiden Schwingungsmoden werden als Fundamentalschwingungen des Systems bez
 \begin{figure}[h]
 	\centering
 	\label{fig:schwebung}
-		\includegraphics[width=\textwidth]{Bilder/Schwebung.pdf}
+		\includegraphics[width=0.8\textwidth]{Bilder/Schwebung.pdf}
 		\caption{Schwebung.}
 \end{figure}
 
@@ -104,14 +114,18 @@ T*\frac{1}{2}({\omega⁻-\omega⁺})=\frac{\pi}{2}
 
 \newpage
 \subsection{Erzwungene Schwingungen}
-Erzwungene Schwingungen werden durch eine von außen angelegte Sinusspannung erzeugt. Wird Abbildung \ref{fig:gekoppelte SK} um einen Sinusgenerator erweitert, so kann mit Hilfe der Maschenregel eine Formel für den Strom $I_2$  gewonnen werden.
-\begin{equation}
-I_2=|U|\frac{1}{\sqrt{4{\omega}²{C_\mathup{k}}² R² Z(\omega)²+\biggl(\frac{1}{\omega C_\mathup{k}}-\omega C_\mathup{k} Z(\omega)² + \omega R² C_\mathup{k}\biggr)²}}=|U||L|,
-\end{equation}
-mit dem Leitwert $|L|$ und dem Widerstand $Z(\omega)$, nähert sich für sehr große und sehr geringe Frequenzen dem Wert Null an.
-An den Stellen der genannten Fundamentalfrequenzen $\omega⁺$ und $\omega⁻$ treten Resonanzphänomene auf.
-Die Resonanzkurve zweier gekoppelter Schwingkreise unterscheidet sich von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima.
-Die Werte des Stromes an diesen Frequenzen entscheiden sich nur unwesentlich, sodass die Leitwerte $|L(\omega⁺)|=|L(\omega⁻)|\approx\sfrac{1}{2R}$  angenommen werden darf. 
-Betrachtet man die Frequenz $\omega⁺$, welche unabhängig von der Koppelkapazität $C_\mathup{k}$ ist, können beide Schwingkreise als ein Kreis mit $L_\mathup{ges}=2L$ und $C_\mathup{ges}=\sfrac{1}{2}C$ angesehen werden. 
-Durch die Koppelleitung fließt kein Strom. 
-Bei der Frequenz $\omega⁻$ ist $C_\mathup{ges}=\sfrac{C C_\mathup{k}}{C_\mathup{k}+2C}$ - durch die Koppelleitung fließt nun der maximale Strom.
+\label{sec:erzwungen}
+Erzwungene Schwingungen werden durch eine von außen angelegte Sinusspannung erzeugt.
+%Wird Abbildung \ref{fig:gekoppelte SK} um einen Sinusgenerator erweitert, so kann mit Hilfe der Maschenregel eine Formel für den Strom $I_2$  gewonnen werden.
+%\begin{equation}
+%I_2=|U|\frac{1}{\sqrt{4{\omega}²{C_\mathup{k}}² R² Z(\omega)²+\biggl(\frac{1}{\omega C_\mathup{k}}-\omega C_\mathup{k} Z(\omega)² + \omega R² C_\mathup{k}\biggr)²}}=|U||L|,
+%\end{equation}
+%mit dem Leitwert $|L|$ und dem Widerstand $Z(\omega)$, nähert sich für sehr große und sehr geringe Frequenzen dem Wert Null an.
+%An den Stellen der genannten Fundamentalfrequenzen $\omega⁺$ und $\omega⁻$ treten Resonanzphänomene auf.
+%Die Resonanzkurve zweier gekoppelter Schwingkreise unterscheidet sich von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima.
+%Die Werte des Stromes an diesen Frequenzen entscheiden sich nur unwesentlich, sodass die Leitwerte $|L(\omega⁺)|=|L(\omega⁻)|\approx\sfrac{1}{2R}$  angenommen werden darf. 
+%Betrachtet man die Frequenz $\omega⁺$, welche unabhängig von der Koppelkapazität $C_\mathup{k}$ ist, können beide Schwingkreise als ein Kreis mit $L_\mathup{ges}=2L$ und $C_\mathup{ges}=\sfrac{1}{2}C$ angesehen werden. 
+%Durch die Koppelleitung fließt kein Strom. 
+%Bei der Frequenz $\omega⁻$ ist $C_\mathup{ges}=\sfrac{C C_\mathup{k}}{C_\mathup{k}+2C}$ - durch die Koppelleitung fließt nun der maximale Strom.
+
+Im Resonanzfall unterscheidet sich die Resonanzkurve zweier gekoppelter Schwingkreise von der Kurve eines einzelnen Oszillators mit periodischer Anregung durch die Anzahl der auftretenden Maxima. An den Stellen der in Kapitel \ref{sec:Theorie1} Fundamentalfrequenzen $f_+$ und $f_-$ befinden sich zwei Maxima.
