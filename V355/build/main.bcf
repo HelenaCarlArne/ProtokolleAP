@@ -1969,9 +1969,13 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">matplotlib</bcf:citekey>
-    <bcf:citekey order="2">gimp</bcf:citekey>
-    <bcf:citekey order="3">numpy</bcf:citekey>
+    <bcf:citekey order="1">v355</bcf:citekey>
+    <bcf:citekey order="2">v355</bcf:citekey>
+    <bcf:citekey order="3">v355</bcf:citekey>
+    <bcf:citekey order="4">v355</bcf:citekey>
+    <bcf:citekey order="5">matplotlib</bcf:citekey>
+    <bcf:citekey order="6">gimp</bcf:citekey>
+    <bcf:citekey order="7">numpy</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>
