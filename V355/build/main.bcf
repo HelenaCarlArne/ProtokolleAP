@@ -1973,9 +1973,21 @@
     <bcf:citekey order="2">v355</bcf:citekey>
     <bcf:citekey order="3">v355</bcf:citekey>
     <bcf:citekey order="4">v355</bcf:citekey>
-    <bcf:citekey order="5">matplotlib</bcf:citekey>
-    <bcf:citekey order="6">gimp</bcf:citekey>
-    <bcf:citekey order="7">numpy</bcf:citekey>
+    <bcf:citekey order="5">v355</bcf:citekey>
+    <bcf:citekey order="6">v355</bcf:citekey>
+    <bcf:citekey order="7">v355</bcf:citekey>
+    <bcf:citekey order="8">v355</bcf:citekey>
+    <bcf:citekey order="9">uncertainties</bcf:citekey>
+    <bcf:citekey order="10">v355</bcf:citekey>
+    <bcf:citekey order="11">gimp</bcf:citekey>
+    <bcf:citekey order="12">v355</bcf:citekey>
+    <bcf:citekey order="13">gimp</bcf:citekey>
+    <bcf:citekey order="14">v355</bcf:citekey>
+    <bcf:citekey order="15">v355</bcf:citekey>
+    <bcf:citekey order="16">v354</bcf:citekey>
+    <bcf:citekey order="17">gimp</bcf:citekey>
+    <bcf:citekey order="18">numpy</bcf:citekey>
+    <bcf:citekey order="19">uncertainties</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>
