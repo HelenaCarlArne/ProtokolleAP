@@ -1,11 +1,17 @@
-\newpage
 \section{Auswertung}
 \label{sec:Auswertung}
+Alle im Folgenden berechneten Ergebnisse sind wegen dieser Fehlerbehaftungen $\mathup{\Delta}x_\text{i}$ mit Abweichungen nach dem \textsc{Gauss}schen Theorem der Fehlerfortpflanzung angegeben \cite{uncertainties}. Für die Gesamtabweichung $\mathup{\Delta}f$ einer berechneten Größe gilt
+
+\begin{equation}
+	\mathup{\Delta}f(x_1,...,x_\text{N})=\sqrt{\sum_{\text{i}=1}^\text{N}\left(\frac{\partial f}{\partial x_\text{i}}\mathup{\Delta}x_\text{i}\right)^2}.
+	\label{eq:gauss_gen}
+\end{equation}
+\newpage
 \subsection{Abstimmen der Systemparameter}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{Bilder/Auswertungsaufbau.pdf}
-	\caption{Ersatzschaltung für die Auswertung. \cite{v355}}
+	\caption{Ersatzschaltung für die Auswertung. \cite{v355} \cite{gimp}}
 	\label{fig:ersatz}
 \end{figure}
 \begin{table}[ht]
@@ -21,25 +27,26 @@
 	\caption{Die festen Parameter des gekoppelten Systems nach Abbildung \ref{fig:ersatz}. \cite{v355}}
 \end{table}
 Der Kopplungskondensator $C_\mathup{K}$ wird überbrückt und somit effektiv nur der linke Schwingkreis angeregt.
-Die Frequenz des Generators, bei welchem die Widerstandsspannung $U_\mathup{R_1}(t)$ maximal wird, ist die Resonanzfrequenz $f_\text{Res}$ des Systems. 
-Diese wurde mit $f_\text{Res} = \SI{30.74}{\kilo\hertz}$ bei maximaler Widerstandsspannung $U_\mathup{R_1}(t)$
+%Die Frequenz des Generators, bei welchem die Widerstandsspannung $U_\mathup{R_1}(t)$ maximal wird, ist die Resonanzfrequenz $f_\text{Res}$ des Systems. 
+Die Resonanzfrequenz $f_\text{Res}$ des Systems wurde mit $f_\text{Res} = \SI{30.74}{\kilo\hertz}$ bei maximaler Widerstandsspannung $U_\mathup{R_1}(t)$
 grob abgeschätzt.\\
 Der Phasenwinkel $\phi$ zwischen Erregerspannung $U(t)$ und der Widerstandsspannung $U_\mathup{R_1}(t)$ ist gleich Null, sofern die Erregerspannung $U(t)$ die Resonanzfrequenz $f_\text{Res}$ aufweist.
-Beim Auftragen der Widerstandsspannung $U_\mathup{R_1}(t)$ gegen die Erregerspannung $U(t)$  wird eine Lissajous-Figur sichtbar.
-Für den Phasenwinkel $\phi=0$ ist diese Figur nicht-elliptisch, gerade und verläuft im ersten und dritten Quadranten des Oszilloskopes.
-Die  Resonanzfrequenz $f_\text{Res}$ wird dadurch auf den Wert
+%Beim Auftragen der Widerstandsspannung $U_\mathup{R_1}(t)$ gegen die Erregerspannung $U(t)$ wird eine Lissajous-Figur sichtbar.
+%Für den Phasenwinkel $\phi=0$ ist die Lissajous-Figur nicht-elliptisch, gerade und verläuft im ersten und dritten Quadranten des Oszilloskopes.
+Die Resonanzfrequenz $f_\text{Res}$ wird mithilfe des in Abschnitt \ref{sec:Resonanzfrequenz} beschriebenen Verfahrens auf den Wert
 \begin{equation}
 	f_\text{Res} = \SI{30.71}{\kilo\hertz}
 \end{equation} präzisiert.
-Der aus Abschnitt \ref{sec:Theorie} gegebene Erwartungswert für die Resonanzfrequenz ist
+Der %aus Abschnitt \ref{sec:Theorie} 
+für gedämpfte Schwingkreise bekannte Erwartungswert \cite{v354} für die Resonanzfrequenz ist
 \begin{alignat}{2}
 	f_\text{Res, Theorie} = \sqrt{\frac{1}{\mathup{LC_\text{Gesamt}}}-\frac{\mathup{R^2}}{4\mathup{L^2}}} = \SI{30.84\pm0.05}{\kilo\hertz}, &\quad\mathup{\Delta}f_\text{Res}=-0,42\,\%
 	\label{eq:fres12}
 \end{alignat}
 In der Theorie werden ideale Komponenten angenommen.
-Zur Berücksichtigung, dass eine reale Spule eine nicht zu vernachlässigende Induktivität $C_\text{sp}$ aufweist, werden für die Auswertung im Allgemeinen angepasste Gesamtkapazitäten betrachtet. Für \eqref{eq:fres12} gilt $C_\text{Gesamt}= C+C_\text{sp}$
+Zur Berücksichtigung, dass eine reale Spule eine nicht zu vernachlässigende Induktivität $C_\text{sp}$ aufweist, werden für die Auswertung im Allgemeinen angepasste Gesamtkapazitäten betrachtet. Für \eqref{eq:fres12} gilt daher $C_\text{Gesamt}= C+C_\text{sp}$
 
-Der zweite Schwingkreis wird durch seinen variablen Kondensator $C$ mithilfe einer Lissajous-Figur an den ersten Schwingkreis angeglichen.
+Der zweite Schwingkreis wird durch seinen variablen Kondensator $C$ mithilfe einer \textsc{Lissajous}-Figur an den ersten Schwingkreis angeglichen.
 \subsection{Untersuchung der Schwebung}
 \label{sec:Auswertung1}
 \begin{table}[h!]
@@ -94,24 +101,25 @@ es ergibt sich die Tabelle \ref{tab:verhaeltnis}.
 	\caption{Die Frequenzen der Fundamentallösungen in Abhängigkeit von der Kopplungskapazität $C_\mathup{K}$} 
 	\label{tab:fundament}
 \end{table}
-Für die Berechnung der Fundamentalfrequenz $f_+$ wird die Gesamtkapazität $C_\text{Gesamt}=C+C_\text{sp}$, 
+Für die Berechnung der Fundamentalfrequenz $f_+$ wird die Gesamtkapazität\\ $C_\text{Gesamt}=C+C_\text{sp}$, 
 für die Fundamentalfrequenz $f_-$ wird die Gesamtkapazität $C_\text{Gesamt}=(\frac{1}{C}+\frac{1}{C_\text{K}})^{-1}+C_\text{sp}$ betrachtet.
-Bei der Untersuchung der Fundamentallösung wird analog zu \ref{sec:Auswertung1} die Lissajous-Figur betrachtet, 
+Bei der Untersuchung der Fundamentallösung wird analog zu \ref{sec:Auswertung1} die \textsc{Lissajous}-Figur betrachtet, 
 die durch Auftrag der Widerstandsspannung $U_\mathup{R_2}(t)$ gegen die Generatorspannung $U(t)$ angezeigt wird.
-Bei einem Phasenwinkel $\phi=0$ bildet sich eine nicht-elliptische, gerade Lissajous-Figur im ersten und dritten Quadranten, bei einem Phasenwinkel $\phi=\pi$ ist diese an der $U_\mathup{R_2}(t)$-Achse gespiegelt.
+%Bei einem Phasenwinkel $\phi=0$ bildet sich eine nicht-elliptische, gerade Lissajous-Figur im ersten und dritten Quadranten, bei einem Phasenwinkel $\phi=\pi$ ist diese an der $U_\mathup{R_2}(t)$-Achse gespiegelt.
 Es ergeben sich die Frequenzen in Tabelle \ref{tab:fundament}.
 Nach Gleichung \eqref{eq:f_+} und \eqref{eq:f_-} ergeben sich die theoretischen Werte für die Fundamentalschwingungsfrequenzen in Tabelle \ref{tab:fundament}.
 \subsection{Untersuchung der Stromkurve $I_2(t)$}
 \label{sec:Auswertung2}
-Der Generator in Schaltung \ref{fig:ersatz} durchläuft innerhalb von $\SI{20}{\milli\second}$ 
-das Frequenzspektrum von \SI{10}{\kilo\hertz} bis \SI{80}{\kilo\hertz}. 
-Wird die Widerstandsspannung $U_\mathup{R_2}(t)$ auf einem Oszilloskopen dargestellt, so zeigt sich der Auftrag von der Widerstandsspannung $U_\mathup{R,2}(t)$
+%Der Generator in Schaltung \ref{fig:ersatz} durchläuft innerhalb von $\SI{20}{\milli\second}$ 
+%das Frequenzspektrum von \SI{10}{\kilo\hertz} bis \SI{80}{\kilo\hertz}. 
+Wird die Widerstandsspannung $U_\mathup{R_2}(t)$ auf einem Oszilloskopen dargestellt, 
+so zeigt sich nach der Beschreibung in Abschnitt \ref{sec:Frequenzgenerator} der Auftrag von der Widerstandsspannung $U_\mathup{R,2}(t)$
 gegen die Erregerfrequenz $f$.
 Mit den Anfangs- und Endkoordinaten
 $\text{P}_\text{Anfang}=(\SI{-7}{\milli\second}|\SI{10}{\kilo\hertz})$ und $\text{P}_\text{Ende}=(\SI{14,3}{\milli\second}|\SI{80}{\kilo\hertz})$ können die Zeitkoordinaten in Tabelle \ref{tab:zeitkoord} in Frequenzen umgerechnet werden.
 Die lineare Regression aus diesen beiden Koordinaten gibt die Umrechnungsformel
 \begin{equation}
-	f_\pm = 3.7559\frac{\si{\kilo\hertz}}{\si{\milli\second}}t_\pm+\SI{36.2911}{\kilo\hertz}
+	f_\pm = 3.7559\frac{\si{\kilo\hertz}}{\si{\milli\second}}t_\pm+\SI{36.2911}{\kilo\hertz}.
 \end{equation}
 \begin{table}[h]
 	\centering
