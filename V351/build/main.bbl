@@ -19,6 +19,26 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
+    \entry{V351}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
+      \field{labeltitle}{Versuch V351: Fourier-Analyse und -Synthese}
+      \field{title}{Versuch V351: Fourier-Analyse und -Synthese}
+      \field{urlday}{13}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V351.pdf
+      \endverb
+    \endentry
     \entry{scipy}{misc}{}
       \true{morelabelname}
       \name{labelname}{3}{}{%
