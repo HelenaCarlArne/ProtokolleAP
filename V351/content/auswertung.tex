@@ -1,6 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-\subsection{Fourieranalyse}
+\subsection{Fouriertransformation}
+\label{FT}
 
 \begin{table}
 	\centering
@@ -65,8 +66,54 @@
 	\label{tab:FA_SZ}
 \end{table}
 
-\subsection{Fouriersynthese}
+Die Tabellen \ref{tab:FA_RE},\ref{tab:FA_DE} und \ref{tab:FA_SZ} enthalten die gemessenen Amplituden $\frac{U_1}{n}$ beziehungsweise $\frac{U_1}{n²}$ der $n$-ten Oberschwingung. Ebenfalls aufgetragen sind die theoretisch nach GLEICHUNG FOURIERKOEFFIZIENTEN zur Berechnung der Fourierkoeffizienten bestimmten Amplituden $U_n$, deren Abweichung zur Messung in Prozent angegeben wird.
 
+
+
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{Bilder/FT_RE2.pdf}		
+\caption{Fourieranalyse der Rechteckspannung.}
+	\label{fig:FT_RE}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{Bilder/FT_DE2.pdf}		
+\caption{Fourieranalyse der Dreieckspannung.}
+	\label{fig:FT_DE}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{Bilder/FT_SZ.pdf}		
+\caption{Fourieranalyse der Sägezahnspannung.}
+	\label{fig:FT_SZ}
+\end{figure}
+
+Da Rechteck- und Dreiecksspannug gerade bzw. ungerade Funktionen sind gilt für die Koeffizienten $a_n=0$ bzw. $b_n=0$. Für die in Abbildung \ref{fig:FT_DE} und \ref{fig:FT_RE} dargestellten Amplituden der geraden Koeffizienten gilt $a_n\geqslant0\si\volt$,$b_n\geqslant0\si\volt$, bedingt durch die verwendeten Bauteile in der Messung. Diese Abweichungen lassen sich für größere $n$ nur schwierig von den Amplituden der ungeraden Koeffizienten unterscheiden.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Fouriersynthese}
+Bei der Fouriersynthese sollen die in Kapitel \ref{sec:FT} untersuchen Schwingungen aus einzelnen Koeffizienten hergestellt werden. Dazu werden die Amplituden der verschiedenen Oberschwingungen am Oberwellengenerator eingestellt und die Phase so geändert, dass die auf dem Oszilloskopbildschirm dargestellte Summenspannung dem gewählten Spannungsverlauf entspricht. In Tabelle \ref{tab:FS} sind die Amplituden der unterschiedlichen Oberwellen für Rechteck-, Dreieck- und Sägezahnspannung aufgetragen.
 
 \begin{table}
 	\centering
@@ -89,4 +136,38 @@
 	\caption{Fouriersynthese drei verschiedener Spannungen.}
 	\label{tab:FS}
 \end{table}
+
+
+
+
+
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{Bilder/1-9_DE.pdf}		
+\caption{Fouriersynthese der Dreiecksspannung.}
+	\label{fig:1-9_DE}
+\end{figure}
+
+
+
+
+
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{Bilder/1-9_RE.pdf}		
+\caption{Fouriersynthese der Rechteckspannung.}
+	\label{fig:1-9_RE}
+\end{figure}
+
+
+
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{Bilder/1-9_SZ.pdf}		
+\caption{Fouriersynthese der Sägezahnspannung.}
+	\label{fig:1-9_SZ}
+\end{figure}
 

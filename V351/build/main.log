@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  13 JAN 2015 19:51
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  13 JAN 2015 20:45
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -346,7 +346,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.080 seconds
+luaotfload | main : fontloader loaded in 0.081 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1843,40 +1843,100 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [3<./Bilder/Linie
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<Bilder/FT_RE2.pdf, id=56, 293.095pt x 193.72375pt>
+File: Bilder/FT_RE2.pdf Graphic file (type pdf)
+ <use Bilder/FT_RE2.pdf>
+Package pdftex.def Info: Bilder/FT_RE2.pdf used on input line 76.
+(pdftex.def)             Requested size: 292.7776pt x 193.51338pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./content/diskussion.tex [4])(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
+<Bilder/FT_DE2.pdf, id=57, 295.1025pt x 194.7275pt>
+File: Bilder/FT_DE2.pdf Graphic file (type pdf)
+ <use Bilder/FT_DE2.pdf>
+Package pdftex.def Info: Bilder/FT_DE2.pdf used on input line 84.
+(pdftex.def)             Requested size: 292.7776pt x 193.19678pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/FT_SZ.pdf, id=58, 299.1175pt x 196.735pt>
+File: Bilder/FT_SZ.pdf Graphic file (type pdf)
+ <use Bilder/FT_SZ.pdf>
+Package pdftex.def Info: Bilder/FT_SZ.pdf used on input line 92.
+(pdftex.def)             Requested size: 292.7776pt x 192.57982pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `sec:FT' on page 4 undefined on input line 116.
+
+[4] <Bilder/1-9_DE.pdf, id=76, 297.11pt x 190.7125pt>
+File: Bilder/1-9_DE.pdf Graphic file (type pdf)
+ <use Bilder/1-9_DE.pdf>
+Package pdftex.def Info: Bilder/1-9_DE.pdf used on input line 147.
+(pdftex.def)             Requested size: 292.7776pt x 187.93875pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/1-9_RE.pdf, id=77, 292.09125pt x 195.73125pt>
+File: Bilder/1-9_RE.pdf Graphic file (type pdf)
+ <use Bilder/1-9_RE.pdf>
+Package pdftex.def Info: Bilder/1-9_RE.pdf used on input line 159.
+(pdftex.def)             Requested size: 292.7776pt x 196.2086pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/1-9_SZ.pdf, id=78, 295.1025pt x 196.735pt>
+File: Bilder/1-9_SZ.pdf Graphic file (type pdf)
+ <use Bilder/1-9_SZ.pdf>
+Package pdftex.def Info: Bilder/1-9_SZ.pdf used on input line 169.
+(pdftex.def)             Requested size: 292.7776pt x 195.18849pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./content/diskussion.tex [5] [6<./Bilder/FT_RE2.pdf><./Bilder/FT_DE2.pdf>] [7<./Bilder/FT_SZ.pdf><./Bilder/1-9_DE.pdf>] [8<./Bilder/1-9_RE.pdf><./Bilder/1-9_SZ.pdf>])(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 20.
  (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc) [5]
+)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
- [6]
+ [9
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 9AAE41BFF0657BEE837CFA2270F0FA30;8120.
+(rerunfilecheck)             Checksum: A745713FC34FB8902C31F0EF0CFC6884;9675.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40678 strings out of 494693
+ 40719 strings out of 494693
  100000,1373583 words of node,token memory allocated
- 555 words of node memory still in use:
+ 570 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 7 kern, 13 attribute, 62 glue_spec, 13 attribute_list, 3 action, 1 write nodes
-   avail lists: 1:48,2:6272,3:147,4:2467,5:274,6:1974,7:80,8:22,9:1003,10:985,11:520,12:230
- 43214 multiletter control sequences out of 65536+600000
- 88 fonts using 27557427 bytes
- 70i,14n,104p,974b,2644s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:48,2:8888,3:162,4:2823,5:394,6:2198,7:97,8:23,9:1103,10:985,11:520,12:230
+ 43246 multiletter control sequences out of 65536+600000
+ 88 fonts using 27557295 bytes
+ 70i,14n,104p,974b,2058s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (6 pages, 72239 bytes).
+Output written on main.pdf (9 pages, 92886 bytes).
 
-PDF statistics: 205 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 131072)
+PDF statistics: 280 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 131072)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
