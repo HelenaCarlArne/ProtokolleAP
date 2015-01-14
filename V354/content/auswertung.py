@@ -180,7 +180,7 @@ q             = U_C.max()/28.8
 breite_theo     = R_2/(L*2*np.pi) # <-- Gleichung (16). Umrechnung aus Kreisfrequenz beachten!
 breite_theo_err = np.sqrt((1/(L*2*np.pi)*R_2_err)**2+(-R_2/(L**2*2*np.pi)*L_err)**2) # <-- Wichtige Fehlerformel für den Auswertungsteil
 q_theo          = 1/R_2 * np.sqrt(L/C) # <-- Gleichung (15)
-q_theo_err      = np.sqrt((-1/(R_2**2)*np.sqrt(L/C)*R_2_err)**2+(1/(2*C*R_2)*np.sqrt((C/L)*L_err))**2+(-L/(C**2*2*R_2)*np.sqrt(C/L)*C_err)**2) # <-- Wichtige Fehlerformel für den Auswertungsteil
+q_theo_err      = np.sqrt((-1/(R_2**2)*np.sqrt(L/C)*R_2_err)**2+(1/(2*C*R_2)*np.sqrt(C/L)*L_err)**2+(-L/(C**2*2*R_2)*np.sqrt(C/L)*C_err)**2) # <-- Wichtige Fehlerformel für den Auswertungsteil
 
 # Linearen Plot im Bereich der Resonanzfrequenz erstellen
 plt.plot(f[resonanzkurve], U_C[resonanzkurve]/U_0[resonanzkurve], 'rx', label="Messdaten")
