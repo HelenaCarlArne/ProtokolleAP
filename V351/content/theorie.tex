@@ -14,7 +14,8 @@ für eine Q-periodische Funktion $G$ des Ortes gilt
 \begin{equation}
 	G(x) = G(x+Q) \qquad\forall x. 
 \end{equation}
-Nach dem Fourier'schen Theorem lassen sich solche periodischen Funktionen, etwa Wellenfunktionen $F(x,t)$, als Linearkombination aus den Elementarschwingungen
+Bis Abschnitt \ref{sec:theorie3} werden nur solche periodischen Funktionen betrachtet.
+Nach dem Fourier'schen Theorem lassen sich periodische Funktionen, etwa Wellenfunktionen, als Linearkombination aus den Elementarschwingungen
 \begin{alignat}{3}
 	a_\text{n}\text{sin}\Bigl(\frac{2π}{\mathup{T}}t\Bigr) &\qquad\text{und} &&\qquad b_\text{n}\text{cos}\Bigl(\frac{2π}{\mathup{T}}t\Bigr)
 \end{alignat}
@@ -26,7 +27,7 @@ Das bedeutet, dass die Reihe
 	\label{eq:reihe}
 \end{equation}
 mit $\omega=2\mathup{\pi}\cdot f$
-eine T-periodische Funktion $f$ der Zeit darstellt, sofern die Reihe konvergent ist.
+eine T-periodische Funktion $F$ der Zeit darstellt, sofern die Reihe konvergent ist.
 Gleichmäßige Konvergenz der Fourier-Reihe ist gegeben, wenn die Funktion $F$ auf ihrem Definitionsbereich stetig ist.
 
 Für die Koeffizienten in \ref{eq:reihe} gilt
@@ -64,4 +65,19 @@ Bei konvergenten Fourier-Reihen \eqref{eq:reihe} geht die Höhe der diskreten Li
 Nicht-periodische Funktionen $F$ zeigen bei Spektralanalyse \ref{fig:analyse} ein kontinuierliches Spektrum, weiter gilt nicht $a_\text{n},b_\text{n}\xrightarrow{f\to\infty}0$ im Allgemeinen.
 Für diese Funktionen ohne konvergenten Fourier-Reihen wird eine Fourier-Transformation angewandt.
 
+Mit der Fourier-Transformierten $\tilde{F}(\omega)$ und der Funktion $F(t)$ ist die Fourier-Transformation als uneigentliches Integral beschreibbar.
+Es gilt
+\begin{equation}
+	\tilde{F}(\omega)=\int_{-\infty}^{\infty}F(t)\cdot e^{i\omega t} \mathup{d}t
+	\label{eq:fourier}
+\end{equation}
+Die von der Frequenz abhängigen Funktion $\tilde F(\omega)$ beschreibt das in Abschnitt \ref{sec:theorie2} gezeigte Frequenzspektrum. 
+Für reale Systeme kann nicht in den geforderten Zeitgrenzenen $-\infty$ und $\infty$ integriert werden; 
+durch vorzeitiges Abbrechen der Integration kommt es zu Abweichungen.
+Diese Abweichungen bestehen beispielsweise darin, dass eventuell erwartete diskrete Linien (vgl. Abb. \ref{fig:analyse}) als Peaks mit endlicher Breite dargestellt werden und es neben den erwarteten Maxima auch zu Nebenmaxima kommt.
 
+Die Umkehrformel der Fourier-Transformation ist gegeben durch
+\begin{equation}
+	F(t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\tilde{F}(\omega)\cdot e^{-i\omega t} \mathup{d}\omega
+	\label{eq:reiruof}
+\end{equation}
