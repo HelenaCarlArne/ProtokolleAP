@@ -3,6 +3,33 @@
 \subsection{Fourier-Analyse}
 Es werden periodische elektrische Schwingungen in ihre Fourier-Komponenten zerlegt und die gemessenen Fourier-Koeffizienten mit den nach Fourierschen Theorem erwarteten Werten nach Gleichung \ref{eq:koeff} verglichen.
 
-Es wird ein Signal mit den Kenndaten
+Es wird das Signal eines Funktionsgenerators mit den Kenndaten in Tabelle \ref{tab:kenndaten}
+\begin{figure}
+\end{figure}
+auf ein Oszilloskop gegeben.
+Die Signalform wird gewählt aus Rechteck-, Sägezahn- und Dreickspannung.
+Dieses Oszilloskop wird im \textit{Math}-Modus betrieben, welcher über eine endliche Zeit eine \textit{Fast-Fourier-Transformation} \cite{FFT} durchführt. 
+Nach Abschnitt \ref{sec:theorie3} werden für die periodischen Signale anstelle von diskreten Linien Peaks mit endlicher Breite erwartet. 
+Die Höhe der Peaks nehmen im Frequenzspektrum mit wachsender Frequenz ab.\\
+Die Amplitude der Elementarschwingung und damit die Fourier-Koeffizienten \ref{eq:koeff} entsprechen der Höhe der Peaks. 
+Anschließend wird das Verfahren mit einer anderen Signalform widerholt, sodass alle drei Signalformen analysiert werden.
+%
 
-b) Man setze einfache periodische Schwingungen aus ihren Fourier-Komponenten zusammen und dokumentiere die Ergebnisse durch einen Ausdruck des zeitlichen Verlaufs der Summenspannung.
+\subsection{Fourier-Synthese}
+Aus den Gleichungen \ref{eq:koeff} sind für periodische Signalformen, etwa Rechteck-, Sägezahn- oder Dreickspannungen, die Fourier-Koeffizienten bekannt. 
+Mit Hilfe einer Vorrichtung wird die Signalform aus den Elementarschwingungen mit berechneter Amplitude additiv zusammengesetzt.
+
+Die Vorrichtung besteht aus einem Funktionsgenerator, der eine feste Grundschwingung $f=\mathup{const.}$ für $n=0$ und deren Oberschwingungen für $n\in\{2,...,9\}$ ausgibt.
+Diese Elementarschwingungen sind in ihrer Amplitude und in ihrer Phase einstellbar, weiter kann das Summensignal ausgegeben werden.
+Die einzelnen Oberschwingungen und die Grundschwingung können wahlweise dem Summensignal zugeschaltet werden.
+
+Die aus den Gleichungen \ref{eq:koeff} bekannten Amplituden werden an der Vorrichtung eingestellt und die einzelnen Phase so versetzt, dass die Schwingungen in Phase sind.
+Bei $a_\text{n}, b_\text{n}<0$ kann ein Phasenversatz von $\phi=180°$ eingestellt werden, es gilt
+\begin{subequations}
+	\begin{equation}
+		-\mathup{sin}(x)=\mathup{sin}(x+180°).
+	\end{equation}
+	\begin{equation}
+		-\mathup{cos}(x)=\mathup{cos}(x+180°)
+	\end{equation}
+\end{subequations}
