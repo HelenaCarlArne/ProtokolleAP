@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  6 JAN 2015 00:18
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  16 JAN 2015 12:31
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -346,7 +346,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.081 seconds
+luaotfload | main : fontloader loaded in 0.091 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1852,27 +1852,27 @@ File: Bilder/Maschenfoto2.png Graphic file (type png)
 Package pdftex.def Info: Bilder/Maschenfoto2.png used on input line 104.
 (pdftex.def)             Requested size: 167.29967pt x 94.78912pt.
  [3] [4<./Bilder/Loesungsform.png><./Bilder/Maschenfoto2.png>]
-LaTeX Font Info:    Calculating math sizes for size <7.63431> on input line 153.
+LaTeX Font Info:    Calculating math sizes for size <7.63431> on input line 159.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.63441pt on input line 153.
+(Font)              scaled to size 7.63441pt on input line 159.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.34406pt on input line 153.
+(Font)              scaled to size 5.34406pt on input line 159.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 3.8172pt on input line 153.
+(Font)              scaled to size 3.8172pt on input line 159.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.63419pt on input line 153.
+(Font)              scaled to size 7.63419pt on input line 159.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.34389pt on input line 153.
+(Font)              scaled to size 5.34389pt on input line 159.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 3.8171pt on input line 153.
+(Font)              scaled to size 3.8171pt on input line 159.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
@@ -1964,12 +1964,12 @@ Overfull \hbox (8.5191pt too wide) detected at line 53
  
  []
 
-<build/plot_schwingungskurve.pdf, id=107, 578.16pt x 433.62pt>
+<build/plot_schwingungskurve.pdf, id=108, 578.16pt x 433.62pt>
 File: build/plot_schwingungskurve.pdf Graphic file (type pdf)
  <use build/plot_schwingungskurve.pdf>
 Package pdftex.def Info: build/plot_schwingungskurve.pdf used on input line 66.
 (pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
- <build/plot_einhuellende_semilog.pdf, id=110, 578.16pt x 433.62pt>
+ <build/plot_einhuellende_semilog.pdf, id=111, 578.16pt x 433.62pt>
 File: build/plot_einhuellende_semilog.pdf Graphic file (type pdf)
  <use build/plot_einhuellende_semilog.pdf>
 Package pdftex.def Info: build/plot_einhuellende_semilog.pdf used on input line 74.
@@ -1978,32 +1978,22 @@ Package pdftex.def Info: build/plot_einhuellende_semilog.pdf used on input line 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8<./build/plot_schwingungskurve.pdf>] [9<./build/plot_einhuellende_semilog.pdf>] <Bilder/Aperiodischer.JPG, id=253, 642.4pt x 481.8pt>
+[8<./build/plot_schwingungskurve.pdf>] [9<./build/plot_einhuellende_semilog.pdf>] <Bilder/Aperiodischer.JPG, id=254, 642.4pt x 481.8pt>
 File: Bilder/Aperiodischer.JPG Graphic file (type jpg)
  <use Bilder/Aperiodischer.JPG>
-Package pdftex.def Info: Bilder/Aperiodischer.JPG used on input line 102.
+Package pdftex.def Info: Bilder/Aperiodischer.JPG used on input line 104.
 (pdftex.def)             Requested size: 334.60571pt x 250.95648pt.
- <Bilder/Kriechfall1.JPG, id=254, 642.4pt x 481.8pt>
+ <Bilder/Kriechfall1.JPG, id=255, 642.4pt x 481.8pt>
 File: Bilder/Kriechfall1.JPG Graphic file (type jpg)
  <use Bilder/Kriechfall1.JPG>
-Package pdftex.def Info: Bilder/Kriechfall1.JPG used on input line 109.
+Package pdftex.def Info: Bilder/Kriechfall1.JPG used on input line 111.
 (pdftex.def)             Requested size: 167.29967pt x 125.47089pt.
- <Bilder/Schwingfall.JPG, id=255, 642.4pt x 481.8pt>
+ <Bilder/Schwingfall.JPG, id=256, 642.4pt x 481.8pt>
 File: Bilder/Schwingfall.JPG Graphic file (type jpg)
  <use Bilder/Schwingfall.JPG>
-Package pdftex.def Info: Bilder/Schwingfall.JPG used on input line 113.
+Package pdftex.def Info: Bilder/Schwingfall.JPG used on input line 115.
 (pdftex.def)             Requested size: 167.29967pt x 125.47089pt.
  [10<./Bilder/Aperiodischer.JPG><./Bilder/Kriechfall1.JPG><./Bilder/Schwingfall.JPG>]
-Overfull \hbox (8.5191pt too wide) detected at line 165
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 166
- 
- []
-
-
 Overfull \hbox (8.5191pt too wide) detected at line 167
  
  []
@@ -2123,84 +2113,29 @@ Overfull \hbox (8.5191pt too wide) detected at line 190
  
  []
 
-<build/plot_amplitude_semilog.pdf, id=263, 578.16pt x 433.62pt>
+
+Overfull \hbox (8.5191pt too wide) detected at line 191
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 192
+ 
+ []
+
+<build/plot_amplitude_semilog.pdf, id=264, 578.16pt x 433.62pt>
 File: build/plot_amplitude_semilog.pdf Graphic file (type pdf)
  <use build/plot_amplitude_semilog.pdf>
-Package pdftex.def Info: build/plot_amplitude_semilog.pdf used on input line 208.
+Package pdftex.def Info: build/plot_amplitude_semilog.pdf used on input line 211.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <build/plot_amplitude_linear.pdf, id=266, 578.16pt x 433.62pt>
+ <build/plot_amplitude_linear.pdf, id=267, 578.16pt x 433.62pt>
 File: build/plot_amplitude_linear.pdf Graphic file (type pdf)
  <use build/plot_amplitude_linear.pdf>
-Package pdftex.def Info: build/plot_amplitude_linear.pdf used on input line 213.
+Package pdftex.def Info: build/plot_amplitude_linear.pdf used on input line 216.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
  [11]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 228
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 229
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 230
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 231
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 232
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 233
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 234
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 235
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 236
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 237
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 238
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 239
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 240
- 
- []
 
 
 Overfull \hbox (8.5191pt too wide) detected at line 241
@@ -2268,6 +2203,41 @@ Overfull \hbox (8.5191pt too wide) detected at line 253
  []
 
 
+Overfull \hbox (8.5191pt too wide) detected at line 254
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 255
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 256
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 257
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 258
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 259
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 260
+ 
+ []
+
+
 Overfull \hbox (8.5191pt too wide) detected at line 261
  
  []
@@ -2294,41 +2264,6 @@ Overfull \hbox (8.5191pt too wide) detected at line 265
 
 
 Overfull \hbox (8.5191pt too wide) detected at line 266
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 267
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 268
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 269
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 270
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 271
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 272
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 273
  
  []
 
@@ -2398,33 +2333,98 @@ Overfull \hbox (8.5191pt too wide) detected at line 286
  []
 
 
+Overfull \hbox (8.5191pt too wide) detected at line 287
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 288
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 289
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 290
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 291
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 292
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 293
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 294
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 295
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 296
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 297
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 298
+ 
+ []
+
+
+Overfull \hbox (8.5191pt too wide) detected at line 299
+ 
+ []
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<build/plot_phase.pdf, id=281, 578.16pt x 433.62pt>
+<build/plot_phase.pdf, id=284, 578.16pt x 433.62pt>
 File: build/plot_phase.pdf Graphic file (type pdf)
  <use build/plot_phase.pdf>
-Package pdftex.def Info: build/plot_phase.pdf used on input line 302.
+Package pdftex.def Info: build/plot_phase.pdf used on input line 317.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <build/plot_phase_linear.pdf, id=284, 578.16pt x 433.62pt>
+ <build/plot_phase_linear.pdf, id=287, 578.16pt x 433.62pt>
 File: build/plot_phase_linear.pdf Graphic file (type pdf)
  <use build/plot_phase_linear.pdf>
-Package pdftex.def Info: build/plot_phase_linear.pdf used on input line 308.
+Package pdftex.def Info: build/plot_phase_linear.pdf used on input line 323.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
-) (./content/diskussion.tex
+) (./content/diskussion.tex [12<./build/plot_amplitude_semilog.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12<./build/plot_amplitude_semilog.pdf>] [13<./build/plot_amplitude_linear.pdf><./build/plot_phase.pdf>] [14] [15<./build/plot_phase_linear.pdf>]
-Overfull \hbox (13.98474pt too wide) in paragraph at lines 19--27
+[13<./build/plot_amplitude_linear.pdf>] [14] [15<./build/plot_phase.pdf><./build/plot_phase_linear.pdf>]
+Overfull \hbox (13.98474pt too wide) in paragraph at lines 19--28
 \EU2/lmr/m/n/10.95 Auch hier stimmt die ex-pe-ri-men-tel-le Tat-sa-che mit dem theo-re-ti-schen $[]$-Zusammenhang
  []
 
-) [16
+[16
 
-](load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
+])(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 22.
  (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2436,25 +2436,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 997A278632896EC0205EB06CD2D9B01C;14821.
+(rerunfilecheck)             Checksum: 88FCFE660A9EDBD7D5D208509C170CC8;14974.
 Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41210 strings out of 494693
+ 41215 strings out of 494693
  100000,1373583 words of node,token memory allocated
- 812 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 27 kern, 31 attribute, 70 glue_spec, 31 attribute_list, 3 action, 1 write nodes
-   avail lists: 1:48,2:8125,3:266,4:3459,5:421,6:2526,7:124,8:22,9:1771,10:985,11:520,12:230
- 43626 multiletter control sequences out of 65536+600000
- 154 fonts using 55382135 bytes
+ 853 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 30 kern, 34 attribute, 71 glue_spec, 34 attribute_list, 3 action, 1 write nodes
+   avail lists: 1:48,2:8534,3:276,4:3476,5:423,6:2729,7:128,8:22,9:1773,10:985,11:520,12:230
+ 43628 multiletter control sequences out of 65536+600000
+ 154 fonts using 55381859 bytes
  70i,22n,104p,974b,2060s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (17 pages, 457632 bytes).
+Output written on main.pdf (17 pages, 459410 bytes).
 
-PDF statistics: 678 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 82 named destinations out of 1000 (max. 131072)
+PDF statistics: 683 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 85 named destinations out of 1000 (max. 131072)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

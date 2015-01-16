@@ -25,7 +25,7 @@ Die in Tabelle \ref{tab:geraet} angegebenen Werte bestimmen maßgeblich die Eige
 Da alle Größen fehlerbehaftet sind, fließen diese nach der Gaußschen Fehlerfortpflanzung 
 \begin{equation}
 \Delta{u}=\sqrt{\biggl(\frac{\mathup{d}u}{\mathup{d}v}\Delta{v}\biggr)²+\biggl(\frac{\mathup{d}u}{\mathup{d}w}\Delta{w}\biggr)²}
-%\label{eq:gauss}
+\label{eq:gauss}
 \end{equation}
 in die folgenden Rechnungen ein.
 % Alle Grafiken und Ausgleichsrechnungen werden mit PROGRAMM ausgeführt.
@@ -199,11 +199,11 @@ Der Theoriewert ergibt sich aus der Formel $R_\mathup{ap,t}=2\sqrt\frac{L}{C}$ z
 Das Verhältnis der Spannungen $\frac{U_\mathup{C}}{U_0}$, deren Werte in Tabelle \ref{tab:f_U} gelistet sind, wird gegen die Frequenz $f$ halblogarithmisch aufgetragen. 
 Es ergibt sich eine Resonanzkurve, deren Maximum bei $f_\mathup{res}\approx26\,\si{\kilo\hertz}$ liegt.
  Bei dieser Frequenz ist die Kondensatorspannung um ein Vielfaches größer als die angelegte Spannung $U_0$. 
-Für die Resonanzüberhöhung  $q=\frac{U_\mathup{C,max}}{U_0}$, auch Güte genannt, ergibt sich aus der Messung der Wert $q=5.556$ bei einer maximalen Kondensatorspannung $U_\mathup{C,max}=160\,\si\volt$. 
+Für die Resonanzüberhöhung  $q=\frac{U_\mathup{C,max}}{U_0}$, auch Güte genannt, ergibt sich aus der Messung der Wert $q_1=5,556\approx5,56$ bei einer maximalen Kondensatorspannung $U_\mathup{C,max}=160\,\si\volt$. 
 %%BERICHTIGUNG von 5\pm1 zu 4.18\pm 0.01
-Theoretisch ergibt sich $q_\mathup{t}=\frac{1}{R_2}\sqrt{\frac{L}{C}}$ zu $q_\mathup{t}=4.18\pm0.01$.
+Theoretisch ergibt sich $q_{1,\mathup{t}}=\frac{1}{R_2}\sqrt{\frac{L}{C}}$ zu $q_{1,\mathup{t}}=4,18\pm0,01$.
 
-Für die Breite der Resonanzkurve werden die Grenzfrequenzen $f_\pm=\frac{U_\mathup{C,max}}{\sqrt{2}}$ berechnet. Es ergeben sich zwei Lösungen, deren Differenz $f_+-f_-$ anschließend gebildet wird. 
+Für die Breite der Resonanzkurve werden die Grenzfrequenzen $f_\pm=\frac{U_\mathup{C,max}}{\sqrt{2}}$ berechnet. Es ergeben sich zwei Lösungen, deren Differenz $\Delta{f}=f_+-f_-$ anschließend gebildet wird. 
 Damit sind $f_+=29\,\si{\kilo\hertz}$, $f_-=22\,\si{\kilo\hertz}$ und $\Delta{f}=7\,\si{\kilo\hertz}$. 
 Die theoretische Resonanzbreite ist $\Delta{f_\mathup{t}}=\frac{R_2}{L\cdot2\pi}=(6.5\pm0.04)\,\si{\kilo\hertz}$. 
 \begin{figure}[h]
@@ -216,6 +216,16 @@ Die theoretische Resonanzbreite ist $\Delta{f_\mathup{t}}=\frac{R_2}{L\cdot2\pi}
 		\includegraphics[width=0.8\textwidth]{build/plot_amplitude_linear.pdf}
 		\caption{Lineare Darstellung des Spannungsverhältnissen in Abhängigkeit der Frequenz zwischen den Grenzfrequenzen.\cite{matplotlib}}
 \end{figure}
+%%BERICHTIGUNG güteziffer experimentell und theoretisch bestimmt
+Damit kann die Güteziffer erneut bestimmt werden nach 
+\begin{equation}
+\frac{f_\mathup{res}}{\Delta{f}}.
+\label{eq:formel}
+\end{equation}
+ Es ergeben sich $q_2=3,71$ und $q_{2,\mathup{t}}=4,00\pm0,02$. Der Fehler $\Delta{q_{2,\mathup{t}}}=0,02$ wird nach Gleichung \eqref{eq:gauss}  bestimmt durch
+\begin{equation}
+\Delta{q_{2,\mathup{t}}}=\sqrt{\bigl(f_\mathup{res}\frac{2\pi}{R_2}\Delta{L}\bigr)²+\bigl(f_\mathup{res}\frac{2\pi L}{{R_2}²}\Delta{R_2}\bigr)²}.
+\end{equation}
 
 %%%%%%%%%%%%%%%%%%%neues Unterkapitel
 \subsection{Frequenzabhängigkeit der Phasendifferenz}
@@ -297,8 +307,10 @@ Die Phase $\varphi$ ist in Abbildung \ref{fig:phase} gegen die Frequenz aufgetra
 
 In der Abbildung \ref{fig:phase} ist zu erkennen, dass die Phasendifferenz erst langsam wächst, um mit zunehmender Frequenz schneller anzusteigen. 
 Je näher die Frequenz an der Resonanzfrequenz liegt, desto steiler ist die Kurve. 
-Es ist ersichtlich, dass um die Resonanzfrequenz  $f_\mathup{res}\approx25\,\si{\kilo\hertz}$ die Kurve als linear angenähert werden kann, wie in Abbildung \ref{fig:phase_lin} gezeigt. 
-Die Linearität erstreckt sich über $\frac{\pi}{2}\leq\varphi\leq\frac{3\pi}{2}$, was den Frequenzen $f_1=22\,\si{\kilo\hertz}$ und $f_2=30\,\si{\kilo\hertz}$ entspricht.
+Es ist ersichtlich, dass um die Resonanzfrequenz  $f_\mathup{res}\approx26\,\si{\kilo\hertz}$ die Kurve als linear angenähert werden kann, wie in Abbildung \ref{fig:phase_lin} gezeigt. 
+Die Linearität erstreckt sich über $\frac{\pi}{2}\leq\varphi\leq\frac{3\pi}{2}$, was den Frequenzen $f_1=22\,\si{\kilo\hertz}$ und $f_2=30\,\si{\kilo\hertz}$ entspricht. 
+%%%BERICHTIGUNG güteziffer nochmal
+Nach Formel \eqref{eq:formel} ergibt sich $q_3=3,25$.
 Der Verlauf scheint ein logistisches Wachstum zu beschreiben.
 \begin{figure}[h]
 		\centering
