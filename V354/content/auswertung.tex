@@ -24,7 +24,7 @@ Die in Tabelle \ref{tab:geraet} angegebenen Werte bestimmen maßgeblich die Eige
 \end{table}
 Da alle Größen fehlerbehaftet sind, fließen diese nach der Gaußschen Fehlerfortpflanzung 
 \begin{equation}
-\Delta{u}=\sqrt{\biggl(\frac{\mathup{d}u}{\mathup{d}v}\Delta{v}\biggr)²+\biggl(\frac{\mathup{d}u}{\mathup{d}w}\Delta{w}\biggr)²}
+\mathup{\Delta}{u}=\sqrt{\biggl(\frac{\mathup{d}u}{\mathup{d}v}\mathup{\Delta}{v}\biggr)²+\biggl(\frac{\mathup{d}u}{\mathup{d}w}\mathup{\Delta}{w}\biggr)²}
 \label{eq:gauss}
 \end{equation}
 in die folgenden Rechnungen ein.
@@ -76,7 +76,7 @@ Noch deutlicher wird es, wenn die Extremwerte halblogarithmisch aufgetragen werd
 \end{figure}
 Durch lineare Regression kann mit
 \begin{equation}
-\ln{U_\mathup{C}}(t)=\bigl(\underbrace{-\frac{R}{2L}}_m\bigr)\cdot t +b
+\ln{U_\mathup{C}}(t)=\Bigl(\underbrace{-\frac{R}{2L}}_m\Bigr)\cdot t +b
 \end{equation}
 eine Ausgleichsgerade 
 \begin{equation}
@@ -84,7 +84,7 @@ g(t)=(-3978,365\pm 36,562)\frac{1}{s} t + (4,298\pm0,010)
 \end{equation}
 durch die Messpunkte gelegt werden. 
 $m$ ist dabei die Steigung der Geraden und $b$ der y-Achsenabschnitt.
-Damit lässt sich $R_\mathup{eff}=\sfrac{\mathup{-2m}}{\mathup{L}}=(134\pm1)\,\si\ohm$, der für die in der Schaltung auftretende Dämpfungswiderstand, berechnen. 
+Damit lässt sich $R_\mathup{eff}=\sfrac{-2m}{L}=(134\pm1)\,\si\ohm$, der für die in der Schaltung auftretende Dämpfungswiderstand, berechnen. 
 
 Die Abklingdauer $T_\mathup{ex}$ wird aus dem negativen Kehrwert der Steigung $m$ gebildet, sodass $T_\mathup{ex}=(251\pm2)\,\si{\micro{\second}}$ ist.
 Der theoretische Wert nach Gleichung \eqref{eq:abkling} ergibt sich zu \\$T_\mathup{ex,t}=(499\pm3)\,\si{\micro{\second}}$.
@@ -203,9 +203,9 @@ Für die Resonanzüberhöhung  $q=\frac{U_\mathup{C,max}}{U_0}$, auch Güte gena
 %%BERICHTIGUNG von 5\pm1 zu 4.18\pm 0.01
 Theoretisch ergibt sich $q_{1,\mathup{t}}=\frac{1}{R_2}\sqrt{\frac{L}{C}}$ zu $q_{1,\mathup{t}}=4,18\pm0,01$.
 
-Für die Breite der Resonanzkurve werden die Grenzfrequenzen $f_\pm=\frac{U_\mathup{C,max}}{\sqrt{2}}$ berechnet. Es ergeben sich zwei Lösungen, deren Differenz $\Delta{f}=f_+-f_-$ anschließend gebildet wird. 
-Damit sind $f_+=29\,\si{\kilo\hertz}$, $f_-=22\,\si{\kilo\hertz}$ und $\Delta{f}=7\,\si{\kilo\hertz}$. 
-Die theoretische Resonanzbreite ist $\Delta{f_\mathup{t}}=\frac{R_2}{L\cdot2\pi}=(6,5\pm0,04)\,\si{\kilo\hertz}$. 
+Für die Breite der Resonanzkurve werden die Grenzfrequenzen $f_\pm=\frac{U_\mathup{C,max}}{\sqrt{2}}$ berechnet. Es ergeben sich zwei Lösungen, deren Differenz $\mathup{\Delta}{f}=f_+-f_-$ anschließend gebildet wird. 
+Damit sind $f_+=29\,\si{\kilo\hertz}$, $f_-=22\,\si{\kilo\hertz}$ und $\mathup{\Delta}{f}=7\,\si{\kilo\hertz}$. 
+Die theoretische Resonanzbreite ist $\mathup{\Delta}{f_\mathup{t}}=\frac{R_2}{L\cdot2\pi}=(6,5\pm0,04)\,\si{\kilo\hertz}$. 
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{build/plot_amplitude_semilog.pdf}
@@ -219,24 +219,24 @@ Die theoretische Resonanzbreite ist $\Delta{f_\mathup{t}}=\frac{R_2}{L\cdot2\pi}
 %%BERICHTIGUNG güteziffer experimentell und theoretisch bestimmt
 Damit kann die Güteziffer erneut bestimmt werden nach 
 \begin{equation}
-q=\frac{f_\mathup{res}}{\Delta{f}}.
+q=\frac{f_\mathup{res}}{\mathup{\Delta}{f}}.
 \label{eq:formel}
 \end{equation}
- Es ergeben sich $q_2=3,71$ und $q_{2,\mathup{t}}=4,00\pm0,02$. Der Fehler $\Delta{q_{2,\mathup{t}}}=0,02$ wird nach Gleichung \eqref{eq:gauss}  bestimmt durch
+ Es ergeben sich $q_2=3,71$ und $q_{2,\mathup{t}}=4,00\pm0,02$. Der Fehler $\mathup{\Delta}{q_{2,\mathup{t}}}=0,02$ wird nach Gleichung \eqref{eq:gauss}  bestimmt durch
 \begin{equation}
-\Delta{q_{2,\mathup{t}}}=\sqrt{\biggl(f_\mathup{res}\frac{2\pi}{R_2}\Delta{L}\biggr)²+\biggl(f_\mathup{res}\frac{2\pi L}{{R_2}²}\Delta{R_2}\biggr)²}.
+\mathup{\Delta}{q_{2,\mathup{t}}}=\sqrt{\biggl(f_\mathup{res}\frac{2\pi}{R_2}\mathup{\Delta}{L}\biggr)²+\biggl(f_\mathup{res}\frac{2\pi L}{{R_2}²}\mathup{\Delta}{R_2}\biggr)²}.
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%neues Unterkapitel
 \subsection{Frequenzabhängigkeit der Phasendifferenz}
-In Tabelle \ref{tab:f_t} ist die frequenzabhängige Zeitdifferenz $\Delta{t}$ zwischen den Nulldurchgängen der Sinusspannung des Frequenzgenerators $U(t)$ und der Kondensatorspannung $U_\mathup{C}(\omega, t)$ aufgetragen. 
+In Tabelle \ref{tab:f_t} ist die frequenzabhängige Zeitdifferenz $\mathup{\Delta}{t}$ zwischen den Nulldurchgängen der Sinusspannung des Frequenzgenerators $U(t)$ und der Kondensatorspannung $U_\mathup{C}(\omega, t)$ aufgetragen. 
 \begin{table}	
 \centering
 \setlength{\tabcolsep}{2mm}
 \begin{tabular}{cc}
 	\begin{tabular}{S[table-format=2.1] S[table-format=3.0] S[table-format=2.1] }
 	\toprule
-	{$f\:/{\si{\kilo\hertz}}$} & {$\Delta{t}\:/{\si{\micro\second}}$} \\
+	{$f\:/{\si{\kilo\hertz}}$} & {$\mathup{\Delta}{t}\:/{\si{\micro\second}}$} \\
 	\midrule
 10.0 &  2.0\\
 11.0 &  2.0\\
@@ -269,7 +269,7 @@ In Tabelle \ref{tab:f_t} ist die frequenzabhängige Zeitdifferenz $\Delta{t}$ zw
 &	
 	\begin{tabular}{S[table-format=2.1] S[table-format=3.0] S[table-format=2.1] }
 	\toprule
-	{$f\:/{\si{\kilo\hertz}}$} & {$\Delta{t}\:/{\si{\micro\second}}$} \\
+	{$f\:/{\si{\kilo\hertz}}$} & {$\mathup{\Delta}{t}\:/{\si{\micro\second}}$} \\
 	\midrule
 28.0 &  11.6\\
 28.5 &  11.8\\
@@ -303,7 +303,7 @@ In Tabelle \ref{tab:f_t} ist die frequenzabhängige Zeitdifferenz $\Delta{t}$ zw
 \caption{Messdaten der Phasendifferenz zu verschiedenen Frequenzen.}
 	\label{tab:f_t}
 \end{table}
-Die Phase $\varphi$ ist in Abbildung \ref{fig:phase} gegen die Frequenz aufgetragen. Phase und Zeitdifferenz sind über $\varphi(f)=2\pi\Delta{t}f$ verknüpft. Für große Frequenzen nähert sich die Phase dem stationären Wert $\pi$ an. 
+Die Phase $\varphi$ ist in Abbildung \ref{fig:phase} gegen die Frequenz aufgetragen. Phase und Zeitdifferenz sind über $\varphi(f)=2\pi\mathup{\Delta}{t}f$ verknüpft. Für große Frequenzen nähert sich die Phase dem stationären Wert $\pi$ an. 
 
 In der Abbildung \ref{fig:phase} ist zu erkennen, dass die Phasendifferenz erst langsam wächst, um mit zunehmender Frequenz schneller anzusteigen. 
 Je näher die Frequenz an der Resonanzfrequenz liegt, desto steiler ist die Kurve. 
