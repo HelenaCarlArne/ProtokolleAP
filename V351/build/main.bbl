@@ -39,73 +39,24 @@
       \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V351.pdf
       \endverb
     \endentry
-    \entry{scipy}{misc}{}
-      \true{morelabelname}
-      \name{labelname}{3}{}{%
-        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \true{moreauthor}
-      \name{author}{3}{}{%
-        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{6161d5ffac903d9c99af53f45c09a00f}
-      \strng{fullhash}{0fc4e01109f422119afc29f3251df541}
-      \field{sortinit}{J}
-      \field{sortinithash}{f75b22df8c340a961dce37019e29107f}
-      \field{labeltitle}{{SciPy}: Open source scientific tools for {Python}}
-      \field{addendum}{Version 0.14.0}
-      \field{title}{{SciPy}: Open source scientific tools for {Python}}
-      \field{year}{2001}
-      \verb{url}
-      \verb http://www.scipy.org/
-      \endverb
-    \endentry
-    \entry{uncertainties}{misc}{}
+    \entry{FFT}{manual}{}
       \name{labelname}{1}{}{%
-        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+        {{hash=0081df7d47e006cef30c102b89854dd5}{Flensburg}{F\bibinitperiod}{FH}{F\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+        {{hash=0081df7d47e006cef30c102b89854dd5}{Flensburg}{F\bibinitperiod}{FH}{F\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{fd5e607cc043da9b40442508c133a26c}
-      \strng{fullhash}{fd5e607cc043da9b40442508c133a26c}
-      \field{sortinit}{L}
-      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
-      \field{labeltitle}{Uncertainties: a Python package for calculations with uncertainties}
-      \field{addendum}{Version 2.4.5}
-      \field{title}{Uncertainties: a Python package for calculations with uncertainties}
+      \strng{namehash}{0081df7d47e006cef30c102b89854dd5}
+      \strng{fullhash}{0081df7d47e006cef30c102b89854dd5}
+      \field{sortinit}{F}
+      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
+      \field{labeltitle}{Schnelle Fourier­trans­formation (FFT)}
+      \field{title}{Schnelle Fourier­trans­formation (FFT)}
+      \field{urlday}{14}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
       \verb{url}
-      \verb http://pythonhosted.org/uncertainties/
-      \endverb
-    \endentry
-    \entry{numpy}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{00f2976ade6b1d16d78161a1f190716c}
-      \strng{fullhash}{00f2976ade6b1d16d78161a1f190716c}
-      \field{sortinit}{O}
-      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
-      \field{labeltitle}{Python for Scientific Computing}
-      \field{addendum}{Version 1.8.1}
-      \field{journaltitle}{Computing in Science and Engineering}
-      \field{number}{3}
-      \field{title}{Python for Scientific Computing}
-      \field{volume}{9}
-      \field{year}{2007}
-      \field{pages}{10\bibrangedash 20}
-      \verb{url}
-      \verb http://link.aip.org/link/?CSX/9/10/1
+      \verb http://www.iti.fh-flensburg.de/lang/algorithmen/fft/fft.htm
       \endverb
     \endentry
     \entry{gimp}{misc}{}
@@ -127,7 +78,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{FFT}
 \endrefsection
 \endinput
 
