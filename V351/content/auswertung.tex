@@ -3,22 +3,31 @@
 \subsection{\textsc{Fourier}-Transformation}
 \label{sec:FT}
 Die Tabellen \ref{tab:FA_RE}, \ref{tab:FA_DE} und \ref{tab:FA_SZ} enthalten die gemessenen Amplituden ${U_n}$ der $n$-ten Oberschwingung. 
-Nach Gleichung \eqref{eq:koeff2} wurden in der Versuchsvorbereitung die Koeffizienten $a_n$, $b_n$ der verschiedenen Spannungsformen berechnet. 
+Nach Gleichung \eqref{eq:koeff1} und \eqref{eq:koeff2} wurden in der Versuchsvorbereitung die Koeffizienten $a_n$, $b_n$ der verschiedenen Spannungsformen berechnet. 
 Es gilt
 \begin{align}
 	\centering 
-	\text{Rechteck}:\quad &a_n=0 & b_n&=\frac{4 U_0}{\pi n},
+	\text{Rechteck}:\quad &a_n=0 & b_n&=
+\begin{cases}
+0, & n \:\text{gerade} \\
+\frac{4 U_0}{\pi n}, & n\: \text{ungerade}
+\end{cases}
 	\label{koeff1}
 	\\
 	\text{Sägezahn}:\quad &a_n=0 & b_n&={(-1)}^{n+1}\frac{2U_0}{\pi n},
 	\label{koeff2}\\
-	\text{Dreieck}: \quad &a_n=\frac{8U_0}{n²\pi²} & b_n&=0.
+	\text{Dreieck}: \quad &a_n=
+\begin{cases}
+0, & n \:\text{gerade} \\
+\frac{8U_0}{n²\pi²}, & n \:\text{ungerade}
+\end{cases}
+& b_n&=0.
 	\label{koeff3}
 \end{align}
-mit Rechteck- und Sägezahnspannung als gerade Funktionen; die Dreieckspannung ist ungerade.
+mit Rechteck- und Dreieckspannung als gerade Funktionen; die Rechteckspannung ist ungerade.
 Nach diesen Formeln wird die theoretisch erwartete Amplitude $\frac{U_1}{n}$ berechnet, in dem die erste gemessene Amplitude als gegeben vorausgesetzt wird und anschließend durch $n$ bzw. $n²$ geteilt wird, um die restlichen Theoriewerte zu erhalten. Die Abweichung zwischen Messung und Theorie ist ebenfalls angegeben.
 
-\begin{table}[ht]
+\begin{table}
 	\centering
 	\begin{tabular}{S[table-format=2.0] S[table-format=3.0] S[table-format=3.0] S[table-format=2.2]}
 	\toprule
@@ -41,8 +50,8 @@ Nach diesen Formeln wird die theoretisch erwartete Amplitude $\frac{U_1}{n}$ ber
 \caption{\textsc{Fourier}-Analyse der Rechteckspannung. \cite{gimp}}
 	\label{fig:FT_RE}
 \end{figure}
-
-\begin{table}[ht]
+\newpage
+\begin{table}
 	\centering
 	\sisetup{table-format=2.3}
 	\begin{tabular}{S[table-format=2.0] S[table-format=3.0] S[table-format=3.1] S[table-format=1.2] }
@@ -67,7 +76,7 @@ Nach diesen Formeln wird die theoretisch erwartete Amplitude $\frac{U_1}{n}$ ber
 	\label{fig:FT_DE}
 \end{figure}
 
-\begin{table}[h!]
+\begin{table}
 	\centering
 	\sisetup{table-format=2.3}
 	\begin{tabular}{S[table-format=2.0] S[table-format=3.0] S[table-format=3.1] S[table-format=1.0] }
@@ -103,10 +112,10 @@ Wird die Theorie mit den Abbildungen verglichen, fällt auf, dass dies -- beding
 Es treten Spannungen $U\geqslant0\,\si\volt$ auf.
 Diese Abweichungen lassen sich für größere $n$ nur schwierig von den Amplituden der ungeraden Koeffizienten unterscheiden.\\
 Die Abbildung \ref{fig:FT_SZ} stimmt gut mit der Theorie überein, weist jedoch einen messtechnisch bedingten Fehler auf. Der Abstand zwischen dem 12. und 13. Peak weicht von der Größe der anderen Abstände ab. Bei Rechteck- und Dreieckspannung tritt der gleiche Fehler auf, was aber aufgrund der Peak-Höhe nicht direkt zu erkennen ist.
-
+\newpage
 \subsection{\textsc{Fourier}-Synthese}
 % Bei der \textsc{Fourier}-Synthese sollen die in Kapitel \ref{sec:FT} untersuchen Schwingungen aus einzelnen Koeffizienten hergestellt werden. Dazu werden die Amplituden der verschiedenen Oberschwingungen am Oberwellengenerator eingestellt und die Phase so geändert, dass die auf dem Oszilloskopbildschirm dargestellte Summenspannung dem gewählten Spannungsverlauf entspricht. 
-\begin{table}[H]
+\begin{table}
 	\centering
 	\begin{tabular}{cccc}	
 	\toprule
@@ -130,21 +139,21 @@ Die Abbildung \ref{fig:FT_SZ} stimmt gut mit der Theorie überein, weist jedoch 
 In Tabelle \ref{tab:FS} sind die Amplituden der unterschiedlichen Oberwellen für Rechteck-, Dreieck- und Sägezahnspannung aufgetragen.\\
 In Abbildung \ref{fig:1-9_DE} ist die synthetisierte Dreieckspannung abgebildet. 
 Die Flanken sind nicht gerade, sondern weisen Schwingungsbäuche auf. Die Spannungsspitzen sind abgerundet. Trotzdem ist die maßgebliche, dreieckige Form gut erkennbar.
-\begin{figure}[ht]
+\begin{figure}
 	\centering
 		\includegraphics[width=0.5\textwidth]{Bilder/1-9_DE.pdf}		
 \caption{\textsc{Fourier}-Synthese der Dreiecksspannung. \cite{gimp}}
 	\label{fig:1-9_DE}
 \end{figure}
 Die Rechteckspannung ist ebenfalls gut zu erkennen, weist aber -- hauptsächlich an den Maximalwerten der Spannung vorzufindende -- Abweichungen auf. 
-\begin{figure}[ht]
+\begin{figure}
 	\centering
 		\includegraphics[width=0.5\textwidth]{Bilder/1-9_RE.pdf}		
 \caption{\textsc{Fourier}-Synthese der Rechteckspannung. \cite{gimp}}
 	\label{fig:1-9_RE}
 \end{figure}
 Abbildung \ref{fig:1-9_SZ} zeigt die Sägezahnspannung. Diese unterscheidet sich vom idealen Aussehen durch nicht ganz senkrecht abfallende Flanken und Schwingungen an steigenden Flanken.
-\begin{figure}[ht]
+\begin{figure}
 	\centering
 		\includegraphics[width=0.5\textwidth]{Bilder/1-9_SZ.pdf}		
 \caption{\textsc{Fourier}-Synthese der Sägezahnspannung. \cite{gimp}}

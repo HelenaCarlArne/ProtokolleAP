@@ -1973,9 +1973,18 @@
     <bcf:citekey order="2">V351</bcf:citekey>
     <bcf:citekey order="3">FFT</bcf:citekey>
     <bcf:citekey order="4">gimp</bcf:citekey>
-    <bcf:citekey order="5">numpy</bcf:citekey>
-    <bcf:citekey order="6">scipy</bcf:citekey>
-    <bcf:citekey order="7">uncertainties</bcf:citekey>
+    <bcf:citekey order="5">gimp</bcf:citekey>
+    <bcf:citekey order="6">gimp</bcf:citekey>
+    <bcf:citekey order="7">gimp</bcf:citekey>
+    <bcf:citekey order="8">gimp</bcf:citekey>
+    <bcf:citekey order="9">gimp</bcf:citekey>
+    <bcf:citekey order="10">gimp</bcf:citekey>
+    <bcf:citekey order="11">gimp</bcf:citekey>
+    <bcf:citekey order="12">gimp</bcf:citekey>
+    <bcf:citekey order="13">gimp</bcf:citekey>
+    <bcf:citekey order="14">gimp</bcf:citekey>
+    <bcf:citekey order="15">gimp</bcf:citekey>
+    <bcf:citekey order="16">gimp</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>
