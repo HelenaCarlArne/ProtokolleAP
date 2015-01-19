@@ -13,13 +13,13 @@ Für eine periodische Funktionen, beispielsweise eine T-periodische Funktion $F(
 Bis Abschnitt \ref{sec:theorie3} werden nur solche periodischen Funktionen betrachtet.
 Nach dem \textsc{Fourier}'schen Theorem lassen sich periodische Funktionen als Linearkombination aus den Elementarschwingungen
 \begin{alignat}{3}
-	a_\text{n}\text{sin}\Bigl(\frac{2π}{\mathup{T}}t\Bigr) &\qquad\text{und} &&\qquad b_\text{n}\text{cos}\Bigl(\frac{2π}{\mathup{T}}t\Bigr)
+	a_n\text{sin}\Bigl(\frac{2π}{\mathup{T}}t\Bigr) &\qquad\text{und} &&\qquad b_n\text{cos}\Bigl(\frac{2π}{\mathup{T}}t\Bigr)
 \end{alignat}
 zusammenfügen.
 Das bedeutet, dass die Reihe
 \begin{equation}
-	\frac{a_0}{2}+\sum_{n=1}^\infty \Bigl(a_\text{n}\text{sin}(\underbrace{n\frac{2π}{\mathup{T}}}_{\omega}t) 
-	+ b_\text{n}\text{cos}(\underbrace{n\frac{2π}{\mathup{T}}}_{\omega}t) \Bigr)
+	\frac{a_0}{2}+\sum_{n=1}^\infty \Bigl(a_n\text{sin}(\underbrace{n\frac{2π}{\mathup{T}}}_{\omega}t) 
+	+ b_n\text{cos}(\underbrace{n\frac{2π}{\mathup{T}}}_{\omega}t) \Bigr)
 	\label{eq:reihe}
 \end{equation}
 mit $\omega=2\mathup{\pi}\cdot f$
@@ -29,18 +29,18 @@ Gleichmäßige Konvergenz der \textsc{Fourier}-Reihe ist gegeben, wenn die Funkt
 Für die Koeffizienten in \ref{eq:reihe} gilt
 \begin{subequations}
 \begin{equation}
-	a_\text{n} = \frac{2}{\text{T}}\int_0^\text{T} F(t)\text{cos}(2n\mathup{\pi}t)dt
+	a_n = \frac{2}{\text{T}}\int_0^\text{T} F(t)\text{cos}(2n\mathup{\pi}t)dt
 	\label{eq:koeff1}
 \end{equation}
 \begin{equation}
-	b_\text{n} = \frac{2}{\text{T}}\int_0^\text{T} F(t)\text{sin}(2n\mathup{\pi}t)dt.
+	b_n = \frac{2}{\text{T}}\int_0^\text{T} F(t)\text{sin}(2n\mathup{\pi}t)dt.
 	\label{eq:koeff2}
 \end{equation}
 \label{eq:koeff}
 \end{subequations}
 Die Schwingung wird für $n=0$ Grundschwingung und die Schwingungen für $n>1$ Oberschwingungen bezeichnet.
-Für gerade Funktionen $F$, also mit $F(x)=F(-x)$, sind alle $b_\text{n}=0$; 
-analog sind für ungerade Funktionen $F$, also mit $-F(x)=F(-x)$, alle $a_\text{n}=0$.
+Für gerade Funktionen $F$, also mit $F(x)=F(-x)$, sind alle $b_n=0$; 
+analog sind für ungerade Funktionen $F$, also mit $-F(x)=F(-x)$, alle $a_n=0$.
 
 Durch diese Formeln ist allgemein das Beschreiben einer T-periodischen Funktion als konvergente \textsc{Fourier}-Reihe möglich.
 Dies wird als \textit{harmonische Analyse} oder \textit{\textsc{Fourier}-Analyse} bezeichnet.
@@ -64,7 +64,7 @@ Bei konvergenten \textsc{Fourier}-Reihen \eqref{eq:reihe} geht die Höhe der dis
 
 \subsection{Nicht-periodische Funktionen, \textsc{Fourier}-Transformation}
 \label{sec:theorie3}
-Nicht-periodische Funktionen $F$ zeigen bei Spektralanalyse \ref{fig:analyse} ein kontinuierliches Spektrum, weiter gilt nicht $a_\text{n},b_\text{n}\xrightarrow{f\to\infty}0$ im Allgemeinen.
+Nicht-periodische Funktionen $F$ zeigen bei Spektralanalyse \ref{fig:analyse} ein kontinuierliches Spektrum, weiter gilt nicht $a_n,b_n\xrightarrow{f\to\infty}0$ im Allgemeinen.
 Für diese Funktionen ohne konvergenten \textsc{Fourier}-Reihen wird eine \textsc{Fourier}-Transformation angewandt.
 
 Mit der \textsc{Fourier}-Transformierten $\tilde{F}(\omega)$ und der Funktion $F(t)$ ist die \textsc{Fourier}-Transformation als uneigentliches Integral beschreibbar.
