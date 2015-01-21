@@ -1,0 +1,12 @@
+# Schubmodul G 	
+# Bitte berichtigen, Anzahl der Werte sei 10!	
+# T /s
+18.585 		
+18.598
+18.593
+18.588
+18.585
+18.588
+18.589
+18.592
+18.594
