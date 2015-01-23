@@ -187,7 +187,7 @@ plt.yticks([-0.001,0,0.001,0.002,0.003,0.004,0.005],[-1,0,1,2,3,4,5])
 plt.errorbar(noms(1/(Zeit_dipolmoment))**2,B,yerr=stds(1/(Zeit_dipolmoment))**2,fmt="rx",label=r"Messdaten")
 plt.legend(loc="best")
 # plt.savefig("../Bilder/Magnetfeld.pdf")
-plt.show()
+# plt.show()
 a,aerr,b,berr=linregress(noms(1/(Zeit_dipolmoment))**2,B)
 a_uni = ufloat(a,aerr)
 
@@ -239,6 +239,14 @@ L=	{}
 Durchmesser des Seils:
 r_D={}
 
+Gesamttraegheit:
+Theta= {}
+
+Masse der Kugel:
+m_K={}
+
+Radius der Kugel:
+r_K={}
 ############################################################################################################
 Zeiten
 
@@ -285,4 +293,4 @@ Die Poissonsche Querkontraktionszahl betraegt:
 mu=	{}
 
 
-""".format(length,2*r_D,zeit_schubmodul,zeit_erdmagnet,Zeit_dipolmoment,G,D,a,aerr,b,berr,m,B,G,E,Q,mu))
+""".format(length,2*r_D,(Theta_K+Theta_KH),m_K,r_K,zeit_schubmodul,zeit_erdmagnet,Zeit_dipolmoment,G,D,a,aerr,b,berr,m,B,G,E,Q,mu))
