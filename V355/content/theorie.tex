@@ -85,9 +85,10 @@ und
 	\label{eq:I_2_ur}
 \end{equation}
 Im Folgenden werden zwei Spezialfälle betrachtet. 
-Schwingen die Systeme mit gleicher Amplitude $I_{1,0}=I_{2,0}$ und gleicher Phase, so verschwindet die Differenzschwingung \eqref{eq:lsg_I_1-I_2}, sodass die Oszillatoren jeweils mit $f_+$ eines einzelnen Oszillators und in Phase schwingen.
- Am Kondensator $C_\mathup{K}$ liegt zu keinem Zeitpunkt eine Spannung an, da die Ströme sich gegenseitig kompensieren.
-Schwingen die Systeme mit entgegengesetzter Amplitude  $I_{1,0}=-I_{2,0}$ und Phase, so verschwindet die Summenschwingung \eqref{eq:lsg_I_1+I_2}. Die Oszillatoren schwingen gegenphasig mit der Frequenz $f_-$.
+Schwingen die Systeme mit gleicher Amplitude $I_{1,0}=I_{2,0}$ und in Phase, $\mathup{\Delta} \phi=0$, so verschwindet die Differenzschwingung \eqref{eq:lsg_I_1-I_2}, sodass die Oszillatoren jeweils mit $f_+$ eines einzelnen Oszillators und in Phase schwingen.
+Am Kondensator $C_\mathup{K}$ liegt zu keinem Zeitpunkt eine Spannung an, da die Ströme sich gegenseitig kompensieren.
+Schwingen die Systeme mit entgegengesetzter Amplitude  $I_{1,0}=-I_{2,0}$ und in entgegengesetzter Phase $\mathup{\Delta} \phi=\pi$, so verschwindet die Summenschwingung \eqref{eq:lsg_I_1+I_2}. 
+Die Oszillatoren schwingen gegenphasig mit der Frequenz $f_-$.
 Diese beiden Schwingungsmoden werden als Fundamentalschwingungen des Systems bezeichnet.
 
 \begin{figure}[h]
@@ -100,18 +101,18 @@ Diese beiden Schwingungsmoden werden als Fundamentalschwingungen des Systems bez
 Wird zur Zeit $t=0$ nur ein Oszillator ausgelenkt, d.h. $I_{1,0}\neq0$,\,$I_{2,0}=0$, vereinfachen sich \eqref{eq:I_1_ur} und \eqref{eq:I_2_ur}. 
 Durch Ausnutzen von Additionstheoremen ergeben sich
 \begin{equation}
-	I_1(t)=I_{10}\cos(\frac{1}{2}(\omega⁺+\omega⁻)t)\cos(\frac{1}{2}(\omega⁺-\omega⁻)t)
+	I_1(t)=I_{1,0}\cos(\frac{1}{2}(\omega⁺+\omega⁻)t)\cos(\frac{1}{2}(\omega⁺-\omega⁻)t)
 \end{equation}
 und
 \begin{equation}
-	I_2(t)=I_{10}\sin(\frac{1}{2}(\omega⁺+\omega⁻)t)\sin(\frac{1}{2}(\omega⁺-\omega⁻)t).
+	I_2(t)=I_{1,0}\sin(\frac{1}{2}(\omega⁺+\omega⁻)t)\sin(\frac{1}{2}(\omega⁺-\omega⁻)t).
 \end{equation}
 Gemäß der Annahme $f_+\approx f_-$ und $C_\mathup{K}\gg C$ ist $\frac{1}{2}(\omega⁺-\omega⁻)\approx\omega⁺$ und $\omega⁻-\omega⁺\ll\omega⁺$.
 Die Oszillatoren schwingen mit der Frequenz $\frac{1}{2}(f_+ + f_-)$, welche ungefähr der Frequenz eines Einzeloszillators entspricht. 
 Die Amplituden verändern sich periodisch mit der Schwebungsfrequenz $f_- - f_+$. 
 Die Verhältnisse haben sich nach der Zeit 
 \begin{equation}
-\frac{T}{2}({\omega⁻-\omega⁺})=\frac{\pi}{2}
+T=\frac{1}{2}({\omega⁻-\omega⁺})=\frac{\pi}{2}
 \end{equation}
  umgekehrt, die Energie pendelt periodisch mit der Schwebungsfrequenz zwischen beiden Systemen.
 
@@ -130,4 +131,4 @@ Erzwungene Schwingungen werden durch eine von außen angelegte Sinusspannung $U(
 %Betrachtet man die Frequenz $\omega⁺$, welche unabhängig von der Koppelkapazität $C_\mathup{K}$ ist, können beide Schwingkreise als ein Kreis mit $L_\mathup{Ges}=2L$ und $C_\mathup{Ges}=\sfrac{1}{2}C$ angesehen werden. 
 %Durch die Koppelleitung fließt kein Strom. 
 %Bei der Frequenz $\omega⁻$ ist $C_\mathup{Ges}=\sfrac{C C_\mathup{K}}{C_\mathup{K}+2C}$ - durch die Koppelleitung fließt nun der maximale Strom.
-Im Resonanzfall unterscheidet sich die $I–\phi$-Resonanzkurve zweier gekoppelter Schwingkreise von der eines einzelnen Oszillators durch die Anzahl der auftretenden Maxima. An den Stellen der in Kapitel \ref{sec:Theorie1} hergeleiteten Fundamentalfrequenzen $f_+$ und $f_-$ befinden sich zwei Maxima.
+Im Resonanzfall unterscheidet sich die $I–f$-Resonanzkurve zweier gekoppelter Schwingkreise von der eines einzelnen Oszillators durch die Anzahl der auftretenden Maxima. An den Stellen der in Kapitel \ref{sec:Theorie1} hergeleiteten Fundamentalfrequenzen $f_+$ und $f_-$ befinden sich zwei Maxima.
