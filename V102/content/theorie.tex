@@ -1,7 +1,7 @@
 \section{Zielsetzung}
 Elastische Konstanten charakterisieren das Verhalten eines Stoffes bei Krafteinwirkung.
  Sie funktionieren als Proportionalitätsfaktoren zwischen der pro Flächeneinheit angreifenden Kraft und der daraus resultierenden relativen Deformation -- einer Gestalts- oder Volumenänderung. 
-Ziel ist es, die elastischen Konstanten einer Metalllegierung zu bestimmen.
+Ziel ist es, die elastischen Konstanten einer Metalllegierung zu bestimmen. Außerdem soll das magnetische Moment eines Permanentmagneten, sowie das Erdmagnetfeld gemessen werden.
 \section{Theorie}
 \label{sec:Theorie}
 Wirken Kräfte auf einen Körper ein, kann dies auf zwei Arten geschehen. Die Kraft greift an jedem Volumenelement an und ändert dadurch den Bewegungszustand des Körpers; versetzt ihn beispielsweise in eine Translations- oder Rotationsbewegung. 
@@ -14,17 +14,17 @@ In Festkörpern sind die Atome in einem Kristallgitter regelmäßg angeordnet un
 Durch Krafteinwirkung muss ein neuer Zustand hergestellt werden. 
 Dies wird realisiert indem der Abstand $r_0$ der Teilchen zueinander variiert wird und sich ein neuer Gleichgewichtszustand mit dem Abstand $r'_0$ einstellt.
 Das Hooke'sche Gesetz
-\begin{equation}
-\sigma=E\frac{\Delta{L}}{L}
+\begin{align}
+\sigma=E\frac{\Delta{L}}{L}  & P=Q\frac{\Delta{V}}{V}
 \label{eq:hooke}
-\end{equation}
-beschreibt für hinreichend kleine Kräfte an der Oberfläche einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relative Deformation.
+\end{align}
+beschreibt für hinreichend kleine Kräfte an der Oberfläche bzw. an jedem Volumenelement einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relative Deformation.
 Liegt eine elastische Deformation vor, so kehrt der Körper in seine Ausgangslage zurück, sobald die Krafteinwirkung vorbei ist - der Vorgang ist reversibel. 
 
 
 
 
-Betrachtet man unsymmetrische Kristalle mit richtungsabhängigen elektrostatischen Kräften müssen sehr viele Komponenten gemessen bzw. errechnet werden. 
+Werden unsymmetrische Kristalle mit richtungsabhängigen elektrostatischen Kräften betrachtet müssen sehr viele Komponenten gemessen bzw. errechnet werden. 
 Isotrope Körper, beispielsweise polykristalline Kristalle, zeichnen sich stattdessen durch richtungsunabhängige elastische Konstanten aus und können theoretisch durch zwei Konstanten beschrieben werden. 
 Es erweist sich jedoch als zweckmäßig insgesamt vier Konstanten einzuführen.
 Der Schub- bzw. Torsionsmodul $G$ beschreibt die Gestalts-, der Kompressionsmodul $Q$ die Volumenelastizität.
@@ -76,11 +76,11 @@ Befindet sich der Draht in einem homogenen Magnetfeld
 B=\frac{8\mu_0}{\sqrt{125}} \frac{I}{R_\mathup{HS}}n
 \label{eq:B_HS}
 \end{equation}
- -- erzeugt durch ein Helmholtzspulenpaar -- führt er Schwingungen mit 
+ -- erzeugt durch ein Helmholtzspulenpaar mit Windungszahl $N$, Radius $R_\mathup{HS}$, durchflossen vom Strom $I$ -- führt er Schwingungen mit 
 \begin{equation}
 T_m=2\pi\sqrt{\frac{\theta}{mB+D}}
 \end{equation}
-aus. Dabei hat das Erdmagentfeld keinen Einfluss auf die Schwingungsdauer $T_m$, da der Permanentmagnet parallel zum Draht ausgerichtet ist.
+aus. Die Periodendauer wird geringer, da ein zusätzliches Drehmoment wirkt.
 
-\subsection{Bestimmung des Erdmagnetfeldes $B_\mathup{E}$}
+%\subsection{Bestimmung des Erdmagnetfeldes $B_\mathup{E}$}
 
