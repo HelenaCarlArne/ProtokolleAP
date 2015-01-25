@@ -28,20 +28,28 @@ berechnet sich der Gesamtfehler $\mathup{\Delta}f(x_i)$ nach der \textsc{Gauß}s
 \label{sec:auswertung1}
 Das untersuchte Material ist Federstahl.
 Die Abmessungen des verwandten Drahtes sind in Tabelle \ref{tab:draht} aufgetragen, die Werte von Durchmesser und den Teillängen korrelieren nicht.
-\begin{minipage}[t]{0.5\textwidth}
+\begin{figure}
+\centering
+\begin{minipage}[t]{0.4\textwidth}
+\centering
 \input{Tabellen/Draht_Eigenschaften}
+
 \end{minipage}
-\begin{minipage}[t]{0.5\textwidth}
+\hspace{5pt}
+\begin{minipage}[t]{0.4\textwidth}
+\centering
 \input{Tabellen/Kugel_Eigenschaften}
+
 \end{minipage}
+\end{figure}
 Für die folgenden Rechnungen wird der Durchmesser $d=\SI{0.1916(11)}{\milli\meter}$ und die Gesamtlänge $l=\SI{0.6018(5)}{\meter}$ benutzt.
 \newpage
 Die Eigenschaften der Kugel sind in Tabelle \ref{tab:kugel} aufgetragen.
-Zur Berücksichtigung des Trägheitsmomentes der Kugelaufhängung $\Theta_\text{Aufhängung}$ wird das Kugelträgheitsmoment $\Theta_\text{Kugel}$ in den folgenden Rechnungen mit dem Gesamttägheitsmoment $\Theta$ des schwingenden Systems ersetzt.
+Zur Berücksichtigung des Trägheitsmomentes der Kugelaufhängung $\Theta_\text{Aufhängung}=\SI{22.5e-7}{\kilo\gram\meter\squared}$ \cite{V102} wird das Kugelträgheitsmoment $\Theta_\text{Kugel}$ in den folgenden Rechnungen mit dem Gesamttägheitsmoment $\Theta$ des schwingenden Systems ersetzt.
 Mit 
 \begin{alignat}{3}
 	\Theta	&=\Theta_\text{Kugel} &&+\Theta_\text{Aufhängung}\label{eq:gesamttraegheit}\\ 
-		&=\frac{2}{5} m_\text{K} r_\text{K}^2 &&+\SI{22.5e-7}{\kilo\gram\meter\squared}
+		&=\frac{2}{5} m_\text{K} r_\text{K}^2 &&+\Theta_\text{Aufhängung} %+\SI{22.5e-7}{\kilo\gram\meter\squared}
 \end{alignat}
 wird das Gesamtträgheitsmoment $\Theta=\SI{0.13422(6)e-3}{\kilo\gram\meter\squared}$ angenommen.
 % ####################################################################################################
@@ -49,7 +57,7 @@ wird das Gesamtträgheitsmoment $\Theta=\SI{0.13422(6)e-3}{\kilo\gram\meter\squa
 % ####################################################################################################
 % ####################################################################################################
 % ####################################################################################################
-\subsection{Bestimmung des Schubmodules \texorpdfstring{$G$}{G}}
+\subsection{Bestimmung des Schubmoduls \texorpdfstring{$G$}{G}}
 \input{Tabellen/Schubmodul_Zeit.tex}
 Die zur Berechnung des Schubmoduls $G$ benötigeten Schwingdauern $T_\text{G}$ sind in Tabelle \ref{tab:T_G} aufgetragen.
 Der Schubmodul $G$ wird mittels der Formel \eqref{eq:G} berechnet.
@@ -105,7 +113,7 @@ Es folgt für das magnetische Moment
 % ####################################################################################################
 % ####################################################################################################
 % ####################################################################################################
-\subsection{Bestimmung der \texorpdfstring{Erdmagnetfeldstärke $B_\text{Erde}$}{Magnetfeldstärke B der Erde}}
+\subsection{Bestimmung der horizontalen \texorpdfstring{Erdmagnetfeldstärke $B_\text{Erde}$}{Magnetfeldstärke B der Erde}}
 \label{sec:auswertung3}
 \input{Tabellen/Erdmagnet_Zeit.tex}
 Die gemessenen Zeiten $T_{\text{E},i}$ sind in Tabelle \ref{tab:T_E} aufgetragen, der Mittelwert mit Standardabweichung ist
@@ -114,7 +122,7 @@ Mithilfe der Gleichung \eqref{eq:B_lin} wird die Stärke des Erdmagnetfeldes $B_
 Aus Abschnitt \ref{sec:Theorie}, Gleichung \eqref{eq:Richtgrosse} und Abschnitt \ref{sec:auswertung2}, Gleichung \eqref{eq:Magnetmoment_lin} sind die in Formel \eqref{eq:B_lin} benötigten Größen $m$ und $D$ bekannt.\\
 Die Winkelrichtgröße $D$ beträgt
 $D = \SI{1.5333(7)e-05}{\newton\meter}$.
-Damit ist die Stärke des Erdmagnetfeldes
+Damit ist die Stärke des horizontalen Anteiles des Erdmagnetfeldes
 \begin{equation}
 	B_\text{Erde}=\SI{6.27(18)e-06}{\tesla}.
 \end{equation}
@@ -151,7 +159,7 @@ Damit ist die Stärke des Erdmagnetfeldes
 % ####################################################################################################
 \subsection{Bestimmung der \texorpdfstring{\textsc{Poisson}schen Querkontraktionszahl $\mu$}{Poissonschen Querkontraktionszahl} und des Kompressionsmoduls \texorpdfstring{$Q$}{Q}}
 \label{sec:auswertung4}
-Der Literaturwert des Elastizitätsmoduls $E$ für Federstahl ist
+Der Literaturwert des Elastizitätsmoduls $E$ für Federstahl \cite{federstahl} ist
 \begin{equation}
 	E = \SI{190,3}{\giga\pascal},
 \end{equation}

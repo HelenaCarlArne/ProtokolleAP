@@ -15,7 +15,7 @@ Durch Krafteinwirkung muss ein neuer Zustand hergestellt werden.
 Dies wird realisiert indem der Abstand $r_0$ der Teilchen zueinander variiert wird und sich ein neuer Gleichgewichtszustand mit dem Abstand $r'_0$ einstellt.
 Das Hooke'sche Gesetz
 \begin{align}
-\sigma=E\frac{\Delta{L}}{L}  & P=Q\frac{\Delta{V}}{V}
+\sigma=E\frac{\mathup{\Delta}{L}}{L}  & P=Q\frac{\mathup{\Delta}{V}}{V}
 \label{eq:hooke}
 \end{align}
 beschreibt für hinreichend kleine Kräfte an der Oberfläche bzw. an jedem Volumenelement einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relative Deformation.
@@ -30,18 +30,18 @@ Es erweist sich jedoch als zweckmäßig insgesamt vier Konstanten einzuführen.
 Der Schub- bzw. Torsionsmodul $G$ beschreibt die Gestalts-, der Kompressionsmodul $Q$ die Volumenelastizität.
 DerElastizitätsmodul $E$ ist der Proportionalitätsfaktor aus Gleichung \eqref{eq:hooke}, $\mu$ die Poissonsche Querkontraktionszahl. 
 \begin{equation}
-\mu=-\frac{\Delta{B}}{B}\frac{L}{\Delta{L}}
+\mu=-\frac{\mathup{\Delta}{B}}{B}\frac{L}{\mathup{\Delta}{L}}
 \label{eq:mu}
 \end{equation}
 beschreibt die relative Längenänderung bei angreifender Normalspannung in Spannungsrichtung.
-Die genannten Module sind nicht unabhängig voneinander und stehen über
+Die genannten Moduln sind nicht unabhängig voneinander und stehen über
 \begin{alignat}{3}
 	 E=2G(\mu+1) &\quad\text{und} &&\quad E=3(1-2\mu)Q
 \label{eq:modulbeziehungen}
 \end{alignat}
 in Beziehung.
 
-\subsection{Bestimmung des Schubmoduls G}
+\subsection{Der Schubmodul \texorpdfstring{$G$}{G}}
 Erfährt ein Probekörper ausschließlich Tangentialspannungen verformt er sich so, dass eine Scherung um den Winkel $\alpha$ auftritt. Nache Hooke ist mit
 \begin{equation}
 \tau=G\alpha
@@ -61,6 +61,7 @@ folgt mit \eqref{eq:hooke_G} und $\tau=\frac{\mathup{d}K}{\mathup{d}F}$
 Aus dem Zusammenhang $\alpha=\frac{r\phi}{L}$, dem Flächeninhalt des Kreisrings $\mathup{d}F=2\pi r\mathup{d}r$ und anschließender Integration über den Radius der Probe eine Formel für das Gesamtdrehmoment
 \begin{equation}
 M=\frac{\pi R^4 G}{2L}\phi=D\phi.
+\label{eq:Richtgrosse}
 \end{equation}
 Wird an das freie Drahtende ein Körper mit Trägheitsmoment $\theta$ angehängt, kann der Draht ungedämpfte harmonische Schwingungen der Dauer $T=2\pi\sqrt{\frac{\theta}{D}}$ ausführen. Es wirken zwei entgegengesetzte Drehmomente aufeinander. Je nach Form des Körpers ist $M_\mathup{T}$ unterschiedlich, hier wird eine Kugel benutzt mit $\theta=\frac{2}{5}m_\mathup{k}{R_\mathup{k}}²$. Damit ergibt sich 
 \begin{equation}
@@ -69,7 +70,7 @@ G=\frac{16\pi m_\mathup{k} {R_\mathup{k}}^2 L}{5T²R⁴}.
 \end{equation}
 Der Vorteil der dynamischen Methode über die Messung der Schwingungsdauer ist die geringere Fehleranfälligkeit. Die Ergebnisse bei statischer Messung können durch eventuelle elastische Nachwirkungen verfälscht werden.
 
-\subsection{Bestimmung des magnetischen Moments $m$}
+\subsection{Das magnetische Moment \texorpdfstring{$m$}{m}}
 
 Befindet sich der Draht in einem homogenen Magnetfeld 
 \begin{equation}
