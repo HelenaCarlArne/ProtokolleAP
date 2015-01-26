@@ -19,6 +19,8 @@ berechnet sich der Gesamtfehler $\mathup{\Delta}f(x_i)$ nach der \textsc{Gauß}s
 	\mathup{\Delta}f(x_1,...,x_\text{N})=\sqrt{\sum_{\text{i}=1}^\text{N}\left(\frac{\partial f}{\partial x_\text{i}}\mathup{\Delta}x_\text{i}\right)^2}.
 	\label{eq:gauss_gen}
 \end{equation}
+Es werden im Folgenden alle errechneten Größen auf zwei Nachkommastellen nach \textit{DIN 1333} gerundet angegeben, 
+die Rechnung wird stets mit den exakten Werten durchgeführt.
 % ####################################################################################################
 % ####################################################################################################
 % ####################################################################################################
@@ -28,7 +30,9 @@ berechnet sich der Gesamtfehler $\mathup{\Delta}f(x_i)$ nach der \textsc{Gauß}s
 \label{sec:auswertung1}
 Das untersuchte Material ist Federstahl.
 Die Abmessungen des verwandten Drahtes sind in Tabelle \ref{tab:draht} aufgetragen, die Werte von Durchmesser und den Teillängen korrelieren nicht.
-\begin{figure}
+Der Mittelwert und Standardabweichung des Durchmessers ist $d=\SI{0.19(1)}{\milli\meter}$, die der Gesamtlänge ist $l=\SI{0.60(1)}{\meter}$.
+
+\begin{figure}[H]
 \centering
 \begin{minipage}[t]{0.4\textwidth}
 \centering
@@ -42,8 +46,7 @@ Die Abmessungen des verwandten Drahtes sind in Tabelle \ref{tab:draht} aufgetrag
 
 \end{minipage}
 \end{figure}
-Für die folgenden Rechnungen wird der Durchmesser $d=\SI{0.1916(11)}{\milli\meter}$ und die Gesamtlänge $l=\SI{0.6018(5)}{\meter}$ benutzt.
-\newpage
+
 Die Eigenschaften der Kugel sind in Tabelle \ref{tab:kugel} aufgetragen.
 Zur Berücksichtigung des Trägheitsmomentes der Kugelaufhängung $\Theta_\text{Aufhängung}=\SI{22.5e-7}{\kilo\gram\meter\squared}$ \cite{V102} wird das Kugelträgheitsmoment $\Theta_\text{Kugel}$ in den folgenden Rechnungen mit dem Gesamttägheitsmoment $\Theta$ des schwingenden Systems ersetzt.
 Mit 
@@ -51,7 +54,7 @@ Mit
 	\Theta	&=\Theta_\text{Kugel} &&+\Theta_\text{Aufhängung}\label{eq:gesamttraegheit}\\ 
 		&=\frac{2}{5} m_\text{K} r_\text{K}^2 &&+\Theta_\text{Aufhängung} %+\SI{22.5e-7}{\kilo\gram\meter\squared}
 \end{alignat}
-wird das Gesamtträgheitsmoment $\Theta=\SI{0.13422(6)e-3}{\kilo\gram\meter\squared}$ angenommen.
+wird das Gesamtträgheitsmoment $\Theta=\SI{0.13(1)e-3}{\kilo\gram\meter\squared}$ angenommen.
 % ####################################################################################################
 % ####################################################################################################
 % ####################################################################################################
@@ -59,7 +62,8 @@ wird das Gesamtträgheitsmoment $\Theta=\SI{0.13422(6)e-3}{\kilo\gram\meter\squa
 % ####################################################################################################
 \subsection{Bestimmung des Schubmoduls \texorpdfstring{$G$}{G}}
 \input{Tabellen/Schubmodul_Zeit.tex}
-Die zur Berechnung des Schubmoduls $G$ benötigeten Schwingdauern $T_\text{G}$ sind in Tabelle \ref{tab:T_G} aufgetragen.
+Die zur Berechnung des Schubmoduls $G$ benötigeten Schwingungsdauern $T_\text{G}$ sind in Tabelle \ref{tab:T_G} aufgetragen.
+Der Mittelwert und Standardabweichung von der Schwingungsdauer ist $T_\text{G}=\SI{18.59(1)}{\second}$.
 Der Schubmodul $G$ wird mittels der Formel \eqref{eq:G} berechnet.
 Es gilt
 \begin{align}
@@ -79,12 +83,12 @@ Die Messung weicht von der Theorie um $-5.27\%$ ab.
 % ####################################################################################################
 \subsection{Bestimmung des Dipolmomentes \texorpdfstring{$m$}{m}}
 \label{sec:auswertung2}
-Tabelle \ref{tab:T_m} zeigt in Abhängigkeit von der Stromstärke $I$ der \textsc{Helmholtz}-Spule die gemessenen Schwingdauern $T_{m,i}$ sowie deren Mittelwerte und Standardabweichungen. 
-Die einzelnen Schwingdauern verschiedener Stromstärken $I$ korrelieren nicht.
+Tabelle \ref{tab:T_m} zeigt in Abhängigkeit von der Stromstärke $I$ der \textsc{Helmholtz}-Spulen die gemessenen Schwingungsdauern $T_{m,i}$ sowie deren Mittelwerte und Standardabweichungen. 
+Die einzelnen Schwingungsdauern verschiedener Stromstärken $I$ korrelieren nicht.
 \input{Tabellen/Dipol_StromZeit.tex}
-Zur Bestimmung des Dipolmomentes wird die Gleichung \eqref{eq:schwingdauer_magnet} benutzt, um die Magnetfeldstärke $B$ 
-der \textsc{Helmholtz}-Spule gegen das reziproke Schwingdauer-Quadrat $\frac{1}{T_{m}^2}$ aufzutragen.
-Die Magnetfeldstärke $B$ der \textsc{Helmholtz}-Spule ist durch die Gleichung \eqref{eq:B_HS} und durch den Spulenstrom $I$ bekannt.
+Zur Bestimmung des Dipolmomentes wird die Gleichung \eqref{eq:t_hs} benutzt, um die Magnetfeldstärke $B$ 
+der \textsc{Helmholtz}-Spulen gegen das reziproke Schwingungsdauer-Quadrat $\frac{1}{T_{m}^2}$ aufzutragen.
+Die Magnetfeldstärke $B$ der \textsc{Helmholtz}-Spulen ist durch die Gleichung \eqref{eq:B_HS} und durch den Spulenstrom $I$ bekannt.
 Mit der Linearisierung
 \begin{equation}
 	B = \underbrace{4\pi^2\frac{\Theta}{m}}_{a_\text{lin}} \underbrace{\frac{1}{T_m^2}}_{x_\text{lin}} - \underbrace{\frac{D}{m}}_{b_\text{lin}}
@@ -93,7 +97,7 @@ Mit der Linearisierung
 und der Regression mittels der Formeln \eqref{eq:regress}
 sind die Parameter des Fits
 \begin{align}
-	a_\text{lin}&=	\SI{0.1036(22)}{\tesla\second\squared}, \\
+	a_\text{lin}&=	\SI{0.10(1)}{\tesla\second\squared}, \\%\SI{0.1036(22)}{\tesla\second\squared},
 	b_\text{lin}&=	-\SI{3.16(53)e-04}{\tesla}.
 \end{align}
 \begin{figure}[p]
@@ -105,7 +109,7 @@ sind die Parameter des Fits
 Es folgt für das magnetische Moment
 \begin{align}
 	m 	&= 4\pi^2\frac{\Theta}{a_\text{lin}}\\
-		&= \SI{0.0512(11)}{\tesla\meter}
+		&= \SI{0.05(1)}{\tesla\meter}
 	\label{eq:Magnetmoment_lin}
 \end{align}
 % ####################################################################################################
@@ -117,17 +121,21 @@ Es folgt für das magnetische Moment
 \label{sec:auswertung3}
 \input{Tabellen/Erdmagnet_Zeit.tex}
 Die gemessenen Zeiten $T_{\text{E},i}$ sind in Tabelle \ref{tab:T_E} aufgetragen, der Mittelwert mit Standardabweichung ist
-$T_\text{E}=\SI{18.3987(34)}{\second}$.\newpage
+$T_\text{E}=\SI{18.40(1)}{\second}$.\newpage
 Mithilfe der Gleichung \eqref{eq:B_lin} wird die Stärke des Erdmagnetfeldes $B_\text{Erde}$ bestimmt.
 Aus Abschnitt \ref{sec:Theorie}, Gleichung \eqref{eq:Richtgrosse} und Abschnitt \ref{sec:auswertung2}, Gleichung \eqref{eq:Magnetmoment_lin} sind die in Formel \eqref{eq:B_lin} benötigten Größen $m$ und $D$ bekannt.\\
 Die Winkelrichtgröße $D$ beträgt
-$D = \SI{1.5333(7)e-05}{\newton\meter}$.
+$D = \SI{1.53(1)e-05}{\newton\meter}$.
 Damit ist die Stärke des horizontalen Anteiles des Erdmagnetfeldes
 \begin{equation}
 	B_\text{Erde}=\SI{6.27(18)e-06}{\tesla}.
 \end{equation}
+Die Horizontalkomponente des Erdmagnetfeldes wird für Deutschland mit durchschnittlich \SI{20e-6}{\tesla} \cite{lausitz} angenommen.
+Die Messung weicht von der Theorie um $68.65\%$ ab.
+
 \begin{figure}[p]
 \centering
+Regression nach	\cite{scipy}
 \begin{subequations}
 	\begin{equation}
 		\Delta = N \sum{x^2} - {\biggl(\sum{x}\biggr)}^2
@@ -147,7 +155,6 @@ Damit ist die Stärke des horizontalen Anteiles des Erdmagnetfeldes
 	\begin{equation}
 		\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
 	\end{equation}
-	(vgl. \cite{scipy})
 	mit $x=x_\text{lin}=\frac{1}{T_m^2}$, $y=B$, $a_\text{Reg}=a_\text{lin}$, $b_\text{Reg}=b_\text{lin}$ und der Anzahl der Datenpaare N 
 	\label{eq:regress}
 \end{subequations}
@@ -171,7 +178,7 @@ bekannt.
 Mithilfe der Zusammenhänge nach Gleichung \eqref{eq:modulbeziehungen} gilt für die \textsc{Poisson}sche Querkontraktionszahl $\mu$ und für den Kompressionsmodul $Q$
 \begin{align}
 	\mu &= \frac{E}{2G}-1 & Q 	&= \frac{E}{3(1-2\mu)}\\
-		&= \SI{0.362(31)}{}.& &= \SI{0.23(5)}{\tera\newton\per\meter}
+		&= \SI{0.36(3)}{}.& &= \SI{0.23(5)}{\tera\newton\per\meter}
 	\label{eq:mu}
 \end{align}
 % 73,575 und 190,3
