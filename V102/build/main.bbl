@@ -19,6 +19,26 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
+    \entry{V102}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
+      \field{labeltitle}{Versuch V102: Drehschwinungen}
+      \field{title}{Versuch V102: Drehschwinungen}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V102.pdf
+      \endverb
+    \endentry
     \entry{matplotlib}{article}{}
       \name{labelname}{1}{}{%
         {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
@@ -45,74 +65,43 @@
       \verb http://link.aip.org/link/?CSX/9/90/1
       \endverb
     \endentry
-    \entry{scipy}{misc}{}
-      \true{morelabelname}
-      \name{labelname}{3}{}{%
-        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \true{moreauthor}
-      \name{author}{3}{}{%
-        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{6161d5ffac903d9c99af53f45c09a00f}
-      \strng{fullhash}{0fc4e01109f422119afc29f3251df541}
-      \field{sortinit}{J}
-      \field{sortinithash}{f75b22df8c340a961dce37019e29107f}
-      \field{labeltitle}{{SciPy}: Open source scientific tools for {Python}}
-      \field{addendum}{Version 0.14.0}
-      \field{title}{{SciPy}: Open source scientific tools for {Python}}
-      \field{year}{2001}
-      \verb{url}
-      \verb http://www.scipy.org/
-      \endverb
-    \endentry
-    \entry{numpy}{article}{}
+    \entry{lausitz}{manual}{}
       \name{labelname}{1}{}{%
-        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=8fa9907a2d4e1628a7e89bca4249d310}{Lausitz}{L\bibinitperiod}{FH}{F\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=8fa9907a2d4e1628a7e89bca4249d310}{Lausitz}{L\bibinitperiod}{FH}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8fa9907a2d4e1628a7e89bca4249d310}
+      \strng{fullhash}{8fa9907a2d4e1628a7e89bca4249d310}
+      \field{sortinit}{L}
+      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
+      \field{labeltitle}{Messung des Erdmagnetfeldes E 11}
+      \field{title}{Messung des Erdmagnetfeldes E 11}
+      \field{urlday}{24}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.hs-lausitz.de/fileadmin/user_upload/public/fak/fak2/pdf/Physiklabor/E11_Messung_des_Erdmagnetfeldes.pdf
+      \endverb
+    \endentry
+    \entry{federstahl}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=d780f567be78e4dd6235c83888f8b4ee}{Schorcht}{S\bibinitperiod}{Manfred\bibnamedelimb Meissner\bibnamedelimb \&\bibnamedelima Hans-Juergen}{M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim \~H\bibinithyphendelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d780f567be78e4dd6235c83888f8b4ee}{Schorcht}{S\bibinitperiod}{Manfred\bibnamedelimb Meissner\bibnamedelimb \&\bibnamedelima Hans-Juergen}{M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim \~H\bibinithyphendelim J\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
-        {IEEE}%
+        {Springer-Verlag}%
       }
-      \strng{namehash}{00f2976ade6b1d16d78161a1f190716c}
-      \strng{fullhash}{00f2976ade6b1d16d78161a1f190716c}
-      \field{sortinit}{O}
-      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
-      \field{labeltitle}{Python for Scientific Computing}
-      \field{addendum}{Version 1.8.1}
-      \field{journaltitle}{Computing in Science and Engineering}
-      \field{number}{3}
-      \field{title}{Python for Scientific Computing}
-      \field{volume}{9}
+      \strng{namehash}{d780f567be78e4dd6235c83888f8b4ee}
+      \strng{fullhash}{d780f567be78e4dd6235c83888f8b4ee}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labeltitle}{Metallfedern - Grundlagen, Werkstoffe, Berechnung, Gestaltung und Rechnereinsatz}
+      \field{title}{Metallfedern - Grundlagen, Werkstoffe, Berechnung, Gestaltung und Rechnereinsatz}
       \field{year}{2007}
-      \field{pages}{10\bibrangedash 20}
-      \verb{url}
-      \verb http://link.aip.org/link/?CSX/9/10/1
-      \endverb
-    \endentry
-    \entry{gimp}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=eff56c5d323af803bc67f548d1618fb3}{Team}{T\bibinitperiod}{The\bibnamedelima GIMP}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=eff56c5d323af803bc67f548d1618fb3}{Team}{T\bibinitperiod}{The\bibnamedelima GIMP}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{eff56c5d323af803bc67f548d1618fb3}
-      \strng{fullhash}{eff56c5d323af803bc67f548d1618fb3}
-      \field{sortinit}{T}
-      \field{sortinithash}{9378dd666f3c24d81538df53aa99e23d}
-      \field{labeltitle}{GIMP: GNU Image Manipulation Program}
-      \field{addendum}{Version 2.8.10}
-      \field{title}{GIMP: GNU Image Manipulation Program}
-      \verb{url}
-      \verb http://www.gimp.org/
-      \endverb
     \endentry
   \endsortlist
 \endrefsection
