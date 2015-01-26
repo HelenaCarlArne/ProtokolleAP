@@ -10,21 +10,21 @@
 \end{minipage}
 \begin{minipage}[r]{0.49\textwidth}
 	Die Periodendauer der Torsionsschwingung wird über eine elektronische Stoppuhr gemessen. 
-	Mit Schwingungsbeginn soll das Zählwerk starten; nach einer Periode enden. Die Periodendauer $T$ kann dann direkt am Zählwerk abgelesen werden.
-	Dieser Vorgang wird realisiert über eine, durch die in Abbildung \ref{fig:aufbau2} gezeigte Lichtschranke ,steuerbare Torstufe. 
-	Das Licht einer Lampe wird zunächst durch eine Sammellinse gebündelt und anschließend durch einen Spalt auf den Spiegel am Torsionsdraht geworfen. Wird der Draht durch bewegen des Justierrades zu Schwingungen angeregt wandert der Lichtstrahl von einer Seite zur anderen und passiert dabei die Photodiode. 
-	Sobald der Lichtstrahl auf die Photodiode trifft, erzeugt diese ein elektrisches Signal, welches durch eine geeignete Schaltung auf die Torsteuerungseingäng des Zählwerks geleitet wird.
+	Mit Schwingungsbeginn soll das Zählwerk starten und nach einer Periode enden. Die Periodendauer $T$ kann dann direkt am Zählwerk abgelesen werden.
+	Dieser Vorgang wird realisiert über eine, durch die in Abbildung \ref{fig:aufbau2} gezeigte Lichtschranke mit steuerbare Torstufe. 
+	Das Licht einer Lampe wird zunächst durch eine Sammellinse gebündelt und anschließend durch einen Spalt auf den Spiegel am Torsionsdraht geworfen. Wird der Draht durch Bewegen des Justierrades zu Schwingungen angeregt, passiert der reflektierte Lichtstrahl dabei die Photodiode. 
+	Sobald der Lichtstrahl auf die Photodiode trifft, erzeugt diese ein elektrisches Signal, welches durch eine geeignete Schaltung auf die Torsteuerungseingänge des Zählwerks geleitet wird.
 \end{minipage}
 \end{figure}
 
 Abbildung \ref{fig:aufbau1} zeigt die Messapparatur. 
-Am unteren Ende eines einseitig fest eingespannten Drahtes ist eine Kugel befestigt in deren Innern sich ein Permanentmagnet befindet. Sie hängt zwischen zwei Helmholtzspulen, die durch einschalten der Stromquelle ein annähernd homogenes Magnetfeld erzeugen können.
+Am unteren Ende eines einseitig fest eingespannten Drahtes ist eine Kugel befestigt, in deren Innern sich ein Permanentmagnet befindet. 
+Sie hängt zwischen \textsc{Helmholtz}-Spulen, die ein annähernd homogenes Magnetfeld erzeugen.
 In der unteren Drahthälfte wird dieser durch einen kleinen Spiegel unterbrochen, der zur Bestimmung der Periodendauer benötigt wird.
-\subsection{Messung der Schwingungsdauer}
 \label{sec:durchfuehrung2}
-\begin{figure}
+\begin{figure}[hbp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Bilder/Aufbau2.pdf}
+	\includegraphics[width=0.5\textwidth]{Bilder/Aufbau2.pdf}
 	\caption{Aufbau der Lichtschranke. \cite{V102}}
 	\label{fig:aufbau2}
 \end{figure}
@@ -33,14 +33,17 @@ In der unteren Drahthälfte wird dieser durch einen kleinen Spiegel unterbrochen
 % Dieser Vorgang wird realisiert über eine, durch die in Abbildung \ref{fig:aufbau2} gezeigte Lichtschranke ,steuerbare Torstufe. 
 % Das Licht einer Lampe wird zunächst durch eine Sammellinse gebündelt und anschließend durch einen Spalt auf den Spiegel am Torsionsdraht geworfen. Wird der Draht durch bewegen des Justierrades zu Schwingungen angeregt wandert der Lichtstrahl von einer Seite zur anderen und passiert dabei die Photodiode. 
 % Sobald der Lichtstrahl auf die Photodiode trifft, erzeugt diese ein elektrisches Signal, welches durch eine geeignete Schaltung auf die Torsteuerungseingäng des Zählwerks geleitet wird.
+\subsection{Bestimmung der gesuchten Größen}
+Zur Berechnung der Module müssen Drahtlänge und -durchmesser bekannt sein. 
+Gemessen werden diese mit einer Mikrometerschraube und einem Maßband.
+Übrige Systemparameter sind bekannt.
 
 In drei Versuchsteilen wird der Draht durch Auslenken des Justierrades zu harmonischen Schwingungen angeregt und die am Zählwerk angezeigte Schwingungsdauer notiert.
+Zur Bestimmung des Schubmoduls $G$ muss der Permanentmagnet $m$ parallel zum Draht und senkrecht zum Erdmagnetfeld ausgerichtet sein, um nicht beeinflusst zu werden
+Es werden zehn Messwerte aufgenommen.
 
-Zur Bestimmung des Schubmoduls $G$ muss der Permanentmagnet parallel zum Draht ausgerichtet sein, was der Richtung des Erdmagnetfeldes entspricht. Dieses nimmt dadurch keinen Einfluss auf die Schwingungsdauer. Es werden zehn Messwerte aufgenommen.
-Anschließend wird das magnetische Moment ders Permanentmagneten bestimmt. In diesem Versuchsteil wird die Stromquelle der Helmholtz-Spulen eingeschaltet um ein Magnetfeld zu realisieren. Die Stromstärke, mit der die Spulen betrieben werden, wird von $I=0\,\si\ampere$ bis $I=1\,\si\ampere$ in fünf Schritten variiert und je fünf Schwingungsdauern notiert.
- Hier wird der Permanentmagnet senkrecht zum Draht und parallel zum Magnetfeld der Spulen ausgerichtet, um den maximalen Einfluss des Magnetfeldes  auf die Schwingung zu erreichen.  
-Zur Bestimmung des Erdmagnetfelds bleibt der Permanentmagnet senkrecht zum Draht ausgerichtet, um den maximalen Einfluss des Erdmagnetfeldes auf die Schwingung zu erreichen. Erneut werden zehn Perioden gemessen.
-
-Zur Berechnung der Module müssen außerdem Drahtlänge und -durchmesser bekannt sein. Gemessen werden diese mit einer Micrometerschraube bzw. einem Maßband.
-Radius und Masse der angehängten Kugel, sowie der Befestigung, als auch Windungszahl der Spulen sind angegeben.
-
+Anschließend wird das magnetische Moment $m$ des Permanentmagneten bestimmt. 
+Hierzu werden die \textsc{Helmholtz}-Spulen eingeschaltet und der Permanentmagnet $m$ parallel zum Magnetfeld der Spulen ausgerichtet, um den maximalen Einfluss des Magnetfeldes auf die Schwingung zu erreichen.  
+Die Spulenstrom $I$ wird von $I=\SI{0.1}{\ampere}$ bis $I=\SI{1}{\ampere}$ in fünf Schritten variiert und jeweils fünf Schwingungsdauern notiert.\\
+Zur Bestimmung des Erdmagnetfelds wird die Messung mit abgeschalteten \textsc{Helmholtz}-Spulen wiederholt.
+Es werden zehnmal eine Periode gemessen.
