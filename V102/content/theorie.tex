@@ -1,6 +1,6 @@
 \section{Zielsetzung}
 Elastische Konstanten charakterisieren das Verhalten eines Stoffes bei Krafteinwirkung.
- Sie funktionieren als Proportionalitätsfaktoren zwischen der pro Flächeneinheit angreifenden Kraft und der daraus resultierenden relativen Deformation -- einer Gestalts- oder Volumenänderung. 
+Sie funktionieren als Proportionalitätsfaktoren zwischen der pro Flächeneinheit angreifenden Kraft und der daraus resultierenden relativen Deformation -- einer Gestalts- oder Volumenänderung. 
 Ziel ist es, die elastischen Konstanten einer Metalllegierung zu bestimmen. Außerdem soll das magnetische Moment eines Permanentmagneten, sowie das Erdmagnetfeld gemessen werden.
 \section{Theorie}
 \label{sec:Theorie}
@@ -13,22 +13,19 @@ Die Kräfte wirken nachweislich an der Oberfläche und jeder beliebigen Querschn
 In Festkörpern sind die Atome in einem Kristallgitter regelmäßg angeordnet und befinden sich mit ihren direkten Nachbarn in einem Gleichgewichtszustand, in dem sich die abstoßenden und anziehenden Kräfte grade zu Null addieren. 
 Durch Krafteinwirkung muss ein neuer Zustand hergestellt werden. 
 Dies wird realisiert indem der Abstand $r_0$ der Teilchen zueinander variiert wird und sich ein neuer Gleichgewichtszustand mit dem Abstand $r'_0$ einstellt.
-Das Hooke'sche Gesetz
+Das \textsc{Hooke}sche Gesetz
 \begin{align}
-\sigma=E\frac{\mathup{\Delta}{L}}{L}  & P=Q\frac{\mathup{\Delta}{V}}{V}
+\sigma=E\frac{\mathup{\Delta}{L}}{L}  \quad P=Q\frac{\mathup{\Delta}{V}}{V}
 \label{eq:hooke}
 \end{align}
 beschreibt für hinreichend kleine Kräfte an der Oberfläche bzw. an jedem Volumenelement einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relative Deformation.
 Liegt eine elastische Deformation vor, so kehrt der Körper in seine Ausgangslage zurück, sobald die Krafteinwirkung vorbei ist - der Vorgang ist reversibel. 
 
-
-
-
 Werden unsymmetrische Kristalle mit richtungsabhängigen elektrostatischen Kräften betrachtet müssen sehr viele Komponenten gemessen bzw. errechnet werden. 
 Isotrope Körper, beispielsweise polykristalline Kristalle, zeichnen sich stattdessen durch richtungsunabhängige elastische Konstanten aus und können theoretisch durch zwei Konstanten beschrieben werden. 
 Es erweist sich jedoch als zweckmäßig insgesamt vier Konstanten einzuführen.
 Der Schub- bzw. Torsionsmodul $G$ beschreibt die Gestalts-, der Kompressionsmodul $Q$ die Volumenelastizität.
-DerElastizitätsmodul $E$ ist der Proportionalitätsfaktor aus Gleichung \eqref{eq:hooke}, $\mu$ die Poissonsche Querkontraktionszahl. 
+Der Elastizitätsmodul $E$ ist der Proportionalitätsfaktor aus Gleichung \eqref{eq:hooke}, $\mu$ die \textsc{Poisson}sche Querkontraktionszahl. 
 \begin{equation}
 \mu=-\frac{\mathup{\Delta}{B}}{B}\frac{L}{\mathup{\Delta}{L}}
 \label{eq:mu}
@@ -42,7 +39,7 @@ Die genannten Moduln sind nicht unabhängig voneinander und stehen über
 in Beziehung.
 
 \subsection{Der Schubmodul \texorpdfstring{$G$}{G}}
-Erfährt ein Probekörper ausschließlich Tangentialspannungen verformt er sich so, dass eine Scherung um den Winkel $\alpha$ auftritt. Nache Hooke ist mit
+Erfährt ein Probekörper ausschließlich Tangentialspannungen verformt er sich so, dass eine Scherung um den Winkel $\alpha$ auftritt. Nach \textsc{Hooke} ist mit
 \begin{equation}
 \tau=G\alpha
 \label{eq:hooke_G}
@@ -63,7 +60,17 @@ Aus dem Zusammenhang $\alpha=\frac{r\phi}{L}$, dem Flächeninhalt des Kreisrings
 M=\frac{\pi R^4 G}{2L}\phi=D\phi.
 \label{eq:Richtgrosse}
 \end{equation}
-Wird an das freie Drahtende ein Körper mit Trägheitsmoment $\theta$ angehängt, kann der Draht ungedämpfte harmonische Schwingungen der Dauer $T=2\pi\sqrt{\frac{\theta}{D}}$ ausführen. Es wirken zwei entgegengesetzte Drehmomente aufeinander. Je nach Form des Körpers ist $M_\mathup{T}$ unterschiedlich, hier wird eine Kugel benutzt mit $\theta=\frac{2}{5}m_\mathup{k}{R_\mathup{k}}²$. Damit ergibt sich 
+Wird an das freie Drahtende ein Körper mit Trägheitsmoment $\theta$ angehängt, kann der Draht ungedämpfte harmonische Schwingungen der Dauer 
+\begin{equation}
+T=2\pi\sqrt{\frac{\theta}{D}}
+\label{eq:t}
+\end{equation}
+ ausführen. Es wirken zwei entgegengesetzte Drehmomente aufeinander. Je nach Form des Körpers ist $M_\mathup{T}$ unterschiedlich, hier wird eine Kugel benutzt mit 
+\begin{equation}
+\theta=\frac{2}{5}m_\mathup{k}{R_\mathup{k}}².
+\label{eq:theta_k}
+\end{equation}
+ Damit ergibt sich 
 \begin{equation}
 G=\frac{16\pi m_\mathup{k} {R_\mathup{k}}^2 L}{5T²R⁴}.
 \label{eq:G}
@@ -77,9 +84,10 @@ Befindet sich der Draht in einem homogenen Magnetfeld
 B=\frac{8\mu_0}{\sqrt{125}} \frac{I}{R_\mathup{HS}}n
 \label{eq:B_HS}
 \end{equation}
- -- erzeugt durch ein Helmholtzspulenpaar mit Windungszahl $N$, Radius $R_\mathup{HS}$, durchflossen vom Strom $I$ -- führt er Schwingungen mit 
+ -- erzeugt durch ein \textsc{Helmholtzspulen}paar mit Windungszahl $n$, Radius $R_\mathup{HS}$, durchflossen vom Strom $I$ -- führt er Schwingungen mit 
 \begin{equation}
 T_m=2\pi\sqrt{\frac{\theta}{mB+D}}
+\label{eq:t_hs}
 \end{equation}
 aus. Die Periodendauer wird geringer, da ein zusätzliches Drehmoment wirkt.
 
