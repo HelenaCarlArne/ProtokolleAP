@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  24 JAN 2015 21:20
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.10.18)  26 JAN 2015 22:14
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -346,7 +346,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.081 seconds
+luaotfload | main : fontloader loaded in 0.080 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1686,6 +1686,9 @@ File: german.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
 luatex-hyphen: info: no hyphenation exceptions for this language
 
+LaTeX Warning: Label `sec:durchfuehrung2' multiply defined.
+
+
 LaTeX Warning: Label `eq:mu' multiply defined.
 
 )
@@ -1814,87 +1817,80 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 14.
+(Font)              scaled to size 14.4002pt on input line 15.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 14.
+(Font)              scaled to size 10.00015pt on input line 15.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 14.
+(Font)              scaled to size 7.0001pt on input line 15.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 14.
+(Font)              scaled to size 14.39977pt on input line 15.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 14.
+(Font)              scaled to size 9.99985pt on input line 15.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 14.
+(Font)              scaled to size 6.9999pt on input line 15.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [1
 
-{/home/helena/.local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./content/theorie.tex [2
+{/home/helena/.local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./content/theorie.tex(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc) [2
 
-](load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)
+]
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 72.
+(Font)              scaled to size 12.00018pt on input line 44.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 72.
+(Font)              scaled to size 11.99982pt on input line 44.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 72.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 72.
-
-[3]) (./content/durchfuehrung.tex <Bilder/Aufbau1.pdf, id=40, 209.78375pt x 557.08125pt>
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [3]) (./content/durchfuehrung.tex [4] <Bilder/Aufbau1.pdf, id=52, 209.78375pt x 557.08125pt>
 File: Bilder/Aufbau1.pdf Graphic file (type pdf)
  <use Bilder/Aufbau1.pdf>
-Package pdftex.def Info: Bilder/Aufbau1.pdf used on input line 6.
-(pdftex.def)             Requested size: 125.47794pt x 333.20578pt.
+Package pdftex.def Info: Bilder/Aufbau1.pdf used on input line 8.
+(pdftex.def)             Requested size: 81.97775pt x 217.68584pt.
 
+Overfull \hbox (85.73997pt too wide) in paragraph at lines 9--9
+[][] [] 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Bilder/Aufbau2.pdf, id=42, 592.2125pt x 326.21875pt>
+<Bilder/Aufbau2.pdf, id=57, 592.2125pt x 326.21875pt>
 File: Bilder/Aufbau2.pdf Graphic file (type pdf)
  <use Bilder/Aufbau2.pdf>
-Package pdftex.def Info: Bilder/Aufbau2.pdf used on input line 17.
-(pdftex.def)             Requested size: 167.29967pt x 92.15695pt.
+Package pdftex.def Info: Bilder/Aufbau2.pdf used on input line 28.
+(pdftex.def)             Requested size: 209.12778pt x 115.19868pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[5<./Bilder/Aufbau1.pdf>]
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [4]) (./content/auswertung.tex [5<./Bilder/Aufbau1.pdf>] [6<./Bilder/Aufbau2.pdf>](load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc) (./Tabellen/Draht_Eigenschaften.tex
-Overfull \hbox (83.64984pt too wide) in paragraph at lines 15--15
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf") (./content/auswertung.tex [6<./Bilder/Aufbau2.pdf>]
+Overfull \hbox (7.91092pt too wide) in paragraph at lines 30--33
+\EU2/lmr/m/n/10.95 nicht. Der Mit-tel-wert mit Stan-dard-ab-wei-chung des Durch-mes-sers ist $\EU2/LatinModernMath(0)/m/n/10.95 𝑑 = [] []$\EU2/lmr/m/n/10.95 ,
+ []
+
+(./Tabellen/Draht_Eigenschaften.tex
+Overfull \hbox (104.56389pt too wide) in paragraph at lines 15--15
 [][] [] 
  []
 
 ) (./Tabellen/Kugel_Eigenschaften.tex
-Overfull \hbox (83.64984pt too wide) in paragraph at lines 11--11
+Overfull \hbox (19.8225pt too wide) in paragraph at lines 3--11
+ [][][] 
+ []
+
+
+Overfull \hbox (104.56389pt too wide) in paragraph at lines 11--11
 [][] [] 
  []
 
-)
-Overfull \hbox (31.6418pt too wide) in paragraph at lines 29--38
-\EU2/lmr/m/n/10.95 nicht. [] []
- []
-
-[7](load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)
-Overfull \hbox (0.85725pt too wide) in paragraph at lines 45--52
-[]\EU2/lmr/m/n/10.95 wird das Ge-samt-träg-heits-mo-ment $\EU2/LatinModernMath(0)/m/n/10.95 𝛩 = [][][] []$ \EU2/lmr/m/n/10.95 an-ge-nom-men. 
- []
-
-(./Tabellen/Schubmodul_Zeit.tex
+)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) (./Tabellen/Schubmodul_Zeit.tex
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 7.00006pt on input line 14.
@@ -1902,64 +1898,54 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 6.99986pt on input line 14.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf") (./Tabellen/Dipol_StromZeit.tex) [8]
-
-LaTeX Warning: Reference `eq:schwingdauer_magnet' on page 9 undefined on input line 77.
-
-<Bilder/Magnetfeld.pdf, id=115, 578.16pt x 464.33476pt>
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf") [7] (./Tabellen/Dipol_StromZeit.tex) [8] <Bilder/Magnetfeld.pdf, id=130, 578.16pt x 464.33476pt>
 File: Bilder/Magnetfeld.pdf Graphic file (type pdf)
  <use Bilder/Magnetfeld.pdf>
-Package pdftex.def Info: Bilder/Magnetfeld.pdf used on input line 93.
+Package pdftex.def Info: Bilder/Magnetfeld.pdf used on input line 104.
 (pdftex.def)             Requested size: 292.7776pt x 235.13548pt.
-(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc) (./Tabellen/Erdmagnet_Zeit.tex) [9]
-
-LaTeX Warning: Reference `eq:Richtgrosse' on page 10 undefined on input line 114.
-
+(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc) (./Tabellen/Erdmagnet_Zeit.tex)
 
 LaTeX Font Warning: Font shape `EU2/lmss/bx/sc' undefined
-(Font)              using `EU2/lmss/bx/n' instead on input line 152.
+(Font)              using `EU2/lmss/bx/n' instead on input line 166.
 
-) (./content/diskussion.tex [10] [11<./Bilder/Magnetfeld.pdf>])
+[9] [10<./Bilder/Magnetfeld.pdf>]) (./content/diskussion.tex)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 22.
  (/home/helena/.local/texlive/2014/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
+)(load luc: /home/helena/.local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc) [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
  [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (./build/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: D2CFC345D29EDCC21B9801485BA20979;13201.
+(rerunfilecheck)             Checksum: 9912A3114D23D3E110875EF56D9EA667;16400.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41126 strings out of 494693
+ 41142 strings out of 494693
  100000,1373583 words of node,token memory allocated
- 748 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 24 kern, 29 attribute, 67 glue_spec, 29 attribute_list, 3 action, 1 write nodes
-   avail lists: 1:48,2:8986,3:175,4:1020,5:227,6:3003,7:89,8:29,9:512,10:985,11:520,12:230
- 43553 multiletter control sequences out of 65536+600000
- 106 fonts using 34157963 bytes
- 70i,27n,104p,974b,2060s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (12 pages, 331383 bytes).
+ 772 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 26 kern, 31 attribute, 67 glue_spec, 31 attribute_list, 3 action, 1 write nodes
+   avail lists: 1:48,2:8790,3:183,4:986,5:221,6:2856,7:76,8:35,9:512,10:985,11:520,12:230
+ 43562 multiletter control sequences out of 65536+600000
+ 106 fonts using 34158127 bytes
+ 70i,27n,104p,974b,2653s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/helena/.local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (12 pages, 337215 bytes).
 
-PDF statistics: 369 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 76 named destinations out of 1000 (max. 131072)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 404 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 131072)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

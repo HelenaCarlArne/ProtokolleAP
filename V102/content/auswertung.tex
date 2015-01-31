@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 Die in der Auswertung verwendeten Mittelwerte $n$-fach gemessener Größen sind gemäß der Gleichung
 \begin{equation}
-    \bar{x}=\frac{1}{n}\sum_{i=1}^n x_i.
+    \bar{x}=\frac{1}{n}\sum_{i=1}^n x_i
     \label{eq:mittelwert}
 \end{equation}
 bestimmt. 
@@ -18,7 +18,7 @@ berechnet sich der Gesamtfehler $\mathup{\Delta}f(x_i)$ nach der \textsc{Gauß}s
 	\mathup{\Delta}f(x_1,...,x_\text{N})=\sqrt{\sum_{\text{i}=1}^\text{N}\left(\frac{\partial f}{\partial x_\text{i}}\mathup{\Delta}x_\text{i}\right)^2}.
 	\label{eq:gauss_gen}
 \end{equation}
-Es werden im Folgenden alle errechneten Größen auf zwei Nachkommastellen nach \textit{DIN 1333} gerundet angegeben, 
+Es werden im Folgenden alle errechneten Größen auf zwei Nachkommastellen gerundet angegeben, 
 die Rechnung wird stets mit den exakten Werten durchgeführt.
 % ####################################################################################################
 % ####################################################################################################
@@ -29,7 +29,7 @@ die Rechnung wird stets mit den exakten Werten durchgeführt.
 \label{sec:auswertung1}
 Das untersuchte Material ist Federstahl.
 Die Abmessungen des verwandten Drahtes sind in Tabelle \ref{tab:draht} aufgetragen, die Werte von Durchmesser und den Teillängen korrelieren nicht.
-Der Mittelwert und Standardabweichung des Durchmessers ist $d=\SI{0.19(1)}{\milli\meter}$, die der Gesamtlänge ist $l=\SI{0.60(1)}{\meter}$.
+Der Mittelwert mit Standardabweichung des Durchmessers ist $d=\SI{0.19(1)}{\milli\meter}$, die der Gesamtlänge ist $l=\SI{0.60(1)}{\meter}$.
 
 \begin{figure}[H]
 \centering
@@ -47,7 +47,7 @@ Der Mittelwert und Standardabweichung des Durchmessers ist $d=\SI{0.19(1)}{\mill
 \end{figure}
 
 Die Eigenschaften der Kugel sind in Tabelle \ref{tab:kugel} aufgetragen.
-Zur Berücksichtigung des Trägheitsmomentes der Kugelaufhängung $\theta_\text{Aufhängung}=\SI{22.5e-7}{\kilo\gram\meter\squared}$ \cite{V102} wird das Kugelträgheitsmoment $\theta_\text{Kugel}$ in den folgenden Rechnungen mit dem Gesamttägheitsmoment $\theta$ des schwingenden Systems ersetzt.
+Unter Berücksichtigung des Trägheitsmomentes der Kugelaufhängung $\theta_\text{Aufhängung}=\SI{22.5e-7}{\kilo\gram\meter\squared}$ \cite{V102} wird das Kugelträgheitsmoment $\theta_\text{Kugel}$ in den folgenden Rechnungen mit dem Gesamttägheitsmoment $\theta$ des schwingenden Systems ersetzt.
 Mit 
 \begin{alignat}{3}
 	\theta	&=\theta_\text{Kugel} &&+\theta_\text{Aufhängung}\label{eq:gesamttraegheit}\\ 
@@ -62,12 +62,12 @@ wird das Gesamtträgheitsmoment $\theta=\SI{0.13(1)e-3}{\kilo\gram\meter\squared
 \subsection{Bestimmung des Schubmoduls \texorpdfstring{$G$}{G}}
 \input{Tabellen/Schubmodul_Zeit.tex}
 Die zur Berechnung des Schubmoduls $G$ benötigeten Schwingungsdauern $T_\text{G}$ sind in Tabelle \ref{tab:T_G} aufgetragen.
-Der Mittelwert und Standardabweichung von der Schwingungsdauer ist $T_\text{G}=\SI{18.59(1)}{\second}$.
-Der Schubmodul $G$ wird mittels der Formel \eqref{eq:G} berechnet.
+Der Mittelwert und dessen Standardabweichung von der Schwingungsdauer ist $T_\text{G}=\SI{18.59(1)}{\second}$.
+Der Schubmodul $G$ wird mit Formel \eqref{eq:G} berechnet.
 Es gilt
 \begin{align}
 	G 	&=  8 \theta\frac{\pi L}{T^2 r_D^4}\\% = \frac{16}{5} \frac{(\pi m_K r_K^2 L)}{(T^2 r_D^4)} 
-		&=	\SI{69.7\pm1.6}{\giga\newton\per\meter\squared}
+		&=	\SI{69.7\pm1.6}{\giga\newton\per\meter\squared}.
 	\label{eq:schubmodul}
 	\end{align}
 Aus der Literatur ist der Schubmodul für das Material Federstahl mit
@@ -82,7 +82,7 @@ Die Messung weicht von der Theorie um $-5.27\%$ ab.
 % ####################################################################################################
 \subsection{Bestimmung des Dipolmomentes \texorpdfstring{$m$}{m}}
 \label{sec:auswertung2}
-Tabelle \ref{tab:T_m} zeigt in Abhängigkeit von der Stromstärke $I$ der \textsc{Helmholtz}-Spulen die gemessenen Schwingungsdauern $T_{m,i}$ sowie deren Mittelwerte und Standardabweichungen. 
+Tabelle \ref{tab:T_m} zeigt in Abhängigkeit von der Stromstärke $I$ der \textsc{Helmholtz}-Spulen, die gemessenen Schwingungsdauern $T_{m,i}$, sowie deren Mittelwerte und Standardabweichungen. 
 Die einzelnen Schwingungsdauern verschiedener Stromstärken $I$ korrelieren nicht.
 \input{Tabellen/Dipol_StromZeit.tex}
 Zur Bestimmung des Dipolmomentes wird die Gleichung \eqref{eq:t_hs} benutzt, um die Magnetfeldstärke $B$ 
@@ -93,7 +93,7 @@ Mit der Linearisierung
 	B = \underbrace{4\pi^2\frac{\theta}{m}}_{a_\text{lin}} \underbrace{\frac{1}{T_m^2}}_{x_\text{lin}} - \underbrace{\frac{D}{m}}_{b_\text{lin}}
 	\label{eq:B_lin}
 \end{equation}
-und der Regression mittels der Formeln \eqref{eq:regress}
+und der Regression mit den Formeln \eqref{eq:regress}
 sind die Parameter des Fits
 \begin{align}
 	a_\text{lin}&=	\SI{0.10(1)}{\tesla\second\squared}, \\%\SI{0.1036(22)}{\tesla\second\squared},
@@ -108,7 +108,7 @@ sind die Parameter des Fits
 Es folgt für das magnetische Moment
 \begin{align}
 	m 	&= 4\pi^2\frac{\theta}{a_\text{lin}}\\
-		&= \SI{0.05(1)}{\tesla\meter}
+		&= \SI{0.05(1)}{\tesla\meter}.
 	\label{eq:Magnetmoment_lin}
 \end{align}
 % ####################################################################################################
@@ -130,31 +130,31 @@ Damit ist die Stärke des horizontalen Anteiles des Erdmagnetfeldes
 	B_\text{Erde}=\SI{6.27(18)e-06}{\tesla}.
 \end{equation}
 Die Horizontalkomponente des Erdmagnetfeldes wird für Deutschland mit durchschnittlich \SI{20e-6}{\tesla} \cite{lausitz} angenommen.
-Die Messung weicht von der Theorie um $68.65\%$ ab.
+Die Messung weicht von der Theorie um $68,65\%$ ab.
 
 \begin{figure}[p]
 \centering
 Regression nach
 \begin{subequations}
 	\begin{equation}
-		\Delta = N \sum{x^2} - {\biggl(\sum{x}\biggr)}^2
+		\Delta = N \sum{x^2} - {\biggl(\sum{x}\biggr)}^2,
 	\end{equation}
 	\begin{equation}
-		a_{\text{Reg}} = \frac{N\sum{x\cdot y} - \sum{x} \cdot \sum{y}}{\Delta}
+		a_{\text{Reg}} = \frac{N\sum{x\cdot y} - \sum{x} \cdot \sum{y}}{\Delta},
 	\end{equation}
     \begin{equation}
-		b_{\text{Reg}} = \frac{\sum{x^2} \cdot \sum{y} - \sum{x} \cdot \sum{x \cdot y}}{\Delta}
+		b_{\text{Reg}} = \frac{\sum{x^2} \cdot \sum{y} - \sum{x} \cdot \sum{x \cdot y}}{\Delta},
 	\end{equation}
 	\begin{equation}
-		\sigma_{y} = \sqrt{\frac{\sum{(y - a_{\text{Reg}} \cdot x - b_{\text{Reg}})^2}}{N - 2}}
+		\sigma_{y} = \sqrt{\frac{\sum{(y - a_{\text{Reg}} \cdot x - b_{\text{Reg}})^2}}{N - 2}},
 	\end{equation}
 	\begin{equation}
-		\sigma_{a} = \sigma_{y} \sqrt{\frac{N}{\Delta}}
+		\sigma_{a} = \sigma_{y} \sqrt{\frac{N}{\Delta}},
 	\end{equation}
 	\begin{equation}
 		\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
 	\end{equation}
-	mit $x=x_\text{lin}=\frac{1}{T_m^2}$, $y=B$, $a_\text{Reg}=a_\text{lin}$, $b_\text{Reg}=b_\text{lin}$ und der Anzahl der Datenpaare N 
+	mit $x=x_\text{lin}=\frac{1}{T_m^2}$, $y=B$, $a_\text{Reg}=a_\text{lin}$, $b_\text{Reg}=b_\text{lin}$ und der Anzahl der Datenpaare N.
 	\label{eq:regress}
 \end{subequations}
 \end{figure}
@@ -167,17 +167,17 @@ Regression nach
 \label{sec:auswertung4}
 Der Literaturwert des Elastizitätsmoduls $E$ für Federstahl \cite{federstahl} ist
 \begin{equation}
-	E = \SI{190,3}{\giga\pascal},
+	E = \SI{190,3}{\giga\pascal}.
 \end{equation}
-aus Abschnitt \ref{sec:auswertung1}, Gleichung \eqref{eq:schubmodul} ist der Schubmodul $G$ mit
+Aus Abschnitt \ref{sec:auswertung1}, Gleichung \eqref{eq:schubmodul} ist der Schubmodul $G$ mit
 \begin{equation}
 	G=	\SI{69.7\pm1.6}{\giga\newton\per\meter\squared}
 \end{equation}
 bekannt.
 Mithilfe der Zusammenhänge nach Gleichung \eqref{eq:modulbeziehungen} gilt für die \textsc{Poisson}sche Querkontraktionszahl $\mu$ und für den Kompressionsmodul $Q$
 \begin{align}
-	\mu &= \frac{E}{2G}-1 & Q 	&= \frac{E}{3(1-2\mu)}\\
-		&= \SI{0.36(3)}{}.& &= \SI{0.23(5)}{\tera\newton\per\meter}
+	\mu &= \frac{E}{2G}-1, & Q 	&= \frac{E}{3(1-2\mu)},\\
+		&= \SI{0.36(3)}{},& &= \SI{0.23(5)}{\tera\newton\per\meter}.
 	\label{eq:mu}
 \end{align}
 % 73,575 und 190,3
