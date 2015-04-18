@@ -1,4 +1,6 @@
-Nach langer und etwas ärgerlicher Arbeit, habe ich es nun geschafft, ein Repository zu erstellen.
-Dieses Repository funktioniert so, dass jedes Protokoll einen eigenen Ordner bekommt und stets am Anfang "gepullt" und am Ende "gepusht" wird.
+Eigner: Helena Nawrath, Carl Arne Thomann
 
-Die PDF-Datei Guide bietet einen Überblick über die wichtigen Funktionen von git.
+
+Dies ist ein überwachtes Repository für die Praktikumsprotokolle der Eigner. 
+Stand: SS 15
+––
