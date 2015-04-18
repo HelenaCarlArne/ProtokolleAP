@@ -55,7 +55,7 @@
   per-mode=symbol-or-fraction, % m/s im Text, sonst Brüche
 ]{siunitx}
 %für schöne Mengenangaben
-\usepackage{dsfont}
+\usepackage{ dsfont }
 % chemische Formeln
 \usepackage[version=3]{mhchem}
 
