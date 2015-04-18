@@ -1,0 +1,20 @@
+[1] Config.pm:320> INFO - This is Biber 1.9
+[1] Config.pm:323> INFO - Logfile is 'build/main.blg'
+[81] biber:277> INFO - === Mo Apr 13, 2015, 19:33:11
+[81] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[245] Biber.pm:635> INFO - Found 6 citekeys in bib section 0
+[297] Biber.pm:3051> INFO - Processing section 0
+[339] Biber.pm:3189> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[341] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[345] bibtex.pm:864> INFO - Found BibTeX data source 'build/lit.bib'
+[370] Utils.pm:144> WARN - Datamodel: Entry 'V406' (build/lit.bib): Invalid format '2015-4-12' of date field 'urldate' - ignoring
+[372] Biber.pm:3189> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[374] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[376] bibtex.pm:864> INFO - Found BibTeX data source 'build/programme.bib'
+[552] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[553] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[553] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[553] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
+[586] bbl.pm:517> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[588] bbl.pm:606> INFO - Output to build/main.bbl
+[589] Biber.pm:106> INFO - WARNINGS: 1
