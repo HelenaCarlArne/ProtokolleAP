@@ -1,111 +1,131 @@
 
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Verifikation der Linsengleichung}
+Die Ergebnisse der ersten Messung sind in Tabelle \ref{tab:M1} aufgetragen.
 \begin{table}
 	\centering
-	\sisetup{table-format=3.2}
-	\begin{tabular}{S S S S S S}
-	\toprule
-	%\multicolumn{3}{c}{f_1=100\,\si{\milli\meter}} & \multicolumn{3}{c}{f_2=50\,\si{\milli\meter}} \\
-{$g_1/\:\si{\milli{\meter}}$} & {$b_1/\:\si{\milli{\meter}}$} & {$f_1/\:\si{\milli{\meter}}$} & {$g_2/\:\si{\milli{\meter}}$} & {$b_2/\:\si{\milli{\meter}}$} & {$f_2/\:\si{\milli{\meter}}$}\\	
-\midrule
-120 & 525 & 98.09 &     &      &   	\\
-130 & 390 & 98.64 &  60 & 2700 & 124.14 \\
-140 & 319 & 97.59 &  70 & 1570 & 117.98 \\
-150 & 277 & 96.96 &  80 & 1210 & 111.22 \\
-160 & 251 & 95.63 &  90 & 1040 & 104.35 \\
-170 & 227 & 97.20 & 100 &  920 &  97.65 \\
-180 & 204 & 97.71 & 110 &  870 &  90.20 \\
-190 & 198 & 97.31 & 120 &  800 &  82.83 \\
-200 & 192 & 97.30 & 130 &  770 &  75.04 \\
-210 & 186 & 97.50 & 140 &  750 &  67.01 \\
-220 & 177 & 97.67 & 150 &  720 &  58.70 \\
-	\bottomrule
-\end{tabular}
+	\begin{tabular}{S[table-format=3] S[table-format=3] S[table-format=3.2]|S[table-format=3] S[table-format=3] S[table-format=3]}
+		\toprule
+		%\multicolumn{3}{c}{f_1=100\,\si{\milli\meter}} & \multicolumn{3}{c}{f_2=50\,\si{\milli\meter}} \\
+		{$g_1/\:\si{\milli{\meter}}$} & {$b_1/\:\si{\milli{\meter}}$} & {$f_1/\:\si{\milli{\meter}}$} & {$g_2/\:\si{\milli{\meter}}$} & {$b_2/\:\si{\milli{\meter}}$} & {$f_2/\:\si{\milli{\meter}}$}\\	
+		\midrule
+		120 & 525 & 98.09 &     &      &   	\\
+		130 & 390 & 98.64 &  60 & 2700 & 124.14 \\
+		140 & 319 & 97.59 &  70 & 1570 & 117.98 \\
+		150 & 277 & 96.96 &  80 & 1210 & 111.22 \\
+		160 & 251 & 95.63 &  90 & 1040 & 104.35 \\
+		170 & 227 & 97.20 & 100 &  920 &  97.65 \\
+		180 & 204 & 97.71 & 110 &  870 &  90.20 \\
+		190 & 198 & 97.31 & 120 &  800 &  82.83 \\
+		200 & 192 & 97.30 & 130 &  770 &  75.04 \\
+		210 & 186 & 97.50 & 140 &  750 &  67.01 \\
+		220 & 177 & 97.67 & 150 &  720 &  58.70 \\
+		\bottomrule
+		\end{tabular}
 	\caption{Messung der Bild- und Gegenstandsweiten $b_i$ und $g_i$, sowie die daraus berechneten Brennweiten.}
-	%\label{}
+	\label{tab:M1}
 \end{table}
+Für die berechnete Brennweite ergibt sich ein Wert von 
+\begin{equation}
+	f = dsahjkdaskhj\pm kldasasdkle
+\end{equation}
+Dies weicht von der Herstellerangabe um \# ab, die Standardabweichung zeigt eine starke Schwankung an.
 
+\subsection{Methode nach Bessel}
+Die Ergebnisse der Messung nach dem Bessel-Verfahren sind in Tabelle \ref{tab:M2} aufgetragen.
 \begin{table}
 	\centering
 	\sisetup{table-format=3.2}
 	\begin{tabular}{S S S S S S S }
 	\toprule
 	%\multicolumn{3}{c}{f_1=100\,\si{\milli\meter}} & \multicolumn{3}{c}{f_2=50\,\si{\milli\meter}} \\
-{$e/\:\si{\milli{\meter}}$} & {$g_1/\:\si{\milli{\meter}}$} & {$f_1/\:\si{\milli{\meter}}$} & {$g_2/\:\si{\milli{\meter}}$}  & {$b_2/\:\si{\milli{\meter}}$} & {$f_2/\:\si{\milli{\meter}}$}\\	
-\midrule
-450 & 14.4 & 30.6 & 112.36 & 14.2 & 30.8 & 112.35 \\
-500 & 13.4 & 36.6 & 124.73 & 13.5 & 36.5 & 124.74 \\
-550 & 12.7 & 42.3 & 137.10 & 12.7 & 42.3 & 137.10 \\
-600 & 12.2 & 47.8 & 149.47 & 12.3 & 47.7 & 149.48 \\
-650 & 11.9 & 53.1 & 161.85 & 12.0 & 53.0 & 161.85 \\
-700 & 11.8 & 48.2 & 174.53 & 11.7 & 58.3 & 174.24 \\
-750 & 11.6 & 73.4 & 186.23 & 11.5 & 73.5 & 186.22 \\
-800 & 11.4 & 68.8 & 198.98 & 11.6 & 68.8 & 198.99 \\
-850 & 11.4 & 73.6 & 211.36 & 11.4 & 73.6 & 211.36 \\
-900 & 11.3 & 78.7 & 223.74 & 11.3 & 78.8 & 223.73 \\
-	\bottomrule
-\end{tabular}
+		{$e/\:\si{\milli{\meter}}$} & {$g_1/\:\si{\milli{\meter}}$} & {$b_1/\:\si{\milli{\meter}}$} & {$f_1/\:\si{\milli{\meter}}$} & {$g_2/\:\si{\milli{\meter}}$}  & {$b_2/\:\si{\milli{\meter}}$} & {$f_2/\:\si{\milli{\meter}}$}\\	
+		\midrule
+		450 & 14.4 & 30.6 & 112.36 & 14.2 & 30.8 & 112.35 \\
+		500 & 13.4 & 36.6 & 124.73 & 13.5 & 36.5 & 124.74 \\
+		550 & 12.7 & 42.3 & 137.10 & 12.7 & 42.3 & 137.10 \\
+		600 & 12.2 & 47.8 & 149.47 & 12.3 & 47.7 & 149.48 \\
+		650 & 11.9 & 53.1 & 161.85 & 12.0 & 53.0 & 161.85 \\
+		700 & 11.8 & 48.2 & 174.53 & 11.7 & 58.3 & 174.24 \\
+		750 & 11.6 & 73.4 & 186.23 & 11.5 & 73.5 & 186.22 \\
+		800 & 11.4 & 68.8 & 198.98 & 11.6 & 68.8 & 198.99 \\
+		850 & 11.4 & 73.6 & 211.36 & 11.4 & 73.6 & 211.36 \\
+		900 & 11.3 & 78.7 & 223.74 & 11.3 & 78.8 & 223.73 \\
+			\bottomrule
+		\end{tabular}
 	\caption{Messung der Bild- und Gegenstandsweiten $b_i$ und $g_i$ nach Bessel in Abhängigkeit vom Abstand $e$.}
-	%\label{}
+	\label{tab:M2}
 \end{table}
+Für die berechnete Brennweite ergibt sich ein Wert von 
+\begin{equation}
+	f = dsahjkdaskhj\pm kldasasdkle
+\end{equation}
+Dies weicht von der Herstellerangabe um \# ab.
+Das $b$-$g$-Diagramm \ref{fig:bgdiagramm} zeigt dadurch, dass sich die Linien auf einem nicht punktförmigen Gebiet untereinander schneiden, starke Unsicherheit der Messergebnisse an.
 
+Die Ergebnisse der Messung mit einfarbigem Licht sind in den Tabellen \ref{tab:M2a} und \ref{tab:M2b} aufgetragen.
+Die ermittelten Brennweiten betragen
+\begin{align}
+	f_\text{Rot} &= dsahjkdaskhj\pm kldasasdkle\\
+	f_\text{Blau} &= dsahjkdaskhj\pm kldasasdkle
+\end{align}
+und zeigen damit die Abhängigkeit der Brechung von der Wellenlänge des Lichtes.
 \begin{table}
 	\centering
 	\sisetup{table-format=3.2}
 	\begin{tabular}{S S S S S S S }
 	\toprule
-{$e/\:\si{\milli{\meter}}$} & {$g_{1\mathup{r}}/\:\si{\milli{\meter}}$} & {$b_{1\mathup{r}}/\:\si{\milli{\meter}}$} & {$f_{1\mathup{r}}/\:\si{\milli{\meter}}$} & {$g_{2\mathup{r}}/\:\si{\milli{\meter}}$} & {$b_{2\mathup{r}}/\:\si{\milli{\meter}}$} & {$f_{2\mathup{r}}/\:\si{\milli{\meter}}$} \\	
-\midrule
-50 & 143 & 307 & 111.88 & 306 & 144 & 111.89  \\
-60 & 126 & 424 & 113.00 & 424 & 126 & 113.00 \\
-70 & 118 & 532 & 114.38 & 531 & 119 & 114.38 \\
-80 & 117 & 633 & 115.82 & 636 & 117 & 115.82 \\
-90 & 115 & 735 & 115.45 & 739 & 111 & 115.45 \\
-	\bottomrule
-\end{tabular}
-	\caption{Messung der Bild- und Gegenstandsweiten $b_{i\mathup{r}}$ und $g_{i\mathup{r}}$ von rotem Licht nach Bessel in Abhängigkeit vom Abstand $e$.}
+		{$e/\:\si{\milli{\meter}}$} & {$g_{1\mathup{r}}/\:\si{\milli{\meter}}$} & {$b_{1\mathup{r}}/\:\si{\milli{\meter}}$} & {$f_{1\mathup{r}}/\:\si{\milli{\meter}}$} & {$g_{2\mathup{r}}/\:\si{\milli{\meter}}$} & {$b_{2\mathup{r}}/\:\si{\milli{\meter}}$} & {$f_{2\mathup{r}}/\:\si{\milli{\meter}}$} \\	
+		\midrule
+		50 & 143 & 307 & 111.88 & 306 & 144 & 111.89  \\
+		60 & 126 & 424 & 113.00 & 424 & 126 & 113.00 \\
+		70 & 118 & 532 & 114.38 & 531 & 119 & 114.38 \\
+		80 & 117 & 633 & 115.82 & 636 & 117 & 115.82 \\
+		90 & 115 & 735 & 115.45 & 739 & 111 & 115.45 \\
+			\bottomrule
+		\end{tabular}
+			\caption{Messung der Bild- und Gegenstandsweiten $b_{i\mathup{r}}$ und $g_{i\mathup{r}}$ von rotem Licht nach Bessel in Abhängigkeit vom Abstand $e$.}
+			\label{tab:M2a}
 \end{table}
 
 \begin{table}
-	\centering
-	\sisetup{table-format=3.2}
-	\begin{tabular}{S S S S S S S}
-	\toprule
-{$e/\:\si{\milli{\meter}}$} & {$g_{1\mathup{b}}/\:\si{\milli{\meter}}$} & {$b_{1\mathup{b}}/\:\si{\milli{\meter}}$} & {$f_{1\mathup{b}}/\:\si{\milli{\meter}}$} &{$g_{2\mathup{b}}/\:\si{\milli{\meter}}$}  & {$b_{2\mathup{b}}/\:\si{\milli{\meter}}$} & {$f_{2\mathup{b}}/\:\si{\milli{\meter}}$}\\	
-\midrule
-50 & 366 & 134 & 97.15 & 132 & 368 & 97.15 \\
-60 & 477 & 123 & 97.19 & 122 & 478 & 97.19\\
-70 & 782 & 118 & 15.63 & 116 & 784 & 15.63\\
-80 & 784 & 116 & 58.88 & 114 & 786 & 58.89\\
-90 & 788 & 112 & 97.31 & 111 & 789 & 97.31\\
-	\bottomrule
-\end{tabular}
-	\caption{Messung der Bild- und Gegenstandsweiten $b_{i\mathup{b}}$ und $g_{i\mathup{b}}$ von blauem Licht nach Bessel in Abhängigkeit vom Abstand $e$.}
+		\centering
+		\sisetup{table-format=3.2}
+		\begin{tabular}{S S S S S S S}
+		\toprule
+			{$e/\:\si{\milli{\meter}}$} & {$g_{1\mathup{b}}/\:\si{\milli{\meter}}$} & {$b_{1\mathup{b}}/\:\si{\milli{\meter}}$} & {$f_{1\mathup{b}}/\:\si{\milli{\meter}}$} &{$g_{2\mathup{b}}/\:\si{\milli{\meter}}$}  & {$b_{2\mathup{b}}/\:\si{\milli{\meter}}$} & {$f_{2\mathup{b}}/\:\si{\milli{\meter}}$}\\	
+			\midrule
+			50 & 366 & 134 & 97.15 & 132 & 368 & 97.15 \\
+			60 & 477 & 123 & 97.19 & 122 & 478 & 97.19\\
+			70 & 782 & 118 & 15.63 & 116 & 784 & 15.63\\
+			80 & 784 & 116 & 58.88 & 114 & 786 & 58.89\\
+			90 & 788 & 112 & 97.31 & 111 & 789 & 97.31\\
+			\bottomrule
+		\end{tabular}
+		\caption{Messung der Bild- und Gegenstandsweiten $b_{i\mathup{b}}$ und $g_{i\mathup{b}}$ von blauem Licht nach Bessel in Abhängigkeit vom Abstand $e$.}
+		\label{tab:M2b}
 \end{table}
 
-
-
-
-
+\subsection{Methode nach Abbe}
 \begin{table}
 	\centering
 	\sisetup{table-format=3.2}
 	\begin{tabular}{S S S S}
 	\toprule
- {$g'/\:\si{\milli{\meter}}$} & {$b'/\:\si{\milli{\meter}}$} & {$B/\:\si{\milli{\meter}}$} & {$V/\:\si{\milli{\meter}}$}\\	
-\midrule
-200 & 790 & 80 & 2.67\\
-250 & 551 & 44 & 1.47\\
-300 & 480 & 31 & 1.03\\
-350 & 416 & 25 & 0.83\\
-400 & 398 & 20 & 0.67\\
-450 & 380 & 17 & 0.57\\
-500 & 370 & 15 & 0.50\\
-550 & 346 & 13 & 0.43\\
-600 & 348 & 11 & 0.37\\
-650 & 336 & 11 & 0.37\\
+		 {$g'/\:\si{\milli{\meter}}$} & {$b'/\:\si{\milli{\meter}}$} & {$B/\:\si{\milli{\meter}}$} & {$V/\:\si{\milli{\meter}}$}\\	
+		\midrule
+		200 & 790 & 80 & 2.67\\
+		250 & 551 & 44 & 1.47\\
+		300 & 480 & 31 & 1.03\\
+		350 & 416 & 25 & 0.83\\
+		400 & 398 & 20 & 0.67\\
+		450 & 380 & 17 & 0.57\\
+		500 & 370 & 15 & 0.50\\
+		550 & 346 & 13 & 0.43\\
+		600 & 348 & 11 & 0.37\\
+		650 & 336 & 11 & 0.37\\
 	\bottomrule
-\end{tabular}
+	\end{tabular}
 	\caption{Messwerte zur Bestimmung der Brennweite des Linsensystems nach \textsc(abbe).}
 \end{table}

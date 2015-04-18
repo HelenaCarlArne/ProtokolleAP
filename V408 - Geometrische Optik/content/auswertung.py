@@ -56,7 +56,7 @@ m_1 = -b1 / g1
 
 i = 1
 
-# Ein Geradenplot wird außerhalb der Schleife durchgeführt, um das Label für die Legende zu setzen!
+# Ein Geradenplot wird ausserhalb der Schleife durchgefuehrt, um das Label fuer die Legende zu setzen!
 I = linspace(0 , g1[1], 2)
 plot(I, g(I,m_1[1],b1[1]), 'b', label = 'Linse 1 ')
 
@@ -89,7 +89,7 @@ m_2 = -b2 / g2
 
 i = 1
 
-# Ein Geradenplot wird außerhalb der Schleife durchgeführt, um das Label für die Legende zu setzen!
+# Ein Geradenplot wird ausserhalb der Schleife durchgefuehrt, um das Label fuer die Legende zu setzen!
 I = linspace(0 , g2[2], 2)
 plot(I, g(I,m_2[2],b2[2]), 'b', label = 'Linse 1 ')
 
@@ -127,7 +127,7 @@ print('Brennweite Messung2',f2,'/m')
 #	MESSUNG3 - BESSEL	#
 #################################
 
-####BERECHNUNG DER BRENNWEITEN FÜR WEISSES, ROTES UND BLAUES LICHT######
+####BERECHNUNG DER BRENNWEITEN FueR WEISSES, ROTES UND BLAUES LICHT######
 f31=(ew**2-(abs(g31-b31))**2)/(4*ew)
 
 f31 = ufloat(np.mean(f31),sem(f31))
@@ -152,12 +152,12 @@ print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
 print('')
 print('Messung 3 nach Bessel mit f=100 1/mm')
 print('')
-print('Brennweite für weisses Licht 1 f=',f31,'1/m')
-#print('Brennweite für weisses Licht 2 f=',f32,'1/m')
-print('Brennweite für rotes Licht 1 f=',f31r,'1/m')
-#print('Brennweite für rotes Licht 2 f=',f32r,'1/m')
-print('Brennweite für blaues Licht 1 f=',f31b,'1/m')
-#print('Brennweite für blaues Licht 2 f=',f32b,'1/m')
+print('Brennweite fuer weisses Licht 1 f=',f31,'1/m')
+#print('Brennweite fuer weisses Licht 2 f=',f32,'1/m')
+print('Brennweite fuer rotes Licht 1 f=',f31r,'1/m')
+#print('Brennweite fuer rotes Licht 2 f=',f32r,'1/m')
+print('Brennweite fuer blaues Licht 1 f=',f31b,'1/m')
+#print('Brennweite fuer blaues Licht 2 f=',f32b,'1/m')
 
 
 #################################

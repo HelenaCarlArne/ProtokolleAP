@@ -1,16 +1,27 @@
 \section{Durchführung}
 \label{sec:Durchfuehrung}
-\subsection{Brennweiten verschiedener Linsen}
-
-In diesem Versuchsteil solldie Linsengleichung verifiziert werden. Eine Linse bekannter Brennweite wird ausgemessen und die berechnete Brennweite mit der Herstellerangabe verglichen.
-Dazu wird ein Gegenstand "\emph{Pearl L}" auf einer optischen Bank vor einer Halogenlampe platziert.
- Zwischen Gegenstand und verschiebbarem Schirm wird eine Linse mit $f_1=100\,dpt$ gestellt.
- Anschließend wird die Bildweite $b_1$ für zehn verschiendene Gegenstandsweiten $g_1$ gemessen, in dem für jedes $g_1$ der Schirmabstand so variiert wird, dass der Gegenstand scharf abgebildet wird.
-Als nächstes wird eine Linse mit $f_2=50\,dpt$ genutzt und der vorhergehend beschriebene Versuchsablauf wiederholt.
+\subsection{Verifikation der Linsengleichung}
+Die Brennweite $f$ einer dünnen Linse wird mithilfe der Linsengleichung bestimmt und mit der Herstellerangabe verglichen.
+Dazu wird auf einer optischen Bank eine Halogenlampe, ein Gegenstand "\emph{Pearl L}",  eine Linse mit der Brennweite $f_1=\SI{100}{\milli\meter}$ und ein Schirm gestellt. \\
+Indem die Gegenstandsweite $g$ festgelegt und die Bildweite $b$ so variiert wird, dass der Gegenstand auf dem Schirm scharf abgebildet wird, wird die Bildweite $b_\text{i}$ für jeweils zehn verschiendene Gegenstandsweiten $g_\text{i}$ gemessen.
+Dies wird für eine Linse mit einer Brennweite von $f_2=\SI{50}{\milli\meter}$ wiederholt.
 
 \subsection{Brennweitenbestimmung nach \textsc{Bessel}}
+Die Messvorrichtung wird analog zum ersten Teil aufgebaut.
+Der Abstand \\$e=b+g$ zwischen Gegenstand und Schirm wird festgehalten und zur Abbildung eine Linse bekannter Brennweite $f$ benutzt, wobei 
+\begin{equation}
+	e\ge4f
+\end{equation}
+gelten muss.
+Für zehn verschiedene Abstände $e_i$ werden jeweils die beiden Linsenpositionen gesucht, die ein scharfes Bild erzeugen. 
+Die beiden Wertepaare $(b_i,g_i)$ pro Abstand $e_i$ werden aufgenommen.
 
-Nun wird bei der Linse mit $f=100\,dpt$ der Abstand $e=b+g$ zwischen Gegenstand und Schirm fest gehalten. 
-Für zehn verschiedene $g_2$ werden zwei Linsenpositionen gesucht, die ein scharfes Bild erzeugen. 
+\subsection{Bestimmung der Lage von Hauptachsen nach \textsc{Abbe}}
+Die Messvorrichtung wird analog zum ersten Teil aufgebaut, zusätzlich wird eine Zerstreuungslinse unmittelbar vor der Sammellinse aufgebaut.
+Die Zerstreuungslinse wird zum Gegenstand gerichtet, das Linsenpaar wird als ein festes Linsensystem betrachtet und der Mittelpunkt der Sammellinse als Messpunkt $A$ betrachtet.
 
-\subsection{Brennweitenbestimmung nach \textsc{Abbe}}
+Ausgehend vom Messpunkt $A$ werden die Gegenstands- und Bildweitenpaar ($b'$,$g'$) sowie die Vergrößerung $V$ des Gegenstandes bei scharfer Abbildung gemessen. Mithilfe der Gleichungen \eqref{eq:abbe} kann die Lage der Hauptachsen $h$ und $h'$ ausgehend vom Messpunkt $A$ bestimmt werden.
+Hierzu werden in einem Diagramm
+$g′$ gegen $(1+\frac{1}{V})$ und $b′$ gegen $(1+V)$ aufgetragen und mittels Regression die Brennweite $f$ und die relativen Lagen $h$ und $h'$ bestimmt.
+
+\newpage

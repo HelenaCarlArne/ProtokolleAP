@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.4 $
+% $ biblatex bbl format version 2.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \sortlist{nty}{nty}
+  \sortlist{entry}{nty}
     \entry{matplotlib}{article}{}
       \name{labelname}{1}{}{%
         {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
@@ -32,7 +32,6 @@
       \strng{namehash}{945db4bbb079217b43c830150ebb3811}
       \strng{fullhash}{945db4bbb079217b43c830150ebb3811}
       \field{sortinit}{H}
-      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
       \field{labeltitle}{Matplotlib: A 2D Graphics Environment}
       \field{addendum}{Version 1.3.1}
       \field{journaltitle}{Computing in Science and Engineering}
@@ -61,7 +60,6 @@
       \strng{namehash}{6161d5ffac903d9c99af53f45c09a00f}
       \strng{fullhash}{0fc4e01109f422119afc29f3251df541}
       \field{sortinit}{J}
-      \field{sortinithash}{f75b22df8c340a961dce37019e29107f}
       \field{labeltitle}{{SciPy}: Open source scientific tools for {Python}}
       \field{addendum}{Version 0.14.0}
       \field{title}{{SciPy}: Open source scientific tools for {Python}}
@@ -80,7 +78,6 @@
       \strng{namehash}{fd5e607cc043da9b40442508c133a26c}
       \strng{fullhash}{fd5e607cc043da9b40442508c133a26c}
       \field{sortinit}{L}
-      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
       \field{labeltitle}{Uncertainties: a Python package for calculations with uncertainties}
       \field{addendum}{Version 2.4.5}
       \field{title}{Uncertainties: a Python package for calculations with uncertainties}
@@ -101,7 +98,6 @@
       \strng{namehash}{00f2976ade6b1d16d78161a1f190716c}
       \strng{fullhash}{00f2976ade6b1d16d78161a1f190716c}
       \field{sortinit}{O}
-      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
       \field{labeltitle}{Python for Scientific Computing}
       \field{addendum}{Version 1.8.1}
       \field{journaltitle}{Computing in Science and Engineering}
@@ -124,7 +120,6 @@
       \strng{namehash}{eff56c5d323af803bc67f548d1618fb3}
       \strng{fullhash}{eff56c5d323af803bc67f548d1618fb3}
       \field{sortinit}{T}
-      \field{sortinithash}{9378dd666f3c24d81538df53aa99e23d}
       \field{labeltitle}{GIMP: GNU Image Manipulation Program}
       \field{addendum}{Version 2.8.10}
       \field{title}{GIMP: GNU Image Manipulation Program}
@@ -133,6 +128,7 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{skript}
 \endrefsection
 \endinput
 
