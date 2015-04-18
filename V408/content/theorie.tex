@@ -1,0 +1,63 @@
+\section{Ziel}
+\label{sec:Ziel}
+
+Versuchsziel ist es Brennweiten verschiedener Linsen zunächst mit Hilfe der Linsengleichung und anschließend mit der Methode nach \textsc{Bessel} zu berechnen. 
+Außerdem werden Brennweite und Lage der Hauptebenen eines Linsensystems nach \textsc{Abbe} bestimmt.
+
+\section{Theorie}
+\label{sec:Theorie}
+
+Nach der geometrischen Optik, die immer gilt wenn alle Abmessungen einer Apparatur groß gegenüber der Wellenlänge sind, breitet sich Licht in Form von Strahlen aus. 
+Ändert sich das Medium und damit die Dichte, in dem sich der Strahl ausbreitet, wird er nach dem \textsc{Snellius}'schen Brechungsgesetz gebrochen. 
+Meist genutztes optisches Element ist die Linse, deren Material die Dichte von Luft überschreitet. 
+Je nach Form der Linsen weisen diese verschiedene Eigenschaften auf. \emph{Sammellinsen} bündeln parallel eintreffende Lichtstrahlen im Brennpunkt und lassen ein reelles, sich hinter der Linse befindliches, Bild entstehen. Dabei sind der Abstand zwischen Gegenstand und Linse -- Gegenstandsweite $g$ -- und Abstand zwischen Linse und Schirm -- Bildweite $b$ -- positive Größen. 
+\emph{Zerstreuungslinsen} mit negativer Gegenstands-, Bild- und Brennweite erschaffen ein virtuelles Bild, welches vor der Linse liegt. Zeichnerisch wird der Strahlengang durch Parallel-, Brennpunkts- und Mittelpunktsstrahl dargestellt.
+Durchquert ein Lichtstrahl eine dünne Linse wird er an der Mittelebene gebrochen.
+Die Brechkraft $D$, der Kehrwert der Brennweite mit der Einheit $dpt=\frac{1}{m}$, kann für dünne Linsen berechnet werden mit der \emph{Linsengleichung}
+
+\begin{equation}
+	D=\frac{1}{f}=\frac{1}{b}+\frac{1}{g}.
+\end{equation}
+
+Bei einer dicken Linse passiert die Brechung an zwei Hauptebenen $H$ und $H'$, da der Strahl hier einen weiteren Weg im Medium zurücklegen muss, als es bei dünnen Linsen der Fall ist.
+ Relativ zu den Hauptebenen werden hier $b$,$b'$ und $g$, $g'$ bestimmt. 
+Über das \emph{Abbildungsgesetz} 
+
+\begin{equation}
+	V=\frac{B}{G}=\frac{b}{g}
+\end{equation}
+
+mit Bildgröße $B$ und Gegenstandsgröße $G$ kann die Vergrößerung $V$ des Bildes bestimmt werden.
+Natürlich treten bei der Brechung \emph{Abbildungsfehler} auf.
+Zum Beispiel gilt die Nährung der geometrischen Optik nur für achsennahe Strahlen -- achsenferne Strahlen befinden sich von der optischen Achse eines Systems weiter entfernt. 
+Deswegen werden sie stärker gebrochen und besizten einen näher an der Linse liegenden Brennpunkt. Dieses Phänomen wird \emph{sphärische Aberration} genannt. 
+Neben dieser tritt auch \emph{chromatische Aberration} häufig auf. 
+Wird nicht-monochromatisches Licht durch eine Linse geschickt werden geringe Wellenlägen stärker gebrochen als größere Wellenlängen. 
+Daher liegt bespielsweise der Brennpunkt roten Lichtes weiter von der Linse entfernt als der Brennpunkt blauen Lichtes.
+
+\subsection{Brennweitenbestimmung mit der Methode nach \textsc{Bessel}}
+
+Ist der Abstand $e=g+b$ zwischen Gegenstand und Schirm konstant lassen sich zwei Linsenpositionen finden, die ein scharfes Bild erzeugen. Dabei können Gegenstands- und Bildweite symmetrisch vertauscht werden. 
+Es gilt
+
+\begin{equation}
+	b_1=g2 \text{und} b_2=g_1.
+\end{equation}
+
+Ist außerdem der Abstand $d=g-b$ zwischen beiden Linsenpostitionen bekannt kann die Brennweite nach
+
+\begin{equation}
+	f=\frac{e²-d²}{4e}
+\end{equation}
+
+berechnet werden.
+
+\subsection{Brennweitenbestimmung mit der Methode nach \textsc{Abbe}}
+
+Über die Methode von \textsc{Abbe} können dicke Linsen oder auch Linsensysteme auf die Lage der Hauptachsen $H$, $H'$ und Brennweite $f$ untersucht werden. 
+Für die Abstände gelten die Beziehungen
+
+\begin{equation}
+	g'=g+h=f\cdot\left(1+\frac{1}{V}\right)+h,\qquad
+	b'=b+h'=f\cdot\left(1+V\right)+h'.
+\end{equation}
