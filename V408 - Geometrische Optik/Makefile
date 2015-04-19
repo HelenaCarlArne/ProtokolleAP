@@ -1,6 +1,6 @@
 all: Abgabe.pdf
 	
-Abgabe.pdf: Bilder/* Tabellen/* content/*.tex ../Allgemein/header.tex main.tex | build
+Abgabe.pdf: Bilder/* Tabellen/* build/lit.bib content/*.tex ../Allgemein/header.tex main.tex | build
 	TEXINPUTS=build:.: lualatex --output-directory=build --halt-on-error main.tex
 	mv build/main.pdf Abgabe.pdf
 	BIBINPUTS=build:. biber build/main.bcf

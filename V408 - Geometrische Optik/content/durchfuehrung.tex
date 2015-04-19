@@ -1,27 +1,29 @@
 \section{Durchführung}
 \label{sec:Durchfuehrung}
 \subsection{Verifikation der Linsengleichung}
+\label{sec:Durchfuehrung1}
 Die Brennweite $f$ einer dünnen Linse wird mithilfe der Linsengleichung bestimmt und mit der Herstellerangabe verglichen.
-Dazu wird auf einer optischen Bank eine Halogenlampe, ein Gegenstand "\emph{Pearl L}",  eine Linse mit der Brennweite $f_1=\SI{100}{\milli\meter}$ und ein Schirm gestellt. \\
+Dazu wird auf einer optischen Bank eine Halogenlampe, ein Gegenstand "\emph{Pearl L}",  eine Linse mit der Brennweite $\tilde{f}_1=\SI{100}{\milli\meter}$ und ein Schirm gestellt. \\
 Indem die Gegenstandsweite $g$ festgelegt und die Bildweite $b$ so variiert wird, dass der Gegenstand auf dem Schirm scharf abgebildet wird, wird die Bildweite $b_\text{i}$ für jeweils zehn verschiendene Gegenstandsweiten $g_\text{i}$ gemessen.
-Um die Messgenauigkeit graphisch darzustellen, werden in einem $b$-$g$-Diagramm die ermittelten Werte eingezeichnet und linear verbunden.
-Dies wird für eine Linse mit einer Brennweite von $f_2=\SI{50}{\milli\meter}$ wiederholt.
+Um die Messgenauigkeit graphisch darzustellen, werden in einem $g$-$b$-Diagramm die ermittelten Werte als ($0$,$b_i$) und ($g_i$,$0$) mit $i\in \{0,...,10\}$ eingezeichnet und linear verbunden.
+Dies wird für eine Linse mit einer Brennweite von $\tilde{f}_2=\SI{50}{\milli\meter}$ wiederholt.
 
 
-\subsection{Methode nach \textsc{Bessel}}
+\subsection{Methode nach \texorpdfstring{\textsc{Bessel}}{Bessel}}
+\label{sec:Durchfuehrung2}
 Die Messvorrichtung wird analog zum ersten Teil aufgebaut.
-Der Abstand \\$e=b+g$ zwischen Gegenstand und Schirm wird festgehalten und zur Abbildung eine Linse bekannter Brennweite $f$ benutzt, wobei 
-\begin{equation}
-	e\ge4f
-\end{equation}
-gelten muss.
+Der Abstand \\$e=b+g$ zwischen Gegenstand und Schirm wird festgehalten und zur Abbildung eine Linse bekannter Brennweite $\tilde{f}_1=\SI{100}{\milli\meter}$ benutzt, wobei $e\ge4\tilde{f}$ gelten muss.
 Für zehn verschiedene Abstände $e_i$ werden jeweils die beiden Linsenpositionen gesucht, die ein scharfes Bild erzeugen. 
-Die beiden Wertepaare $(b_i,g_i)$ pro Abstand $e_i$ werden aufgenommen.
+Die beiden Wertepaare $(b_i,g_i)$ pro Abstand $e_i$ werden aufgenommen und der Vorgang für weitere Abstände $e_i$ wiederholt, sodass insgesamt 20 Wertepaare mit je zwei Projektionsweiten aufgenommen werden.
 
-\subsection{Methode nach \textsc{Abbe}}
-Die Messvorrichtung wird analog zum ersten Teil aufgebaut, zusätzlich wird eine Zerstreuungslinse unmittelbar vor der Sammellinse aufgebaut.
-Die Zerstreuungslinse wird zum Gegenstand gerichtet, das Linsenpaar wird als ein festes Linsensystem betrachtet und der Mittelpunkt der Sammellinse als Messpunkt $A$ betrachtet.
+Mit der Sammellinse $\tilde{f}_1$ wird im Anschluss das Verfahren für blaues und für rotes Licht wiederholt. 
+Hierzu werden nebst der Halogenlampe Farbfilter verwendet.
 
-Ausgehend vom Messpunkt $A$ werden die Gegenstands- und Bildweitenpaar ($b'$,$g'$) sowie die Vergrößerung $V$ des Gegenstandes bei scharfer Abbildung gemessen. Mithilfe der Gleichungen \eqref{eq:abbe} kann die Lage der Hauptachsen $h$ und $h'$ ausgehend vom Messpunkt $A$ bestimmt werden.
-Hierzu werden in einem Diagramm
-$g′$ gegen $(1+\frac{1}{V})$ und $b′$ gegen $(1+V)$ aufgetragen und mittels Regression die Brennweite $f$ und die relativen Lagen $h$ und $h'$ bestimmt.
+\subsection{Methode nach \texorpdfstring{\textsc{Abbe}}{Abbe}}
+\label{sec:Durchfuehrung3}
+Die Messvorrichtung wird analog zum ersten Teil aufgebaut, zusätzlich wird eine Zerstreuungslinse  $\tilde{f}_3=\SI{-100}{\milli\meter}$ zwischen Sammellinse und Gegenstand gesetzt.
+Der Abstand zwischen den Linsen ist kleinstmöglich zu wählen.
+Das Linsenpaar wird als ein festes Linsensystem betrachtet und der Mittelpunkt der Sammellinse als Messpunkt $A$ betrachtet.
+
+Ausgehend vom Messpunkt $A$ wird das Projektionsweitenpaar ($b'$, $g'$) sowie die Vergrößerung $V$ des Gegenstandes bei scharfer Abbildung gemessen. Mithilfe der Gleichungen \eqref{eq:abbe} kann die relativen Lage $h$ und $h'$ der Hauptachsen bezogen auf den Messpunkt $A$ bestimmt werden.
+Hierzu werden in einem Diagramm $g′$ gegen $\bigl(1+\frac{1}{V}\bigr)$ und $b′$ gegen $(1+V)$ aufgetragen und mittels linearer Regression die Gesamtbrennweite $f$ und die relativen Lagen $h$ und $h'$ bestimmt.
