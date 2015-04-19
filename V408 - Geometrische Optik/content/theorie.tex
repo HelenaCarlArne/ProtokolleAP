@@ -41,7 +41,7 @@ Dadurch liegt der Brennpunkt der achsenfernen Strahlen nicht auf dem Brennpunkt 
 Ist die optische Dichte von dem Linsenmaterial abhängig von der Wellenlänge des Lichtes, kommt es zur \emph{chromatischen Aberration}. 
 Wird nicht-monochromatisches Licht durch eine Linse geschickt, liegen die Brennpunkte der einzelnen Lichtfarben nicht übereinander, wodurch ein unscharfes Bild entsteht.
 
-\subsection{Methode nach \texorpdfstring{Bessel}{\textsc{Bessel}}}
+\subsection{Brennweitenbestimmung nach \texorpdfstring{\textsc{Bessel}}{Bessel}}
 Ist der Abstand $e=g+b$ zwischen Gegenstand und Schirm konstant und größer als die vierfache Brennweite $f$ der Linse, lassen sich zwei Linsenpositionen finden, die ein scharfes Bild erzeugen. 
 Dabei sind die zwei paarweise gefundenen Gegenstands- und Bildweiten symmetrisch, es gilt
 \begin{equation}
@@ -54,22 +54,35 @@ Ist außerdem der Abstand $d=g-b$ zwischen beiden Linsenpostitionen bekannt, kan
 \end{equation}
 berechnet werden.
 
-\subsection{Methode nach \texorpdfstring{Abbe}{\textsc{Abbe}}}
-Über die Methode von \textsc{Abbe} können dicke Linsen oder Linsensysteme auf die Lage der Hauptachsen $H$, $H'$ und Brennweite $f$ untersucht werden. 
-Es gelten die Beziehungen
-\begin{subequations}
-	\begin{equation}
-	g'=g+h=f\cdot(1+\frac{1}{V})+h
-	\end{equation}
-	\begin{equation}
-	b'=b+h'=f\cdot(1+V)+h',
-	\end{equation}
-	\label{eq:abbe}
-\end{subequations}
+\subsection{Bestimmung der Lage von Hauptachsen nach \texorpdfstring{\textsc{Abbe}}{Abbe}}
+\begin{figure}[h!]
+	\framebox{
+	\begin{minipage}[r]{0.6\textwidth}
+		Über die Methode von \textsc{Abbe} können dicke Linsen oder Linsensysteme auf die Lage der Hauptachsen $H$, $H'$ und Brennweite $f$ untersucht werden. 
+		Es gelten die Beziehungen
+		\begin{subequations}
+			\begin{equation}
+			g'=g+h=f\cdot(1+\frac{1}{V})+h
+			\end{equation}
+			\begin{equation}
+			b'=b+h'=f\cdot(1+V)+h',
+			\end{equation}
+			\label{eq:abbe}
+		\end{subequations}
+	\end{minipage}}
+	\framebox{
+	\begin{minipage}[l]{0.4\textwidth}
+		\hfill
+		\includegraphics[width=\textwidth]{Bilder/dickelinseHELENA.png}
+		\caption{Unterschrift}
+		\label{fig:label}
+	\end{minipage}}
+\end{figure}
 welche bei bekannter Vergrößerung $V$ sowie Bild- und Gegenstandsweiten $g'$ und $b'$ bezogen auf einen festen Punkt des Linsensystems, Aussagen über die Lage der Hauptachsen zulassen. 
-\begin{figure}[p]
+\vspace{1cm}
+\begin{figure}[hb]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Bilder/Bildkonstruktionen.pdf}
+	\includegraphics[width=0.55\textwidth]{Bilder/Bildkonstruktionen.pdf}
 	\caption{Strahlengänge verschiedener Linsen. \cite{skript}}
 	\label{fig:strahlengaenge}
 \end{figure}

@@ -12,17 +12,17 @@ Die Ergebnisse der ersten Messung sind in Tabelle \ref{tab:M1} aufgetragen.
 			%\multicolumn{3}{c}{f_1=100\,\si{\milli\meter}} & \multicolumn{3}{c}{f_2=50\,\si{\milli\meter}} \\
 			{$g_1/\:\si{\milli{\meter}}$} & {$b_1/\:\si{\milli{\meter}}$} & {$f_1/\:\si{\milli{\meter}}$} \\	
 			\midrule
-			120 & 525 & 98.09\\
-			130 & 390 & 98.64\\
-			140 & 319 & 97.59\\
-			150 & 277 & 96.96\\
-			160 & 251 & 95.63\\
+			120 & 525 & 97.67\\
+			130 & 390 & 97.50\\
+			140 & 319 & 97.30\\
+			150 & 277 & 97.31\\
+			160 & 251 & 97.71\\
 			170 & 227 & 97.20\\
-			180 & 204 & 97.71\\
-			190 & 198 & 97.31\\
-			200 & 192 & 97.30\\
-			210 & 186 & 97.50\\
-			220 & 177 & 97.67\\
+			180 & 204 & 95.63\\
+			190 & 198 & 96.96\\
+			200 & 192 & 97.59\\
+			210 & 186 & 98.64\\
+			220 & 177 & 98.09\\
 			\bottomrule
 			\end{tabular}
 	\end{minipage}
@@ -34,16 +34,16 @@ Die Ergebnisse der ersten Messung sind in Tabelle \ref{tab:M1} aufgetragen.
 			%\multicolumn{3}{c}{f_1=100\,\si{\milli\meter}} & \multicolumn{3}{c}{f_2=50\,\si{\milli\meter}} \\
 			{$g_2/\:\si{\milli{\meter}}$} & {$b_2/\:\si{\milli{\meter}}$} & {$f_2/\:\si{\milli{\meter}}$}\\	
 			\midrule
-				60  & 2700 & 124.14 \\
-				70  & 1570 & 117.98 \\
-				80  & 1210 & 111.22 \\
-				90  & 1040 & 104.35 \\
-				100 &  920 &  97.65 \\
-				110 &  870 &  90.20 \\
-				120 &  800 &  82.83 \\
-				130 &  770 &  75.04 \\
-				140 &  750 &  67.01 \\
-				150 &  720 &  58.70 \\
+				60  & 2700 &  58.70 \\
+				70  & 1570 &  67.01 \\
+				80  & 1210 &  75.04 \\
+				90  & 1040 &  82.83 \\
+				100 &  920 &  90.20 \\
+				110 &  870 &  97.65 \\
+				120 &  800 & 104.35 \\
+				130 &  770 & 111.22 \\
+				140 &  750 & 117.98 \\
+				150 &  720 & 124.14 \\
 			\bottomrule
 			\end{tabular}
 		\end{minipage}
@@ -109,10 +109,14 @@ Der berechnete Mittelwert weicht von der Herstellerangabe $\tilde{f}=\SI{0.1}{\m
 
 Die Ergebnisse der Messung mit einfarbigem Licht sind in den Tabellen \ref{tab:M2a} und \ref{tab:M2b} aufgetragen.
 Die ermittelten Brennweiten betragens
-\begin{align}
-	f_\text{Rot} &= \SI{0.1141(7)}{\meter}\\
-	f_\text{Blau} &= \SI{0.073(16)}{\meter}
-\end{align}
+\begin{subequations}
+	\begin{equation}
+		f_\text{Rot} = \SI{0.1141(7)}{\meter}
+		\end{equation}
+		\begin{equation}
+		f_\text{Blau} = \SI{0.073(16)}{\meter}
+	\end{equation}
+\end{subequations}
 und zeigen damit die Abhängigkeit der Brechung von der Wellenlänge des Lichtes.
 \begin{table}[p]
 		\centering
@@ -150,11 +154,12 @@ und zeigen damit die Abhängigkeit der Brechung von der Wellenlänge des Lichtes
 \end{table}
 
 \subsection{Methode nach Abbe}
-\begin{table}[ht]
+\begin{table}[h]
 	\centering
 	\begin{tabular}{S[table-format=3.0] S[table-format=3.0] S[table-format=2.0] S[table-format=1.2]}
 	\toprule
-		 {$g'/\:\si{\milli{\meter}}$} & {$b'/\:\si{\milli{\meter}}$} & {$B/\:\si{\milli{\meter}}$} & {$V/\:\si{\milli{\meter}}$}\\	
+	\multicolumn{4}{c}{Linsensystem}\\
+		 {$g'/\:\si{\milli\meter}$} & {$b'/\:\si{\milli{\meter}}$} & {$B/\:\si{\milli{\meter}}$} & {$V/\:\si{\milli{\meter}}$}\\	
 		\midrule
 		200 & 790 & 80 & 2.67\\
 		250 & 551 & 44 & 1.47\\
@@ -169,4 +174,43 @@ und zeigen damit die Abhängigkeit der Brechung von der Wellenlänge des Lichtes
 	\bottomrule
 	\end{tabular}
 	\caption{Messwerte zur Bestimmung der Brennweite des Linsensystems nach Abbe.} %% Abbe
+	\label{tab:M3}
 \end{table}
+
+Die Linearisierung der Gleichungen
+\begin{subequations}
+\begin{equation}
+	\underbrace{g'}_{y_\text{lin}}=\underbrace{f}_{m_\text{lin}}\cdot\underbrace{\bigl(1+\frac{1}{V}\bigr)}_{x_\text{lin}}+\underbrace{h}_{b_\text{lin}}
+	\end{equation}
+	\begin{equation}
+	\underbrace{b'}_{y_\text{lin}}=\underbrace{f}_{m_\text{lin}}\cdot\underbrace{\bigl(1+V\bigr)}_{x_\text{lin}}+\underbrace{h'}_{b_\text{lin}}
+\end{equation}
+\end{subequations}
+ mit den Werten der Tabelle \ref{tab:M3} sind in den Abbildungen \ref{fig:abbe1},\ref{fig:abbe2},\ref{fig:abbe3} dargestellt.
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Abbe.pdf}
+	\caption{Unterschrift}
+	\label{fig:abbe1}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Abbe1.pdf}
+	\caption{Unterschrift}
+	\label{fig:abbe2}
+\end{figure}
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Abbe2.pdf}
+	\caption{Unterschrift}
+	\label{fig:abbe3}
+\end{figure}
+
+Die Regression mithilfe der Formeln \ref{eq:regress}
+ergibt 
+\begin{alignat}{3}
+	f_1 = \SI{183(5)}{\milli\meter} & \qquad&&f_2 = \SI{195(4)}{\milli\meter} \\
+	h_1 = \SI{55(14)}{\milli\meter} & \qquad&&f_2 = \SI{72(7)}{\milli\meter}
+\end{alignat}
+\input{content/linreg.tex}
