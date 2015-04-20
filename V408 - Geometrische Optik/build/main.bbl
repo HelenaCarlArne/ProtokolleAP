@@ -19,6 +19,25 @@
 
 \refsection{0}
   \sortlist{entry}{nty}
+    \entry{skript}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{labeltitle}{Versuch V408:Geometrische Optik}
+      \field{title}{Versuch V408:Geometrische Optik}
+      \field{urlday}{18}
+      \field{urlmonth}{04}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V408.pdf
+      \endverb
+    \endentry
     \entry{matplotlib}{article}{}
       \name{labelname}{1}{}{%
         {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
@@ -44,91 +63,7 @@
       \verb http://link.aip.org/link/?CSX/9/90/1
       \endverb
     \endentry
-    \entry{scipy}{misc}{}
-      \true{morelabelname}
-      \name{labelname}{3}{}{%
-        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \true{moreauthor}
-      \name{author}{3}{}{%
-        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{6161d5ffac903d9c99af53f45c09a00f}
-      \strng{fullhash}{0fc4e01109f422119afc29f3251df541}
-      \field{sortinit}{J}
-      \field{labeltitle}{{SciPy}: Open source scientific tools for {Python}}
-      \field{addendum}{Version 0.14.0}
-      \field{title}{{SciPy}: Open source scientific tools for {Python}}
-      \field{year}{2001}
-      \verb{url}
-      \verb http://www.scipy.org/
-      \endverb
-    \endentry
-    \entry{uncertainties}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{fd5e607cc043da9b40442508c133a26c}
-      \strng{fullhash}{fd5e607cc043da9b40442508c133a26c}
-      \field{sortinit}{L}
-      \field{labeltitle}{Uncertainties: a Python package for calculations with uncertainties}
-      \field{addendum}{Version 2.4.5}
-      \field{title}{Uncertainties: a Python package for calculations with uncertainties}
-      \verb{url}
-      \verb http://pythonhosted.org/uncertainties/
-      \endverb
-    \endentry
-    \entry{numpy}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{00f2976ade6b1d16d78161a1f190716c}
-      \strng{fullhash}{00f2976ade6b1d16d78161a1f190716c}
-      \field{sortinit}{O}
-      \field{labeltitle}{Python for Scientific Computing}
-      \field{addendum}{Version 1.8.1}
-      \field{journaltitle}{Computing in Science and Engineering}
-      \field{number}{3}
-      \field{title}{Python for Scientific Computing}
-      \field{volume}{9}
-      \field{year}{2007}
-      \field{pages}{10\bibrangedash 20}
-      \verb{url}
-      \verb http://link.aip.org/link/?CSX/9/10/1
-      \endverb
-    \endentry
-    \entry{gimp}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=eff56c5d323af803bc67f548d1618fb3}{Team}{T\bibinitperiod}{The\bibnamedelima GIMP}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=eff56c5d323af803bc67f548d1618fb3}{Team}{T\bibinitperiod}{The\bibnamedelima GIMP}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{eff56c5d323af803bc67f548d1618fb3}
-      \strng{fullhash}{eff56c5d323af803bc67f548d1618fb3}
-      \field{sortinit}{T}
-      \field{labeltitle}{GIMP: GNU Image Manipulation Program}
-      \field{addendum}{Version 2.8.10}
-      \field{title}{GIMP: GNU Image Manipulation Program}
-      \verb{url}
-      \verb http://www.gimp.org/
-      \endverb
-    \endentry
   \endsortlist
-  \missing{skript}
 \endrefsection
 \endinput
 

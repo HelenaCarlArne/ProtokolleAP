@@ -4,7 +4,7 @@
 Versuchsziel ist es, Brennweiten verschiedener Linsen sowohl mit Hilfe der Linsengleichung als auch mit der Methode nach \textsc{Bessel} zu berechnen. 
 Außerdem werden Brennweite und Lage der Hauptebenen eines Linsensystems mit der Methode nach \textsc{Abbe} bestimmt.
 \section{Theorie}
-\label{sec:Theorie}
+\label{sec:theorie}
 Nach der geometrischen Optik breitet sich Licht in Form von Strahlen aus. 
 Dies ist eine gültige Näherung, wenn alle Abmessungen einer Apparatur groß gegenüber der Wellenlänge des Lichtes sind. 
 Tritt ein Lichtstrahl in ein Medium mit anderer optischer Dichte, wird er nach dem \textsc{Snellius}'schen Brechungsgesetz gebrochen. 
@@ -17,23 +17,23 @@ Im Allgemeinen wird der Abstand zwischen Linsenmittelachse und Bild als \emph{Bi
 Beide Größen $b$, $g$ sind Projektionsweiten und sind bei Sammellinsen positiv.\\
 \emph{Zerstreuungslinsen} sind konkav gekrümmt und zerstreuen parallel auftreffende Lichtstrahlen. 
 Der virtuelle Schnittpunkt der Lichtstahlen, die als parallele Lichtstrahlen von der Linse zerstreut wurden, ist der virtuelle Brennpunkt der Linse.
-Bei Zerstreuungslinsen sind Projektions- und Brennweite negativ.
+Bei Zerstreuungslinsen sind Projektions- und Brennweite negativ.\\
+Anders als bei dünnen Linsen geschieht die Brechung bei einer dicken Linse an zwei Hauptebenen, $H$ und $H'$, da der Strahl einen weiteren Weg im Medium zurücklegt.
+Relativ zu den Hauptebenen sind, wie in Abbildung \ref{fig:strahlengaenge} erkennbar, $b$, $b'$ und $g$, $g'$ die kennzeichnenden Größen der Linse. 
 Der Strahlengang wird durch Parallel-, Brennpunkt- und Mittelpunktstrahl wie in Abbildung \ref{fig:strahlengaenge} dargestellt.
 
 Durchquert ein Lichtstrahl eine dünne Linse, wird er an der Mittelebene gebrochen.
 Die Brechkraft $D$ -- der Kehrwert der Brennweite $f$ mit der Einheit $ \mathrm{dpt}=\sfrac{1}{\si{\meter}}$ -- kann für dünne Linsen berechnet werden mit der \emph{Linsengleichung}
 \begin{equation}
 	D=\frac{1}{f}=\frac{1}{b}+\frac{1}{g}.
+	\label{eq:linsengleichung}
 \end{equation}
+\newpage
 Über das \emph{Abbildungsgesetz} 
 \begin{equation}
 	V=\frac{B}{G}=\frac{b}{g}
 \end{equation}
 mit Bildgröße $B$ und Gegenstandsgröße $G$ wird die Bildvergrößerung $V$ bestimmt.
-
-Anders als bei dünnen Linsen geschieht die Brechung bei einer dicken Linse an zwei Hauptebenen, $H$ und $H'$, da der Strahl einen weiteren Weg im Medium zurücklegt.
-Relativ zu den Hauptebenen sind, wie in Abbildung \ref{fig:strahlengaenge} erkennbar, $b$, $b'$ und $g$, $g'$ die kennzeichnenden Größen der Linse. 
-
 
 Es treten bei der Verwendung von Linsen \emph{Abbildungsfehler} auf. 
 Die Nährung der geometrischen Optik gilt nur für achsennahe Strahlen, achsenferne Strahlen befinden sich weit von der optischen Achse eines Systems entfernt und werden stärker gebrochen. 
@@ -42,7 +42,7 @@ Ist die optische Dichte von dem Linsenmaterial abhängig von der Wellenlänge de
 Wird nicht-monochromatisches Licht durch eine Linse geschickt, liegen die Brennpunkte der einzelnen Lichtfarben nicht übereinander, wodurch ein unscharfes Bild entsteht.
 
 \subsection{Brennweitenbestimmung nach \texorpdfstring{\textsc{Bessel}}{Bessel}}
-\label{sec:Theorie1}
+\label{sec:theorie1}
 Ist der Abstand $e=g+b$ zwischen Gegenstand und Schirm konstant und größer als die vierfache Brennweite $f$ der Linse, lassen sich zwei Linsenpositionen finden, die ein scharfes Bild erzeugen. 
 Dabei sind die zwei paarweise gefundenen Gegenstands- und Bildweiten symmetrisch, es gilt
 \begin{equation}
@@ -55,7 +55,7 @@ Mit der Differenz der Projektionsweiten $d= g-b$ gilt weiter
 \end{equation}
 
 \subsection{Bestimmung der Lage von Hauptachsen nach \texorpdfstring{\textsc{Abbe}}{Abbe}}
-\label{sec:Theorie2}
+\label{sec:theorie2}
 \begin{figure}[h!]
 	\begin{minipage}[r,t]{0.6\textwidth}
 		Über die Methode von \textsc{Abbe} können dicke Linsen oder Linsensysteme auf die Lage der Hauptachsen $H$, $H'$ und Gesamtbrennweite $f$ untersucht werden. 
@@ -73,7 +73,7 @@ Mit der Differenz der Projektionsweiten $d= g-b$ gilt weiter
 	\begin{minipage}[l,t]{0.4\textwidth}
 		\hfill
 		\includegraphics[width=\textwidth]{Bilder/dickelinseHELENA.png}
-		\caption{Unterschrift}
+		\caption{Bezeichnung an einem Linsensystem. \cite{skript}}
 		\label{fig:label}
 	\end{minipage}
 \end{figure}
