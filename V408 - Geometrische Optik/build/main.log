@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.76.0-2013121407 (rev 4627)  (format=lualatex 2015.4.18)  20 APR 2015 19:54
+This is LuaTeX, Version beta-0.76.0-2013121407 (rev 4627)  (format=lualatex 2015.4.18)  20 APR 2015 20:05
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -445,7 +445,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.045 seconds
+luaotfload: fontloader loaded in 0.050 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1129,7 +1129,7 @@ ne 39.
 luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 home/carlarne/.texmf-var/luatex-cache/generic/fonts/otf/xits-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature ss06 for script math
+luaotfload: font no 24 (XITSMath) defines feature dtls for script math
 \g_fontspec_family_XITS Math_int=\count337
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 24 (XITSMath) defines feature ssty for script math with lang
@@ -1177,7 +1177,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature ss06 for script math
+luaotfload: font no 27 (XITSMath) defines feature dtls for script math
 \symum_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `um_fam1' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input lin
@@ -1187,7 +1187,7 @@ LaTeX Font Info:    Overwriting symbol font `um_fam1' in version `bold'
 ne 40.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature ss06 for script math
+luaotfload: font no 24 (XITSMath) defines feature dtls for script math
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1201,7 +1201,7 @@ Features={{Size=10-},{Size=6.99997-10,Font=XITS
 .................................................
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature ss06 for script math
+luaotfload: font no 27 (XITSMath) defines feature dtls for script math
 \symum_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `um_fam2' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input lin
@@ -1211,7 +1211,7 @@ LaTeX Font Info:    Overwriting symbol font `um_fam2' in version `bold'
 ne 41.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature ss06 for script math
+luaotfload: font no 24 (XITSMath) defines feature dtls for script math
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1225,7 +1225,7 @@ Features={{Size=10-},{Size=6.99997-10,Font=XITS
 .................................................
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature ss06 for script math
+luaotfload: font no 27 (XITSMath) defines feature dtls for script math
 \symum_fam3=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `um_fam3' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input lin
@@ -2608,7 +2608,8 @@ Overfull \hbox (5.61736pt too wide) detected at line 96
  
  []
 
-[6]
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt" [6]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2618,9 +2619,7 @@ File: Bilder/Abbe1.pdf Graphic file (type pdf)
 <use Bilder/Abbe1.pdf>
 Package pdftex.def Info: Bilder/Abbe1.pdf used on input line 216.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
-luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt" <Bild
-er/Abbe2.pdf, id=126, 578.16pt x 433.62pt>
+ <Bilder/Abbe2.pdf, id=126, 578.16pt x 433.62pt>
 File: Bilder/Abbe2.pdf Graphic file (type pdf)
 
 <use Bilder/Abbe2.pdf>
@@ -2647,7 +2646,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 194B2CF9D914D335BCBC4FC7436BCF89;14127.
+(rerunfilecheck)             Checksum: 491817B8FB10139D5C632BCF05CF8EC1;14335.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2662,8 +2661,8 @@ Here is how much of LuaTeX's memory you used:
  688 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 16 kern, 21 attribute, 68 glue_spec, 21 att
 ribute_list, 2 action, 1 write nodes
-   avail lists: 1:82,2:10615,3:234,4:4467,5:638,6:2915,7:102,8:33,9:2190,10:990,
-11:512,12:229
+   avail lists: 1:89,2:10622,3:228,4:4467,5:644,6:2916,7:97,8:33,9:2190,10:990,1
+1:512,12:229
  43078 multiletter control sequences out of 65536+600000
  168 fonts using 42107811 bytes
  70i,17n,104p,966b,1263s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -2679,7 +2678,7 @@ hare/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/font
 s/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/publ
 ic/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bol
 d.otf>
-Output written on main.pdf (13 pages, 177293 bytes).
+Output written on main.pdf (13 pages, 177476 bytes).
 
 PDF statistics: 566 PDF objects out of 1000 (max. 8388607)
  351 compressed objects within 4 object streams

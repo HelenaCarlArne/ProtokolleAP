@@ -60,7 +60,7 @@ i = 1
 I = linspace(0 , g1[1], 2)
 plot(I, g(I,m_1[1],b1[1]), 'b', label = r"Linse mit Brennweite $f = 100\,\mathrm{mm}$")
 
-for i in range(1 , len(g1)):
+for i in range(0 , len(g1)):
    I = linspace(0 , g1[i], 2)
    plot(I, g(I,m_1[i],b1[i]), 'b') 
 
@@ -73,7 +73,7 @@ plt.ylabel('Bildweite $b$ /m')
 plt.legend(loc="best")
 plt.tight_layout
 plt.savefig('../Bilder/Messung1.pdf')
-plt.close()
+plt.show()
 
 ##################PLOT2#############
 nullen = zeros(len(g2))
@@ -93,7 +93,7 @@ i = 1
 I = linspace(0 , g2[2], 2)
 plot(I, g(I,m_2[2],b2[2]), 'b', label = r"Linse mit Brennweite $f = 50\,\mathrm{mm}$")
 
-for i in range(1 , len(g2)):
+for i in range(0 , len(g2)):
    I = linspace(0 , g2[i], 2)
    plot(I, g(I,m_2[i],b2[i]), 'b') 
 
