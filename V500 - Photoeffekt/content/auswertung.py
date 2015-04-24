@@ -1,7 +1,7 @@
 """
  Hallo, werter Leser!
 
- Dies ist die Auswerungsdatei von V500:Photoeffekt
+ Dies ist die erste Auswerungsdatei von V500:Photoeffekt
 
 
  Erforderlich:
@@ -15,7 +15,7 @@
 # Numpy und matplotlib aus offensichtlichen Gruenden;
 # curve_fit aus scipy.optimize fuer das Fitting;
 # ceil (aufrunden) aus math fuer das Anpassen der "plotting limits"
-
+#
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -38,7 +38,9 @@ def linear(x,m,b):
 
 farben={"rot":640,"gelb":578,"gruen":546,"violett":435.8,"uv":366}
 zeros=np.array([])
+zeros_error=np.array([])
 intersept=np.array([])
+intersept_error=np.array([])
 order=np.array([])
 #
 # Daten einladen
@@ -76,35 +78,38 @@ i_uv		=i_uv*10**(-12)
 # %s sind string-Ersaetze unter Python 2 und 3; 
 # eval() gibt aus einem string-Satz eine Variable zurueck (bsp. eval("test") -> var: test [kein String]) 
 # farben[] benoetigt als Argument "rot","gelb",... fuer die Ausgabe der Wellenlaenge
+#
 
 #for quant in {"u","i"}:
 for i,var in enumerate(farben):
 	#Messwerte plotten
-	plt.plot(np.sqrt(eval("i_%s"%(var))*10**12),eval("u_%s"%(var)),"k+",label=r"$\lambda=$ %s nm"%farben["%s"%(var)])
+	plt.plot(np.sqrt(eval("i_%s"%(var))*10**12),eval("u_%s"%(var)),"k+",label=r"$\lambda=$ %s nm,%s"%(farben["%s"%(var)],var))
 	plt.legend(loc="best")
-	plt.xlabel(r"$I_0[pA]$")
-	plt.ylabel(r"$U_\mathrm{B}[V\.]$")
-	#Fits berechnen und NST berechnen
+	plt.xlabel(r"$\sqrt{I_0} /pA$")
+	plt.ylabel(r"$U_\mathrm{B} /V$")
+	#Fits berechnen, NST und Fehler berechnen
 	parameter, unfug=curve_fit(linear,np.sqrt(eval("i_%s"%(var))*10**12),eval("u_%s"%(var)))
 	zero= -parameter[1]/parameter[0]
+	errors = np.sqrt(np.diag(unfug))
 	#Fits plotten
 	x_plot=np.arange(-1,ceil(-parameter[1]/parameter[0])+1)
-	#plt.gca().set_ylim(ymin=0)
-	#plt.gca().set_xlim(xmin=0)
 	plt.xlim(0,ceil(zero))
 	plt.ylim(0,ceil(10*parameter[1])/10)
 	plt.plot(x_plot,linear(x_plot,*parameter),label="Fit")
-	plt.savefig("../Bilder/Fit_%s.png"%(var))
 	plt.grid()
 	plt.tight_layout()
-	plt.show()
+	plt.savefig("../Bilder/Fit_%s.png"%(var))
+	plt.close()
 	#Textausgabe und Array-Befuellung
 	print("%i.%s:"%(i,var.upper()))
-	print("NST bei x_%s = \n\t %f"%(var,zero))
+	print("NST bei x_%s = \n\t %f+/-%f"%(var,zero,errors[0]))
 	zeros=np.append(zero,zeros)
-	print("Abschnitt bei y_%s = \n\t %f\n"%(var,parameter[1]))
+	zeros_error=np.append(errors[0],zeros_error)
+	print("Abschnitt bei y_%s = \n\t %f+/-%f\n"%(var,parameter[1],errors[1]))
 	intersept=np.append(parameter[1],intersept)
-	order=np.append(var,order)
-
+	intersept_error=np.append(errors[1],intersept_error)
+	order=np.append(farben["%s"%(var)],order)
 print("Und nun alle zusammen:")
-print(zip(order,zeros,intersept))
+print(zip(order,zeros,zeros_error,intersept, intersept_error))
+np.savetxt('../Werte/LinPar.txt', np.array([zeros,zeros_error,intersept, intersept_error]).T,header="%s\t Alle Werte"%(order))
+np.savetxt('../Werte/intersept.txt', np.array([order,intersept, intersept_error]).T,header="%s\t Abschnitte"%(order))
