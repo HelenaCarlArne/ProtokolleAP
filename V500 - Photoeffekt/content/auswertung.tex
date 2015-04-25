@@ -1,6 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Bestimmung des \texorpdfstring{\textsc{Planck}}{Planck}schen Wirkungsquantum}
+\label{sec:Auswertung1}
 Die Messwerte sind in Tabelle \ref{tab:messwerte} aufgetragen.
 In Abbildungen \ref{fig:uidiagramm1} bis \ref{fig:uidiagramm2} sind die gemessenen Bremsspannungen $U_\text{B}$ gegen die Wurzel des Photostroms $I_0$ aufgetragen.
 Die Parameter für die Ausgleichsgeraden werden nach den Formeln \eqref{eq:regress}
@@ -42,9 +43,13 @@ Es folgt
 \begin{alignat}{3}
 	\frac{h}{e}=\SI{3.38(64)e-15}{\weber} \quad&\text{und} \quad&&\frac{W_\text{A}}{e}= \SI{-1.41(36)}{\volt}.
 \end{alignat}
-
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/unu_diag.png}
+	\caption{Maximale Bremsspannung gegen die Lichtfrequenz.}
+	\label{fig:unu}
+\end{figure}
+\newpage
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Bilder/Fit_gelb.png}
@@ -72,49 +77,24 @@ Es folgt
 	\caption{Gemessene Photostromstärken in Abhängigkeit von den Bremsspannungen, Messung bei violetter Spektrallinie.}
 	\label{fig:uidiagramm2}
 \end{figure}
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=0.85\textwidth]{Bilder/unu_diag.png}
-	\caption{Maximale Bremsspannung gegen die Lichtfrequenz.}
-	\label{fig:unu}
-\end{figure}
+
 \input{Tabellen/werte.tex}
 \subsection{Messung des Photostromes bei hohen Spannungen}
-
+\label{sec:Auswertung2}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/messung2.png}
 	\caption{Gemessener Photostrom in Abhängigkeit von der angelegten Spannung.}
 	\label{fig:uidiagramm3}
 \end{figure}
-Warum erreicht die Kurve bei hohen beschleunigenden Spannungen einen Sättigungswert? 
-(Widerspruch zum Ohmschen Gesetz?) 
-- Kein Widerspruch
-- Ohmsche Leiter übertragen Elektronen, sind aber keine Elektronenquelle,
-  Photodiode stellt Elektronen zur Verfügung.
 
-Durch welche Parameter wird der Sättigungswert festgelegt? 
-- Intensität, 
-- Lichtfrequenz?
+Wird keine Spannung angelegt, so beträgt der Photostrom $\SI{80}{\pico\ampere}$.
+In der vorhergegangen Messung wurde festgestellt, dass eine Bremsspannung von etwa $\SI{0.34}{\volt}$ 
+ausreichend ist, um den Photostrom vollständig zu unterdrücken.
+Wird die Bremsspannung weit über diese Grenze angelegt, so stellt sich ein geringer, negativer Photostrom ein.
+Dieser Strom nimmt bereits für geringe Spannungen den Grenzwert $I_0=\SI{-0.01}{\nano\ampere}$ an und reagiert nicht auf weitere Erhöhung der Spannung.
 
-Was trägt dazu bei, dass der Sättigungswert nur asymptotisch erreicht wird? 
-- Photonen lösen Elektronen aus, geben ihnen dabei aber keine Richtung vor (kein Laser).
-- Bei hohen Spannungen werden alle Elektronen Teil des Stromes, 
-	bei geringen Spannungen werden ein Teil der Elektronen wieder absorbiert.
-
-Wie müsste eine Photozelle konstruiert werden, bei der der Sättigungswert des Photostroms bereits bei endlichen Beschleunigungsspannungen auftritt?
-- Optimales Ausnutzen der Intensität (geringe Absorption durch Glaswand, lichtdurchlässige Anode)
-
-Warum fällt der Photostrom bei der Gegenspannung Ug nicht abrupt auf 0 ab, sondern beginnt bereits für U > Ug zu sinken?
-- Ug bremst nur die schnellsten Elektronen ab, der Großteil der Elektronen sind bereits bei kleineren Spannungen abgebremst.
-
-Warum kann ein dem Photostrom entgegengerichteter Strom auftreten? 
-(Hinweis: Die Photokathode besteht aus einem Material, das bereits bei T = 20°C merklich verdampft.) 
-- 
-
-Warum kann hier bereits bei relativ kleinen Spannungsbeträgen praktisch ein Sättigungswert erreicht werden?
-- Die Intensität scheint groß zu sein
-
-Was kann man über die Austrittsarbeit der Anode sagen, wenn man berücksichtigt, dass der negative Strom bereits bei der
-Einstrahlung energiearmen Lichtes (λ etwa 650nm) auftritt? 
-- Austrittsarbeit ist gering.
+Wird eine negative Spannung angelegt, sodass die Photokathode negativ und die Anode positiv geladen ist, 
+werden Photoelektronen beschleunigt.
+Wird diese beschleunigende Spannung erhöht, so wächst der Photostrom an. 
+Das Wachstum des Stromes ist für Spannungen bis etwa $\SI{5}{\volt}$ linear und geht für höhere Spannungen gegen einen Grenzwert von etwa $\SI{2.5}{\nano\ampere}$.

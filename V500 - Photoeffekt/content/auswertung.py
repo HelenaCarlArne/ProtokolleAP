@@ -83,8 +83,7 @@ i_uv		=i_uv*10**(-12)
 #for quant in {"u","i"}:
 for i,var in enumerate(farben):
 	#Messwerte plotten
-	plt.plot(np.sqrt(eval("i_%s"%(var))*10**12),eval("u_%s"%(var)),"k+",label=r"$\lambda=$ %s nm,%s"%(farben["%s"%(var)],var))
-	plt.legend(loc="best")
+	plt.plot(np.sqrt(eval("i_%s"%(var))*10**12),eval("u_%s"%(var)),"k+",label=r"$\lambda=$ %s nm"%(farben["%s"%(var)]))
 	plt.xlabel(r"$\sqrt{I_0} /pA$")
 	plt.ylabel(r"$U_\mathrm{B} /V$")
 	#Fits berechnen, NST und Fehler berechnen
@@ -97,9 +96,10 @@ for i,var in enumerate(farben):
 	plt.ylim(0,ceil(10*parameter[1])/10)
 	plt.plot(x_plot,linear(x_plot,*parameter),label="Fit")
 	plt.grid()
+	plt.legend(loc="best")
 	plt.tight_layout()
 	plt.savefig("../Bilder/Fit_%s.png"%(var))
-	plt.close()
+	plt.show()
 	#Textausgabe und Array-Befuellung
 	print("%i.%s:"%(i,var.upper()))
 	print(parameter)

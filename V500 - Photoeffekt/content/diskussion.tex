@@ -1,3 +1,57 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-\blindtext
+\subsection{Fehleranalyse} % (fold)
+\label{sub:Diskussion1}
+Als optisches Experiment wird vorzugsweise dunkle Umgebung gefordert.
+Weiter sind wegen der geringen Stromstärken  empfindliche Messgeräte erforderlich, deren Kabel von Störfeldern befreit sein müssen.\\
+Da ein Experimentieren unter Ausschluss sämtlicher Fremdlichtquellen nicht möglich ist, konnte der dadurch entstandene Fehler gering gehalten werden, indem Fremdlicht konstant gehalten wird.
+Der Einfluss von Störfelder wurden durch die Wahl von Koaxialkabeln verringert.
+% subsection fehleranalyse (end)
+\subsection{Bestimmung des Planckschen Wirkungsquantums} % (fold)
+\label{sub:Diskussion2}
+Die zu bestimmende Größe, $\sfrac{h}{e}$, wurde in Abschnitt \ref{sec:Auswerung1} zu 
+\begin{equation}
+	\frac{h}{e}=\SI{3.38(64)e-15}{\weber}
+\end{equation}
+bestimmt.
+Der Mittelwert weicht von der Literaturangabe dieses Wertes, $\sfrac{h}{e}=\SI{4.13e-15}{\weber}$ \cite{texas_instruments1},\cite{texas_instruments2}, um $18.3\,\%$ 
+ab. Der Literaturwert liegt in der Nähe der Standardabweichung des Messwertes.
+Das Ergebnis zeigt die Präzission des Experimentes an.
+% subsection diskussion_d (end)
+\subsection{Erklärung des Stromverlaufes bei Abbremsung} % (fold)
+\label{sub:Diskussion3}
+In Abschnitt \ref{sec:Auswertung2} wird das Verhalten der Photodiode bei hohen Spannungen aufgezeigt.
+Werden stark-bremsende Spannungen angelegt, so stagniert der Photostrom bei einem festen, geringen Wert.
+Dies wird durch durch positive Spannungen bis etwa $\SI{20}{\volt}$ realisiert.
+Der Stromfluss ist der Richtung des unbeeinflussten Photostroms entgegengesetzt.
+
+Zur Erklärung wird die Photokathode herangenommen. 
+Sie besteht aus einer dünnen, metallischen Schicht, welche bei Betriebstemperatur zum Teil verdampft.
+Im evakuiertem Glaskörper der Photodiode befindet sich daher ein Aerosol aus Kathodenmaterial, das imstande ist, 
+geringe Ströme zu übertragen. 
+Diese Ströme sind auf die hohe Spannung zwischen Kathode und Anode zurückzuführen, deren Ausgleich über das Gas geschieht.
+Dass der negative Strom bereits für kleine Spannungen erreicht wird, zeigt, dass die Anode nur ein schwaches Gegenfeld aufbaut.
+Die Austrittsarbeit der Anode scheint gering.\\
+Für Spannungen größer als $\SI{20}{\volt}$ wird die Zerstörung der Photodiode durch Funkenschlag erwartet.
+
+\subsection{Erklärung des Stromverlaufes bei Beschleunigung} % (fold)
+\label{sub:Diskussion4}
+Wird die Polung der Spannung gedreht, sodass die Photokathode negativ und die Anode positiv geladen ist, 
+werden Photoelektronen beschleunigt.
+In Abschnitt \ref{sec:Auswertung2} wird beschrieben, dass der Photostrom mit steigender Spannung wächst und einen Grenzwert erreicht.
+Zur Erklärung des Grenzwertes wird der Einfluss von Intensität auf den Photostrom beschrieben.\\
+Der Betrag des Photostromes ist abhängig von der Intensität des Lichtes; je höher die Lichtintensität ist, desto größer ist der Photostrom.
+In Abwesenheit von Photonen werden nur geringe Mengen von Elektronen aus der Kathode gelöst (vgl. \textsc{Edison}--\textsc{Richardson}-Effekt), der Photostrom wird trotz der beschleunigenden Spannung im Wesentlichen von den Photonen ausgelöst.
+Da die Intensität des Lichtes ein Maß für die Anzahl der Photonen ist, ist mit fester Intensität des einstrahlenden Lichtes ein Grenzwert für den Photostrom gegeben.
+Die Lichtfrequenz hat keinen Einfluss auf den Sättigungswert.
+
+Der Sättigungswert wird asymptotisch erreicht, da die von Photonen ausgelösten Elektronen -- anders als bei stimulierter Emission -- keine vorgegebene Richtung haben.
+Die gesamte kinetische Energie eines ausgelösten Elektrons besteht aus der Energie $E_\text{kin}$, die nach Abzug der Austrittsarbeit von der Photoenergie $h\nu$ den Elektronen zur Verfügung steht, 
+und der Energie, die das Elektron nach der \textsc{Fermi}--\textsc{Dirac}-Statistik besitzt.
+Die kinetische Energie der Elektronen ist unregelmäßig verteilt.
+Dieser Sachverhalt erklärt ebenfalls das nicht-abrupte Abbrechen des Photostromes in der Nähe von $U_\text{G}$.
+
+Um den Sättigungswert bei geringen Spannungen zu erreichen, kann der Aufbau der Photodiode angepasst werden.
+Hierzu muss die bestrahlte Fläche der Kathode optimal sein und 
+die Absorption des Lichtes von dem Glaskörper klein gehalten werden.
+Der Sättigungswert der in diesem Experiment verwendeten Photodiode zeigt, dass die Intensität des Lichtes hoch und die Photokathode optimal beleuchtet wurde.
