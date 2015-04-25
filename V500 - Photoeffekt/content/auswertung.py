@@ -102,6 +102,7 @@ for i,var in enumerate(farben):
 	plt.close()
 	#Textausgabe und Array-Befuellung
 	print("%i.%s:"%(i,var.upper()))
+	print(parameter)
 	print("NST bei x_%s = \n\t %f+/-%f"%(var,zero,errors[0]))
 	zeros=np.append(zero,zeros)
 	zeros_error=np.append(errors[0],zeros_error)
