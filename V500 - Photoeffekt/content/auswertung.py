@@ -84,8 +84,8 @@ i_uv		=i_uv*10**(-12)
 for i,var in enumerate(farben):
 	#Messwerte plotten
 	plt.plot(np.sqrt(eval("i_%s"%(var))*10**12),eval("u_%s"%(var)),"k+",label=r"$\lambda=$ %s nm"%(farben["%s"%(var)]))
-	plt.xlabel(r"$\sqrt{I_0} /pA$")
-	plt.ylabel(r"$U_\mathrm{B} /V$")
+	plt.xlabel(r"$\sqrt{I}/ \sqrt{pA}$")
+	plt.ylabel(r"$U_\mathrm{G} /V$")
 	#Fits berechnen, NST und Fehler berechnen
 	parameter, unfug=curve_fit(linear,np.sqrt(eval("i_%s"%(var))*10**12),eval("u_%s"%(var)))
 	zero= -parameter[1]/parameter[0]
