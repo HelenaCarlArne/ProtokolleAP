@@ -36,13 +36,13 @@ Nach der \textsc{Einstein}schen Formel \eqref{eq:einstein}
 werden mithilfe der Linearisierung
 \begin{align}
 	%E_\text{kin.} &= e\cdot U = {h}\cdot{\nu} - {W_\text{K}}\\
-	\underbrace{U}_{y_\text{lin}} &= \underbrace{\frac{h}{e}}_{a_\text{lin}}\cdot\underbrace{\nu}_{x_\text{lin}} - \underbrace{\frac{W_\text{K}}{e}}_{b_\text{lin}}\\
+	\underbrace{U}_{y_\text{Reg}} &= \underbrace{\frac{h}{e}}_{a_\text{Reg}}\cdot\underbrace{\nu}_{x_\text{Reg}} - \underbrace{\frac{W_\text{K}}{e}}_{b_\text{Reg}}\\
 \end{align}
 aus den Fitparametern das Plancksche Wirkungsquantum $h$ und die Austrittsarbeit $W_\text{K}$ bestimmt.
 
 Es folgt
 \begin{alignat}{3}
-	\frac{h}{e}=\SI{3.38(64)e-15}{\weber} \quad&\text{und} \quad&&\frac{W_\text{K}}{e}= \SI{-1.41(36)}{\volt}.
+	\frac{h}{e}=\SI{3.4(6)e-15}{\weber} \quad&\text{und} \quad&&\frac{W_\text{K}}{e}= \SI{-1.4(4)}{\volt}.
 \end{alignat}
 \begin{figure}[H]
 	\centering
@@ -89,13 +89,14 @@ Es folgt
 	\label{fig:uidiagramm3}
 \end{figure}
 
-Wird keine Spannung $U$ angelegt, so beträgt der Photostrom $I = \SI{80}{\pico\ampere}$.
+
+Wird keine Gegenspannung $U_\text{G}$ angelegt, so beträgt der Photostrom $I = \SI{80}{\pico\ampere}$.
 In der vorhergegangen Messung wurde festgestellt, dass eine bremsende Spannung $U_\text{G}$ von etwa $\SI{0.34}{\volt}$ 
 ausreichend ist, um den Photostrom $I$ vollständig zu unterdrücken.
 Wird die Gegenspannung $U_\text{G}$ weit über diese Grenze angelegt, so stellt sich ein geringer, negativer Photostrom $I$ ein.
 Dieser nimmt bereits für geringe Spannungen $U_\text{G}$ den Grenzwert $I=\SI{-0.01}{\nano\ampere}$ an und reagiert nicht auf weitere Erhöhung der Spannung $U_\text{G}$.
 
-Wird eine negative Spannung $U$ angelegt, sodass die Photokathode negativ und die Anode positiv geladen ist, 
+Wird eine negative Spannung $U_\text{B}$ angelegt, sodass die Photokathode negativ und die Anode positiv geladen ist, 
 werden Photoelektronen beschleunigt.
 Wird diese beschleunigende Spannung $U$ erhöht, so wächst der Photostrom $I$ an. 
 Das Wachstum des Stromes $I$ ist für Spannungen $U$ bis etwa $\SI{5}{\volt}$ linear und geht für höhere Spannungen gegen einen Grenzwert von etwa $\SI{2.5}{\nano\ampere}$.
