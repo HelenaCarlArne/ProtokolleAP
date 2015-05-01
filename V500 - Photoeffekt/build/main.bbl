@@ -39,6 +39,32 @@
       \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V500.pdf
       \endverb
     \endentry
+    \entry{matplotlib}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{945db4bbb079217b43c830150ebb3811}
+      \strng{fullhash}{945db4bbb079217b43c830150ebb3811}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labeltitle}{Matplotlib: A 2D Graphics Environment}
+      \field{addendum}{Version 1.3.1}
+      \field{journaltitle}{Computing in Science and Engineering}
+      \field{number}{3}
+      \field{title}{Matplotlib: A 2D Graphics Environment}
+      \field{volume}{9}
+      \field{year}{2007}
+      \field{pages}{90\bibrangedash 95}
+      \verb{url}
+      \verb http://link.aip.org/link/?CSX/9/90/1
+      \endverb
+    \endentry
     \entry{texas_instruments1}{manual}{}
       \name{labelname}{2}{}{%
         {{hash=42e13eef92fd62e19a9c5ebf90438d5c}{Standards}{S\bibinitperiod}{NIST:\bibnamedelimb National\bibnamedelima Institute}{N\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim I\bibinitperiod}{of}{o\bibinitperiod}{}{}}%
