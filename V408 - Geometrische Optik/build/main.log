@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.76.0-2013121407 (rev 4627)  (format=lualatex 2015.4.18)  20 APR 2015 20:05
+This is LuaTeX, Version beta-0.76.0-2013121407 (rev 4627)  (format=lualatex 2015.4.18)  28 APR 2015 20:43
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -445,7 +445,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.050 seconds
+luaotfload: fontloader loaded in 0.043 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1129,7 +1129,7 @@ ne 39.
 luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 home/carlarne/.texmf-var/luatex-cache/generic/fonts/otf/xits-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature dtls for script math
+luaotfload: font no 24 (XITSMath) defines feature ss08 for script math
 \g_fontspec_family_XITS Math_int=\count337
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 24 (XITSMath) defines feature ssty for script math with lang
@@ -1177,7 +1177,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature dtls for script math
+luaotfload: font no 27 (XITSMath) defines feature ss08 for script math
 \symum_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `um_fam1' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input lin
@@ -1187,7 +1187,7 @@ LaTeX Font Info:    Overwriting symbol font `um_fam1' in version `bold'
 ne 40.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature dtls for script math
+luaotfload: font no 24 (XITSMath) defines feature ss08 for script math
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1201,7 +1201,7 @@ Features={{Size=10-},{Size=6.99997-10,Font=XITS
 .................................................
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature dtls for script math
+luaotfload: font no 27 (XITSMath) defines feature ss08 for script math
 \symum_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `um_fam2' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input lin
@@ -1211,7 +1211,7 @@ LaTeX Font Info:    Overwriting symbol font `um_fam2' in version `bold'
 ne 41.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (XITSMath) defines feature dtls for script math
+luaotfload: font no 24 (XITSMath) defines feature ss08 for script math
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1225,7 +1225,7 @@ Features={{Size=10-},{Size=6.99997-10,Font=XITS
 .................................................
 luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
-luaotfload: font no 27 (XITSMath) defines feature dtls for script math
+luaotfload: font no 27 (XITSMath) defines feature ss08 for script math
 \symum_fam3=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `um_fam3' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input lin
@@ -2400,71 +2400,17 @@ luaotfload | load : no defaults for script "math", falling back to "dflt" [5]
 <Bilder/Messung1.pdf, id=79, 578.16pt x 433.62pt>
 File: Bilder/Messung1.pdf Graphic file (type pdf)
  <use Bilder/Messung1.pdf>
-Package pdftex.def Info: Bilder/Messung1.pdf used on input line 69.
+Package pdftex.def Info: Bilder/Messung1.pdf used on input line 71.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
 
 <Bilder/Messung2.pdf, id=80, 578.16pt x 433.62pt>
 File: Bilder/Messung2.pdf Graphic file (type pdf)
  <use Bilder/Messung2.pdf>
-Package pdftex.def Info: Bilder/Messung2.pdf used on input line 72.
+Package pdftex.def Info: Bilder/Messung2.pdf used on input line 74.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
 
-Overfull \hbox (5.475pt too wide) detected at line 87
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 87
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 87
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 87
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 88
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 88
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 88
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 88
- 
- []
-
-
-Overfull \hbox (5.61736pt too wide) detected at line 89
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 89
- 
- []
-
-
-Overfull \hbox (5.61736pt too wide) detected at line 89
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 89
+[6]
+Overfull \hbox (5.475pt too wide) detected at line 90
  
  []
 
@@ -2474,7 +2420,7 @@ Overfull \hbox (5.475pt too wide) detected at line 90
  []
 
 
-Overfull \hbox (5.61736pt too wide) detected at line 90
+Overfull \hbox (5.475pt too wide) detected at line 90
  
  []
 
@@ -2484,11 +2430,6 @@ Overfull \hbox (5.475pt too wide) detected at line 90
  []
 
 
-Overfull \hbox (5.7597pt too wide) detected at line 90
- 
- []
-
-
 Overfull \hbox (5.475pt too wide) detected at line 91
  
  []
@@ -2509,7 +2450,7 @@ Overfull \hbox (5.475pt too wide) detected at line 91
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 92
+Overfull \hbox (5.61736pt too wide) detected at line 92
  
  []
 
@@ -2544,7 +2485,7 @@ Overfull \hbox (5.475pt too wide) detected at line 93
  []
 
 
-Overfull \hbox (5.61736pt too wide) detected at line 93
+Overfull \hbox (5.7597pt too wide) detected at line 93
  
  []
 
@@ -2574,11 +2515,6 @@ Overfull \hbox (5.475pt too wide) detected at line 95
  []
 
 
-Overfull \hbox (5.61736pt too wide) detected at line 95
- 
- []
-
-
 Overfull \hbox (5.475pt too wide) detected at line 95
  
  []
@@ -2589,12 +2525,7 @@ Overfull \hbox (5.61736pt too wide) detected at line 95
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 96
- 
- []
-
-
-Overfull \hbox (5.7597pt too wide) detected at line 96
+Overfull \hbox (5.475pt too wide) detected at line 95
  
  []
 
@@ -2608,29 +2539,148 @@ Overfull \hbox (5.61736pt too wide) detected at line 96
  
  []
 
+
+Overfull \hbox (5.475pt too wide) detected at line 96
+ 
+ []
+
+
+Overfull \hbox (5.61736pt too wide) detected at line 96
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 97
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 97
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 97
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 97
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 98
+ 
+ []
+
+
+Overfull \hbox (5.61736pt too wide) detected at line 98
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 98
+ 
+ []
+
+
+Overfull \hbox (5.61736pt too wide) detected at line 98
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 99
+ 
+ []
+
+
+Overfull \hbox (5.7597pt too wide) detected at line 99
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 99
+ 
+ []
+
+
+Overfull \hbox (5.61736pt too wide) detected at line 99
+ 
+ []
+
 luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt" [6]
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+Overfull \hbox (5.475pt too wide) detected at line 143
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 144
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 145
+ 
+ []
+
+
+Overfull \hbox (5.61736pt too wide) detected at line 146
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 147
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 160
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 161
+ 
+ []
+
+
+Overfull \hbox (5.61736pt too wide) detected at line 162
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 163
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 164
+ 
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] (./content/linreg.tex) <Bilder/Abbe1.pdf, id=121, 578.16pt x 433.62pt>
+[7] (./content/linreg.tex) <Bilder/Abbe1.pdf, id=119, 578.16pt x 433.62pt>
 File: Bilder/Abbe1.pdf Graphic file (type pdf)
 
 <use Bilder/Abbe1.pdf>
-Package pdftex.def Info: Bilder/Abbe1.pdf used on input line 216.
+Package pdftex.def Info: Bilder/Abbe1.pdf used on input line 222.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
- <Bilder/Abbe2.pdf, id=126, 578.16pt x 433.62pt>
+ <Bilder/Abbe2.pdf, id=124, 578.16pt x 433.62pt>
 File: Bilder/Abbe2.pdf Graphic file (type pdf)
 
 <use Bilder/Abbe2.pdf>
-Package pdftex.def Info: Bilder/Abbe2.pdf used on input line 222.
+Package pdftex.def Info: Bilder/Abbe2.pdf used on input line 228.
 (pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
 ) (./content/diskussion.tex [8] [9 <./Bilder/Messung1.pdf> <./Bilder/Messung2.pd
 f>] [10] [11 <./Bilder/Abbe1.pdf> <./Bilder/Abbe2.pdf>])
 [12
 
 ]
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 20.
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 19.
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -2638,33 +2688,33 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"(load l
 uc: /home/carlarne/.texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.lu
 c)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
 
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
  (./build/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 491817B8FB10139D5C632BCF05CF8EC1;14335.
+(rerunfilecheck)             Checksum: ACF3541057C91A559006DA0CAB08E195;14487.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  )
 
 Here is how much of LuaTeX's memory you used:
- 40685 strings out of 493803
- 125009,1373583 words of node,token memory allocated
- 688 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 16 kern, 21 attribute, 68 glue_spec, 21 att
+ 40684 strings out of 493803
+ 125002,1373583 words of node,token memory allocated
+ 708 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 18 kern, 23 attribute, 68 glue_spec, 23 att
 ribute_list, 2 action, 1 write nodes
-   avail lists: 1:89,2:10622,3:228,4:4467,5:644,6:2916,7:97,8:33,9:2190,10:990,1
-1:512,12:229
+   avail lists: 1:93,2:11305,3:244,4:4563,5:671,6:2917,7:100,8:34,9:2223,10:990,
+11:512,12:229
  43078 multiletter control sequences out of 65536+600000
- 168 fonts using 42107811 bytes
+ 168 fonts using 42107227 bytes
  70i,17n,104p,966b,1263s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texlive/texmf-dist/f
@@ -2678,10 +2728,10 @@ hare/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/font
 s/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/publ
 ic/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bol
 d.otf>
-Output written on main.pdf (13 pages, 177476 bytes).
+Output written on main.pdf (13 pages, 178206 bytes).
 
-PDF statistics: 566 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 131072)
+PDF statistics: 565 PDF objects out of 1000 (max. 8388607)
+ 350 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 131072)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 

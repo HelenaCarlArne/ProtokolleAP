@@ -26,7 +26,7 @@ g2_ohnenull=np.delete(g2,10)
 b2_ohnenull=np.delete(b2,10)
 ew, g31, b31, b32, g32 = np.genfromtxt('Werte_Bessel_w.txt').T
 
-g31r, b31r, g32r, b32r, g31b, b31b, g32b, b32b, ef = np.genfromtxt('Werte_Bessel_b.txt').T
+g31r, b31r, g32r, b32r, er, g31b, b31b, g32b, b32b, eb = np.genfromtxt('Werte_Bessel_b.txt').T
 
 B_, g_ , b_ = np.genfromtxt('Werte_Abbe.txt').T
 
@@ -72,8 +72,9 @@ plt.xlabel('Gegenstandsweite $g$ /m')
 plt.ylabel('Bildweite $b$ /m')
 plt.legend(loc="best")
 plt.tight_layout
-plt.savefig('../Bilder/Messung1.pdf')
-plt.show()
+#plt.savefig('../Bilder/Messung1.pdf')
+#plt.show()
+plt.close()
 
 ##################PLOT2#############
 nullen = zeros(len(g2))
@@ -105,9 +106,9 @@ plt.xlabel('Gegenstandsweite $g$ /m')
 plt.ylabel('Bildweite $b$ /m')
 plt.legend(loc="best")
 plt.tight_layout
-plt.savefig('../Bilder/Messung2.pdf')
-plt.show()
-
+#plt.savefig('../Bilder/Messung2.pdf')
+#plt.show()
+plt.close()
 ######BERECHNUNG DER BRENNWEITEN#####
 a=1/g_1 + 1/b_1 #Brennweite Messung 1
 b=1/g_2 + 1/b_2 #Brennweite Messung 2
@@ -116,12 +117,15 @@ a=1/g1 + 1/b1 #Brennweite Messung 1
 b=1/g2_ohnenull + 1/b2_ohnenull #Brennweite Messung 2
 f1=1/a
 f2=1/b
-print(ufloat(np.mean(f1),sem(f1)),ufloat(np.mean(f2),sem(f2)))
-print(f2)
+
 #####AUSGABE#####
 print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
 print('')
 print('Messung 1 und 2 mit f1=100 1/mm und f2=50 1/mm')
+print("")
+print("Mittelwerte von f1 und f2:",ufloat(np.mean(f1),sem(f1)),ufloat(np.mean(f2),sem(f2)))
+#print(f1)
+#print(f2)
 print('')
 print('Brennweite Messung1',f1,'/m')
 print('Brennweite Messung2',f2,'/m')
@@ -133,35 +137,39 @@ print('Brennweite Messung2',f2,'/m')
 
 ####BERECHNUNG DER BRENNWEITEN FueR WEISSES, ROTES UND BLAUES LICHT######
 f31=(ew**2-(g31-b31)**2)/(4*ew)
-print('f31',f31)
+#print('f31',f31)
 f31 = ufloat(np.mean(f31),sem(f31))
 f32=(ew**2-(g32-b32)**2)/(4*ew)
-print('f32',f32)
+#print('f32',f32)
 f32 = ufloat(np.mean(f32),sem(f32))
 
-f31r=(ef**2-(g31r-b31r)**2)/(4*ef)
+f31r=(er**2-(g31r-b31r)**2)/(4*er)
 print('f31r',f31r)
 f31r = ufloat(np.mean(f31r),sem(f31r))
-f32r=(ef**2-(g32r-b32r)**2)/(4*ef)
+f32r=(er**2-(g32r-b32r)**2)/(4*er)
 print('f32r',f32r)
 f32r = ufloat(np.mean(f32r),sem(f32r))
 
-f31b=(ef**2-(abs(g31b-b31b))**2)/(4*ef)
-print('f31b',f31b)
+f31b=(eb**2-(abs(g31b-b31b))**2)/(4*eb)
+#print('f31b',f31b)
 f31b = ufloat(np.mean(f31b),sem(f31b))
-f32b=(ef**2-(abs(g32b-b32b))**2)/(4*ef)
-print('f32b',f32b)
+f32b=(eb**2-(abs(g32b-b32b))**2)/(4*eb)
+#print('f32b',f32b)
 f32b = ufloat(np.mean(f32b),sem(f32b))
 
-print(f31)
-print(f32)
-print((f31+f32)/2)
-print(f31r)
-print(f31b)
-print(f32r)
-print(f32b)
-print((f31r+f32r)/2)
-print((f31b+f32b)/2)
+print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
+print('')
+print("f31 ",f31)
+print("f32 ",f32)
+print("Beide ",(f31+f32)/2)
+print("")
+print("f31r ",f31r)
+print("f31b ",f31b)
+print("f32r ",f32r)
+print("f32b ",f32b)
+print("Fuer Rot:",(f31r+f32r)/2)
+print("Fuer Blau:",(f31b+f32b)/2)
+print("")
 print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
 print('')
 print('Messung 3 nach Bessel mit f=100 1/mm')

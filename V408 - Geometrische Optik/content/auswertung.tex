@@ -57,6 +57,8 @@ Für die berechnete Brennweite der Linsen ergeben sich Werte von
 	f_2 &= \SI{48.4(1)}{\milli\meter}.
 \end{align}
 Das $b$-$g$-Diagramm \ref{fig:bgdiagramm} zeigt dadurch, dass sich die Linien auf einem kleinen, nahezu punktförmigen Gebiet untereinander schneiden, die verhältnismäßig hohe Präzession der Messergebnisse an.
+Des Weiteren bestätigt die Lage des Schnittpunktes mit den abgeschätzen Koordinaten $(f_1|f_1)$ respektive $(f_2|f_2)$ die Messergebnisse für die Brennweiten $f$.
+Die Berechung ist somit plausibel.
 Die Mittelwerte weichen von der Herstellerangabe um 
 \begin{align}
 	\mathup{\Delta}f_1 &= 2.5\% \quad\text{und}\quad\mathup{\Delta}f_2 = 3.2\%
@@ -74,6 +76,7 @@ Daher ist für die verwendeten Linsen die Brennweite $f$ über die Linsengleichu
 	\caption{$b$-$g$-Diagramme zur Darstellung der Messgenauigkeit. \cite{matplotlib}}
 	\label{fig:bgdiagramm} 
 \end{figure}
+\newpage
 \subsection{Methode nach \texorpdfstring{\textsc{Bessel}}{Bessel}}
 \label{sec:auswertung2}
 Die Ergebnisse der Messung nach dem \texorpdfstring{\textsc{Bessel}}{Bessel}-Verfahren sind in Tabelle \ref{tab:M2} aufgetragen.
@@ -101,7 +104,7 @@ Die Ergebnisse der Messung nach dem \texorpdfstring{\textsc{Bessel}}{Bessel}-Ver
 \end{table}
 Für die Brennweiten ergeben sich Werte für die beiden Linsenpositionen von 
 \begin{alignat}{3}
-	f-\text{Pos.1} = \SI{97(5)}{\milli\meter} \quad\text{und} \quad f_\text{Pos.2}= \SI{94(4)}{\milli\meter}.
+	f_\text{Pos.1} = \SI{97(5)}{\milli\meter} \quad\text{und} \quad f_\text{Pos.2}= \SI{94(4)}{\milli\meter}.
 \end{alignat}
 Die gemessene Brennweite weicht in Abhängigkeit von der Linsenposition geringfügig ab,
 die Schwankungen sind als statistische Fehler zu bewerten.
@@ -114,16 +117,18 @@ zeigt eine Abweichung von der Herstellerangabe von $4\%$.
 Die Ergebnisse der Messung mit einfarbigem Licht sind in den Tabellen \ref{tab:M2a} und \ref{tab:M2b} aufgetragen.
 Die ermittelten Brennweiten in Abhängigkeit von der Linsenposition betragen
 \begin{subequations}
-	\begin{align}
-		f_\text{Rot, Pos.1} &= \SI{115(1)}{\milli\meter}\\
-		f_\text{Rot, Pos.2} &= \SI{114.1(7)}{\milli\meter}\\
-		f_\text{Rot} &= \SI{114.4(7)}{\milli\meter}
-	\end{align}
-	\begin{align}
-		f_\text{Blau, Pos.1} &= \SI{98.2(2)}{\milli\meter}\\
-		f_\text{Blau, Pos.2} &= \SI{97.2(2)}{\milli\meter}\\
-		f_\text{Blau} &= \SI{97.7(2)}{\milli\meter}
-	\end{align}
+	\begin{alignat}{3}
+		f_\text{Rot, Pos.1} &= \SI{97.9(5)}{\milli\meter} &\qquad &&f_\text{Rot, Pos.2} &= \SI{97.3(2)}{\milli\meter}
+	\end{alignat}
+	\begin{equation}
+		f_\text{Rot} = \SI{97.6(3)}{\milli\meter}
+	\end{equation}
+	\begin{alignat}{3}
+		f_\text{Blau, Pos.1} &= \SI{98.2(2)}{\milli\meter} &\qquad &&f_\text{Blau, Pos.2} &= \SI{97.2(2)}{\milli\meter}
+	\end{alignat}
+	\begin{equation}
+		f_\text{Blau} = \SI{97.7(2)}{\milli\meter}
+	\end{equation}
 \end{subequations}
 und zeigen damit die Abhängigkeit der Brennweite von der Wellenlänge des Lichtes.
 Auch hier wird sichtbar, dass die errechneten Brennweiten von der Linsenposition abhängen; 
@@ -135,11 +140,11 @@ die Schwankungen sind aber als statistische Fehler zu bewerten.
 			{Abstand}&\multicolumn{3}{c}{Linsenposition 1} & \multicolumn{3}{c}{Linsenposition 2} \\
 			{$e/\:\si{\milli{\meter}}$} & {$g_{1,\mathup{r}}/\:\si{\milli{\meter}}$} & {$b_{1,\mathup{r}}/\:\si{\milli{\meter}}$} & {$f_{1,\mathup{r}}/\:\si{\milli{\meter}}$} & {$g_{2,\mathup{r}}/\:\si{\milli{\meter}}$} & {$b_{2,\mathup{r}}/\:\si{\milli{\meter}}$} & {$f_{2,\mathup{r}}/\:\si{\milli{\meter}}$} \\	
 			\midrule
-			50 & 143 & 307 & 111.6 & 306 & 144 & 111.9  \\
-			60 & 126 & 424 & 113.0 & 424 & 126 & 113.0 \\
-			70 & 118 & 532 & 113.8 & 531 & 119 & 114.4 \\
-			80 & 117 & 633 & 116.8 & 636 & 117 & 115.8 \\
-			90 & 115 & 735 & 118.2 & 739 & 111 & 115.5 \\
+			450 & 143 & 307 & 97.6 & 306 & 144 & 97.9 \\
+			550 & 126 & 424 & 97.1 & 424 & 126 & 97.1 \\
+			650 & 118 & 532 & 96.6 & 531 & 119 & 97.2 \\
+			750 & 117 & 633 & 98.7 & 636 & 117 & 97.7 \\
+			850 & 115 & 735 & 99.4 & 739 & 111 & 96.5 \\
 			\bottomrule
 			\end{tabular}
 			\caption{Messung der Projektionsweiten $b_i$ und $g_i$ bei festgelegtem Abstand $e$ nach \texorpdfstring{\textsc{Bessel}}{Bessel}; rotes Licht.}
@@ -152,11 +157,11 @@ die Schwankungen sind aber als statistische Fehler zu bewerten.
 				{Abstand} &\multicolumn{3}{c}{Linsenposition 1} & \multicolumn{3}{c}{Linsenposition 2} \\
 				{$e/\:\si{\milli{\meter}}$} & {$g_{1,\mathup{b}}/\:\si{\milli{\meter}}$} & {$b_{1,\mathup{b}}/\:\si{\milli{\meter}}$} & {$f_{1,\mathup{b}}/\:\si{\milli{\meter}}$} &{$g_{2,\mathup{b}}/\:\si{\milli{\meter}}$}  & {$b_{2,\mathup{b}}/\:\si{\milli{\meter}}$} & {$f_{2,\mathup{b}}/\:\si{\milli{\meter}}$}\\	
 				\midrule
-				50 & 366 & 134 & 98.1 & 132 & 368 & 97.2\\
-				60 & 477 & 123 & 97.8 & 122 & 478 & 97.2\\
-				70 & 582 & 118 & 98.1 & 116 & 584 & 96.8\\
-				80 & 684 & 116 & 99.1 & 114 & 686 & 97.8\\
-				90 & 788 & 112 & 98.1 & 111 & 789 & 97.3\\
+				500 & 366 & 134 & 98.1 & 132 & 368 & 97.2\\
+				600 & 477 & 123 & 97.8 & 122 & 478 & 97.2\\
+				700 & 582 & 118 & 98.1 & 116 & 584 & 96.8\\
+				800 & 684 & 116 & 99.1 & 114 & 686 & 97.8\\
+				900 & 788 & 112 & 98.1 & 111 & 789 & 97.3\\
 				\bottomrule
 			\end{tabular}
 			\caption{Messung der Projektionssweiten $b_i$ und $g_i$ bei festgelegtem Abstand $e$ nach \texorpdfstring{\textsc{Bessel}}{Bessel}; blaues Licht.}
@@ -204,12 +209,13 @@ Die Regression mithilfe der Formeln
  \input{content/linreg.tex}
 mit den in Gleichung \eqref{eq:abbe2} definierten Abkürzungen und der Anzahl der Datenpaare N, ergibt
 \begin{alignat}{3}
-	h_1 = \SI{55(14)}{\milli\meter} & \qquad&&h_2 = \SI{72(7)}{\milli\meter}
+	f_1 = \SI{183(5)}{\milli\meter} & \qquad&&f_2 = \SI{195(4)}{\milli\meter} \\
+	h_1 = \SI{55(14)}{\milli\meter} & \qquad&&h_2 = \SI{72(7)}{\milli\meter}.
 \end{alignat}
+Daraus folgt für die Brennweite $f$ des Linsensystems
 \begin{equation}
-	f = \SI{189(5)}{\milli\meter}
+	f = \SI{189(5)}{\milli\meter}.
 \end{equation}
-
 
 \begin{figure}[p]
 	\centering
