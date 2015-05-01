@@ -1,0 +1,9 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+
+\input{../Tabellen/T1.tex}
+\input{../Tabellen/T2.tex}
+\input{../Tabellen/T3.tex}
+\input{../Tabellen/T4.tex}
+\input{../Tabellen/T5.tex}
+\input{../Tabellen/Werte.tex}
