@@ -1,6 +1,6 @@
 \section*{Ziel}
 
-Es werden die Elementarladung $e$  und die Avogadro-Konstante $N_0$ ermittelt.
+Es werden die Elementarladung $e$  und die Avogadro-Konstante $N_\text{A}$ ermittelt.
 \section{Theorie}
 \label{sec:Theorie}
 
@@ -10,13 +10,13 @@ Bei Erreichen dieser Geschwindigkeit stellt sich ein Kräftegleichgewicht ein,
 die Geschwindigkeit $v_0$ ist daher konstant.
 Die Bewegungsgleichung für einen solchen Tropfen ist mit
 \begin{equation}
-	\frac{4\pi}{3}r^3(\rho_\text{Öl}-\rho_\text{Luft})g=6\pi\eta_\text{L}v_0
+	\frac{4\pi}{3}r^3(\rho_\text{Öl}-\rho_\text{Luft})g=6\pi\eta_\text{Luft}v_0
 	\label{eq:bewgl_1}
 \end{equation}
 gegeben, wobei $\rho$ die Dichte, $\eta$ die Viskosität und $r$ der Tröpfenradius ist.
 Für den Tröpfenradius $r$ gilt damit sofort
 \begin{equation}
-	r=\sqrt{\frac{9\eta_\text{L}v_0}{g(\rho_\text{Öl}-\rho_\text{L})}}.
+	r=\sqrt{\frac{9\eta_\text{Luft}v_0}{g(\rho_\text{Öl}-\rho_\text{Luft})}}.
 	\label{eq:radius_v0}
 \end{equation}
 Befindet sich auf dem Tröpfchen, etwa ausgehend von triboelektrischen Effekten bei der Zerstäubung,
@@ -25,26 +25,26 @@ Im Folgenden wird ein homogenes elektrisches Feld $E$ angenommen, das in oder ge
 Bei bekanntem elektrischen Feld $E$, so muss in der Gleichung \ref{eq:bewgl_1} die zusätzlich auftretende Kraft berücksichtigt werden.
 Es gilt hierfür im Allgemeinen
 \begin{equation}
-	\frac{4\pi}{3}r^3(\rho_\text{Öl}-\rho_\text{Luft})g-6\pi\eta_\text{L}v_0= F_\text{el},
+	\frac{4\pi}{3}r^3(\rho_\text{Öl}-\rho_\text{Luft})g-6\pi\eta_\text{Luft}v_0= F_\text{el},
 	\label{eq:bewgl_2a}
 \end{equation}
 je nach Ausrichtung des Feldes $E$ ist die Bewegung des Tröpfchen in oder gegen Fallrichtung.
 Hieraus folgen für beide Fälle die Bewegungsgleichungen
 \begin{align}
-	\frac{4\pi}{3}r^3(\rho_\text{Öl}-\rho_\text{Luft})g-6\pi\eta_\text{L}v_\text{ab} &= -q E,\\
-	\frac{4\pi}{3}r^3(\rho_\text{Öl}+\rho_\text{Luft})g+6\pi\eta_\text{L}v_\text{auf}&= q E.
+	\frac{4\pi}{3}r^3(\rho_\text{Öl}-\rho_\text{Luft})g-6\pi\eta_\text{Luft}v_\text{ab} &= -q E,\\
+	\frac{4\pi}{3}r^3(\rho_\text{Öl}+\rho_\text{Luft})g+6\pi\eta_\text{Luft}v_\text{auf}&= q E.
 	\label{eq:bewgl_2}
 \end{align}
 Ist das elektrische Feld $E$ bekannt, so kann mithilfe der Geschwindigkeiten Aussage getroffen werden,
 welcher Radius $r$ das gemessene Tröpfchen aufweist und welche Ladung $q$ es trägt.\newpage
 Es gelten
 \begin{equation}
-	r=\sqrt{\frac{9\eta_\text{L}(v_\text{ab}-v_\text{auf})}{2g(\rho_\text{Öl}-\rho_\text{L})}}
+	r=\sqrt{\frac{9\eta_\text{Luft}(v_\text{ab}-v_\text{auf})}{2g(\rho_\text{Öl}-\rho_\text{Luft})}}
 	\label{eq:radius}
 \end{equation}
 und
 \begin{equation}
-	q=3\pi\eta_\text{L}\sqrt{\frac{9\eta_\text{L}(v_\text{ab}-v_\text{auf})}{2g(\rho_\text{Öl}-\rho_\text{L})}}\frac{(v_\text{ab}+v_\text{auf})}{E}
+	q=3\pi\eta_\text{L}\sqrt{\frac{9\eta_\text{Luft}(v_\text{ab}-v_\text{auf})}{2g(\rho_\text{Öl}-\rho_\text{Luft})}}\frac{(v_\text{ab}+v_\text{auf})}{E}
 	\label{eq:ladung}
 \end{equation}
 
