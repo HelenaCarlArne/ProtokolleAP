@@ -142,8 +142,8 @@ else:
         if(OK[j]):
             plt.errorbar(r[j]*10**6, q_korr[j]*10**19, xerr=Δr[j]*10**6, yerr=Δq_korr[j]*10**19, fmt='rx') # Sollen die 
     plt.legend(loc = 'best')
-    plt.ylim(0, 20)
-    plt.xlim(0,1.4)
+    plt.ylim(0, 5.5)
+    plt.xlim(0,0.6)
     plt.xlabel(r"$\mathrm{Ladung}\; q /10^{-19}\mathrm{C}$")
     plt.ylabel(r"$\mathrm{Tröpfchenradius}\; r /\mathrm{\mu m}$")
     plt.savefig("../Bilder/plot_messwerte.pdf")
@@ -162,7 +162,8 @@ else:
         plt.axhline(j*x[z]*1e19, linestyle='--', color='grey') # Literaturwerte
         
     plt.legend(loc = 'best')
-    plt.ylim(0, 6)
+    plt.xlim(0.2,0.55)
+    plt.ylim(0, 5.5)
     plt.xlabel(r"$\mathrm{Ladung}\; q /10^{-19}\mathrm{C}$")
     plt.ylabel(r"$\mathrm{Tröpfchenradius}\; r /\mathrm{\mu m}$")
     plt.savefig("../Bilder/plot_messwerte+.pdf")
