@@ -1,5 +1,0 @@
-# t_auf[s]    t_ab[s]
-# Tröpfchen 10 # Werte getauscht
-11.81	9.29
-12.03	7.00
-11.72	8.75
