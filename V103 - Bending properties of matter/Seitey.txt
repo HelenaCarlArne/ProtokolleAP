@@ -1,0 +1,17 @@
+# Die andere Seitenlänge des zweiten Stabes (rechteckig) in mm
+10.05
+10.05
+10.05
+10.05
+10.10
+10.00
+10.15
+10.00
+10.05
+10.15
+
+
+# Mittelwert des Durchmessers y_m = 11,07 mm
+# Standardabeiwchung s_y = 1,24 mm
+# Standardabweichung des Mittelwerts s_y_m = 0,35 mm
+# Stablänge L = 524 mm

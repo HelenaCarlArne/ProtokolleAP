@@ -1,0 +1,184 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{dichte_styropor}{manual}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \verb{url}
+      \verb http://www.chemie.de/lexikon/Polystyrol.html
+      \endverb
+    \endentry
+    \entry{V101}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
+      \field{labeltitle}{Versuch V101: Das Trägheitsmoment}
+      \field{title}{Versuch V101: Das Trägheitsmoment}
+      \field{urlday}{01}
+      \field{urlmonth}{11}
+      \field{urlyear}{2014}
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/Traegheit.pdf
+      \endverb
+    \endentry
+    \entry{matplotlib}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=945db4bbb079217b43c830150ebb3811}{Hunter}{H\bibinitperiod}{John\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{945db4bbb079217b43c830150ebb3811}
+      \strng{fullhash}{945db4bbb079217b43c830150ebb3811}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labeltitle}{Matplotlib: A 2D Graphics Environment}
+      \field{addendum}{Version 1.3.1}
+      \field{journaltitle}{Computing in Science and Engineering}
+      \field{number}{3}
+      \field{title}{Matplotlib: A 2D Graphics Environment}
+      \field{volume}{9}
+      \field{year}{2007}
+      \field{pages}{90\bibrangedash 95}
+      \verb{url}
+      \verb http://link.aip.org/link/?CSX/9/90/1
+      \endverb
+    \endentry
+    \entry{scipy}{misc}{}
+      \true{morelabelname}
+      \name{labelname}{3}{}{%
+        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{3}{}{%
+        {{hash=4b3d26f886661aa723985bcfd835ba18}{Jones}{J\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=84194a0ad9431322c2f58a085b3991f0}{Oliphant}{O\bibinitperiod}{Travis}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{Peterson}{P\bibinitperiod}{Pearu}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6161d5ffac903d9c99af53f45c09a00f}
+      \strng{fullhash}{0fc4e01109f422119afc29f3251df541}
+      \field{sortinit}{J}
+      \field{sortinithash}{f75b22df8c340a961dce37019e29107f}
+      \field{labeltitle}{{SciPy}: Open source scientific tools for {Python}}
+      \field{addendum}{Version 0.14.0}
+      \field{title}{{SciPy}: Open source scientific tools for {Python}}
+      \field{year}{2001}
+      \verb{url}
+      \verb http://www.scipy.org/
+      \endverb
+    \endentry
+    \entry{kuchen}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=bbbaa048600aa66c82c8b6d12560aaaa}{Kuchling}{K\bibinitperiod}{Horst}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=bbbaa048600aa66c82c8b6d12560aaaa}{Kuchling}{K\bibinitperiod}{Horst}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Hanser Verlag}%
+      }
+      \strng{namehash}{bbbaa048600aa66c82c8b6d12560aaaa}
+      \strng{fullhash}{bbbaa048600aa66c82c8b6d12560aaaa}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Taschenbuch der Physik}
+      \field{title}{Taschenbuch der Physik}
+      \field{volume}{20}
+      \field{year}{2011}
+    \endentry
+    \entry{uncertainties}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=fd5e607cc043da9b40442508c133a26c}{Lebigot}{L\bibinitperiod}{Eric\bibnamedelima O.}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fd5e607cc043da9b40442508c133a26c}
+      \strng{fullhash}{fd5e607cc043da9b40442508c133a26c}
+      \field{sortinit}{L}
+      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
+      \field{labeltitle}{Uncertainties: a Python package for calculations with uncertainties}
+      \field{addendum}{Version 2.4.5}
+      \field{title}{Uncertainties: a Python package for calculations with uncertainties}
+      \verb{url}
+      \verb http://pythonhosted.org/uncertainties/
+      \endverb
+    \endentry
+    \entry{numpy}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=00f2976ade6b1d16d78161a1f190716c}{Oliphant}{O\bibinitperiod}{Travis\bibnamedelima E.}{T\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{00f2976ade6b1d16d78161a1f190716c}
+      \strng{fullhash}{00f2976ade6b1d16d78161a1f190716c}
+      \field{sortinit}{O}
+      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
+      \field{labeltitle}{Python for Scientific Computing}
+      \field{addendum}{Version 1.8.1}
+      \field{journaltitle}{Computing in Science \& Engineering}
+      \field{number}{3}
+      \field{title}{Python for Scientific Computing}
+      \field{volume}{9}
+      \field{year}{2007}
+      \field{pages}{10\bibrangedash 20}
+      \verb{url}
+      \verb http://link.aip.org/link/?CSX/9/10/1
+      \endverb
+    \endentry
+    \entry{gimp}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=eff56c5d323af803bc67f548d1618fb3}{Team}{T\bibinitperiod}{The\bibnamedelima GIMP}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=eff56c5d323af803bc67f548d1618fb3}{Team}{T\bibinitperiod}{The\bibnamedelima GIMP}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eff56c5d323af803bc67f548d1618fb3}
+      \strng{fullhash}{eff56c5d323af803bc67f548d1618fb3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9378dd666f3c24d81538df53aa99e23d}
+      \field{labeltitle}{GIMP: GNU Image Manipulation Program}
+      \field{addendum}{Version 2.8.10}
+      \field{title}{GIMP: GNU Image Manipulation Program}
+      \verb{url}
+      \verb http://www.gimp.org/
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

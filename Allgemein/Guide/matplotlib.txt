@@ -1,0 +1,6 @@
+Einseitige Grenzen:
+
+#plt.gca().set_ylim(ymin=0)
+#plt.gca().set_xlim(xmin=0)
+#plt.gca().set_ylim(ymax=0)
+#plt.gca().set_xlim(xmax=0)

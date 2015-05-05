@@ -1,0 +1,12 @@
+
+2. Durchführung
+
+ Es werden zwei verschiedene Stäbe ausgewählt, deren Seitenlänge beziehungsweise Durchmesser mehrfach ausgemessen wird.
+
+ Für die Messung bei einseitiger Einspannung wird der Stab in der Messvorrichtung an einer Seite fest eingespannt und die Gesamtlänge des freihängenden Stabes ermittelt.
+ Zur Messung der Auslenkung D an dem Messpunkt x wird eine auf dem Messschieber befindliche Messuhr benutzt. Hierzu wird das Gewicht von dem Stab getrennt und die Messuhr an dieser Stelle auf Null gesetzt, um anschließend das Gewicht an dem freien Ende des Stabes zu befestigen und den Wert für die Auslenkung abzulesen. Die Messuhr wird auf dem Messschieber zum nächsten Messpunkt x verschoben und das Verfahren wiederholt, sodass  20 Messwerte aufgenommen werden.
+
+Für die Messung bei zweiseitiger Einspannung wird der Stab in der Messvorrichtung an dem Einspannpunkt B fest eingespannt und auf den Auflagepunkt A gelegt. Die Distanz L von Einspannpunkt B und Auflagepunkt A wird bestimmt und auf der Mitte des Stabes ein Gewicht platziert.
+Wie in der Zeichnung werden zwei Messuhren benutzt, die beginnend an den Punkten A und B die Deformation D in Abhängigkeit des Ortes x aufnehmen, nachdem das Gewicht von dem Stab getrennt und die Messuhren an diesen Stellen auf Null gesetzt wurden. Die Messuhren werden jeweils auf dem Messschieber zum nächsten Messpunkt x in Richtung Mitte verschoben und das Verfahren wiederholt, sodass 20 Datenpaare aufgenommen werden.
+
+Die Massen der Gewichte werden bestimmt.

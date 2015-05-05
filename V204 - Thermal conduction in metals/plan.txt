@@ -1,0 +1,15 @@
+
+Statische Methode
+
+
+
+Dynamische Methode
+
+
+Aufgaben: Kopiert aus der Versuchsanleitung
+•Untersuchung des zeitlichen Verlaufs der Temperaturanderung fur die vier vorliegenden
+Stabe.
+•
+Bestimmung der Wellenlange und Frequenz der ’Temperaturwelle’ nach periodischer
+Anregung.
+•Bestimmung der Warmeleitfahigkeit von Aluminium, Messing und Edelstahl nach derAngstrom-Methode

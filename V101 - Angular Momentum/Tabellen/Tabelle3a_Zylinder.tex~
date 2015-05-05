@@ -1,0 +1,15 @@
+\begin{table}[h]
+	\centering
+	\sisetup{table-format=2.3}
+	\begin{tabular}{ccc}
+	\toprule
+	&{Mantel}&{Kreisscheibe}\\
+	\midrule
+{Volumen / $\si{\meter\cubed}$}&$0.0002588\pm0.0000010$&$(4.613\pm0.010)10^{-5}$\\
+{Masse / $\si{\kilo\gram}$}&$0.2717\pm0.0010$&$0.04844\pm0.00011$\\
+{Trägheitsmoment / $\si{\kilo\gram\meter\squared}$}&$0.0005478\pm0.0000017$&$(3.8945\pm0.0028)10^{-5}$\\
+	\bottomrule
+	\end{tabular}
+	\caption{Daten des angenommenen Hohlzylinders}
+	\label{tab:M3 I_Z}
+\end{table}

@@ -1,0 +1,116 @@
+Auswertung
+
+3.1 Runder Stab in einseitiger Einspannung
+
+Zur Berechnung des Elastizitätsmoduls E werden das Gewicht F, die Regressionssteigung m und das Flächenträgheitsmoment I benötigt.\\
+Die Abmessungen des Stabes sind in Tabelle 0 aufgetragen, Mittelwert und Fehler werden  mit den Formeln
+
+FORMEL Mittelwert = ENDWERT
+FORMEL Fehler = ENDWERT
+
+berechnet.
+Für das Flächenträgheitsmoment I wird über den kreisförmigen Stabquerschnitt A integriert, wofür die Polarkoordinaten ausgewählt werden.
+
+I = int_(A)[(y²dA(y))]=int_(Winkel)(Radius)[r³sin²(Winkel)(dr,dWinkel)]=int_(0-Pi)(0-R)[r³sind²(Phi)(dr,dPhi)]=int_(0-Pi)[1/4*r⁴](0-R)dPhi]=[Pi/4*r⁴](0-R)
+
+Der *absolute* Fehler wird via Gauß'scher Fehlerfortpflanzung
+
+[FORMEL]
+
+berechnet. Damit ist das Flächenträgheitsmoment I für den runden Stab I= Wert und Fehler.
+Resultierend aus der angehängten Masse M ergibt sich mit M=... und g= der Wert
+F=….
+
+Mithilfe der Formel
+
+D(x) = … (#42)
+
+kann die Auslenkung D(x) gegen die linearisierte Variable x_lin= Lx²-1/3 x³ aufgetragen und eine lineare Regression ausgeführt werden. 
+Die Regression erfolgt unter Zuhilfenahme von Rechnern und unter Verwendung der Formeln für die Steigung m, den y-Achsenabschnitt b und deren Fehlern
+
+FORMEL m = m(ENDWERT)		//Legende der verwandten Symbole
+FORMEL b = b(ENDWERT)
+FEHLERBERECHNUNG mit Endwerten
+
+Der gesuchte Elastizitätsmodul berechnet sich dadurch, dass die ermittelte Regressionsteigung m der linearen Funktion D(x_lin) mit F/2EI nach Gleichung (#42) übereinstimmt. Es folgt daraus, dass für den Elastizitätsmodul 
+
+E= F/2mI
+
+gilt. Mit der Gaußschen Fehlerfortpflanzung und den fehlerbehafteten Größen m und I wird der *relative* Fehler des Elastizitätsmoduls mit *Wert* abgeschätzt. Daher ist
+
+E = Wert und Fehler
+
+
+3.2 Rechteckiger Stab in einseitiger Einspannung
+
+Die Auswertung der Messwerte für den rechteckigen Stab ist konzeptionell ähnlich.
+Die Abmessungen des Stabes sind in Tabelle 1 aufgetragen. Mittelwert und Fehler sind nach obigen Formeln (Nr. # und #)
+
+Eine Seite = Mittelwert+/- Fehler und
+Andere Seite = Mittelwert+/- Fehler.
+
+Zur Berechnung des Flächenträgheitsmomentes werden kartesische Koordinaten verwandt.
+
+I = int_(A)[(y²dA(y))]=int_(Eine Seite)(Andere Seite)y^2 dxdy]=…
+
+Der *absolute* Fehler berechnet sich nach der Gauß'schen Fehlerfortpflanzung zu DELTAI=..., woraus sich für das Flächenträgheitsmoment 
+
+I=..
+
+ergibt. Das Gewicht beträgt mit M=... und g=… F=… . 
+
+Die Regression der Gleichung (#42) ergibt analog zu Abschnitt 3.1
+
+m = …
+b = …
+Fehler_m= …
+Fehler_b= …
+
+Damit ergibt sich aus der Gleichheit von m und F/2EI und der Fehlerfortpflanznung
+
+E= F/2mI, 
+woraus
+E = Wert und Fehler 
+folgt.
+
+3.3 Runder Stab in zweiseitiger Einspannung
+
+Da derselbe runde Stab wie bei einseitiger Einspannung benutzt wurde, sind Flächenträgheitsmoment I und Durchmesser des Stabes den oberen Ausführungen zu entnehmen. Die Gesamtlänge des Stabes beträgt 550mm.
+Die Masse mit M=... erwirkt eine Kraft F=..
+
+Gemäß der Formel
+
+D(x) = … (#24)
+
+kann die Auslenkung D(x) gegen die linearisierte Variable x_lin= 3*L^2*x-4*x^3 aufgetragen  und eine lineare Regression ausgeführt werden. Die Regression ermittelt nach dem Verfahren in 3.1 die Regressionskoeffizienten und deren Fehler
+
+m = …
+b = …
+Fehler_m= …
+Fehler_b= …
+
+Das gesuchte Elastizitätsmodul lässt sich dadurch bestimmen, dass die ermittelte Regressionssteigung m der linearen Funktion D(x_lin) mit F/48EI nach Gleichung (#24) übereinstimmt. Es folgt mittels Gaus'scher Fehlerfortpflanzung
+
+E = Wert und Fehler.
+
+für den Elastizitätsmodul E bei zweiseitiger Einspannung.
+
+
+Runder Stab in einseitiger Einspannung
+
+F= 7,54 N
+I= (506,77 +/- 16,09)mm⁴
+E= (82,003 +/- 2,620)kN/mm²
+
+Eckiger Stab in einseitiger Einspannung
+
+F= 7,54 N
+I= (856,91+/- 13,75)kN/mm²
+E= (87,97 +/- 1,412)kN/mm²
+
+Runder Stab in beidseitiger Auflage
+
+F= 23,15 N
+I= (506,77 +/- 16,09)mm⁴
+E(rechts)= (155,04 +/- 9,649)kN/mm²
+E(links)= (163,31 +/- 8,285)kN/mm²

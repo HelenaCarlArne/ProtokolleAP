@@ -1,0 +1,102 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+\subsection{Bestimmung des \texorpdfstring{\textsc{Planck}schen Wirkungsquantums $h$}{Planckschen Wirkungsquantums}}
+\label{sec:Auswertung1}
+Die Messwerte sind in Tabelle \ref{tab:messwerte} aufgetragen.
+In Abbildungen \ref{fig:uidiagramm1} bis \ref{fig:uidiagramm2} sind die gemessenen Gegenspannungen $U_\text{G}$ gegen die Wurzel des Photostroms $I$ aufgetragen.
+Die Parameter für die Ausgleichsgeraden werden nach den Formeln \eqref{eq:regress}
+\input{content/linreg.tex}
+bestimmt.\\
+Es ergeben sich die Fitparameter in Tabelle \ref{tab:abbfitwerte}.
+\begin{table}
+	\centering
+	\begin{tabular}{l S[table-format=3] S[table-format=1.2] S[table-format=1.2]}
+		\toprule
+		\multicolumn{2}{c}{Lichtspektrallinie} &\multicolumn{2}{c}{Fitparameter} \\
+		{Farbe} & {Wellenlänge $\lambda$$/\:\si{\nano\meter}$} &{Steigung $a$/$\:\si{\volt\per{(\pico\ampere)\tothe{\sfrac{1}{2}}}}$} & {Abschnitt $b$$/\:\si{\volt}$}\\
+		\midrule
+			{rot} 		&640	&-0.25  &0.77\\
+			{gelb} 		&578	&-0.04  &0.34\\
+			{grün} 		&546	&-0.03  &0.44\\
+			{violett}	&435.8	&-0.04  &0.91\\
+			{ultraviolett} &366	&-0.08  &1.47\\
+		\bottomrule
+	\end{tabular}
+	\caption{Fitparameter der \texorpdfstring{Abbildungen \ref{fig:uidiagramm1} bis \ref{fig:uidiagramm2}}{U-I-Diagramme}}
+	\label{tab:abbfitwerte}
+\end{table}
+
+Weiter werden die y-Achsenabschnitte $b$ der Fits gegen die Lichtfrequenz $\nu$ in Abbildung \ref{fig:unu} aufgetragen. 
+Für die Umrechnung von Wellenlänge $\lambda$ und $\nu$ gilt
+\begin{equation}
+	c_0=\lambda\cdot\nu.
+\end{equation}
+
+Nach der \textsc{Einstein}schen Formel \eqref{eq:einstein}
+werden mithilfe der Linearisierung
+\begin{align}
+	%E_\text{kin.} &= e\cdot U = {h}\cdot{\nu} - {W_\text{K}}\\
+	\underbrace{U}_{y_\text{Reg}} &= \underbrace{\frac{h}{e}}_{a_\text{Reg}}\cdot\underbrace{\nu}_{x_\text{Reg}} - \underbrace{\frac{W_\text{K}}{e}}_{b_\text{Reg}}\\
+\end{align}
+aus den Fitparametern das Plancksche Wirkungsquantum $h$ und die Austrittsarbeit $W_\text{K}$ bestimmt.
+
+Es folgt
+\begin{alignat}{3}
+	\frac{h}{e}=\SI{3.4(6)e-15}{\weber} \quad&\text{und} \quad&&\frac{W_\text{K}}{e}= \SI{-1.4(4)}{\volt}.
+\end{alignat}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/unu_diag.png}
+	\caption{Maximale Gegenspannung gegen die Lichtfrequenz. \cite{matplotlib}}
+	\label{fig:unu}
+\end{figure}
+\newpage
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Fit_gelb.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Gegenspannungen, Messung bei gelber Spektrallinie.\cite{matplotlib}}
+	\label{fig:uidiagramm1}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Fit_gruen.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Gegenspannungen, Messung bei grüner Spektrallinie.\cite{matplotlib}}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Fit_rot.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Gegenspannungen, Messung bei roter Spektrallinie.\cite{matplotlib}}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Fit_uv.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Gegenspannungen, Messung bei UV-Spektrallinie.\cite{matplotlib}}
+\end{figure}
+\begin{figure}[pt]
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/Fit_violett.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Gegenspannungen, Messung bei violetter Spektrallinie.\cite{matplotlib}}
+	\label{fig:uidiagramm2}
+\end{figure}
+
+\input{Tabellen/werte.tex}
+\subsection{Messung des \texorpdfstring{Photostromes $I$}{Photostromes} bei hohen \texorpdfstring{Spannungen $U$}{Spannungen}}
+\label{sec:Auswertung2}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/messung2.png}
+	\caption{Gemessener Photostrom in Abhängigkeit von der angelegten Spannung.\cite{matplotlib}}
+	\label{fig:uidiagramm3}
+\end{figure}
+
+
+Wird keine Gegenspannung $U_\text{G}$ angelegt, so beträgt der Photostrom $I = \SI{80}{\pico\ampere}$.
+In der vorhergegangen Messung wurde festgestellt, dass eine bremsende Spannung $U_\text{G}$ von etwa $\SI{0.34}{\volt}$ 
+ausreichend ist, um den Photostrom $I$ vollständig zu unterdrücken.
+Wird die Gegenspannung $U_\text{G}$ weit über diese Grenze angelegt, so stellt sich ein geringer, negativer Photostrom $I$ ein.
+Dieser nimmt bereits für geringe Spannungen $U_\text{G}$ den Grenzwert $I=\SI{-0.01}{\nano\ampere}$ an und reagiert nicht auf weitere Erhöhung der Spannung $U_\text{G}$.
+
+Wird eine negative Spannung $U_\text{B}$ angelegt, sodass die Photokathode negativ und die Anode positiv geladen ist, 
+werden Photoelektronen beschleunigt.
+Wird diese beschleunigende Spannung $U$ erhöht, so wächst der Photostrom $I$ an. 
+Das Wachstum des Stromes $I$ ist für Spannungen $U$ bis etwa $\SI{5}{\volt}$ linear und geht für höhere Spannungen gegen einen Grenzwert von etwa $\SI{2.5}{\nano\ampere}$.

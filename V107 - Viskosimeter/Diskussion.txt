@@ -1,0 +1,21 @@
+﻿
+4. Diskussion
+
+4.1 Vergleich der Viskosität mit der Literatur
+
+In Grafik 1 ist ln(Eta) gegen den Kehrwert der Temperatur aufgetragen. Aus der Regressionsrechnung folgt A= Wert und B= Wert. ??Die Auswertung des Diagrammes gibt die Werte A_D; B_D aus.?? Es ist ein linearer Zusammenhang zwischen dem natürlichen Logarithmus der Viskosität und 1/T zu erkennen.
+Vergleicht man die in Tabelle () angegebenen Viskositäten für die spezifischen Temperatur mit den Literaturwerten, so liegen die Abweichungen zwischen 0,063 mPa*s und 0,109 mPa*s. Fußnote:(Zum direkten Vergleich wurden die Werte in Tabelle 5 aufgetragen.) Da die Abweichungen in gleicher Größenordnung liegen, ist es möglich, dass das verwendete Wasser eine größere Viskosität aufweist, als die Flüssigkeit für die Literaturwerte. Weiter könnte ein systematischer Fehler vorliegen, da die Fallzeiten t manuell gemessen wurden. 
+
+
+4.2 Abnahme der Reibung mit steigender Temperatur
+
+Zu erkennen ist, dass mit steigender Temperatur die Viskosität/Zähflüssigkeit des Fluids abnimmt. Durch erhöhte Molekularbewegung und größerem molekularen Abstand wird beim Erhitzen die intermolekulare Bindung des Wassers, etwa durch Wasserstoffbrücken- und Keesom-Bindung, geschwächt.
+Dementsprechend wird der Bewegung der Kugel durch die Flüssigkeit ein geringer Reibungswiderstand entgegengesetzt und so die Geschwindigkeit erhöht.
+
+
+4.3 Diskussion der Strömung
+
+Bei Raumtemperatur liegt die Reynoldszahl der großen Kugel mit Re= 17,06922 weit unter dem in der Literatur angegebenen Grenzwert von Re = 2300. Auch die kleine Kugel mit einer wesentlich höheren Geschwindigkeit und mit einer Reynoldszahl Re=118,505639, welche etwa das 7-fache des Wertes für die große Kugel ist, liegt im Bereich laminarer Strömungen. Die Wahrscheinlichkeit für eventuelle Verwirbelungen ist vernachlässigbar klein. 
+
+Für höhere Temperaturen sind in Tabelle () die Reynoldszahlen für die jeweilig gemessene Temperatur aufgelistet. Mit wachsender Temperatur steigt der Wert der Reynoldszahl von 20,74 bis zum errechneten Höchstwert von 94,26 bei 343.15K. Auch in diesem Versuchteil bleibt die Strömung mit hoher Wahscheinlichkeit rein laminar.
+

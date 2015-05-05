@@ -1,0 +1,61 @@
+\section{Ziel}
+\label{sec:Ziel}
+
+In diesem Versuch wird die Wechselwirkung energiereicher Strahlung mit Materie untersucht. Näher betrachtet werden der Wirkungsquerschnitt und Absorptionskoeffizient verschiedener Materialien unter $\gamma$-Strahlung, sowie die Rechweite von $\beta$-Strahlen innerhalb der Materie.
+
+\section{Theorie}
+\label{sec:Theorie}
+
+Trifft ein Teilchenstrahl auf Matierie fürht die Wechselwirkung zwischen Atomen des Feststoffes mit der Strahlung zur Intensitätsabnahme dieser. Anders ausgedrückt nimmt die Anzahl der Teilchen pro Zeit und Fläche nach Eindringen in die Materie ab. Als Maß für die Häufigkeit der Wechselwirkung kann der Wirkungsquerschnitt $\sigma$ genutzt werden.$\sigma$ ist dabei die Fläche bestimmter Größe die jedem Atom des Absorbers zugeordnet wird. Es wird die Wahrscheinlichkeit beschrieben, dass ein eintreffendes Teilchen mit dem Körper wechselwirkt. Dabei gilt die Beziehung 
+
+\begin{equation}
+W=n D \sigma =\frac{n D \sigma F}{F}.
+\end{equation}
+
+Dabei ist $D$ die Dicke des Absorbers und $F$ die Querschnittsfläche. $n$ beschreibt die Anzahl der Teilchen pro Volumeneinheit.
+Treffen $N_0$ Teilchen in einem Zeitintervall auf die Fläche $F$ kann über
+
+\begin{equation}
+N=N_0 n D \sigma
+\end{equation}
+
+die Anzahl $N$ der Wechselwirkungen im gewählten Zeitintervall bestimmt werden. 
+In einem realen Absorber überdecken sich die Volumeneinheiten der Anzahl $n$ teilweise. Dies hat zur Folge, dass die Überdeckung nur vernachlässigbar ist, wenn eine dünne Schicht $dx$ betrachtet wird in der $dN$ Reaktionen stattfinden. Damit ist
+\begin{equation}
+dN=-N(x) dx n \sigma.
+\end{equation}
+Die Menge der Teilchen, die erst nach der Strecke $dx$ mit der Materie wechselwirken, nimmt um $N(x)$ ab. Wird GLeichung y integriert, also die gesamte Dicke $D$ betrachtet ergibt sich das Absorptionsgesetz
+
+\begin{equation}
+N(D)=N_0 exp(-n \sigma D).
+\end{equation}
+
+Dies gilt die die Näherung, dass jedes Teilchen nur eine Reaktion ausführt und duch sie vernichtet wird. Oder aber die mittlere Entfernung zwischen zwei Reaktionen sehr viel größer als die Schichtdicke ist.
+Für den Absorptionskoeffizienten $\mu$ der Einheit $1/m$ gilt
+\begin{equation}
+\mu=n\sigma.
+\end{equation}
+
+Nach der Dicke
+\begin{equation}
+D_\frac{1}{2}=\frac{ln(2)}{\mu}
+\end{equation}
+hat sich die Intensität der Strahlung halbiert.
+$\mu$ wird bestimmt über Absorptionsmessungen und das Abschätzen von $\sigma$.
+Gemäß der Annahme, dass die Elektronen als Wechselwirkungszentren fungieren kann $\sigma$ über
+
+\begin{equation}
+\sigma=\frac{\mu}{n}=\frac{\mu M}{z N_L \rho}
+\end{equation}
+ bestimmt werden.
+$M$ ist das Molekulargewicht des Absorbers, $N_L$ die Lohschmidtzahl, und $\rho$ die Dichte.
+
+\section{Gamma-Strahlung}
+
+Analog zur Elektronenhülle besitzen die Atomkerne diskrete Energieniveaus. Übergänge zwischen zwei Niveaus $E_1$ und $E_2$ emittieren die Energie $E_\gamma=E_1-E_2$ in Form von Photonen als sogenannte Gamma-Strahlung. Diese Photonen besitzen keine Ruhemasse und breiten sich mit $c$ aus. Als typische elektromagnetische Welle kann die Energie auch beschrieben werden als $E_\gamma=h\nu=\frac{hc}{\lambda}$. Die Energieniveaus sind genau definiert und ergeben damit ein Liniensprektrum. 
+Die Strahlung mit $E\approx 60-1300 keV$ folgt einem exponentiellen Absorptionsgesetz, da sie kaum mit der Materie in Wechselwirkung tritt. Hauptsächliche Angriffsfläche sind die Elektrone und Atomkerne, sowie die el. Felder. Es treten Prozesse wie die Paarvernichtung, reine Energieverluste, Änderungen der Ausbreitungsrichtung und Polarisation aus. Häufigste Prozesse sind die 
+\begin{itemize}
+\item Annihilationsprozess: Das $\gamma$-Quant verschwindet durch Paarvernichtung. Es trifft auf ein Elektron und der innere Photoeffekt tritt auf/ auf den Kern mit Kernphotoeffekt/ Felder Paarerzeugung
+\item inelastische Streuung: Das Quant ändert seine Richtung und gibt dabei Teilweise die Energie an den Stoßpartner ab. Elektron: Comptoneffekt, Kern: kernresonanzstreuung
+\item elastische Streuung: Sie ruft nur eine Richtungsänderung hervor. elektron Thompsonstreuung, Felder:Delbrückstreeung
+\end{itemize}

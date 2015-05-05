@@ -1,0 +1,100 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+\subsection{Bestimmung des \texorpdfstring{\textsc{Planck}}{Planck}schen Wirkungsquantum}
+\label{sec:Auswertung1}
+Die Messwerte sind in Tabelle \ref{tab:messwerte} aufgetragen.
+In Abbildungen \ref{fig:uidiagramm1} bis \ref{fig:uidiagramm2} sind die gemessenen Bremsspannungen $U_\text{B}$ gegen die Wurzel des Photostroms $I_0$ aufgetragen.
+Die Parameter für die Ausgleichsgeraden werden nach den Formeln \eqref{eq:regress}
+\input{content/linreg.tex}
+bestimmt.\\
+Es ergeben sich die Fitparameter
+\begin{table}
+	\centering
+	\begin{tabular}{l S[table-format=3] S[table-format=1.2] S[table-format=1.2]}
+		\toprule
+		\multicolumn{2}{c}{Lichtspektrallinie} &\multicolumn{2}{c}{Fitparameter} \\
+		{Farbe} & {Wellenlänge/$\:\si{\nano\meter}$} &{Steigung$/\:\si{\volt\per{\nano\meter}}$} & {Abschnitt$/\:\si{\volt}$}\\
+		\midrule
+			{rot} 		&640	&-0.25  &0.77\\
+			{gelb} 		&578	&-0.04  &0.34\\
+			{grün} 		&546	&-0.03  &0.44\\
+			{violett}	&435.8	&-0.04  &0.91\\
+			{ultraviolett} &366	&-0.08  &1.47\\
+		\bottomrule
+	\end{tabular}
+	\caption{Fitparameter der \texorpdfstring{Abbildungen \ref{fig:uidiagramm1} bis \ref{fig:uidiagramm2}}{U-I-Diagramme}}
+	\label{label}
+\end{table}
+
+Weiter werden die y-Achsenabschnitte der Fits gegen die Lichtfrequenz $\nu$ in Abbildung \ref{fig:unu} aufgetragen. 
+Für die Umrechnung von Wellenlänge $\lambda$ und $\nu$ gilt
+\begin{equation}
+	c_0=\lambda\cdot\nu.
+\end{equation}
+
+Gemäß der \textsc{Einstein}schen Formel \eqref{eq:einstein}
+\begin{align}
+	%E_\text{kin.} &= e\cdot U = {h}\cdot{\nu} - {W_\text{A}}\\
+	\underbrace{U}_{y_\text{lin}} &= \underbrace{\frac{h}{e}}_{a_\text{lin}}\cdot\underbrace{\nu}_{x_\text{lin}} - \underbrace{\frac{W_\text{A}}{e}}_{b_\text{lin}}\\
+\end{align}
+werden aus den Fitparametern das Plancksche Wirkungsquantum und die Austrittsarbeit bestimmt.
+
+Es folgt
+\begin{alignat}{3}
+	\frac{h}{e}=\SI{3.38(64)e-15}{\weber} \quad&\text{und} \quad&&\frac{W_\text{A}}{e}= \SI{-1.41(36)}{\volt}.
+\end{alignat}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/unu_diag.png}
+	\caption{Maximale Bremsspannung gegen die Lichtfrequenz.}
+	\label{fig:unu}
+\end{figure}
+\newpage
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Fit_gelb.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Bremsspannungen, Messung bei gelber Spektrallinie.}
+	\label{fig:uidiagramm1}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Fit_gruen.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Bremsspannungen, Messung bei grüner Spektrallinie.}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Fit_rot.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Bremsspannungen, Messung bei roter Spektrallinie.}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Fit_uv.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Bremsspannungen, Messung bei UV-Spektrallinie.}
+\end{figure}
+\begin{figure}[pt]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Bilder/Fit_violett.png}
+	\caption{Gemessene Photostromstärken in Abhängigkeit von den Bremsspannungen, Messung bei violetter Spektrallinie.}
+	\label{fig:uidiagramm2}
+\end{figure}
+
+\input{Tabellen/werte.tex}
+\subsection{Messung des Photostromes bei hohen Spannungen}
+\label{sec:Auswertung2}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/messung2.png}
+	\caption{Gemessener Photostrom in Abhängigkeit von der angelegten Spannung.}
+	\label{fig:uidiagramm3}
+\end{figure}
+
+Wird keine Spannung angelegt, so beträgt der Photostrom $\SI{80}{\pico\ampere}$.
+In der vorhergegangen Messung wurde festgestellt, dass eine Bremsspannung von etwa $\SI{0.34}{\volt}$ 
+ausreichend ist, um den Photostrom vollständig zu unterdrücken.
+Wird die Bremsspannung weit über diese Grenze angelegt, so stellt sich ein geringer, negativer Photostrom ein.
+Dieser Strom nimmt bereits für geringe Spannungen den Grenzwert $I_0=\SI{-0.01}{\nano\ampere}$ an und reagiert nicht auf weitere Erhöhung der Spannung.
+
+Wird eine negative Spannung angelegt, sodass die Photokathode negativ und die Anode positiv geladen ist, 
+werden Photoelektronen beschleunigt.
+Wird diese beschleunigende Spannung erhöht, so wächst der Photostrom an. 
+Das Wachstum des Stromes ist für Spannungen bis etwa $\SI{5}{\volt}$ linear und geht für höhere Spannungen gegen einen Grenzwert von etwa $\SI{2.5}{\nano\ampere}$.

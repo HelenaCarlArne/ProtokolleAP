@@ -1,0 +1,101 @@
+\section{Zielsetzung}
+Elastische Konstanten charakterisieren das Verhalten eines Stoffes bei Krafteinwirkung.
+Sie fungieren als Proportionalitätsfaktoren zwischen der pro Flächeneinheit angreifenden Kraft und der daraus resultierenden relativen Deformation -- einer Gestalts- oder Volumenänderung. 
+Ziel ist es, die elastischen Konstanten einer Metalllegierung zu bestimmen. Außerdem soll das magnetische Moment eines Permanentmagneten, sowie das Erdmagnetfeld gemessen werden.
+\section{Theorie}
+\label{sec:Theorie}
+\subsection{Wirkung von Kräften auf Körper}
+Wirken Kräfte auf einen Körper ein, kann dies auf zwei Arten geschehen.
+Die Kraft kann einerseits an jedem Volumenelement angreifen, dadurch den Bewegungszustand des Körpers ändern und ihn in eine Translations- oder Rotationsbewegung versetzen.
+Andererseits ist es möglich, dass die angreifende Kraft nur auf die Oberfläche des Körpers wirkt und dazu führt, dass sich Gestalt bzw. Volumen ändern. 
+
+Diese Kraft pro Flächeneinheit wird als Spannung definiert. 
+Diese teilt sich in zwei Komponenten auf: die Normalkomponente $\sigma$ bewirkt eine Längenänderung senkrecht, eine Tangentialspannung $\tau$ eine Längenänderung parallel zur Kraftrichtung auf eine Probe. 
+Die Kräfte wirken nachweislich an der Oberfläche und jeder beliebigen Querschnittsfläche des Körpers. 
+In Festkörpern sind die Atome in einem Kristallgitter regelmäßig angeordnet und befinden sich mit ihren direkten Nachbarn in einem Gleichgewichtszustand, in dem sich die abstoßenden und anziehenden Kräfte zu Null addieren. 
+Durch Krafteinwirkung wird ein neuer Zustand hergestellt, indem der Abstand $r_0$ der Teilchen zueinander variiert wird und sich ein neuer Gleichgewichtszustand mit dem Abstand $r'_0$ einstellt.
+Das \textsc{Hooke}sche Gesetz
+\begin{alignat}{4}
+\sigma&=E\frac{\mathup{\Delta}{L}}{L}\qquad &&\text{oder} \quad P&&&=Q\frac{\mathup{\Delta}{V}}{V}
+\label{eq:hooke}
+\end{alignat}
+beschreibt für hinreichend kleine Kräfte an der Oberfläche bzw. an jedem Volumenelement einen linearen Zusammenhang zwischen der Spannung und der durch diese hervorgerufenen relative Deformation.
+Liegt eine elastische Deformation vor, so kehrt der Körper in seine Ausgangslage zurück, sobald die Krafteinwirkung unterbrochen ist.
+Der Vorgang ist reversibel. 
+\subsection{Die elastischen Konstanten eines Materials}
+Werden unsymmetrische Kristalle mit richtungsabhängigen elektrostatischen Kräften betrachtet, müssen  viele Komponenten gemessen und errechnet werden. 
+Isotrope Körper, beispielsweise polykristalline Kristalle, zeichnen sich stattdessen durch richtungsunabhängige elastische Konstanten aus und können theoretisch durch zwei Konstanten beschrieben werden. 
+Es erweist sich jedoch als zweckmäßig, insgesamt vier Konstanten einzuführen.
+Der Schubmodul $G$ beschreibt die Gestalts-, der Kompressionsmodul $Q$ die Volumenelastizität.
+Der Elastizitätsmodul $E$ ist der Proportionalitätsfaktor aus Gleichung \eqref{eq:hooke}. 
+Die \textsc{Poisson}sche Querkontraktionszahl
+\begin{equation}
+\mu=-\frac{\mathup{\Delta}{B}}{B}\frac{L}{\mathup{\Delta}{L}}
+\label{eq:mu}
+\end{equation}
+beschreibt die relative Längenänderung bei angreifender Normalspannung in Spannungsrichtung.
+Die genannten Moduln sind nicht unabhängig voneinander und stehen über
+\begin{alignat}{3}
+	 E=2G(\mu+1) &\quad\text{und} &&\quad E=3(1-2\mu)Q
+\label{eq:modulbeziehungen}
+\end{alignat}
+in Beziehung.
+
+\subsection{Der Schubmodul \texorpdfstring{$G$}{G} eines Drahtes}
+Erfährt ein Probekörper ausschließlich Tangentialspannungen, verformt er sich so, dass eine Scherung um den Winkel $\alpha$ auftritt. Nach \textsc{Hooke} ist mit
+\begin{equation}
+\tau=G\alpha
+\label{eq:hooke_G}
+\end{equation}
+ die Spannung proportional zum Scherungswinkel. 
+Experimentell wird ein einseitig fest eingespannter zylinderförmiger Draht um den Winkel $\phi$ verdreht, wobei ein Drehmoment $M$ wirkt. 
+Die Schichten des Zylindermantels werden dabei um den Winkel $\alpha$ ausgelenkt. 
+Da das Drehmoment abhängig vom Hebelarm, also vom Probendurchmesser ist, werden im weiteren Verlauf infinitisemale Drehmomente d$M$ betrachtet, die eine Kraft d$K$ auf das Massenelement im Radius $r$ bewirken.
+Aus
+\begin{equation}
+\mathup{d}M=r\mathup{d}K
+\end{equation}
+folgt mit \eqref{eq:hooke_G} und $\tau=\frac{\mathup{d}K}{\mathup{d}F}$
+\begin{equation}
+\mathup{d}M=rG\alpha\mathup{d}F.
+\end{equation}
+Aus dem Zusammenhang $\alpha=\frac{r\phi}{L}$, dem Flächeninhalt des Kreisrings und anschließender Integration über den Radius der Probe folgt eine Formel für das Gesamtdrehmoment
+\begin{equation}
+M=\frac{\pi R^4 G}{2L}\phi=D\phi.
+\label{eq:Richtgrosse}
+\end{equation}
+Wird an das freie Drahtende ein Körper mit Trägheitsmoment $\theta$ angehängt, kann der Draht ungedämpfte harmonische Schwingungen der Dauer 
+\begin{equation}
+T_{G}=2\pi\sqrt{\frac{\theta}{D}}
+\label{eq:t}
+\end{equation}
+ ausführen. %Es wirken zwei entgegengesetzte Drehmomente aufeinander. Je nach Form des Körpers ist $M_\mathup{T}$ unterschiedlich, hier wird 
+ Das Trägheitsmoment einer Kugel ist
+\begin{equation}
+\theta=\frac{2}{5}m_\mathup{K}{r_\mathup{K}}²,
+\label{eq:theta_k}
+\end{equation}
+ womit sich
+\begin{equation}
+G=\frac{16\pi m_\mathup{K} {r_\mathup{K}}^2 L}{5T²R⁴}
+\label{eq:G}
+\end{equation}
+ergibt.
+Der Vorteil der dynamischen Methode über die Messung der Schwingungsdauer ist die geringere Fehleranfälligkeit. Die Ergebnisse bei statischer Messung können durch eventuelle elastische Nachwirkungen verfälscht werden.
+
+\subsection{Das magnetische Moment \texorpdfstring{$m$}{m}}
+
+Befinden sich Draht und angehängter Körper mit einem magnetischen Moment $m$ in einem homogenen Magnetfeld 
+\begin{equation}
+B=\frac{8\mu_0}{\sqrt{125}} \frac{I}{R_\mathup{HS}}n,
+\label{eq:B_HS}
+\end{equation}
+erzeugt von \textsc{Helmholtz}-Spulen mit Windungszahl $n$, Radius $R_\mathup{HS}$ und  Spulenstrom $I$, führt er Schwingungen mit 
+\begin{equation}
+T_m=2\pi\sqrt{\frac{\theta}{mB+D}}
+\label{eq:t_hs}
+\end{equation}
+aus. Die Periodendauer wird geringer, da ein zusätzliches Drehmoment wirkt.
+
+%\subsection{Bestimmung des Erdmagnetfeldes $B_\mathup{E}$}
+

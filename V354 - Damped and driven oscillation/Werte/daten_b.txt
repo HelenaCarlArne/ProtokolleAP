@@ -1,0 +1,7 @@
+# Versuch 354 "Gedämpfte und erzwungene Schwingungen"
+#
+# Messwert zur Bestimmung des Dämpfungswiderstandes,
+# bei dem der aperiodische Grenzfall vorliegt.
+#
+# R [Ohm]     
+4500

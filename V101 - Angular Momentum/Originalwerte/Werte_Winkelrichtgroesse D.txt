@@ -1,0 +1,13 @@
+# Bestimmung der Winkelrichtgröße D gemessen im Abstand r=9.965 cm #für Alle Auslenkungen 
+
+# Auslenkung Phi / °#Kraft F /N
+045			0.22
+090			0.40
+120			0.52
+135			0.60
+180			0.78
+225			0.92
+240			0.90
+270			1.08
+315			1.26
+360			1.42

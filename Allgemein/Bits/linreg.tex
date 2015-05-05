@@ -1,0 +1,26 @@
+\begin{figure}[p]
+\centering
+Regression nach
+\begin{subequations}
+	\begin{equation}
+		\Delta = N \sum{x^2} - {\biggl(\sum{x}\biggr)}^2,
+	\end{equation}
+	\begin{equation}
+		a_{\text{Reg}} = \frac{N\sum{x\cdot y} - \sum{x} \cdot \sum{y}}{\Delta},
+	\end{equation}
+    \begin{equation}
+		b_{\text{Reg}} = \frac{\sum{x^2} \cdot \sum{y} - \sum{x} \cdot \sum{x \cdot y}}{\Delta},
+	\end{equation}
+	\begin{equation}
+		\sigma_{y} = \sqrt{\frac{\sum{(y - a_{\text{Reg}} \cdot x - b_{\text{Reg}})^2}}{N - 2}},
+	\end{equation}
+	\begin{equation}
+		\sigma_{a} = \sigma_{y} \sqrt{\frac{N}{\Delta}},
+	\end{equation}
+	\begin{equation}
+		\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
+	\end{equation}
+	mit $x=x_\text{lin}=\frac{1}{T_m^2}$, $y=B$, $a_\text{Reg}=a_\text{lin}$, $b_\text{Reg}=b_\text{lin}$ und der Anzahl der Datenpaare N.
+	\label{eq:regress}
+\end{subequations}
+\end{figure}
