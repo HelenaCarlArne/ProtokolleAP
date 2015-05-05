@@ -1,0 +1,83 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+Mit der in Kapitel \ref{sec:Durchfuehrung} beschriebenen Apparatur werden für fünf verschienden Kondensatorspannungen $U$ jeweils fünf verschiedene Tröpfchen untersucht. Gemessen werden die Steig- und Fallzeiten $t_\mathup{auf}$ und $t_\mathup{ab}$ der Tröpfchen bei eingeschaltetem elektrischen Feld, sowie die Fallzeiten $t_0$, wenn keine Kondensatorspannung anliegt. Dabei überwinden diese eine Strecke $s=\SI{0.5}{\milli\meter}$.
+ Aufgetragen sind die Messwerte in den Tabellen \ref{tab:T1} bis \ref{tab:T5}. Die Temperatur innerhalb der Ölkammer, gemessen über einen Thermistorwiderstand, ist der Tabellenunterschrift beigefügt. Sie ändert sich im Laufe des Versuches nur sehr geringfügig.
+\input{../Tabellen/T1T2.tex}
+\input{../Tabellen/T3T4.tex}
+\input{../Tabellen/T5.tex}
+
+In Tabelle \ref{tab:werte} sind die berechneten Fallzeiten und deren Fehler aufgelistet. Diese, sowie alle weiteren in der Auswertung benutzten Mittelwerte werden über
+\begin{equation}
+\tilde{x}=\frac{1}{n}\sum_{i=1}^n {x_i}
+\end{equation}
+bestimmt mit der Standardabweichung 
+\begin{equation}
+\sigma=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n {(x_i-\tilde{x})²}}.
+\end{equation}
+Wird eine Größe bestimmt, welche sich aus zwei weiteren Fehlerbehafteten Größen zusammensetzt ergibt sich der absolute Fehler mit der \textsc{Gauss}schen Fehlerfortpflanzung 
+\begin{equation}
+\Delta{f}(x_1,..,x_n)=\sqrt{\left(\frac{\mathup{d}f}{\mathup{d}x_1}\Delta{x_1}\right)²+..+\left(\frac{\mathup{d}f}{\mathup{d}x_n}\Delta{x_n}\right)²}.
+\end{equation}
+Zur Berechnung aller Größen werden die genauen Werte benutzt; am Ende der Auswertung aller Größen werden diese auf die erste signifikante Stelle des Fehlers gerundet. 
+
+
+
+
+ In der weiteren Auswertung werden nur die Tröpfchen berücksichtigt, für die die Gleichung 
+\begin{equation}
+2v_0\approx v_\mathup{ab}-v_\mathup{auf}
+\end{equation}
+ erfüllt ist. Ist dies nicht der Fall, so haben die Tröpfchen während der Messung ihre Ladung geändert. Dadurch sind sie zur Bestimmung der ELementarladung $e$ unbrauchbar.
+\input{../Tabellen/Werte.tex}
+Nach \eqref{eq:radius} und \eqref{eq:ladung} werden Radien $r$ und Ladungen $q$ der Tröpfchen, sowie deren Fehler bestimmt.
+Gemäß der Geradengleichung 
+\begin{equation}
+\eta_\mathup{L}=47.0580\cdot10⁻¹⁹\,\frac{\si{\newton\second}}{\si{\kelvin{\meter}²}}
+\end{equation}
+wird $\eta_\mathup{Luft}$ bestimmt. Dies ist möglich, da die Temperaturänderungen sich in einem Bereich bewegen, in dem die temperaturabhängige Viskosität linear beschrieben werden kann. Dieser lineare Zusammenhang ist dargestellt in Abbildung \ref{fig:temp}.
+
+\input{../Tabellen/T6.tex}
+%%%%%%%%%%%%%%%%%%%%%%%Das noch in die Theorie mit einbauen%%%%%%%%%%%%%%%%%
+%Durch das Zerstäuben der Öltröpchen ist deren Durchmesser so gering, dass er sich in ähnlichen Größenordnungen bewegt wie die mittlere freie Weglänge der Moleküle, welche sich in der Luft befinden. Die Stokesche Reibung wird hier ungenau und muss durch eine Korrektur behoben werden. Diese wurde 1910 vom Mathematiker Ebenezer Cunningham abgeleitet.
+Die Cunningham-Korrektur der Viskosität nach Gleichung \eqref{eq:cunningham} fließt in die Berechnung der Ladung mit ein, deswegen wird erneut die Ladung $q_\mathup{C}$ und Fehler dieser mit Korrekturfaktor bestimmt.
+Messbedingt treten teilweise sehr große Fehler auf, wie in Tabelle \ref{tab:T6} zu sehen. Deswegen werden alle Werte mit einem relativen Fehler, welcher größer als $20\%$ ist, aus der Rechnung herausgenommen.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/plot_messwerte.pdf}
+	\caption{Unterschrift}
+	\label{fig:label}
+\end{figure}
+Nun wird die berechnete Ladung der Tröpfchen gegen ihren Radius aufgetragen. Auffällig ist erneut die Größe einiger absoluter Fehler. Tropfen mit größerem Radius tragen prinzipiell mehr Ladung als Tröpfchen mit kleinem Radius. Untersucht werden hauptsächlich Tröpfchen mit geringem Radius und wenig Ladung, welches eine langsamere Geschwindigkeit hevorruft.
+
+Gemäß der Annahme, dass Ladung quantisiert ist, müssen die Öltropfen immer genau die Elementarladung oder ein Vielfaches derer tragen. Zur Bestimmung der Elementarladung muss der größte gemeinsame Teiler der berechneten Ladungen gefunden werden. Dies ist schwierig, da die Größen fehlerbehaftet sind. Zur Auswertung wird ein Algorithmus herangezogen.
+Der gesuchte Wert für $e$ wird vom Computer erraten, falls ein in frage kommender eingegrenzter Bereich vorgegeben wird. Dies setzt voraus, dass die ungefähre Größenordnung der Elementarladung bekannt ist. Es wird berechnet um welchen Wert die gemessenen Ladungen von der geratenen Ladung bzw. derem Vielfachen abweichen. Die Abweichungen aller nach Cunningham korregierten Ladungen $q_C$ werden aufsummiert. Anschließend wird der Mittelwert gebildet. Daraus kann für jede geratene Ladung eine mittlere Abweichung der Messwerte bestimmt werden. Ist diese Abweichung minimal ist die Elementarladung gefunden. Die mittlere relative Abweichung des Ladungsvielfachen von der geratenen Ladung ist
+
+\begin{equation}
+\tilde{\Delta{q}}=\frac{1}{N}\sum i=1_N \left(1-\frac{q_i\left(\frac{q_i}{e_geraten}\right)⁻¹}{e_geraten}\right)
+\end{equation}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/plot_ggT}
+	\caption{Unterschrift}
+	\label{fig:label1}
+\end{figure}
+
+
+\subsection{Bestimmung der \textsc{Avogadro}-Konstante}
+
+Die \textsc{Avogadro}konstante wird bestimmt über die vorherig berechnete Elementarladung $e$ und die als gegeben vorausgesetzte \textsc{Faraday}konstante.Sie beschreibt nach Gleichung \eqref{eq:av} die Ladung eines Mols einfach geladener Ionen. Wird $F$ durch die Ladung geteilt ergibt sich die Anzahl der Teilchen in einem Mol zu
+
+$N_\mathup{A}=\frac{F}{e_0}=8,905\cdot10²³\frac{1}{\si\mol}$. Dieser Wert weicht, bedingt durch die starke Abweichung der Elementarladung, relativ stark vom Literaturwert mit $\tilde{N}_\mathup{A}=6,022\cdot10²³\frac{1}{\si\mol}$ ab.
+
+
+%relativer Fehler Weicht stark ab (40,7 brazent).
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Bilder/plot_messwerte+.pdf}
+	\caption{Unterschrift}
+	\label{fig:label1}
+\end{figure}
+
