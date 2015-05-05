@@ -1,5 +1,19 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+Alle in der Auswertung benutzten Mittelwerte werden über die Gleichung
+\begin{equation}
+\tilde{x}=\frac{1}{n}\sum_{i=1}^n {x_i}
+\end{equation}
+bestimmt. Die Standardabweichung der Mittelwerte ergibt sich zu 
+\begin{equation}
+\Delta{\tilde{x}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n {(x_i-\tilde{x})²}}.
+\end{equation}
+Wird eine Größe bestimmt, welche sich aus fehlerbehafteten Daten zusammensetzt, ergibt sich der absolute Fehler über die \textsc{Gauss}schen Fehlerfortpflanzung 
+\begin{equation}
+\Delta{f}(x_1,..,x_n)=\sqrt{\left(\frac{\mathup{d}f}{\mathup{d}x_1}\Delta{x_1}\right)²+..+\left(\frac{\mathup{d}f}{\mathup{d}x_n}\Delta{x_n}\right)²}.
+\end{equation}
+Zur Berechnung aller Größen werden die nicht gerundeten Größen benutzt um Rundungsfehler zu vermeiden. Am Ende der Auswertung aller Größen werden diese auf die erste signifikante Stelle des Fehlers gerundet. 
+
 Mit der in Kapitel \ref{sec:Durchfuehrung} beschriebenen Apparatur werden für fünf verschienden Kondensatorspannungen $U$ jeweils fünf verschiedene Tröpfchen untersucht. Gemessen werden die Steig- und Fallzeiten $t_\mathup{auf}$ und $t_\mathup{ab}$ der Tröpfchen bei eingeschaltetem elektrischen Feld, sowie die Fallzeiten $t_0$, wenn keine Kondensatorspannung anliegt. Dabei überwinden diese eine Strecke $s=\SI{0.5}{\milli\meter}$.
 Aufgetragen sind die Messwerte in den Tabellen \ref{tab:T1} bis \ref{tab:T5}. Die Temperatur innerhalb der Ölkammer ändert sich im Laufe des Versuches nur sehr geringfügig.
 \input{../Tabellen/T1T2.tex}
@@ -15,7 +29,7 @@ Es gehen nur die Tröpfchen in die folgende Auswertung ein, welche die Gleichung
 Nach \eqref{eq:radius} und \eqref{eq:ladung} werden Radien $r$ und Ladungen $q$ der Tröpfchen mit absolutem Fehler bestimmt.
 Gemäß der Geradengleichung
 \begin{equation}
-\eta_\mathup{L}=47.0580\cdot10⁻¹⁹\,\frac{\si{\newton\second}}{\si{\kelvin{\meter}²}}
+\eta_\mathup{Luft}=47.0580\cdot10⁻¹⁹\,\frac{\si{\newton\second}}{\si{\kelvin{\meter}²}}
 \end{equation}
 wird $\eta_\mathup{Luft}$ ermittelt. Der lineare Zusammenhang zwischen Temperatur und Viskosität ist dargestellt in Abbildung \ref{fig:temp}.
 \input{../Tabellen/T6.tex}
@@ -42,28 +56,14 @@ Der gesuchte Wert für $e$ wird vom Computer zu $e'$ "erraten", falls ein in fra
 	\caption{Bestimmung des größten gemeinsamen Teilers.}
 	\label{fig:2}
 \end{figure}
-In Abbildung \ref{fig:2} wird der mittlere relative Fehler aller Ladungen gegen diese aufgetragen. Der kleinste gemeinsame Teiler bei $e=1,084\cdot10⁻¹⁹\,\si\coulomb$ entspricht der Elementarladung. Diese weicht stark vom ebenfalls eingezeichneten Literaturwert ab. 
+In Abbildung \ref{fig:2} wird der mittlere relative Fehler aller Ladungen gegen diese aufgetragen. Der kleinste gemeinsame Teiler bei $e=1,084\cdot10⁻¹⁹\,\si\coulomb$ entspricht der Elementarladung. Diese weicht stark vom ebenfalls eingezeichneten Literaturwert \cite{texas_instruments1} ab. 
 
 \subsection{Bestimmung der \textsc{Avogadro}-Konstante}
 
-Die \textsc{Avogadro}-Konstante wird bestimmt über die vorherig berechnete Elementarladung $e$ und die als gegeben vorausgesetzte \textsc{Faraday}-Konstante. Sie beschreibt nach Gleichung \eqref{eq:av} die Ladung eines Mols einfach geladener Ionen. Wird $F$ durch die Ladung geteilt ergibt sich die Anzahl der Teilchen in einem Mol zu $N_\mathup{A}=\frac{F}{e_0}=8,905\cdot10²³\frac{1}{\si\mol}$. Dieser Wert weicht, bedingt durch die starke Abweichung der Elementarladung, relativ stark vom Literaturwert mit $\tilde{N}_\mathup{A}=6,022\cdot10²³\frac{1}{\si\mol}$ ab.
+Die \textsc{Avogadro}-Konstante wird bestimmt über die vorherig berechnete Elementarladung $e$ und die als gegeben vorausgesetzte \textsc{Faraday}-Konstante. Sie beschreibt nach Gleichung \eqref{eq:av} die Ladung eines Mols einfach geladener Ionen. Wird $F$ durch die Ladung geteilt ergibt sich die Anzahl der Teilchen in einem Mol zu $N_\mathup{A}=\frac{F}{e_0}=8,905\cdot10²³\frac{1}{\si\mol}$. Dieser Wert weicht, bedingt durch die starke Abweichung der Elementarladung, relativ stark vom Literaturwert \cite{texas_instruments3} mit $\tilde{N}_\mathup{A}=6,022\cdot10²³\frac{1}{\si\mol}$ ab.
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Bilder/plot_messwerte+.pdf}
 	\caption{Abhängigkeit von Ladung $q$ und Radius $r$ der Tröpfchen mit eingezeichneten Vielfachen der berechneten Elementarladung.}
 	\label{fig:label1}
 \end{figure}
-
-Alle in der Auswertung benutzten Mittelwerte werden über die Gleichung
-\begin{equation}
-\tilde{x}=\frac{1}{n}\sum_{i=1}^n {x_i}
-\end{equation}
-bestimmt. Die Standardabweichung der Mittelwerte ergibt sich zu 
-\begin{equation}
-\Delta{\tilde{x}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n {(x_i-\tilde{x})²}}.
-\end{equation}
-Wird eine Größe bestimmt, welche sich aus fehlerbehafteten Daten zusammensetzt, ergibt sich der absolute Fehler über die \textsc{Gauss}schen Fehlerfortpflanzung 
-\begin{equation}
-\Delta{f}(x_1,..,x_n)=\sqrt{\left(\frac{\mathup{d}f}{\mathup{d}x_1}\Delta{x_1}\right)²+..+\left(\frac{\mathup{d}f}{\mathup{d}x_n}\Delta{x_n}\right)²}.
-\end{equation}
-Zur Berechnung aller Größen werden die nicht gerundeten Größen benutzt um Rundungsfehler zu vermeiden. Am Ende der Auswertung aller Größen werden diese auf die erste signifikante Stelle des Fehlers gerundet. 
