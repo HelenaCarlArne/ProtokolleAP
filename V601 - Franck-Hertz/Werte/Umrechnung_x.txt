@@ -1,0 +1,10 @@
+# Datenwerte für x 
+# U		cm
+
+# Energieverteilung, kalt; Energieverteilung, warm; Ionisierung, FranckHertz
+0	00.5 	00	00.1 	00 	01.3 	10.0	04.9
+1	02.8 	02	05.0 	10	04.9 	20.0	08.6
+3	07.6 	04	09.6 	20	08.3 	30.0	12.8
+5	12.4	06	14.7	30	11.6	40.0	17.1
+7	17.8	08	19.6	40	15.2	50.0	21.4
+9	22.7	10	24.9	50	18.7	57.8	24.6

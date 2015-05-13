@@ -1,0 +1,6 @@
+Dieser Ordner enthält einige ausgewählte Daten, die aus den Diagrammen ausgelesen werden.
+Die Werte stammen von den Diagrammen, die ebenfalls in diesem Ordner gespeichert sind.
+
+FHKurve.txt
+Ion.txt
+Verteilung.txt
