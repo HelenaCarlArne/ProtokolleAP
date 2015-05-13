@@ -3,23 +3,24 @@
 \subsection{Bestimmung des \texorpdfstring{\textsc{Planck}schen Wirkungsquantums $h$}{Planckschen Wirkungsquantums}}
 \label{sec:Auswertung1}
 Die Messwerte sind in Tabelle \ref{tab:messwerte} aufgetragen.
-In Abbildungen \ref{fig:uidiagramm1} bis \ref{fig:uidiagramm2} sind die gemessenen Gegenspannungen $U_\text{G}$ gegen die Wurzel des Photostroms $I$ aufgetragen.
+In Abbildungen \ref{fig:uidiagramm1} bis \ref{fig:uidiagramm2} sind die gemessenen Gegenspannungen $U$ gegen die Wurzel des Photostroms $I$ aufgetragen.
 Die Parameter für die Ausgleichsgeraden werden nach den Formeln \eqref{eq:regress}
 \input{content/linreg.tex}
 bestimmt.\\
 Es ergeben sich die Fitparameter in Tabelle \ref{tab:abbfitwerte}.
+Die y-Achsenabschnitte $b$ entsprechen der Grenzspannung $U$.
 \begin{table}
 	\centering
-	\begin{tabular}{l S[table-format=3] S[table-format=1.2] S[table-format=1.2]}
+	\begin{tabular}{l S[table-format=3] S[table-format=1.4] S[table-format=1.3]}
 		\toprule
 		\multicolumn{2}{c}{Lichtspektrallinie} &\multicolumn{2}{c}{Fitparameter} \\
 		{Farbe} & {Wellenlänge $\lambda$$/\:\si{\nano\meter}$} &{Steigung $a$/$\:\si{\volt\per{(\pico\ampere)\tothe{\sfrac{1}{2}}}}$} & {Abschnitt $b$$/\:\si{\volt}$}\\
 		\midrule
-			{rot} 		&640	&-0.25  &0.77\\
-			{gelb} 		&578	&-0.04  &0.34\\
-			{grün} 		&546	&-0.03  &0.44\\
-			{violett}	&435.8	&-0.04  &0.91\\
-			{ultraviolett} &366	&-0.08  &1.47\\
+			{rot} 			&640	&-0.25$\pm$0,01 		&0.77$\pm$0,02\\
+			{gelb} 			&578	&-0.037$\pm$0,001  		&0.344$\pm$0,004\\
+			{grün} 			&546	&-0.0271$\pm$0,0004 	&0.436$\pm$0,003\\
+			{violett}		&435.8	&-0.0405$\pm$0,0008  	&0.911$\pm$0,007\\
+			{ultraviolett} 	&366	&-0.084$\pm$0,002 		&1.47$\pm$0,02\\
 		\bottomrule
 	\end{tabular}
 	\caption{Fitparameter der \texorpdfstring{Abbildungen \ref{fig:uidiagramm1} bis \ref{fig:uidiagramm2}}{U-I-Diagramme}}
@@ -32,7 +33,7 @@ Für die Umrechnung von Wellenlänge $\lambda$ und $\nu$ gilt
 	c_0=\lambda\cdot\nu.
 \end{equation}
 
-Nach der \textsc{Einstein}schen Formel \eqref{eq:einstein}
+Nach der Einsteinschen Formel \eqref{eq:einstein}
 werden mithilfe der Linearisierung
 \begin{align}
 	%E_\text{kin.} &= e\cdot U = {h}\cdot{\nu} - {W_\text{K}}\\
@@ -90,13 +91,13 @@ Es folgt
 \end{figure}
 
 
-Wird keine Gegenspannung $U_\text{G}$ angelegt, so beträgt der Photostrom $I = \SI{80}{\pico\ampere}$.
-In der vorhergegangen Messung wurde festgestellt, dass eine bremsende Spannung $U_\text{G}$ von etwa $\SI{0.34}{\volt}$ 
+Wird keine Gegenspannung $U$ angelegt, so beträgt der Photostrom $I = \SI{80}{\pico\ampere}$.
+In der vorhergegangen Messung wurde festgestellt, dass eine bremsende Spannung $U$ von etwa $\SI{0.34}{\volt}$ 
 ausreichend ist, um den Photostrom $I$ vollständig zu unterdrücken.
-Wird die Gegenspannung $U_\text{G}$ weit über diese Grenze angelegt, so stellt sich ein geringer, negativer Photostrom $I$ ein.
-Dieser nimmt bereits für geringe Spannungen $U_\text{G}$ den Grenzwert $I=\SI{-0.01}{\nano\ampere}$ an und reagiert nicht auf weitere Erhöhung der Spannung $U_\text{G}$.
+Wird die Gegenspannung $U$ weit über diese Grenze angelegt, so stellt sich ein geringer, negativer Photostrom $I$ ein.
+Dieser nimmt bereits für geringe Spannungen $U$ den Grenzwert $I=\SI{-0.01}{\nano\ampere}$ an und reagiert nicht auf weitere Erhöhung der Spannung $U$.
 
-Wird eine negative Spannung $U_\text{B}$ angelegt, sodass die Photokathode negativ und die Anode positiv geladen ist, 
+Wird eine negative Spannung $U$ angelegt, sodass die Photokathode negativ und die Anode positiv geladen ist, 
 werden Photoelektronen beschleunigt.
 Wird diese beschleunigende Spannung $U$ erhöht, so wächst der Photostrom $I$ an. 
 Das Wachstum des Stromes $I$ ist für Spannungen $U$ bis etwa $\SI{5}{\volt}$ linear und geht für höhere Spannungen gegen einen Grenzwert von etwa $\SI{2.5}{\nano\ampere}$.
