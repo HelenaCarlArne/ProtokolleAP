@@ -1,0 +1,6 @@
+# Datenwerte für y 
+# cm	nA
+
+# Energieverteilung, kalt; Energieverteilung, warm
+16.6	38	13.2	6.2
+01.0	00	02.2	0.0

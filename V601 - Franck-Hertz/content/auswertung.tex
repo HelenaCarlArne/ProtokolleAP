@@ -1,3 +1,84 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Umrechnung der Messdaten} % (fold)
+\label{sec:umrechnung}
+Die im Appendix vorliegenden Diagramme lassen zu, Messdaten mit hoher Genauigkeit in ihren Koordinaten zu bestimmen.
+Die x-Koordinaten der auszuwertenden Punkte werden in Bezug auf den eingezeichneten Koordinatenursprung bestimmt und für die Auswertung anhand der Gleichung 
+\begin{equation}
+	U=a_\text{lin}\cdot x+b_\text{lin}
+	\label{eq:umrechnung}
+\end{equation}
+in eine Spannung $U$ umgerechnet.
+Die Einheiten von $a_\text{lin}$ und $b_\text{lin}$ sind gemäß der Größenumrechnung passend gewählt, 
+es gelten $[a_\text{lin}]=\si{\volt\per\centi\meter}$ und $[b_\text{lin}]=\si{\volt}$.
+Diese fehlerbehaftete Umrechnungsparameter stammen von einer linearen Regression mehrer fester Skalenpunkte, für welche die Spannung bekannt ist.
+
+\begin{table}
+	\centering
+	\sisetup{table-format = -1.3(1)}
+		\begin{tabular}{l S S}
+		\toprule
+		{Plot Nr.}&\multicolumn{2}{c}{Umrechnungsparameter}\\
+		&{$a_\text{lin}$/$\:(\si{\volt\per\centi\meter})$} & {$b_\text{lin}$/$\:\si{\volt}$}\\
+		\midrule
+		1&		0.403(4)& 	-0.12(6)\\
+		2&		0.405(4)& 	0.015(6)\\
+		3&		2.89(2)& 	-3.9(2)	\\
+		4& 		2.40(3)& 	-1.1(5)	\\
+		\end{tabular}
+	\caption{Parameter der linearen Regression der Diagramm-Skalen für die Umrechnung der Messdaten; 
+	Umrechnung Diagrammlänge zu Spannung.}
+	\label{tab:umrechnung}
+\end{table}
+
+%Ekalt
+%0.4036+/-0.0044 -0.1246+/-0.0579
+%Ewarm
+%0.4047+/-0.0040 0.0154+/-0.0594
+%Ion
+%2.8874+/-0.0175 -3.8736+/-0.2034
+%FH
+%2.4000+/-0.0277 -1.1260+/-0.4554
+
+Analoge Umrechnung ist für die y-Koordinaten in Stromstärken möglich.
+\begin{equation}
+	I=a'_\text{lin}\cdot x+b'_\text{lin}
+	\label{eq:umrechnung}
+\end{equation}
+Es gelten $[a'_\text{lin}]=\si{\nano\ampere\per\centi\meter}$ und $[b'_\text{lin}]=\si{\nano\ampere}$.
+
+
+\begin{table}
+	\centering
+	\sisetup{table-format=1.3}
+		\begin{tabular}{l S[table-format=1.3] S[table-format=1.3]}
+		\toprule
+		{Plot Nr.}&\multicolumn{2}{c}{Umrechnungsparameter}\\
+		&{$a_\text{lin}$/$\:(\si{\nano\ampere\per\centi\meter})$} & {$b_\text{lin}$/$\:\si{\nano\ampere}$}\\
+		\midrule
+		1&	0.41& 1.00\\
+		2&	1.77& 2.20\\
+		\end{tabular}
+	\caption{Parameter der linearen Regression der Diagramm-Skalen für die Umrechnung der Messdaten; 
+	Umrechnung Diagrammlänge zu Stromstärke.}
+	\label{tab:umrechnung}
+\end{table}
+%Ekalt0.41051.0000
+%Ewarm1.77422.2000
+
+% section umrechnung (end)
+\subsection{Energieverteilung der Elektronen} % (fold)
+\label{sec:energiespektren}
+
+% section aufnahme_der_energiespektren (end)
+
+\subsection{Ionisierungskurven von Quecksilber} % (fold)
+\label{sec:ion}
+
+% section ion (end)
+
+\subsection{Franck--Hertz-Kurven} % (fold)
+\label{sec:fhk}
+
+% section franck_hertz_kurven (end)
