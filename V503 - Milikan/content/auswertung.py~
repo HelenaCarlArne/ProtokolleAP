@@ -115,7 +115,7 @@ else:
     print(Δq_korr)
      
     # Bestimmung des bestmöglichen ggTs mit Plot 
-    x = np.linspace(1.00e-19,1.5e-19,16000)
+    x = np.linspace(1.00e-19,1.8e-19,16000)
     y = np.zeros(16000)
     for i in range(0,len(x)):
         for j in range(0, len(q_korr)):
@@ -144,8 +144,8 @@ else:
     plt.legend(loc = 'best')
     plt.ylim(0, 5.5)
     plt.xlim(0,0.6)
-    plt.xlabel(r"$\mathrm{Ladung}\; q /10^{-19}\mathrm{C}$")
-    plt.ylabel(r"$\mathrm{Tröpfchenradius}\; r /\mathrm{\mu m}$")
+    plt.xlabel(r"$\mathrm{Tröpfchenradius}\; r /\mathrm{\mu m}$")
+    plt.ylabel(r"$\mathrm{Ladung}\; q /10^{-19}\mathrm{C}$")
     plt.savefig("../Bilder/plot_messwerte.pdf")
     plt.close()
     
@@ -164,7 +164,7 @@ else:
     plt.legend(loc = 'best')
     plt.xlim(0.2,0.55)
     plt.ylim(0, 5.5)
-    plt.xlabel(r"$\mathrm{Ladung}\; q /10^{-19}\mathrm{C}$")
-    plt.ylabel(r"$\mathrm{Tröpfchenradius}\; r /\mathrm{\mu m}$")
+    plt.xlabel(r"$\mathrm{Tröpfchenradius}\; r /\mathrm{\mu m}$")
+    plt.ylabel(r"$\mathrm{Ladung}\; q /10^{-19}\mathrm{C}$")
     plt.savefig("../Bilder/plot_messwerte+.pdf")
     plt.close()
