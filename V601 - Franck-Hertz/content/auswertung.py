@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+# 
+#
+#
+#
+#
+#
+#
+#
+
 import numpy as np 
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
@@ -31,29 +41,73 @@ print('*********************************************')
 print('*********************************************')
 """
 
+
 #
-##	Energieverteilung
+##	Energieverteilung, kalt
+###
+
+"" "AUSGABE_ORDNER"
+Ediff_y=np.array([])
+u_vert_kalt,i_vert_kalt	=np.genfromtxt("../Werte/Vert_kalt.txt").T
+
+plt.plot(u_vert_kalt,i_vert_kalt,"x")
+plt.xlabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
+plt.ylabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
+plt.savefig("../Bilder/Vert_kalt.ps")
+plt.show()
+for i in range(0,np.size(u_vert_kalt)-1):
+	#print((i_vert_kalt[i]-i_vert_kalt[i+1])/(u_vert_kalt[i+1]-u_vert_kalt[i]))
+	Ediff_y=np.append(Ediff_y,(i_vert_kalt[i]-i_vert_kalt[i+1])/(u_vert_kalt[i+1]-u_vert_kalt[i]))
+
+for i in range(0,np.size(u_vert_kalt)-1):
+	u_vert_kalt[i]=(u_vert_kalt[i+1]+u_vert_kalt[i])/2
+
+plt.plot(np.delete(u_vert_kalt,-1),Ediff_y,"+")
+#print(np.size(np.delete(u_vert_kalt,-1)))
+#print(np.size(Ediff_y))
+plt.xlabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
+plt.ylabel(r"$\mathrm{\ddot{A}nderung\,der\,Diagramml\ddot{a}nge\,in}\,cm$")
+plt.savefig("../Bilder/Vert_kalt_diff.ps")
+plt.show()
+"" "AUSGABE_ORDNER"
+
+
+#
+##	Energieverteilung, warm
 ###
 
 Ediff_y=np.array([])
-u_vert_kalt,i_vert_kalt	=np.genfromtxt("../Werte/Vert_kalt.txt").T
 u_vert_warm,i_vert_warm	=np.genfromtxt("../Werte/Vert_warm.txt").T
 
-"" "AUSGABE_ORDNER"
-for i in range(1,np.size(u_vert_kalt)-1):
-	#print((i_vert_kalt[i]-i_vert_kalt[i+1])/(u_vert_kalt[i+1]-u_vert_kalt[i]))
-	Ediff_y=np.append(Ediff_y,(i_vert_kalt[i]-i_vert_kalt[i+1])/(u_vert_kalt[i+1]-u_vert_kalt[i]))
-plt.plot(Ediff_y,"+")
+plt.plot(u_vert_warm,i_vert_warm,"x")
+plt.xlabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
+plt.ylabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
+plt.savefig("../Bilder/Vert_warm.ps")
 plt.show()
-Ediff_y=np.array([])
-for i in range(1,np.size(u_vert_warm)-1):
+for i in range(0,np.size(u_vert_warm)-1):
 	#print((i_vert_warm[i]-i_vert_warm[i+1])/(u_vert_warm[i+1]-u_vert_warm[i]))
 	Ediff_y=np.append(Ediff_y,(i_vert_warm[i]-i_vert_warm[i+1])/(u_vert_warm[i+1]-u_vert_warm[i]))
-plt.plot(Ediff_y,"+")
+
+
+for i in range(0,np.size(u_vert_warm)-1):
+	u_vert_warm[i]=(u_vert_warm[i+1]+u_vert_warm[i])/2
+
+
+#print(np.size(np.delete(u_vert_warm,-1)))
+#print(np.size(Ediff_y))
+plt.plot(np.delete(u_vert_warm,-1),Ediff_y,"+")
+plt.xlabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
+plt.ylabel(r"$\mathrm{\ddot{A}nderung\,der\,Diagramml\ddot{a}nge\,in}\,cm$")
+plt.savefig("../Bilder/Vert_warm_diff.ps")
 plt.show()
-#print(u_vert_kalt,i_vert_kalt)
+
+
 #print(u_vert_warm,i_vert_warm)
 
+
+#
+##	Energieverteilung, warm
+###
 
 #print(u_fh,i_fh)
 #u_fh,i_fh				=np.genfromtxt("../Werte/FHKurve.txt")
