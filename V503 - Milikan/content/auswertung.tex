@@ -14,7 +14,7 @@ Wird eine Größe bestimmt, welche sich aus fehlerbehafteten Daten zusammensetzt
 \end{equation}
 Zur Berechnung aller Größen werden die nicht gerundeten Größen benutzt um Rundungsfehler zu vermeiden. Am Ende der Auswertung aller Größen werden diese auf die erste signifikante Stelle des Fehlers gerundet. 
 
-Mit der in Kapitel \ref{sec:Durchfuehrung} beschriebenen Apparatur werden für fünf verschienden Kondensatorspannungen $U$ jeweils fünf verschiedene Tröpfchen untersucht. Gemessen werden die Steig- und Fallzeiten $t_\mathup{auf}$ und $t_\mathup{ab}$ der Tröpfchen bei eingeschaltetem elektrischen Feld, sowie die Fallzeiten $t_0$, wenn keine Kondensatorspannung anliegt. Dabei überwinden diese eine Strecke $s=\SI{0.5}{\milli\meter}$.
+In den gemessenen Zeiten $t_\mathup{auf}$, $t_\mathup{ab}$ und $t_0$ überwinden die Öltropfen eine Strecke von $s=\SI{0.5}{\milli\meter}$.
 Aufgetragen sind die Messwerte in den Tabellen \ref{tab:T1} bis \ref{tab:T5}. Die Temperatur innerhalb der Ölkammer ändert sich im Laufe des Versuches nur sehr geringfügig.
 \input{../Tabellen/T1T2.tex}
 \input{../Tabellen/T3T4.tex}
@@ -25,12 +25,14 @@ Es gehen nur die Tröpfchen in die folgende Auswertung ein, welche die Gleichung
 2v_0\approx v_\mathup{ab}-v_\mathup{auf}
 \label{eq:plaus_test}
 \end{equation}
- erfüllen. Ist dies nicht der Fall, so haben die Tröpfchen während der Messung ihre Ladung geändert. Dadurch sind sie zur Bestimmung der ELementarladung $e$ unbrauchbar.
+ erfüllen. 
+Ist dies nicht der Fall, so haben die Tröpfchen während der Messung ihre Ladung geändert.
+ Dadurch sind sie zur Bestimmung der Elementarladung $e$ unbrauchbar.
 \input{../Tabellen/Werte.tex}
 Nach \eqref{eq:radius} und \eqref{eq:ladung} werden Radien $r$ und Ladungen $q$ der Tröpfchen mit absolutem Fehler bestimmt.
 Gemäß der Geradengleichung
 \begin{equation}
-\eta_\mathup{Luft}=47.0580\cdot10⁻¹⁹\,\frac{\si{\newton\second}}{\si{\kelvin{\meter}²}}
+\eta_\mathup{Luft}=47,0580\cdot10⁻¹⁹\,\frac{\si{\newton\second}}{\si{\kelvin{\meter}²}}\cdot T + 4,4433\cdot10⁻⁶\,\frac{\si{\newton\second}}{\si{{\meter}²}}
 \end{equation}
 wird $\eta_\mathup{Luft}$ ermittelt. Der lineare Zusammenhang zwischen Temperatur und Viskosität ist dargestellt in Abbildung \ref{fig:temp}.
 \input{../Tabellen/T6.tex}
