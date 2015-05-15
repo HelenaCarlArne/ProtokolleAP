@@ -13,6 +13,9 @@ from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 from uncertainties import unumpy as unp
 from uncertainties import ufloat
+from scipy.stats import sem
+import scipy.constants as const
+
 #
 ##	Kalibrierung
 ###
@@ -43,12 +46,12 @@ print('*********************************************')
 print('*********************************************')
 
 
-
+"""
 #
 ##	Energieverteilung, kalt
 ###
 
-"" "AUSGABE_ORDNER"
+
 Ediff_y=np.array([])
 u_vert_kalt,i_vert_kalt	=np.genfromtxt("../Werte/Vert_kalt.txt").T
 
@@ -68,9 +71,7 @@ for i in range(0,np.size(u_vert_kalt)-1):
 	u_vert_kalt[i]=(u_vert_kalt[i+1]+u_vert_kalt[i])/2
 
 plt.plot(np.delete(u_vert_kalt,-1),Ediff_y,"+",label="Errechnete Steigung")
-parameter,coeffmatrix=curve_fit(linear,u_vert_kalt[-9:-1],Ediff_y[-9:-1])
-
-plt.plot(u_vert_kalt[-13:-1],linear(u_vert_kalt[-13:-1],*parameter),label="Fit der fallenden Flanke")
+plt.axvline(u_vert_kalt[-9],linestyle="--",color="green")
 plt.xlim(0,27)
 plt.ylim(0,1.6)
 plt.xlabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
@@ -79,11 +80,9 @@ plt.legend(loc="best")
 plt.savefig("../Bilder/Vert_kalt_diff.pdf")
 plt.show()
 
-errors=np.sqrt(np.diag(coeffmatrix))
-parameter=unp.uarray(parameter,errors)
-print("Die Nullstelle der Tangente ist:")
-print(-parameter[1]/parameter[0])
-print(ufloat(0.4036,0.0044)*-parameter[1]/parameter[0]+ufloat(-0.1246,0.0579))
+print(u_vert_kalt[-9])
+print(ufloat(0.4036,0.0044)*u_vert_kalt[-9]+ufloat(-0.1246,0.0579))
+print(11-ufloat(0.4036,0.0044)*u_vert_kalt[-9]-ufloat(-0.1246,0.0579))
 
 #ufloat{0.4036,0.0044}
 #ufloat{-0.1246,0.0579}
@@ -130,15 +129,43 @@ parameter=unp.uarray(parameter,errors)
 print("Die Nullstelle der Tangente ist:")
 print(-parameter[1]/parameter[0])
 print(ufloat(0.4047,0.0040)*-parameter[1]/parameter[0]+ufloat(0.0154,0.0594))
+print(11-ufloat(0.4047,0.0040)*-parameter[1]/parameter[0]-ufloat(0.0154,0.0594))
 
 #ufloat{0.4047,0.0040}
 #ufloat{0.0154,0.0594}
+"""
 
 #
-##	Energieverteilung, warm
+##	Franck-Hertz-Kurven
 ###
+"""
+x_fh=np.genfromtxt("../Werte/FHKurve.txt").T
+Dx_fh=np.array([])
+for i in range(0,np.size(x_fh)-1):
+	Dx_fh=np.append(Dx_fh,x_fh[i+1]-x_fh[i])
 
-#print(u_fh,i_fh)
-#u_fh,i_fh				=np.genfromtxt("../Werte/FHKurve.txt")
-#u_ion,ion				=np.genfromtxt("../Werte/Ion.txt")
-#print(u_ion,i_ion)
+Dx_fh=ufloat(np.mean(Dx_fh),sem(Dx_fh))
+print(Dx_fh)
+def umr(x):
+	return ufloat(2.4000,0.0277)*x+ufloat(-1.1260,0.4554)
+
+print(umr(Dx_fh))
+print(umr(Dx_fh)*const.e)
+print(umr(Dx_fh)*const.e/const.h)
+print(const.c/(umr(Dx_fh)*const.e/const.h))
+print(umr(x_fh[0])-2*umr(Dx_fh))
+"""
+
+x_ion,y_ion=np.genfromtxt("../Werte/Ion.txt").T
+plt.plot(x_ion,y_ion,"+", label="Messdaten")
+parameter,coeffmatrix=curve_fit(linear,x_ion[5:20],y_ion[5:20])
+errors=np.sqrt(np.diag(coeffmatrix))
+plt.plot(x_ion[4:22],linear(x_ion[4:22],*parameter),label="Fit der Flanke")
+plt.xlabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
+plt.ylabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
+plt.xlim(0,25)
+plt.ylim(0,18)
+plt.legend(loc='best')
+plt.savefig("../Bilder/Vert_ion.pdf")
+plt.show()
+print(-parameter[1]/parameter[0])

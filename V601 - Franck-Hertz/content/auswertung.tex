@@ -84,19 +84,23 @@ Die aufgenommene integrale Energieverteilung wird in eine differentielle Energie
 Hierzu wird der Abstand zwischen zwei y-Koordinaten durch den Abstand der dazugehörigen x-Koordinaten geteilt und diese Steigung in der Diagramm \ref{fig:E_vert_kalt}, respektive \ref{fig:E_vert_warm}, aufgetragen. 
 Diese Steigung wird in die Mitte zwischen den beiden x-Koordinaten gesetzt, damit entspricht das Verfahren einer angenährten Ableitung.
 
-Die fallenden Flanken der differentiellen Energieverteilungen werden linear gefittet.
+Um das Kontaktpotential $k$ zu bestimmen, wird das Maximum der differentiellen Energieverteilung bei Raumtemperatur bestimmt.
+Die Abweichung der Maximalstelle zwischen realer Verteilung und idealer Verteilung, $x=\SI{11}{\volt}$, ist das Kontaktpotential $k$.
+Die fallende Flanke der differentiellen Energieverteilung bei erhöhter Temperatur wird linear gefittet.
 Hierzu werden die Gleichungen \ref{eq:regress} benützt.
 
-Dieser Fit lässt Aussage über die maximale Energie der Elektronen zu. 
-Die Nullstelle des Fits sind für beide Verteilungen
-\begin{alignat}{3}
-	x_\text{E.,\SI{26}{\degreeCelsius}}= \SI{24(3)}{\centi\meter} &\qquad &&x_\text{E.,\SI{120}{\degreeCelsius}}= \SI{14(2)}{\centi\meter}
-\end{alignat}
-Entsprechend der Umrechnungsformel \eqref{eq:umrechnung} gilt
-\begin{alignat}{3}
-	U_\text{E.,\SI{26}{\degreeCelsius}}= \SI{10(1)}{\volt} &\qquad &&U_\text{E.,\SI{120}{\degreeCelsius}}= \SI{5.6(6)}{\volt}
-\end{alignat}
+Daher ergeben sich mit der Umrechnungsformel \eqref{eq:umrechnung}
+\begin{align}
+	x_\text{E.,\SI{26}{\degreeCelsius}}&= \SI{22.1}{\centi\meter}\\
+	U_\text{E.,\SI{26}{\degreeCelsius}}&= \SI{8.8(1)}{\volt}\\
+	k_\text{\SI{26}{\degreeCelsius}} &= \SI{2.2(1)}{\volt}
+\end{align}
 
+\begin{align}
+	x_\text{E.,\SI{120}{\degreeCelsius}}&= \SI{14(2)}{\centi\meter}\\
+	U_\text{E.,\SI{120}{\degreeCelsius}}&= \SI{5.6(6)}{\volt}\\
+	k_\text{E.,\SI{120}{\degreeCelsius}}&= \SI{5.4(6)}{\volt}
+\end{align}
 
 \begin{table}
 	\centering
@@ -148,7 +152,6 @@ Entsprechend der Umrechnungsformel \eqref{eq:umrechnung} gilt
 	\caption{Ausgelesene Daten der Messkurve 1: Energieverteilung bei Raumtemperatur}
 	\label{tab:E_vert_kalt}
 \end{table}
-
 \begin{table}[p]
 	\centering
 	\sisetup{table-format=2.1}
@@ -194,14 +197,6 @@ Entsprechend der Umrechnungsformel \eqref{eq:umrechnung} gilt
 	\label{tab:E_vert_warm}
 \end{table}
 
-Aus dem Vergleich der gemittelten Nullstellen mit der theoretischen Nullstelle wird das Kontaktpotential $k$ bestimmt.
-Das Kontaktpotential bewirkt eine Verschiebung der Nullstelle von dem Idealwert $U= \SI{11}{\volt}$. 
-Daher gilt
-\begin{align}
-	k_\text{\SI{26}{\degreeCelsius}} &= \SI{1(1)}{}\\
-	k_\text{\SI{120}{\degreeCelsius}}&= \SI{5.4(6)}{}
-\end{align}
-
 Für die folgende Auswertung wird nur das Kontaktpotential aus der Messung bei $\SI{26}{\degreeCelsius}$ betrachtet.
 Die Unterschiede in den Kontaktpotentialen zu verschiedenen Temperaturen wird in Abschnitt \ref{sec:diskussion1} diskutiert.
 % section aufnahme_der_energiespektren (end)
@@ -214,4 +209,21 @@ Die Unterschiede in den Kontaktpotentialen zu verschiedenen Temperaturen wird in
 \subsection{Franck--Hertz-Kurven} % (fold)
 \label{sec:fhk}
 
+Dies sind die ermittelten Daten.
+\begin{align}
+	\SI{2.10(4)}{}\\
+	\SI{3.9(5)}{}\\
+	\SI{6.3(7)e-19}{}\\
+	\SI{10(1)e+14}{}\\
+	\SI{3.2(4)e-07}{}\\
+	\SI{1.00(7)}{}\\
+\end{align}
+Das Kontaktpotential $k$ ist abschätzbar durch die Verschiebung der Maxima.
+Die Maximalstellen sind im idealen Verlauf Vielfache der Anregungsenergie $E_\text{Hg,1}$, 
+die Abweichungen der realen Stellen von der Theorie ist das Kontaktpotential $k$.
+
+Es wird das Kontaktpotential
+\begin{equation}
+	\SI{3(1)}{\volt}
+\end{equation}
 % section franck_hertz_kurven (end)
