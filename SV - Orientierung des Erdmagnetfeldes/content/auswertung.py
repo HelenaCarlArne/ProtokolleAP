@@ -104,12 +104,13 @@ plt.close()
 
 def f(alpha, a, b, c, d):
 	return a*np.cos(d*alpha+b)+c
-params, cov = curve_fit(f, alpha, y , maxfev=8000000), p0=[1.92172884017,3.16178588224,32])
+params, cov = curve_fit(f, alpha, y , maxfev=8000000, p0=[1.92172884017,3.16178588224,32, 1])
 errors = np.sqrt(np.diag(cov))
 
 print('a =', params[0], 'pm', errors[0])
 print('b =', params[1], 'pm', errors[1])
 print('c =', params[2], 'pm', errors[2])
+print('d =', params[3], 'pm', errors[3])
 
 alpha_plot = np.linspace(0, 7)
 
