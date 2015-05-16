@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import scipy.constants as const
 from scipy.stats import sem
 from uncertainties import ufloat
+from uncertainties import unumpy as unp
 
 alpha, M1, M2, M3, M4, y =np.genfromtxt('../Werte/werte.txt').T
 
@@ -24,35 +25,38 @@ U9=np.genfromtxt('../Werte/9.txt').T
 
 alpha=np.radians(alpha)
 
-U_1=np.mean(U1)
-U_1_err=sem(U1)
-U_2=np.mean(U2)
-U_2_err=sem(U2)
-U_3=np.mean(U3)
-U_3_err=sem(U3)
-U_4=np.mean(U4)
-U_4_err=sem(U4)
-U_5=np.mean(U5)
-U_5_err=sem(U5)
-U_6=np.mean(U6)
-U_6_err=sem(U6)
-U_7=np.mean(U7)
-U_7_err=sem(U7)
-U_8=np.mean(U8)
-U_8_err=sem(U8)
-U_9=np.mean(U9)
-U_9_err=sem(U9)
+U_1=ufloat(np.mean(U1),sem(U1))
+U_2=ufloat(np.mean(U2),sem(U2))
+U_3=ufloat(np.mean(U3),sem(U3))
+U_4=ufloat(np.mean(U4),sem(U4))
+U_5=ufloat(np.mean(U5),sem(U5))
+U_6=ufloat(np.mean(U6),sem(U6))
+U_7=ufloat(np.mean(U7),sem(U7))
+U_8=ufloat(np.mean(U8),sem(U8))
+U_9=ufloat(np.mean(U9),sem(U9))
+
+#
+##
+### Mittelwerte und Fehler 
+####
 
 print('Mittelwerte und Fehler der Spannungen pro Winkel')
-print(U_1,'pm',U_1_err)
-print(U_2,'pm',U_2_err)
-print(U_3,'pm',U_3_err)
-print(U_4,'pm',U_4_err)
-print(U_5,'pm',U_5_err)
-print(U_6,'pm',U_6_err)
-print(U_7,'pm',U_7_err)
-print(U_8,'pm',U_8_err)
-print(U_9,'pm',U_9_err)
+print(U_1)
+print(U_2)
+print(U_3)
+print(U_4)
+print(U_5)
+print(U_6)
+print(U_7)
+print(U_8)
+print(U_9)
+
+
+
+#
+##
+### Berechnung der Inklination
+####
 
 
 #Maxima liegen bei U4 und U8, Minima bei U2 und U6
@@ -60,8 +64,9 @@ print(U_9,'pm',U_9_err)
 ##HIER FEHLT NOCH DIE FEHLERRECHNUNG
 IW1_=U_2/U_4
 IW2_=U_6/U_8
-print(np.arccos(IW1_)*180/np.pi)
-print(np.arccos(IW2_)*180/np.pi)
+print("")
+print(unp.arccos(IW1_)*180/np.pi)
+print(unp.arccos(IW2_)*180/np.pi)
 #IW1=38.11760355
 #IW2=24.07947132
 print('')
@@ -71,7 +76,14 @@ print('Inklinationswinkel nach Arnes Formel fuer geteilte Messung')
 #print(IW1,'pm',IW1_err)
 #print(IW2,'pm',IW2_err)
 
-##PLOTS
+
+
+#
+##
+### Plots 
+####
+
+
 #1. Einfach alle Messpunkte aufgetragen gegen den Winkel
 
 plt.plot(alpha,M1,'rx',label='Messung 1')
@@ -84,16 +96,19 @@ plt.legend(loc="best")
 plt.savefig("../Bilder/M1-4.pdf")
 plt.show()
 plt.close()
-#Plot der Mittelwerte aufgetragen gegen den Winkel, hier fehlen Fehler
-plt.plot(0,U_1,'rx')
-plt.plot(45,U_2,'rx')
-plt.plot(90,U_3,'rx')
-plt.plot(135,U_4,'rx') 
-plt.plot(180,U_5,'rx')
-plt.plot(225,U_6,'rx')
-plt.plot(270,U_7,'rx')
-plt.plot(315,U_8,'rx')
-plt.plot(360,U_9,'rx')
+
+
+#2. Plot der Mittelwerte + Unsicherheiten aufgetragen gegen den Winkel
+
+plt.errorbar(np.radians(0),unp.nominal_values(U_1),unp.std_devs(U_1),fmt='rx')
+plt.errorbar(np.radians(45),unp.nominal_values(U_2),unp.std_devs(U_2),fmt='rx')
+plt.errorbar(np.radians(90),unp.nominal_values(U_3),unp.std_devs(U_3),fmt='rx')
+plt.errorbar(np.radians(135),unp.nominal_values(U_4),unp.std_devs(U_4),fmt='rx') 
+plt.errorbar(np.radians(180),unp.nominal_values(U_5),unp.std_devs(U_5),fmt='rx')
+plt.errorbar(np.radians(225),unp.nominal_values(U_6),unp.std_devs(U_6),fmt='rx')
+plt.errorbar(np.radians(270),unp.nominal_values(U_7),unp.std_devs(U_7),fmt='rx')
+plt.errorbar(np.radians(315),unp.nominal_values(U_8),unp.std_devs(U_8),fmt='rx')
+plt.errorbar(np.radians(360),unp.nominal_values(U_9),unp.std_devs(U_9),fmt='rx')
 plt.xlabel('Winkel /deg')
 plt.ylabel('Spannung U')
 #plt.legend(loc="best")
@@ -102,9 +117,11 @@ plt.show()
 plt.close()
 
 
+#3. Plot der Regression; 1. Teil
+
 def f(alpha, a, b, c, d):
 	return a*np.cos(d*alpha+b)+c
-params, cov = curve_fit(f, alpha, y , maxfev=8000000, p0=[1.92172884017,3.16178588224,32,1])
+params, cov = curve_fit(f,alpha[0:5], y[0:5] , maxfev=8000000, p0=[1.92172884017,3.16178588224,32,1])
 errors = np.sqrt(np.diag(cov))
 
 print('a =', params[0], 'pm', errors[0])
@@ -114,9 +131,44 @@ print('d =', params[3], 'pm', errors[3])
 
 alpha_plot = np.linspace(0, 7)
 
-plt.plot(alpha, y, 'rx', label="example data")
+plt.errorbar(np.radians(0),unp.nominal_values(U_1),unp.std_devs(U_1),fmt='kx')
+plt.errorbar(np.radians(45),unp.nominal_values(U_2),unp.std_devs(U_2),fmt='kx')
+plt.errorbar(np.radians(90),unp.nominal_values(U_3),unp.std_devs(U_3),fmt='kx')
+plt.errorbar(np.radians(135),unp.nominal_values(U_4),unp.std_devs(U_4),fmt='kx') 
+plt.errorbar(np.radians(180),unp.nominal_values(U_5),unp.std_devs(U_5),fmt='kx',label="Ausgewerte Daten")
+plt.errorbar(np.radians(225),unp.nominal_values(U_6),unp.std_devs(U_6),fmt='rx',label="Nichtausgewerte Daten")
+plt.errorbar(np.radians(270),unp.nominal_values(U_7),unp.std_devs(U_7),fmt='rx')
+plt.errorbar(np.radians(315),unp.nominal_values(U_8),unp.std_devs(U_8),fmt='rx')
+plt.errorbar(np.radians(360),unp.nominal_values(U_9),unp.std_devs(U_9),fmt='rx')
 plt.plot(alpha_plot, f(alpha_plot, *params), 'b-', label='linearer Fit')
 plt.legend(loc="best")
 plt.show()
-plt.savefig('../Bilder/plot.pdf')
+plt.savefig('../Bilder/plot1.pdf')
+plt.close()
+
+
+#3. Plot der Regression; 2. Teil
+
+params, cov = curve_fit(f,alpha[4:9], y[4:9] , maxfev=8000000, p0=[1.92172884017,3.16178588224,32,1])
+errors = np.sqrt(np.diag(cov))
+
+print('a =', params[0], 'pm', errors[0])
+print('b =', params[1], 'pm', errors[1])
+print('c =', params[2], 'pm', errors[2])
+print('d =', params[3], 'pm', errors[3])
+
+
+plt.errorbar(np.radians(0),unp.nominal_values(U_1),unp.std_devs(U_1),fmt='rx')
+plt.errorbar(np.radians(45),unp.nominal_values(U_2),unp.std_devs(U_2),fmt='rx')
+plt.errorbar(np.radians(90),unp.nominal_values(U_3),unp.std_devs(U_3),fmt='rx')
+plt.errorbar(np.radians(135),unp.nominal_values(U_4),unp.std_devs(U_4),fmt='rx') 
+plt.errorbar(np.radians(180),unp.nominal_values(U_5),unp.std_devs(U_5),fmt='rx',label="Nichtausgewerte Daten")
+plt.errorbar(np.radians(225),unp.nominal_values(U_6),unp.std_devs(U_6),fmt='kx',label="Ausgewerte Daten")
+plt.errorbar(np.radians(270),unp.nominal_values(U_7),unp.std_devs(U_7),fmt='kx')
+plt.errorbar(np.radians(315),unp.nominal_values(U_8),unp.std_devs(U_8),fmt='kx')
+plt.errorbar(np.radians(360),unp.nominal_values(U_9),unp.std_devs(U_9),fmt='kx')
+plt.plot(alpha_plot, f(alpha_plot, *params), 'b-', label='linearer Fit')
+plt.legend(loc="best")
+plt.show()
+plt.savefig('../Bilder/plot2.pdf')
 plt.close()
