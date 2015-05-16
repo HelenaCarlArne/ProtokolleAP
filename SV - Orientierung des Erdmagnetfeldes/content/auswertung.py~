@@ -60,13 +60,14 @@ print(U_9,'pm',U_9_err)
 ##HIER FEHLT NOCH DIE FEHLERRECHNUNG
 IW1_=U_2/U_4
 IW2_=U_6/U_8
-
-IW1=38.11760355
-IW2=24.07947132
+print(np.arccos(IW1_)*180/np.pi)
+print(np.arccos(IW2_)*180/np.pi)
+#IW1=38.11760355
+#IW2=24.07947132
 print('')
-print('Inklinationswinkel nach Arnes Formel für geteilte Messung')
-print(IW1)
-print(IW2)
+print('Inklinationswinkel nach Arnes Formel fuer geteilte Messung')
+#print(IW1)
+#print(IW2)
 #print(IW1,'pm',IW1_err)
 #print(IW2,'pm',IW2_err)
 
@@ -77,11 +78,11 @@ plt.plot(alpha,M1,'rx',label='Messung 1')
 plt.plot(alpha,M2,'yx',label='Messung 2')
 plt.plot(alpha,M3,'gx',label='Messung 3')
 plt.plot(alpha,M4,'kx',label='Messung 4')
-plt.xlabel('Winkel /°')
+plt.xlabel('Winkel /deg')
 plt.ylabel('Spannung U')
 plt.legend(loc="best")
 plt.savefig("../Bilder/M1-4.pdf")
-#plt.show()
+plt.show()
 plt.close()
 #Plot der Mittelwerte aufgetragen gegen den Winkel, hier fehlen Fehler
 plt.plot(0,U_1,'rx')
@@ -93,29 +94,28 @@ plt.plot(225,U_6,'rx')
 plt.plot(270,U_7,'rx')
 plt.plot(315,U_8,'rx')
 plt.plot(360,U_9,'rx')
-plt.xlabel('Winkel /°')
+plt.xlabel('Winkel /deg')
 plt.ylabel('Spannung U')
-plt.legend(loc="best")
+#plt.legend(loc="best")
 plt.savefig("../Bilder/MW.pdf")
-#plt.show()
+plt.show()
 plt.close()
 
 
-def f(alpha, a, b, c):
-	return a*np.cos(alpha+b)+c
-params, cov = curve_fit(f, alpha, y , maxfev=8000000, p0=[1.92172884017,3.16178588224,33.727913358])
+def f(alpha, a, b, c, d):
+	return a*np.cos(d*alpha+b)+c
+params, cov = curve_fit(f, alpha, y , maxfev=8000000, p0=[1.92172884017,3.16178588224,32,1])
 errors = np.sqrt(np.diag(cov))
 
-print('a =', params[0], '±', errors[0])
-print('b =', params[1], '±', errors[1])
-print('c =', params[2], '±', errors[2])
+print('a =', params[0], 'pm', errors[0])
+print('b =', params[1], 'pm', errors[1])
+print('c =', params[2], 'pm', errors[2])
 
 alpha_plot = np.linspace(0, 7)
 
 plt.plot(alpha, y, 'rx', label="example data")
 plt.plot(alpha_plot, f(alpha_plot, *params), 'b-', label='linearer Fit')
 plt.legend(loc="best")
-#plt.show()
-plt.savefif('../Bilder/plot.pdf')
+plt.show()
+plt.savefig('../Bilder/plot.pdf')
 plt.close()
-

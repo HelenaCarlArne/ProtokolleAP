@@ -104,7 +104,7 @@ plt.close()
 
 def f(alpha, a, b, c, d):
 	return a*np.cos(d*alpha+b)+c
-params, cov = curve_fit(f, alpha, y , maxfev=8000000), p0=[1.92172884017,3.16178588224,32])
+params, cov = curve_fit(f, alpha, y , maxfev=8000000, p0=[1.92172884017,3.16178588224,32,1])
 errors = np.sqrt(np.diag(cov))
 
 print('a =', params[0], 'pm', errors[0])
