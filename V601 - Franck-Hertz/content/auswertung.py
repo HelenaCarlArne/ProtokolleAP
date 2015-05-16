@@ -46,7 +46,7 @@ print('*********************************************')
 print('*********************************************')
 
 
-"""
+
 #
 ##	Energieverteilung, kalt
 ###
@@ -80,15 +80,18 @@ plt.legend(loc="best")
 plt.savefig("../Bilder/Vert_kalt_diff.pdf")
 plt.show()
 
-print(u_vert_kalt[-9])
-print(ufloat(0.4036,0.0044)*u_vert_kalt[-9]+ufloat(-0.1246,0.0579))
-print(11-ufloat(0.4036,0.0044)*u_vert_kalt[-9]-ufloat(-0.1246,0.0579))
 
+#print(u_vert_kalt[-9])
+print("Energiemaximum")
+print(ufloat(0.4036,0.0044)*u_vert_kalt[-9]+ufloat(-0.1246,0.0579))
+print("Kontaktpotential")
+k1=(11-ufloat(0.4036,0.0044)*u_vert_kalt[-9]-ufloat(-0.1246,0.0579))
+print(k1)
 #ufloat{0.4036,0.0044}
 #ufloat{-0.1246,0.0579}
 
-"" "AUSGABE_ORDNER"
 
+print('*********************************************')
 
 #
 ##	Energieverteilung, warm
@@ -133,34 +136,49 @@ print(11-ufloat(0.4047,0.0040)*-parameter[1]/parameter[0]-ufloat(0.0154,0.0594))
 
 #ufloat{0.4047,0.0040}
 #ufloat{0.0154,0.0594}
-"""
+print('*********************************************')
+print('*********************************************')
 
 #
 ##	Franck-Hertz-Kurven
 ###
-"""
+
 x_fh=np.genfromtxt("../Werte/FHKurve.txt").T
 Dx_fh=np.array([])
 for i in range(0,np.size(x_fh)-1):
 	Dx_fh=np.append(Dx_fh,x_fh[i+1]-x_fh[i])
 
 Dx_fh=ufloat(np.mean(Dx_fh),sem(Dx_fh))
+print("Abstand in cm")
 print(Dx_fh)
 def umr(x):
 	return ufloat(2.4000,0.0277)*x+ufloat(-1.1260,0.4554)
 
+print("Abstand in Volt")
 print(umr(Dx_fh))
+print("Energie in Volt")
 print(umr(Dx_fh)*const.e)
+print("Frequenz")
 print(umr(Dx_fh)*const.e/const.h)
+print("Wellenlänge")
 print(const.c/(umr(Dx_fh)*const.e/const.h))
-print(umr(x_fh[0])-2*umr(Dx_fh))
-"""
+print("Kontaktpotential")
+k2=umr(x_fh[0])-2*umr(Dx_fh)
+print(k2)
+
+
+print('*********************************************')
+print('*********************************************')
+
+#
+##	Ionisierungskurven
+###
 
 x_ion,y_ion=np.genfromtxt("../Werte/Ion.txt").T
 plt.plot(x_ion,y_ion,"+", label="Messdaten")
 parameter,coeffmatrix=curve_fit(linear,x_ion[5:20],y_ion[5:20])
 errors=np.sqrt(np.diag(coeffmatrix))
-plt.plot(x_ion[4:22],linear(x_ion[4:22],*parameter),label="Fit der Flanke")
+plt.plot(x_ion[4:22],linear(x_ion[4:22],*parameter),label="Fit der steigenden Flanke")
 parameter=unp.uarray(parameter,errors)
 plt.xlabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
 plt.ylabel(r"$\mathrm{Diagramml\ddot{a}nge\,in}\,cm$")
@@ -169,4 +187,15 @@ plt.ylim(0,18)
 plt.legend(loc='best')
 plt.savefig("../Bilder/Vert_ion.pdf")
 plt.show()
+print("Nullstelle in cm")
 print((2.6-parameter[1])/parameter[0])
+def umr2(x):
+	return ufloat(2.8874,0.0175)*x+ufloat(-3.8736,0.2034)
+print("Nullstelle in Volt")
+print(umr2((2.6-parameter[1])/parameter[0]))
+
+print("Mittelwert der Kontaktpotentiale")
+k=k1/2+k2/2
+print(k)
+print("Ionisierungsenergie in eV")
+print(umr2((2.6-parameter[1])/parameter[0])-k)
