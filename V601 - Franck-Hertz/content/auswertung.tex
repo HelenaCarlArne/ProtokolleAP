@@ -1,5 +1,33 @@
+\newpage
 \section{Auswertung}
 \label{sec:Auswertung}
+\begin{figure}
+\centering
+In der folgenden Auswertung werden alle Fehlerberechnungen und Regressionen nach den Gleichungen
+\begin{subequations}
+	\begin{equation}
+		\Delta = N \sum{x^2} - {\biggl(\sum{x}\biggr)}^2,
+	\end{equation}
+	\begin{equation}
+		a_{\text{Reg}} = \frac{N\sum{x\cdot y} - \sum{x} \cdot \sum{y}}{\Delta},
+	\end{equation}
+    \begin{equation}
+		b_{\text{Reg}} = \frac{\sum{x^2} \cdot \sum{y} - \sum{x} \cdot \sum{x \cdot y}}{\Delta},
+	\end{equation}
+	\begin{equation}
+		\sigma_{y} = \sqrt{\frac{\sum{(y - a_{\text{Reg}} \cdot x - b_{\text{Reg}})^2}}{N - 2}},
+	\end{equation}
+	\begin{equation}
+		\sigma_{a} = \sigma_{y} \sqrt{\frac{N}{\Delta}},
+	\end{equation}
+	\begin{equation}
+		\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
+	\end{equation}
+	%mit $x=x_\text{lin}=\frac{1}{T_m^2}$, $y=B$, $a_\text{Reg}=a_\text{lin}$, $b_\text{Reg}=b_\text{lin}$ und der Anzahl der Datenpaare N.
+	\label{eq:regress}
+\end{subequations}
+durchgeführt.
+\end{figure}
 
 %\subsection{Umrechnung der Messdaten} % (fold)
 %\label{sec:umrechnung}
@@ -29,7 +57,7 @@ Diese fehlerbehaftete Umrechnungsparameter stammen von einer linearen Regression
 	\caption{Umrechnungsparameter der Diagrammlänge zur Spannung. \cite{matplotlib}}
 	\label{tab:umrechnung}
 \end{table}
-\newpage
+
 % section umrechnung (end)
 \subsection{Energieverteilung der Elektronen} % (fold)
 \label{sec:energiespektren}
@@ -39,30 +67,6 @@ Die Schrittweite entlang der Abzissenachse wird im Allgemeinen so gewählt, dass
 andererseits ein Unterschied der Werte entlang der Ordinaten-Achse von mindestens $\SI{1}{\milli\meter}$, die größtmögliche Auflösung beim verwandten Papier, gewährleistet ist.
 An Stellen mit linearem Verlauf in guter Näherung ist die Schrittweite groß und an Stellen starker Steigungsänderung kleinstmöglich gewählt.
 Die eingelesenen Daten sind in Tabellen \ref{tab:E_vert_kalt} und \ref{tab:E_vert_warm} aufgetragen, ihre Darstellung ist in Diagramm \ref{fig:E_vert_kalt} und \ref{fig:E_vert_warm} sichtbar.
-
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/Vert_kalt.pdf}
-	\caption{Auftrag der aus Diagramm \emph{A1} entnommenen Daten zum Vergleichen.\cite{matplotlib}}
-	\label{fig:E_vert_kalt}
-\end{figure}
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/Vert_warm.pdf}
-	\caption{Auftrag der aus Diagramm \emph{A2} entnommenen Daten zum Vergleichen.\cite{matplotlib}}
-	\label{fig:E_vert_warm}
-\end{figure}\begin{figure}[p]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/Vert_kalt_diff.pdf}
-	\caption{Differentiellen Energieverteilung bei Raumtemperatur.\cite{matplotlib}}
-	\label{fig:E_vert_kalt_diff}
-\end{figure}
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/Vert_warm_diff.pdf}
-	\caption{Differentiellen Energieverteilung bei erhöhter Temperatur.\cite{matplotlib}}
-	\label{fig:E_vert_warm_diff}
-\end{figure}
 Die aufgenommene integrale Energieverteilung wird in eine differentielle Energieverteilung umgeformt.
 Hierzu wird der Abstand zwischen zwei y-Koordinaten durch den Abstand der dazugehörigen x-Koordinaten geteilt und diese Steigung in der Diagramm \ref{fig:E_vert_kalt_diff}, respektive \ref{fig:E_vert_warm_diff}, aufgetragen. 
 Diese Steigung wird in die Mitte zwischen den beiden x-Koordinaten gesetzt, damit entspricht das Verfahren einer angenährten Ableitung.
@@ -84,8 +88,24 @@ Daher ergeben sich mit der Umrechnungsformel \eqref{eq:umrechnung}
 	U_\text{E.,\SI{120}{\degreeCelsius}}&= \SI{5.6(6)}{\volt}\\
 	k_\text{E.,\SI{120}{\degreeCelsius}}&= \SI{5.4(6)}{\volt}
 \end{align}
-
-\begin{table}
+Für die folgende Auswertung wird nur das Kontaktpotential $k$ aus der Messung bei $\SI{26}{\degreeCelsius}$ betrachtet.
+Die Unterschiede in den Kontaktpotentialen zu verschiedenen Temperaturen wird in Abschnitt \ref{sec:disk_temp} diskutiert.
+% section aufnahme_der_energiespektren (end)
+\newpage
+\begin{figure}[p!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Vert_kalt.pdf}
+	\caption{Auftrag der aus Diagramm \emph{A1} entnommenen Daten zum Vergleichen.\cite{matplotlib}}
+	\label{fig:E_vert_kalt}
+\end{figure}
+\begin{figure}[p!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Vert_warm.pdf}
+	\caption{Auftrag der aus Diagramm \emph{A2} entnommenen Daten zum Vergleichen.\cite{matplotlib}}
+	\label{fig:E_vert_warm}
+\end{figure}
+\newpage
+\begin{table}[h!]
 	\centering
 	\sisetup{table-format=2.1}
 	\begin{tabular}{S S}
@@ -135,7 +155,19 @@ Daher ergeben sich mit der Umrechnungsformel \eqref{eq:umrechnung}
 	\caption{Ausgelesene Daten der Messkurve \emph{A1}: Energieverteilung bei Raumtemperatur}
 	\label{tab:E_vert_kalt}
 \end{table}
-\begin{table}[p]
+\begin{figure}[p!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Vert_kalt_diff.pdf}
+	\caption{Differentiellen Energieverteilung bei Raumtemperatur.\cite{matplotlib}}
+	\label{fig:E_vert_kalt_diff}
+\end{figure}
+\begin{figure}[p!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Bilder/Vert_warm_diff.pdf}
+	\caption{Differentiellen Energieverteilung bei erhöhter Temperatur.\cite{matplotlib}}
+	\label{fig:E_vert_warm_diff}
+\end{figure}
+\begin{table}[p!]
 	\centering
 	\sisetup{table-format=2.1}
 	\begin{tabular}{S S}
@@ -179,14 +211,7 @@ Daher ergeben sich mit der Umrechnungsformel \eqref{eq:umrechnung}
 	\caption{Ausgelesene Daten der Messkurve \emph{A2}: Energieverteilung bei erhöhter Temperatur}
 	\label{tab:E_vert_warm}
 \end{table}
-
-Für die folgende Auswertung wird nur das Kontaktpotential $k$ aus der Messung bei $\SI{26}{\degreeCelsius}$ betrachtet.
-Die Unterschiede in den Kontaktpotentialen zu verschiedenen Temperaturen wird in Abschnitt \ref{sec:disk_temp} diskutiert.
-% section aufnahme_der_energiespektren (end)
-
-
-
-
+\newpage
 \subsection{Franck--Hertz-Kurven} % (fold)
 \label{sec:fhk}
 Das im Anhang beigefügte Diagramm \emph{A4} zeigt die Franck--Hertz-Kurve der benutzen Apparatur.
@@ -215,21 +240,21 @@ Bei der Betrachtung der Abstände zwischen den Maxima ergibt sich ein umgerechne
 \end{equation}
 Diese Spannung entspricht der Beschleunigungspannung, die bei der Franck--Hertz-Röhre zur Anregung des Quecksilbers zum ersten Energieniveau benötigt wird.
 
-Bei Erreichen dieser Spannung, respektive dieser kinetischen Energie, sind inelastische Stöße möglich; die Elektronen geben beim Zusammenstoß Energie zur Anregung an Quecksilber.
-Der Auffängeranodenstrom $I$ ist ein Maß für die Anzahl der Elektronen, die nach eventuellen Stößen mit Quecksilber und nach Erreichen der Beschleunigungsanode ausreichende kinetische Energie aufweisen, um das Gegenfeld zu überwinden.
+Bei Erreichen dieser Spannung, respektive dieser kinetischen Energie, sind inelastische Stöße möglich. Die Elektronen geben beim Zusammenstoß Energie an die Quecksilberatome ab, die dadurch in einen angeregten Zustand versetzt werden.
+Der Auffängeranodenstrom $I_\mathup{A}$ ist ein Maß für die Anzahl der Elektronen, die nach eventuellen Stößen mit Quecksilber und nach Erreichen der Beschleunigungeranode ausreichende kinetische Energie aufweisen, um das Gegenfeld zu überwinden.
 Ein Abfallen des Stromes deutet auf auftretenden Mangel an kinetischer Energie hin.\\
 Der Energieverlust der Elektronen durch elastische Stöße wird nicht berücksichtigt, da dies im Vergleich zum Energieverlust durch inelastische Stöße geringen Effekt auf die Stromstärke hat und im Kontrast zum inelastischen Stoß nicht ausschließlich an ausgezeichneten Spannungen stattfindet.
 
-Aus dem ermittelten Wert $U$ ergeben sich die weiteren Größen erste Anregungsenergie $E_\text{Hg, 1}$, Anregungsfrequenz $f_\text{Anregung}$ und Wellenlänge der emittierten Strahlung $\lambda$.
+Aus dem ermittelten Wert $U$ ergeben sich die weiteren Größen erste Anregungsenergie $E_1$, Anregungsfrequenz $f_\text{Anregung}$ und Wellenlänge der emittierten Strahlung $\lambda$.
 \begin{align}	
-	E_\text{Hg}		&=\SI{6.3(7)e-19}{\joule}\\
+	E_1		&=\SI{6.3(7)e-19}{\joule}\\
 	f_\text{Anregung}	&=\SI{10(1)e+14}{\hertz}\\
 	\lambda				&=\SI{320(40)}{\nano\meter}
 \end{align}
-Dieses Messergebnis für die erste Anregungsenergie $E_\text{Hg}$ weicht von der Literaturangabe, $E_\text{Hg,Lit.}=\SI{4.9}{\electronvolt}$ \cite{IonEx}, um $20.4\%$ ab.
+Dieses Messergebnis für die erste Anregungsenergie $E_1$ weicht von der Literaturangabe, $E_{1\text{,Lit.}}=\SI{4.9}{\electronvolt}$ \cite{IonEx}, um $20.4\%$ ab.
 
 Das Kontaktpotential $k$ ist abschätzbar durch die globale Verschiebung der Maxima.
-Die Maximalstellen sind im idealen Verlauf Vielfache der Anregungsenergie $E_\text{Hg, 1}$, 
+Die Maximalstellen sind im idealen Verlauf Vielfache der Anregungsenergie $E_1$, 
 die Abweichungen der realen Stellen von der Theorie ist das Kontaktpotential $k$.
 Es wird das Kontaktpotential
 \begin{equation}
@@ -239,14 +264,19 @@ Es wird das Kontaktpotential
 ermittelt.
 
 % section franck_hertz_kurven (end)
-
 \subsection{Ionisierungskurven von Quecksilber} % (fold)
 \label{sec:ion}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Bilder/Vert_ion.pdf}
+	\caption{Auftrag der aus Diagramm \emph{A3} entnommenen Daten mit Regression der steigenden Flanke. \cite{matplotlib}}
+	\label{fig:ion}
+\end{figure}
+% section ion (end)
 Das im Anhang angefügte Diagramm \emph{A3} zeigt die Ionisierungskurve von Quecksilber.
 Die Messdaten werden wie in Abschnitt \ref{sec:energiespektren} aufgenommen, 
 die Daten sind in Tabelle \ref{tab:ion} aufgetragen.
-
-\begin{table}[p]
+\begin{table}[h]
 	\centering
 	\sisetup{table-format=2.1}
 	\begin{tabular}{S S}
@@ -293,16 +323,15 @@ die Daten sind in Tabelle \ref{tab:ion} aufgetragen.
 			22.0&	17.2\\
 		\bottomrule
 	\end{tabular}
-	\caption{Ausgelesene Daten der Messkurve \emph{A3}: Ionisierungskurve von Quecksilber}
+	\caption{Ausgelesene Daten der Messkurve \emph{A3}: Ionisierungskurve von Quecksilber.}
 	\label{tab:ion}
 \end{table}
-
 Über eine lineare Regression \eqref{eq:regress} wird ein Fit an die steigende Flanke gelegt und dessen Nullstelle bestimmt.
 Dabei ist zu berücksichtigen, dass die Nullstelle des in Abbildung \ref{fig:ion} gezeigten Verlaufes von der Nullstelle der tatsächlichen Ionisierungskurve abweicht, da in Abbildung \ref{fig:ion} wie in Tabelle \ref{tab:ion} die Koordinaten der Kurve aufgetragen sind.
 Zur Bestimmung der gewünschten Nullstelle wird der x-Wert des Fits in vorliegenden Koordinaten bei $y=\SI{2.6}{\centi\meter}$, dem Nullwert der Ionisierungskurve in dieser Darstellung, bestimmt.
 Die Nullstelle der Ionisierungskurve hat die x-Koordinate% und umgerechnete Spannung
 \begin{equation}
-	x_\text{Ion}=\SI{5.5(5)}{\centi\meter}
+	x_\text{Ion}=\SI{5.5(5)}{\centi\meter}.
 	\label{qu:ion}
 \end{equation}
 Für die Spannung $U_\text{Ion}$, die zur Ionisierung von Quecksilber anliegen muss, gilt im Weiteren
@@ -316,15 +345,9 @@ Mit dem Mittelwert der in Abschnitt \ref{sec:energiespektren}, Gl. \eqref{qu:k1}
 \end{equation}
 ergießt sich für die Ionisierungsenergie der Wert
 \begin{equation}
-	E_\text{Hg, Ion}=\SI{9.1(16)}{\electronvolt}.
+	E_\text{Ion}=\SI{9.1(16)}{\electronvolt}.
 \end{equation}
 Dieses Messergebnis weicht von der Literaturangabe, $E_\text{Hg, Ion}=\SI{10.44}{\electronvolt}$ \cite{IonHg}, um $12.8\%$ ab, 
 der Literaturwert liegt im Bereich der Standardabweichung des Messergebnisses.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.75\textwidth]{Bilder/Vert_ion.pdf}
-	\caption{Auftrag der aus Diagramm \emph{A3} entnommenen Daten mit Regression der steigenden Flanke. \cite{matplotlib}}
-	\label{fig:ion}
-\end{figure}
-% section ion (end)
+
 

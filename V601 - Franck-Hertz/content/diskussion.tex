@@ -1,68 +1,42 @@
-\begin{figure}[p]
-\centering
-Regression nach
-\begin{subequations}
-	\begin{equation}
-		\Delta = N \sum{x^2} - {\biggl(\sum{x}\biggr)}^2,
-	\end{equation}
-	\begin{equation}
-		a_{\text{Reg}} = \frac{N\sum{x\cdot y} - \sum{x} \cdot \sum{y}}{\Delta},
-	\end{equation}
-    \begin{equation}
-		b_{\text{Reg}} = \frac{\sum{x^2} \cdot \sum{y} - \sum{x} \cdot \sum{x \cdot y}}{\Delta},
-	\end{equation}
-	\begin{equation}
-		\sigma_{y} = \sqrt{\frac{\sum{(y - a_{\text{Reg}} \cdot x - b_{\text{Reg}})^2}}{N - 2}},
-	\end{equation}
-	\begin{equation}
-		\sigma_{a} = \sigma_{y} \sqrt{\frac{N}{\Delta}},
-	\end{equation}
-	\begin{equation}
-		\sigma_{b} = \sigma_{y} \sqrt{\frac{\sum{x^2}}{\Delta}}
-	\end{equation}
-	%mit $x=x_\text{lin}=\frac{1}{T_m^2}$, $y=B$, $a_\text{Reg}=a_\text{lin}$, $b_\text{Reg}=b_\text{lin}$ und der Anzahl der Datenpaare N.
-	\label{eq:regress}
-\end{subequations}
-\end{figure}
 
 \section{Diskussion}
 \label{sec:Diskussion}
 \subsection{Fehleranalyse}
-Die in Abschnitt \ref{sec:Auswertung} angegebenen Unsicherheiten sind mithilfe der \textsc{Gauss}schen Fehlerfortpflanzung berechnet worden.
-Die angegebenen Messergebnisse wurden auf die erste Nachkommastelle der Unsicherheit gerundet und der Nominalwert entsprechend angepasst, 
-während für voneinander abhängige Messergebnisse ungerundete Zwischenergebnisse benützt wurden.
+Die in Abschnitt \ref{sec:Auswertung} angegebenen Unsicherheiten werden mithilfe der \textsc{Gauss}schen Fehlerfortpflanzung berechnet.
+Die angegebenen Messergebnisse werden auf die erste Nachkommastelle der Unsicherheit gerundet und der Nominalwert entsprechend angepasst, 
+während für voneinander abhängige Messergebnisse ungerundete Zwischenergebnisse benützt werden.
 
-Die vorgegebene Apparatur lässt keine verlaufbestimmenden Modifikationen zu, schwerwiegende Fehler bei der Ansteuerung der Apparatur ist wegen des ebenfalls vorgegebenen Steuergeräts unwahrscheinlich.
+Die vorgegebene Apparatur lässt keine verlaufbestimmenden Modifikationen zu, schwerwiegende Fehler bei der Ansteuerung der Apparatur sind wegen des ebenfalls vorgegebenen Steuergeräts unwahrscheinlich.
 
 Die Messdatenaufnahme erfolgt automatisiert.
 Das verwendete Papier und der XY-Rekorder lassen eine Ablesegenauigkeit von \SI{1}{\milli\meter} zu.
-Die abgelesenen Koordinaten wurden auf die nächsten Millimeter-Schritt gerundet und diese Koordinate als fehlerlos betrachtet.
-Das Vernachlässigen dieser Unsicherheit hat keinen Effekt auf die Mittelwerte der Ergebnisse, sondern erweiterten unter Umständen die Standardabweichung der Ergebnisse.\\
-Der Einfluss dieser Unsicherheit auf die Ergebnisse der Auswertung wurde also nicht berücksichtigt.
+Die abgelesenen Koordinaten werden auf den nächsten Millimeter-Schritt gerundet und diese Koordinate als fehlerlos betrachtet.
+Das Vernachlässigen dieser Unsicherheit hat keinen Effekt auf die Mittelwerte der Ergebnisse, sondern erweiteren unter Umständen die Standardabweichung der Ergebnisse.\\
+Der Einfluss dieser Unsicherheit auf die Ergebnisse der Auswertung werden nicht berücksichtigt.
 
 \subsection{Einfluss der Temperatur}
 \label{sec:disk_temp}
-Die Temperatur der Franck--Hertz-Röhre hat Einfluss auf den Verlauf des Experimentes.
-Im Verlaufe des Versuches, Abschnitt \ref{sec:fhk}, wurden probeweise im kurzen zeitlichen Abstand Franck--Hertz-Kurven aufgenommen, während die Temperatur in der Franck-Hertz-Röhre kontinuierlich stieg.
+Die Temperatur der \textsc{Franck}--\textsc{Hertz}-Röhre hat Einfluss auf den Verlauf des Experimentes.
+Im Verlaufe des Versuches, Abschnitt \ref{sec:fhk}, werden probeweise im kurzen zeitlichen Abstand \textsc{Franck}--\textsc{Hertz}-Kurven aufgenommen, während die Temperatur in der \textsc{Franck}--\textsc{Hertz}-Röhre kontinuierlich steigt.
 Das Diagramm dieser Probe ist im Appendix als \emph{A5} zu finden.
 
 Zu erkennen ist, dass mit steigender Temperatur die Amplitude des Auffängerstroms %charakteristischen Spannung 
-abnimmt und dass die Anzahl der auswertbaren Maxima zunimmt.
-Das Abfallen der Amplituden deutet auf eine sinkende (Rest-)Energie, die die Elektronen bei Erreichen der Beschleunigungselektrode aufweisen.
+abnimmt und die Anzahl der auswertbaren Maxima zunimmt.
+Das Abfallen der Amplituden deutet auf eine sinkende (Rest-)Energie hin, die die Elektronen bei Erreichen der Beschleunigungerelektrode aufweisen.
 Diesen Abfall der kinetischen Energie kann mithilfe des Quecksilber-Drucks erklärt werden, welcher mit der Temperatur steigt und die Stoßwahrscheinlichkeit der Elektronen mit Quecksilber erhöht.
 In dem Grenzfall, dass der Druck unendlich anwächst, ist mit verschwindender Restenergie der Elektronen zu rechnen.
 Im umgekehrten Verhältnis sinkt mit steigender Temperatur, mit steigendem Quecksilber-Druck und mit steigender Stoßwahrscheinlichkeit die mittlere freie Weglänge.
 
-Bei der hier verwendeten Röhre beträgt der Abstand $a$ zwischen Kathode und Beschleunigungsanode etwa $\SI{1}{\centi\meter}$\cite{skript}.
-Um in ausreichendem Maße den Franck--Hertz-Effekt messen zu können, muss die mittlere freie Weglänge der Elektronen klein gegenüber dem Abstand $a$
+Bei der hier verwendeten Röhre beträgt der Abstand $a$ zwischen Kathode und Beschleunigungeranode etwa $\SI{1}{\centi\meter}$\cite{skript}.
+Um in ausreichendem Maße den \textsc{Franck}--\textsc{Hertz}-Effekt messen zu können, muss die mittlere freie Weglänge der Elektronen klein gegenüber dem Abstand $a$
 sein.
 Mithilfe der kinetischen Gastheorie kann ein quantitativer Zusammenhang zwischen Temperatur $T$ und mittlerer freier Weglänge $w$ gefunden werden, es gilt
 \begin{equation}
-	w=\frac{0.0029}{5.5\cdot10^7\cdot e^{\frac{-6876}{T}}}.
+	w=\frac{0,0029}{5,5\cdot10^7\cdot e^{\frac{-6876}{T}}}.
 \end{equation}
 Der in diesem Versuch eingestellten Temperatur $T\approx\SI{200}{\degreeCelsius}$ folgt eine mittlere freie Weglänge $w\approx\SI{0.01}{\milli\meter}$. Damit ist die Forderung $w\gg a$ für die eingestellte Temperatur erfüllt.
 
 Die in Abschnitt \ref{sec:energiespektren} nachgewiesene Temperaturabhängigkeit des Kontaktpotentials ist auf eine Erhöhung der Energie 
 eines Elektrons im Inneren eines Festkörpers zurückzuführen.
 
-Wir sind toll.\footnote{Lars Hoffmann, Meister gegen den Verschleiß}
+%Wir sind toll.\footnote{Lars Hoffmann, Meister gegen den Verschleiß}
