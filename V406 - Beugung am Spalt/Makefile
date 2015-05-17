@@ -1,6 +1,6 @@
 all: Abgabe.pdf
 	
-Abgabe.pdf: Bilder/* Tabellen/* content/*.tex ../LaTeX-Schreibsatz/header.tex main.tex build/* | build
+Abgabe.pdf: Bilder/* Tabellen/* content/*.tex  main.tex build/* | build
 	cp main.tex build/main.tex
 	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error main.tex
 	biber build/main.bcf
