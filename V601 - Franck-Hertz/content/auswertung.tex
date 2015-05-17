@@ -42,29 +42,29 @@ Die eingelesenen Daten sind in Tabellen \ref{tab:E_vert_kalt} und \ref{tab:E_ver
 
 \begin{figure}[p]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Bilder/Vert_kalt.pdf}
+	\includegraphics[width=0.8\textwidth]{Bilder/Vert_kalt.pdf}
 	\caption{Auftrag der aus Diagramm \emph{A1} entnommenen Daten zum Vergleichen.\cite{matplotlib}}
 	\label{fig:E_vert_kalt}
 \end{figure}
 \begin{figure}[p]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Bilder/Vert_warm.pdf}
+	\includegraphics[width=0.8\textwidth]{Bilder/Vert_warm.pdf}
 	\caption{Auftrag der aus Diagramm \emph{A2} entnommenen Daten zum Vergleichen.\cite{matplotlib}}
 	\label{fig:E_vert_warm}
 \end{figure}\begin{figure}[p]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Bilder/Vert_kalt_diff.pdf}
+	\includegraphics[width=0.8\textwidth]{Bilder/Vert_kalt_diff.pdf}
 	\caption{Differentiellen Energieverteilung bei Raumtemperatur.\cite{matplotlib}}
-	\label{fig:E_vert_kalt}
+	\label{fig:E_vert_kalt_diff}
 \end{figure}
 \begin{figure}[p]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Bilder/Vert_warm_diff.pdf}
+	\includegraphics[width=0.8\textwidth]{Bilder/Vert_warm_diff.pdf}
 	\caption{Differentiellen Energieverteilung bei erhöhter Temperatur.\cite{matplotlib}}
-	\label{fig:E_vert_warm}
+	\label{fig:E_vert_warm_diff}
 \end{figure}
 Die aufgenommene integrale Energieverteilung wird in eine differentielle Energieverteilung umgeformt.
-Hierzu wird der Abstand zwischen zwei y-Koordinaten durch den Abstand der dazugehörigen x-Koordinaten geteilt und diese Steigung in der Diagramm \ref{fig:E_vert_kalt}, respektive \ref{fig:E_vert_warm}, aufgetragen. 
+Hierzu wird der Abstand zwischen zwei y-Koordinaten durch den Abstand der dazugehörigen x-Koordinaten geteilt und diese Steigung in der Diagramm \ref{fig:E_vert_kalt_diff}, respektive \ref{fig:E_vert_warm_diff}, aufgetragen. 
 Diese Steigung wird in die Mitte zwischen den beiden x-Koordinaten gesetzt, damit entspricht das Verfahren einer angenährten Ableitung.
 
 Um das Kontaktpotential $k$ zu bestimmen, wird das Maximum der differentiellen Energieverteilung bei Raumtemperatur bestimmt.
@@ -190,7 +190,7 @@ Die Unterschiede in den Kontaktpotentialen zu verschiedenen Temperaturen wird in
 \subsection{Franck--Hertz-Kurven} % (fold)
 \label{sec:fhk}
 Das im Anhang beigefügte Diagramm \emph{A4} zeigt die Franck--Hertz-Kurve der benutzen Apparatur.
-Die x-Koordinaten der lokalen Maxima sind in Tabelle \ref{tab:fhkurve} aufgetragen.\\
+Die x-Koordinaten der lokalen Maxima sind in Tabelle \ref{tab:fhkurve} aufgetragen.
 \begin{table}
 	\centering
 	\sisetup{table-format = -2.1}
@@ -213,24 +213,24 @@ Bei der Betrachtung der Abstände zwischen den Maxima ergibt sich ein umgerechne
 \begin{equation}
 	U=\SI{3.9(5)}{\volt}.
 \end{equation}
-Diese Spannung entspricht der Beschleunigungspannung $U$, die bei der Franck--Hertz-Röhre zur Anregung des Quecksilbers zum ersten Energieniveau benötigt wird.
+Diese Spannung entspricht der Beschleunigungspannung, die bei der Franck--Hertz-Röhre zur Anregung des Quecksilbers zum ersten Energieniveau benötigt wird.
 
 Bei Erreichen dieser Spannung, respektive dieser kinetischen Energie, sind inelastische Stöße möglich; die Elektronen geben beim Zusammenstoß Energie zur Anregung an Quecksilber.
 Der Auffängeranodenstrom $I$ ist ein Maß für die Anzahl der Elektronen, die nach eventuellen Stößen mit Quecksilber und nach Erreichen der Beschleunigungsanode ausreichende kinetische Energie aufweisen, um das Gegenfeld zu überwinden.
 Ein Abfallen des Stromes deutet auf auftretenden Mangel an kinetischer Energie hin.\\
 Der Energieverlust der Elektronen durch elastische Stöße wird nicht berücksichtigt, da dies im Vergleich zum Energieverlust durch inelastische Stöße geringen Effekt auf die Stromstärke hat und im Kontrast zum inelastischen Stoß nicht ausschließlich an ausgezeichneten Spannungen stattfindet.
 
-Aus dem ermittelten Wert $U$ ergeben sich die weiteren Größen erste Anregungsenergie $E_\text{Hg, 1}$, Anregungsfrequenz $f_\text{Anregung}$, Wellenlänge der emittierten Strahlung $\lambda$.
+Aus dem ermittelten Wert $U$ ergeben sich die weiteren Größen erste Anregungsenergie $E_\text{Hg, 1}$, Anregungsfrequenz $f_\text{Anregung}$ und Wellenlänge der emittierten Strahlung $\lambda$.
 \begin{align}	
 	E_\text{Hg}		&=\SI{6.3(7)e-19}{\joule}\\
 	f_\text{Anregung}	&=\SI{10(1)e+14}{\hertz}\\
 	\lambda				&=\SI{320(40)}{\nano\meter}
 \end{align}
-Dieses Messergebnis für die erste Anregungsenergie $E_\text{Hg}$ weicht von der Literaturangabe,$E_\text{Hg,Lit.}=\SI{4.9}{\electronvolt}$ \cite{IonEx}, um $20.4\%$ ab.
+Dieses Messergebnis für die erste Anregungsenergie $E_\text{Hg}$ weicht von der Literaturangabe, $E_\text{Hg,Lit.}=\SI{4.9}{\electronvolt}$ \cite{IonEx}, um $20.4\%$ ab.
+
 Das Kontaktpotential $k$ ist abschätzbar durch die globale Verschiebung der Maxima.
 Die Maximalstellen sind im idealen Verlauf Vielfache der Anregungsenergie $E_\text{Hg, 1}$, 
 die Abweichungen der realen Stellen von der Theorie ist das Kontaktpotential $k$.
-
 Es wird das Kontaktpotential
 \begin{equation}
 	k=\SI{3.5(10)}{\volt}
@@ -298,7 +298,7 @@ die Daten sind in Tabelle \ref{tab:ion} aufgetragen.
 \end{table}
 
 Über eine lineare Regression \eqref{eq:regress} wird ein Fit an die steigende Flanke gelegt und dessen Nullstelle bestimmt.
-Dabei ist zu berücksichtigen, dass die Nullstelle des in Abbildung \ref{fig:ion} gezeigten Verlaufes von der Nullstelle der tatsächlichen Ionisierungskurve abweicht, da in Abbildung \ref{fig:ion} die Koordinaten der Kurve aufgetragen sind.
+Dabei ist zu berücksichtigen, dass die Nullstelle des in Abbildung \ref{fig:ion} gezeigten Verlaufes von der Nullstelle der tatsächlichen Ionisierungskurve abweicht, da in Abbildung \ref{fig:ion} wie in Tabelle \ref{tab:ion} die Koordinaten der Kurve aufgetragen sind.
 Zur Bestimmung der gewünschten Nullstelle wird der x-Wert des Fits in vorliegenden Koordinaten bei $y=\SI{2.6}{\centi\meter}$, dem Nullwert der Ionisierungskurve in dieser Darstellung, bestimmt.
 Die Nullstelle der Ionisierungskurve hat die x-Koordinate% und umgerechnete Spannung
 \begin{equation}
@@ -307,25 +307,24 @@ Die Nullstelle der Ionisierungskurve hat die x-Koordinate% und umgerechnete Span
 \end{equation}
 Für die Spannung $U_\text{Ion}$, die zur Ionisierung von Quecksilber anliegen muss, gilt im Weiteren
 \begin{equation}
-	U_\text{Ion}=\tilde{U}_\text{Ion}+k
+	\tilde{U}_\text{Ion}=U_\text{Ion}+k
 \end{equation}
 mit der in der Auswertung bestimmten Spannung $\tilde{U}_\text{Ion}$, die sich aus der Umrechnung von der Nullstelle \ref{qu:ion} ergibt.
-
 Mit dem Mittelwert der in Abschnitt \ref{sec:energiespektren}, Gl. \eqref{qu:k1} und \ref{sec:fhk}, Gl. \eqref{qu:k2} gefundenen Kontaktpotentiale $k$,
 \begin{equation}
-	k=\SI{2.9(5)}{\volt}.
+	k=\SI{2.9(5)}{\volt},
 \end{equation}
-Daher ergießt sich für die Ionisierungsenergie der Wert
+ergießt sich für die Ionisierungsenergie der Wert
 \begin{equation}
 	E_\text{Hg, Ion}=\SI{9.1(16)}{\electronvolt}.
 \end{equation}
-Dieses Messergebnis weicht von der Literaturangabe,$E_\text{Hg, Ion}=\SI{10.44}{\electronvolt}$ \cite{IonHg}, um $12.8\%$ ab, 
+Dieses Messergebnis weicht von der Literaturangabe, $E_\text{Hg, Ion}=\SI{10.44}{\electronvolt}$ \cite{IonHg}, um $12.8\%$ ab, 
 der Literaturwert liegt im Bereich der Standardabweichung des Messergebnisses.
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Bilder/Vert_ion.pdf}
+	\includegraphics[width=0.75\textwidth]{Bilder/Vert_ion.pdf}
 	\caption{Auftrag der aus Diagramm \emph{A3} entnommenen Daten mit Regression der steigenden Flanke. \cite{matplotlib}}
-	\label{fig:E_vert_warm}
+	\label{fig:ion}
 \end{figure}
 % section ion (end)
 
