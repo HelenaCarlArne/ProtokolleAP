@@ -137,8 +137,8 @@ plt.ylabel(r'$\mathrm{Spannung}\,U /V$')
 plt.ylim(28,42)
 #plt.legend(loc="best")
 plt.savefig("../Bilder/MW.pdf")
-plt.show()
-plt.close()
+#plt.show()
+#plt.close()
 
 
 #3. Plot der Regression; 1. Teil
@@ -181,9 +181,9 @@ plt.xticks([0, np.pi / 2, np.pi, 3 * np.pi / 2, 2 * np.pi],
 plt.xlabel(r'$\mathrm{Winkel}$')
 plt.ylabel(r'$\mathrm{Spannung}\,U /V$')
 plt.ylim(28,42)
-plt.savefig('../Bilder/plot1.pdf')
-plt.show()
-plt.close()
+#plt.savefig('../Bilder/plot1.pdf')
+#plt.show()
+#plt.close()
 
 
 #4. Plot der Regression; 2. Teil
@@ -223,7 +223,7 @@ plt.xticks([0, np.pi / 2, np.pi, 3 * np.pi / 2, 2 * np.pi],
 plt.xlabel(r'$\mathrm{Winkel}$')
 plt.ylabel(r'$\mathrm{Spannung}\,U /V$')
 plt.ylim(28,42)
-plt.savefig('../Bilder/plot2.pdf')
+#plt.savefig('../Bilder/plot2.pdf')
 plt.show()
 
 plt.close()

@@ -1,0 +1,9 @@
+# lambda[nm]    Farbe    Intensitaet    phi[deg] 
+579.1    gelb       stark      279.6
+577.0    gelb       stark      279.9
+546.1    gruen      stark      282.0
+491.6    blaugruen  schwach    285.7
+435.8    violett    stark      289.5
+434.7	 voilett    schwach    289.7
+407.8    violett    mittel     291.5
+404.7    violett    stark      291.7
