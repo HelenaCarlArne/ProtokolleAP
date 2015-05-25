@@ -24,21 +24,24 @@ Dieses Spektrium weist auf weitere Quantenzahlen nebst der Hauptquantenzahl hin.
 Die Elektronen des Wasserstoffs befinden sich im Zuge der Quantenmechanischen Grundlagen im gebundenen Zustand in der Atomhülle.
 Ihr Zustand ist Lösung der zeitinvarianten Schrödingergleichung
 \begin{equation}
+	\Bigl(\Bigl(\frac{\hbar^2\mathup{\Delta}}{2 m_0}\Bigr)+U\Bigr)\psi=E\psi
 	\label{eq:schroedinger}
 \end{equation}
 mit der potentiellen Energie 
 \begin{equation}
-	.
+	U=-\frac{e_0^2}{4\pi\epsilon_0 r}.
 	\label{eq:Epot}
 \end{equation}
-Es ergeben sich die Energieeigenwerte des Leuchtelektrons von
+Mit der Rydberg-Konstanten $R_\infty$ ergeben sich die Energieeigenwerte des Leuchtelektrons von
 \begin{equation}
-	\label{eq:EEW},
+	E(n)=R_\infty\frac{1}{n^2} \qquad n\in\mathbb{N}
+	\label{eq:EEW}
 \end{equation}
 die die Energie beim Quantensprung vorhersagen.
 
 Bei der Betrachtung des Ein-Elektron-System wird die potentielle Energie $U$ \eqref{eq:Epot} durch
 \begin{equation}
+	U=-(z-\sigma)\frac{e_0^2}{4\pi\epsilon_0 r}
 	\label{eq:Epot_neu}
 \end{equation}
 ersetzt.
@@ -46,16 +49,23 @@ Dieses Potential betrachtet neben dem Leuchtelektron die Abschrimungszahl $\sigm
 Zum Einen betrachtet die Schrödingergleichung \eqref{eq:schroedinger} nur noch den Impuls des Leuchtelektrons, zum Anderen wird der Hamilton-Operator im Interesse der vorliegenden Symmetrie in Polarkoordinaten umgeschrieben.
 Es ergibt sich die Gleichung
 \begin{equation}
+	\biggl(\frac{\hbar^2}{2m_0}\frac{1}{r}\frac{\partial^2 r}{\partial r^2}+\frac{1}{2m_0}\frac{1}{r^2} \vec{L}^2-(z-\sigma)\frac{e_0^2}{4\pi\epsilon_0 r}\frac{1}{r}\biggr)\psi=E\psi
 	\label{eq:schroedinger_2}
 \end{equation}
-mit dem Drehimpulsoperator $L=-i\hbar\vec{r}\times\nabla$.
+mit dem Drehimpulsoperator $\vec{L}=-i\hbar\vec{r}\times\nabla$.
 
 Die Lösung des Eigenwertproblem wird gesucht, indem innerhalb der Gleichung die Eigenwerte von $L$ gesucht und mit ihnen die Gleichung vereinfacht wird.
 Die Lösungen des inneren Eigenwertproblems sind Kugelflächenfunktionen $Y_l(\theta,\phi)$ mit den Eigenwerten $\hbar^2 l(l+1), l\in\mathbb{N_0}$.
-Die Eigenwerte werden als Bahndrehimpulsquantenzahl bezeichnet.
-Damit ergibt sich die Gleichung \eqref{eq:schroedinger_2} un als
+Die Eigenwerte werden als Bahndrehimpulsquantenzahl $l$ bezeichnet.
+Damit ergibt sich die Gleichung \eqref{eq:schroedinger_2} nun als
 \begin{equation}
-	13.
+	\biggl(\frac{\hbar^2}{2m_0}\frac{1}{r}\frac{\partial^2 r}{\partial r^2}+\frac{\hbar^2}{2m_0}\frac{1}{r^2} l(l+1)-(z-\sigma)\frac{e_0^2}{4\pi\epsilon_0 r}\frac{1}{r}\biggr)\psi_R=E\psi_R.
+	\label{eq:EEW_drehimpuls_flasche}
+\end{equation}
+In dieser Gleichung wird die Lösung $\psi$ in Radialanteil $\psi_R$ und in Winkelanteil $\psi_W$ aufgespalten. 
+Die Energieeigenwerte sind
+\begin{equation}
+	E=R_\infty\frac{(z-\sigma)^2}{(k+1+l)^2} \qquad k\in\mathbb{N_0}
 	\label{eq:EEW_drehimpuls}
 \end{equation}
 
@@ -63,13 +73,13 @@ Zu erkennen ist, dass der Ausdruck $k+1+l$ der Hauptquantenzahl $n$ entspricht, 
 
 \subsection{Einfluss der Näherung, relativistische Effekte} % (fold)
 \label{sub:rel}
-Der in Abschnitt \ref{sec:L_quantenzahl} gefundene Ausdruck \eqref{eq:EEW_drehimpuls} lässt nun analog zu \eqref{eq:schroedinger} Aussage über die Energie eines Leuchtelektrons zu.
+Der in Abschnitt \ref{sub:L_quantenzahl} gefundene Ausdruck \eqref{eq:EEW_drehimpuls} lässt nun analog zu \eqref{eq:schroedinger} Aussage über die Energie eines Leuchtelektrons zu.
 Der Ausdruck \eqref{eq:EEW_drehimpuls} berücksichtigt keine relativistischen Effekte.
 Diese Näherung hat zur Folge, dass die Energieeigenwerte scheinbar keine Abhängigkeit von den Drehimpulsquantenzahlen zeigen.
 
 Unter Berücksichtigung relativistischer Effekte gilt für den Hamilton-Operator in den Schrödinger-Gleichungen
 \begin{equation}
-	16.
+	\hat{H_\text{rel}}\approx\frac{\hat{P}^2}{2m_0}-\frac{1}{8}\frac{\hat{P}^4}{m_0^3 c^2}
 	\label{eq:relativerhamilton}
 \end{equation}
 Es wird der relativistische Effekt als klein angenommen, in dem gefundenen Hamilton-Operator kann der zweite Term als Störungsoperator angesehen werden.
@@ -78,7 +88,7 @@ Durch die additive Anpassung des Operators bleiben die vorangegangen Energieeige
 Die relativistischen Eigenwerte sind die Eigenwerte \eqref{eq:EEW_drehimpuls} zuzüglich der Erwartungswert des Störungsoperator mit den Eigenfunktionen.
 Das Ergebnis der relativistischen Anpassung ist
 \begin{equation}
-	19
+	E=-R_\infty\biggl(\frac{(z-\sigma)^2}{n^2}+\alpha^2\frac{(z-\sigma)^4}{n^3}\biggl(\frac{2}{2l+1}-\frac{3}{4n}\biggr) \biggr)\qquad k\in\mathbb{N_0}
 	\label{eq:EEW_rel}
 \end{equation}
 mit der Sommerfeldschen Feinstrukturkonstante $\alpha=\frac{e_0^2}{2hc\epsilon_0}$
@@ -100,7 +110,7 @@ Die Anpassung der Energieeigenwerte erfolgt wie in Abschnitt \label{sub:rel} dur
 
 Es ergibt sich die Energieeigenwert-Gleichung
 \begin{equation}
-	30,
+	E=-R_\infty\biggl(\frac{(z-\sigma)^2}{n^2}+\alpha^2\frac{(z-\sigma)^4}{n^3}\biggl(\frac{1}{j+\sfrac{1}{2}}-\frac{3}{4n}\biggr) \biggr),
 	\label{eq:EEW_3}
 \end{equation}
 die schließlich die drei Quantenzahlen $n,l,j$ berücksichtigt.
@@ -131,35 +141,45 @@ Der Unterschied zwischen den beiden Konstanten ist für Leuchtelektronen auf der
 Dies geschieht durch das Ausmessen der Energiedifferenz innerhalb der Duplett-Struktur.
 Mit
 \begin{equation}
-	31
+	E=-R_\infty\biggl(\frac{(z-\sigma_1)^2}{n^2}+\alpha^2\frac{(z-\sigma_2)^4}{n^3}\biggl(\frac{1}{j+\sfrac{1}{2}}-\frac{3}{4n}\biggr) \biggr)
 \end{equation}
 folgt für die Energiedifferenz
 \begin{equation}
-	32+ S.163
+	\mathup{\Delta}E=\frac{R_\infty\alpha^2}{n^3}(z-\sigma_2)^4\frac{1}{l(l+1)}\approx hc\frac{\mathup{\Delta\lambda}}{\lambda^2}
 \end{equation}
 
 \subsection{Kurze Einführung in Beugungsgitter}
-Das Beugungsgitter ist eine lichtundurchlässige Platte, in die im präzisen geringen Abstand schmale parallele Spalten eingeätzt wurden.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Bilder/Gitter.png}
+	\caption{Beugung einer ebenen Welle an regelmäßig angeordneten Spaltöffnungen der Breite $b$. \cite{skript}} 
+\end{figure}
+Das Beugungsgitter ist eine lichtundurchlässige Platte, in die im präzisen geringen Abstand $g$ schmale parallele Spalten der Breite $b$eingeätzt wurden.
+Die Anzahl der beleuchteten Spalte ist $p$.
 Die Größenordnung des Gitters bewirkt Beugungsphänomene, anhand derer die Wellenlänge des einfallenden Lichtes bestimmt werden kann.
 Im Zusammenhang stehen die Wellenlänge des Lichtes und die Ablenkung.
 
 Für die Intensität des Lichtes in Abhängigkeit vom Ablenkungswinkel gilt bei einer Öffnung
 \begin{equation}
-	I_133.
+	I_1(\phi)=E_0^2b^2\frac{\lambda}{\pi b\sin{\phi}}\sin^2{\frac{\pi b\sin{\phi}}{\lambda}}.
 \end{equation}
 
 Mit der Überlagerung mehrer Spalten wird eine Funktion der Gestalt
 \begin{equation}
-	I=|E|^2\cdot I_1
+	I_2=|E(\phi)|^2\cdot I_1
 \end{equation}
 angenommen.
 Die Amplitudenfunktion $E$ ergibt sich durch die Überlagerung der Lichtstrahlen ausgehend von den Einzelspalten,
 \begin{equation}
-	35.
+	E=e^{i(\omega t-2\pi \sfrac{z}{\lambda})}(1+e^{-i\delta}+e^{-i\delta}+...+e^{-(p-1)i\delta}).
 \end{equation}
 Nach Anwendung der geometrischen Reihe und Umformung durch die Eulersche Formel ergibt sich
 \begin{equation}
-	37 Mit Underbrace.
+	I_2(\phi)=E_0^2b^2
+	\frac{\lambda}{\pi b\sin{\phi}}
+	\sin^2{\frac{\pi b\sin{\phi}}{\lambda}}
+	\frac{\sin^2{p\pi g\sin{\phi}/\lambda}}
+	{\sin^2{\pi g\sin{\phi}/\lambda}}.
 \end{equation}
 
 Typische für Beugungsbilder am Gitter sind schmale und helle Hauptmaxima.
