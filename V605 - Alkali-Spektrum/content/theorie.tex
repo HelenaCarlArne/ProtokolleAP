@@ -15,7 +15,7 @@ Dieses äußere Elektron wird zweckmäßig Leuchtelektron genannt.
 Ein wichtiger Unterschied dieser Systeme ist, dass das Leuchtelektron des Wasserstoffs nicht durch innere Elektronen beeinflusst wird.
 Das Leuchtelektron des Alkali-Atoms befindet sich indes im Feld des Kernes, welches durch vorhandene innere Elektronen geschwächt wird.
 
-\subsection{Anpassung des Modells: Kugelsymmetrie, Potential und Bahndrehimpulsquantenzahl} % (fold)
+\subsection{Modellierung des verwendeten Atomvorstellung} % (fold)
 \label{sub:L_quantenzahl}
 Weiterer Unterschied des Bohrschen Atommodells von Wasserstoff zu dem hier hier angenommenen Ein-Elektron-System ist die Anzahl der Spektrallinien. 
 Im Kontrast zu den weitesgehend monochromatischen Linien des Wasserstoffs, wird bei Alkali-Atomen ein linienreiches Spektrum erwartet.
@@ -38,7 +38,6 @@ Mit der Rydberg-Konstanten $R_\infty$ ergeben sich die Energieeigenwerte des Leu
 	\label{eq:EEW}
 \end{equation}
 die die Energie beim Quantensprung vorhersagen.
-
 Bei der Betrachtung des Ein-Elektron-System wird die potentielle Energie $U$ \eqref{eq:Epot} durch
 \begin{equation}
 	U=-\frac{e_0^2}{4\pi\epsilon_0 r}(z-\sigma)
@@ -71,9 +70,9 @@ Die Energieeigenwerte sind
 
 %Zu erkennen ist, dass der Ausdruck $k+1+l$ der Hauptquantenzahl $n$ entspricht, welche ausschließlich die Energieeigenwert $E(n)$ bestimmen, und dass mit $l_\text{max}=n-1$ die Drehimpulsquantenzahlen $l\in\mathbb{N_0}$ nach oben beschränkt sind.
 
-\subsection{Anpassung des Modells: relativistische Effekte} % (fold)
-\label{sub:rel}
-Der in Abschnitt \ref{sub:L_quantenzahl} gefundene Ausdruck \eqref{eq:EEW_drehimpuls} lässt nun analog zu \eqref{eq:EEW} Aussage über die Energie eines Leuchtelektrons zu.
+%\subsection{Anpassung des Modells: relativistische Effekte} % (fold)
+%\label{sub:rel}
+%Der in Abschnitt \ref{sub:L_quantenzahl} gefundene Ausdruck \eqref{eq:EEW_drehimpuls} lässt nun analog zu \eqref{eq:EEW} Aussage über die Energie eines Leuchtelektrons zu.
 Der Ausdruck \eqref{eq:EEW_drehimpuls} berücksichtigt keine relativistischen Effekte.
 Diese Näherung hat zur Folge, dass die Energieeigenwerte scheinbar keine Abhängigkeit von den Drehimpulsquantenzahlen zeigen.
 Unter Berücksichtigung relativistischer Effekte gilt für den Hamilton-Operator in den Schrödinger-Gleichungen
@@ -82,19 +81,18 @@ Unter Berücksichtigung relativistischer Effekte gilt für den Hamilton-Operator
 	\label{eq:relativerhamilton}
 \end{equation}
 Es wird der relativistische Effekt als klein angenommen, in dem gefundenen Hamilton-Operator kann der zweite Term als Störungsoperator angesehen werden.
-
 Durch die additive Anpassung des Operators bleiben die vorangegangen Energieeigenwerte im Wesentlichen erhalten.
 Die relativistischen Eigenwerte sind die Eigenwerte \eqref{eq:EEW_drehimpuls} zuzüglich der Erwartungswert des Störungsoperator mit den Eigenfunktionen.
-Das Ergebnis der relativistischen Anpassung ist
-\begin{equation}
-	E=-R_\infty\biggl(\frac{(z-\sigma)^2}{n^2}+\alpha^2\frac{(z-\sigma)^4}{n^3}\biggl(\frac{2}{2l+1}-\frac{3}{4n}\biggr) \biggr)\qquad k\in\mathbb{N_0}
-	\label{eq:EEW_rel}
-\end{equation}
-mit der Sommerfeldschen Feinstrukturkonstante $\alpha=\frac{e_0^2}{2hc\epsilon_0}$
+%Das Ergebnis der relativistischen Anpassung ist
+%\begin{equation}
+%	E=-R_\infty\biggl(\frac{(z-\sigma)^2}{n^2}+\alpha^2\frac{(z-\sigma)^4}{n^3}\biggl(\frac{2}{2l+1}-\frac{3}{4n}\biggr) \biggr)\qquad k\in\mathbb{N_0}
+%	\label{eq:EEW_rel}
+%\end{equation}
+%mit der Sommerfeldschen Feinstrukturkonstante $\alpha=\frac{e_0^2}{2hc\epsilon_0}$
 % subsection subsection_name (end)
 
-\subsection{Betrachtung des Spins} % (fold)
-\label{sub:spin}
+%\subsection{Betrachtung des Spins} % (fold)
+%\label{sub:spin}
 %In vorangegeangen Abschnitten wurde die Schrödingergleichung \eqref{eq:schroedinger} gemäß der Symmetrie umgeformt, die potentielle Energie $U$ angepasst und mithilfe relativistischer Betrachtung eine Formel erschlossen, die die Energiewerte des Leuchtelektrons in Abhängigkeit von Hauptquantenzahl $n$ und Drehimpulsquantenzahl $l$ vorhersagt.
 %Präzise experimentelle Beobachtung zeigen eine Abweichung von dieser Theorie, die durch Berücksichtigen einer weiteren Eigenschaft der Elektronen berichtigt werden kann.
 
@@ -102,7 +100,8 @@ Aus Experimenten wie dem Stern--Gerlach-Experiment ist eine weitere Eigenschaft,
 Die zugehörige Quantenzahl $s$ hat nur den Betrag $\sfrac{1}{2}$.
 Mit dem Drehimpuls der Elektronen geht ein magnetisches Moment einher, welches in Wechselwirkung mit anderen Elektronen tritt.
 %Diese Wechselwirkung wird das Spin-Bahn-Kopplung bezeichnet.
-Die Summe des aus Abschnitt \ref{sub:L_quantenzahl} bekannten Drehimpulsoperators $L$ und dem eingeführten Spinoperator $S$ ergibt die Quantenzahlen
+Die Summe %des aus Abschnitt \ref{sub:L_quantenzahl} bekannten 
+Drehimpulsoperators $L$ und dem eingeführten Spinoperator $S$ ergibt die Quantenzahlen
 $j=l\pm\sfrac{1}{2}$.
 Der Einfluss des Spins auf die Energieeigenwerte kann als klein angenommen werden, somit wird der Effekt mit Hilfe der Störungstheorie und der Diracschen Theorie des relativistischen Elektrons ermittelt.
 Die Anpassung der Energieeigenwerte erfolgt wie in Abschnitt \label{sub:rel} durch Addition des Erwartungswertes vom angepassten Hamilton-Operators in Bezug auf Eigenfunktionen.
@@ -126,18 +125,18 @@ Mit der in Abschnitt \ref{sec:Durchfuehrung} beschriebenen Vorrichtung wird der 
 Wegen des binären Spins werden also gewissermaßen für jede Bahndrehimpulsquantenzahl $l$ zwei dicht beieinander liegende Linien erwartet, die als Dublett-Struktur bezeichnet wird.
 
 \subsection{Betrachtung der Abschirmungszahlen \texorpdfstring{$\sigma$}{Sigma}}
-Zur Abgrenzung des Ein-Elektron-Systems wurde in das Bohrsche Modell die Abschirmungskonstante $\sigma$ eingeführt, die den Einfluss der Rumpfelektronen auf das Feld des Kernes und auf das Leuchtelektron beschreibt.
+%Zur Abgrenzung des Ein-Elektron-Systems wurde in das Bohrsche Modell die Abschirmungskonstante $\sigma$ eingeführt, die den Einfluss der Rumpfelektronen auf das Feld des Kernes und auf das Leuchtelektron beschreibt.
 Die Aufenthaltswahrscheinlichkeit des Leuchtelektrons innerhalb des Atoms ist nicht verschwindend, weshalb alle Rumpfelektronen Einfluss auf das Leuchtelektron nehmen.
 Es erweist sich als sinnvoll, die Abschirmungszahl $\sigma$ in zwei Teile aufzuspalten.\\
 Der erste Teil, $\sigma_1$, ist die Konstante der vollständigen Abschirmung. 
 Sie nimmt mit $n,l$ und der Ordnungszahl $z$ zu und beschreibt den Einfluss aller Rumpfelektronen auf das Leuchtelektron.
 Der zweite Teil, $\sigma_2$, ist die Konstante der inneren Abschirmung. 
 Sie nimmt mit $n,l$ zu und ist stets kleiner als $\sigma_1$.
-Die Rumpfelektronen im Inneren der Schale des Leuchtelektrons haben zusätzlichen Einfluss, anders die restlichen Rumpfelektronen außerhalb.
-Die Konstante der inneren Abschirmung $\sigma_2$ berücksichtigt den Effekt der Spin-Bahn-Kopplung.
+%Die Rumpfelektronen im Inneren der Schale des Leuchtelektrons haben zusätzlichen Einfluss, anders die restlichen Rumpfelektronen außerhalb.
+%Die Konstante der inneren Abschirmung $\sigma_2$ berücksichtigt den Effekt der Spin-Bahn-Kopplung.
 
 Der Unterschied zwischen den beiden Konstanten ist für Leuchtelektronen auf der äußeren Schale eines Atoms nur gering, weshalb im Folgenden die Konstante $\sigma_2$ gesucht wird.
-Dies geschieht durch das Ausmessen der Energiedifferenz innerhalb der Dublett-Struktur.
+%Dies geschieht durch das Ausmessen der Energiedifferenz innerhalb der Dublett-Struktur.
 Mit
 \begin{equation}
 	E=-R_\infty\biggl(\frac{(z-\sigma_1)^2}{n^2}+\alpha^2\frac{(z-\sigma_2)^4}{n^3}\biggl(\frac{1}{j+\sfrac{1}{2}}-\frac{3}{4n}\biggr) \biggr)
@@ -148,14 +147,15 @@ folgt für die Energiedifferenz
 \end{equation}
 
 \subsection{Kurze Einführung in Beugungsgitter}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{Bilder/Gitter.png}
-	\caption{Beugung einer ebenen Welle an regelmäßig angeordneten Spaltöffnungen der Breite $b$. \cite{skript}} 
-\end{figure}
-Das Beugungsgitter ist eine lichtundurchlässige Platte, in die im präzisen geringen Abstand $g$ schmale parallele Spalten der Breite $b$eingeätzt wurden.
-Die Anzahl der beleuchteten Spalte ist $p$.
-Die Größenordnung des Gitters bewirkt Beugungsphänomene, anhand derer die Wellenlänge des einfallenden Lichtes bestimmt werden kann.
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.7\textwidth]{Bilder/Gitter.png}
+%	\caption{Beugung einer ebenen Welle an regelmäßig angeordneten Spaltöffnungen der Breite $b$. \cite{skript}} 
+%\end{figure}
+%Das Beugungsgitter ist eine lichtundurchlässige Platte, in die im präzisen geringen Abstand $g$ schmale parallele Spalten der Breite $b$eingeätzt wurden.
+%Die Anzahl der beleuchteten Spalte ist $p$.
+%Die Größenordnung des 
+Das Gitter bewirkt Beugungsphänomene, anhand derer die Wellenlänge des einfallenden Lichtes bestimmt werden kann.
 Im Zusammenhang stehen die Wellenlänge des Lichtes und die Ablenkung.
 
 %Für die Intensität des Lichtes in Abhängigkeit vom Ablenkungswinkel gilt bei einer Öffnung
@@ -192,10 +192,11 @@ Mit Gleichung \eqref{eq:hauptmaxima} ist die Verbindung zwischen Wellenlänge un
 
 Die Auflösung des Gitterbeugungsbildes ist sehr hoch.
 Die maximale Auflösung wird beschrieben durch das Verhältnis der gemittelten Wellenlänge zur Differenz der Wellenlänge
-zwischer zwei Linien, die noch vom Gerät voneinander unterscheidbar sind, $A=\frac{\bar\lambda}{\Delta\lambda}$.
+zwischer zwei Linien, die noch vom Gerät voneinander unterscheidbar sind, $A=\sfrac{\bar\lambda}{\Delta\lambda}$.
 Zwei Linien gelten dabei als unterscheidbar, wenn das Maximum einer Linie nicht näher an das Maximum einer anderen Linie kommt als der Abstand zwischen Hauptmaximum und erstem Minimum.\\
-Mithilfe der Gleichung \eqref{eq:hauptmaxima} wird die Lage des Minimums einer Linie $\lambda+\Delta\lambda$ auf das Maximum einer anderen Linie $\lambda$ gelegt und damit die Auflösung zu
+%Mithilfe der Gleichung \eqref{eq:hauptmaxima} wird die Lage des Minimums einer Linie $\lambda+\mathup\Delta\lambda$ auf das Maximum einer anderen Linie $\lambda$ gelegt und damit die Auflösung zu
+Es gilt
 \begin{equation}
-	A=kp
+	A=kp,
 \end{equation}
-bestimmt, woraus folgt, dass die Auflösung von der Ordnung $k$ des Maximums und von der Anzahl $p$ der Gitterspalten abhängt.
+woraus folgt, dass die Auflösung von der Ordnung $k$ des Maximums und von der Anzahl $p$ der Gitterspalten abhängt.
