@@ -1,0 +1,5 @@
+#Acrylblock
+# höhe breite tiefe in cm
+15 8.035 4
+15 8.03  4 
+15 8.03  4 

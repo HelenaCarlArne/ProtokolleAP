@@ -1,0 +1,23 @@
+\input{../Allgemein/header.tex}
+\subject{Anfängerpraktikum US1}
+\title{Grundlagen der Ultraschalltechnik}
+\date{
+  Durchführung: 26.Mai 2015
+  \hspace{3em}
+  Abgabe: 2. Juni 2015
+}
+\begin{document}
+
+\maketitle
+%\thispagestyle{empty}
+\newpage
+
+\input{content/theorie.tex}
+\input{content/durchfuehrung.tex}
+\input{content/auswertung.tex}
+\input{content/diskussion.tex}
+%\nocite{Versuchsnummer}
+\printbibliography
+\noindent Die verwendeten Plots wurden mit \textit{matplotlib}\cite{matplotlib} erstellt sowie die Berechnungen mit Python-\textit{Numpy}\cite{numpy}, und -\textit{uncertainties}\cite{uncertainties} durchgeführt.
+Die Regressionen stammen, sofern nicht anders angegeben, aus der Python-Bibliothek \textit{Scipy}\cite{scipy}: \emph{curve-fit}.
+\end{document}
