@@ -1,0 +1,9 @@
+#Messung der Schallgeschwindigkeit Impuls-Echo in microsec
+#rot
+#klein mittel groß
+28.66 57.54 85.99
+#blau
+29.30 58.40 87.70
+##Messung der Schallgeschwindigkeit Durchschallung in microsec
+#rot
+15.39 31.40 44.15
