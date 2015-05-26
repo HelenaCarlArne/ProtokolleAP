@@ -1,7 +1,7 @@
 \section*{Ziel}
-Ziel des Experimentes ist die Untersuchung der äußeren Elektronenhülle von Alkali-Atomen, zu bestimmen ist die Abschirmungszahl.\\
+Ziel des Experimentes ist die Untersuchung der äußeren Elektronenhülle von Alkali-Atomen, zu bestimmen ist die Abschirmungszahl $\sigma$.\\
 Im Detail wird durch Spektroskopie mit sichtbarem Licht das Coulomb-Feld des Kernes an den äußeren Elektronenschalen untersucht,
-welches durch die inneren Elektronenschalen von inneren Elektronen abgeschwächt ist.
+welches durch die inneren Elektronen abgeschwächt ist.
 
 \section{Theorie}
 \label{sec:Theorie}
@@ -12,16 +12,14 @@ Das verwendete Atom wird im Folgenden als Ein-Elektron-System angenommen, welche
 Sämtliche Emissions- und Absorbtionsvorgänge werden ausschließlich dem äußeren Elektron zugeschrieben, während verbliebene innere Elektronen ihren Zustand beibehalten.
 Dieses äußere Elektron wird zweckmäßig Leuchtelektron genannt.
 
-Ein wichtiger Unterschied dieser Systeme ist, dass das Leuchtelektron des Wasserstoffs nicht durch innere Elektronen beeinflusst wird.
-Das Leuchtelektron des Alkali-Atoms befindet sich indes im Feld des Kernes, welches durch vorhandene innere Elektronen geschwächt wird.
-
 \subsection{Modellierung des Atoms} % (fold)
 \label{sub:L_quantenzahl}
-Weiterer Unterschied des Bohrschen Atommodells von Wasserstoff zu dem hier hier angenommenen Ein-Elektron-System ist die Anzahl der Spektrallinien. 
-Im Kontrast zu den weitesgehend monochromatischen Linien des Wasserstoffs, wird bei Alkali-Atomen ein linienreiches Spektrum erwartet.
-Dieses Spektrium weist auf weitere Quantenzahlen nebst der Hauptquantenzahl hin.
-
-Die Elektronen des Wasserstoffs befinden sich im Zuge der Quantenmechanischen Grundlagen im gebundenen Zustand in der Atomhülle.
+Ein wichtiger Unterschied zwischen dem Wasserstoffatom und dem als ein-Elektron-Atom genäherten Alkali-Atom ist, dass das Leuchtelektron des Wasserstoffs nicht durch innere Elektronen beeinflusst wird.
+Das Leuchtelektron des Alkali-Atoms befindet sich indes im abgeschwächten Feld des Kernes.
+Weiterer Unterschied des Bohrschen Atommodells von Wasserstoff zu dem hier angenommenen Ein-Elektron-System ist die Anzahl der Spektrallinien. 
+Im Kontrast zu den weitesgehend monochromatischen Linien des Wasserstoffs wird bei Alkali-Atomen ein linienreiches Spektrum erwartet.
+Dieses Spektrum weist auf weitere Quantenzahlen nebst der Hauptquantenzahl hin.
+Die Elektronen des Wasserstoffs befinden sich im Zuge der quantenmechanischen Grundlagen im gebundenen Zustand in der Atomhülle.
 Ihr Zustand ist Lösung der zeitinvarianten Schrödingergleichung
 \begin{equation}
 	\Bigl(\Bigl(\frac{\hbar^2\mathup{\Delta}}{2 m_0}\Bigr)+U\Bigr)\psi=E\psi
@@ -32,9 +30,9 @@ mit der potentiellen Energie
 	U=-\frac{e_0^2}{4\pi\epsilon_0 r}.
 	\label{eq:Epot}
 \end{equation}
-Mit der Rydberg-Konstanten $R_\infty$ ergeben sich die Energieeigenwerte des Leuchtelektrons von
+Mit der Rydberg-Konstante $R_\infty$ ergeben sich die Energieeigenwerte des Leuchtelektrons zu
 \begin{equation}
-	E(n)=R_\infty\frac{1}{n^2}, \qquad n\in\mathbb{N}
+	E(n)=R_\infty\frac{1}{n^2}, \qquad n\in\mathbb{N},
 	\label{eq:EEW}
 \end{equation}
 die die Energie beim Quantensprung vorhersagen.
@@ -53,7 +51,7 @@ Ausnutzen der Symmetrie ergibt die angepasste Schrödingergleichung
 \end{equation}
 mit dem Drehimpulsoperator $\hat{L}=-i\hbar \vec{r}\times\nabla$.
 
-Die Lösung des Eigenwertproblem wird gesucht, indem innerhalb der Gleichung die Eigenwerte von $L$ gesucht und mit ihnen die Gleichung vereinfacht wird.
+Die Lösung des Eigenwertproblems wird gesucht, indem innerhalb der Gleichung die Eigenwerte von $L$ gesucht und mit ihnen die Gleichung vereinfacht wird.
 %Die Lösungen des inneren Eigenwertproblems sind Kugelflächenfunktionen $Y_l(\theta,\phi)$ mit den Eigenwerten $\hbar^2 l(l+1), l\in\mathbb{N_0}$.
 Die Eigenwerte werden als Bahndrehimpulsquantenzahl $l$ bezeichnet.
 Damit erscheint Gleichung \eqref{eq:schroedinger_2} als
@@ -64,7 +62,7 @@ Damit erscheint Gleichung \eqref{eq:schroedinger_2} als
 In dieser Gleichung wird die Lösung $\psi$ in Radialanteil $\psi_R$ und in Winkelanteil $\psi_W$ aufgespalten. 
 Die Energieeigenwerte sind
 \begin{equation}
-	E=R_\infty\frac{(z-\sigma)^2}{(k+1+l)^2} \qquad k\in\mathbb{N_0}
+	E=R_\infty\frac{(z-\sigma)^2}{(k+1+l)^2}, \qquad k\in\mathbb{N_0}.
 	\label{eq:EEW_drehimpuls}
 \end{equation}
 
@@ -77,12 +75,12 @@ Der Ausdruck \eqref{eq:EEW_drehimpuls} berücksichtigt keine relativistischen Ef
 Diese Näherung hat zur Folge, dass die Energieeigenwerte scheinbar keine Abhängigkeit von den Drehimpulsquantenzahlen zeigen.
 Unter Berücksichtigung relativistischer Effekte gilt für den Hamilton-Operator in den Schrödinger-Gleichungen
 \begin{equation}
-	\hat{H_\text{rel}}\approx\frac{\hat{P}^2}{2m_0}-\frac{1}{8}\frac{\hat{P}^4}{m_0^3 c^2}
+	\hat{H_\text{rel}}\approx\frac{\hat{P}^2}{2m_0}-\frac{1}{8}\frac{\hat{P}^4}{m_0^3 c^2}.
 	\label{eq:relativerhamilton}
 \end{equation}
-Es wird der relativistische Effekt als klein angenommen, in dem gefundenen Hamilton-Operator kann der zweite Term als Störungsoperator angesehen werden.
+Der relativistische Effekt wird als klein angenommen. In dem gefundenen Hamilton-Operator kann der zweite Term also als Störungsoperator angesehen werden.
 Durch die additive Anpassung des Operators bleiben die vorangegangen Energieeigenwerte im Wesentlichen erhalten.
-Die relativistischen Eigenwerte sind die Eigenwerte \eqref{eq:EEW_drehimpuls} zuzüglich der Erwartungswert des Störungsoperator mit den Eigenfunktionen.
+Die relativistischen Eigenwerte sind die Eigenwerte \eqref{eq:EEW_drehimpuls} zuzüglich der Erwartungswerte des Störungsoperators mit den Eigenfunktionen.
 %Das Ergebnis der relativistischen Anpassung ist
 %\begin{equation}
 %	E=-R_\infty\biggl(\frac{(z-\sigma)^2}{n^2}+\alpha^2\frac{(z-\sigma)^4}{n^3}\biggl(\frac{2}{2l+1}-\frac{3}{4n}\biggr) \biggr)\qquad k\in\mathbb{N_0}
@@ -101,10 +99,10 @@ Die zugehörige Quantenzahl $s$ hat nur den Betrag $\sfrac{1}{2}$.
 Mit dem Drehimpuls der Elektronen geht ein magnetisches Moment einher, welches in Wechselwirkung mit anderen Elektronen tritt.
 %Diese Wechselwirkung wird das Spin-Bahn-Kopplung bezeichnet.
 Die Summe %des aus Abschnitt \ref{sub:L_quantenzahl} bekannten 
-Drehimpulsoperators $L$ und dem eingeführten Spinoperator $S$ ergibt die Quantenzahlen
+des Drehimpulsoperators $L$ und dem eingeführten Spinoperators $S$ ergibt die Quantenzahlen
 $j=l\pm\sfrac{1}{2}$.
 Der Einfluss des Spins auf die Energieeigenwerte kann als klein angenommen werden, somit wird der Effekt mit Hilfe der Störungstheorie und der Diracschen Theorie des relativistischen Elektrons ermittelt.
-Die Anpassung der Energieeigenwerte erfolgt wie in Abschnitt \label{sub:rel} durch Addition des Erwartungswertes vom angepassten Hamilton-Operators in Bezug auf Eigenfunktionen.
+Die Anpassung der Energieeigenwerte erfolgt wie in Abschnitt \ref{sub:rel} durch Addition des Erwartungswertes vom angepassten Hamilton-Operators in Bezug auf Eigenfunktionen.
 
 Es ergibt sich die Energieeigenwert-Gleichung
 \begin{equation}
@@ -120,7 +118,7 @@ Es ergibt sich einerseits, dass Übergänge nicht auftreten, bei welchen sich de
 %Mit dieser Einschränkung können nur Übergänge beobachtet werden, bei welchen sich die Bahndrehimpulsquantenzahl um eins ändert.
 Andererseits ist die Änderung der Quantenzahl $j$ sehr wahrscheinlich, wenngleich $\mathup\Delta j=0$ nicht ausgeschlossen ist.
 
-Die Energiedifferenz zwischen einer Änderung im Bahndrehimpulsquantenzahl $l$ ist groß im Vergleich zur derjenigen der Änderung in der Quantenzahl $j$.
+Die Energiedifferenz zwischen einer Änderung in der Bahndrehimpulsquantenzahl $l$ ist groß im Vergleich zur derjenigen der Änderung in der Quantenzahl $j$.
 Mit der in Abschnitt \ref{sec:Durchfuehrung} beschriebenen Vorrichtung wird der Abstand zwischen verschiedenen Bahndrehimpulsquantenzahlen groß und zwischen verschiedenen Quantenzahlen $j$ klein angenommen.
 Wegen des binären Spins werden also gewissermaßen für jede Bahndrehimpulsquantenzahl $l$ zwei dicht beieinander liegende Linien erwartet, die als Dublett-Struktur bezeichnet wird.
 
@@ -129,7 +127,7 @@ Wegen des binären Spins werden also gewissermaßen für jede Bahndrehimpulsquan
 Die Aufenthaltswahrscheinlichkeit des Leuchtelektrons innerhalb des Atoms ist nicht verschwindend, weshalb alle Rumpfelektronen Einfluss auf das Leuchtelektron nehmen.
 Es erweist sich als sinnvoll, die Abschirmungszahl $\sigma$ in zwei Teile aufzuspalten.\\
 Der erste Teil, $\sigma_1$, ist die Konstante der vollständigen Abschirmung. 
-Sie nimmt mit $n,l$ und der Ordnungszahl $z$ zu und beschreibt den Einfluss aller Rumpfelektronen auf das Leuchtelektron.
+Sie nimmt mit $n,l$ und der Ordnungszahl $Z$ zu und beschreibt den Einfluss aller Rumpfelektronen auf das Leuchtelektron.
 Der zweite Teil, $\sigma_2$, ist die Konstante der inneren Abschirmung. 
 Sie nimmt mit $n,l$ zu und ist stets kleiner als $\sigma_1$.
 %Die Rumpfelektronen im Inneren der Schale des Leuchtelektrons haben zusätzlichen Einfluss, anders die restlichen Rumpfelektronen außerhalb.
@@ -143,9 +141,9 @@ Mit
 \end{equation}
 folgt für die Energiedifferenz
 \begin{equation}
-	\mathup{\Delta}E=\frac{R_\infty\alpha^2}{n^3}(z-\sigma_2)^4\frac{1}{l(l+1)}\approx hc\frac{\mathup{\Delta}\lambda}{\lambda^2}
+	\mathup{\Delta}E=\frac{R_\infty\alpha^2}{n^3}(z-\sigma_2)^4\frac{1}{l(l+1)}\approx hc\frac{\mathup{\Delta}\lambda}{\lambda^2}.
+\label{delta_E}
 \end{equation}
-
 \subsection{Kurze Einführung in Beugungsgitter}
 %\begin{figure}
 %	\centering
@@ -157,12 +155,10 @@ folgt für die Energiedifferenz
 %Die Größenordnung des 
 Das Gitter bewirkt Beugungsphänomene, anhand derer die Wellenlänge des einfallenden Lichtes bestimmt werden kann.
 Im Zusammenhang stehen die Wellenlänge des Lichtes und die Ablenkung.
-
 %Für die Intensität des Lichtes in Abhängigkeit vom Ablenkungswinkel gilt bei einer Öffnung
 %\begin{equation}
 %	I_1(\phi)=E_0^2b^2\frac{\lambda}{\pi b\sin{\phi}}\sin^2{\frac{\pi b\sin{\phi}}{\lambda}}.
 %\end{equation}
-
 %Mit der Überlagerung mehrer Spalten wird eine Funktion der Gestalt
 %\begin{equation}
 %	I_2=|E(\phi)|^2\cdot I_1
@@ -184,19 +180,26 @@ Im Zusammenhang stehen die Wellenlänge des Lichtes und die Ablenkung.
 Typische für Beugungsbilder am Gitter sind schmale und helle Hauptmaxima.
 Ihre Lage wird mit 
 \begin{equation}
-	\sin{\phi}= k\frac{\lambda}{g} 
+	\sin{\varphi}= k\frac{\lambda}{g} 
 	\label{eq:hauptmaxima}
 \end{equation}
 mit $k\in\mathbb{N_0}$ und der Gitterkonstanten $g$ abgeschätzt.
 Mit Gleichung \eqref{eq:hauptmaxima} ist die Verbindung zwischen Wellenlänge und Ablenkung gegeben.
 
-Die Auflösung des Gitterbeugungsbildes ist sehr hoch.
-Die maximale Auflösung wird beschrieben durch das Verhältnis der gemittelten Wellenlänge zur Differenz der Wellenlänge
-zwischer zwei Linien, die noch vom Gerät voneinander unterscheidbar sind, $A=\sfrac{\bar\lambda}{\Delta\lambda}$.
-Zwei Linien gelten dabei als unterscheidbar, wenn das Maximum einer Linie nicht näher an das Maximum einer anderen Linie kommt als der Abstand zwischen Hauptmaximum und erstem Minimum.\\
+%Die Auflösung des Gitterbeugungsbildes ist sehr hoch.
+%Die maximale Auflösung wird beschrieben durch das Verhältnis der %gemittelten Wellenlänge zur Differenz der Wellenlänge
+%zwischer zwei Linien, die noch vom Gerät voneinander unterscheidbar sind, $A=\sfrac{\bar\lambda}{\Delta\lambda}$.
+%Zwei Linien gelten dabei als unterscheidbar, wenn das Maximum einer Linie nicht näher an das Maximum einer anderen Linie kommt als der Abstand zwischen Hauptmaximum und erstem Minimum.\\
 %Mithilfe der Gleichung \eqref{eq:hauptmaxima} wird die Lage des Minimums einer Linie $\lambda+\mathup\Delta\lambda$ auf das Maximum einer anderen Linie $\lambda$ gelegt und damit die Auflösung zu
-Es gilt
-\begin{equation}
-	A=kp,
-\end{equation}
-woraus folgt, dass die Auflösung von der Ordnung $k$ des Maximums und von der Anzahl $p$ der Gitterspalten abhängt.
+%Es gilt
+%\begin{equation}%
+%	A=kp,
+%\end{equation}
+%woraus folgt, dass die Auflösung von der Ordnung $k$ des Maximums und von der Anzahl $p$ der Gitterspalten abhängt.
+Im Folgenden werden alle Bezeichnungen der Quantenzustände gemäß der Konvention gewählt.
+Für die Bahndrehimpulsquantenzahl $l$ sind aus historischem Grunde die Bezeichungen 
+sharp (S),
+principal (P),
+diffuse (D),
+fundamental (F).
+Die Quantenzahlen $n,l,j$ werden in der Form $\mathup{nl}_\mathup{j}$, beispielsweise $3D_{\sfrac{5}{2}}$ angegeben.

@@ -152,7 +152,7 @@ Dx_fh=ufloat(np.mean(Dx_fh),sem(Dx_fh))
 print("Abstand in cm")
 print(Dx_fh)
 def umr(x):
-	return ufloat(2.4000,0.0277)*x+ufloat(-1.1260,0.4554)
+	return ufloat(2.3910,0.0280)*x-ufloat(0.5529,0.4527)
 
 print("Abstand in Volt")
 print(umr(Dx_fh))

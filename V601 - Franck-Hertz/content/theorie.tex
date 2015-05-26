@@ -29,7 +29,8 @@ Es kommt aufgrund des großen Massenunterschiedes zu einer geringen Energieabgab
 %\begin{equation}
 %	\Delta E=\frac{4m_\mathup{e}M}{(m_\mathup{e}+M)²}\cdot 		E_	\mathup{e} \approx 1,1\cdot 10⁻⁵ E_\mathup{e}
 %\end{equation}
-Dieser kleine Energiebetrag ruft eine Richtungsänderung des Elektrons hervor, führt jedoch nicht zu einer Anregung der Atome.
+Es kommt zur Richtungsänderung der Elektronen.
+%Dieser kleine Energiebetrag ruft eine Richtungsänderung des Elektrons hervor, führt jedoch nicht zu einer Anregung der Atome.
 
 \subsection{Idealisierte \textsc{Franck}-\textsc{Hertz}-Kurve}
 \begin{figure}
@@ -61,7 +62,7 @@ Danach reicht ihre Energie nicht mehr aus, um das Gegenfeld zu passieren -- $I_\
 Starkes Erhöhen von $U_\mathup{B}$ führt den Elektronen so viel Energie zu, dass mehrere Stöße ermöglicht werden. 
 Die Abstände der Maxima $U_1$ in Abbildung \ref{fig:id} entsprechen der Anregungsenergie des Hg-Atoms im ersten Zustand:
 \begin{equation}
-	U_1=\frac{1}{\epsilon_0}{(E_1-E_0)}.
+	U_1=\frac{1}{e_0}{(E_1-E_0)}.
 \end{equation}
 \begin{figure}
 	\centering
@@ -75,12 +76,12 @@ Der tatsächliche Kurvenverlauf weicht vom idealen etwas ab, da einige messbedin
 \begin{enumerate}
 \item{Das Kontaktpotential}
 
-Die eingestellte Spannung $U_\mathup{B}$ entscheidet sich von der tatsächlichen Beschleunigungsspannung. 
+Die eingestellte Spannung $U_\mathup{B}$ unterscheidet sich von der tatsächlichen Beschleunigungsspannung. 
 Grund dafür sind die Potentiale $\phi_\mathup{D}$ und $\phi_\mathup{BE}$ , d.h. die Austrittsarbeit der Elektronen aus verwendetem Glühdraht und der Beschleunigerelektrode. 
 Diese unterscheiden sich dank unterschiedlichem Material.
 Die Effektivspannung ist um den Betrag des Kontaktpotentials $k$ herabgesetzt und die Kurve deswegen um $k$ mit
 \begin{equation}
-	U_\mathup{B,eff}=U_\mathup{B}-\frac{1}{\epsilon_0}(\Phi_\mathup{BE}-\Phi_\mathup{D})=U_\mathup{B}-k
+	U_\mathup{B,eff}=U_\mathup{B}-\frac{1}{\epsilon_0}(\phi_\mathup{BE}-\phi_\mathup{D})=U_\mathup{B}-k
 \end{equation}
 verschoben.
 \item{Energiespektrum der Elektronen}
@@ -91,12 +92,12 @@ Außerdem ist kein unstetiger Abfall der Kurve auf ein Stromminimum von $I_\math
 Richtungsänderungen eventueller elastischer Stöße führen zu einer Verbreiterung des Kurvenverlaufs, sofern diese zwischen Beschleuniger- und Auffängerelektrode stattfinden. 
 \item{Dampfdruck}
 
-Für die mittlere freie Weglänge $\overline{w}$ muss $\overline{w} < a$ mit dem Abstand $a$ zwischen beiden Elektroden gelten, um die Wahrscheinlichkeit unelastischer Stöße zu maximieren. 
+Für die mittlere freie Weglänge $\overline{w}$ muss $\overline{w} << a$ mit dem Abstand $a$ zwischen beiden Elektroden gelten, um die Wahrscheinlichkeit unelastischer Stöße zu maximieren. 
 $\overline{w}$ ist über den Dampfdruck $p_\mathup{sät}$ steuerbar. Dieser wird über die Temperatur $T$ eingestellt. 
-\begin{equation}
-	\overline{w}=\frac{0,0029}{p_\mathup{sät}}
+\begin{align}
+	\overline{w}=\frac{0,0029}{p_\mathup{sät}}\qquad\\
 	p_\mathup{sät}(T)=5,5\cdot 10⁷\exp{-\frac{6876}{T}}, [p_\mathup{sät}]=\si{\milli\bar}, [\overline{w}]=\si{\centi\meter}.
-\end{equation}
+\end{align}
 In einem bestimmten Temperaturbereich ist die Stoßwahrscheinlichkeit optimal.
-Ein kleinerer Druck bei flacher Temperatur führt zu einer geringen Stoßwahrscheinlichkeit, ein größerer Druck bei hoher Temperatur führt zu vielen elastischen Stößen.
+Ein kleinerer Druck bei geringer Temperatur führt zu einer geringen Stoßwahrscheinlichkeit, ein größerer Druck bei hoher Temperatur führt zu vielen elastischen Stößen.
 \end{enumerate}
