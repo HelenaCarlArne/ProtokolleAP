@@ -1,3 +1,50 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Bestimmung der Schallgeschwindigkeit}
+In den folgenden Tabellen sind die Schalllaufzeiten in den Acrylzylindern verschiedener Höhe aufgetragen.
+Die Maße der Zylinder ist in Tabelle () aufgetragen.
 
+Da die Zeiten bei der Impuls-Echo-Methode die Laufzeiten für den Hin- und Rückweg beschreiben, wird für die folgenden Betrachtungen die Hälfte der Zeiten benützt. 
+Hierfür wird in Gleichung \eqref{eq:geschwindigkeit} der Faktor $k$ eingeführt, der für die Impuls-Echo-Methode konsequent $k=2$ und für die Durchschallmethode konsequent $k=1$ beträgt.
+Es gilt die Formel
+\begin{equation}
+	c=k*\frac{s}{t}
+	\label{eq:geschwindigkeit}
+\end{equation}
+##CRYLINE#
+
+In den folgenden Diagrammen ist die Höhe der Zylinder gegen die gemessene Laufzeit aufgetragen.
+Bei der Impuls-Echo-Methode wird konsequent die Hälfte der gemessenen Zeit verwendet, da diese Werte die Laufzeiten für den Hin- und Rückweg beschreiben.
+
+Die lineare Regression der drei Datenpaare ergeben die Steigung $m$ und den y-Achsenabschnitt $b$, aus denen im Weiteren die Nullstelle $x_0=-\sfrac{b}{m}$ berechnet werden kann.
+\begin{table}
+	\centering
+	\begin{tabular}{c S S S}
+	{Plot}&{Steigung}&{y-Abschnitt}&{Nullstelle}
+	1&2797(11)&0.0002(4)&-0.7(13)e-07\\
+	2&2745(6)&0.0002(2)&-7(7)e-08\\
+	3&2776(181)&-0.004(6)&1.3(21)e-06
+	\end{tabular}
+	\capion{Regressionsparameter}
+	\label{tab:params}
+\end{table}
+Das Diagramm lässt die Identifikation der Steigung als Schallgeschwindigkeit zu.
+
+Im Idealfall durchqueren die Regressionsgeraden den Koordinatenursprung.
+Es liegt zwischen der Sonde und der Oberfläche eine Anpassungsschicht, die systematische Fehler in der Laufzeitmessung hervorruft. \cite{skript}
+Diese zusätzlich auftretende Zeit wird als positive Verschiebung der Kurve nach rechts erwartet und ist in Abbildung \ref{fig:geschwindigkeit} durch die Nullstellen erkennbar.
+Die Nullstellen der Regressionen (vgl. Tabelle \ref{tab:params}) weisen für die Impuls-Echo-Methode starke Unsicherheit und einen negativen Nominalwert auf.
+Die Nullstelle für die Durchschallungsmethode ist durch die hohe Unsicherheit ungeeignet.
+%Die Nullstellen der Regression sind daher für die Betrachtung und Bezifferung der systematischen Fehler unbrauchbar.
+Der durch die Anpassungsschicht hervorgerufene Fehler wird somit nicht berücksichtigt.
+
+Der Mittelwert beträgt
+\begin{equation}
+	c_\text{Schall}=\SI{2770(60)}{\meter\per\second}
+	\label{qu:geschwindigkeit}
+\end{equation}
+
+
+1. Bestimmen Sie die Schallgeschwindigkeit in Acryl mittels Impuls-Echo-Verfahren und mittels Durchschallungs-Verfahren
+2. Ein Acrylblock mit definierten Fehlstellen unterschiedlicher Größe und Tiefe soll mit dem Impuls-Echo Verfahren untersucht werden (A-Scan und B-Scan)
+3. Es soll an einem Augenmodell mit einem A-Scan die Abmessungen des Auges bestimmt werden
