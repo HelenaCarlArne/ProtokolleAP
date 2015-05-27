@@ -1,45 +1,37 @@
 \section{Durchf\"uhrung}
 \label{sec:Durchfuehrung}
-\subsection{Aufbau des Gitterspektralapparates}
+Zur Verfügung steht ein Ultraschallechoskop, welches zur Datenaufnahme mit einem Rechner verbunden ist. Benutzt wird das Programm \emph{AScan}. Das Echoskop wird im Impulsbetrieb genutzt und kann zwischen dem Echo-Impuls- und dem Durchschallungsverfahren über den Schalter Reflect./Trans. wechseln.
+Die Ultraschallsonden mit $\SI{1}{\mega\hertz}$,$\SI{2}{\mega\hertz}$ und $\SI{4}{\mega\hertz}$ sind farblich markiert.
+
+\subsection{Die Schallgeschwindigkeit $c$ in Aryl}
+Vorab wird die Höhe der 3 Zylinder mit einer Schieblehre ausgemessen. Die Versuchsanordnung entspricht der in Abbildung \ref{fig:verfahren} gezeigten.
+\begin{itemize}
+\item{Echo-Impuls-Verfahren}
+Der A-Scan wird mit der $\SI{1}{\mega\hertz}$- und $\SI{2}{\mega\hertz}$-Sonde durchgeführt. Dazu werden die Zylinder auf ein weiches Papiertuch gestellt um Schäden am Material zu vermeiden. Anschließend wird ein Kontaktgel auf die Oberfläche aufgetragen und die Laufzeit $\Delta{t}$ gemessen.
+\item{Durchschallungsverfahren}
+Der A-Scan wird wird mit zwei $\SI{2}{\mega\hertz}$-Sonden durchgeführt, die auf beiden Seiten des Zylinders aufliegen und erneut die Laufzeit messen.
+\end{itemize} 
+\subsection{Untersuchung eines Acrylblocks}
+Erneut werden die Abmessungen des Körpers mit der Schieblehre aufgenommen. Das beinhaltet Höhe, Breite und Tiefe des Blocks, sowie den Durchmesser der in Abbildung \ref{fig:block} gezeigten Löcher und deren Abstand zu den Kanten des Blocks. Die Löcher fungieren hier als Materialfehler, die es zu untersuchen gilt.
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\textwidth]{Bilder/Apparat.png}
-	\caption{Perspektivische Darstellung des verwendeten Gerätes. \cite{skript}} 
-	\label{fig:Gitterspektralapparat}
+	\includegraphics[width=0.7\textwidth]{Bilder/Block.pdf}
+	\caption{Anordnung der Materialfehler im Acryl-Block.} %\cite{skript}} 
+\label{fig:block}
 \end{figure}
-Der Gitterspektralapparat ist in Abbildung \ref{fig:Gitterspektralapparat} schematisch dargestellt.
-Er besteht im Wesentlichen aus den drei Bestandteilen Kollimatorrohr, Gittertisch und Fernrohr.
-An der Eintrittstelle des Kollimatorrohres befindet sich eine Spaltblende, durch welche das untersuchte Licht eintritt.
-Auf der anderen Seite des Kollimatorrohres befindet sich ein Gittertisch mit Gitter, welches im Gegensatz zum Kollimatorohr beweglich ist und sich somit um eine vertikale Achse drehen lässt. 
-Im System kommen Linsen zum Einsatz, damit das im Allgemeinen divergente Licht von der Probe parallel eintritt und auf das Gitter trifft.
-%Spaltblende und Linse am Kollimatorrohr sorgen für kohärentes Licht.
-Das Fernrohr ist zur die Beobachtung des vom Gitter abgelenkten Lichtes geeignet und kann unabhängig vom Gittertisch gedreht und fein eingestellt werden. 
-Es verfügt darüber hinaus über eine Linse, die das Licht von dem Gitter auf eine Brennebene fokussiert, und ein Fadenkreuz.
-Somit kann ein reelles Bild des Gitters mit dem Fadenkreuz ausgewertet werden.
-Für die Justierung müssen Spalt und Fadenkreuz jeweils in den Brennebenen der zugehörigen Objektive sein, die Gitteröffnung vertikal, die Spaltblende kleinstmöglich und die Gitterebene senkrecht zum einfallenden Strahl sein. 
-Es wird ein scharfes Beugungsbild sichtbar.
-Nach der Justierung wird der Gittertisch festgesetzt und als unbeweglich angesehen.
-%Zur Probe kann das Beugungsbild des Gitters beobachtet werden, es sollte sich beim Durchschwenken des Fernrohres keine vertikale Bewegung des Bildes zeigen.
-Zur Bestimmung von $\mathup{\Delta}\lambda$ wird das Okularmikrometer benützt.
-Es wird anhand des Mikrometers der Abstand der Dublettlinien in Skaleneinheiten ausgemessen, hierzu ist eine Eichung notwenig.
-Dies geschieht durch die Wahl zweier Spektrallinien, deren Wellenlänge bekannt sind und die gleichzeitig durch das Fernrohr beobachtbar sind.
-Der gemessene Abstand $\mathup{\Delta}s$ von Dublett-Linien lässt sich mithilfe der Formel
-\begin{equation}
-	\mathup{\Delta}\lambda=\frac{\cos{\bar\varphi}}{\cos{\bar\varphi_{1,2}}}\frac{\mathup{\Delta}s}{\mathup{\Delta}t}(\lambda_1-\lambda_1)
-\label{delta_lambda}
-\end{equation}
-umrechnen, in welcher $\bar\varphi_{1,2}$ der gemittelte Wert zwischen zwei Spektrallinien, $\bar\varphi$ der gemittelte Wert zwischen den Dublett-Linien, $\mathup{\Delta}s$ der Abstand der Dublett-Linien und $\mathup{\Delta}t$ der Abstand zweier Spektrallinien ist.
-
-\subsection{Messprogramm}
-Zur Kalibrierung der Apparatur werden die Beugungswinkel der Spektrallinien von Quecksilber gemessen.
-Die Wellenlängen sind in Tabelle \ref{tab:hgspektrum} angegeben.
-Anschließend wird das Okularmikrometer mit den grünen oder violetten Spektrallinien skaliert und somit die Messung an Alkali-Atomen ermöglicht.
-
-Es werden Natrium-, Kalium- und Rubidium-Spektren betrachtet.
-Im Einzelnen werden die Linien der Farben
 \begin{itemize}
-	\item{Natrium:\hspace{10pt}rot, gelb, grüngelb}
-	\item{Kalium:\hspace{15pt}zweimal gelb, zweimal grün}
-	\item{Rubidium:\hspace{3pt}rot (3. und 4. Linie)}
+\item{A-Scan}
+
+Mit der $\SI{2}{\mega\hertz}$-Sonde wird die Laufzeit des Schalls mittels Echo-Impuls-Verfahren von beiden Seiten des Quaders gemessen. Dazu wird die Sonde über den Block geführt und $\Delta{t}$ jeweils für ein Loch notiert. Als Kontaktmittel dient Wasser.
+\item{B-Scan}
+Mit allen drei Sonden wird der B-Scan durchgeführt. Dazu werden die Sonden nacheinander langsam über den Quader geführt, sodass das Messprogramm ein 2-dimensionales Schnittbild entwirft.
 \end{itemize}
-genau untersucht, hier wird mithilfe des Okularmikrometers die Distanz der Dublett-Strukturen bestimmt.
+\subsection{Augenmodell}
+Ein Augenmodell wie in Abbildung \ref{fig:auge} wird mit dem A-Scan und der $\SI{2}{\mega\hertz}$-Sonde untersucht. Dazu wird das Kontaktgel auf die Oberfläche aufgetragen und unter leichtem Druck die Sondenposition so lange variiert, bis vier klar erkennbare Maxima auftreten. Diese entsprechen der Reflixion des Schalls an der Iris, den zwei Seiten der Linse und der Retina. Ein Bild des A-Scans wird aufgenommen und die Zeiten $\Delta{t}$ abgelesen.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{Bilder/Auge.pdf}
+	\caption{Augenmodell.}% \cite{skript}} 
+\label{fig:auge}
+\end{figure}
+
