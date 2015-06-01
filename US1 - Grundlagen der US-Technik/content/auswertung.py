@@ -177,3 +177,12 @@ for i in range(1,12):
 	#print(eval("set_%s[1]"%i))
 	print(abs((0.5*cacryl*eval("time_%s[2]"%i)-0.5*cacryl*eval("time_%s[1]"%i)-eval("set_%s[1]"%i)))/eval("set_%s[1]"%i)*100)
 	print("")
+
+print("######################################")
+print(cacryl*5.5e-4)
+print(2500*7.6e-4)
+print(1410*45e-4)
+print("")
+print(cacryl*5.5e-4/3)
+print(2500*7.6e-4/3)
+print(1410*45e-4/3)

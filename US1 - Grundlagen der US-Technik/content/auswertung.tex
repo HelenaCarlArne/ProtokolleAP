@@ -4,7 +4,7 @@
 \subsection{Bestimmung der Schallgeschwindigkeit in Acrylzylindern}
 \label{sec:Auswertung1}
 In Tabelle \ref{tab:Zylinder_Zeiten} sind die Schalllaufzeiten $t$ in drei Acrylzylindern verschiedener Höhe bei drei verschiedenen Frequenzen $f$ aufgetragen;
-\begin{table}
+\begin{table}[ht]
 	\centering
 	\sisetup{table-format=2.2}
 	\begin{tabular}{c c S S S}
@@ -20,9 +20,7 @@ In Tabelle \ref{tab:Zylinder_Zeiten} sind die Schalllaufzeiten $t$ in drei Acryl
 	\caption{Laufzeiten des Schallimpulses in Acrylzylindern verschiedener Höhe.}
 	\label{tab:Zylinder_Zeiten}
 \end{table}
-die Maße der Zylinder sind in Tabelle \ref{tab:Zylinder_Masze} angegeben.
-Für jede Frequenz $f$ sind drei Messwertpaare $s,t$ verfügbar.
-\begin{table}[p]
+\begin{table}[ht]
 	\centering
 	\sisetup{table-format=2.3}
 	\begin{tabular}{S S S}
@@ -38,6 +36,8 @@ Für jede Frequenz $f$ sind drei Messwertpaare $s,t$ verfügbar.
 	\caption{Abmessungen der benützten Acrylzylindern.}
 	\label{tab:Zylinder_Masze}
 \end{table}
+die Maße der Zylinder sind in Tabelle \ref{tab:Zylinder_Masze} angegeben.
+Für jede Frequenz $f$ sind drei Messwertpaare $s,t$ verfügbar.
 %Da die Zeiten bei der Impuls-Echo-Methode die Laufzeiten für den Hin- und Rückweg beschreiben, wird für die folgenden Betrachtungen die Hälfte der Zeiten benützt. 
 %Hierfür wird in Gleichung \eqref{eq:geschwindigkeit} der Faktor $k$ eingeführt, der für die Impuls-Echo-Methode konsequent $k=2$ und für die Durchschallmethode konsequent $k=1$ beträgt.
 %Es gilt die Formel
@@ -94,14 +94,14 @@ Als Anwendung des Ultraschall-Verfahrens wird ein fehlerhafter Acyrlblock unters
 Die mittels Schieblehre gemessenen Kenndaten der Fehler sind in Tabelle \ref{tab:block_fehler} aufgetragen, die Anordnung und Nummerierung der Fehler sind in Abbildung \ref{fig:block} zu erkennen.
 \begin{table}[p]
 	\centering
-	\sisetup{table-format=2.3}
-	\begin{tabular}{c S S S}
+	\begin{tabular}{S[table-format=2.0] S[table-format=1.3] S[table-format=1.0]}
 	\toprule
+	\multicolumn{3}{c}{Maße des Acrylblocks}\\
 	{Höhe $h/\:\si{\centi\meter}$}&{Breite $b/\:\si{\centi\meter}$}&{Tiefe $t/\:\si{\centi\meter}$}\\
 	\midrule
-		15 &8.035 &4\\
-		15 &8.03  &4\\
-		15 &8.03  &4\\
+		15 &8.035  &4\\
+		15 &8.030  &4\\
+		15 &8.030  &4\\
 	\bottomrule
 	\end{tabular}
 	\caption{Abmessungen des Acrylblocks, Skizze in Abschnitt \ref{sec:Durchfuehrung}, Abbildung \ref{fig:block}}
@@ -112,8 +112,8 @@ Die mittels Schieblehre gemessenen Kenndaten der Fehler sind in Tabelle \ref{tab
 	\sisetup{table-format=1.3}
 	\begin{tabular}{S[table-format=2.0] S[table-format=1.2] S S}
 		\toprule
-		{ID} &\multicolumn{3}{c}{Maße} \\
-		{} & {$d$/$\:\si{\milli\meter}$} &{$s_\text{oben}$/$\:\si{\milli\meter}$} & {$s_\text{unten}$/$\:\si{\milli\meter}$}\\
+		{} &\multicolumn{3}{c}{Maße der Fehler} \\
+		{ID} & {$d$/$\:\si{\milli\meter}$} &{$s_\text{oben}$/$\:\si{\milli\meter}$} & {$s_\text{unten}$/$\:\si{\milli\meter}$}\\
 		\midrule
 			 1&  2.30& 1.910& 5.970\\
 			 2&  1.35& 1.745& 6.160\\
@@ -138,8 +138,8 @@ Analog zu Abschnitt \ref{sec:Auswertung1} wird die Hälfte der gegebenen Zeit au
 	\sisetup{table-format=2.2}
 	\begin{tabular}{S[table-format=2.0] S S}
 		\toprule
-		{ID} &\multicolumn{2}{c}{Laufzeiten} \\
-		{} &{$t_\text{oben}$/$\:\si{\milli\second}$} & {$t_\text{unten}$/$\:\si{\milli\second}$}\\
+		{} &\multicolumn{2}{c}{Laufzeiten} \\
+		{ID} &{$t_\text{oben}$/$\:\si{\milli\second}$} & {$t_\text{unten}$/$\:\si{\milli\second}$}\\
 		\midrule
 			 1& 12.96& 42.26\\
 			 2& 11.49& 43.94\\
@@ -191,33 +191,60 @@ Die Ergebnisse sowie deren prozentuale Abweichung sind Tabelle \ref{tab:block_me
 			%11&\SI{5.45(12)}{}&\SI{-1.6(21)}{}&\SI{1.359(30)}{}&\SI{-10.0(20)}{}&\SI{4.09(9)}{}&\SI{140.9(9)}{}\\
 		\bottomrule
 	\end{tabular}
-	\caption{Titel}
+	\caption{Über die Schalllaufzeit gemessene Abstände und Maße der Fehlerstellen und deren Abweichungen von der Messung per Schieblehre.}
 	\label{tab:block_messung}
 \end{table}
 
 Abbildungen \ref{fig:b_scan_4} und \ref{fig:b_scan_2} zeigen die B-Scans des fehlerbehafteten Blocks.
 Erkennbar ist, dass eine Erhöhung der gewählten Frequenz $f$ in einer höheren Auflösung resultieren, die allerdings eine geringere Intensität zeigen.
 Es ist daher zweckmäßig, eine größtmögliche Frequenz zu wählen, bei welcher die Störstellen eindeutig zu erkennen sind.
-\begin{figure}[p]
+\begin{figure}[hp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Bilder/Block_4Mhz.png}
+	\includegraphics[width=0.85\textwidth]{Bilder/Block_4Mhz.png}
 	\caption{B-Scan des fehlerhaften Blocks bei der Frequenz $f=\SI{4}{\mega\hertz}$}
 	\label{fig:b_scan_4}
 \end{figure}
-\begin{figure}[p]
+\begin{figure}[hp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Bilder/Bscan_2.png}
+	\includegraphics[width=0.85\textwidth]{Bilder/Bscan_2.png}
 	\caption{B-Scan des fehlerhaften Blocks bei der Frequenz $f=\SI{2}{\mega\hertz}$}
 	\label{fig:b_scan_2}
 \end{figure}
-
+\newpage
 \subsection{Messung an einem Modell des menschlichen Auges}
 Die in vorangegangenen Kapiteln gewonnenen Erkenntnisse über Ultraschall in Materie \ref{sec:Auswertung1} und deren anwendungsbezogener Nutzen, etwa in Medizin, \ref{sec:Auswertung2}. wird anhand einer  Messung an einem Modell des menschlichen Auges simuliert.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Bilder/eye.png}
+	\includegraphics[width=0.9\textwidth]{Bilder/Auge.jpg}
 	\caption{A-Scan des Augenmodells.}
 	\label{fig:eye_scan}
 \end{figure}
 Abbildung \ref{fig:eye_scan} zeigt den A-Scan eines vorliegenden Augenmodells.
 Die geringe Anzahl der deutlich separierbaren Maxima erlaubt deren Zuweisung auf die Bestandteile des Auges, an denen der Schall reflektiert worden sein könnte. 
+Das Maximum in Umgebung von $\SI{2}{\micro\second}$ ist ein Reflexionsmaximum, die darauffolgenden Maxima mit einer Mindestamplitude von $\SI{1}{\volt}$ sind Hornhaut, Vorder- und Rückseite der Linse und der Retina zuzuordnen.
+
+Mit den relativen Zeitabständen zwischen den Maxima ergeben sich Abstände im Auge, die in Tabelle \ref{tab:auge} zu entnehmen sind.
+Die Schallgeschwindigkeiten sind dabei den Materialien angepasst; es gilt $c_\text{L} = \SI{2500}{\meter\per\second}$ in der Linse sowie $c_\text{GK} = \SI{1410}{\meter\per\second}$ im Glaskörper.
+Da das Modell im Maßstab 1:3 das menschliche Auge darstellt, kann auf die realen Werte umgerechnet werden.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{cccc}
+	\toprule
+	\multicolumn{4}{c}{Abstände}\\
+	{Objekte}&{Zeit $t/\:\si{\micro\second}$}&{in Modell $a_0/\:\si{\centi\meter}$}&{im Auge $a_1/\:\si{\centi\meter}$}\\
+	\midrule
+		{Hornhaut-Linse}&{5.5}&{1.5}&{0.5}\\
+		{Linse}&{8}&{1.9}&{0.6}\\
+		{Linse-Retina}&{45}&{6.3}&{2.1}\\
+		%{}&\multicomlumn{3}{c}{Abstände im Augenmodell}
+		%{}&{Hornhaut-Linse $a_\text{HL}/\:\si{\centi\meter}$}&{Linsendicke $a_\text{L}/\:\si{\centi\meter}$}&{Linse-Retina $a_\text{LR}/\:\si{\centi\meter}$}\\
+		%1.109(24)&0.693(15)&1.109(24)&6.24(14)
+	\bottomrule
+	\end{tabular}
+	\caption{Abstände im Augen-Modell}
+	\label{tab:auge}
+\end{table}
+
+Die Linsendicke, $d_\text{Linse}=\SI{0.6}{\centi\meter}$, weicht von der Literaturangabe, etwa $\SI{0.4}{\centi\meter}$, um $50\%$ ab.
+Der Augendurchmesser, $d_\text{Auge}=\SI{3.1}{\centi\meter}$, weicht von der Literaturangabe, etwa $\SI{1.7}{\centi\meter}$ bis $\SI{2.4}{\centi\meter}$, vergleichbar stark ab \cite{medizinmann}.
+Beide Messungen geben damit nicht mehr als die Größenordnung zuverlässig an.
