@@ -1,24 +1,30 @@
 \section{Ziel}
 \label{sec:Ziel}
-
-In diesem Versuch wird die Wechselwirkung energiereicher Strahlung mit Materie untersucht. Näher betrachtet werden der Wirkungsquerschnitt und Absorptionskoeffizient verschiedener Materialien unter $\gamma$-Strahlung, sowie die Rechweite von $\beta$-Strahlen innerhalb der Materie.
+Es wird die Wechselwirkung energiereicher Strahlung mit Materie untersucht.
+Hierzu wird die Reichweite und die Transmission von $\beta$- und $\gamma$-Strahlung durch Blenden betrachtet sowie der Wirkungsquerschnitt $\sigma$ und Absorptionskoeffizient $\mu$ verschiedener Materialien ermittelt.
 
 \section{Theorie}
 \label{sec:Theorie}
-
-Trifft ein Teilchenstrahl auf Matierie fürht die Wechselwirkung zwischen Atomen des Feststoffes mit der Strahlung zur Intensitätsabnahme dieser. Anders ausgedrückt nimmt die Anzahl der Teilchen pro Zeit und Fläche nach Eindringen in die Materie ab. Als Maß für die Häufigkeit der Wechselwirkung kann der Wirkungsquerschnitt $\sigma$ genutzt werden.$\sigma$ ist dabei die Fläche bestimmter Größe die jedem Atom des Absorbers zugeordnet wird. Es wird die Wahrscheinlichkeit beschrieben, dass ein eintreffendes Teilchen mit dem Körper wechselwirkt. Dabei gilt die Beziehung 
-
+Die $\beta$-Stahlung ist Materie-Strahlung von (schnellen) Elektronen, $\gamma$-Strahlung ist Photonen-Strahlung.
+% im Bereich von \SI{60}{\kilo}eV bis \SI{1300}{\kilo}eV.
+\subsection{Betrachtung der $\gamma$-Strahlung, Absorptionsgesetz}
+\label{sec:gamma}
+Für die $\gamma$-Strahlung wird ein Absorptionsgesetz beschrieben.
+Beim Eindringen in die Materie treten die Photonen mit den Atomen in Wechselwirkung; 
+dabei nimmt die Anzahl der Teilchen pro Zeit und Fläche ab. 
+Als Maß für die Häufigkeit der Wechselwirkung kann der Wirkungsquerschnitt $\sigma$ genutzt werden.
+$\sigma$ ist dabei die Fläche bestimmter Größe, die jedem Teil des Absorbers zugeordnet wird. 
+Es wird die Wahrscheinlichkeit $W$ beschrieben, mit welcher ein eintreffendes Photon mit dem Atom wechselwirkt. 
+Dabei gilt die Beziehung 
 \begin{equation}
 W=n D \sigma =\frac{n D \sigma F}{F}.
 \end{equation}
-
-Dabei ist $D$ die Dicke des Absorbers und $F$ die Querschnittsfläche. $n$ beschreibt die Anzahl der Teilchen pro Volumeneinheit.
+Dabei ist $D$ die Dicke des Absorbers und $F$ die Querschnittsfläche. 
+$n$ beschreibt die Anzahl der Teilchen pro Volumeneinheit.
 Treffen $N_0$ Teilchen in einem Zeitintervall auf die Fläche $F$ kann über
-
 \begin{equation}
 N=N_0 n D \sigma
 \end{equation}
-
 die Anzahl $N$ der Wechselwirkungen im gewählten Zeitintervall bestimmt werden. 
 In einem realen Absorber überdecken sich die Volumeneinheiten der Anzahl $n$ teilweise. Dies hat zur Folge, dass die Überdeckung nur vernachlässigbar ist, wenn eine dünne Schicht $dx$ betrachtet wird in der $dN$ Reaktionen stattfinden. Damit ist
 \begin{equation}
@@ -29,49 +35,7 @@ Die Menge der Teilchen, die erst nach der Strecke $dx$ mit der Materie wechselwi
 \begin{equation}
 N(D)=N_0 exp(-n \sigma D).
 \end{equation}
-
-Dies gilt die die Näherung, dass jedes Teilchen nur eine Reaktion ausführt und duch sie vernichtet wird. Oder aber die mittlere Entfernung zwischen zwei Reaktionen sehr viel größer als die Schichtdicke ist.
-Für den Absorptionskoeffizienten $\mu$ der Einheit $1/m$ gilt
-\begin{equation}
-\mu=n\sigma.
-\end{equation}
-
-Nach der Dicke
-\begin{equation}
-D_\frac{1}{2}=\frac{ln(2)}{\mu}
-\end{equation}
-hat sich die Intensität der Strahlung halbiert.
-$\mu$ wird bestimmt über Absorptionsmessungen und das Abschätzen von $\sigma$.
-Gemäß der Annahme, dass die Elektronen als Wechselwirkungszentren fungieren kann $\sigma$ über
-
-\begin{equation}
-\sigma=\frac{\mu}{n}=\frac{\mu M}{z N_L \rho}
-\end{equation}
- bestimmt werden.
-$M$ ist das Molekulargewicht des Absorbers, $N_L$ die Lohschmidtzahl, und $\rho$ die Dichte.
-
-\section{Gamma-Strahlung}
-
-Analog zur Elektronenhülle besitzen die Atomkerne diskrete Energieniveaus. Übergänge zwischen zwei Niveaus $E_1$ und $E_2$ emittieren die Energie $E_\gamma=E_1-E_2$ in Form von Photonen als sogenannte Gamma-Strahlung. Diese Photonen besitzen keine Ruhemasse und breiten sich mit $c$ aus. Als typische elektromagnetische Welle kann die Energie auch beschrieben werden als $E_\gamma=h\nu=\frac{hc}{\lambda}$. Die Energieniveaus sind genau definiert und ergeben damit ein Liniensprektrum. 
-Die Strahlung mit $E\approx 60-1300 keV$ folgt einem exponentiellen Absorptionsgesetz, da sie kaum mit der Materie in Wechselwirkung tritt. Hauptsächliche Angriffsfläche sind die Elektrone und Atomkerne, sowie die el. Felder. Es treten Prozesse wie die Paarvernichtung, reine Energieverluste, Änderungen der Ausbreitungsrichtung und Polarisation aus. Die auftretenden WW-Prozesse sind in Tabelle dargestellt. 
-Wichtigste Vorgänge sind Photo- und Comptoneffekt sowie die Paarerzeugung.
-
-\subsection{innerer Photoeffekt}
-Trifft das $\gamma$-Quant auf ein Elektron überträgt es die gesamte Energie auf dieses. Es wird aus seiner Bindung im Atom herausgelöst und besitzt die kinetische Energie $E_e=h\nu-E_B$ mit der zu überwindenden Bindungsenergie $E_B$. Dieser Effekt kann nur ablaufen, wenn die Energie der Strahlung größer als die Bindungsenergie des Elektrons ist. Außerdem tritt er nur ein, wenn das Atom den Quantenimpuls des Quantes zumindest teilweise aufnimmt. Dies ist umso wahrscheinlicher, je fester das Elektron an das Atom gebunden ist und tritt deswegen häufig bei inneren Elektronen auf. Die entstehenden Lücken werden durch äußere Elektronen unter Emission von Strahlung aufgefüllt.
-
-\subsection{Compton-Effekt}
-
-Das Quant wird an einem freien Elektron ( Hüllenelektron) gestreut und gibt seine Energie teilweise an dieses ab. Das ruft eine Richtungsänderung sowie Impulsänderung hervor.
-
-\begin{equation}
-\sigma_C=2\pi  r_e²\left(\frac{1+\epsilon}{\epsilon²}\left(\frac{2(1+\epsilon)}{1+2\epsilon}-\frac{1}{\epsilon}\ln(1+2\epsilon)\right)+\frac{1}{2\epsilon}\ln(1+2\epsilon)-\frac{1+3\epsilon}{(1+2\epsilon)²}\rigt)
-\end{equation}
-
-mit $\epsilon=\frac{E_{\gamma}}{m_0c²}$ und dem kleinsten Elektronenradius $r_e=2,82\cdot 10^(-15)m$. Damit ergibt sich
-
-\begin{equation}
-\mu_C=n\sigma_C(\epsilon)=\frac{Z N_L \rho}{M}\sigma_C(\epsilon).
-\end{equation}
-
-\subsection{Paarerzeugung}
-
+\subsection{Betrachtung der $\beta$-Strahlung, Reichweite}
+\label{sec:beta}
+Anders als bei $\gamma$-Strahlung wird für  $\beta$-Strahlung kein geschlossenes Absorptionsgesetz in vergleichbarer Kürze beschrieben.
+Die $\beta$-Strahlung tritt über verschiedene Prozesse mit Materie in Wechselwirkung.
