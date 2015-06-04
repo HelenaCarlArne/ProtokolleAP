@@ -53,9 +53,25 @@ $M$ ist das Molekulargewicht des Absorbers, $N_L$ die Lohschmidtzahl, und $\rho$
 \section{Gamma-Strahlung}
 
 Analog zur Elektronenhülle besitzen die Atomkerne diskrete Energieniveaus. Übergänge zwischen zwei Niveaus $E_1$ und $E_2$ emittieren die Energie $E_\gamma=E_1-E_2$ in Form von Photonen als sogenannte Gamma-Strahlung. Diese Photonen besitzen keine Ruhemasse und breiten sich mit $c$ aus. Als typische elektromagnetische Welle kann die Energie auch beschrieben werden als $E_\gamma=h\nu=\frac{hc}{\lambda}$. Die Energieniveaus sind genau definiert und ergeben damit ein Liniensprektrum. 
-Die Strahlung mit $E\approx 60-1300 keV$ folgt einem exponentiellen Absorptionsgesetz, da sie kaum mit der Materie in Wechselwirkung tritt. Hauptsächliche Angriffsfläche sind die Elektrone und Atomkerne, sowie die el. Felder. Es treten Prozesse wie die Paarvernichtung, reine Energieverluste, Änderungen der Ausbreitungsrichtung und Polarisation aus. Häufigste Prozesse sind die 
-\begin{itemize}
-\item Annihilationsprozess: Das $\gamma$-Quant verschwindet durch Paarvernichtung. Es trifft auf ein Elektron und der innere Photoeffekt tritt auf/ auf den Kern mit Kernphotoeffekt/ Felder Paarerzeugung
-\item inelastische Streuung: Das Quant ändert seine Richtung und gibt dabei Teilweise die Energie an den Stoßpartner ab. Elektron: Comptoneffekt, Kern: kernresonanzstreuung
-\item elastische Streuung: Sie ruft nur eine Richtungsänderung hervor. elektron Thompsonstreuung, Felder:Delbrückstreeung
-\end{itemize}
+Die Strahlung mit $E\approx 60-1300 keV$ folgt einem exponentiellen Absorptionsgesetz, da sie kaum mit der Materie in Wechselwirkung tritt. Hauptsächliche Angriffsfläche sind die Elektrone und Atomkerne, sowie die el. Felder. Es treten Prozesse wie die Paarvernichtung, reine Energieverluste, Änderungen der Ausbreitungsrichtung und Polarisation aus. Die auftretenden WW-Prozesse sind in Tabelle dargestellt. 
+Wichtigste Vorgänge sind Photo- und Comptoneffekt sowie die Paarerzeugung.
+
+\subsection{innerer Photoeffekt}
+Trifft das $\gamma$-Quant auf ein Elektron überträgt es die gesamte Energie auf dieses. Es wird aus seiner Bindung im Atom herausgelöst und besitzt die kinetische Energie $E_e=h\nu-E_B$ mit der zu überwindenden Bindungsenergie $E_B$. Dieser Effekt kann nur ablaufen, wenn die Energie der Strahlung größer als die Bindungsenergie des Elektrons ist. Außerdem tritt er nur ein, wenn das Atom den Quantenimpuls des Quantes zumindest teilweise aufnimmt. Dies ist umso wahrscheinlicher, je fester das Elektron an das Atom gebunden ist und tritt deswegen häufig bei inneren Elektronen auf. Die entstehenden Lücken werden durch äußere Elektronen unter Emission von Strahlung aufgefüllt.
+
+\subsection{Compton-Effekt}
+
+Das Quant wird an einem freien Elektron ( Hüllenelektron) gestreut und gibt seine Energie teilweise an dieses ab. Das ruft eine Richtungsänderung sowie Impulsänderung hervor.
+
+\begin{equation}
+\sigma_C=2\pi  r_e²\left(\frac{1+\epsilon}{\epsilon²}\left(\frac{2(1+\epsilon)}{1+2\epsilon}-\frac{1}{\epsilon}\ln(1+2\epsilon)\right)+\frac{1}{2\epsilon}\ln(1+2\epsilon)-\frac{1+3\epsilon}{(1+2\epsilon)²}\rigt)
+\end{equation}
+
+mit $\epsilon=\frac{E_{\gamma}}{m_0c²}$ und dem kleinsten Elektronenradius $r_e=2,82\cdot 10^(-15)m$. Damit ergibt sich
+
+\begin{equation}
+\mu_C=n\sigma_C(\epsilon)=\frac{Z N_L \rho}{M}\sigma_C(\epsilon).
+\end{equation}
+
+\subsection{Paarerzeugung}
+
