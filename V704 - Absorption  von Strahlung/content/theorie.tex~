@@ -1,61 +1,157 @@
 \section{Ziel}
 \label{sec:Ziel}
-
-In diesem Versuch wird die Wechselwirkung energiereicher Strahlung mit Materie untersucht. Näher betrachtet werden der Wirkungsquerschnitt und Absorptionskoeffizient verschiedener Materialien unter $\gamma$-Strahlung, sowie die Rechweite von $\beta$-Strahlen innerhalb der Materie.
+Es wird die Wechselwirkung energiereicher Strahlung mit Materie untersucht.
+Hierzu wird die Reichweite von $\beta$- und $\gamma$-Strahlung in Materie, etwa die Transmission durch dünne Blenden, betrachtet sowie der Wirkungsquerschnitt $\sigma$ und Absorptionskoeffizient $\mu$ verschiedener Materialien ermittelt.
 
 \section{Theorie}
 \label{sec:Theorie}
+Die $\beta$-Stahlung ist Materie-Strahlung von schnellen Elektronen, $\gamma$-Strahlung ist Photonen-Strahlung.
+% im Bereich von \SI{60}{\kilo}eV bis \SI{1300}{\kilo}eV.
 
-Trifft ein Teilchenstrahl auf Matierie fürht die Wechselwirkung zwischen Atomen des Feststoffes mit der Strahlung zur Intensitätsabnahme dieser. Anders ausgedrückt nimmt die Anzahl der Teilchen pro Zeit und Fläche nach Eindringen in die Materie ab. Als Maß für die Häufigkeit der Wechselwirkung kann der Wirkungsquerschnitt $\sigma$ genutzt werden.$\sigma$ ist dabei die Fläche bestimmter Größe die jedem Atom des Absorbers zugeordnet wird. Es wird die Wahrscheinlichkeit beschrieben, dass ein eintreffendes Teilchen mit dem Körper wechselwirkt. Dabei gilt die Beziehung 
+\subsection{Wechselwirkungsprozesse bei \texorpdfstring{$\gamma$}{Gamma}-Strahlung}
+Für die Energiewerte, die für den verwendeten Strahler angenommen werden, treten im Wesentlichen drei Prozesse auf.
+Die hier auftretenden Vertreter der Prozesse sind 
+\begin{itemize}
+	\item{(innerer) Photoeffekt}
+	\item{Compton-Effekt}
+	\item{Paarerzeugung}
+\end{itemize}
+Trifft das $\gamma$-Quant auf ein Elektron, überträgt es beim Photo-Effekt die gesamte Energie auf dieses und verschwindet. 
+Das Elektron wird aus seiner Bindung im Atom herausgelöst und besitzt die kinetische Energie $E_e=h\nu-E_B$ mit der zu überwindenden Bindungsenergie $E_B$. 
+Der Photo-Effekt kann nur ablaufen, wenn die Energie der Strahlung größer als die Bindungsenergie des Elektrons ist. 
+Außerdem tritt er nur ein, wenn das Atom den Quantenimpuls des $\gamma$-Quantes aufnimmt. 
+Dies ist umso wahrscheinlicher, je fester das Elektron an das Atom gebunden ist und tritt deswegen bei typischen $\gamma$-Energien bei inneren Elektronen auf. 
+Die entstehenden Lücken werden durch äußere Elektronen unter Emission von Röntgenstrahlung und Auger-Elektronen aufgefüllt.
 
+Das $\gamma$-Quant wird im Zuge des Compton-Effekts an einem freien Elektron oder Hüllenelektron gestreut und gibt seine Energie zum Teil an dieses ab. 
+Dies ruft eine Richtungs- und Impulsänderung hervor und erhält das $\gamma$-Quant.
+Der Wirkungsquerschnitt $\sigma$ wird durch
 \begin{equation}
-W=n D \sigma =\frac{n D \sigma F}{F}.
+	\sigma_C=2\pi  r_e²\left(\frac{1+\epsilon}{\epsilon²}\left(\frac{2(1+\epsilon)}{1+2\epsilon}-\frac{1}{\epsilon}\ln(1+2\epsilon)\right)+\frac{1}{2\epsilon}\ln(1+2\epsilon)-\frac{1+3\epsilon}{(1+2\epsilon)²}\right)
+\end{equation}
+mit $\epsilon=\frac{E_{\gamma}}{m_0c²}$ und dem kleinsten Elektronenradius $r_e=2,82\cdot 10^(-15)m$ beschrieben. 
+Damit ergibt sich
+\begin{equation}
+\mu_C=n\sigma_C(\epsilon)=\frac{Z N_L \rho}{M}\sigma_C(\epsilon).
 \end{equation}
 
-Dabei ist $D$ die Dicke des Absorbers und $F$ die Querschnittsfläche. $n$ beschreibt die Anzahl der Teilchen pro Volumeneinheit.
+Ist die Energie des $\gamma$-Quants sehr groß, kann es unter Erzeugung von Elektron und Positron zur Paarbildung kommen.
+Es ist einerseits erforderlich, dass das $\gamma$-Quant eine Energie $E$ größer als die doppelte Ruheenergie eines Elektrons, und andererseits erforderlich, dass ein Teil des Impulses von einem weiteren Stoßpartner übernommen wird.
+Hierzu dienen die Atomkerne des Absorbermaterials, in  deren Coulomb-Feldern  sich die  Teilchenpaare bilden.
+
+Die Überlagerung der oben genannten Effekte ergibt die Totalkurve, die als Beispiel von Germanium in Abbildung \ref{fig:Germanium} gezeigt wird.
+Weiter kann dieser Abbidlung entnommen werden, bei welcher Energie die Effekte dominant sind.
+In Reihenfolge treten bei ansteigender Energie treten Photo-Effekt, Compton-Effekt und Paarerzeugung auf.
+
+
+\subsection{Betrachtung der \texorpdfstring{$\gamma$}{Gamma}-Strahlung, Absorptionsgesetz}
+\label{sec:gamma}
+Für die $\gamma$-Strahlung wird ein Absorptionsgesetz beschrieben.
+Beim Eindringen in die Materie treten die Photonen mit den Atomen in Wechselwirkung. 
+%je tiefer eingedrungen wird, desto wahrscheinlicher ist dieWechselwirkung.
+Dadurch nimmt die Anzahl der Teilchen pro Zeit und Fläche ab; mit der Eindringtiefe nimmt die Wahrscheinlichkeit zu, 
+dass das Photon gestoßen hat.
+
+Als Maß für die Häufigkeit dieser Wechselwirkung wird der Wirkungsquerschnitt $\sigma$ eingeführt.
+$\sigma$ ist eine Fläche bestimmter Größe, die dem Absorbers spezifisch zugeordnet wird. 
+Dabei wird angenommen, dass der Absorber punktuell aus diesen Flächen $\sigma$ besteht und dass der Absorber nur an diesen Stellen zum Aufhalten der Photonen in der Lage ist.
+Trifft in diesem Modell ein Photon auf eine dieser Flächen, wird es absorbiert; andernfalls durchdringt das Photon die Materie unbeeinflusst.
+Es wird die Wahrscheinlichkeit $W$ beschrieben, mit welcher ein eintreffendes Photon auf eine dieser Flächen trifft. 
+Dabei gilt die Beziehung 
+\begin{equation}
+	W=n D \sigma =\frac{n D \sigma F}{F},
+\end{equation}
+in welcher $D$ die Dicke des Absorbers und $F$ die Querschnittsfläche ist. 
+$n$ beschreibt die Anzahl der Teilchen pro Volumeneinheit.
 Treffen $N_0$ Teilchen in einem Zeitintervall auf die Fläche $F$ kann über
-
 \begin{equation}
-N=N_0 n D \sigma
+	N=N_0 n D \sigma
 \end{equation}
-
 die Anzahl $N$ der Wechselwirkungen im gewählten Zeitintervall bestimmt werden. 
-In einem realen Absorber überdecken sich die Volumeneinheiten der Anzahl $n$ teilweise. Dies hat zur Folge, dass die Überdeckung nur vernachlässigbar ist, wenn eine dünne Schicht $dx$ betrachtet wird in der $dN$ Reaktionen stattfinden. Damit ist
+In einem realen Absorber überdecken sich die $n$ Volumeneinheiten teilweise. 
+Dies hat zur Folge, dass die ungewollte Überdeckung nur vernachlässigbar ist, wenn eine dünne Schicht $dx$ betrachtet wird, in der $dN$ Reaktionen stattfinden. 
+Damit ist
 \begin{equation}
-dN=-N(x) dx n \sigma.
+	dN=-N(x) dx n \sigma.
+	\label{eq:Absorptionsgesetz_Vorstufe}
 \end{equation}
-Die Menge der Teilchen, die erst nach der Strecke $dx$ mit der Materie wechselwirken, nimmt um $N(x)$ ab. Wird GLeichung y integriert, also die gesamte Dicke $D$ betrachtet ergibt sich das Absorptionsgesetz
-
+Die Menge der Teilchen, die erst nach der Strecke $dx$ mit der Materie wechselwirken, nimmt um $N(x)$ ab. 
+Wird Gleichung \eqref{eq:Absorptionsgesetz} über die Dicke des Absorbers integriert, ergibt sich das Absorptionsgesetz
 \begin{equation}
-N(D)=N_0 exp(-n \sigma D).
+	N(D)=N_0 exp(-n \sigma D)=N_0 exp(-\mu D).
+	\label{eq:Absorptionsgesetz}
 \end{equation}
-
-Dies gilt die die Näherung, dass jedes Teilchen nur eine Reaktion ausführt und duch sie vernichtet wird. Oder aber die mittlere Entfernung zwischen zwei Reaktionen sehr viel größer als die Schichtdicke ist.
-Für den Absorptionskoeffizienten $\mu$ der Einheit $1/m$ gilt
-\begin{equation}
-\mu=n\sigma.
-\end{equation}
-
+Dieses exponentielle Absorptionsgesetz gilt unter der Annahme, dass die Teilchen der Strahlung nur einmal mit dem Material stößt und dabei vollständig abgebremst wird.
 Nach der Dicke
 \begin{equation}
 D_\frac{1}{2}=\frac{ln(2)}{\mu}
 \end{equation}
 hat sich die Intensität der Strahlung halbiert.
-$\mu$ wird bestimmt über Absorptionsmessungen und das Abschätzen von $\sigma$.
-Gemäß der Annahme, dass die Elektronen als Wechselwirkungszentren fungieren kann $\sigma$ über
 
+Die Anzahl $n$ der Stoßparameter pro Volumeneinheit wird mit
 \begin{equation}
-\sigma=\frac{\mu}{n}=\frac{\mu M}{z N_L \rho}
+	n=\frac{zN_\text{L}}{V_\text{Mol}}=\frac{zN_\text{L}\rho}{M}
 \end{equation}
- bestimmt werden.
-$M$ ist das Molekulargewicht des Absorbers, $N_L$ die Lohschmidtzahl, und $\rho$ die Dichte.
+abgeschätzt, wodurch 
+\begin{equation}
+<<<<<<< HEAD
+\sigma_C=2\pi  r_e²\left(\frac{1+\epsilon}{\epsilon²}\left(\frac{2(1+\epsilon)}{1+2\epsilon}-\frac{1}{\epsilon}\ln(1+2\epsilon)\right)+\frac{1}{2\epsilon}\ln(1+2\epsilon)-\frac{1+3\epsilon}{(1+2\epsilon)²}\right)
+=======
+	\sigma=\frac{M\mu}{zN_\text{L}\rho}
+	\label{eq:Wirkungsquerschnitt}
+>>>>>>> 405ae53254d51eb099d2239c9c0e5c73ebdff55e
+\end{equation}
+gilt.
+In Gleichung \ref{eq:Wirkungsquerschnitt} sind $z$ die Ordnungszahl des Absorberatoms, $N_\text{L}$ die Loschmidtsche Zahl, $V_\text{Mol}$ das Molvolumen, $M$ das Molekulargewicht und $\rho$ Dichte.
 
-\section{Gamma-Strahlung}
 
-Analog zur Elektronenhülle besitzen die Atomkerne diskrete Energieniveaus. Übergänge zwischen zwei Niveaus $E_1$ und $E_2$ emittieren die Energie $E_\gamma=E_1-E_2$ in Form von Photonen als sogenannte Gamma-Strahlung. Diese Photonen besitzen keine Ruhemasse und breiten sich mit $c$ aus. Als typische elektromagnetische Welle kann die Energie auch beschrieben werden als $E_\gamma=h\nu=\frac{hc}{\lambda}$. Die Energieniveaus sind genau definiert und ergeben damit ein Liniensprektrum. 
-Die Strahlung mit $E\approx 60-1300 keV$ folgt einem exponentiellen Absorptionsgesetz, da sie kaum mit der Materie in Wechselwirkung tritt. Hauptsächliche Angriffsfläche sind die Elektrone und Atomkerne, sowie die el. Felder. Es treten Prozesse wie die Paarvernichtung, reine Energieverluste, Änderungen der Ausbreitungsrichtung und Polarisation aus. Häufigste Prozesse sind die 
+
+\subsection{Wechselwirkungsprozesse bei \texorpdfstring{$\beta$}{Beta}-Strahlung}
+\label{sec:beta}
+$\beta$-Strahlung entsteht bei dem Zerfall von Nukleonen.
+Bei dem Zerfall eines Protons zu einem Neutron wird ein $\beta$-Teilchen -- ein schnelles Elektron -- und ein Anti-Neutrino emittiert.
+Diese Kombination garantiert die Erhaltung von Energie, Impuls und Drehimpuls.
+Das Neutrino hat halbzahligen Spin, trägt keine Ladung und tritt (unter anderem daher) mit Materie nicht in Wechselwirkung.
+Die frei werdende Energie verteilt sich auf die emittierten Teilchen und dem rückgestoßenen Kern.
+%Dies ist in Abbildung \ref{fig:}
+
+Anders als bei $\gamma$-Strahlung im vorangegangen Abschnitt wird für  $\beta$-Strahlung kein geschlossenes Absorptionsgesetz in vergleichbarer Kürze beschrieben.
+Die $\beta$-Strahlung tritt über verschiedene Prozesse mit Materie in Wechselwirkung, die wesentlichen Effekte sind
 \begin{itemize}
-\item Annihilationsprozess: Das $\gamma$-Quant verschwindet durch Paarvernichtung. Es trifft auf ein Elektron und der innere Photoeffekt tritt auf/ auf den Kern mit Kernphotoeffekt/ Felder Paarerzeugung
-\item inelastische Streuung: Das Quant ändert seine Richtung und gibt dabei Teilweise die Energie an den Stoßpartner ab. Elektron: Comptoneffekt, Kern: kernresonanzstreuung
-\item elastische Streuung: Sie ruft nur eine Richtungsänderung hervor. elektron Thompsonstreuung, Felder:Delbrückstreeung
+	\item{Elastische Streuung an dem Atomkern}
+	\item{Inelastische Streuung an dem Atomkern des Absorbermaterials}
+	\item{Inelastische Streuung an den Elektronen des Absorbermaterials}
 \end{itemize}
+
+Die elastische Streuung an dem Atomkern ist als Rutherford-Streuung bekannt.
+Es handelt sich um eine Streuung der $\beta$-Strahlung im Coulomb-Feld der Kerne, wodurch der eintreffende Strahl wesentlich abgelenkt und dadurch aufgefächert, allerdings nicht besonders abgebremst wird.
+Durch mehrfache Ablenkung ist die Länge der Bahn eines $\beta$-Teilchens deutlich größer als der ungehinderte, direkte Weg.
+Dieser Sachverhalt ist in Abbildung \ref{fig:bahnen} dargestellt.
+Weitere, hier nicht weiter betrachtete Einflüsse der Strahlung durch die Materie ist an das magnetische Moment der Elektronen geknüpft.
+
+Bewegen sich geladene Teilchen im Coulomb-Feld von entgegengesetzt geladenen Teilchen, so werden sie beschleunigt, 
+wobei Energie in Form von Strahlung abgegeben werden muss.
+Dies wird als inelastische Streuung an Atomkernen bezeichnet.
+Diese Strahlung ist für die Abbremsung verantwortlich und es gilt
+\begin{equation}
+ 	\sigma_\text{Br}=\alpha r_\text{e}^2 z^2
+ \end{equation} 
+mit der Sommerfeldschen Feinstruktur $\alpha$.
+Aus dieser Formel des Wirkungsquerschnitt folgt, dass die Bremsstrahlung vorzugsweise bei schweren Absorberatomen stattfindet.
+Unter der Berücksichtigung aller Ablenkungswinkel ist die mittlere Abbremsungsenergie $E_\text{Br}$ eines mit der Energie $E_\beta$ einfallenden Strahles etwa $E_\text{Br} = 7\cdot10^{-7}zE_\beta$.
+Diese Formel ist eine gültige Näherung für die meisten gängigen $\beta$-Strahler.
+
+Die inelastische Streuung an Elektronen führt zur Anregung oder zur Ionisierung von Absorberatomen.
+Wegen der hohen kinetischen Energie der Strahlung ist $\beta$-Strahlung imstande, dies mehrfach auszuführen.
+Bei geringer Energie, beispielsweise $E\approx\SI{150}{\kilo\electronvolt}$ bei Aluminium, ist aber damit zu rechnen, 
+dass die $\beta$-Strahlung bereits ab einer Dicke von $\SI{150}{\micro\meter}$ vollständig abgebremst wird.
+
+\subsection{Messmethodik bei \texorpdfstring{$\beta$}{Beta}-Strahlung}
+Obwohl die Gleichung \eqref{eq:Absorptionsgesetz} nicht im Allgemeinen für die $\beta$-Strahlung gilt, ist sie für geringe Blendendicken eine brauchbare Näherung.
+Bei der Benutzung von Amplituden-sensitiven Messgeräten ergibt sich, dass ab einer Mindestschichtdicke eine von der Dicke unabhängigen Intensität gemessen werden kann, die auf die Bremsstrahlung zurückzuführen ist und wesentlich besser Materie durchdringt.
+In Abbildung \ref{fig:messkurve} ist die messbare Intensität gegen die Massenbelegung $R$ -- als Maße der Dicke mit $R=\rho D$ -- erkennbar.
+Mithilfe einer solchen Kurve kann die Reichweite von $\beta$-Strahlung bestimmt und damit die Energie abgeschätzt werden.
+Es gilt empirisch
+\begin{equation}
+	E_\text{max}=1.92\sqrt{R_\text{max}^2+0.22R_\text{max}} [ \si{\mega\electronvolt}]
+\end{equation}
