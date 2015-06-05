@@ -27,12 +27,12 @@ m_Pb  = params_Pb[0]
 b_Pb  = params_Pb[1]
 Δm_Pb = np.sqrt(cov_Pb[0][0])
 Δb_Pb = np.sqrt(cov_Pb[1][1])
-print('counts_Pb/t_Pb-Nulleffekt',counts_Pb/t_Pb-Nulleffekt)
-print('ln_Pb',ln_Pb)
-print('Geradensteigung Blei:')
-print('{}+-{}'.format(m_Pb,Δm_Pb))
-print('y-Achsenabschnit Blei:')
-print('{}+-{}'.format(b_Pb,Δb_Pb))
+#print('counts_Pb/t_Pb-Nulleffekt',counts_Pb/t_Pb-Nulleffekt)
+#print('ln_Pb',ln_Pb)
+#print('Geradensteigung Blei:')
+#print('{}+-{}'.format(m_Pb,Δm_Pb))
+#print('y-Achsenabschnit Blei:')
+#print('{}+-{}'.format(b_Pb,Δb_Pb))
 
 x = np.linspace(0, 0.025, 2000)
 plt.errorbar(d_Pb*1e3, (counts_Pb/t_Pb-Nulleffekt), np.sqrt(counts_Pb/t_Pb-Nulleffekt), fmt='gx', label='Messwerte')
@@ -67,13 +67,13 @@ b_Fe  = params_Fe[1]
 Δm_Fe = np.sqrt(cov_Fe[0][0])
 Δb_Fe = np.sqrt(cov_Fe[1][1])
 
-print('counts_Fe/t_Fe-Nulleffekt',counts_Fe/t_Fe-Nulleffekt)
-print('ln_Fe',ln_Fe)
+#print('counts_Fe/t_Fe-Nulleffekt',counts_Fe/t_Fe-Nulleffekt)
+#print('ln_Fe',ln_Fe)
 
-print('Geradensteigung Eisen:')
-print('{}+-{}'.format(m_Fe,Δm_Fe))
-print('y-Achsenabschnit Eisen:')
-print('{}+-{}'.format(b_Fe,Δb_Fe))
+#print('Geradensteigung Eisen:')
+#print('{}+-{}'.format(m_Fe,Δm_Fe))
+#print('y-Achsenabschnit Eisen:')
+#print('{}+-{}'.format(b_Fe,Δb_Fe))
 
 x = np.linspace(0, 0.025, 2000)
 plt.errorbar(d_Fe*1e3, (counts_Fe/t_Fe-Nulleffekt), np.sqrt(counts_Fe/t_Fe-Nulleffekt), fmt='gx', label='Messwerte')
@@ -95,9 +95,9 @@ plt.close()
 ##TEIL 2 Maximalenergie vom beta-Strahler ##
 ############################################
 Nulleffekt = 273/750 
-d_A, Δd_A, t_A, N_A = np.genfromtxt('../Werte/beta.txt').T
+d_A, Δd_A, t_A, N_A = np.loadtxt('../Werte/beta.txt', unpack = True)
 d_A *= 1e-6
-A=N_A/t_A-Nulleffekt
+
 ln_A = np.log(N_A/t_A-Nulleffekt)
 
 def f(x, m, b):
@@ -119,12 +119,9 @@ b_A2  = params_A2[0]
 Δb_A2 = np.sqrt(cov_A2[0][0])
 
 m_A2 = 0
-b_A2 = np.log(0.1876967839)
+#b_A2 = np.log(0.1876967839)
 Δm_A2 = 0
-Δb_A2 = 0
-print(A)
-print('Nulleffekt',Nulleffekt)
-print('Geradensteigung 1 Alu:')
+#Δb_A2 = print('Geradensteigung 1 Alu:')
 print('{}+-{}'.format(m_A1,Δm_A1))
 print('y-Achsenabschnit 1 Alu:')
 print('{}+-{}'.format(b_A1,Δb_A1))
@@ -146,12 +143,14 @@ print('ΔR',ΔR)
 print('E',E)
 print('ΔE',ΔE)
 
+
 x = np.linspace(90e-6, 500e-6, 2000)
-plt.plot(d_A*1e6, N_A/t_A-Nulleffekt, 'gx')
+#plt.plot(d_A*1e6, N_A/t_A-Nulleffekt, 'gx')
 plt.errorbar(d_A*1e6, N_A/t_A-Nulleffekt, np.sqrt(N_A/t_A-Nulleffekt), fmt='gx', label='Messwerte')
 plt.plot(x*1e6, np.exp(f(x, m_A1, b_A1)), 'k-', label='Gerade 1')
 plt.plot(x*1e6, np.exp(f(x, m_A2, b_A2)), 'k--', label='Gerade 2')
 plt.yscale('log', nonposy='clip')
+
 plt.xlim(90, 460)
 plt.ylim(0.009, 100)
 plt.xlabel(r'$\mathrm{Schichtdicke}\; d/\mathrm{\mu m}$')
