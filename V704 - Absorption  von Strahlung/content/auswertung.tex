@@ -104,15 +104,15 @@ Wird der Logarithmus der korrigierten Intensitäten, dargestellt in Tabelle \ref
 	\caption{Schichtdicke $d$ aufgetragen gegen die Strahlungsintensität.}
 	\label{fig:eisen}
 \end{figure}
-Dieser ist samt Ausgleichsgerade für Blei ist Abbildung \ref{fig:blei} und für Eisen in Abbildung \ref{fig:eisen} zu sehen.
+Dieser ist samt Ausgleichsgerade für Blei in Abbildung \ref{fig:blei} und für Eisen in Abbildung \ref{fig:eisen} zu sehen.
 Die lineare Regression ergibt die Geradengleichungen 
 \begin{align}
 f_\mathup{Pb}(x)&=(-107,0\pm0,9)x+(5,01\pm0,02),\\
-f_\mathup{Fe}(x)&=(-50\pm5)x+(4,93\pm0,09),
+f_\mathup{Fe}(x)&=(-50\pm5)x+(4,93\pm0,09).
 \label{eq:lin_regress}
 \end{align}
-aus denen sich die gesuchten Größen $\mu$ und $N_0$ bestimmen lassen. 
-Die Absorptionskoeffizienten entsprechen der Steigung der Geraden, die Anfangswerte $N_0$ lassen sich nach FORMEL 6 berechnen.
+Aus ihnen lassen sich die gesuchten Größen $\mu$ und $N_0$ bestimmen. 
+Die Absorptionskoeffizienten entsprechen der Steigung der Geraden; die Anfangswerte $N_0$ lassen sich nach Vergleich der Gleichungen \eqref{eq:Absorptionsgesetz_Vorstufe} und \eqref{eq:Absorptionsgesetz} berechnen.
 Es ergeben sich die Absorptionskoeffizienten $\mu$ und $N_0$ zu
 \begin{align}
 \mu_\mathup{Pb}&=-(107,0\pm0,9)\,\frac{1}{\si\meter} &\text{und}\quad  N_{0\mathup{,Pb}}&=(150\pm1)\,\frac{1}{\si\second},\\
@@ -123,10 +123,11 @@ Damit sind die Absorptionsgesetze
 N_\mathup{Pb}(d)&=(150\pm1)\,\frac{1}{\si\second}\cdot\mathup{e}^{-(107,0\pm0,9)\,\frac{1}{\si\meter}d},\\
 N_\mathup{Fe}(d)&=(138\pm1)\,\frac{1}{\si\second}\cdot\mathup{e}^{-(50\pm5)\,\frac{1}{\si\meter}d}.
 \end{align}
-bestimmt.
-\subsection{Vergleich von Theorie und Experiment}
-Um die Ergebnisse der Untersuchung von Materie mit $\gamma$-Strahlung bewerten zu können werden der Absorptionskoeffizient $\mu_\mathup{C}$ über den Wirkungsquerschnitt $\sigma_\mathup{C}$  nach Compton bestimmt wie in der Theorie beschrieben. Verwendet wird dabei die charakteristische Größe $\epsilon=1,295$, sowie die in Tabelle \ref{tab:werte} aufgelisteten Größen.
+ für Blei und Eisen bestimmt.
 
+
+\subsection{Vergleich von Theorie und Experiment}
+Um die Ergebnisse der Untersuchung von Materie mit $\gamma$-Strahlung bewerten zu können werden der Absorptionskoeffizient $\mu_\mathup{C}$ über den Wirkungsquerschnitt $\sigma_\mathup{C}$  nach Compton bestimmt wie in der Theorie beschrieben. Verwendet werden dabei die charakteristische Größe $\epsilon=1,295$, sowie die in Tabelle \ref{tab:werte} aufgelisteten Größen.
 \begin{table}
 \centering
 \begin{tabular}{S S[table-format=2.0] S[table-format=3.1] S[table-format=2.3]}
@@ -146,13 +147,13 @@ Mit Gleichung \eqref{eq:sigma_c} ergeben sich für die Wirkungsquerschnitte
 \end{equation}
 und daraus resultierend die Absorptionskoeffizienten
 \begin{equation}
-\mu_\mathup{C,Pb}=69,43\,\frac{1}{\si\meter} \text{und} \mu_\mathup{C,Fe}=56,76\,\frac{1}{\si\meter}.
+\mu_\mathup{C,Pb}=69,43\,\frac{1}{\si\meter} \quad\text{und}\quad \mu_\mathup{C,Fe}=56,76\,\frac{1}{\si\meter}.
 \end{equation}
-
+Der Absorptionskoeffizient von Eisen weicht um $54,11\%$ von der Theorie ab. Dieser große Unterschied zeigt auf, dass die Compton-Streuung nur eine geringe Rolle spielt und der Photoeffekt mehr Einfluss besitzt. Blei, mit einer Abweichung von $11,91\%$, wechselwirkt mit der Strahlung hauptsächlich über Compton-Streuung. Der Photoeffekt spielt hier nur eine kleine Rolle. Da die Energien niedrig sind, kann die Paarerzeugung als Wechselwirkungsprozess fast vollkommen ausgeschlossen werden.
 \subsection{Maximale Energie der Strahlung}
 Erneut wird der Nulleffekt $N_\mathup{u}$ nach Gleichung \eqref{eq:N_u} zu
 \begin{equation}
-N_\mathup{u}=\frac{273}{\SI{750}{\second}}=0.364\,\frac{1}{\si\second}
+N_\mathup{u}=\frac{273}{\SI{750}{\second}}=0,364\,\frac{1}{\si\second}
 \end{equation}
 bestimmt. 
 
@@ -177,14 +178,22 @@ bestimmt.
 \caption{Messwerte der unterschiedlichen Absorberdicken.}
 \label{tab:werte_beta}
 \end{table}
-Wird die Intensität halblogarithmisch gegen die Schichtdicke aufgetragen kann die maximale Reichweite $R_\mathup{max}$ der $\beta$-Teilchen durch den Schnitt zweier Geraden ermittelt werden. Diese entstehen durch lineare Regression der ersten Sechs Werte für Gerade 1 und der restlichen Werte für die zweite Gerade. Diese besitzt die Steigung $m_2=0$; nur der $y$-Achsen-Abschnitt wird durch die Ausgleichsrechnung bestimmt. Wird $m_2$ durch lineare Regression bestimmt ergbit sich ein Fehler, der ein Vielfaches des Wertes selbst und damit unbrauchbar ist.
+Wird die Intensität halblogarithmisch gegen die Schichtdicke aufgetragen kann die maximale Reichweite $R_\mathup{max}$ der $\beta$-Teilchen durch den Schnitt zweier Geraden. Die erste Gerade
+\begin{equation}
+g_1(x)=\underbrace{-(35000\pm2000)}_{\text{Steigung} m_1}x+\underbrace{(7,6\pm0,3)}_{y-\text{Achsen}-\text{Abschnitt} b_1}
+\end{equation}
+ergibt sich durch die Regression der Werte 1 bis 6; die zweite Gerade
+\begin{equation}
+g_2(x)=\underbrace{-(2,8\pm0,6)}_{y-\text{Achsen}-\text{Abschnitt} b_2}
+\end{equation}
+aus den restlichen Werten.Wird $m_2$ durch lineare Regression bestimmt ergbit sich ein Fehler, der ein Vielfaches des Wertes selbst und damit unbrauchbar ist.Daher besitzt Gerade $2$ die Steigung $m_2=0$; nur der $y$-Achsen-Abschnitt wird durch die Ausgleichsrechnung bestimmt. 
 Der Schnitt kann berechnet werden über 
 \begin{equation}
 R_\mathup{max}=\frac{b_2-b_1}{m_2-m_1}.
 \end{equation}
-Nach Gleichung \eqref{eq:e_max} kann daraus die maximale Energie bestimmt werden. Damit ergeben sich die mximale Reichweite und die maximale Energie der untersuchten $\beta$-Strahlung zu
+Nach Gleichung \eqref{eq:e_max} kann daraus die maximale Energie bestimmt werden. Damit ergeben sich die maximale Reichweite und die maximale Energie der untersuchten $\beta$-Strahlung zu
 \begin{align}
-R_\mathup{max}=(29\pm2)\,\si\meter und E_\mathup{max}=(0,30\pm0,07)\,\mathup{e}\si\volt
+R_\mathup{max}=(29\pm2)\,\si\meter \quad\text{und}\quad E_\mathup{max}=(0,30\pm0,07)\,\mathup{e}\si\volt
 \end{align}
 \begin{figure}
 	\centering

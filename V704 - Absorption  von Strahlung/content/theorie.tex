@@ -18,8 +18,8 @@ Beide Strahlungsarten treten beim Propagieren in Wechselwirkung mit Materie, wod
 %dass das Photon gestoßen hat.
 
 Als Maß für die Häufigkeit dieser Wechselwirkung wird der Wirkungsquerschnitt $\sigma$ eingeführt.
-$\sigma$ ist eine Fläche bestimmter Größe, die dem Absorbers spezifisch zugeordnet wird. 
-Dabei wird angenommen, dass der Absorber punktuell aus diesen Flächen $\sigma$ besteht und dass der Absorber nur an diesen Stellen zum Aufhalten der Strahlung in der Lage ist.
+$\sigma$ ist eine Fläche bestimmter Größe, die dem Absorber spezifisch zugeordnet wird. 
+Dabei wird angenommen, dass der Absorber punktuell aus diesen Flächen $\sigma$ besteht und nur an diesen Stellen zum Aufhalten der Strahlung in der Lage ist.
 Trifft in diesem Modell ein Photon oder ein Elektron auf eine dieser Flächen, wird es absorbiert; andernfalls durchdringt die Strahlung die Materie unbeeinflusst.
 Es wird die Wahrscheinlichkeit $W$ beschrieben, mit welcher ein eintreffendes Strahlungsteilchen auf eine dieser Flächen trifft. 
 Dabei gilt die Beziehung 
@@ -76,40 +76,42 @@ Es gilt hierzu
 	E =h\frac{c}{\lambda}.
 \end{equation}
 Die Energieniveaus der Kerne sind sehr genau definiert, daher besitzt das Linienspektrum diskret und präzise bestimmbar.
-Für die Energiewerte, die für den verwendete, natürliche Strahlungsquelle angenommen werden, treten im Wesentlichen drei Prozesse auf.
+Für die Energiewerte, die für die verwendete, natürliche Strahlungsquelle angenommen werden, treten im Wesentlichen drei Prozesse auf.
 Die hier auftretenden Vertreter der Prozesse werden im Folgenden diskutiert.
 
 \begin{itemize}
-	\item[(innerer) Photoeffekt]{
+\item{\emph{(innerer) Photoeffekt}}
+
 Trifft das $\gamma$-Quant auf ein Elektron, überträgt es beim Photoeffekt die gesamte Energie auf dieses und verschwindet. 
 Das gestoßene Elektron wird aus seiner Bindung im Atom herausgelöst und besitzt die kinetische Energie $E_e=h\nu-E_\text{B}$ mit der zu überwindenden Elektronen-Bindungsenergie $E_\text{B}$. 
 Der Photoeffekt kann nur ablaufen, wenn die Energie der Strahlung größer als die Bindungsenergie des Elektrons $E_\text{B}$ ist. 
 Außerdem tritt er nur ein, wenn das Atom den Quantenimpuls des $\gamma$-Quantes aufnehmen kann. 
 Dies ist umso wahrscheinlicher, je fester das Elektron an das Atom gebunden ist und tritt deswegen bei typischen $\gamma$-Energien nur bei inneren Elektronen auf. 
 Die entstehenden Lücken werden durch äußere Elektronen unter Emission von Röntgenstrahlung und Auger-Elektronen aufgefüllt.
-}
-	\item[Compton-Effekt]{
+\item{\emph{Compton-Effekt}}
+
 Das $\gamma$-Photon wird im Zuge des Compton-Effekts an einem freien Elektron oder an einem Elektron in der äußeren Hülle gestreut und gibt seine Energie zum Teil an dieses ab. 
 Dies ruft eine Richtungs- und Impulsänderung hervor, erhält aber das $\gamma$-Photon.
-Der Wirkungsquerschnitt $\sigma_\text{Compton}$ wird durch
+Der Wirkungsquerschnitt $\sigma_\text{C}$ wird durch
 \begin{equation}
-	\sigma_\text{Compton}=2\pi  r_e^2\left(\frac{1+\epsilon}{\epsilon²}\left(\frac{2(1+\epsilon)}{1+2\epsilon}-\frac{1}{\epsilon}\ln(1+2\epsilon)\right)+\frac{1}{2\epsilon}\ln(1+2\epsilon)-\frac{1+3\epsilon}{(1+2\epsilon)²}\right)
+	\sigma_\text{C}=2\pi  r_e^2\left(\frac{1+\epsilon}{\epsilon²}\left(\frac{2(1+\epsilon)}{1+2\epsilon}-\frac{1}{\epsilon}\ln(1+2\epsilon)\right)+\frac{1}{2\epsilon}\ln(1+2\epsilon)-\frac{1+3\epsilon}{(1+2\epsilon)²}\right)
+\label{eq:sigma_c}
 \end{equation}
 mit $\epsilon=\frac{E_{\gamma}}{m_0c²}$ und dem kleinsten Elektronenradius $r_e=\SI{2.82e-15}{\meter}$ beschrieben. 
 Damit ergibt sich
 \begin{equation}
-	\mu_\text{Compton}=n\sigma_\text{Compton}(\epsilon)=\frac{Z N_L \rho}{M}\sigma_\text{Compton}(\epsilon).
+	\mu_\text{C}=n\sigma_\text{C}(\epsilon)=\frac{Z N_L \rho}{M}\sigma_\text{C}(\epsilon).
+\label{eq:mu_c}
 \end{equation}
-}
-	\item[Paarerzeugung]{
+\item{\emph{Paarerzeugung}}
+
 Ist die Energie des $\gamma$-Quants sehr groß, kann es unter Erzeugung von Elektron und Positron zur Paarbildung kommen.
-Es ist einerseits erforderlich, dass das $\gamma$-Quant eine Energie $E$ größer als die doppelte Ruheenergie eines Elektrons, und andererseits erforderlich, dass ein Teil des Impulses von einem weiteren Stoßpartner übernommen wird.
+Es ist einerseits erforderlich, dass das $\gamma$-Quant eine Energie $E$ größer als die doppelte Ruheenergie eines Elektrons, und andererseits, dass ein Teil des Impulses von einem weiteren Stoßpartner übernommen wird.
 Hierzu dienen die Atomkerne des Absorbermaterials, in  deren Coulomb-Feldern  sich die  Teilchenpaare bilden.
-}
 \end{itemize}
-\begin{figure}[p]
+\begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/germanium.png}
+	\includegraphics[width=0.5\textwidth]{Bilder/germanium.png}
 	\caption{Eintrittswahrscheinlichkeit der verschiedenen Wechselwirkungsprozesse von \texorpdfstring{$\gamma$}{Gamma}-Strahlung mit Germanium.\cite{skript}}
 	\label{fig:Germanium}
 \end{figure}
@@ -132,7 +134,8 @@ Anders als bei $\gamma$-Strahlung im vorangegangen Abschnitt wird für  $\beta^-
 Die $\beta^-$-Strahlung tritt über verschiedene Prozesse mit Materie in Wechselwirkung, die wesentlichen Effekte werden im Folgenden diskutiert.
 
 \begin{itemize}
-	\item{\emph{Elastische Streuung am Atomkern:}
+	\item{\emph{Elastische Streuung am Atomkern:}}
+
 Die elastische Streuung an dem Atomkern ist als Rutherford-Streuung bekannt.
 Es handelt sich um eine Streuung der $\beta^-$-Strahlung im Coulomb-Feld der Kerne, wodurch der eintreffende Strahl wesentlich abgelenkt und dadurch aufgefächert, allerdings nicht besonders abgebremst wird.
 Durch mehrfache Ablenkung ist die Länge der Bahn eines $\beta^-$-Teilchens deutlich größer als der ungehinderte, direkte Weg.
@@ -144,26 +147,27 @@ Dieser Sachverhalt ist in Abbildung \ref{fig:bahnen} dargestellt.\\
 	\label{fig:bahnen}
 \end{figure}
 Weitere, hier nicht weiter betrachtete Einflüsse der Strahlung durch die Materie ist an das magnetische Moment der Elektronen geknüpft.
-}
-	\item{\emph{Inelastische Streuung an dem Atomkern des Absorbermaterials}
+
+\item{\emph{Inelastische Streuung an dem Atomkern des Absorbermaterials}}
+
 Bewegen sich geladene Teilchen im Coulomb-Feld von entgegengesetzt geladenen Teilchen, so werden sie beschleunigt, 
 wobei Energie in Form von Strahlung abgegeben werden muss.
 Dies wird als inelastische Streuung an Atomkernen bezeichnet.
-Diese Strahlung ist für die Abbremsung verantwortlich und es gilt
-\begin{equation}
- 	\sigma_\text{Br}=\alpha r_\text{e}^2 z^2
- \end{equation} 
-mit der Sommerfeldschen Feinstruktur $\alpha$.
-Aus dieser Formel des Wirkungsquerschnitt folgt, dass die Bremsstrahlung vorzugsweise bei schweren Absorberatomen stattfindet.
-Unter der Berücksichtigung aller Ablenkungswinkel ist die mittlere Abbremsungsenergie $E_\text{Br}$ eines mit der Energie $E_\beta^-$ einfallenden Strahles etwa $E_\text{Br} = 7\cdot10^{-7}zE_\beta^-$.
-Diese Formel ist eine gültige Näherung für die meisten gängigen $\beta^-$-Strahler.
-}
-	\item{\emph{Inelastische Streuung an den Elektronen des Absorbermaterials}
+%Diese Strahlung ist für die Abbremsung verantwortlich und es gilt
+%\begin{equation}
+% 	\sigma_\text{Br}=\alpha r_\text{e}^2 z^2
+% \end{equation} 
+%mit der Sommerfeldschen Feinstruktur $\alpha$.
+%Aus dieser Formel des Wirkungsquerschnitt folgt, dass die Bremsstrahlung vorzugsweise bei schweren Absorberatomen stattfindet.
+%Unter der Berücksichtigung aller Ablenkungswinkel ist die mittlere Abbremsungsenergie $E_\text{Br}$ eines mit der Energie $E_\beta^-$ einfallenden Strahles etwa $E_\text{Br} = 7\cdot10^{-7}zE_\beta^-$.
+%Diese Formel ist eine gültige Näherung für die meisten gängigen $\beta^-$-Strahler.
+
+\item{\emph{Inelastische Streuung an den Elektronen des Absorbermaterials}}
+
 Die inelastische Streuung an Elektronen führt zur Anregung oder zur Ionisierung von Absorberatomen.
 Wegen der hohen kinetischen Energie der Strahlung ist $\beta^-$-Strahlung imstande, dies mehrfach auszuführen.
 Bei geringer Energie, beispielsweise $E\approx\SI{150}{\kilo\electronvolt}$ bei Aluminium, ist aber damit zu rechnen, 
 dass die $\beta^-$-Strahlung bereits ab einer Dicke von $\SI{150}{\micro\meter}$ vollständig abgebremst wird.
-}
 \end{itemize}
 
 
@@ -183,10 +187,10 @@ Bei der Benutzung von Amplituden-sensitiven Messgeräten ergibt sich, dass ab ei
 	\caption{Strahlungsintensität in Abhängigkeit von der Massenbelegung $R$ und Bestimmung der maximalen Reichweite.\cite{skript}}
 	\label{fig:messkurve}
 \end{figure}
-In Abbildung \ref{fig:messkurve} ist die messbare Intensität gegen die Massenbelegung $R$ -- als Maße der Dicke mit $R=\rho D$ -- erkennbar.
+In Abbildung \ref{fig:messkurve} ist die messbare Intensität gegen die Massenbelegung $R$ -- als Maß der Dicke mit $R=\rho D$ -- erkennbar.
 Mithilfe einer solchen Kurve kann die Reichweite von $\beta^-$-Strahlung bestimmt und damit die Energie abgeschätzt werden.
 Es gilt empirisch
 \begin{equation}
-	E_\text{max}=1.92\sqrt{R_\text{max}^2+0.22R_\text{max}}\;[\si{\mega\electronvolt}]
+	E_\text{max}=1.92\sqrt{R_\text{max}^2+0,22R_\text{max}}\;[\si{\mega\electronvolt}]
 \label{eq:e_max}
 \end{equation}
