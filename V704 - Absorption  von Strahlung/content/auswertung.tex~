@@ -18,6 +18,7 @@ Zur Berechnung aller Größen werden die nicht gerundeten Größen benutzt um Ru
 Der Nulleffekt für beide Messungen ergibt sich durch den Quotienten der gemessenen Zerfälle $n$ pro Zeiteinheit ${\mathup{\Delta{t}}}$ zu
 \begin{equation}
 N_\mathup{u}=\frac{n}{\mathup{\Delta{t}}}=\frac{682}{\SI{750}{\second}}=0,91\,\frac{1}{\si\second}.
+\label{eq:N_u}
 \end{equation}
 Es werden der Absorptionskoeffizient $\mu$ und $N_0$ für Blei und Eisen bestimmt. Dabei werden die Materialien der Strahlung eines $\ce{^{137}Cs}$--Strahlers ausgesetzt. 
 \begin{table}[p]
@@ -123,13 +124,36 @@ N_\mathup{Pb}(d)&=(150\pm1)\,\frac{1}{\si\second}\cdot\mathup{e}^{-(107,0\pm0,9)
 N_\mathup{Fe}(d)&=(138\pm1)\,\frac{1}{\si\second}\cdot\mathup{e}^{-(50\pm5)\,\frac{1}{\si\meter}d}.
 \end{align}
 bestimmt.
+\subsection{Vergleich von Theorie und Experiment}
+Um die Ergebnisse der Untersuchung von Materie mit $\gamma$-Strahlung bewerten zu können werden der Absorptionskoeffizient $\mu_\mathup{C}$ über den Wirkungsquerschnitt $\sigma_\mathup{C}$  nach Compton bestimmt wie in der Theorie beschrieben. Verwendet wird dabei die charakteristische Größe $\epsilon=1,295$, sowie die in Tabelle \ref{tab:werte} aufgelisteten Größen.
+
+\begin{table}
+\centering
+\begin{tabular}{S S[table-format=2.0] S[table-format=3.1] S[table-format=2.3]}
+\toprule
+%\multicolumn{2}{c}{$\ln{(N-N_\mathup{u})}$} \\
+{Material} & {$Z$} & {$M\:/\sfrac{\si\gram}{\si\mol}$} & {$\rho\:/\sfrac{\si\gram}{\si{\centi\meter}^3}$}\\
+\midrule
+\text{Blei} & 82 & 207.2 & 11.342\\
+\text{Eisen} &26 & 55.8  & 7.874\\
+\bottomrule
+\end{tabular}
+\caption{Materialkonstanten, benötigt zur Berechnung von $\mu_\mathup{C}$ für Blei und Eisen.}
+\label{tab:werte}
+\end{table}
+Mit Gleichung \eqref{eq:sigma_c} ergeben sich für die Wirkungsquerschnitte
+\begin{equation}
+\mu_\mathup{C,Pb}=\mu_\mathup{C,Fe}=2,57\cdot10^{-29}
+\end{equation}
+und daraus resultierend die Absorptionskoeffizienten
+\begin{equation}
+\mu_\mathup{C,Pb}=69,43\,\frac{1}{\si\meter} \text{und} \mu_\mathup{C,Fe}=56,76\,\frac{1}{\si\meter}.
+\end{equation}
 
 \subsection{Maximale Energie der Strahlung}
-
-
-Erneut wird der Nulleffekt $N_\mathup{u}$ zu 
+Erneut wird der Nulleffekt $N_\mathup{u}$ nach Gleichung \eqref{eq:N_u} zu
 \begin{equation}
-N_\mathup{u}=\frac{\text{Zerfälle}}{\text{Zeit}}=\frac{273}{\SI{750}{\second}}=0.364\,\frac{1}{\si\second}
+N_\mathup{u}=\frac{273}{\SI{750}{\second}}=0.364\,\frac{1}{\si\second}
 \end{equation}
 bestimmt. 
 
@@ -137,7 +161,7 @@ bestimmt.
 \centering
 \begin{tabular}{S[table-format=3.1(2)] S[table-format=3.0] S[table-format=5.0] S[table-format=2.3]}
 \toprule
-{$d\:/\si{\micro\meter}$} & {$t\:/\si\second$} & {$n$} & {$I$}\\
+{$d\:/\si{\micro\meter}$} & {$t\:/\si\second$} & {$n$} & {$N-N_u$}\\
 \midrule
 102(1)   & 350 &18401 & 52.210\\
 126(1)   & 350 & 8934 & 25.516\\
@@ -151,20 +175,18 @@ bestimmt.
 444(2)   & 500 &  271 &  0.178\\
 \bottomrule
 \end{tabular}
-\caption{Korrigierte und zur Rechnung benötigte Winkel der Spektrallinien.}
+\caption{Messwerte der unterschiedlichen Absorberdicken.}
 \label{tab:werte_beta}
 \end{table}
-
-
-Die Intensität $I$ ergibt sich aus der Differenz $I=N-N_\mathup{u}$ und ist mit der Schichtdicke $d$, der Messzeit $t$ und der Anzahl der Zerfälle $n$ in Tabelle \ref{tab:werte_beta} gelistet.
-
-
- Wird die Intensität halblogarithmisch gegen die Schichtdicke aufgetragen kann die maximale Reichweite der $\beta$-Teilchen durch den Schnitt zweier Geraden ermittelt werden. Diese entstehen durch lineare Regression der Werte X und Y. Die zweite Gerade hat die Steigung m=0.
+Wird die Intensität halblogarithmisch gegen die Schichtdicke aufgetragen kann die maximale Reichweite $R_\mathup{max}$ der $\beta$-Teilchen durch den Schnitt zweier Geraden ermittelt werden. Diese entstehen durch lineare Regression der ersten Sechs Werte für Gerade 1 und der restlichen Werte für die zweite Gerade. Diese besitzt die Steigung $m_2=0$; nur der $y$-Achsen-Abschnitt wird durch die Ausgleichsrechnung bestimmt. Wird $m_2$ durch lineare Regression bestimmt ergbit sich ein Fehler, der ein Vielfaches des Wertes selbst und damit unbrauchbar ist.
 Der Schnitt kann berechnet werden über 
 \begin{equation}
 R_\mathup{max}=\frac{b_2-b_1}{m_2-m_1}.
 \end{equation}
-Nach Theorie kann daraus die maximale Energie bestimmt werden. Dies ist jedoch sehr ungenau oder sonst irgendwie doof, deswegen geschieht das nun über den empirischen Zusammenhang aus Theorie.
+Nach Gleichung \eqref{eq:e_max} kann daraus die maximale Energie bestimmt werden. Damit ergeben sich die mximale Reichweite und die maximale Energie der untersuchten $\beta$-Strahlung zu
+\begin{align}
+R_\mathup{max}=(29\pm2)\,\si\meter und E_\mathup{max}=(0,30\pm0,07)\,\mathup{e}\si\volt
+\end{align}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{Bilder/beta.pdf}

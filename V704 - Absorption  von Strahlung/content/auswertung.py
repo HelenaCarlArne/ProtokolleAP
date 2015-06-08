@@ -95,11 +95,12 @@ plt.close()
 ##TEIL 2 Maximalenergie vom beta-Strahler ##
 ############################################
 Nulleffekt = 273/750 
+print(Nulleffekt)
 d_A, Δd_A, t_A, N_A = np.loadtxt('../Werte/beta.txt', unpack = True)
 d_A *= 1e-6
 
 ln_A = np.log(N_A/t_A-Nulleffekt)
-
+print(ln_A)
 def f(x, m, b):
     return m*x+b
     
