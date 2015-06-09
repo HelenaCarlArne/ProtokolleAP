@@ -1,0 +1,75 @@
+\section{Ziel}
+\label{sec:Ziel}
+Die Neutronen- und Protonenanzahl liegt für stabile Kerne innerhalb bestimmter Grenzen.Weichen die Zahlen jedoch ab, so liegen instabile Kerne vor, die in einem Zeitraum mit einer bestimmten Wahrscheinlichkeit zerfallen.
+Versuchsziel ist es, diese Halbwertszeiten $T$ bestimmter Nuklide zu bestimmen.
+\section{Theorie}
+\label{sec:Theorie}
+Kerne, deren Halbwertszeit zwischen Sekunden und Stunden liegt müssen vor Experimenten hergestellt werden, indem sie mit Teilchen beschossen werden. Neutronen eigenen sich besonders gut, da sie keine Ladung besitzen und somit die Coulombbarriere des Kerns nicht überwinden müssen.
+Wird ein Kern von einem Neutron getroffen nimmt dieser das Neutron auf. Dabei wird die Energie des entstandenen Zwischenkerns -- auch Compoundkern genannt -- um die kinetische und Bindungsenergie des Neutrons erhöht. Die Energie verteilt sich instantan im Kern, sodass kein anderes Nuklid abgestoßen werden kann. So muss die überschüssige Energie des angeregten Kerns den Kern in Form eines emittierten $\gamma$--Quants verlassen. 
+
+\ce{^{m}_zA + n -> ^{m+1}_zA* -> ^{m+1}_zA + \gamma}
+
+Dieser instabile Kern erlangt durch den $\beta$--Zerfall eine stabile Konfiguration.
+
+\ce{^{m+1}_zA -> ^{m+1}_{z+1}C + e⁻ + \bar{{\nu}}_e + E_{kin}}
+
+Die Wahrscheinlichkeit des Neutroneneinfangs wird bestimmt durch den Wirkungsquerschnitt
+\begin{equation}
+\sigma=\frac{u}{nkd}
+\end{equation}
+mit $[\sigma]= 10^{-24}\si{\centi\meter}²= 1\text{barn}$. Damit ist eine fiktive Fläche befindlich um den Kern gemeint, wobei ein Neutron dass auf diese Fläche trifft absorbiert wird. $d$ ist dabei die Dicke des Absorbers, $K$ die Anzahl der Atome pro Kubikzentimeter und $n$ die Anzahl der auftreffenden Atome pro Sekunde.
+$\sigma$ ist stark von der Geschwindigkeit der Neutronen abhängig, die über die de-Broglie-Wellenlänge
+\begin{equation}
+\lambda=\frac{h}{mv}
+\end{equation}
+charaktirisiert ist. Für schnelle Neutronen ist $\lambda$ klein gegen den Kernradius $R$, sodass die Wechselwirkungsprozesse durch einfache geometrische Überlegungen in Analogie zur geometrischen Optik beschrieben werden können. Für langsame Neutronen ist $\lambda$ groß gegenüber $R$. Der Wirkungsquerschnitt ist für langsame Neutronen sehr viel größer als für schnelle.Deswegen sollen in diesem Versuch langsame Neutronen die Kerne spalten.
+Da $\sigma$ abhängig von der Energie ist, gilt
+\begin{equation}
+\sigma(E)=\sigma_0\sqrt{\frac{E_\mathup{r}}{E}}\frac{\tilde{c}}{(E-E_\mathup{r})²+\tilde{c})}.
+\end{equation}
+Dabei sind $\tilde{c}$ und $\sigma_0$ konstant und $E_\mathup{r}$ die Energieniveaus des Zwischenkerns.
+ Entspricht die Energie $E_\mathup{n}$ eines Neutrons der Energiedifferenz $E_\mathup{1}-E_2=\mathup{\Delta{E}}$ zweier Energieniveaus des Kerns, findet Resonanzabsorption statt, da $\sigma(E)$ maximal wird. Für $E_\mathup{n}<<E_\mathup{r}$ kann $(E-E_\mathup{r})²$ als konstant angesehen werden. Daraus folgt, dass $\sigma\propto \frac{1}{\sqrt{E}}\propto\frac{1}{v}$ ist. Langsame Neutronen befinden sich also für längere Zeit in der Einwirkungssphäre des Kerns als schnelle Neutronen.
+
+\subsubsection{Niederenergetische Neutronen}
+In diesem Falle werden die Neutronen aus der Reaktion von Beriullium mit $\alpha$-Teilchen gewonnen, als Nebenprodukt entsteht Kohlenstoff. Das $\alpha$-Teilchen stammt aus dem Zerfall von Radon.
+\ce{^9_4 Be + ^4_2 He -> ^12_9 C + ^1_0 n}
+Die Neutronen besitzen ein kontinuierliches Spektrum, welches bis $13,7\,\si\mega \mathup{e}\si\volt$ reicht. Die Abbremsung wird durch Materieschichten erreicht, bei der durch elastische Stöße Energie der Neutronen abgegeben wird. Ähneln sich die Stoßpartner ist die Bremsung am effektivsten, deswegen wird Parrafin benutzt. Die Neutronen werden abgebremst bis $E_\mathup{n}\approx 0,025\,\text{e}\si\volt$ bei $T=290\,\si\kelvin$ beträg -- auch thermische Neutronen genannt.
+\subsubsection{Zerfall instabiler Isotope}
+Die erzeugten instabilen Kerne gelangen durch $\beta^-$-Zerfall in einen stabilen Zustand.
+
+Es werden Indium und Rhodium untersucht.
+Für den Zerfallsprozess bei Indium gilt
+\ce{^{115}_{59}In + ^{1}_0n -> ^{116}_{50}Sn + \beta^- + \bar{\nu_\mathup{e}}}
+Unter anderem wird in diesem Versuch die Halbwertszeit von \ce{^103 Rh} untersucht. Wird dieses Nuklid von einem Neutron getroffen besteht die Möglichkeit, dass folgende Reaktionen ablaufen:
+\begin{align}
+\ce{^{103}_{45}Rh + ^{1}_0n -> ^{104i}_{45}Rh -> ^{104}_{45}Rh + \gamma -> ^{104}_{46}Pd + \beta^- + \bar{\nu_\mathup{e}}}  &\quad 10\% \\
+\ce{^{103}_{45} Rh + ^1_0 n -> ^{104}_{45} Rh-> ^{104}_{46} Pd + \beta^- + \bar{\nu_\mathup{e}}}&\quad 90\%.
+\end{align}
+Rhodium erfährt nach anregung also zwei verschiedene Zerfallsprozesse. Dabei meint \ce{^{104i}_{45}Rh} den isomeren Kern, der durch eine andere Anordnung der Nuklide eine andere Halbwerrtszeit und Energie besitzt.
+Das Zerfallsgesetz beim $\beta^-$-Zerfall ist 
+\begin{equation}
+N(t)=N_0e^{-\lambda t}.
+\label{eq:zerfallsgesetz}
+\end{equation}
+Aus 
+\begin{equation}
+\frac{1}{2}N(t)=N_0e^{-\lambda T}
+\end{equation}
+kann die Halbwertszeit $T$ zu
+\begin{equation}
+T=\frac{\ln{2}}{\lambda}
+\end{equation}
+bestimmt werden.
+Einfacher ist es über das Zeitintervall $\Delta{t}$. Aus
+\begin{equation}
+N_\mathup{\Delta{t}}=N(t)-N(t+\Delta{t})
+\end{equation}
+erfolgt mit Gleichung \eqref{eq:zerfallsgesetz} für die Anzahl der zerfallenen Lerne
+\begin{equation}
+N_\mathup{\Delta{t}}=N_0\mathup{e}^{-\lambda t}-N_0\mathup{e}^{-\lambda(t+\Delta{t})}.
+\end{equation}
+Umformungen ergeben
+\begin{equation}
+\ln{(N_\mathup{\Delta{t}})}=\underbrace{\ln{(N_0(1-\mathup{e}^{-\lambda \Delta{t}}))}}_{\text{a}}-\lambda t
+\end{equation}
+mit dem konstanten Term $a$.

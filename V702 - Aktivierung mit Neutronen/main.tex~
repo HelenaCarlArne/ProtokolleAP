@@ -1,0 +1,21 @@
+\input{../Allgemein/header.tex}
+\subject{Anfängerpraktikum V704}
+\title{Absorption von \texorpdfstring{$\gamma$}{Gamma}- und \texorpdfstring{$\beta$}{Beta}-Strahlung }
+\date{
+  Durchführung: 02.Juni 2015
+  \hspace{3em}
+  Abgabe: 09. Juni 2015
+}
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\input{content/theorie.tex}
+\input{content/durchfuehrung.tex}
+\input{content/auswertung.tex}
+\input{content/diskussion.tex}
+\nocite{skript}
+\printbibliography
+\end{document}
