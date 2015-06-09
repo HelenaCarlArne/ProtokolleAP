@@ -111,7 +111,7 @@ Hierzu dienen die Atomkerne des Absorbermaterials, in  deren Coulomb-Feldern  si
 \end{itemize}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.5\textwidth]{Bilder/germanium.png}
+	\includegraphics[width=0.8\textwidth]{Bilder/germanium.png}
 	\caption{Eintrittswahrscheinlichkeit der verschiedenen Wechselwirkungsprozesse von \texorpdfstring{$\gamma$}{Gamma}-Strahlung mit Germanium.\cite{skript}}
 	\label{fig:Germanium}
 \end{figure}
@@ -187,10 +187,15 @@ Bei der Benutzung von Amplituden-sensitiven Messgeräten ergibt sich, dass ab ei
 	\caption{Strahlungsintensität in Abhängigkeit von der Massenbelegung $R$ und Bestimmung der maximalen Reichweite.\cite{skript}}
 	\label{fig:messkurve}
 \end{figure}
-In Abbildung \ref{fig:messkurve} ist die messbare Intensität gegen die Massenbelegung $R$ -- als Maße der Dicke mit $R=\rho D$ -- erkennbar.
+In Abbildung \ref{fig:messkurve} ist die messbare Intensität gegen die Massenbelegung $R$ -- als Maß der Dicke mit 
+\begin{equation}
+R=\rho D
+\label{eq:massenbelegung}
+\end{equation}
+erkennbar.
 Mithilfe einer solchen Kurve kann die Reichweite von $\beta^-$-Strahlung bestimmt und damit die Energie abgeschätzt werden.
 Es gilt empirisch
 \begin{equation}
-	E_\text{max}=1.92\sqrt{R_\text{max}^2+0.22R_\text{max}}\;[\si{\mega\electronvolt}]
+	E_\text{max}=1.92\sqrt{R_\text{max}^2+0,22R_\text{max}}\;[\si{\mega\electronvolt}]
 \label{eq:e_max}
 \end{equation}
