@@ -141,7 +141,7 @@ Um die Ergebnisse der Untersuchung von Materie mit $\gamma$-Strahlung bewerten z
 \end{table}
 Mit Gleichung \eqref{eq:sigma_c} ergeben sich für die Wirkungsquerschnitte
 \begin{equation}
-\sigma_\mathup{C,Pb}=\sigma_\mathup{C,Fe}=2,57\cdot10^{-29}
+\sigma_\mathup{C,Pb}=\sigma_\mathup{C,Fe}=2,57\cdot10^{-5}\,\text{barn}
 \end{equation}
 und daraus resultierend die Absorptionskoeffizienten
 \begin{equation}
@@ -201,5 +201,3 @@ Nach Gleichung \eqref{eq:e_max} kann daraus mit $R_\mathup{max}$ die maximale En
 \begin{align}
 D=(29\pm2)\,\si\meter \quad\text{und}\quad E_\mathup{max}=(0,30\pm0,07)\,\mathup{e}\si\volt
 \end{align}
-
-
