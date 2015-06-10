@@ -1,13 +1,14 @@
 all: Abgabe.pdf
 	
-Abgabe.pdf: *.tex Bilder/* Tabellen/* | build
-	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error Abgabe.tex
-	biber build/Abgabe.bcf
-	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error Abgabe.tex
-	lualatex --output-directory=build --interaction=nonstopmode --halt-on-error Abgabe.tex
-	mv build/Abgabe.pdf Abgabe.pdf
+Abgabe.pdf: Bilder/* Tabellen/* content/*.tex ../Allgemein/header.tex main.tex | build
+	TEXINPUTS=build:.: lualatex --output-directory=build --halt-on-error main.tex
+	mv build/main.pdf Abgabe.pdf
+	BIBINPUTS=build:. biber build/main.bcf
+	TEXINPUTS=build:.: lualatex --output-directory=build --halt-on-error main.tex
+	TEXINPUTS=build:.: lualatex --output-directory=build --halt-on-error main.tex
+	mv build/main.pdf Abgabe.pdf
 build:
 	mkdir -p build
 
 clean:
-	rm -rf build
+	rm -rf build/main.*
