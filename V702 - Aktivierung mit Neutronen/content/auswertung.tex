@@ -19,7 +19,7 @@ Die angegeben Werte werden auf die erste signifikante Stelle des Fehlers gerunde
 
 \subsection{Bestimmung der Hintergrundstrahlung und statistische Betrachtung}
 \label{sec:Auswertung_hintergrund}
-Die statische Verteilung der Zerfälle sowie die natürlich auftretende Strahlung nehmen Einfluss auf die Zuverlässigkeit der Messwerte.
+Die statistische Verteilung der Zerfälle sowie die natürlich auftretende Strahlung nehmen Einfluss auf die Zuverlässigkeit der Messwerte.
 Um genaue statistische Aussage treffen zu können, werden die im Zeitintervall $\mathup\Delta t$ detektierten Zerfälle $\mathup\Delta N$ gemäß
 \begin{equation}
 	n=\frac{\mathup\Delta N}{\mathup\Delta t}
@@ -59,8 +59,8 @@ das Herausrechnen der Hintergrundstrahlung bei Messwert $N_\text{Messung}$, welc
 
 \subsection{Messung von Indium}
 \label{sec:Auswertung_indium}
-Bei der Untersuchung von Indium wird in $\mathup\Delta t=\SI{220}{\second}$-Intervallen die Anzahl der detektierten Zerfälle aufgenommen. 
-Nach der Messwertaufnahme am Ende eines Zeitintervalls wird der Zähler auf Null zurückgesetzt und eine weitere MEssung gestartet, sodass kummuliert eine Stunde gemessen wird.
+Bei der Untersuchung von Indium wird in $\SI{220}{\second}$-Intervallen die Anzahl der detektierten Zerfälle aufgenommen. 
+Nach der Messwertaufnahme am Ende eines Zeitintervalls wird der Zähler auf Null zurückgesetzt und solange eine weitere Messung gestartet, bis kummuliert eine Stunde gemessen wurde.
 In Tabelle \ref{tab:indium} sind die Messwerte $N_\text{Messung}$, deren korrigierte Werte $N$ und der Messzeitpunkt $t$ abgebildet.
 \begin{table}[htp]
 	\centering
@@ -92,23 +92,24 @@ In Tabelle \ref{tab:indium} sind die Messwerte $N_\text{Messung}$, deren korrigi
 \end{table}
 \begin{figure}[p]
     \centering
-    \includegraphics[height=0.5\textheight]{Bilder/indium.pdf}
+    \includegraphics[width=0.8\textwidth]{Bilder/indium.pdf}
     \caption{Korrigierte und logarithmierte Anzahl der Zerfälle für Indium aufgetragen gegen die Zeit.}
     \label{fig:indium}
 \end{figure}
 \begin{figure}[p]
     \centering
-    \includegraphics[height=0.5\textheight]{Bilder/rhodium.pdf}
+    \includegraphics[width=0.8\textwidth]{Bilder/rhodium.pdf}
     \caption{Korrigierte und logarithmierte Anzahl der Zerfälle für Rhodium aufgetragen gegen die Zeit.}
     \label{fig:rhodium}
 \end{figure}
 
 In Abbildung \ref{fig:indium} sind die Zerfälle $N$ pro Zeitintervall gegen die fortschreitende Zeit aufgetragen, um Aussage über den Zerfallsprozess treffen zu können.
-Die Messwerte sind gemäß der Überlegung im vorangegangenen Abschnitt logarithmiert, die Skaleneinteilung verbleibt linear.
+Die Messwerte sind gemäß der Überlegung im  Abschnitt \ref{sec:zerfall} logarithmiert, die Skaleneinteilung verbleibt linear.
 Die Regression ergibt 
 \begin{align}
 	m &=\SI{-0.000232(7)}{}\\
 	b &=\SI{7.67(1)}{}\\
+	\intertext{und mit den Gleichungen \eqref{eq:halbwertszeit} und \eqref{eq:startwert}}\\
 	T_{\sfrac{1}{2}}&= \SI{2980(90)}{\second}\\
 	N_0&=\SI{38000(1000)}{},
 \end{align}
@@ -120,7 +121,7 @@ in Tabelle \ref{tab:rhodium} werden die Messwerte $N_\text{Messung}$, deren korr
 \begin{table}[htp]
 	\centering
 		\begin{tabular}{S[table-format=2.0]
-                        S[Table~\ref{tab:}-format=3.0]
+                        S[table-format=3.0]
                         S}
 			\toprule
 			{$t\,\text{in}\,\si{\second}$} & {$N_\text{Messung}$} & {$N$}\\
@@ -176,23 +177,26 @@ Anders als Indium wird bei Rhodium die Überlagerung zweier Zerfälle angenommen
 Mit der weiteren Annahme, dass die beiden Zerfälle unterschiedliche Halbwertszeiten haben und 
 dass das kurzlebige Isotop deutlich schneller zerfällt als das langlebige Isotop, werden die Messwerte in zwei Gruppen aufgespalten.
 In Abbildung \ref{fig:rhodium} sind die Messwerte aufgetragen und mit Farben ihrer Gruppe zugeordnet.
-Es wird die zweite Gruppe, im Diagramm als \emph{2. Teil Rhodium} bezeichnet, mit dem langlebigen Rhodium identifiziert.
-Diese zweite Gruppe wird durch Vergleich der momentanen Steigung im Graph gefunden, die Elemente der zweiten Gruppe teilen eine gemeinsame Steigung.
-Die Regression dieser Werte ergibt
+Es wird die zweite Gruppe mit dem langlebigen Rhodium identifiziert.
+Diese Gruppe wird durch Vergleich der momentanen Steigung im Graph gefunden, die Elemente teilen eine gemeinsame Steigung.
+Die lineare Regression dieser Werte ergibt 
 \begin{align}
 	m &=\SI{-0.0018(4)}{}\\
 	b &=\SI{3.8(2)}{}\\
+	\intertext{und mit den Gleichungen \eqref{eq:halbwertszeit} und \eqref{eq:startwert}}\\
 	T_{\sfrac{1}{2}}&= \SI{380(80)}{\second}\\
-	N_0&=\SI{1300(400)}{},
+	N_0&=\SI{120(30)}{}.
 	\label{qu:rhodium1}
 \end{align}
 
 Mit dem bekannten Zerfallverhalten aus der vorangegangen Regression kann das Zerfallverhalten des kurzlebigen Rhodiums bestimmt werden.
 Die Regressionsparameter $m,b$ sind linear, der erste Teil des Graphen wird als Überlagerung beider Zerfälle angesehen.
-Die Regression des ersten Teiles nach Abzug der Regressionsparameter von \eqref{qu:rhodium1} ergibt
+Die Regression des ersten Teiles unter Berücksichtigung der Regressionsparameter von \eqref{qu:rhodium1} ergibt
 \begin{align}
-	m &=\SI{-0.0099(4)}{}\\
-	b &=\SI{6.38(5)}{}\\
-	T_{\sfrac{1}{2}}&= \SI{85(6)}{\second}\\
-	N_0&=\SI{90(20)}{}.
+	m &=\SI{-0.0100(4)}{}\\
+	b &=\SI{2.6(2)}{}\\
+	\intertext{also}\\
+	\lambda &=\SI{0.0118(6)}{}\\
+	T_{\sfrac{1}{2}}&= \SI{59(3)}{\second}\\
+	N_0&=\SI{2.8(6)e04}{}.
 \end{align}
