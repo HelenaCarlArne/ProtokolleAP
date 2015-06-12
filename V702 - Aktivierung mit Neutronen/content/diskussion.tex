@@ -1,3 +1,37 @@
 \section{Diskussion}
 \label{sec:Diskussion}
+Die Ergebnisse aus Abschnitt \ref{sec:Auswertung} sowie die Literaturangabe und die Abweichung zu selbigen sind in Tabelle~\ref{tab:ergebnisse} aufgeführt.
+\begin{table}[htp]
+	\begin{center}
+	\caption{Ergebnisse und Abweichung von den Literaturwerten.\cite{pso}}
+	\label{tab:ergebnisse}
+		\begin{tabular}{l
+                        S[table-format=4.0(3)]
+                        S[table-format=1.5(6)]
+                        S[table-format=4.0]
+                        S[table-format=1.7]
+                        S[table-format=2.1]
+                        S[table-format=2.1]}
+			\toprule
+			& {$T_{\sfrac{1}{2}}[\si{\second}]$}
+            & {$\lambda\left[\si{\frac{1}{\second}}\right]$}
+            & {$T_{\sfrac{1}{2},\text{lit}}[\si{\second}]$}
+            & {$\lambda_{\text{lit}}\left[\si{\frac{1}{\second}}\right]$}
+            & {$\mathup\Delta T_{\sfrac{1}{2}}[\si{\percent}]$}
+            & {$\mathup\Delta\lambda[\si{\percent}]$} \\
+			\midrule
+			$\ce{^{116}In}$  & 2980(90) & 0.000232(7) 	& 3257 	& 0.0002128 &  4.4 &  6   \\
+			$\ce{^{104}Rh}$  &  380(80)  & 0.0018(4) 	& 260  	& 0.002666  &  7.7 &  8.8 \\
+			$\ce{^{104i}Rh}$ &   90(20)   & 0.0100(4) 	& 42.3 	& 0.01639   & 25.3 & 20.7 \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+\end{table}
+Es zeigen sich hierbei für Indium und das langlebigere Rhodium-Isotop mit relativen Fehlern im Bereich von unter $\SI{10}{\percent}$ sehr genaue Ergebnisse. 
+Für das kurzlebigere Rodium-Isotop ergeben sich hingegen Fehler in der Größenordnung von $\SI{20}{\percent}$. 
+Allerdings liegen die untersuchten Zeiten auch in einem deutlich kürzeren Bereich, 
+sodass die systematischen Fehler eine gewichtigere Rolle spielen.
 
+Grund für die Abweichungen können Fehler in der Bestimmung der Nullstrahlung $N_{\mathup{u}}$ sein, da diese wegen der endlichen Messzeit nicht exakt bestimmt werden kann. Des Weiteren treten bei dem radioaktiven Zerfall natürliche Streuungen der Zerfälle auf, welche der quantenmechanischen Natur desselben geschuldet sind. 
+
+Bei der Aktivierung der Elemente tritt außerdem ein systematischer Fehler durch den Aufbau des Versuchs auf. Der Zeitverzug zwischen Aktivierung und Einführen der Probe in die Messapparatur sorgt für eine verzögerte Messung der Zerfälle, sodass hier durch Schwankungen dieser Verzögerung verschiedene Startpunkte innerhalb der Zerfallskurve entstehen.

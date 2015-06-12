@@ -1,6 +1,6 @@
+\newpage
 \section{Auswertung}
 \label{sec:Auswertung}
-
 Alle in der Auswertung benutzten Mittelwerte werden mithilfe der Gleichung
 \begin{equation}
 \tilde{x}=\frac{1}{n}\sum_{i=1}^n {x_i}
@@ -38,25 +38,29 @@ Für diese gilt im Folgenden
 \end{equation}
 das Herausrechnen der Hintergrundstrahlung bei Messwert $N_\text{Messung}$, welche im Zeitintervall $\mathup\Delta t$ aufgenommen wurde, folgt der Formel
 \begin{equation}
-	N=N_{\text{Messung}}-N_0\cdot\mathup\Delta t.
+	N=N_{\text{Messung}}-n_0\cdot\mathup\Delta t.
 \end{equation}
 
-\subsection{Zerfallsgesetz}
-Der radioaktiver Zerfall wird durch exponentiellen Abfall beschrieben.
-Hierfür gilt in guter Näherung
-\begin{equation}
-	N(t)=N_0 \exp(-\lambda t),
-	\label{eq:Zerfallsgesetz}
-\end{equation}
-welches beim Auftrag mit halblogarithmischer Skalierung eine lineare Regression,
-\begin{equation}
-	\ln(N(t))=\ln(N_0(\exp(-\lambda t))=\ln(N_0)+\ln(\exp(-\lambda t)) =\underbrace{\ln(N_0)}_{A_\text{Reg}}-\underbrace{\lambda}_{m_\text{Reg}} \cdot t,
-	\label{eq:Zerfallsgesetz_linear}
-\end{equation}
-zulässt.
-Charakteristische Größe bei der Betrachtung von Zerfällen ist die Halbwertzeit \ref{sec:Theorie}, Gleichung \eqref{eq:halbwertszeit}, die mit der Zerfallskonstante $\lambda$ in Verbindung steht.
+
+%\subsection{Zerfallsgesetz}
+%Der radioaktiver Zerfall wird durch exponentiellen Abfall beschrieben.
+%Hierfür gilt in guter Näherung
+%\begin{equation}
+%	N(t)=N_0 \exp(-\lambda t),
+%	\label{eq:Zerfallsgesetz}
+%\end{equation}
+%welches beim Auftrag mit halblogarithmischer Skalierung eine lineare Regression,
+%\begin{equation}
+%	\ln(N(t))=\ln(N_0(\exp(-\lambda t))=\ln(N_0)+\ln(\exp(-\lambda t)) =\underbrace{\ln(N_0)}_{A_\text{Reg}}-\underbrace{\lambda}_{m_\text{Reg}} \cdot t,
+%	\label{eq:Zerfallsgesetz_linear}
+%\end{equation}
+%zulässt.
+%Charakteristische Größe bei der Betrachtung von Zerfällen ist die Halbwertzeit \ref{sec:Theorie}, Gleichung \eqref{eq:halbwertszeit}, die mit der Zerfallskonstante $\lambda$ in Verbindung steht.
 
 \subsection{Messung von Indium}
+\label{sec:Auswertung_indium}
+Bei der Untersuchung von Indium wird in $\mathup\Delta t=\SI{220}{\second}$-Intervallen die Anzahl der detektierten Zerfälle aufgenommen. 
+Nach der Messwertaufnahme am Ende eines Zeitintervalls wird der Zähler auf Null zurückgesetzt und eine weitere MEssung gestartet, sodass kummuliert eine Stunde gemessen wird.
 In Tabelle \ref{tab:indium} sind die Messwerte $N_\text{Messung}$, deren korrigierte Werte $N$ und der Messzeitpunkt $t$ abgebildet.
 \begin{table}[htp]
 	\centering
@@ -86,23 +90,37 @@ In Tabelle \ref{tab:indium} sind die Messwerte $N_\text{Messung}$, deren korrigi
 	\caption{Messwerte: Zerfälle bei der Messung von Indium beim Zeitintervall von \SI{250}{\second}.}
 	\label{tab:indium}
 \end{table}
-\begin{figure}[h]
+\begin{figure}[p]
     \centering
-    \includegraphics[width=\textwidth]{Bilder/indium.pdf}
+    \includegraphics[height=0.5\textheight]{Bilder/indium.pdf}
     \caption{Korrigierte und logarithmierte Anzahl der Zerfälle für Indium aufgetragen gegen die Zeit.}
     \label{fig:indium}
 \end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[height=0.5\textheight]{Bilder/rhodium.pdf}
+    \caption{Korrigierte und logarithmierte Anzahl der Zerfälle für Rhodium aufgetragen gegen die Zeit.}
+    \label{fig:rhodium}
+\end{figure}
 
-In Abbildung \ref{fig:indium} sind die Zerfälle $N$ pro Zeit gegen die fortschreitende Zeit aufgetragen.
-Die Messwerte sind gemäß der Überlegung im vorangegangenen Abschnitt logarithmiert, die Skaleneinteilung verbleibt daher linear.
-
+In Abbildung \ref{fig:indium} sind die Zerfälle $N$ pro Zeitintervall gegen die fortschreitende Zeit aufgetragen, um Aussage über den Zerfallsprozess treffen zu können.
+Die Messwerte sind gemäß der Überlegung im vorangegangenen Abschnitt logarithmiert, die Skaleneinteilung verbleibt linear.
+Die Regression ergibt 
+\begin{align}
+	m &=\SI{-0.000232(7)}{}\\
+	b &=\SI{7.67(1)}{}\\
+	T_{\sfrac{1}{2}}&= \SI{2980(90)}{\second}\\
+	N_0&=\SI{38000(1000)}{},
+\end{align}
 
 \subsection{Messung von Rhodium}
-In Tabelle \ref{tab:rhodium} sind die Messwerte $N_\text{Messung}$, deren korrigierte Werte $N$ und der Messzeitpunkt $t$ abgebildet.
+Analog zu Abschnitt \ref{sec:Auswertung_indium} wird die Messung von Rhodium durchgeführt.
+Das Zeitintervall $\mathup\Delta t$ beträgt $\SI{20}{\second}$,
+in Tabelle \ref{tab:rhodium} werden die Messwerte $N_\text{Messung}$, deren korrigierte Werte $N$ und der Messzeitpunkt $t$ gezeigt.
 \begin{table}[htp]
 	\centering
 		\begin{tabular}{S[table-format=2.0]
-                        S[table-format=3.0]
+                        S[Table~\ref{tab:}-format=3.0]
                         S}
 			\toprule
 			{$t\,\text{in}\,\si{\second}$} & {$N_\text{Messung}$} & {$N$}\\
@@ -152,9 +170,29 @@ In Tabelle \ref{tab:rhodium} sind die Messwerte $N_\text{Messung}$, deren korrig
 	\caption{Messwerte: Zerfälle bei der Messung von Rhodium beim Zeitintervall von \SI{20}{\second}.}
 	\label{tab:rhodium}
 \end{table}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{Bilder/rhodium.pdf}
-    \caption{Korrigierte und logarithmierte Anzahl der Zerfälle für Rhodium aufgetragen gegen die Zeit.}
-    \label{fig:rhodium}
-\end{figure}
+In Abbildung \ref{fig:rhodium} sind die Zerfälle $N$ pro Zeit gegen die fortschreitende Zeit aufgetragen.
+
+Anders als Indium wird bei Rhodium die Überlagerung zweier Zerfälle angenommen.
+Mit der weiteren Annahme, dass die beiden Zerfälle unterschiedliche Halbwertszeiten haben und 
+dass das kurzlebige Isotop deutlich schneller zerfällt als das langlebige Isotop, werden die Messwerte in zwei Gruppen aufgespalten.
+In Abbildung \ref{fig:rhodium} sind die Messwerte aufgetragen und mit Farben ihrer Gruppe zugeordnet.
+Es wird die zweite Gruppe, im Diagramm als \emph{2. Teil Rhodium} bezeichnet, mit dem langlebigen Rhodium identifiziert.
+Diese zweite Gruppe wird durch Vergleich der momentanen Steigung im Graph gefunden, die Elemente der zweiten Gruppe teilen eine gemeinsame Steigung.
+Die Regression dieser Werte ergibt
+\begin{align}
+	m &=\SI{-0.0018(4)}{}\\
+	b &=\SI{3.8(2)}{}\\
+	T_{\sfrac{1}{2}}&= \SI{380(80)}{\second}\\
+	N_0&=\SI{1300(400)}{},
+	\label{qu:rhodium1}
+\end{align}
+
+Mit dem bekannten Zerfallverhalten aus der vorangegangen Regression kann das Zerfallverhalten des kurzlebigen Rhodiums bestimmt werden.
+Die Regressionsparameter $m,b$ sind linear, der erste Teil des Graphen wird als Überlagerung beider Zerfälle angesehen.
+Die Regression des ersten Teiles nach Abzug der Regressionsparameter von \eqref{qu:rhodium1} ergibt
+\begin{align}
+	m &=\SI{-0.0099(4)}{}\\
+	b &=\SI{6.38(5)}{}\\
+	T_{\sfrac{1}{2}}&= \SI{85(6)}{\second}\\
+	N_0&=\SI{90(20)}{}.
+\end{align}
