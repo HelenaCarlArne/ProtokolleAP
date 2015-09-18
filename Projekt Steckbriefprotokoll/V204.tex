@@ -1,0 +1,127 @@
+\input{build/myHeader.tex}
+\input{build/myCommands.tex}
+\input{build/myEnvironments.tex}
+    
+\begin{document}
+
+    \begin{Versuch}{V204: Wärmeleitung in Metallen}
+    	\begin{Stichworte}
+    		Wärmeleitungs- und Diffusionsgleichung,
+    		Temperaturausgleich,
+    		Wärmekapazität,
+    		statische und dynamische Messung.
+
+    		Wärmeleitfähigkeit,
+    		Temperaturleitfähigkeit,
+    		der Unteschied der beiden Leitfähigkeiten.
+    	\end{Stichworte}
+
+        \begin{Zielsetzung}
+            Eine der Wärmetransportmöglichkeiten, die Wärmeleitung, wird untersucht.
+            Hierzu werden verschiedene Metalle verschiedener Abmessung erhitzt und die Temperaturentwicklung gemessen.
+        \end{Zielsetzung}
+
+        \begin{Theorie}
+            Ist in einem abgeschlossenen System ein Temperaturunterschied vorhanden, 
+            findet Wärmetransport statt, 
+            um ein Temperaturgleichgewicht zu erreichen.
+
+            \begin{center}
+            \begin{description}
+            	\item [Konvektion] Fluide verschiedener Temperaturen vermischen mitunter chaotisch, Videostichwort: Konvektionsströme.
+            	\item [Wärmestrahlung] Abgabe von Wärme via em-Wellen, nicht an Materie gebunden.
+            	\item [Wärmeleitung]
+            \end{description}
+            \end{center}
+            Beim Übergang der Wärmeenergie werden quantisierte Schwingungen innerhalb der Gitterstrukturen des Metalls
+            \begin{equation}
+				\label{waermemenge}
+				\mathup{d}Q=-\kappa A\frac{\partial{T}}{\partial{x}}\mathup{d}t
+			\end{equation}
+			übertragen, die Materialkonstante $\kappa$ ist die Wärmeleitfähigkeit.
+			Mithilfe der (geforderten) Kontinuität wird die Wärmeleitungsgleichung 
+			\begin{equation}
+				\label{waermeleitungsgleichung}
+				\frac{\partial{T}}{\partial{t}} =  \underbrace{\frac{\kappa}{c\rho}}_{\sigma_\text{T}}\frac{\partial^2{T}}{\partial{x^2}}
+			\end{equation}
+			formuliert, in welcher die Konstanten
+			als Temperaturleitfähigkeit $\sigma_\mathup{T}$ zusammengefasst werden.
+			$c$ beschreibt dabei allerdings die spezifische Wärme(-kapazität), 
+			die benötigte Energiemenge, 
+			um $\SI{1}{\kilo\gram}$ um $\SI{1}{\kelvin}$ zu erwärmen.
+			Werden Körper durch periodischen Temperaturwechsel geheizt und gekühlt, breiten sich in Innern Temperaturwellen der Form
+			\begin{equation}
+				\label{temperaturwelle}
+				T(x,t)= \underbrace{\vphantom{\underbrace{\biggl(\biggr)}_{k}}T_\mathup{max}}_{\text{Amplitude}} \underbrace{\exp{\Biggl(-\underbrace{\sqrt{\frac{\omega \rho c}{2\kappa}}}_{k}x\Biggr)}}_{\text{Dämpfung}} \underbrace{\cos{\Biggl(\omega t - \underbrace{\sqrt{\frac{\omega \rho c}{2\kappa}}}_{k}x\Biggr)}}_{\text{Schwingung}}
+			\end{equation}
+			aus.
+			Dies ist eine spezielle Lösung der Wärmeleitungsgleichung \eqref{waermeleitungsgleichung}.
+
+			Die Dispersionsgleichung lautet
+			\begin{equation}
+				\label{dispersion}
+				v=\frac{\omega}{k}=\frac{\omega}{\sqrt{\frac{\omega\rho c}{2\kappa}}}=\sqrt{\frac{2\kappa\omega}{c\rho}}.
+			\end{equation}
+			Über weitere Formeln wird die Gleichung
+			\begin{equation}
+				\label{waermeleitfaehigkeit}
+				\kappa=\frac{c\rho(\upD{x})^2}{2\upD{t}\ln\left({\frac{A_\text{nah}}{A_\text{fern}}}\right)}
+			\end{equation}
+			gefunden, die die Wärmeleitfähigkeit mit Messgrößen knüpft.
+			$\frac{A_\text{nah}}{A_\text{fern}}$ ist das Verhältnis der Wellenamplituden, welche an zwei Orten $x_1$ und $x_2$ im Abstand
+			$\upD{x}=x_2-x_1$ gemessen werden und den zeitlichen Gangunterschied $\upD{t}$ aufweisen. 
+        \end{Theorie}
+        
+        \begin{Durchführung}
+            Thermoelemente und Peltier-Elemente sind Gegenspieler.
+            Mithilfe eines Peltier-Elementes 
+            (zwei Halbleiter vers. Energieniveaus)
+            kann geheizt und gekühlt werden, 
+            indem Wärme per Peltier-Effekt transportiert wird.
+            Die Heizwirkung erfolgt \emph{nicht} durch die thermische Wirkung von Strom.
+            Thermoelemente geben eine Spannungsdifferenz aus, 
+            wenn zwischen den Temperaturfühlern eine Temperaturdifferenz besteht.
+            Die Spannungsdifferenz kann durch Eichung/Kalibration in eine Temperatur umgerechnet werden.
+            Alle Messungen startet bei abgekühlten Stäben.
+
+            Bei statischer Messung werden die benutzten Stäbe aus vers. Metallen durchgehend geheizt und die Temperaturentwicklung entlang des Stabes untersucht.
+            Bei dynamischer Messung werden im 
+            $\SI{40}{\second}$-Wechsel (Kurzintervall-Messung) oder im
+            $\SI{200}{\second}$-Wechsel (Langintervall-Messung) 
+            die Stäbe gekühlt und geheizt.
+        \end{Durchführung}        
+       
+        \begin{Auswertung}
+        	Statische Messung:
+        	\begin{itemize}
+        		\item Der allgemeine Verlauf der Temperatur ist unabhängig von dem Material: begrenztes exp. Wachstum.
+        		\item Durch schmale Stäbe wird weniger Wärme transporiert als durch breite.
+        		\item Je höher die Leitfähigkeit, desto schneller erfolgt der Wärmeaustausch
+        	\end{itemize}
+        	Dynamische Messung:\\
+        	Der Temperaturverlauf besteht aus Schwingterm und exponentiellem Ansteigen: der Stab wärmt sich im Mittel während der Messung langsam auf.
+       		Nach Subtraktion der exponentiellen Steigung kann die globale Staberwärmung bestimmt und herausgerechnet werden.
+        	Dies ermöglicht eine präzise Bestimmung der Amplitude
+        	\begin{itemize}
+        		\item Die Temperaturamplitude wird innerhalb des Stabes gedämpft, die Frequenz bleibt gleich, es ist eine Phasendifferenz erkennbar.
+        		\item Die Amplitudendämpfung ist bei Edelstahl sehr stark, bei Alu sehr gering.
+        	\end{itemize}
+        \end{Auswertung}
+
+        \begin{Diskussion}
+        	\begin{itemize}
+        		\item Es ergeben sich Abweichungen im Rahmen einer brauchbaren Messung, Abweichung im Bereich von $10\%$. 
+        		\item Aluminium in der Auswahl der Metalle die größte und Edelstahl die geringste Wärmeleitfähigkeit.
+        		\item Literaturwerte\\
+        		Messing:\SI{120}{\watt\per\meter\per\kelvin} \quad Aluminium:\SI{236}{\watt\per\meter\per\kelvin}\quad Edelstahl:\SI{15}{\watt\per\meter\per\kelvin}
+        	\end{itemize}
+            \end{Diskussion}
+
+        \begin{Merke}
+        	Datenlogger sind doof.
+        \end{Merke}
+
+
+    \end{Versuch}
+    
+\end{document}

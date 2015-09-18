@@ -1,0 +1,119 @@
+\input{build/myHeader.tex}
+\input{build/myCommands.tex}
+\input{build/myEnvironments.tex}
+    
+\begin{document}
+
+    \begin{Versuch}{V103: Biegung elastischer Stäbe}
+    	\begin{Stichworte}
+    		Hooksches Gesetz (Federn und Allgemein), Tangential- und Normalkomponente der Spannung $\sigma$, neutrale Faser, Drehmoment, Flächenträgheitsmoment, innere Spannung oder Gegenspannung
+    	\end{Stichworte}
+
+      \begin{Zielsetzung}
+        Es werden die Kräfte kennengelernt, die beim Biegen von Stäben auftreten. Weiter werden Materialkonstanten eingeführt (hierzu weiterführend: Drehschwingungen)
+      \end{Zielsetzung}
+
+        \begin{Theorie}
+            Das Experiment liegt in zwei Varianten vor: 
+            einseitige und beidseitige Einspannung. 
+            Die Varianten sind ähnlich und lassen einen Vergleich bezüglich Handlichkeit und Experimentatorgeschick zu.
+
+            Das Hooke'sche Gesetz beschreibt in seiner allgemeinen Form 
+            (neben der Schulvariante von Federn)
+            die relative Längen- und Gestaltänderungen $\frac{\upD L}{L}$ von Proben, 
+            worauf kleine, nicht-brechende Kräfte wirken.
+            \begin{equation}
+            	\sigma = E\cdot\frac{\upD L}{L}
+            \end{equation}
+            Anstelle von Kräften auf Oberflächen wird von mech.
+            Spannung $\sigma$ gesprochen,
+            welches als Zugkraft pro Querschnittfläche definiert ist.
+            \begin{equation}
+            	\sigma=\frac {|\vec {F}|}{A}
+            \end{equation}
+            Druck ist ein Spezialfall dieser Spannung.
+            Spannung wird unterteilt in tangentialer (in Zugkraftrichtung) und normaler (senkrecht zur Zugkraftrichtung) Komponente.
+            Normalkräfte verjüngen oder erweiten Probendurchmesser, sie werden ab jetzt nicht weiter berücksichtigt.
+
+            Tangentiale Spannungen im Stab lassen sich veranschaulichen,
+            indem man sie als senkrechtstehende Kraft auf die Probenquerschnittfläche annimmt.
+            Einfach gekrümmte Stäbe besitzen eine neutrale Faser, 
+            die weder in Länge gestaucht oder gestreckt wird.
+            Nach den obigen Annahmen steht eine neutrale Faser nicht unter Spannung.
+            Die Krümmung eines Stabes rührt daher, dass wegen der Spannung der Stabanteil oberhalb der neutralen Faser gestreckt und der untere Teil gestaucht wird.
+
+            Es ist eine Materialeigenschaft von Stoffen,
+            verschieden auf biegende äußere Spannung zu reagieren,
+            haptisch sind manche leicht biegbar andere starr.
+            Diese Eigenschaft lässt sich verdeutlichen, 
+            indem die innere Spannung oder Gegenspannung betrachtet wird.
+            Ein unter Last biegende Stab erfährt von außen ein biegendes Moment.
+            Diesem wirkt die sich aufbauende innere Spannung des Stabes entgegen, sodass ein Kräftegleichgewicht entsteht und der Stab seine Krümmung nicht weiter erhöht.
+           \begin{equation}
+           	M_\text{außen}=\mkern-28mu\underbrace{F(L-x)}_{\begin{tabular}{c}\scriptsize äußeres Moment:\\ \scriptsize Kraft mal Hebelarm\end{tabular}}\mkern-28mu=\underbrace{\int\limits_{\text{Querschnitt}}\mkern-28mu\sigma \text{d}q}_{\begin{tabular}{c} \scriptsize innere Spannung,\\ \scriptsize Gegenspannung\end{tabular}}\mkern-16mu=M_\text{innen}
+           \end{equation}
+           Mit differentialgeometrischer Annährung $\frac{1}{R}=\frac{\text{d}^2 D(x)}{\text{d}x^2}$, wobei $R$ Krümmungsradius und $D(x)$ die Deformation bei $x$, also die Auslenkung von Ruhelage, ist, folgt nach zweifacher Integration und Anwenden der Randbedingungen
+           \begin{equation}
+           		D(x)=\frac{F}{2EI}(Lx^2-\frac{1}{3}x^3)\qquad\text{für}\qquad 0\le x\le L
+           		\label{def1}
+           \end{equation}
+           Darin ist 
+           \begin{equation}
+           	I= \mkern-28mu \int\limits_{\text{Querschnitt}}\mkern-28mu y^2 \text{d}q
+           \end{equation}
+           das sogenannte Flächenträgheitsmoment 
+           (wegen formaler Analogie zum Massenträgheitsmoment),
+           welches eine Stabform abhängige Konstante ist.
+           $y$ ist die Parametrisierung des Querschnitts; bei $y=0$ liegt die neutrale Faser, der Rand ist bei $y=r$ erreicht.
+
+           Bei beidseitiger Einspannung ändert sich die Randbedingung und man erhält
+           \begin{alignat}{3}
+           		D(x)&=\frac{F}{48EI}(3L^2x-4x^3)\qquad&&\text{für}\qquad 0\le x\le \frac{L}{2}\\
+           		D(x)&=\frac{F}{48EI}(4x^3-12Lx^2+9^2x-L^3)\qquad&&\text{für}\qquad \frac{L}{2}\le x\le L
+           		\label{def2}
+           \end{alignat}
+        \end{Theorie}
+        
+        \begin{Durchführung}
+            \begin{itemize}
+            \item Verschiedene Stäbe auswählen und Abmessung mehrfach bestimmen.
+            \item Stab in Vorrichtung einspannen, die die Deformation anhand einer auf Schiene gelagerten Messuhr bestimmen kann.
+            Schiene und unbelasteter Stab liegen parallel.
+            \item Gewicht an freies Stabende respektive Stabmitte anhängen und fixieren.
+            \item In gewählten Abständen $x$ Messungen der Deformation $D$ durchführen, Offset ist der unbelastete Stab.
+            \end{itemize}
+        \end{Durchführung}
+
+        \begin{Auswertung}
+	        \begin{itemize}
+	        	\item Es wird die Deformation gegen den Klammerausdruck in \eqref{def1} oder \eqref{def2} aufgetragen.
+	        	Durch diese Linearisierung wird die Steigung regrediert und mithilfe dieser den Elastizitätsmodul $E$ bestimmt.
+	        	\item Bei beidseitiger Einspannung reicht es konzeptionell aus, nur eine der Seiten vom Gewicht ausgehend zu messen.
+	        	Durch Messung beider Seiten ist die Messfehlersicherheit erhöht.
+	        	\item Das Flächenträgheitsmodul hängt nur von der Geometrie des Stabes ab und wird vor der Regression für die verwendeten Stäbe errechnet.
+	        	\item Der Elastizitätsmodul ist ein großer Wert:
+	        	Baustahl: $\SI{210}{\giga\pascal}$, Alu: $\SI{70}{\giga\pascal}$
+        	\end{itemize}
+        \end{Auswertung}
+        
+        \begin{Diskussion}
+	        \begin{description}
+	        	\item [Fehleranfälligkeit] Es konnten im Bereich von $5\%$ präzise gemessen werden.
+	        	\item [Verfahrenwahl] Einseitig ist vorteilhaft für die größeren und damit leichter zu bestimmenden Werte der Deformation.
+	        	Zweiseitig ist vorteilhaft für den zusätzlichen redundanten Datensatz (beide Seiten vom Gewicht).
+        	\end{description}
+        \end{Diskussion}
+
+        \begin{Merke}
+        	\begin{itemize}
+				\item Die (Normal-)spannung $\sigma$ sind Kräfte, die senkrecht zur Fläche wirken. 
+				Sie werden je nach Richtung Zugspannung (positives Vorzeichen) oder Druckspannung (negatives Vorzeichen) genannt. 
+				Druck ist also ein Spezialfall der Spannung.
+				\item Die tangentiale Spannungen $\tau$ werden als Schubspannungen bezeichnet. 
+				Sie wirken tangential zur Fläche, stellen also eine Belastung auf Scherung dar.
+				\item Bei mechanischen Experimenten mit Verklemmungen rechnen: abklopfen!
+        	\end{itemize}
+		\end{Merke}
+    \end{Versuch}
+    
+\end{document}

@@ -1,0 +1,134 @@
+\input{build/myHeader.tex}
+\input{build/myCommands.tex}
+\input{build/myEnvironments.tex}
+    
+\begin{document}
+
+    \begin{Versuch}{V704: Absorption von Gamma- und Betastrahlung}
+    
+	\begin{Zielsetzung}
+		Nachdem eine Vielzahl von Absorptionsmechanismen von Strahlung in der Theorie vorgestellt wurde, wird versucht, anhand der Durchdringtiefe von Gammastrahlung auf den Mechanismus zu schließen.
+		Für Betastrahlung wird untersucht, welche die maximale kinetische Energie ist und wie tief Betastrahlung eindringt.
+	\end{Zielsetzung}
+
+        \begin{Theorie}
+            \emph{Wirkungsquerschnitt} $\sigma$:\\
+            $\sigma$ ist eine Fläche bestimmter Größe, die dem Absorber spezifisch zugeordnet wird.
+			Dabei wird angenommen, dass der Absorber punktuell aus diesen Flächen $\sigma$ besteht
+			und nur an diesen Stellen zum Aufhalten der Strahlung in der Lage ist. 
+			Trifft in diesem Modell ein Photon oder ein Elektron auf eine dieser Flächen, wird es absorbiert; 
+			andernfalls durchdringt die Strahlung die Materie unbeeinflusst.
+
+			\emph{Absorptionsgesetz}:\\
+			Mithilfe des Wirkungsquerschnittes $\sigma$ wird eine Wahrscheinlichkeit formuliert, mit welcher ein Teilchen/Strahlung absorbiert wird.
+			$n$ ist die Anzahl der Absorper in einem kleinen Volumen.
+			Die Näherung dabei lautet, dass es sich um Materie geringer Dicke d$x$ handelt, 
+			\begin{equation}
+				\mathup{d}N=-N(x)  \underbrace{n \sigma \mathup{d}x}_{\text{W'keit}},
+				\label{eq:Absorptionsgesetz_Vorstufe}
+			\end{equation}
+			sodass auf die Gesamtdicke integriert werden kann.
+			Es ergibt sich
+			\begin{equation}
+				N(D)=N_0 \exp(-n \sigma D)=N_0 \exp(-\mu D)
+				\label{eq:Absorptionsgesetz}
+			\end{equation}
+			mit dem Absorptionskoeffizienten $\mu = n\sigma$
+
+			\emph{Spezifische Größen}:\\
+			Nach der spezifischen Dicke
+			\begin{equation}
+				D_{\sfrac{1}{2}}=\frac{\ln(2)}{\mu},
+			\end{equation}
+			halbiert sich im Schnitt die Intensität der Strahlung.
+			Die Anzahl $n$ der Absorber pro Volumeneinheit wird mit
+			\begin{equation}
+				n=\frac{zN_\text{L}}{V_\text{Mol}}=\frac{zN_\text{L}\rho}{M}
+			\end{equation}
+			abgeschätzt, wodurch 
+			\begin{equation}
+				\sigma=\frac{M\mu}{zN_\text{L}\rho}
+				\label{eq:Wirkungsquerschnitt}
+			\end{equation}
+			gilt.
+			Darin: $z$ die Ordnungszahl des Absorberatoms, $N_\text{L}$ die Loschmidtsche Zahl, $V_\text{Mol}$ das Molvolumen, $M$ das Molekulargewicht und $\rho$ Dichte.
+
+			\emph{Wechselwirkung von Gammastrahlung}:
+			\begin{itemize}
+				\item{innerer Photoeffekt an Elektronen}
+
+				Das gestoßene Elektron wird dem Atom herausgelöst und besitzt die kinetische Energie $E_e=h\nu-E_\text{B}$ mit der zu überwindenden Elektronen-Bindungsenergie $E_\text{B}$. 
+				Dies tritt bei typischen $\gamma$-Energien nur bei inneren Elektronen auf. 
+				Die entstehenden Lücken werden durch äußere Elektronen unter Emission von Röntgenstrahlung und Auger-Elektronen aufgefüllt.
+				\item{\emph{Compton-Effekt}}
+
+				Das Photon wird im Zuge des Compton-Effekts an einem freien Elektron oder Elektron in der äußeren Hülle gestreut und gibt seine Energie teilweise ab. 
+				Dies ruft eine Richtungs- und Impulsänderung hervor.
+				Mit einer komplizierten Formel für den Wirkungsquerschnitt $\sigma$ ergibt sich
+				\begin{equation}
+					\mu_\text{C}=n\sigma_\text{C}(\epsilon)=\frac{Z N_L \rho}{M}\sigma_\text{C}(\epsilon).
+				\label{eq:mu_c}
+				\end{equation}
+				\item{\emph{Paarerzeugung}}
+
+				Ist die Energie des $\gamma$-Quants sehr groß, kann es unter Erzeugung von Elektron und Positron zur Paarbildung kommen.
+				Forderungen: $E_\text{Gamma}\ge 2m_\text{Elektron,0}\cdot c^2$ und ein Teil des Impulses muss von einem Stoßpartner übernommen.
+				Hierzu dienen die Atomkerne des Absorbermaterials, in  deren Coulomb-Feldern  sich die  Teilchenpaare bilden.
+			\end{itemize}
+			In Reihenfolge treten bei ansteigender Gamma-Energie Photoeffekt, Compton-Effekt und Paarerzeugung auf.
+
+		\emph{Wechselwirkung von Betastrahlung}:
+		Kein geschlossenes Absorptionsgesetz,\eqref{eq:Absorptionsgesetz} gilt näherungsweise
+
+		\begin{itemize}
+			\item{\emph{Elastische Streuung am Atomkern:}}
+				Wesentliche Ablenkung, aber keine Abbremsung:
+				Durch mehrfache Ablenkung ist die Länge der Bahn deutlich größer als der ungehinderte, direkte Weg.
+				Das magnetische Moment der Elektronen wird nicht betrachtet.
+
+			\item{\emph{Inelastische Streuung an dem Atomkern}}
+
+				Bewegen sich geladene Teilchen im Coulomb-Feld von entgegengesetzt geladenen Teilchen, so werden sie beschleunigt, 
+				wobei Energie in Form von Strahlung abgegeben werden muss.
+
+			\item{\emph{Inelastische Streuung an den Elektronen des Absorbermaterials}}
+
+				Die inelastische Streuung an Elektronen führt (mehrfach) zur Anregung oder zur Ionisierung von Absorberatomen.
+				Bei geringer Energie, beispielsweise $E\approx\SI{150}{\kilo\electronvolt}$ bei Aluminium, ist aber damit zu rechnen, 
+				dass die $\beta^-$-Strahlung bereits ab einer Dicke von $\SI{0.15}{\milli\meter}$ vollständig abgebremst wird.
+		\end{itemize}
+		Die maximale Energie der Betastrahlung ist empirisch über die maximale Reichweite mit
+		\begin{equation}
+			E(D)=1.92\sqrt{\rho^2D^2+0.22\rho D} \quad\si{\mega\electronvolt}
+		\end{equation}
+        \end{Theorie}
+        
+        \begin{Durchführung}
+            Die Hintergrundstrahlung wird bestimmt.
+
+            \emph{Gamma:} Anschließend wird bei verschiedenen Blendenmaterialien die Anzahl der ankommenden Strahlungsteilchen pro Zeiteinheit ermittelt und davon Offset abgezogen.
+            Das Ergebnis wird durch halblogarithmischen Auftrag linearisiert und damit gemäß \eqref{eq:Absorptionsgesetz} $N_0$ und $\mu$ bestimmt.
+            Durch Vergleich mit den Theoriewerten kann auf den Gamma-Absorptionsmechanismus geschlossen werden.
+
+            \emph{Beta:} Die maximale Energie und Reichweite der Teilchen wird bestimmt, indem Aluminiumblenden verschiedener Dicke vor den Detektor gesetzt werden.
+
+        \end{Durchführung}        
+        
+        \begin{Auswertung}
+        	\emph{Gamma:} Wegen der geringen Energien ist Paarerzeugung grundsätzlich ausgeschlossen.\\
+        	Eisenblende: Da die Abweichung des Ergebnis von der Compton-Theoriewert hoch ist,
+        	kann der Compton-Effekt ausgeschlossen und Photo-Effekt als maßgeblicher Effekt erkannt werden.\\
+        	Bleiblende: Da die Abweichung des Ergebnis für Blei von der Compton-Theoriewert gering ist,
+        	kann der Photo-Effekt vernachlässigt werden.
+
+        	\emph{Beta:} Die Reichweite kann auf $\SI{2,9}{\centi\meter}$ abgeschätzt werden. 
+        \end{Auswertung}
+
+        \begin{Diskussion}
+        	Die Messungen werden präziser, je länger gemessen wird.
+        	Es kann bereits bei Messintervallen von $\SI{600}{\second}$ verlässliche Aussage über den Gamma-Absorptionsmechanismus sowie über die Beta-Reichweite und -Energie getroffen werden.
+        	Die verwendete Methode ist experimentell gut geeignet.
+        \end{Diskussion}
+    \end{Versuch}
+    
+\end{document}

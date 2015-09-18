@@ -1,0 +1,86 @@
+\input{build/myHeader.tex}
+\input{build/myCommands.tex}
+\input{build/myEnvironments.tex}
+    
+\begin{document}
+
+    \begin{Versuch}{V303: Lock In-Verstärker}
+	\begin{Stichworte}
+		Verstärker in der Messtechnik,
+		Filter aus Spulen und Kondensatoren	
+	\end{Stichworte}
+
+	\begin{Zielsetzung}
+		Die Funktionsweise des Lock In-Verstärkers - ein wichtiges Messinstrument von vergleichbarer Wichtigkeit wie ein Oszilloskop - verstehen und erklären.
+	\end{Zielsetzung}
+
+    \begin{Theorie}
+    	Der Lock In-Verstärker ist ein Messinstrument, mit welchem schwache Signale einerseits verstärkt und andererseits vom  Rauschen befreit werden kann.
+    	Vor allem schwache Signale neigen dazu, von Rauschen überdeckt zu werden, schlichtes Verstärken von schwachen Signalen wird durch auftretendes starkes Rauschen unbrauchbar.
+    	Ist die Frequenz eines Signales bekannt, beispielsweise AM-Radio einer bekannten Frequenz, so ist es möglich, 
+    	Rauschen zu eliminieren.
+    	Die Ausgabe des Lock In-Verstärkers ist eine Gleichspannung als Maß für die Amplitude der eingestellten Frequenz.
+
+    	Die Funktionsweise ist anhand dieses schematischen Aufbaus gut erklärbar. 
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{build/Bilder/LockIn.pdf}
+    	\flushleft
+    	Nach der Verstärkung durch den \emph{Pre-Amplifier} durchläuft das Signal zunächst einen \emph{Bandpassfilter}:
+		alle Frequenzen $\omega<<\omega_0$ und $\omega>>\omega_0$ werden grob herausgefiltert, das Frequenz-Rauschen wird minimiert. 
+		Ein \emph{Funktionsgenerator} erzeugt die Referenzspannung $U_\mathup{ref}$ -- eine Sinus- oder Rechteckspannung der Frequenz $\omega_0$ -- , welche über den \emph{Phasenschieber} an die Phase des Eingangssignals angepasst werden kann. 
+		Dieser Vorgang nennt sich Synchronisation.
+		Im \emph{Mischer} treffen beide Signale aufeinander und werden per Signalfaltung multipliziert. 
+		Anschließend wird das Mischsignal $U_\mathup{sig}\times U_\mathup{ref}$ an den \emph{Tiefpass} weitergeleitet, der die Modulationsfrequenz $\omega_0$ über mehrere Perioden integriert, um restliche Rauschanteile $\omega\neq\omega_0$ auszuschließen. 
+		Dieser Tiefpass hat die Funktion eines dämpfenden Gleichrichters: schnelle Amplitudenänderung, also Amplitudenrauschen, werden durch die Integration herausgedämpft.
+		Zurück bleiben nur die Anteile der Signalsspannung $U_\mathup{sig}$, die mit der Referenzspannung synchronisiert werden konnten.
+		Um eine möglichst geringe Bandbreite $\upD{\nu}=\frac{1}{\pi RC}$ zu erhalten, sollte die Zeitkonstante $\uptau=RC$ des \emph{Tiefpasses} ausreichend groß gewählt werden. 
+		Damit wird eine hohe Güteziffer im Bezug auf Störungsfilterung erzielt.
+
+		\centering
+    	\includegraphics[width=0.4\textwidth]{build/Bilder/Signal.pdf}
+    	\flushleft
+
+    	Wird beispielsweise ein Sinus-förmiges Eingangssignal $U_\mathup{sig}=U_0 \sin(\omega t)$ mit einem rechteckigen normierten Referenzsignal $U_\mathup{ref}$ gleicher Frequenz gefaltet, wird diese zunächst durch eine Fourierreihe angenähert, welche aus den ungeraden Harmonischen der Grundfrequenz besteht. 
+		Wird das multiplizierte Signal,  bestehend aus geraden Oberwellen der Frequenz $\omega$, durch den Tiefpass geleitet, ergibt sich die Endspannung
+		\begin{equation}
+			U_\mathup{out}=\frac{2}{\pi}U_0\text{cos}(\upD\Phi).
+			\label{cos}
+		\end{equation}
+		Besteht kein Phasenunterschied zwischen Eingangs- und Referenzsignal, so nimmt die Endspannung ihren Maximalwert an.
+
+		Gewissermaßen zeigt ein Lock In-Verstärker über seine DC-Spannungsausgabe, wie groß die Amplitude der eingestellten Frequenz im Eingangssignal ist.
+
+	\end{Theorie}
+    
+    \begin{Durchführung}
+    	Die Funktionsweise des Verstärkers, den einzelnen Komponenten nach, mit einem Oszilloskop sichtbar machen.
+    	Hierzu wird einerseits ein ungestörtes Signal und das gleiche Signal mit Störung und andererseits ein LED-Signal verwendet.
+    	Beim gestörten Signal wird die Phasenverschiebung benützt, um die Gleichung \eqref{cos} zu bestätigen. Die Messung eines gepulsten LED-Signals geschieht ohne Abdeckung oder andere optische Bemühung.
+
+    	Die Oszilloskopenbilder von dem Rohsignal, dem gefalteten Signal und der Ausgabe am Ende werden aufgenommen.
+    \end{Durchführung}        
+    
+    \begin{Auswertung}
+    	Durchgehen gute Ergebnisse:
+    	\begin{itemize}
+    		\item Differenz der Ausgangsspannung bei ungestörtem Signal und bei gleichem Signal mit Störung ist gering.
+    		\item Der Cosinus-Zusammenhang zwischen Endspannung und Phasenverschiebung konnte gut nachgewiesen werden.
+    		\item Das LED-Signal konnte über einen Meter Distanz überwinden und trotzdem verlässlich gemessen werden.
+    	\end{itemize}
+    \end{Auswertung}
+
+    \begin{Diskussion}
+ 		Der Lock In-Verstärker eignet sich hervorragend zur Messung von schwachen und gestörten Signalen. 
+ 		Das Signal kann dabei Störungen aufweisen, die die Signalstärke wesentlich übertreffen.
+ 		Im Versuch wurde die Störsicherheit bei üblichem Verhältnis von Störung zu Signal nachgewiesen.
+    \end{Diskussion}
+
+    \begin{Merke}
+    	Lock In-Verstärker sind toll.
+		Geeignet für Übermittlung von Daten über langen Strecken.
+
+		Unterschied zum Band-Pass: der Lock In-Filter ist in der Lage, Signale mit variabler Frequenz zu verstärken und Störung in Frequenzlage zu filtern.
+    \end{Merke}
+
+    \end{Versuch}
+\end{document}

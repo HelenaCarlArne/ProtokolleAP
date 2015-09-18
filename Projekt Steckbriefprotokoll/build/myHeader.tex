@@ -1,0 +1,132 @@
+\documentclass[
+    parskip=half,
+    bibliography=totoc,     % Literatur im Inhaltsverzeichnis
+    captions=tableheading,  % Tabellenüberschriften
+    titlepage=firstiscover, % Titelseite ist Deckblatt
+    ]{scrartcl}
+    
+\usepackage[top=2cm, bottom=4cm, left=2cm, right=2cm]{geometry}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{light-red}{HTML}{FFBABA}
+
+% LaTeX2e korrigieren.
+\usepackage{fixltx2e}
+
+% Warnung, falls nochmal kompiliert werden muss
+\usepackage[aux]{rerunfilecheck}
+
+% Deutsche Spracheinstellungen
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+% Unverzichtbare Mathe-Befehle
+\usepackage{amsmath}
+
+% Viele Mathe-Symbole
+\usepackage{amssymb}
+
+% Erweiterungen für amsmath
+\usepackage{mathtools}
+
+% Fonteinstellungen
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+
+\usepackage[
+    math-style=ISO,    % \
+    bold-style=ISO,    % |
+    sans-style=italic, % | ISO-Standard folgen
+    nabla=upright,     % |
+    partial=upright,   % /
+    ]{unicode-math}
+
+\setmathfont{Latin Modern Math}
+\setmathfont[range={\mathscr, \mathbfscr}]{XITS Math}
+\setmathfont[range=\coloneq]{XITS Math}
+\setmathfont[range=\propto]{XITS Math}
+
+% Das hquer-Symbol verschönern
+\let\hbar\relax
+\DeclareMathSymbol{\hbar}{\mathord}{AMSb}{"7E}
+\DeclareMathSymbol{?}{\mathord}{AMSb}{"7E}
+
+% Richtige Anführungszeichen
+\usepackage[autostyle]{csquotes}
+
+% Zahlen und Einheiten
+\usepackage[
+  locale=DE,                   % Deutsche Einstellungen
+  separate-uncertainty=true,   % Immer Fehler mit \pm
+  per-mode=symbol-or-fraction, % m/s im Text, sonst Brüche
+]{siunitx}
+
+% Chemische Formeln
+\usepackage[version=3]{mhchem}
+
+% Schöne Brüche im Text
+\usepackage{xfrac}
+
+% Floats innerhalb einer Section halten
+\usepackage[section, below]{placeins}
+
+% Captions schöner machen.
+\usepackage[
+    labelfont=bf,        % Tabelle x: Abbildung y: ist jetzt fett
+    font=small,          % Schrift etwas kleiner als Dokument
+    width=0.9\textwidth, % Maximale Breite einer Caption schmaler
+    ]{caption}
+
+% Subfigure, subtable, subref
+\usepackage{subcaption}
+
+% Grafiken einbinden
+\usepackage{graphicx}
+
+% Größere Variation von Dateinamen möglich
+\usepackage{grffile}
+
+% Standardplatzierung für Floats einstellen
+\usepackage{float}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+
+% Schöne Tabellen
+\usepackage{booktabs}
+
+% Seite drehen für breite Tabellen
+\usepackage{pdflscape}
+
+% Literaturverzeichnis
+\usepackage{biblatex}
+
+% Quellendatenbank
+\addbibresource{lit.bib}
+\addbibresource{programme.bib}
+
+% Hyperlinks im Dokument
+\usepackage[
+    unicode,
+    pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+    pdfcreator={},  % PDF-Attribute säubern
+    pdfproducer={}, % "
+    ]{hyperref}
+    
+% Erweiterte Bookmarks im PDF
+\usepackage{bookmark}
+
+% Trennung von Wörtern mit Strichen
+\usepackage[shortcuts]{extdash}
+
+% Blindtext erzeugen
+\usepackage{blindtext}
+
+% Support für mdframed
+\usepackage{kvoptions}
+\usepackage{xparse}
+\usepackage{etoolbox}
+\usepackage{tikz}
+
+% Schöne mehrseitige Rahmen um Text erzeugen
+\usepackage{mdframed}
+\mdfsetup{skipabove=\topskip,skipbelow=\topskip}
